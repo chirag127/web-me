@@ -1,0 +1,47 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getGoodreadsShelf } from '~/lib/api'
+
+const reading = await getGoodreadsShelf('currently-reading')
+const read    = await getGoodreadsShelf('read')
+---
+<Layout title="Books" description="Chirag Singhal — reading list">
+  <div style="padding-top: 2rem; max-width: 640px;">
+    <h1 class="page-title">Books</h1>
+    <p class="page-sub">Goodreads shelves.</p>
+
+    {reading.length > 0 && (
+      <div style="margin-bottom:1.5rem;">
+        <span class="kicker">CURRENTLY READING</span>
+        <div>
+          {reading.map((b: any) => (
+            <div style="display:flex;align-items:baseline;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);">
+              <div style="flex:1;">
+                <div style="font-size:13px;color:#fff;">{b.title}</div>
+                <div style="font-size:12px;color:var(--t-muted);">{b.author}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {read.length > 0 && (
+      <div>
+        <span class="kicker">RECENTLY READ</span>
+        <div>
+          {read.slice(0,8).map((b: any) => (
+            <div style="display:flex;align-items:center;height:36px;gap:10px;border-bottom:1px solid var(--border);">
+              <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{b.title}</span>
+              <span style="font-size:12px;color:var(--t-muted);flex-shrink:0;">{b.author}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {reading.length === 0 && read.length === 0 && (
+      <p style="font-size:13px;color:var(--t-muted);">Goodreads data loads at build time via public XML feed.</p>
+    )}
+  </div>
+</Layout>

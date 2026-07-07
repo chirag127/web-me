@@ -1,0 +1,31 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const PRINCIPLES = [
+  { n: '01', title: 'Ship fast, iterate', body: 'Working software beats perfect software. Release early, learn from real usage, iterate with data.' },
+  { n: '02', title: 'Measure, don\'t guess', body: 'Every performance claim needs a benchmark. Every design decision needs a metric.' },
+  { n: '03', title: 'Deep modules', body: 'Narrow interfaces hiding deep implementation (Ousterhout). Less surface area = less cognitive load.' },
+  { n: '04', title: 'Build in public', body: 'Open source everything that isn\'t a competitive secret. 192+ tools shipped. The community makes it better.' },
+  { n: '05', title: 'No card on file', body: 'Free tiers only. Constraints breed creativity. Cloudflare, GitHub, Neon — all free, all production-grade.' },
+  { n: '06', title: 'Automate the boring', body: 'If you do it twice, script it. If you script it, schedule it. Time is the only non-renewable resource.' },
+  { n: '07', title: 'Stay curious', body: 'Every tool is a puzzle. Every codebase is a story. Read source code. File upstream PRs. Learn by doing.' },
+]
+---
+<Layout title="Philosophy" description="Chirag Singhal — engineering principles">
+  <div style="padding-top: 2rem; max-width: 600px;">
+    <h1 class="page-title">Philosophy</h1>
+    <p class="page-sub">Engineering principles I live by.</p>
+
+    <div style="display:flex;flex-direction:column;gap:0;margin-top:1rem;">
+      {PRINCIPLES.map(p => (
+        <div style="padding: 14px 0; border-bottom: 1px solid var(--border); display:flex; gap:16px;">
+          <span style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);flex-shrink:0;padding-top:1px;">{p.n}</span>
+          <div>
+            <div style="font-family:var(--font-display);font-weight:600;font-size:14px;color:#fff;margin-bottom:4px;">{p.title}</div>
+            <p style="font-size:13px;color:var(--t-secondary);line-height:1.6;">{p.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

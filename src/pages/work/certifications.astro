@@ -1,0 +1,37 @@
+---
+import Layout from '~/layouts/Layout.astro'
+---
+<Layout title="Certifications" description="Chirag Singhal — certifications">
+  <div style="padding-top: 2rem; max-width: 600px;">
+    <h1 class="page-title">Certifications</h1>
+    <p class="page-sub">Professional credentials and courses completed.</p>
+
+    <div>
+      {[
+        {
+          title: 'Meta Backend Developer Professional Certificate',
+          issuer: 'Meta (Coursera)',
+          year: '2024',
+          skills: ['Django','REST','MySQL','Version Control'],
+        },
+        {
+          title: 'AWS Certified Developer – Associate',
+          issuer: 'Amazon Web Services',
+          year: '2025',
+          skills: ['Lambda','DynamoDB','S3','CloudFormation','IAM'],
+        },
+      ].map(c => (
+        <div style="padding: 14px 0; border-bottom: 1px solid var(--border);">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px;">
+            <span style="font-family:var(--font-display);font-weight:600;font-size:14px;color:#fff;">{c.title}</span>
+            <span style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);flex-shrink:0;">{c.year}</span>
+          </div>
+          <div style="font-size:12px;color:var(--t-secondary);margin-bottom:8px;">{c.issuer}</div>
+          <div class="chips">
+            {c.skills.map(s => <span class="tech-chip">{s}</span>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

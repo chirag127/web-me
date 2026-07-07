@@ -7,48 +7,46 @@ interface Props {
   active?: string
 }
 
-const { title, description = 'Chirag Singhal — personal site', active = '/' } = Astro.props
-
+const { title, description = 'Chirag Singhal — Software Engineer · Backend · AI Systems · Open Source' } = Astro.props
 const path = Astro.url.pathname
 
 function isActive(href: string): boolean {
   if (href === '/') return path === '/'
-  return path.startsWith(href)
+  return path === href || path.startsWith(href.replace(/\/?$/, '/'))
 }
 
 const WORK_NAV = [
-  { href: '/',          label: 'Home' },
-  { href: '/work/',     label: 'Work' },
-  { href: '/projects/', label: 'Projects' },
-  { href: '/skills/',   label: 'Skills' },
+  { href: '/',                    label: 'Home',           icon: '⌂' },
+  { href: '/work/career',         label: 'Career',         icon: '◈' },
+  { href: '/work/projects',       label: 'Projects',       icon: '◧' },
+  { href: '/work/skills',         label: 'Skills',         icon: '◈' },
+  { href: '/work/education',      label: 'Education',      icon: '◉' },
+  { href: '/work/certifications', label: 'Certifications', icon: '◎' },
 ]
 
-const INFO_NAV = [
-  { href: '/about/',   label: 'About' },
-  { href: '/contact/', label: 'Contact' },
+const LIBRARY_NAV = [
+  { href: '/library/music',    label: 'Music',    icon: '♪' },
+  { href: '/library/movies',   label: 'Movies',   icon: '▶' },
+  { href: '/library/anime',    label: 'Anime',    icon: '◉' },
+  { href: '/library/books',    label: 'Books',    icon: '▣' },
+  { href: '/library/activity', label: 'Activity', icon: '◌' },
 ]
 
-const MEDIA_SUBNAV = [
-  { href: '/media/music/',    label: 'Music' },
-  { href: '/media/movies/',   label: 'Movies' },
-  { href: '/media/tv/',       label: 'TV Shows' },
-  { href: '/media/anime/',    label: 'Anime' },
-  { href: '/media/manga/',    label: 'Manga' },
-  { href: '/media/books/',    label: 'Books' },
-  { href: '/media/activity/', label: 'Activity' },
+const ME_NAV = [
+  { href: '/me',            label: 'About',     icon: '◉' },
+  { href: '/me/gear',       label: 'Gear',      icon: '◧' },
+  { href: '/me/philosophy', label: 'Philosophy',icon: '◈' },
 ]
 
-const isMediaSection = path.startsWith('/media/')
-
-// Top 6 for mobile tab bar
-const MOBILE_NAV = [
-  { href: '/',          label: 'Home' },
-  { href: '/work/',     label: 'Work' },
-  { href: '/projects/', label: 'Projects' },
-  { href: '/about/',    label: 'About' },
-  { href: '/media/',    label: 'Media' },
-  { href: '/contact/',  label: 'Contact' },
+const CONNECT_NAV = [
+  { href: '/connect',         label: 'Links',   icon: '◎' },
+  { href: '/connect/contact', label: 'Contact', icon: '◌' },
 ]
+
+const workOpen   = path === '/' || path.startsWith('/work')
+const libraryOpen = path.startsWith('/library')
+const meOpen      = path.startsWith('/me')
+const connectOpen = path.startsWith('/connect')
 ---
 
 <!doctype html>
@@ -56,296 +54,160 @@ const MOBILE_NAV = [
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{title} · chirag127</title>
+  <title>{title} · Chirag Singhal</title>
   <meta name="description" content={description} />
-  <link rel="canonical" href={`https://me.oriz.in${Astro.url.pathname}`} />
+  <link rel="canonical" href={`https://me.oriz.in${path}`} />
   <link rel="icon" href="https://github.com/chirag127.png?size=32" type="image/png" />
-  <meta property="og:title" content={`${title} · chirag127`} />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- OG -->
+  <meta property="og:title" content={`${title} · Chirag Singhal`} />
   <meta property="og:description" content={description} />
-  <meta property="og:url" content={`https://me.oriz.in${Astro.url.pathname}`} />
+  <meta property="og:url" content={`https://me.oriz.in${path}`} />
+  <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@chirag127" />
+
+  <!-- JSON-LD Person -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chirag Singhal",
+    "url": "https://me.oriz.in",
+    "email": "hi@chirag127.in",
+    "jobTitle": "Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Tata Consultancy Services" },
+    "sameAs": [
+      "https://github.com/chirag127",
+      "https://linkedin.com/in/chirag127"
+    ]
+  })} />
+
+  <!-- Puter.js -->
+  <script src="https://js.puter.com/v2/" defer></script>
 </head>
 <body>
-  <!-- Sticky header -->
-  <header class="site-header">
-    <a href="/" class="brand nav-link">
-      chirag<span class="accent-text">127</span> / me
-    </a>
-  </header>
 
-  <div class="layout-wrap">
-    <!-- Sidebar -->
-    <nav class="sidebar" aria-label="Primary navigation">
-      <div class="nav-group">
-        <span class="nav-group-label">Work</span>
-        <ul>
-          {WORK_NAV.map(n => (
-            <li>
-              <a
-                href={n.href}
-                class={`nav-link sidebar-link${isActive(n.href) ? ' active' : ''}`}
-              >{n.label}</a>
-            </li>
-          ))}
-        </ul>
+  <!-- Sidebar -->
+  <nav class="sidebar" aria-label="Primary navigation">
+
+    <!-- Top identity -->
+    <div style="padding: 12px 16px; display: flex; align-items: center; gap: 10px; height: 72px; flex-shrink: 0; border-bottom: 1px solid var(--border);">
+      <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#f59e0b,#f97316);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <span style="font-family:var(--font-display);font-weight:700;font-size:13px;color:#fff;">CS</span>
       </div>
-
-      <div class="nav-group">
-        <span class="nav-group-label">Info</span>
-        <ul>
-          {INFO_NAV.map(n => (
-            <li>
-              <a
-                href={n.href}
-                class={`nav-link sidebar-link${isActive(n.href) ? ' active' : ''}`}
-              >{n.label}</a>
-            </li>
-          ))}
-        </ul>
+      <div style="min-width:0;">
+        <div style="font-family:var(--font-display);font-weight:600;font-size:13px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Chirag Singhal</div>
+        <div style="font-size:11px;color:var(--t-tertiary);">Software Engineer</div>
       </div>
+    </div>
 
-      <details class="nav-group nav-group-collapsible" open={isMediaSection || undefined}>
-        <summary class="nav-group-label nav-group-toggle">Life &#9662;</summary>
-        <ul>
-          <li>
-            <a
-              href="/media/"
-              class={`nav-link sidebar-link${path === '/media/' ? ' active' : ''}`}
-            >Media</a>
-          </li>
-          {isMediaSection && MEDIA_SUBNAV.map(n => (
-            <li>
-              <a
-                href={n.href}
-                class={`nav-link sidebar-link sidebar-sublink${isActive(n.href) ? ' active' : ''}`}
-              >{n.label}</a>
-            </li>
-          ))}
-        </ul>
+    <!-- Search -->
+    <div style="margin: 8px 12px;">
+      <div style="position:relative;height:28px;background:var(--overlay);border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;padding:0 8px;gap:6px;">
+        <span style="font-size:11px;color:var(--t-muted);">⌕</span>
+        <span style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);flex:1;">Search pages...</span>
+        <kbd style="font-family:var(--font-mono);font-size:10px;color:var(--t-muted);background:var(--surface);border:1px solid var(--border);border-radius:3px;padding:1px 4px;">K</kbd>
+      </div>
+    </div>
+
+    <!-- Nav groups -->
+    <div style="flex:1;overflow-y:auto;padding-bottom:8px;">
+
+      <details class="nav-group" open={workOpen || undefined}>
+        <summary>
+          <span>WORK</span>
+          <span class="nav-chevron">›</span>
+        </summary>
+        {WORK_NAV.map(n => (
+          <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
+            <span class="icon">{n.icon}</span>
+            {n.label}
+          </a>
+        ))}
       </details>
 
-      <div class="sidebar-footer">
-        <a href="https://oriz.in" class="nav-link back-link">← oriz.in</a>
-      </div>
-    </nav>
+      <details class="nav-group" open={libraryOpen || undefined}>
+        <summary>
+          <span>LIBRARY</span>
+          <span class="nav-chevron">›</span>
+        </summary>
+        {LIBRARY_NAV.map(n => (
+          <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
+            <span class="icon">{n.icon}</span>
+            {n.label}
+          </a>
+        ))}
+      </details>
 
-    <!-- Main content -->
-    <main class="main-content">
-      <slot />
-    </main>
-  </div>
+      <details class="nav-group" open={meOpen || undefined}>
+        <summary>
+          <span>ME</span>
+          <span class="nav-chevron">›</span>
+        </summary>
+        {ME_NAV.map(n => (
+          <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
+            <span class="icon">{n.icon}</span>
+            {n.label}
+          </a>
+        ))}
+      </details>
+
+      <details class="nav-group" open={connectOpen || undefined}>
+        <summary>
+          <span>CONNECT</span>
+          <span class="nav-chevron">›</span>
+        </summary>
+        {CONNECT_NAV.map(n => (
+          <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
+            <span class="icon">{n.icon}</span>
+            {n.label}
+          </a>
+        ))}
+      </details>
+
+    </div>
+
+    <!-- Bottom pinned -->
+    <div style="padding: 0 12px 12px; flex-shrink: 0; border-top: 1px solid var(--border); padding-top: 12px;">
+      <a href="/resume.pdf" style="display:flex;align-items:center;gap:6px;height:32px;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.2);border-radius:6px;padding:0 12px;font-size:12px;color:#818cf8;text-decoration:none;transition:background 120ms;margin-bottom:8px;" onmouseover="this.style.background='rgba(99,102,241,0.15)'" onmouseout="this.style.background='rgba(99,102,241,0.08)'">
+        <span>↓</span>
+        <span>Download Resume</span>
+      </a>
+      <a href="https://oriz.in" style="display:block;font-size:11px;color:var(--t-muted);text-decoration:none;transition:color 80ms;" onmouseover="this.style.color='var(--t-tertiary)'" onmouseout="this.style.color='var(--t-muted)'">← oriz.in</a>
+    </div>
+
+  </nav>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <slot />
+  </main>
 
   <!-- Mobile bottom tab bar -->
   <nav class="tab-bar" aria-label="Mobile navigation">
-    {MOBILE_NAV.map(n => (
-      <a
-        href={n.href}
-        class={`tab-item nav-link${isActive(n.href) ? ' active' : ''}`}
-      >{n.label}</a>
-    ))}
+    <div class="tab-bar-inner">
+      <a href="/"        class:list={['tab-item', { active: path === '/' }]}>
+        <span class="tab-icon">⌂</span><span>Home</span>
+      </a>
+      <a href="/work/career" class:list={['tab-item', { active: path.startsWith('/work') }]}>
+        <span class="tab-icon">◈</span><span>Work</span>
+      </a>
+      <a href="/library/music" class:list={['tab-item', { active: path.startsWith('/library') }]}>
+        <span class="tab-icon">♪</span><span>Library</span>
+      </a>
+      <a href="/me"      class:list={['tab-item', { active: path.startsWith('/me') }]}>
+        <span class="tab-icon">◉</span><span>Me</span>
+      </a>
+      <a href="/connect/contact" class:list={['tab-item', { active: path.startsWith('/connect') }]}>
+        <span class="tab-icon">◌</span><span>Contact</span>
+      </a>
+    </div>
   </nav>
+
 </body>
 </html>
-
-<style>
-/* Header */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 200;
-  background: var(--bg);
-  border-bottom: 1px solid var(--rule);
-  padding: 0 1.5rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-}
-
-.brand {
-  font-family: var(--font-ui);
-  font-size: 0.875rem;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-
-.brand:hover {
-  color: var(--fg);
-}
-
-/* Layout wrapper */
-.layout-wrap {
-  display: flex;
-  max-width: var(--content-max);
-  margin: 0 auto;
-  gap: 3rem;
-  min-height: calc(100dvh - 3rem);
-}
-
-/* Sidebar */
-.sidebar {
-  width: var(--sidebar-w);
-  flex-shrink: 0;
-  padding: 2rem 0;
-  border-right: 1px solid var(--rule);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  position: sticky;
-  top: 3rem;
-  height: calc(100dvh - 3rem);
-  overflow-y: auto;
-}
-
-.nav-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
-}
-
-.nav-group-label {
-  font-family: var(--font-ui);
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--faint);
-  padding: 0 0.75rem;
-  margin-bottom: 0.25rem;
-  display: block;
-}
-
-.nav-group ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.sidebar-link {
-  display: block;
-  padding: 0.3rem 0.75rem;
-  font-family: var(--font-ui);
-  font-size: 0.8125rem;
-  color: var(--muted);
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.sidebar-link:hover {
-  color: var(--fg);
-  text-decoration: none;
-}
-
-.sidebar-link.active {
-  color: var(--fg);
-}
-
-.sidebar-sublink {
-  padding-left: 1.5rem;
-  font-size: 0.77rem;
-}
-
-/* Collapsible nav group */
-.nav-group-collapsible summary {
-  cursor: pointer;
-  list-style: none;
-  user-select: none;
-}
-
-.nav-group-collapsible summary::-webkit-details-marker {
-  display: none;
-}
-
-.nav-group-toggle {
-  cursor: pointer;
-}
-
-.nav-group-toggle:hover {
-  color: var(--muted);
-}
-
-/* Sidebar footer */
-.sidebar-footer {
-  margin-top: auto;
-  padding: 0 0.75rem;
-  border-top: 1px solid var(--rule);
-  padding-top: 1rem;
-}
-
-.back-link {
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  color: var(--faint);
-  text-decoration: none;
-}
-
-.back-link:hover {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-/* Main content */
-.main-content {
-  flex: 1;
-  padding: 2.5rem 1.5rem 5rem 0;
-  min-width: 0;
-}
-
-/* Mobile tab bar */
-.tab-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: var(--tabs-h);
-  background: var(--paper);
-  border-top: 1px solid var(--rule);
-  z-index: 200;
-  overflow-x: auto;
-}
-
-.tab-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  min-width: 48px;
-  padding: 0 4px;
-  font-family: var(--font-ui);
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--faint);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.tab-item:hover {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.tab-item.active {
-  color: var(--fg);
-}
-
-/* Mobile breakpoint */
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-
-  .layout-wrap {
-    gap: 0;
-  }
-
-  .main-content {
-    padding: 1.5rem 1rem 5rem;
-  }
-
-  .tab-bar {
-    display: flex;
-  }
-}
-</style>

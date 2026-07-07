@@ -1,0 +1,32 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const GEAR = [
+  { category: 'OS', items: ['Windows 11 Enterprise'] },
+  { category: 'EDITOR', items: ['VS Code', 'Cursor'] },
+  { category: 'TERMINAL', items: ['Windows Terminal', 'PowerShell 7'] },
+  { category: 'AI AGENTS', items: ['Claude Code', 'OpenCode', 'Antigravity', 'Qwen Code'] },
+  { category: 'BROWSER', items: ['Chrome', 'Arc'] },
+  { category: 'APPS', items: ['Obsidian', 'Pieces', 'Screenpipe', 'Wispr Flow'] },
+  { category: 'HARDWARE', items: ['Corp Laptop (Windows 11)', 'Dual Monitor Setup'] },
+]
+---
+<Layout title="Gear" description="Chirag Singhal — hardware and software setup">
+  <div style="padding-top: 2rem; max-width: 600px;">
+    <h1 class="page-title">Gear</h1>
+    <p class="page-sub">Hardware and software I use daily.</p>
+
+    <table class="skill-table" style="margin-top:1rem;">
+      {GEAR.map(g => (
+        <tr>
+          <td>{g.category}</td>
+          <td>
+            <div class="chips">
+              {g.items.map(i => <span class="tech-chip">{i}</span>)}
+            </div>
+          </td>
+        </tr>
+      ))}
+    </table>
+  </div>
+</Layout>

@@ -1,0 +1,30 @@
+---
+import Layout from '~/layouts/Layout.astro'
+---
+<Layout title="About" description="Chirag Singhal — about me">
+  <div style="padding-top: 2rem; max-width: 600px;">
+    <h1 class="page-title">About</h1>
+    <p class="page-sub">Software engineer, open source contributor, builder.</p>
+
+    <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
+      <p style="font-size:13px;color:var(--t-secondary);line-height:1.7;">
+        Hi, I'm Chirag Singhal — a software engineer at TCS, building pricing engines and backend systems. I ship open source tools at oriz.in (192+ and counting), explore AI systems, and rank 1st in my university batch.
+      </p>
+      <p style="font-size:13px;color:var(--t-secondary);line-height:1.7;">
+        I work across the full stack — Python, TypeScript, React, Astro, FastAPI, Docker, Kubernetes — with a focus on backend performance, AI integrations, and developer tooling.
+      </p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:4px;">
+      {[
+        { href: '/me/gear',       label: 'Gear',       desc: 'Hardware + software setup' },
+        { href: '/me/philosophy', label: 'Philosophy', desc: '7 engineering principles' },
+      ].map(l => (
+        <a href={l.href} style="display:flex;align-items:center;justify-content:space-between;height:40px;padding:0 12px;border-radius:6px;border:1px solid var(--border);background:var(--surface);text-decoration:none;">
+          <span style="font-size:13px;color:#fff;">{l.label}</span>
+          <span style="font-size:12px;color:var(--t-muted);">{l.desc} →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

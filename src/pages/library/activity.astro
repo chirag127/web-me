@@ -1,0 +1,34 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmRecent, getTraktMovies, getMALAnime } from '~/lib/api'
+
+const [lfRecent, movies, anime] = await Promise.all([
+  getLastfmRecent(5),
+  getTraktMovies(5),
+  getMALAnime('watching', 5),
+])
+
+type FeedItem = { type: string; title: string; sub?: string; ts?: string }
+const feed: FeedItem[] = [
+  ...lfRecent.map((t: any) => ({ type: '♪', title: t.name, sub: t.artist['#text'] })),
+  ...movies.map((m: any)  => ({ type: '▶', title: m.movie?.title ?? '', sub: String(m.movie?.year ?? '') })),
+  ...anime.map((a: any)   => ({ type: '◉', title: a.node?.title ?? '', sub: 'watching' })),
+]
+---
+<Layout title="Activity" description="Chirag Singhal — activity feed">
+  <div style="padding-top: 2rem; max-width: 600px;">
+    <h1 class="page-title">Activity</h1>
+    <p class="page-sub">Combined feed: music, movies, anime.</p>
+
+    <div>
+      {feed.map(f => (
+        <div style="display:flex;align-items:center;height:36px;gap:10px;border-bottom:1px solid var(--border);">
+          <span style="width:16px;font-size:12px;color:var(--primary);flex-shrink:0;text-align:center;">{f.type}</span>
+          <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{f.title}</span>
+          {f.sub && <span style="font-size:12px;color:var(--t-muted);flex-shrink:0;">{f.sub}</span>}
+        </div>
+      ))}
+      {feed.length === 0 && <p style="font-size:13px;color:var(--t-muted);">No activity data available.</p>}
+    </div>
+  </div>
+</Layout>

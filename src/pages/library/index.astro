@@ -1,0 +1,24 @@
+---
+import Layout from '~/layouts/Layout.astro'
+---
+<Layout title="Library" description="Chirag Singhal — media library">
+  <div style="padding-top: 2rem; max-width: 600px;">
+    <h1 class="page-title">Library</h1>
+    <p class="page-sub">Music, movies, anime, books, and activity feed.</p>
+
+    <div style="display:flex;flex-direction:column;gap:4px;margin-top:1rem;">
+      {[
+        { href: '/library/music',    label: 'Music',    desc: 'Last.fm + ListenBrainz scrobbles' },
+        { href: '/library/movies',   label: 'Movies',   desc: 'Trakt watch history' },
+        { href: '/library/anime',    label: 'Anime',    desc: 'MyAnimeList tracking' },
+        { href: '/library/books',    label: 'Books',    desc: 'Goodreads shelves' },
+        { href: '/library/activity', label: 'Activity', desc: 'Combined feed' },
+      ].map(l => (
+        <a href={l.href} style="display:flex;align-items:center;justify-content:space-between;height:40px;padding:0 12px;border-radius:6px;border:1px solid var(--border);background:var(--surface);text-decoration:none;">
+          <span style="font-size:13px;color:#fff;">{l.label}</span>
+          <span style="font-size:12px;color:var(--t-muted);">{l.desc} →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

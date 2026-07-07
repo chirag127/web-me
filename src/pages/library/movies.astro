@@ -1,0 +1,25 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getTraktMovies } from '~/lib/api'
+
+const movies = await getTraktMovies(20)
+---
+<Layout title="Movies" description="Chirag Singhal — movies watch history">
+  <div style="padding-top: 2rem; max-width: 640px;">
+    <h1 class="page-title">Movies</h1>
+    <p class="page-sub">Recent watches via Trakt.</p>
+
+    {movies.length === 0 ? (
+      <p style="font-size:13px;color:var(--t-muted);">No data — configure TRAKT_CLIENT_ID env var.</p>
+    ) : (
+      <div>
+        {movies.map((m: any) => (
+          <div style="display:flex;align-items:center;height:36px;gap:10px;border-bottom:1px solid var(--border);">
+            <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{m.movie?.title}</span>
+            <span style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);flex-shrink:0;">{m.movie?.year}</span>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</Layout>

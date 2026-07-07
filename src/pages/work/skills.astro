@@ -1,0 +1,33 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const SKILLS = [
+  { group: 'LANGUAGES',   items: ['Python','TypeScript','JavaScript','SQL','Bash'] },
+  { group: 'FRONTEND',    items: ['React','Astro','Next.js','Tailwind CSS','HTML/CSS'] },
+  { group: 'BACKEND',     items: ['FastAPI','Node.js','Express','REST','GraphQL'] },
+  { group: 'AI / ML',     items: ['LangChain','LangGraph','RAG','ONNX','HuggingFace'] },
+  { group: 'DATABASES',   items: ['PostgreSQL','MongoDB','Redis','Turso','Firebase'] },
+  { group: 'INFRA',       items: ['Docker','Kubernetes','Terraform','AWS','Cloudflare'] },
+  { group: 'MESSAGING',   items: ['Kafka','Celery','RabbitMQ'] },
+  { group: 'TOOLING',     items: ['Git','GitHub Actions','pnpm','pytest','Playwright'] },
+]
+---
+<Layout title="Skills" description="Chirag Singhal — tech skills by category">
+  <div style="padding-top: 2rem; max-width: 640px;">
+    <h1 class="page-title">Skills</h1>
+    <p class="page-sub">Technologies grouped by domain.</p>
+
+    <table class="skill-table">
+      {SKILLS.map(s => (
+        <tr>
+          <td>{s.group}</td>
+          <td>
+            <div class="chips">
+              {s.items.map(i => <span class="tech-chip">{i}</span>)}
+            </div>
+          </td>
+        </tr>
+      ))}
+    </table>
+  </div>
+</Layout>

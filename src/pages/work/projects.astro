@@ -1,0 +1,63 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const PROJECTS = [
+  {
+    name: 'Oriz',
+    url: 'https://oriz.in',
+    desc: '192+ tools & apps shipped — personal OS for the web.',
+    tech: ['Astro','TypeScript','Cloudflare','Python'],
+  },
+  {
+    name: 'NexusAI',
+    url: 'https://github.com/chirag127/nexusai',
+    desc: 'Multi-agent orchestration platform built on LangGraph + Kubernetes.',
+    tech: ['LangGraph','K8s','Python','FastAPI'],
+  },
+  {
+    name: 'TubeDigest',
+    url: 'https://github.com/chirag127/tubedigest',
+    desc: 'YouTube video summarisation via T5 + ONNX inference pipeline.',
+    tech: ['T5','ONNX','Python','React'],
+  },
+  {
+    name: 'Olivia',
+    url: 'https://github.com/chirag127/olivia',
+    desc: 'Local AI assistant powered by Llama-3 with voice interface.',
+    tech: ['Llama-3','Python','WebRTC'],
+  },
+  {
+    name: 'Crawl4AI',
+    url: 'https://github.com/chirag127/crawl4ai',
+    desc: 'Distributed web crawler with Redis queue + structured data extraction.',
+    tech: ['Python','Redis','Playwright','FastAPI'],
+  },
+  {
+    name: 'OmniPublish',
+    url: 'https://github.com/chirag127/omnipublish',
+    desc: 'Cross-platform publishing via Adapter pattern + Celery task queue.',
+    tech: ['Python','Celery','Adapter','REST'],
+  },
+]
+---
+<Layout title="Projects" description="Chirag Singhal — open source projects">
+  <div style="padding-top: 2rem; max-width: 640px;">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-sub">Open source work and side projects.</p>
+
+    <div>
+      {PROJECTS.map(p => (
+        <div style="padding: 12px 0; border-bottom: 1px solid var(--border);">
+          <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px;">
+            <a href={p.url} target="_blank" rel="noopener" style="font-family:var(--font-display);font-weight:600;font-size:14px;color:#fff;text-decoration:none;">{p.name}</a>
+            <span style="font-size:12px;color:var(--cyan);">↗</span>
+          </div>
+          <p style="font-size:13px;color:var(--t-secondary);margin-bottom:6px;">{p.desc}</p>
+          <div class="chips">
+            {p.tech.map(t => <span class="tech-chip">{t}</span>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,45 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getMALAnime } from '~/lib/api'
+
+const watching = await getMALAnime('watching', 20)
+const completed = await getMALAnime('completed', 10)
+---
+<Layout title="Anime" description="Chirag Singhal — anime list">
+  <div style="padding-top: 2rem; max-width: 640px;">
+    <h1 class="page-title">Anime</h1>
+    <p class="page-sub">MyAnimeList tracking.</p>
+
+    {watching.length > 0 && (
+      <div style="margin-bottom:1.5rem;">
+        <span class="kicker">WATCHING</span>
+        <div>
+          {watching.map((a: any) => (
+            <div style="display:flex;align-items:center;height:36px;gap:10px;border-bottom:1px solid var(--border);">
+              <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{a.node?.title}</span>
+              <span style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);flex-shrink:0;">{a.list_status?.num_episodes_watched ?? 0}/{a.node?.num_episodes ?? '?'}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {completed.length > 0 && (
+      <div>
+        <span class="kicker">RECENTLY COMPLETED</span>
+        <div>
+          {completed.map((a: any) => (
+            <div style="display:flex;align-items:center;height:36px;gap:10px;border-bottom:1px solid var(--border);">
+              <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{a.node?.title}</span>
+              <span style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);flex-shrink:0;">★ {a.list_status?.score ?? '–'}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {watching.length === 0 && completed.length === 0 && (
+      <p style="font-size:13px;color:var(--t-muted);">No data — configure MAL_CLIENT_ID env var.</p>
+    )}
+  </div>
+</Layout>

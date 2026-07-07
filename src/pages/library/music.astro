@@ -1,0 +1,60 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmRecent, getLastfmTopArtists, getLBRecentTracks } from '~/lib/api'
+
+const [lfRecent, lfTop, lbRecent] = await Promise.all([
+  getLastfmRecent(10),
+  getLastfmTopArtists('1month', 8),
+  getLBRecentTracks(10),
+])
+
+const nowPlaying = lfRecent[0]?.['@attr']?.nowplaying === 'true' ? lfRecent[0] : null
+---
+<Layout title="Music" description="Chirag Singhal — music listening history">
+  <div style="padding-top: 2rem; max-width: 640px;">
+    <h1 class="page-title">Music</h1>
+    <p class="page-sub">Last.fm scrobbles + ListenBrainz.</p>
+
+    {nowPlaying && (
+      <div style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:8px;background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.2);margin-bottom:1.5rem;">
+        <span class="pulse-dot"></span>
+        <span style="font-size:12px;color:#818cf8;font-weight:500;">Now Playing:</span>
+        <span style="font-size:13px;color:#fff;">{nowPlaying.name}</span>
+        <span style="font-size:12px;color:var(--t-muted);">— {nowPlaying.artist['#text']}</span>
+      </div>
+    )}
+
+    <span class="kicker">RECENT TRACKS (Last.fm)</span>
+    <div style="margin-top:0;">
+      {lfRecent.slice(0, 10).map((t: any) => (
+        <div style="display:flex;align-items:center;height:36px;gap:10px;border-bottom:1px solid var(--border);">
+          <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{t.name}</span>
+          <span style="font-size:12px;color:var(--t-muted);flex-shrink:0;">{t.artist['#text']}</span>
+        </div>
+      ))}
+    </div>
+
+    {lfTop.length > 0 && (
+      <div class="section">
+        <span class="kicker">TOP ARTISTS THIS MONTH</span>
+        <div class="chips">
+          {lfTop.map((a: any) => <span class="tech-chip">{a.name}</span>)}
+        </div>
+      </div>
+    )}
+
+    {lbRecent.length > 0 && (
+      <div class="section">
+        <span class="kicker">LISTENBRAINZ RECENT</span>
+        <div>
+          {lbRecent.slice(0, 5).map((t: any) => (
+            <div style="display:flex;align-items:center;height:32px;gap:10px;border-bottom:1px solid var(--border);">
+              <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{t.track}</span>
+              <span style="font-size:12px;color:var(--t-muted);flex-shrink:0;">{t.artist}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</Layout>

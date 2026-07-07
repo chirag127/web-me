@@ -1,0 +1,33 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const LINKS = [
+  { label: 'GitHub', url: 'https://github.com/chirag127', desc: 'Open source work + 192+ repos' },
+  { label: 'LinkedIn', url: 'https://linkedin.com/in/chirag127', desc: 'Professional profile' },
+  { label: 'oriz.in', url: 'https://oriz.in', desc: 'Personal hub — 192+ tools' },
+  { label: 'blog.oriz.in', url: 'https://blog.oriz.in', desc: 'Technical writing' },
+  { label: 'Email', url: 'mailto:hi@chirag127.in', desc: 'hi@chirag127.in' },
+  { label: 'npm', url: 'https://www.npmjs.com/~chirag127', desc: 'Published packages' },
+]
+---
+<Layout title="Connect" description="Chirag Singhal — links and contact">
+  <div style="padding-top: 2rem; max-width: 520px;">
+    <h1 class="page-title">Connect</h1>
+    <p class="page-sub">Links and contact.</p>
+
+    <div style="display:flex;flex-direction:column;gap:4px;margin-top:1rem;">
+      {LINKS.map(l => (
+        <a href={l.url} target={l.url.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:space-between;height:44px;padding:0 12px;border-radius:6px;border:1px solid var(--border);background:var(--surface);text-decoration:none;">
+          <span style="font-size:13px;color:#fff;">{l.label}</span>
+          <span style="font-size:12px;color:var(--t-muted);">{l.desc} ↗</span>
+        </a>
+      ))}
+    </div>
+
+    <div style="margin-top:1.5rem;">
+      <a href="/connect/contact" style="display:inline-flex;align-items:center;gap:6px;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.2);border-radius:8px;padding:8px 16px;font-size:13px;color:#818cf8;text-decoration:none;">
+        Send a message →
+      </a>
+    </div>
+  </div>
+</Layout>
