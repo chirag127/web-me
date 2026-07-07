@@ -1,0 +1,353 @@
+[
+  {
+    "id": 1007757,
+    "tmdb_id": 1007757,
+    "type": "movie",
+    "title": "Swapped",
+    "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
+    "poster": "https://image.tmdb.org/t/p/w342/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
+    "rating": 8.945,
+    "votes": 1875,
+    "release": "2026-05-01",
+    "genres": [
+      12,
+      16,
+      10751,
+      14
+    ],
+    "popularity": 90.9091
+  },
+  {
+    "id": 278,
+    "tmdb_id": 278,
+    "type": "movie",
+    "title": "The Shawshank Redemption",
+    "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    "poster": "https://image.tmdb.org/t/p/w342/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+    "rating": 8.724,
+    "votes": 30701,
+    "release": "1994-09-23",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 164.1629
+  },
+  {
+    "id": 936075,
+    "tmdb_id": 936075,
+    "type": "movie",
+    "title": "Michael",
+    "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+    "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+    "rating": 8.706,
+    "votes": 3326,
+    "release": "2026-04-22",
+    "genres": [
+      10402,
+      18
+    ],
+    "popularity": 189.9972
+  },
+  {
+    "id": 238,
+    "tmdb_id": 238,
+    "type": "movie",
+    "title": "The Godfather",
+    "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "poster": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tSPT36ZKlP2WVHJLM4cQPLSzv3b.jpg",
+    "rating": 8.687,
+    "votes": 23120,
+    "release": "1972-03-14",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 41.3474
+  },
+  {
+    "id": 687163,
+    "tmdb_id": 687163,
+    "type": "movie",
+    "title": "Project Hail Mary",
+    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+    "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+    "rating": 8.677,
+    "votes": 5754,
+    "release": "2026-03-15",
+    "genres": [
+      878,
+      12
+    ],
+    "popularity": 164.0596
+  },
+  {
+    "id": 240,
+    "tmdb_id": 240,
+    "type": "movie",
+    "title": "The Godfather Part II",
+    "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+    "poster": "https://image.tmdb.org/t/p/w342/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+    "rating": 8.571,
+    "votes": 14017,
+    "release": "1974-12-20",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 26.9725
+  },
+  {
+    "id": 424,
+    "tmdb_id": 424,
+    "type": "movie",
+    "title": "Schindler's List",
+    "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+    "poster": "https://image.tmdb.org/t/p/w342/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+    "rating": 8.57,
+    "votes": 17577,
+    "release": "1993-12-15",
+    "genres": [
+      18,
+      36,
+      10752
+    ],
+    "popularity": 24.8635
+  },
+  {
+    "id": 389,
+    "tmdb_id": 389,
+    "type": "movie",
+    "title": "12 Angry Men",
+    "overview": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
+    "poster": "https://image.tmdb.org/t/p/w342/zhG3vKWyDRaZYoaww1UVAi29T9h.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qqHQsStV6exghCM7zbObuYBiYxw.jpg",
+    "rating": 8.565,
+    "votes": 10096,
+    "release": "1957-04-10",
+    "genres": [
+      18
+    ],
+    "popularity": 24.515
+  },
+  {
+    "id": 1383731,
+    "tmdb_id": 1383731,
+    "type": "movie",
+    "title": "Protector",
+    "overview": "Nikki's life is shattered when her daughter is kidnapped. Thrust into the criminal underworld while hunted by cops and military, she must fight to rescue her child.",
+    "poster": "https://image.tmdb.org/t/p/w342/icOZpnGuH9YrEaW3wrw5GJaXGih.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/vpuPY4UziUCxv7gYYoaZQ3LX7to.jpg",
+    "rating": 8.54,
+    "votes": 409,
+    "release": "2026-02-20",
+    "genres": [
+      28,
+      53
+    ],
+    "popularity": 20.0528
+  },
+  {
+    "id": 1330021,
+    "tmdb_id": 1330021,
+    "type": "movie",
+    "title": "Remarkably Bright Creatures",
+    "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
+    "poster": "https://image.tmdb.org/t/p/w342/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+    "rating": 8.555,
+    "votes": 701,
+    "release": "2026-05-07",
+    "genres": [
+      18,
+      9648
+    ],
+    "popularity": 21.6649
+  },
+  {
+    "id": 129,
+    "tmdb_id": 129,
+    "type": "movie",
+    "title": "Spirited Away",
+    "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+    "poster": "https://image.tmdb.org/t/p/w342/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/dyJvKsNs2KP8qQnAXbRwDjblViy.jpg",
+    "rating": 8.534,
+    "votes": 18494,
+    "release": "2001-07-20",
+    "genres": [
+      16,
+      10751,
+      14
+    ],
+    "popularity": 37.8428
+  },
+  {
+    "id": 155,
+    "tmdb_id": 155,
+    "type": "movie",
+    "title": "The Dark Knight",
+    "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "poster": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/dqK9Hag1054tghRQSqLSfrkvQnA.jpg",
+    "rating": 8.532,
+    "votes": 36028,
+    "release": "2008-07-16",
+    "genres": [
+      28,
+      80,
+      53
+    ],
+    "popularity": 40.6599
+  },
+  {
+    "id": 19404,
+    "tmdb_id": 19404,
+    "type": "movie",
+    "title": "Dilwale Dulhania Le Jayenge",
+    "overview": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
+    "poster": "https://image.tmdb.org/t/p/w342/tFbfCkS7q6g96wVoAu8kyr93iPm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/84beTJf26mfhoasUlKSOiNSutyS.jpg",
+    "rating": 8.51,
+    "votes": 4600,
+    "release": "1995-10-20",
+    "genres": [
+      35,
+      18,
+      10749
+    ],
+    "popularity": 13.2449
+  },
+  {
+    "id": 497,
+    "tmdb_id": 497,
+    "type": "movie",
+    "title": "The Green Mile",
+    "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+    "poster": "https://image.tmdb.org/t/p/w342/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/b6HWTOxn1xevvyHU2K9ICvaRU6g.jpg",
+    "rating": 8.506,
+    "votes": 19399,
+    "release": "1999-12-10",
+    "genres": [
+      14,
+      18,
+      80
+    ],
+    "popularity": 28.0309
+  },
+  {
+    "id": 122,
+    "tmdb_id": 122,
+    "type": "movie",
+    "title": "The Lord of the Rings: The Return of the King",
+    "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+    "poster": "https://image.tmdb.org/t/p/w342/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
+    "rating": 8.5,
+    "votes": 26780,
+    "release": "2003-12-17",
+    "genres": [
+      12,
+      14,
+      28
+    ],
+    "popularity": 38.2423
+  },
+  {
+    "id": 1181678,
+    "tmdb_id": 1181678,
+    "type": "movie",
+    "title": "¿Quieres ser mi hijo?",
+    "overview": "Lu, a conformist woman in her forties, learns that her 15-year partner has been having extramarital affairs. Starting from scratch, she gets involved in an unexpected relationship with a young womanizer.",
+    "poster": "https://image.tmdb.org/t/p/w342/6PQJsmuvSMZQMmlJfTpjIkrizUh.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xyWKrni8WrYzqn7ztvI5nIY0h62.jpg",
+    "rating": 8.5,
+    "votes": 355,
+    "release": "2023-09-21",
+    "genres": [
+      35,
+      10749
+    ],
+    "popularity": 9.9138
+  },
+  {
+    "id": 496243,
+    "tmdb_id": 496243,
+    "type": "movie",
+    "title": "Parasite",
+    "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+    "poster": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wCuUKiRaz0wEESsYqmQy005xvTE.jpg",
+    "rating": 8.492,
+    "votes": 20828,
+    "release": "2019-05-30",
+    "genres": [
+      35,
+      53,
+      18
+    ],
+    "popularity": 31.4305
+  },
+  {
+    "id": 680,
+    "tmdb_id": 680,
+    "type": "movie",
+    "title": "Pulp Fiction",
+    "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+    "poster": "https://image.tmdb.org/t/p/w342/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+    "rating": 8.482,
+    "votes": 30373,
+    "release": "1994-09-10",
+    "genres": [
+      53,
+      80,
+      35
+    ],
+    "popularity": 38.6649
+  },
+  {
+    "id": 372058,
+    "tmdb_id": 372058,
+    "type": "movie",
+    "title": "Your Name.",
+    "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
+    "poster": "https://image.tmdb.org/t/p/w342/q719jXXEzOoYaps6babgKnONONX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/mMtUybQ6hL24FXo0F3Z4j2KG7kZ.jpg",
+    "rating": 8.5,
+    "votes": 12665,
+    "release": "2016-07-01",
+    "genres": [
+      16,
+      10749,
+      18
+    ],
+    "popularity": 27.0061
+  },
+  {
+    "id": 157336,
+    "tmdb_id": 157336,
+    "type": "movie",
+    "title": "Interstellar",
+    "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+    "poster": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
+    "rating": 8.48,
+    "votes": 40215,
+    "release": "2014-11-05",
+    "genres": [
+      12,
+      18,
+      878
+    ],
+    "popularity": 63.8141
+  }
+]

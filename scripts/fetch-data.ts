@@ -50,6 +50,7 @@ const DISCORD_ID  = process.env.DISCORD_USER_ID    ?? '799956529847205898'
 const HC_TOKEN    = process.env.HARDCOVER_TOKEN    ?? ''
 const HC_USER     = process.env.HARDCOVER_USERNAME ?? 'chirag127'
 const GH_USER     = process.env.GH_USERNAME        ?? 'chirag127'
+const TMDB_TOKEN  = process.env.TMDB_READ_ACCESS_TOKEN ?? ''  // Bearer read-access token
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -152,6 +153,118 @@ async function fetchTrakt() {
   save('trakt-shows.json',     Array.isArray(historyShows) ? historyShows : [])
   save('trakt-watchlist.json', Array.isArray(watchlist) ? watchlist : [])
   save('trakt-stats.json',     historyMovies ? stats : {})
+}
+
+// TMDB base image URL
+const TMDB_IMG = 'https://image.tmdb.org/t/p'
+
+async function fetchTMDB() {
+  // API: https://api.themoviedb.org/3
+  // Docs: https://developer.themoviedb.org/reference/intro/getting-started
+  // Fetches: trending movies + TV, popular movies + TV, now playing, on the air
+  // Also enriches trakt-movies/shows with poster/backdrop/overview if Trakt data exists
+  if (!TMDB_TOKEN) { console.log('  ⚠ TMDB_READ_ACCESS_TOKEN not set — skipping TMDB'); return }
+
+  const h = { Authorization: `Bearer ${TMDB_TOKEN}` }
+  const base = 'https://api.themoviedb.org/3'
+
+  // Fetch trending + popular + now playing in parallel
+  const [
+    trendingMovies, trendingTV,
+    popularMovies, popularTV,
+    nowPlaying, onTheAir,
+    topRatedMovies, topRatedTV,
+  ] = await Promise.all([
+    safeFetch(`${base}/trending/movie/week?language=en-US`, h),
+    safeFetch(`${base}/trending/tv/week?language=en-US`, h),
+    safeFetch(`${base}/movie/popular?language=en-US&page=1`, h),
+    safeFetch(`${base}/tv/popular?language=en-US&page=1`, h),
+    safeFetch(`${base}/movie/now_playing?language=en-US&page=1`, h),
+    safeFetch(`${base}/tv/on_the_air?language=en-US&page=1`, h),
+    safeFetch(`${base}/movie/top_rated?language=en-US&page=1`, h),
+    safeFetch(`${base}/tv/top_rated?language=en-US&page=1`, h),
+  ])
+
+  const shape = (item: any, type: 'movie' | 'tv') => ({
+    id:        item.id,
+    tmdb_id:   item.id,
+    type,
+    title:     item.title ?? item.name ?? '',
+    overview:  item.overview ?? '',
+    poster:    item.poster_path    ? `${TMDB_IMG}/w342${item.poster_path}` : '',
+    backdrop:  item.backdrop_path  ? `${TMDB_IMG}/w780${item.backdrop_path}` : '',
+    rating:    item.vote_average ?? 0,
+    votes:     item.vote_count ?? 0,
+    release:   item.release_date ?? item.first_air_date ?? '',
+    genres:    item.genre_ids ?? [],
+    popularity: item.popularity ?? 0,
+  })
+
+  save('tmdb-trending-movies.json',  ((trendingMovies as any)?.results ?? []).map((i: any) => shape(i, 'movie')))
+  save('tmdb-trending-tv.json',      ((trendingTV as any)?.results ?? []).map((i: any) => shape(i, 'tv')))
+  save('tmdb-popular-movies.json',   ((popularMovies as any)?.results ?? []).map((i: any) => shape(i, 'movie')))
+  save('tmdb-popular-tv.json',       ((popularTV as any)?.results ?? []).map((i: any) => shape(i, 'tv')))
+  save('tmdb-now-playing.json',      ((nowPlaying as any)?.results ?? []).map((i: any) => shape(i, 'movie')))
+  save('tmdb-on-the-air.json',       ((onTheAir as any)?.results ?? []).map((i: any) => shape(i, 'tv')))
+  save('tmdb-top-rated-movies.json', ((topRatedMovies as any)?.results ?? []).map((i: any) => shape(i, 'movie')))
+  save('tmdb-top-rated-tv.json',     ((topRatedTV as any)?.results ?? []).map((i: any) => shape(i, 'tv')))
+
+  // Enrich trakt history with TMDB poster/backdrop/overview
+  // Trakt returns ids.tmdb on each item — batch lookup the ones we have
+  await enrichTraktWithTMDB(h, base)
+}
+
+async function enrichTraktWithTMDB(h: Record<string,string>, base: string) {
+  for (const [traktFile, tmdbType, enrichedFile] of [
+    ['trakt-movies.json',   'movie', 'trakt-movies-enriched.json'],
+    ['trakt-shows.json',    'tv',    'trakt-shows-enriched.json'],
+    ['trakt-watchlist.json','movie', 'trakt-watchlist-enriched.json'],
+  ] as const) {
+    const items: any[] = (loadStale(traktFile) as any[]) ?? []
+    if (!items.length) { save(enrichedFile, []); continue }
+
+    // Deduplicate by tmdb id — Trakt history repeats items for multiple watches
+    const seen = new Set<number>()
+    const unique = items.filter(i => {
+      const id = i.movie?.ids?.tmdb ?? i.show?.ids?.tmdb
+      if (!id || seen.has(id)) return false
+      seen.add(id); return true
+    }).slice(0, 50) // cap at 50 to stay within rate limits
+
+    // Fetch TMDB details in parallel batches of 10
+    const enriched: any[] = []
+    for (let i = 0; i < unique.length; i += 10) {
+      const batch = unique.slice(i, i + 10)
+      const details = await Promise.all(batch.map(item => {
+        const media = item.movie ?? item.show
+        const tmdbId = media?.ids?.tmdb
+        if (!tmdbId) return Promise.resolve(null)
+        return safeFetch(`${base}/${tmdbType}/${tmdbId}?language=en-US&append_to_response=credits`, h)
+      }))
+      for (let j = 0; j < batch.length; j++) {
+        const item = batch[j]
+        const d = details[j] as any
+        const media = item.movie ?? item.show
+        enriched.push({
+          ...item,
+          _tmdb: d ? {
+            poster:    d.poster_path   ? `${TMDB_IMG}/w342${d.poster_path}` : '',
+            backdrop:  d.backdrop_path ? `${TMDB_IMG}/w780${d.backdrop_path}` : '',
+            overview:  d.overview ?? '',
+            rating:    d.vote_average ?? 0,
+            votes:     d.vote_count ?? 0,
+            runtime:   d.runtime ?? d.episode_run_time?.[0] ?? 0,
+            genres:    (d.genres ?? []).map((g: any) => g.name),
+            cast:      (d.credits?.cast ?? []).slice(0, 5).map((c: any) => ({ name: c.name, character: c.character, photo: c.profile_path ? `${TMDB_IMG}/w185${c.profile_path}` : '' })),
+            tagline:   d.tagline ?? '',
+            status:    d.status ?? '',
+            homepage:  d.homepage ?? '',
+          } : null,
+        })
+      }
+    }
+    save(enrichedFile, enriched)
+  }
 }
 
 async function fetchMAL() {
@@ -285,9 +398,8 @@ async function main() {
   console.log(`  TRAKT_CLIENT_ID:       ${TRAKT_ID ? '✓ set' : '✗ missing'}`)
   console.log(`  MAL_CLIENT_ID:         ${MAL_ID ? '✓ set' : '✗ missing'}`)
   console.log(`  LASTFM_API_KEY:        ${LASTFM_KEY ? '✓ set' : '✗ missing'}`)
-  console.log(`  LASTFM_USERNAME:       ${LASTFM_USER}`)
-  console.log(`  LISTENBRAINZ_USERNAME: ${LB_USER}`)
   console.log(`  HARDCOVER_TOKEN:       ${HC_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  TMDB_READ_ACCESS_TOKEN:${TMDB_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  DISCORD_USER_ID:       ${DISCORD_ID}`)
   console.log()
 
@@ -297,6 +409,7 @@ async function main() {
     fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message)),
     fetchMAL().then(() => console.log('✅ MAL done')).catch(e => console.error('❌ MAL', e.message)),
     fetchHardcover().then(() => console.log('✅ Hardcover done')).catch(e => console.error('❌ Hardcover', e.message)),
+    fetchTMDB().then(() => console.log('✅ TMDB done')).catch(e => console.error('❌ TMDB', e.message)),
     fetchGitHub().then(() => console.log('✅ GitHub done')).catch(e => console.error('❌ GitHub', e.message)),
     fetchNpm().then(() => console.log('✅ npm done')).catch(e => console.error('❌ npm', e.message)),
     fetchLanyard().then(() => console.log('✅ Lanyard done')).catch(e => console.error('❌ Lanyard', e.message)),

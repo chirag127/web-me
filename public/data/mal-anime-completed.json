@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "node": {
+      "id": 1535,
+      "title": "Death Note",
+      "main_picture": {
+        "medium": "https://cdn.myanimelist.net/images/anime/1079/138100.jpg",
+        "large": "https://cdn.myanimelist.net/images/anime/1079/138100l.jpg"
+      },
+      "mean": 8.62,
+      "num_episodes": 37
+    },
+    "list_status": {
+      "status": "completed",
+      "score": 10,
+      "num_episodes_watched": 37,
+      "is_rewatching": false,
+      "updated_at": "2023-08-21T10:24:55+00:00"
+    }
+  }
+]
