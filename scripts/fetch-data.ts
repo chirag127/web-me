@@ -18,6 +18,24 @@ import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DATA_DIR = join(__dirname, '..', 'public', 'data')
 
+// Load .env from workspace root (two levels up: me-site → webs → repos → ws)
+// Walks up until it finds a .env or hits the root
+;(function loadDotEnv() {
+  let dir = join(__dirname, '..')
+  for (let i = 0; i < 5; i++) {
+    const candidate = join(dir, '.env')
+    if (existsSync(candidate)) {
+      const lines = readFileSync(candidate, 'utf-8').split('\n')
+      for (const line of lines) {
+        const m = line.match(/^([A-Z0-9_]+)=(.*)$/)
+        if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^['"]|['"]$/g, '')
+      }
+      break
+    }
+    dir = join(dir, '..')
+  }
+})()
+
 // ---- env vars ---------------------------------------------------------------
 const TRAKT_ID     = process.env.TRAKT_CLIENT_ID     ?? ''
 const TRAKT_TOKEN  = process.env.TRAKT_ACCESS_TOKEN  ?? ''  // Bearer token for private data
@@ -31,6 +49,7 @@ const GR_ID       = process.env.GOODREADS_USER_ID  ?? '132482257'
 const DISCORD_ID  = process.env.DISCORD_USER_ID    ?? '799956529847205898'
 const HC_TOKEN    = process.env.HARDCOVER_TOKEN    ?? ''
 const HC_USER     = process.env.HARDCOVER_USERNAME ?? 'chirag127'
+const GH_USER     = process.env.GH_USERNAME        ?? 'chirag127'
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
