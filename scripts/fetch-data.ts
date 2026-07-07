@@ -51,6 +51,9 @@ const HC_TOKEN    = process.env.HARDCOVER_TOKEN    ?? ''
 const HC_USER     = process.env.HARDCOVER_USERNAME ?? 'chirag127'
 const GH_USER     = process.env.GH_USERNAME        ?? 'chirag127'
 const TMDB_TOKEN  = process.env.TMDB_READ_ACCESS_TOKEN ?? ''  // Bearer read-access token
+const HAB_USER    = process.env.HABITICA_USER_ID    ?? ''
+const HAB_TOKEN   = process.env.HABITICA_API_TOKEN  ?? ''
+const TOGGL_TOKEN = process.env.TOGGL_API_TOKEN     ?? ''
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -374,6 +377,77 @@ async function fetchLanyard() {
   save('lanyard.json', (data as any)?.success ? (data as any).data : null)
 }
 
+async function fetchHabitica() {
+  if (!HAB_USER || !HAB_TOKEN) { console.log('  ⚠ HABITICA_USER_ID or HABITICA_API_TOKEN not set — skipping Habitica'); return }
+  const h: Record<string,string> = {
+    'x-api-user': HAB_USER,
+    'x-api-key': HAB_TOKEN,
+    'x-client': `${HAB_USER}-me.oriz.in`,
+  }
+  const base = 'https://habitica.com/api/v3'
+
+  const [user, habits, dailies, todos] = await Promise.all([
+    safeFetch(`${base}/user`, h),
+    safeFetch(`${base}/tasks/user?type=habits`, h),
+    safeFetch(`${base}/tasks/user?type=dailys`, h),
+    safeFetch(`${base}/tasks/user?type=todos`, h),
+  ])
+
+  save('habitica-user.json',    (user as any)?.data ?? {})
+  save('habitica-habits.json',  (habits as any)?.data ?? [])
+  save('habitica-dailies.json', (dailies as any)?.data ?? [])
+  save('habitica-todos.json',   (todos as any)?.data ?? [])
+}
+
+async function fetchToggl() {
+  if (!TOGGL_TOKEN) { console.log('  ⚠ TOGGL_API_TOKEN not set — skipping Toggl'); return }
+  const auth = Buffer.from(`${TOGGL_TOKEN}:api_token`).toString('base64')
+  const h: Record<string,string> = { Authorization: `Basic ${auth}` }
+
+  const me = await safeFetch('https://api.track.toggl.com/api/v9/me', h)
+  if (!me) return
+
+  const workspaceId = (me as any).default_workspace_id
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+  const today = new Date().toISOString().split('T')[0]
+
+  const [recent, summary] = await Promise.all([
+    safeFetch(`https://api.track.toggl.com/api/v9/me/time_entries?start_date=${thirtyDaysAgo}`, h),
+    safePost(
+      `https://api.track.toggl.com/reports/api/v3/workspace/${workspaceId}/summary/time_entries`,
+      h,
+      { start_date: thirtyDaysAgo, end_date: today }
+    ),
+  ])
+
+  save('toggl-recent.json',  Array.isArray(recent) ? recent : [])
+  save('toggl-summary.json', summary ?? {})
+}
+
+async function fetchJikan() {
+  const user = process.env.MAL_USERNAME ?? 'chirag127'
+  const h: Record<string,string> = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+  }
+  const base = 'https://api.jikan.moe/v4'
+
+  // Jikan rate limit: 3 req/s — sequential with 400ms gap
+  const calls: Array<{ url: string; file: string }> = [
+    { url: `${base}/users/${user}/animelist?status=1`, file: 'jikan-anime-watching.json' },
+    { url: `${base}/users/${user}/animelist?status=2`, file: 'jikan-anime-completed.json' },
+    { url: `${base}/users/${user}/animelist?status=6`, file: 'jikan-anime-plan.json' },
+    { url: `${base}/users/${user}/mangalist?status=1`, file: 'jikan-manga-reading.json' },
+    { url: `${base}/users/${user}/mangalist?status=2`, file: 'jikan-manga-completed.json' },
+    { url: `${base}/users/${user}/mangalist?status=6`, file: 'jikan-manga-plan.json' },
+  ]
+
+  for (const { url, file } of calls) {
+    const data = await safeFetch(url, h)
+    save(file, (data as any)?.data ?? [])
+    await new Promise(r => setTimeout(r, 400))
+  }
+}
+
 async function fetchBlog() {
   try {
     const r = await fetch('https://blog.oriz.in/rss.xml', { signal: AbortSignal.timeout(10000) })
@@ -405,6 +479,9 @@ async function main() {
   console.log(`  HARDCOVER_TOKEN:       ${HC_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  TMDB_READ_ACCESS_TOKEN:${TMDB_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  DISCORD_USER_ID:       ${DISCORD_ID}`)
+  console.log(`  HABITICA_USER_ID:      ${HAB_USER ? '✓ set' : '✗ missing'}`)
+  console.log(`  HABITICA_API_TOKEN:    ${HAB_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  TOGGL_API_TOKEN:       ${TOGGL_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log()
 
   // Trakt must complete before TMDB enrichment reads its output files
@@ -417,6 +494,9 @@ async function main() {
     fetchNpm().then(() => console.log('✅ npm done')).catch(e => console.error('❌ npm', e.message)),
     fetchLanyard().then(() => console.log('✅ Lanyard done')).catch(e => console.error('❌ Lanyard', e.message)),
     fetchBlog().then(() => console.log('✅ Blog RSS done')).catch(e => console.error('❌ Blog', e.message)),
+    fetchHabitica().then(() => console.log('✅ Habitica done')).catch(e => console.error('❌ Habitica', e.message)),
+    fetchToggl().then(() => console.log('✅ Toggl done')).catch(e => console.error('❌ Toggl', e.message)),
+    fetchJikan().then(() => console.log('✅ Jikan done')).catch(e => console.error('❌ Jikan', e.message)),
   ])
   // Trakt first, then TMDB (enrichment reads trakt-*.json)
   await fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message))

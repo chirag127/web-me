@@ -1,5 +1,21 @@
 [
   {
+    "inserted_at": 1783438246,
+    "listened_at": 1783438003,
+    "recording_msid": "c1f89843-e041-4f7d-9f2f-cf5fac276aed",
+    "track_metadata": {
+      "additional_info": {
+        "recording_msid": "c1f89843-e041-4f7d-9f2f-cf5fac276aed",
+        "submission_client": "Pano Scrobbler",
+        "submission_client_version": "4.41"
+      },
+      "artist_name": "Lex Fridman Podcast",
+      "release_name": "Lex Fridman",
+      "track_name": "#333 – Andrej Karpathy: Tesla AI, Self-Driving, Optimus, Aliens, and AGI"
+    },
+    "user_name": "chirag127"
+  },
+  {
     "inserted_at": 1783430196,
     "listened_at": 1783429927,
     "recording_msid": "be832137-5b70-4c23-90e2-9a953af6b874",
@@ -3928,39 +3944,6 @@
         ]
       },
       "track_name": "Sad Forever"
-    },
-    "user_name": "chirag127"
-  },
-  {
-    "inserted_at": 1783226686,
-    "listened_at": 1783226624,
-    "recording_msid": "48fd212f-6ff5-4a83-ae30-411d1c8e4db4",
-    "track_metadata": {
-      "additional_info": {
-        "duration_ms": 184000,
-        "recording_msid": "48fd212f-6ff5-4a83-ae30-411d1c8e4db4",
-        "submission_client": "Pano Scrobbler",
-        "submission_client_version": "4.41"
-      },
-      "artist_name": "Omar Rudberg",
-      "mbid_mapping": {
-        "artist_mbids": [
-          "fb0c1ce1-a31b-4d30-aa68-0101213526c2"
-        ],
-        "artists": [
-          {
-            "artist_credit_name": "Omar Rudberg",
-            "artist_mbid": "fb0c1ce1-a31b-4d30-aa68-0101213526c2",
-            "join_phrase": ""
-          }
-        ],
-        "caa_id": 38025663120,
-        "caa_release_mbid": "99005c59-ff8e-4db6-92f6-ff07af13bfd1",
-        "recording_mbid": "2a2294a2-0bba-42ff-b950-ccf4a8bf3c99",
-        "recording_name": "Jag e nån annan",
-        "release_mbid": "99005c59-ff8e-4db6-92f6-ff07af13bfd1"
-      },
-      "track_name": "Jag e nån annan"
     },
     "user_name": "chirag127"
   }

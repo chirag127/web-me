@@ -7,7 +7,7 @@
     "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
     "poster": "https://image.tmdb.org/t/p/w342/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
-    "rating": 8.945,
+    "rating": 8.9,
     "votes": 1875,
     "release": "2026-05-01",
     "genres": [
@@ -27,7 +27,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
     "rating": 8.724,
-    "votes": 30701,
+    "votes": 30705,
     "release": "1994-09-23",
     "genres": [
       18,
@@ -44,7 +44,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
     "rating": 8.706,
-    "votes": 3326,
+    "votes": 3331,
     "release": "2026-04-22",
     "genres": [
       10402,
@@ -60,8 +60,8 @@
     "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
     "poster": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tSPT36ZKlP2WVHJLM4cQPLSzv3b.jpg",
-    "rating": 8.687,
-    "votes": 23120,
+    "rating": 8.7,
+    "votes": 23121,
     "release": "1972-03-14",
     "genres": [
       18,
@@ -77,8 +77,8 @@
     "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
     "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-    "rating": 8.677,
-    "votes": 5754,
+    "rating": 8.675,
+    "votes": 5765,
     "release": "2026-03-15",
     "genres": [
       878,
@@ -94,8 +94,8 @@
     "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
     "poster": "https://image.tmdb.org/t/p/w342/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
-    "rating": 8.571,
-    "votes": 14017,
+    "rating": 8.6,
+    "votes": 14018,
     "release": "1974-12-20",
     "genres": [
       18,
@@ -138,23 +138,6 @@
     "popularity": 24.515
   },
   {
-    "id": 1383731,
-    "tmdb_id": 1383731,
-    "type": "movie",
-    "title": "Protector",
-    "overview": "Nikki's life is shattered when her daughter is kidnapped. Thrust into the criminal underworld while hunted by cops and military, she must fight to rescue her child.",
-    "poster": "https://image.tmdb.org/t/p/w342/icOZpnGuH9YrEaW3wrw5GJaXGih.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/vpuPY4UziUCxv7gYYoaZQ3LX7to.jpg",
-    "rating": 8.54,
-    "votes": 409,
-    "release": "2026-02-20",
-    "genres": [
-      28,
-      53
-    ],
-    "popularity": 20.0528
-  },
-  {
     "id": 1330021,
     "tmdb_id": 1330021,
     "type": "movie",
@@ -172,6 +155,23 @@
     "popularity": 21.6649
   },
   {
+    "id": 1383731,
+    "tmdb_id": 1383731,
+    "type": "movie",
+    "title": "Protector",
+    "overview": "Nikki's life is shattered when her daughter is kidnapped. Thrust into the criminal underworld while hunted by cops and military, she must fight to rescue her child.",
+    "poster": "https://image.tmdb.org/t/p/w342/icOZpnGuH9YrEaW3wrw5GJaXGih.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/vpuPY4UziUCxv7gYYoaZQ3LX7to.jpg",
+    "rating": 8.54,
+    "votes": 409,
+    "release": "2026-02-20",
+    "genres": [
+      28,
+      53
+    ],
+    "popularity": 20.0528
+  },
+  {
     "id": 129,
     "tmdb_id": 129,
     "type": "movie",
@@ -179,8 +179,8 @@
     "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
     "poster": "https://image.tmdb.org/t/p/w342/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/dyJvKsNs2KP8qQnAXbRwDjblViy.jpg",
-    "rating": 8.534,
-    "votes": 18494,
+    "rating": 8.535,
+    "votes": 18495,
     "release": "2001-07-20",
     "genres": [
       16,
@@ -252,7 +252,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
     "rating": 8.5,
-    "votes": 26780,
+    "votes": 26781,
     "release": "2003-12-17",
     "genres": [
       12,
@@ -287,7 +287,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/wCuUKiRaz0wEESsYqmQy005xvTE.jpg",
     "rating": 8.492,
-    "votes": 20828,
+    "votes": 20829,
     "release": "2019-05-30",
     "genres": [
       35,
@@ -322,8 +322,8 @@
     "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
     "poster": "https://image.tmdb.org/t/p/w342/q719jXXEzOoYaps6babgKnONONX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/mMtUybQ6hL24FXo0F3Z4j2KG7kZ.jpg",
-    "rating": 8.5,
-    "votes": 12665,
+    "rating": 8.481,
+    "votes": 12666,
     "release": "2016-07-01",
     "genres": [
       16,
@@ -341,7 +341,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
     "rating": 8.48,
-    "votes": 40215,
+    "votes": 40218,
     "release": "2014-11-05",
     "genres": [
       12,
