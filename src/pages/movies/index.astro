@@ -1,0 +1,67 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getTraktMovies, getTraktStats } from '~/lib/api'
+
+const [movies, stats] = await Promise.all([getTraktMovies(40), getTraktStats()])
+
+const moviesWatched: number = stats?.movies?.plays ?? 0
+const minutesWatched: number = stats?.movies?.minutes ?? 0
+const hoursWatched: number = Math.round(minutesWatched / 60)
+
+const hasData = movies.length > 0
+---
+
+<Layout title="Movies" active="/movies/">
+  <div style="margin-bottom:2rem">
+    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--text);margin:0 0 0.25rem">Movies</h1>
+    <p style="color:var(--muted);font-size:0.9rem;margin:0">Recently watched via Trakt</p>
+  </div>
+
+  <!-- Stats row -->
+  {(moviesWatched > 0 || hoursWatched > 0) && (
+    <div style="display:flex;gap:1rem;margin-bottom:2rem;flex-wrap:wrap">
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.5rem;min-width:140px">
+        <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem">Movies Watched</div>
+        <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary)">{moviesWatched.toLocaleString()}</div>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.5rem;min-width:140px">
+        <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem">Hours Watched</div>
+        <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary)">{hoursWatched.toLocaleString()}</div>
+      </div>
+    </div>
+  )}
+
+  <!-- Section label -->
+  <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Recently Watched</div>
+
+  {hasData ? (
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem">
+      {movies.map((entry: any) => {
+        const movie = entry.movie ?? entry
+        const title: string = movie.title ?? 'Unknown'
+        const year: number | null = movie.year ?? null
+        return (
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color 120ms;cursor:default"
+               onmouseenter="this.style.borderColor='var(--primary)'"
+               onmouseleave="this.style.borderColor='var(--border)'">
+            <!-- Poster placeholder -->
+            <div style="background:var(--raised,#111);height:220px;display:flex;align-items:center;justify-content:center;font-size:2.5rem">
+              🎬
+            </div>
+            <!-- Info -->
+            <div style="padding:0.65rem 0.75rem">
+              <div style="font-size:0.85rem;font-weight:600;color:var(--text);line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">{title}</div>
+              {year && <div style="font-size:0.75rem;color:var(--muted);margin-top:0.25rem">{year}</div>}
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  ) : (
+    <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:3rem 2rem;text-align:center">
+      <div style="font-size:2rem;margin-bottom:0.75rem">🎬</div>
+      <div style="color:var(--muted);font-size:0.9rem;margin-bottom:0.5rem">No movie data available</div>
+      <div style="color:var(--faint);font-size:0.8rem">Set <code style="background:var(--raised,#111);padding:0.1em 0.4em;border-radius:4px;font-size:0.8em">TRAKT_CLIENT_ID</code> in your environment to load movies</div>
+    </div>
+  )}
+</Layout>

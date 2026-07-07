@@ -1,0 +1,155 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getMALManga } from '~/lib/api'
+
+const [reading, completed] = await Promise.all([
+  getMALManga('reading', 30),
+  getMALManga('completed', 40),
+])
+
+const totalReading   = reading.length
+const totalCompleted = completed.length
+const totalVolumes   = completed.reduce((s: number, m: any) => s + (m.list_status?.num_volumes_read ?? 0), 0)
+const totalChapters  = completed.reduce((s: number, m: any) => s + (m.list_status?.num_chapters_read ?? 0), 0)
+const avgScore       = (() => {
+  const scored = completed.filter((m: any) => m.list_status?.score > 0)
+  if (!scored.length) return 0
+  return (scored.reduce((s: number, m: any) => s + m.list_status.score, 0) / scored.length).toFixed(1)
+})()
+---
+
+<Layout title="Manga" active="/manga/">
+  <!-- Header -->
+  <div style="margin-bottom:2.5rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem">Library</p>
+    <h1 style="font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--text)">Manga</h1>
+    <p style="color:var(--muted);margin-top:0.4rem;font-size:0.95rem">MAL reading list — currently reading &amp; completed</p>
+  </div>
+
+  <!-- Stats -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem;margin-bottom:3rem">
+    {[
+      { label: 'Reading',   value: totalReading },
+      { label: 'Completed', value: totalCompleted },
+      { label: 'Volumes',   value: totalVolumes || '—' },
+      { label: 'Chapters',  value: totalChapters || '—' },
+      { label: 'Avg Score', value: avgScore || '—' },
+    ].map(s => (
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.25rem">
+        <div style="color:var(--primary);font-family:var(--font-display);font-size:1.5rem;font-weight:700">{s.value}</div>
+        <div style="color:var(--muted);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;margin-top:0.25rem">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Currently Reading -->
+  <section style="margin-bottom:3rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Currently Reading</p>
+    {reading.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2.5rem;text-align:center;color:var(--faint);font-size:0.9rem">
+        No manga in reading list
+      </div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:1rem">
+        {reading.map((m: any) => {
+          const title   = m.node?.title ?? 'Unknown'
+          const poster  = m.node?.main_picture?.medium ?? ''
+          const score   = m.list_status?.score
+          const ch      = m.list_status?.num_chapters_read
+          return (
+            <a
+              href={`https://myanimelist.net/manga/${m.node?.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={title}
+              style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color 180ms;text-decoration:none"
+              onmouseover="this.style.borderColor='var(--primary)'"
+              onmouseout="this.style.borderColor='var(--border)'"
+            >
+              {poster ? (
+                <img
+                  src={poster}
+                  alt={title}
+                  loading="lazy"
+                  style="width:100%;aspect-ratio:2/3;object-fit:cover;display:block"
+                />
+              ) : (
+                <div style="width:100%;aspect-ratio:2/3;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:2rem">
+                  📖
+                </div>
+              )}
+              <div style="padding:0.5rem 0.6rem">
+                <div style="font-size:0.75rem;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title={title}>
+                  {title}
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.2rem">
+                  {score && score > 0 ? (
+                    <span style="font-size:0.65rem;color:var(--primary)">★ {score}</span>
+                  ) : <span />}
+                  {ch && ch > 0 ? (
+                    <span style="font-size:0.65rem;color:var(--faint)">ch {ch}</span>
+                  ) : null}
+                </div>
+              </div>
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+
+  <!-- Completed -->
+  <section>
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Completed</p>
+    {completed.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2.5rem;text-align:center;color:var(--faint);font-size:0.9rem">
+        No completed manga
+      </div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:1rem">
+        {completed.map((m: any) => {
+          const title  = m.node?.title ?? 'Unknown'
+          const poster = m.node?.main_picture?.medium ?? ''
+          const score  = m.list_status?.score
+          const mean   = m.node?.mean
+          return (
+            <a
+              href={`https://myanimelist.net/manga/${m.node?.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={title}
+              style="display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color 180ms;text-decoration:none"
+              onmouseover="this.style.borderColor='var(--primary)'"
+              onmouseout="this.style.borderColor='var(--border)'"
+            >
+              {poster ? (
+                <img
+                  src={poster}
+                  alt={title}
+                  loading="lazy"
+                  style="width:100%;aspect-ratio:2/3;object-fit:cover;display:block"
+                />
+              ) : (
+                <div style="width:100%;aspect-ratio:2/3;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:2rem">
+                  📚
+                </div>
+              )}
+              <div style="padding:0.5rem 0.6rem">
+                <div style="font-size:0.75rem;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title={title}>
+                  {title}
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.2rem">
+                  {score && score > 0 ? (
+                    <span style="font-size:0.65rem;color:var(--primary)">★ {score}</span>
+                  ) : mean ? (
+                    <span style="font-size:0.65rem;color:var(--faint)">{Number(mean).toFixed(1)}</span>
+                  ) : <span />}
+                </div>
+              </div>
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+</Layout>

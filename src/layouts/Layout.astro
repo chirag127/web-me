@@ -1,0 +1,68 @@
+---
+import '../styles/global.css'
+interface Props {
+  title: string
+  description?: string
+  active?: string
+}
+const { title, description = 'Chirag Singhal — personal OS', active = '' } = Astro.props
+const NAV = [
+  { href: '/',           icon: '◉', label: 'Home' },
+  { href: '/music/',     icon: '♫', label: 'Music' },
+  { href: '/movies/',    icon: '▶', label: 'Movies' },
+  { href: '/tv/',        icon: '⊡', label: 'TV' },
+  { href: '/anime/',     icon: '⊛', label: 'Anime' },
+  { href: '/manga/',     icon: '⊕', label: 'Manga' },
+  { href: '/books/',     icon: '⊞', label: 'Books' },
+  { href: '/activity/',  icon: '⊘', label: 'Activity' },
+  { href: '/about/',     icon: '◎', label: 'About' },
+  { href: '/work/',      icon: '◈', label: 'Work' },
+  { href: '/writing/',   icon: '◧', label: 'Writing' },
+]
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title} · chirag127</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={`https://me.oriz.in${Astro.url.pathname}`} />
+  <link rel="icon" href="https://github.com/chirag127.png?size=32" type="image/png" />
+</head>
+<body class="flex min-h-dvh" style="background:var(--bg)">
+  <!-- Sidebar -->
+  <nav class="sidebar" aria-label="Navigation" style="position:fixed;top:0;left:0;width:var(--sidebar-w);height:100dvh;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;padding:1.25rem 0.75rem 1rem;gap:2px;overflow-y:auto;z-index:100">
+    <a href="/" style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding:0 0.5rem 1rem;border-bottom:1px solid var(--border);margin-bottom:0.5rem;display:block">CS</a>
+    <ul style="list-style:none;flex:1;display:flex;flex-direction:column;gap:2px">
+      {NAV.map(n => (
+        <li><a href={n.href} style={`display:flex;align-items:center;gap:0.6rem;padding:0.5rem 0.6rem;border-radius:6px;font-size:0.875rem;font-weight:500;color:${active===n.href?'var(--primary)':'var(--muted)'};background:${active===n.href?'var(--primary-dim)':'transparent'};transition:all 120ms`}>
+          <span style="width:1.1rem;text-align:center;font-size:0.95rem">{n.icon}</span>
+          {n.label}
+        </a></li>
+      ))}
+    </ul>
+    <a href="https://oriz.in" style="font-size:0.75rem;color:var(--faint);padding:0.5rem 0.6rem;border-top:1px solid var(--border);margin-top:auto">← oriz.in</a>
+  </nav>
+  <!-- Main -->
+  <main style="margin-left:var(--sidebar-w);flex:1;padding:2rem 2.5rem 5rem;max-width:1100px">
+    <slot />
+  </main>
+  <!-- Bottom tabs (mobile) -->
+  <nav class="tabs" aria-label="Mobile nav" style="display:none;position:fixed;bottom:0;left:0;right:0;height:var(--tabs-h);background:var(--surface);border-top:1px solid var(--border);z-index:100;overflow-x:auto">
+    {NAV.slice(0,7).map(n => (
+      <a href={n.href} style={`display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;min-width:48px;padding:6px 2px;color:${active===n.href?'var(--primary)':'var(--faint)'};font-size:0.58rem;text-transform:uppercase;letter-spacing:0.04em;gap:2px`}>
+        <span style="font-size:1.1rem">{n.icon}</span>
+        {n.label}
+      </a>
+    ))}
+  </nav>
+</body>
+</html>
+<style>
+@media (max-width: 768px) {
+  .sidebar { display: none !important; }
+  .tabs { display: flex !important; }
+  main { margin-left: 0 !important; padding: 1.25rem 1rem 5rem !important; }
+}
+</style>

@@ -1,0 +1,128 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmRecent, getTraktMovies, getTraktShows } from '~/lib/api'
+
+const [lfm, movies, shows] = await Promise.all([
+  getLastfmRecent(10),
+  getTraktMovies(10),
+  getTraktShows(10),
+])
+
+type FeedItem = {
+  type: 'music' | 'movie' | 'tv'
+  icon: string
+  title: string
+  subtitle: string
+  ts: number
+}
+
+const feed: FeedItem[] = []
+
+for (const t of lfm) {
+  const uts = t['@attr']?.nowplaying
+    ? Date.now()
+    : (t.date?.uts ? Number(t.date.uts) * 1000 : 0)
+  feed.push({
+    type: 'music',
+    icon: '♫',
+    title: t.name ?? 'Unknown track',
+    subtitle: t.artist?.['#text'] ?? t.artist ?? '',
+    ts: uts,
+  })
+}
+
+for (const m of movies) {
+  const ts = m.watched_at ? new Date(m.watched_at).getTime() : 0
+  feed.push({
+    type: 'movie',
+    icon: '▶',
+    title: m.movie?.title ?? 'Unknown movie',
+    subtitle: m.movie?.year ? String(m.movie.year) : '',
+    ts,
+  })
+}
+
+for (const s of shows) {
+  const ts = s.watched_at ? new Date(s.watched_at).getTime() : 0
+  feed.push({
+    type: 'tv',
+    icon: '⊡',
+    title: s.show?.title ?? 'Unknown show',
+    subtitle: s.episode?.title
+      ? `S${String(s.episode.season).padStart(2,'0')}E${String(s.episode.number).padStart(2,'0')} · ${s.episode.title}`
+      : s.episode
+        ? `S${String(s.episode.season).padStart(2,'0')}E${String(s.episode.number).padStart(2,'0')}`
+        : '',
+    ts,
+  })
+}
+
+feed.sort((a, b) => b.ts - a.ts)
+
+function relTime(ts: number): string {
+  if (!ts) return 'sometime'
+  const diff = Date.now() - ts
+  const s = Math.floor(diff / 1000)
+  if (s < 60) return 'just now'
+  const m = Math.floor(s / 60)
+  if (m < 60) return `${m}m ago`
+  const h = Math.floor(m / 60)
+  if (h < 24) return `${h}h ago`
+  const d = Math.floor(h / 24)
+  if (d < 7) return `${d}d ago`
+  return new Date(ts).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+}
+
+const TYPE_COLOR: Record<string, string> = {
+  music: '#2dd4bf',
+  movie: '#a78bfa',
+  tv:    '#34d399',
+}
+---
+
+<Layout title="Activity" active="/activity/">
+  <header style="margin-bottom:2rem">
+    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:800;margin-bottom:0.25rem">Activity</h1>
+    <p style="color:var(--muted);font-size:0.95rem">Recent listening, watching — live feed.</p>
+  </header>
+
+  <!-- Legend -->
+  <div style="display:flex;gap:1.25rem;margin-bottom:1.5rem;flex-wrap:wrap">
+    {(['music','movie','tv'] as const).map(type => (
+      <span style={`display:flex;align-items:center;gap:0.4rem;font-size:0.8rem;color:${TYPE_COLOR[type]}`}>
+        <span style={`width:8px;height:8px;border-radius:50%;background:${TYPE_COLOR[type]};flex-shrink:0`}></span>
+        {type === 'music' ? '♫ Music' : type === 'movie' ? '▶ Movies' : '⊡ TV'}
+      </span>
+    ))}
+  </div>
+
+  {feed.length === 0 ? (
+    <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:3rem;text-align:center;color:var(--faint)">
+      No recent activity found.
+    </div>
+  ) : (
+    <ol style="list-style:none;display:flex;flex-direction:column;gap:0.5rem">
+      {feed.map((item) => (
+        <li style={`display:flex;align-items:center;gap:1rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem 1rem;transition:border-color 150ms`}
+            onmouseenter="this.style.borderColor='var(--primary)'"
+            onmouseleave="this.style.borderColor='var(--border)'">
+          <!-- Icon -->
+          <span style={`font-size:1.1rem;width:2rem;height:2rem;display:flex;align-items:center;justify-content:center;border-radius:6px;background:${TYPE_COLOR[item.type]}1a;color:${TYPE_COLOR[item.type]};flex-shrink:0`}>
+            {item.icon}
+          </span>
+          <!-- Text -->
+          <div style="flex:1;min-width:0">
+            <div style="font-size:0.9rem;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{item.title}</div>
+            {item.subtitle && (
+              <div style="font-size:0.78rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{item.subtitle}</div>
+            )}
+          </div>
+          <!-- Timestamp -->
+          <time style={`font-size:0.75rem;color:${TYPE_COLOR[item.type]};flex-shrink:0;font-family:var(--font-mono)`} datetime={new Date(item.ts).toISOString()}>
+            {relTime(item.ts)}
+          </time>
+        </li>
+      ))}
+    </ol>
+  )}
+</Layout>

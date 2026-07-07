@@ -1,0 +1,176 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getGitHubStats, getGitHubRepos, getNpmPackages } from '~/lib/api'
+
+const [ghStats, repos, npmRaw] = await Promise.all([
+  getGitHubStats(),
+  getGitHubRepos(20),
+  getNpmPackages(),
+])
+
+// Total stars across top repos
+const totalStars = (repos as any[]).reduce((sum: number, r: any) => sum + (r.stargazers_count ?? 0), 0)
+
+// Language frequency map
+const langMap: Record<string, number> = {}
+for (const r of repos as any[]) {
+  if (r.language) langMap[r.language] = (langMap[r.language] ?? 0) + 1
+}
+const topLangs = Object.entries(langMap)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 5)
+  .map(([lang]) => lang)
+
+// Filter npm packages to @chirag127/* scope
+const npmPkgs = (npmRaw as any[]).filter((p: any) =>
+  (p.package?.name ?? '').startsWith('@chirag127/')
+)
+
+const langColors: Record<string, string> = {
+  TypeScript: '#3178c6',
+  JavaScript: '#f7df1e',
+  Python: '#3572A5',
+  Rust: '#dea584',
+  HTML: '#e34c26',
+  CSS: '#563d7c',
+  Astro: '#ff5a03',
+  Shell: '#89e051',
+  Go: '#00ADD8',
+  Java: '#b07219',
+}
+
+const skills = [
+  { name: 'TypeScript', icon: '⬡' },
+  { name: 'Python',     icon: '🐍' },
+  { name: 'Rust',       icon: '⚙' },
+  { name: 'Astro',      icon: '🚀' },
+  { name: 'React',      icon: '⚛' },
+  { name: 'pnpm',       icon: '📦' },
+  { name: 'Docker',     icon: '🐳' },
+  { name: 'MCP',        icon: '🔌' },
+]
+---
+
+<Layout title="Work" description="GitHub stats, open-source repos, npm packages, and engineering role." active="/work/">
+
+  <!-- Role -->
+  <section style="margin-bottom:2.5rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem">Current Role</p>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1.25rem">
+      <div style="width:44px;height:44px;border-radius:8px;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0">◈</div>
+      <div>
+        <p style="font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:var(--text);margin:0 0 0.2rem">Software Engineering Specialist</p>
+        <p style="font-size:0.85rem;color:var(--muted);margin:0">SAP · Full-time</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Stats -->
+  <section style="margin-bottom:2.5rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem">GitHub Stats</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:0.75rem">
+      {[
+        { label: 'Public Repos',  value: (ghStats as any).public_repos  ?? '—' },
+        { label: 'Followers',     value: (ghStats as any).followers      ?? '—' },
+        { label: 'Total Stars',   value: totalStars || '—' },
+        { label: 'Top Languages', value: topLangs.join(' · ') || '—', wide: true },
+      ].map(s => (
+        <div style={`background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;${s.wide ? 'grid-column:span 2;' : ''}`}>
+          <p style="color:var(--primary);font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin:0 0 0.25rem;line-height:1">{s.value}</p>
+          <p style="color:var(--muted);font-size:0.75rem;margin:0">{s.label}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Top Repos -->
+  <section style="margin-bottom:2.5rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem">Top Repositories</p>
+    {(repos as any[]).length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2.5rem;text-align:center;color:var(--faint);font-size:0.875rem">No repos found</div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.75rem">
+        {(repos as any[]).map((r: any) => (
+          <a
+            href={r.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;display:block;text-decoration:none;transition:border-color 150ms"
+            onmouseover="this.style.borderColor='var(--primary)'"
+            onmouseout="this.style.borderColor='var(--border)'"
+          >
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.4rem;gap:0.5rem">
+              <p style="font-family:var(--font-display);font-size:0.9rem;font-weight:600;color:var(--text);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{r.name}</p>
+              {r.stargazers_count > 0 && (
+                <span style="display:flex;align-items:center;gap:0.25rem;color:var(--muted);font-size:0.75rem;flex-shrink:0">
+                  ★ {r.stargazers_count}
+                </span>
+              )}
+            </div>
+            <p style="color:var(--muted);font-size:0.8rem;margin:0 0 0.6rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.2em">
+              {r.description ?? 'No description'}
+            </p>
+            {r.language && (
+              <span style={`display:inline-block;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:600;color:#fff;background:${langColors[r.language] ?? '#555'}`}>
+                {r.language}
+              </span>
+            )}
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <!-- npm Packages -->
+  <section style="margin-bottom:2.5rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem">npm Packages · @chirag127</p>
+    {npmPkgs.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2.5rem;text-align:center;color:var(--faint);font-size:0.875rem">No scoped packages found</div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.75rem">
+        {npmPkgs.map((p: any) => {
+          const pkg = p.package ?? {}
+          return (
+            <a
+              href={`https://www.npmjs.com/package/${pkg.name}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;display:block;text-decoration:none;transition:border-color 150ms"
+              onmouseover="this.style.borderColor='var(--primary)'"
+              onmouseout="this.style.borderColor='var(--border)'"
+            >
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;margin-bottom:0.35rem">
+                <p style="font-family:var(--font-display);font-size:0.875rem;font-weight:600;color:var(--text);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{pkg.name}</p>
+                <span style="color:var(--primary);font-size:0.75rem;font-family:var(--font-display);font-weight:700;flex-shrink:0">v{pkg.version ?? '?'}</span>
+              </div>
+              <p style="color:var(--muted);font-size:0.78rem;margin:0 0 0.5rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
+                {pkg.description ?? 'No description'}
+              </p>
+              {pkg.keywords?.length > 0 && (
+                <div style="display:flex;flex-wrap:wrap;gap:0.3rem">
+                  {(pkg.keywords as string[]).slice(0, 3).map((kw: string) => (
+                    <span style="padding:0.1rem 0.4rem;border-radius:4px;font-size:0.65rem;background:var(--raised);color:var(--muted)">{kw}</span>
+                  ))}
+                </div>
+              )}
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem">Skills &amp; Tools</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:0.6rem">
+      {skills.map(s => (
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem 1rem;display:flex;align-items:center;gap:0.6rem">
+          <span style="font-size:1.1rem">{s.icon}</span>
+          <span style="font-size:0.85rem;font-weight:500;color:var(--text)">{s.name}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+</Layout>

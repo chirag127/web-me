@@ -1,0 +1,129 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmRecent, getLastfmTopArtists, getLastfmUserInfo } from '~/lib/api'
+
+const [recent, topArtists, userInfo] = await Promise.all([
+  getLastfmRecent(20),
+  getLastfmTopArtists('1month', 16),
+  getLastfmUserInfo(),
+])
+
+const nowPlaying = recent.find((t: any) => t['@attr']?.nowplaying === 'true')
+const totalScrobbles = userInfo.playcount ? Number(userInfo.playcount).toLocaleString() : '—'
+const topArtist = topArtists[0]?.name ?? '—'
+const topTrack = recent[0] && !recent[0]['@attr']?.nowplaying
+  ? recent[0].name
+  : recent[1]?.name ?? '—'
+
+function timeAgo(uts: string | undefined): string {
+  if (!uts) return ''
+  const diff = Math.floor(Date.now() / 1000) - Number(uts)
+  if (diff < 60) return 'just now'
+  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`
+  return `${Math.floor(diff / 86400)}d ago`
+}
+---
+
+<Layout title="Music" active="/music/">
+  <!-- Header -->
+  <div style="margin-bottom:2rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.35rem">Music</p>
+    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--fg);line-height:1.1;margin-bottom:0.4rem">Last.fm scrobbles</h1>
+    <p style="color:var(--muted);font-size:0.9rem">
+      Tracked via <a href={`https://www.last.fm/user/${userInfo.name ?? 'lastfmwhy'}`} target="_blank" rel="noopener" style="color:var(--primary);text-decoration:none">last.fm/user/{userInfo.name ?? 'lastfmwhy'}</a>
+    </p>
+  </div>
+
+  <!-- Stats row -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem">
+    {([
+      { label: 'Total Scrobbles', value: totalScrobbles },
+      { label: 'Top Artist (Month)', value: topArtist },
+      { label: 'Last Track', value: topTrack },
+    ] as { label: string; value: string }[]).map(s => (
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.25rem">
+        <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem">{s.label}</p>
+        <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{s.value}</p>
+      </div>
+    ))}
+  </div>
+
+  <!-- Now playing strip -->
+  {nowPlaying && (
+    <div style="background:var(--surface);border:1px solid var(--primary);border-radius:var(--radius);padding:0.9rem 1.25rem;margin-bottom:2rem;display:flex;align-items:center;gap:1rem">
+      <span style="width:8px;height:8px;border-radius:50%;background:var(--primary);flex-shrink:0;animation:pulse 1.5s ease-in-out infinite"></span>
+      <div style="min-width:0">
+        <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.15rem">Now Playing</p>
+        <p style="color:var(--fg);font-size:0.95rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{nowPlaying.name}</p>
+        <p style="color:var(--muted);font-size:0.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{nowPlaying.artist?.['#text']}</p>
+      </div>
+      {nowPlaying.image?.[2]?.['#text'] && (
+        <img src={nowPlaying.image[2]['#text']} alt="" width="48" height="48" style="border-radius:6px;margin-left:auto;flex-shrink:0;object-fit:cover" loading="lazy" />
+      )}
+    </div>
+  )}
+
+  <!-- Top Artists grid -->
+  <section style="margin-bottom:2.5rem">
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Top Artists — This Month</p>
+    {topArtists.length > 0 ? (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:0.85rem">
+        {topArtists.map((a: any) => (
+          <a href={a.url ?? `https://www.last.fm/music/${encodeURIComponent(a.name)}`} target="_blank" rel="noopener"
+            style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:border-color 120ms;display:flex;flex-direction:column"
+            onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+            <div style="aspect-ratio:1;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:2rem">
+              {a.image?.[2]?.['#text']
+                ? <img src={a.image[2]['#text']} alt={a.name} style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+                : '🎵'}
+            </div>
+            <div style="padding:0.6rem 0.7rem">
+              <p style="color:var(--fg);font-size:0.8rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{a.name}</p>
+              <p style="color:var(--primary);font-size:0.7rem;margin-top:0.15rem">{Number(a.playcount).toLocaleString()} plays</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint)">No top artist data</div>
+    )}
+  </section>
+
+  <!-- Recent scrobbles -->
+  <section>
+    <p style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Recent Scrobbles</p>
+    {recent.length > 0 ? (
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+        {recent.map((t: any, i: number) => {
+          const isNow = t['@attr']?.nowplaying === 'true'
+          return (
+            <div style={`display:flex;align-items:center;gap:0.85rem;padding:0.7rem 1rem;${i > 0 ? 'border-top:1px solid var(--border)' : ''}`}>
+              <div style="width:36px;height:36px;border-radius:4px;background:var(--raised);flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:1.1rem">
+                {t.image?.[1]?.['#text']
+                  ? <img src={t.image[1]['#text']} alt="" width="36" height="36" style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+                  : '♫'}
+              </div>
+              <div style="min-width:0;flex:1">
+                <p style="color:var(--fg);font-size:0.875rem;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{t.name}</p>
+                <p style="color:var(--muted);font-size:0.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{t.artist?.['#text']}</p>
+              </div>
+              <span style={`font-size:0.72rem;flex-shrink:0;${isNow ? 'color:var(--primary)' : 'color:var(--faint)'}`}>
+                {isNow ? '▶ now' : timeAgo(t.date?.uts)}
+              </span>
+            </div>
+          )
+        })}
+      </div>
+    ) : (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint)">No recent scrobbles</div>
+    )}
+  </section>
+</Layout>
+
+<style>
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+</style>

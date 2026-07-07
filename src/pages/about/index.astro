@@ -1,0 +1,121 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const principles = [
+  { icon: '⊡', label: 'Static first',        desc: 'No server runtime in the hot path. Pre-render everything that can be pre-rendered.' },
+  { icon: '⊘', label: 'Privacy by default',  desc: 'No login, no tracking pixels, no third-party cookies. Analytics self-hosted or aggregated.' },
+  { icon: '⊕', label: 'Free no paywall',     desc: 'Every project ships free-tier-only. No card on file, no paid plans, no freemium bait.' },
+  { icon: '◎', label: 'Owned not rented',    desc: 'Source on GitHub, deploys on open infrastructure. Vendor lock-in is a liability.' },
+  { icon: '◉', label: 'Small surface',       desc: 'Fewer features, fewer bugs, fewer attack vectors. Scope-cut ruthlessly.' },
+  { icon: '⊞', label: 'Long horizon',        desc: 'Ship things meant to still work in 10 years. Static HTML ages better than any framework.' },
+  { icon: '◧', label: 'Quiet',               desc: 'No growth hacks, no virality loops, no engagement metrics. Build; let the work speak.' },
+]
+
+const gear = [
+  { label: 'Editor',     value: 'Claude Code' },
+  { label: 'Languages',  value: 'TypeScript / Python / Rust' },
+  { label: 'Framework',  value: 'Astro 6 + Tailwind' },
+  { label: 'Deploy',     value: 'Cloudflare Pages + GitHub Pages' },
+  { label: 'AI routing', value: 'Corp Bedrock via hai · Free providers via OmniRoute' },
+  { label: 'Secrets',    value: 'sops + age' },
+  { label: 'Terminal',   value: 'Windows Terminal · PowerShell 7 · Bash' },
+  { label: 'Version control', value: 'Git · GitHub (chirag127)' },
+]
+
+const career = [
+  {
+    role: 'Software Engineering Specialist',
+    company: 'SAP',
+    location: 'Bhubaneswar, India',
+    period: '2022 – present',
+    current: true,
+    notes: 'Enterprise product development; full-stack across SAP stack + web.',
+  },
+  {
+    role: 'Software Engineer',
+    company: 'Tata Consultancy Services (TCS)',
+    location: 'India',
+    period: '2019 – 2022',
+    current: false,
+    notes: 'Client delivery; backend + integration work.',
+  },
+]
+---
+<Layout title="About" description="Chirag Singhal — software engineer, builder of chirag127 projects." active="/about/">
+
+  <!-- Header -->
+  <header style="margin-bottom:2.5rem">
+    <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem">About</p>
+    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--text);margin:0 0 1rem">Chirag Singhal</h1>
+    <p style="color:var(--muted);line-height:1.7;max-width:600px;margin:0">
+      I'm a software engineer at SAP in Bhubaneswar, India. I build the <strong style="color:var(--text)">chirag127 family</strong>: 20+ free static sites, apps, CLIs, and MCP servers. Free forever, no card on file, one commit at a time.
+    </p>
+  </header>
+
+  <!-- Two-column grid -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem">
+
+    <!-- Career -->
+    <section style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
+      <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1.25rem">Career</p>
+      <div style="display:flex;flex-direction:column;gap:1.25rem">
+        {career.map(c => (
+          <div style={`padding-left:1rem;border-left:2px solid ${c.current ? 'var(--primary)' : 'var(--border)'}`}>
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.25rem">
+              <span style="font-size:0.9rem;font-weight:600;color:var(--text)">{c.role}</span>
+              {c.current && <span style="font-size:0.6rem;background:var(--primary-dim);color:var(--primary);padding:1px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:0.06em">current</span>}
+            </div>
+            <div style="font-size:0.8rem;color:var(--primary);font-weight:500;margin-bottom:0.2rem">{c.company} · {c.location}</div>
+            <div style="font-size:0.75rem;color:var(--faint);margin-bottom:0.4rem">{c.period}</div>
+            <div style="font-size:0.8rem;color:var(--muted)">{c.notes}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Gear / Uses -->
+    <section style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
+      <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1.25rem">Uses / Gear</p>
+      <table style="width:100%;border-collapse:collapse">
+        {gear.map((g, i) => (
+          <tr style={`border-bottom:${i < gear.length - 1 ? '1px solid var(--border)' : 'none'}`}>
+            <td style="font-size:0.75rem;color:var(--faint);padding:0.55rem 0.75rem 0.55rem 0;white-space:nowrap;vertical-align:top">{g.label}</td>
+            <td style="font-size:0.8rem;color:var(--text);padding:0.55rem 0;vertical-align:top">{g.value}</td>
+          </tr>
+        ))}
+      </table>
+    </section>
+
+  </div>
+
+  <!-- Principles -->
+  <section style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
+    <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1.5rem">Seven principles</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">
+      {principles.map(p => (
+        <div style="display:flex;gap:0.75rem;align-items:flex-start">
+          <span style="font-size:1.1rem;color:var(--primary);margin-top:0.05rem;flex-shrink:0">{p.icon}</span>
+          <div>
+            <div style="font-size:0.85rem;font-weight:600;color:var(--text);margin-bottom:0.2rem">{p.label}</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.5">{p.desc}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap">
+    {[
+      { href: 'https://github.com/chirag127',          label: 'GitHub ↗' },
+      { href: 'https://oriz.in',                       label: 'oriz.in ↗' },
+      { href: 'mailto:chirag127@gmail.com',            label: 'Email ↗' },
+    ].map(l => (
+      <a href={l.href} target="_blank" rel="noopener noreferrer"
+         style="font-size:0.8rem;color:var(--primary);border:1px solid var(--border);border-radius:6px;padding:0.4rem 0.9rem;transition:border-color 120ms"
+         onmouseover="this.style.borderColor='var(--primary)'"
+         onmouseout="this.style.borderColor='var(--border)'">{l.label}</a>
+    ))}
+  </section>
+
+</Layout>

@@ -1,0 +1,229 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getLanyard, getLastfmRecent, getTraktStats, getMALAnime, getGitHubStats, getGitHubRepos, getLastfmUserInfo } from '~/lib/api'
+
+const [lanyard, lfRecent, traktStats, animeWatching, ghStats, ghRepos, lfUser] = await Promise.all([
+  getLanyard(),
+  getLastfmRecent(1),
+  getTraktStats(),
+  getMALAnime('watching', 3),
+  getGitHubStats(),
+  getGitHubRepos(100),
+  getLastfmUserInfo(),
+])
+
+// Discord status
+const discordStatus = lanyard?.discord_status ?? 'offline'
+const statusColors: Record<string, string> = {
+  online: '#22c55e',
+  idle: '#f59e0b',
+  dnd: '#ef4444',
+  offline: '#6b7280',
+}
+const statusColor = statusColors[discordStatus] ?? statusColors.offline
+
+const spotifyActivity = lanyard?.listening_to_spotify
+  ? { type: 'spotify', track: lanyard.spotify?.song, artist: lanyard.spotify?.artist, albumArt: lanyard.spotify?.album_art_url }
+  : null
+const gameActivity = lanyard?.activities?.find((a: any) => a.type === 0)
+  ? { type: 'game', name: lanyard.activities.find((a: any) => a.type === 0)?.name }
+  : null
+const discordActivity = spotifyActivity ?? gameActivity
+
+// Last.fm now playing
+const nowPlaying = lfRecent[0]?.['@attr']?.nowplaying === 'true' ? lfRecent[0] : null
+const npTrack = nowPlaying?.name ?? ''
+const npArtist = nowPlaying?.artist?.['#text'] ?? ''
+const npImage = nowPlaying?.image?.find((i: any) => i.size === 'medium')?.['#text'] ?? ''
+
+// Stats
+const scrobbles = Number(lfUser?.playcount ?? 0)
+const moviesWatched = (traktStats as any)?.movies?.watched ?? 0
+const showsWatched = (traktStats as any)?.shows?.watched ?? 0
+const ghStars = Array.isArray(ghRepos)
+  ? ghRepos.reduce((sum: number, r: any) => sum + (r.stargazers_count ?? 0), 0)
+  : 0
+
+// NAV sections for quick nav
+const NAV_SECTIONS = [
+  { href: '/music/',    icon: '♫', label: 'Music' },
+  { href: '/movies/',   icon: '▶', label: 'Movies' },
+  { href: '/tv/',       icon: '⊡', label: 'TV' },
+  { href: '/anime/',    icon: '⊛', label: 'Anime' },
+  { href: '/manga/',    icon: '⊕', label: 'Manga' },
+  { href: '/books/',    icon: '⊞', label: 'Books' },
+  { href: '/activity/', icon: '⊘', label: 'Activity' },
+  { href: '/about/',    icon: '◎', label: 'About' },
+  { href: '/work/',     icon: '◈', label: 'Work' },
+  { href: '/writing/',  icon: '◧', label: 'Writing' },
+]
+---
+
+<Layout title="Home" description="Chirag Singhal — personal OS" active="/">
+  <!-- Hero -->
+  <section style="display:flex;align-items:center;gap:1.25rem;padding-bottom:2rem;border-bottom:1px solid var(--border);margin-bottom:2rem">
+    <img
+      src="https://github.com/chirag127.png?size=80"
+      alt="Chirag Singhal"
+      width="64"
+      height="64"
+      style="border-radius:50%;border:2px solid var(--border-strong);flex-shrink:0"
+    />
+    <div>
+      <h1 style="font-family:var(--font-display);font-size:1.75rem;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2">
+        Chirag Singhal
+      </h1>
+      <p style="color:var(--muted);font-size:0.9rem;margin-top:0.25rem">
+        Software engineer · <span style="color:var(--primary)">chirag127</span> · Bhubaneswar
+      </p>
+    </div>
+  </section>
+
+  <!-- Discord status strip -->
+  {lanyard && (
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem 1rem;display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem">
+      <span style={`width:10px;height:10px;border-radius:50%;background:${statusColor};flex-shrink:0`}></span>
+      {discordActivity?.type === 'spotify' && discordActivity.track ? (
+        <div style="display:flex;align-items:center;gap:0.75rem;flex:1;min-width:0">
+          {discordActivity.albumArt && (
+            <img src={discordActivity.albumArt} alt="album art" width="36" height="36" style="border-radius:4px;flex-shrink:0" />
+          )}
+          <span style="font-size:0.875rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">
+            Listening to <strong>{discordActivity.track}</strong> by {discordActivity.artist} on Spotify
+          </span>
+        </div>
+      ) : discordActivity?.type === 'game' ? (
+        <span style="font-size:0.875rem;color:var(--text)">Playing <strong>{discordActivity.name}</strong> on Discord</span>
+      ) : (
+        <span style="font-size:0.875rem;color:var(--muted)">
+          {discordStatus === 'offline' ? 'Offline' : discordStatus === 'idle' ? 'Away' : discordStatus === 'dnd' ? 'Do not disturb' : 'Online'} on Discord
+        </span>
+      )}
+    </div>
+  )}
+
+  <!-- Stat row -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem">
+    {[
+      { label: 'Scrobbles', value: scrobbles > 0 ? scrobbles.toLocaleString() : '—', icon: '♫' },
+      { label: 'Movies', value: moviesWatched > 0 ? moviesWatched.toLocaleString() : '—', icon: '▶' },
+      { label: 'Shows', value: showsWatched > 0 ? showsWatched.toLocaleString() : '—', icon: '⊡' },
+      { label: 'GH Stars', value: ghStars > 0 ? ghStars.toLocaleString() : '—', icon: '★' },
+    ].map(stat => (
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;transition:border-color 200ms" class="stat-card">
+        <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--primary);margin-bottom:0.4rem">{stat.icon} {stat.label}</div>
+        <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary)">{stat.value}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Now listening -->
+  {nowPlaying && (
+    <section style="margin-bottom:2rem">
+      <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--primary);margin-bottom:0.75rem">♫ Now Listening</div>
+      <div style="background:var(--surface);border:1px solid var(--primary);border-radius:var(--radius);padding:1rem;display:flex;align-items:center;gap:1rem">
+        {npImage ? (
+          <img src={npImage} alt={npTrack} width="56" height="56" style="border-radius:6px;flex-shrink:0" />
+        ) : (
+          <div style="width:56px;height:56px;border-radius:6px;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0">♫</div>
+        )}
+        <div>
+          <div style="font-weight:600;font-size:0.95rem">{npTrack}</div>
+          <div style="color:var(--muted);font-size:0.825rem;margin-top:0.2rem">{npArtist}</div>
+          <div style="display:flex;align-items:center;gap:0.4rem;margin-top:0.4rem">
+            <span style="width:7px;height:7px;border-radius:50%;background:var(--primary);animation:pulse 1.5s infinite"></span>
+            <span style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.08em">Live</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Currently watching anime -->
+  <section style="margin-bottom:2rem">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem">
+      <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--primary)">⊛ Currently Watching</div>
+      <a href="/anime/" style="font-size:0.75rem;color:var(--muted);transition:color 150ms" class="view-all-link">View all →</a>
+    </div>
+    {animeWatching.length > 0 ? (
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+        {animeWatching.map((entry: any) => {
+          const anime = entry.node
+          const status = entry.list_status
+          const cover = anime?.main_picture?.medium ?? ''
+          const title = anime?.title ?? 'Unknown'
+          const progress = status?.num_episodes_watched ?? 0
+          const total = anime?.num_episodes ?? '?'
+          return (
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color 200ms" class="anime-card">
+              {cover ? (
+                <img src={cover} alt={title} style="width:100%;aspect-ratio:3/4;object-fit:cover" />
+              ) : (
+                <div style="width:100%;aspect-ratio:3/4;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:2rem">⊛</div>
+              )}
+              <div style="padding:0.75rem">
+                <div style="font-size:0.825rem;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{title}</div>
+                <div style="font-size:0.7rem;color:var(--muted);margin-top:0.4rem">{progress}/{total} eps</div>
+                {typeof total === 'number' && total > 0 && (
+                  <div style="height:3px;background:var(--raised);border-radius:2px;margin-top:0.5rem;overflow:hidden">
+                    <div style={`height:100%;width:${Math.round((progress/total)*100)}%;background:var(--primary);border-radius:2px`}></div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    ) : (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint);font-size:0.875rem">
+        No anime in progress
+      </div>
+    )}
+  </section>
+
+  <!-- Quick nav grid -->
+  <section>
+    <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--primary);margin-bottom:0.75rem">◉ Explore</div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:0.75rem">
+      {NAV_SECTIONS.map(n => (
+        <a
+          href={n.href}
+          style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 0.75rem;display:flex;flex-direction:column;align-items:center;gap:0.4rem;transition:border-color 200ms;text-align:center"
+          class="nav-card"
+        >
+          <span style="font-size:1.3rem">{n.icon}</span>
+          <span style="font-size:0.75rem;color:var(--muted);font-weight:500">{n.label}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.stat-card:hover,
+.anime-card:hover,
+.nav-card:hover {
+  border-color: var(--primary) !important;
+}
+.view-all-link:hover {
+  color: var(--primary) !important;
+}
+@media (max-width: 768px) {
+  /* stat row: 2 cols on mobile */
+  section div[style*="grid-template-columns:repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  /* anime: 2 cols */
+  div[style*="grid-template-columns:repeat(3"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  /* nav: 4 cols */
+  div[style*="grid-template-columns:repeat(5"] {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+</style>

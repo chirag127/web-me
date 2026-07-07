@@ -1,0 +1,132 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getGoodreadsShelf } from '~/lib/api'
+
+const [currentlyReading, recentlyRead, toRead] = await Promise.all([
+  getGoodreadsShelf('currently-reading'),
+  getGoodreadsShelf('read'),
+  getGoodreadsShelf('to-read'),
+])
+
+function stars(rating: string | undefined) {
+  const n = parseInt(rating ?? '0', 10)
+  return '★'.repeat(n) + '☆'.repeat(Math.max(0, 5 - n))
+}
+---
+<Layout title="Books" active="/books/">
+  <!-- Header -->
+  <div style="margin-bottom:2rem">
+    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--fg);margin:0 0 0.25rem">Books</h1>
+    <p style="color:var(--muted);font-size:0.9rem;margin:0">What I'm reading, have read, and want to read</p>
+  </div>
+
+  <!-- Stats -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem">
+    {[
+      { label: 'Reading', value: currentlyReading.length },
+      { label: 'Read', value: recentlyRead.length },
+      { label: 'Want to Read', value: toRead.length },
+    ].map(s => (
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem">
+        <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem">{s.label}</div>
+        <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary)">{s.value}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Currently Reading -->
+  <section style="margin-bottom:2.5rem">
+    <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Currently Reading</div>
+    {currentlyReading.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint);font-size:0.9rem">
+        Nothing in progress right now
+      </div>
+    ) : (
+      <div style="display:grid;gap:1rem">
+        {currentlyReading.map((book: any) => (
+          <a href={book.link || '#'} target="_blank" rel="noopener noreferrer" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;display:flex;gap:1.25rem;align-items:flex-start;text-decoration:none;transition:border-color 120ms" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+            <!-- Cover -->
+            <div style="flex-shrink:0;width:80px;height:120px;border-radius:6px;overflow:hidden;background:var(--raised);display:flex;align-items:center;justify-content:center">
+              {book.cover ? (
+                <img src={book.cover} alt={book.title} width="80" height="120" style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+              ) : (
+                <span style="font-size:2rem">📖</span>
+              )}
+            </div>
+            <!-- Info -->
+            <div style="flex:1;min-width:0">
+              <div style="font-size:1rem;font-weight:600;color:var(--fg);margin-bottom:0.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{book.title}</div>
+              <div style="font-size:0.85rem;color:var(--muted);margin-bottom:0.75rem">{book.author}</div>
+              <div style="display:inline-flex;align-items:center;gap:0.4rem;background:var(--primary-dim);border-radius:4px;padding:0.2rem 0.6rem">
+                <span style="color:var(--primary);font-size:0.75rem;font-weight:600">Currently Reading</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <!-- Recently Read -->
+  <section style="margin-bottom:2.5rem">
+    <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Recently Read</div>
+    {recentlyRead.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint);font-size:0.9rem">
+        No books logged yet
+      </div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem">
+        {recentlyRead.map((book: any) => (
+          <a href={book.link || '#'} target="_blank" rel="noopener noreferrer" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:border-color 120ms;display:flex;flex-direction:column" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+            <!-- Cover -->
+            <div style="width:100%;aspect-ratio:2/3;background:var(--raised);display:flex;align-items:center;justify-content:center;overflow:hidden">
+              {book.cover ? (
+                <img src={book.cover} alt={book.title} style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+              ) : (
+                <span style="font-size:2.5rem">📚</span>
+              )}
+            </div>
+            <!-- Info -->
+            <div style="padding:0.75rem;flex:1;display:flex;flex-direction:column;gap:0.3rem">
+              <div style="font-size:0.8rem;font-weight:600;color:var(--fg);line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{book.title}</div>
+              <div style="font-size:0.72rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{book.author}</div>
+              {book.rating && book.rating !== '0' && (
+                <div style="font-size:0.7rem;color:var(--primary);margin-top:auto;padding-top:0.25rem">{stars(book.rating)}</div>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <!-- Want to Read -->
+  <section>
+    <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem">Want to Read</div>
+    {toRead.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint);font-size:0.9rem">
+        Reading list is empty
+      </div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem">
+        {toRead.map((book: any) => (
+          <a href={book.link || '#'} target="_blank" rel="noopener noreferrer" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:border-color 120ms;display:flex;flex-direction:column" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+            <!-- Cover -->
+            <div style="width:100%;aspect-ratio:2/3;background:var(--raised);display:flex;align-items:center;justify-content:center;overflow:hidden">
+              {book.cover ? (
+                <img src={book.cover} alt={book.title} style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+              ) : (
+                <span style="font-size:2.5rem">📖</span>
+              )}
+            </div>
+            <!-- Info -->
+            <div style="padding:0.75rem">
+              <div style="font-size:0.8rem;font-weight:600;color:var(--fg);line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{book.title}</div>
+              <div style="font-size:0.72rem;color:var(--muted);margin-top:0.25rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{book.author}</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</Layout>

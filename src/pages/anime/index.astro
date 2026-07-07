@@ -1,0 +1,164 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getMALAnime } from '~/lib/api'
+
+const [watching, completed, planToWatch] = await Promise.all([
+  getMALAnime('watching', 30),
+  getMALAnime('completed', 40),
+  getMALAnime('plan_to_watch', 20),
+])
+
+const totalEpisodes = completed.reduce((sum: number, a: any) => sum + (a.node?.num_episodes ?? 0), 0)
+const avgScore = completed.length
+  ? (completed.reduce((s: number, a: any) => s + (a.list_status?.score ?? 0), 0) / completed.filter((a: any) => a.list_status?.score > 0).length || 0).toFixed(1)
+  : '—'
+---
+
+<Layout title="Anime" active="/anime/">
+  <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:800;margin-bottom:0.25rem">Anime</h1>
+  <p style="color:var(--muted);margin-bottom:2rem;font-size:0.95rem">MyAnimeList watchlist — watching, completed &amp; plan to watch</p>
+
+  <!-- Stats row -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:2.5rem">
+    {[
+      { label: 'Watching',      value: watching.length },
+      { label: 'Completed',     value: completed.length },
+      { label: 'Plan to Watch', value: planToWatch.length },
+      { label: 'Episodes Seen', value: totalEpisodes > 0 ? totalEpisodes.toLocaleString() : '—' },
+      { label: 'Avg Score',     value: avgScore },
+    ].map(s => (
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem">
+        <div style="color:var(--primary);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem">{s.label}</div>
+        <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--primary)">{s.value}</div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Currently Watching -->
+  <section style="margin-bottom:2.5rem">
+    <h2 style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--primary);margin-bottom:1rem">Currently Watching</h2>
+    {watching.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint)">Nothing in the queue right now</div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:1rem">
+        {watching.map((a: any) => {
+          const title = a.node?.title ?? 'Unknown'
+          const img   = a.node?.main_picture?.medium ?? ''
+          const score = a.list_status?.score
+          const ep    = a.list_status?.num_episodes_watched
+          const total = a.node?.num_episodes
+          const malId = a.node?.id
+          return (
+            <a
+              href={malId ? `https://myanimelist.net/anime/${malId}` : '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:block;transition:border-color 150ms;text-decoration:none"
+              onmouseover="this.style.borderColor='var(--primary)'"
+              onmouseout="this.style.borderColor='var(--border)'"
+            >
+              {img ? (
+                <img src={img} alt={title} loading="lazy" style="width:100%;aspect-ratio:2/3;object-fit:cover" />
+              ) : (
+                <div style="width:100%;aspect-ratio:2/3;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:2rem">⊛</div>
+              )}
+              <div style="padding:0.6rem 0.7rem">
+                <div style="font-size:0.78rem;font-weight:600;line-height:1.3;margin-bottom:0.35rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{title}</div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:0.25rem">
+                  {score > 0 && <span style="color:var(--primary);font-size:0.7rem;font-family:var(--font-display);font-weight:700">★ {score}</span>}
+                  {(ep !== undefined && total) && <span style="color:var(--faint);font-size:0.68rem">{ep}/{total}</span>}
+                  {(ep !== undefined && !total) && <span style="color:var(--faint);font-size:0.68rem">{ep} ep</span>}
+                </div>
+              </div>
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+
+  <!-- Completed -->
+  <section style="margin-bottom:2.5rem">
+    <h2 style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--primary);margin-bottom:1rem">Completed</h2>
+    {completed.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint)">No completed anime yet</div>
+    ) : (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:1rem">
+        {completed.map((a: any) => {
+          const title = a.node?.title ?? 'Unknown'
+          const img   = a.node?.main_picture?.medium ?? ''
+          const score = a.list_status?.score
+          const mean  = a.node?.mean
+          const malId = a.node?.id
+          return (
+            <a
+              href={malId ? `https://myanimelist.net/anime/${malId}` : '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:block;transition:border-color 150ms;text-decoration:none"
+              onmouseover="this.style.borderColor='var(--primary)'"
+              onmouseout="this.style.borderColor='var(--border)'"
+            >
+              {img ? (
+                <img src={img} alt={title} loading="lazy" style="width:100%;aspect-ratio:2/3;object-fit:cover" />
+              ) : (
+                <div style="width:100%;aspect-ratio:2/3;background:var(--raised);display:flex;align-items:center;justify-content:center;font-size:2rem">⊛</div>
+              )}
+              <div style="padding:0.6rem 0.7rem">
+                <div style="font-size:0.78rem;font-weight:600;line-height:1.3;margin-bottom:0.35rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{title}</div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:0.25rem">
+                  {score > 0 && <span style="color:var(--primary);font-size:0.7rem;font-family:var(--font-display);font-weight:700">★ {score}</span>}
+                  {mean && <span style="color:var(--faint);font-size:0.68rem">avg {Number(mean).toFixed(1)}</span>}
+                </div>
+              </div>
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+
+  <!-- Plan to Watch -->
+  <section>
+    <h2 style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--primary);margin-bottom:1rem">Plan to Watch</h2>
+    {planToWatch.length === 0 ? (
+      <div style="border:1px dashed var(--border);border-radius:var(--radius);padding:2rem;text-align:center;color:var(--faint)">Backlog is empty</div>
+    ) : (
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem">
+        {planToWatch.map((a: any) => {
+          const title = a.node?.title ?? 'Unknown'
+          const img   = a.node?.main_picture?.medium ?? ''
+          const mean  = a.node?.mean
+          const eps   = a.node?.num_episodes
+          const malId = a.node?.id
+          return (
+            <li>
+              <a
+                href={malId ? `https://myanimelist.net/anime/${malId}` : '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+                style="display:flex;align-items:center;gap:0.85rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:0.65rem 0.85rem;transition:border-color 150ms;text-decoration:none"
+                onmouseover="this.style.borderColor='var(--primary)'"
+                onmouseout="this.style.borderColor='var(--border)'"
+              >
+                {img ? (
+                  <img src={img} alt={title} loading="lazy" style="width:40px;height:56px;object-fit:cover;border-radius:5px;flex-shrink:0" />
+                ) : (
+                  <div style="width:40px;height:56px;background:var(--raised);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">⊛</div>
+                )}
+                <div style="flex:1;min-width:0">
+                  <div style="font-size:0.875rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{title}</div>
+                  <div style="display:flex;gap:0.75rem;margin-top:0.2rem">
+                    {mean && <span style="color:var(--muted);font-size:0.75rem">★ {Number(mean).toFixed(1)}</span>}
+                    {eps  && <span style="color:var(--faint);font-size:0.75rem">{eps} ep</span>}
+                  </div>
+                </div>
+                <span style="color:var(--faint);font-size:0.75rem;flex-shrink:0">→</span>
+              </a>
+            </li>
+          )
+        })}
+      </ul>
+    )}
+  </section>
+</Layout>
