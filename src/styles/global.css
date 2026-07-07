@@ -338,3 +338,55 @@ details.nav-group[open] .nav-chevron { transform: rotate(90deg); }
   color: var(--fg, #fff) !important;
   background: rgba(99,102,241,0.06) !important;
 }
+
+/* nav-sub-group: collapsible category inside LIBRARY */
+.nav-sub-group {
+  display: block;
+}
+.nav-sub-group > summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-sub-group > summary::-webkit-details-marker { display: none; }
+
+/* expandable parent item — same visual as sidebar-item but acts as summary */
+.sidebar-item--expandable {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 30px;
+  padding: 0 12px 0 10px;
+  font-size: 13px;
+  color: var(--t-secondary, #a1a1aa);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: color 80ms, background 80ms;
+  border-radius: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.sidebar-item--expandable:hover {
+  color: var(--t-primary, #e4e4e7);
+  background: rgba(255,255,255,0.04);
+}
+.sidebar-item--expandable.active {
+  color: #c7d2fe;
+  background: rgba(99,102,241,0.1);
+  border-left-color: #6366f1;
+}
+
+/* sub-chevron rotates when open */
+.nav-sub-group .sub-chevron {
+  font-size: 10px;
+  color: var(--faint, #52525b);
+  transition: transform 150ms;
+  display: inline-block;
+  line-height: 1;
+}
+.nav-sub-group[open] .sub-chevron {
+  transform: rotate(90deg);
+}

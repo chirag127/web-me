@@ -34,9 +34,12 @@ const LIBRARY_NAV = [
     { href: '/library/movies/watched/',   label: 'Watched' },
     { href: '/library/movies/watchlist/', label: 'Watchlist' },
   ]},
-  { href: '/library/tv/',       label: 'TV Shows', icon: '⊡' },
+  { href: '/library/tv/',       label: 'TV Shows', icon: '⊡', sub: [
+    { href: '/library/tv/watching/',  label: 'Watching' },
+    { href: '/library/tv/completed/', label: 'Completed' },
+  ]},
   { href: '/library/anime/',    label: 'Anime',    icon: '◉', sub: [
-    { href: '/library/anime/completed/',    label: 'Completed' },
+    { href: '/library/anime/completed/',     label: 'Completed' },
     { href: '/library/anime/plan-to-watch/', label: 'Plan to Watch' },
   ]},
   { href: '/library/manga/',    label: 'Manga',    icon: '⊕', sub: [
@@ -54,9 +57,9 @@ const LIBRARY_NAV = [
 ]
 
 const ME_NAV = [
-  { href: '/me',            label: 'About',     icon: '◉' },
-  { href: '/me/gear',       label: 'Gear',      icon: '◧' },
-  { href: '/me/philosophy', label: 'Philosophy',icon: '◈' },
+  { href: '/me',            label: 'About',      icon: '◉' },
+  { href: '/me/gear',       label: 'Gear',       icon: '◧' },
+  { href: '/me/philosophy', label: 'Philosophy', icon: '◈' },
 ]
 
 const CONNECT_NAV = [
@@ -64,7 +67,7 @@ const CONNECT_NAV = [
   { href: '/connect/contact', label: 'Contact', icon: '◌' },
 ]
 
-const workOpen   = path === '/' || path.startsWith('/work')
+const workOpen    = path === '/' || path.startsWith('/work')
 const libraryOpen = path.startsWith('/library')
 const meOpen      = path.startsWith('/me')
 const connectOpen = path.startsWith('/connect')
@@ -159,18 +162,24 @@ const connectOpen = path.startsWith('/connect')
         </summary>
         {LIBRARY_NAV.map((n: any) => (
           <div>
-            <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
-              <span class="icon">{n.icon}</span>
-              {n.label}
-            </a>
-            {n.sub && n.sub.some((s: any) => path.startsWith(n.href)) && (
-              <div class="sidebar-sub">
+            {n.sub ? (
+              <details class="nav-sub-group" open={path.startsWith(n.href) || undefined}>
+                <summary class:list={['sidebar-item sidebar-item--expandable', { active: path === n.href || path === n.href.replace(/\/$/, '') }]}>
+                  <span class="icon">{n.icon}</span>
+                  <span style="flex:1">{n.label}</span>
+                  <span class="sub-chevron">›</span>
+                </summary>
                 {n.sub.map((s: any) => (
-                  <a href={s.href} class:list={['sidebar-item sidebar-item--sub', { active: path === s.href }]}>
+                  <a href={s.href} class:list={['sidebar-item sidebar-item--sub', { active: path === s.href || path === s.href.replace(/\/$/, '') }]}>
                     {s.label}
                   </a>
                 ))}
-              </div>
+              </details>
+            ) : (
+              <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
+                <span class="icon">{n.icon}</span>
+                {n.label}
+              </a>
             )}
           </div>
         ))}
