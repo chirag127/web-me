@@ -1,0 +1,61 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getTraktShows, getTraktStats } from '~/lib/api'
+
+const [history, stats] = await Promise.all([getTraktShows(20), getTraktStats()])
+
+const seen = new Set<number>()
+const shows: any[] = []
+for (const entry of history) {
+  const id = entry.show?.ids?.trakt
+  if (id == null || seen.has(id)) continue
+  seen.add(id)
+  shows.push(entry)
+}
+
+const showCount = stats?.shows?.watched ?? shows.length
+const epCount   = stats?.episodes?.watched ?? 0
+const hours     = Math.round((stats?.episodes?.minutes ?? 0) / 60)
+---
+
+<Layout title="TV Shows" active="/media/">
+  <span class="kicker">TV Shows</span>
+  <h1 style="margin-bottom:2rem">Watching</h1>
+
+  {(showCount > 0 || epCount > 0) && (
+    <div style="display:flex;gap:1rem;margin-bottom:2.5rem;flex-wrap:wrap">
+      {([
+        { label: 'Shows',    value: showCount.toLocaleString() },
+        { label: 'Episodes', value: epCount.toLocaleString() },
+        { label: 'Hours',    value: hours.toLocaleString() },
+      ] as { label: string; value: string }[]).filter(s => Number(s.value.replace(/,/g,'')) > 0).map(s => (
+        <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:120px">
+          <p class="kicker" style="margin-bottom:0.25rem">{s.label}</p>
+          <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{s.value}</p>
+        </div>
+      ))}
+    </div>
+  )}
+
+  <p class="kicker" style="margin-bottom:0.75rem">Recent Shows</p>
+
+  {shows.length === 0 ? (
+    <p style="color:var(--faint);font-size:0.9rem">No show data. Set <code>TRAKT_CLIENT_ID</code> to load.</p>
+  ) : (
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+      {shows.map((entry: any, i: number) => {
+        const show = entry.show
+        const ep   = entry.episode
+        const s    = ep?.season  != null ? `S${String(ep.season).padStart(2,'0')}` : ''
+        const e    = ep?.number  != null ? `E${String(ep.number).padStart(2,'0')}` : ''
+        return (
+          <div style={`display:flex;align-items:baseline;gap:1rem;padding:0.65rem 1rem;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}>
+            <span style="flex:1;font-size:0.9rem;color:var(--fg)">{show?.title}</span>
+            {show?.year && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0">{show.year}</span>}
+            {(s || e) && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--muted);flex-shrink:0">{s}{e}</span>}
+          </div>
+        )
+      })}
+    </div>
+  )}
+</Layout>

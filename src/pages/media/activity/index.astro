@@ -1,0 +1,90 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmRecent, getTraktMovies } from '~/lib/api'
+
+const [lfm, movies] = await Promise.all([
+  getLastfmRecent(8),
+  getTraktMovies(8),
+])
+
+type FeedItem = {
+  type: 'music' | 'movie'
+  label: string
+  title: string
+  subtitle: string
+  ts: number
+}
+
+const feed: FeedItem[] = []
+
+for (const t of lfm) {
+  const isNow = t['@attr']?.nowplaying === 'true'
+  const uts = isNow ? Date.now() : (t.date?.uts ? Number(t.date.uts) * 1000 : 0)
+  feed.push({
+    type: 'music',
+    label: isNow ? '▶ now' : '',
+    title: t.name ?? 'Unknown track',
+    subtitle: t.artist?.['#text'] ?? '',
+    ts: uts,
+  })
+}
+
+for (const m of movies) {
+  const ts = m.watched_at ? new Date(m.watched_at).getTime() : 0
+  feed.push({
+    type: 'movie',
+    label: '',
+    title: m.movie?.title ?? 'Unknown movie',
+    subtitle: m.movie?.year ? String(m.movie.year) : '',
+    ts,
+  })
+}
+
+feed.sort((a, b) => b.ts - a.ts)
+
+function relTime(ts: number): string {
+  if (!ts) return ''
+  const diff = Date.now() - ts
+  const s = Math.floor(diff / 1000)
+  if (s < 0) return 'now'
+  if (s < 60) return 'just now'
+  const m = Math.floor(s / 60)
+  if (m < 60) return `${m}m ago`
+  const h = Math.floor(m / 60)
+  if (h < 24) return `${h}h ago`
+  const d = Math.floor(h / 24)
+  if (d < 7) return `${d}d ago`
+  return new Date(ts).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+}
+---
+
+<Layout title="Activity" active="/media/">
+  <span class="kicker">Activity</span>
+  <h1 style="margin-bottom:0.5rem">Activity</h1>
+  <p style="color:var(--muted);font-size:0.9rem;margin-bottom:2rem">Combined listening and watching feed.</p>
+
+  {feed.length === 0 ? (
+    <p style="color:var(--faint);font-size:0.9rem">No recent activity.</p>
+  ) : (
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+      {feed.map((item, i) => (
+        <div style={`display:flex;align-items:center;gap:1rem;padding:0.7rem 1rem;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}>
+          <span style={`font-family:var(--font-ui);font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;width:3.5rem;flex-shrink:0;${item.type === 'music' ? 'color:var(--accent)' : 'color:var(--muted)'}`}>
+            {item.type === 'music' ? '♫ music' : '▶ film'}
+          </span>
+          <div style="flex:1;min-width:0">
+            <p style="font-size:0.875rem;font-weight:500;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{item.title}</p>
+            {item.subtitle && <p style="font-size:0.78rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{item.subtitle}</p>}
+          </div>
+          <time style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0" datetime={new Date(item.ts).toISOString()}>
+            {item.label || relTime(item.ts)}
+          </time>
+        </div>
+      ))}
+    </div>
+  )}
+
+  <p style="margin-top:1.5rem;font-size:0.82rem;color:var(--faint)">
+    Sources: <a href="/media/music/">Last.fm</a> · <a href="/media/movies/">Trakt</a>
+  </p>
+</Layout>

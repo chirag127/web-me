@@ -1,0 +1,118 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const skillGroups = [
+  {
+    label: 'Languages',
+    skills: ['Python (Advanced)', 'TypeScript', 'JavaScript', 'SQL (PostgreSQL/MySQL/LibSQL)', 'HTML5', 'CSS3'],
+  },
+  {
+    label: 'Backend & Cloud',
+    skills: ['FastAPI', 'Node.js', 'Django', 'GraphQL', 'Kafka', 'Redis', 'AWS (Lambda/EKS/S3)', 'Cloudflare Workers', 'Docker', 'Kubernetes', 'Terraform'],
+  },
+  {
+    label: 'Frontend & Full Stack',
+    skills: ['React.js', 'Astro', 'Tailwind CSS', 'Redux', 'Chart.js', 'MDX', 'RESTful APIs', 'Microservices', 'Serverless', 'PWA'],
+  },
+  {
+    label: 'AI & Data Engineering',
+    skills: ['LangChain', 'RAG Pipelines', 'Vector DBs (Milvus/Chroma)', 'Hugging Face', 'Google Gemini', 'Groq', 'Mistral AI', 'Cohere', 'NVIDIA NIM', 'OpenRouter', 'PyTorch', 'Web Scraping'],
+  },
+  {
+    label: 'Databases & Storage',
+    skills: ['Firebase Firestore', 'Supabase', 'MongoDB', 'Turso (LibSQL)', 'Upstash Redis', 'Cloudflare R2', 'Sanity CMS', 'Algolia Search'],
+  },
+  {
+    label: 'DevOps & CI/CD',
+    skills: ['GitHub Actions', 'Jenkins', 'Cloudflare Pages', 'Wrangler CLI', 'Docker', 'Kubernetes', 'Linux Admin', 'IaC'],
+  },
+  {
+    label: 'Security & Auth',
+    skills: ['Kinde Auth', 'Firebase Auth', 'OAuth 2.0 (PKCE)', 'reCAPTCHA v3', 'AES/DES/3DES/RC4', 'Bcrypt', '40+ Hash Algorithms', 'OWASP', 'DevSecOps'],
+  },
+  {
+    label: 'Payments & Analytics',
+    skills: ['Razorpay (Orders/Webhooks)', 'PostHog Analytics', 'Google AdSense', 'OneSignal', 'Cloudinary'],
+  },
+]
+---
+
+<Layout title="Skills" description="Technical skills — languages, backend, cloud, AI, DevOps, security, and more." active="/skills/">
+
+  <div class="section-title">
+    <span class="kicker">Technical Skills</span>
+    <h1>Skills</h1>
+  </div>
+
+  <div class="skills-table">
+    {skillGroups.map(group => (
+      <div class="skill-row card">
+        <span class="group-label">{group.label}</span>
+        <div class="chip-list">
+          {group.skills.map(skill => (
+            <span class="chip">{skill}</span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+</Layout>
+
+<style>
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.section-title h1 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 2rem;
+  color: var(--fg);
+  line-height: 1.25;
+}
+
+.skills-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 70rem;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1rem 1.25rem;
+}
+
+.group-label {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-top: 0.15rem;
+  white-space: nowrap;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+@media (max-width: 600px) {
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .group-label {
+    font-size: 0.7rem;
+  }
+}
+</style>

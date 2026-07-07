@@ -1,121 +1,126 @@
 ---
 import Layout from '~/layouts/Layout.astro'
-
-const principles = [
-  { icon: '⊡', label: 'Static first',        desc: 'No server runtime in the hot path. Pre-render everything that can be pre-rendered.' },
-  { icon: '⊘', label: 'Privacy by default',  desc: 'No login, no tracking pixels, no third-party cookies. Analytics self-hosted or aggregated.' },
-  { icon: '⊕', label: 'Free no paywall',     desc: 'Every project ships free-tier-only. No card on file, no paid plans, no freemium bait.' },
-  { icon: '◎', label: 'Owned not rented',    desc: 'Source on GitHub, deploys on open infrastructure. Vendor lock-in is a liability.' },
-  { icon: '◉', label: 'Small surface',       desc: 'Fewer features, fewer bugs, fewer attack vectors. Scope-cut ruthlessly.' },
-  { icon: '⊞', label: 'Long horizon',        desc: 'Ship things meant to still work in 10 years. Static HTML ages better than any framework.' },
-  { icon: '◧', label: 'Quiet',               desc: 'No growth hacks, no virality loops, no engagement metrics. Build; let the work speak.' },
-]
-
-const gear = [
-  { label: 'Editor',     value: 'Claude Code' },
-  { label: 'Languages',  value: 'TypeScript / Python / Rust' },
-  { label: 'Framework',  value: 'Astro 6 + Tailwind' },
-  { label: 'Deploy',     value: 'Cloudflare Pages + GitHub Pages' },
-  { label: 'AI routing', value: 'Corp Bedrock via hai · Free providers via OmniRoute' },
-  { label: 'Secrets',    value: 'sops + age' },
-  { label: 'Terminal',   value: 'Windows Terminal · PowerShell 7 · Bash' },
-  { label: 'Version control', value: 'Git · GitHub (chirag127)' },
-]
-
-const career = [
-  {
-    role: 'Software Engineering Specialist',
-    company: 'SAP',
-    location: 'Bhubaneswar, India',
-    period: '2022 – present',
-    current: true,
-    notes: 'Enterprise product development; full-stack across SAP stack + web.',
-  },
-  {
-    role: 'Software Engineer',
-    company: 'Tata Consultancy Services (TCS)',
-    location: 'India',
-    period: '2019 – 2022',
-    current: false,
-    notes: 'Client delivery; backend + integration work.',
-  },
-]
 ---
-<Layout title="About" description="Chirag Singhal — software engineer, builder of chirag127 projects." active="/about/">
+<Layout title="About" description="Chirag Singhal — software engineer, full stack and distributed systems specialist." active="/about/">
 
   <!-- Header -->
   <header style="margin-bottom:2.5rem">
-    <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.5rem">About</p>
-    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--text);margin:0 0 1rem">Chirag Singhal</h1>
-    <p style="color:var(--muted);line-height:1.7;max-width:600px;margin:0">
-      I'm a software engineer at SAP in Bhubaneswar, India. I build the <strong style="color:var(--text)">chirag127 family</strong>: 20+ free static sites, apps, CLIs, and MCP servers. Free forever, no card on file, one commit at a time.
+    <span class="kicker">About</span>
+    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:600;letter-spacing:-0.02em;color:var(--fg);margin:0 0 1.25rem">Chirag Singhal</h1>
+    <p style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;color:var(--muted);line-height:1.7;max-width:60ch;margin:0">
+      Software engineer at TCS in Bhubaneswar, India, specialising in full-stack, backend, and distributed systems. I build the <strong style="color:var(--fg)">chirag127 family</strong> — 20+ free tools, sites, and APIs — with zero cards on file, one commit at a time.
     </p>
   </header>
 
-  <!-- Two-column grid -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem">
+  <!-- Education -->
+  <section style="margin-bottom:3rem">
+    <div class="section-title">
+      <span class="kicker">Education</span>
+    </div>
 
-    <!-- Career -->
-    <section style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
-      <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1.25rem">Career</p>
-      <div style="display:flex;flex-direction:column;gap:1.25rem">
-        {career.map(c => (
-          <div style={`padding-left:1rem;border-left:2px solid ${c.current ? 'var(--primary)' : 'var(--border)'}`}>
-            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.25rem">
-              <span style="font-size:0.9rem;font-weight:600;color:var(--text)">{c.role}</span>
-              {c.current && <span style="font-size:0.6rem;background:var(--primary-dim);color:var(--primary);padding:1px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:0.06em">current</span>}
-            </div>
-            <div style="font-size:0.8rem;color:var(--primary);font-weight:500;margin-bottom:0.2rem">{c.company} · {c.location}</div>
-            <div style="font-size:0.75rem;color:var(--faint);margin-bottom:0.4rem">{c.period}</div>
-            <div style="font-size:0.8rem;color:var(--muted)">{c.notes}</div>
-          </div>
-        ))}
-      </div>
-    </section>
+    <!-- Timeline -->
+    <div style="display:flex;flex-direction:column;gap:0;border-left:1px solid var(--rule);margin-left:0.375rem">
 
-    <!-- Gear / Uses -->
-    <section style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
-      <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1.25rem">Uses / Gear</p>
-      <table style="width:100%;border-collapse:collapse">
-        {gear.map((g, i) => (
-          <tr style={`border-bottom:${i < gear.length - 1 ? '1px solid var(--border)' : 'none'}`}>
-            <td style="font-size:0.75rem;color:var(--faint);padding:0.55rem 0.75rem 0.55rem 0;white-space:nowrap;vertical-align:top">{g.label}</td>
-            <td style="font-size:0.8rem;color:var(--text);padding:0.55rem 0;vertical-align:top">{g.value}</td>
-          </tr>
-        ))}
-      </table>
-    </section>
-
-  </div>
-
-  <!-- Principles -->
-  <section style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem">
-    <p style="font-size:0.7rem;color:var(--primary);text-transform:uppercase;letter-spacing:0.1em;margin:0 0 1.5rem">Seven principles</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem">
-      {principles.map(p => (
-        <div style="display:flex;gap:0.75rem;align-items:flex-start">
-          <span style="font-size:1.1rem;color:var(--primary);margin-top:0.05rem;flex-shrink:0">{p.icon}</span>
-          <div>
-            <div style="font-size:0.85rem;font-weight:600;color:var(--text);margin-bottom:0.2rem">{p.label}</div>
-            <div style="font-size:0.78rem;color:var(--muted);line-height:1.5">{p.desc}</div>
-          </div>
+      <div style="position:relative;padding:0 0 2rem 1.5rem">
+        <span style="position:absolute;left:-0.4375rem;top:0.35rem;width:0.5rem;height:0.5rem;border-radius:50%;background:var(--accent);flex-shrink:0"></span>
+        <div style="display:flex;align-items:baseline;gap:0.75rem;flex-wrap:wrap;margin-bottom:0.25rem">
+          <span style="font-family:var(--font-display);font-size:1rem;font-weight:600;letter-spacing:-0.01em;color:var(--fg)">B.Tech, Computer Science &amp; Engineering</span>
+          <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint)">2020 – 2024</span>
         </div>
-      ))}
+        <div style="font-family:var(--font-ui);font-size:0.8rem;color:var(--accent);margin-bottom:0.35rem">AKTU — Dr. A.P.J. Abdul Kalam Technical University</div>
+        <p style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.9rem;color:var(--muted);max-width:60ch;margin:0">
+          CGPA 8.81 · <strong style="color:var(--fg)">College Topper, Rank 1</strong> in CSE Batch 2020–2024.
+        </p>
+      </div>
+
+      <div style="position:relative;padding:0 0 0 1.5rem">
+        <span style="position:absolute;left:-0.4375rem;top:0.35rem;width:0.5rem;height:0.5rem;border-radius:50%;background:var(--faint);flex-shrink:0"></span>
+        <div style="display:flex;align-items:baseline;gap:0.75rem;flex-wrap:wrap;margin-bottom:0.25rem">
+          <span style="font-family:var(--font-display);font-size:1rem;font-weight:600;letter-spacing:-0.01em;color:var(--fg)">Class 12 — Science (CBSE)</span>
+          <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint)">2020</span>
+        </div>
+        <div style="font-family:var(--font-ui);font-size:0.8rem;color:var(--accent);margin-bottom:0.35rem">DDPS — Delhi Public School, Patna</div>
+        <p style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.9rem;color:var(--muted);max-width:60ch;margin:0">
+          97% · <strong style="color:var(--fg)">School Topper</strong> · IIT JEE Advanced AIR 11870 (Top 1%, 99th percentile).
+        </p>
+      </div>
+
     </div>
   </section>
 
-  <!-- Links -->
-  <section style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap">
-    {[
-      { href: 'https://github.com/chirag127',          label: 'GitHub ↗' },
-      { href: 'https://oriz.in',                       label: 'oriz.in ↗' },
-      { href: 'mailto:chirag127@gmail.com',            label: 'Email ↗' },
-    ].map(l => (
-      <a href={l.href} target="_blank" rel="noopener noreferrer"
-         style="font-size:0.8rem;color:var(--primary);border:1px solid var(--border);border-radius:6px;padding:0.4rem 0.9rem;transition:border-color 120ms"
-         onmouseover="this.style.borderColor='var(--primary)'"
-         onmouseout="this.style.borderColor='var(--border)'">{l.label}</a>
-    ))}
+  <!-- Honors & Achievements -->
+  <section style="margin-bottom:3rem">
+    <div class="section-title">
+      <span class="kicker">Honors &amp; Achievements</span>
+    </div>
+
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;max-width:60ch">
+      <li style="display:flex;align-items:baseline;gap:1rem">
+        <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0;width:2.5rem">2024</span>
+        <span style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--fg)">College Topper — Rank 1 in CSE Batch, AKTU</span>
+      </li>
+      <li style="display:flex;align-items:baseline;gap:1rem">
+        <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0;width:2.5rem">2025</span>
+        <span style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--fg)">AWS Certified Developer — Associate</span>
+      </li>
+      <li style="display:flex;align-items:baseline;gap:1rem">
+        <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0;width:2.5rem">2023</span>
+        <span style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--fg)">Meta Backend Developer Certification (Coursera)</span>
+      </li>
+      <li style="display:flex;align-items:baseline;gap:1rem">
+        <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0;width:2.5rem">2020</span>
+        <span style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--fg)">JEE Advanced AIR 11870 — 99th percentile, Top 1%</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Elsewhere -->
+  <section>
+    <div class="section-title">
+      <span class="kicker">Elsewhere</span>
+    </div>
+
+    <dl style="display:grid;grid-template-columns:auto 1fr;gap:0.5rem 1.5rem;max-width:60ch">
+      <dt style="font-family:var(--font-ui);font-size:0.75rem;color:var(--faint);align-self:center">GitHub</dt>
+      <dd style="margin:0">
+        <a href="https://github.com/chirag127" target="_blank" rel="noopener noreferrer"
+           style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--accent);text-underline-offset:0.2em;text-decoration-thickness:1px">
+          github.com/chirag127
+        </a>
+      </dd>
+
+      <dt style="font-family:var(--font-ui);font-size:0.75rem;color:var(--faint);align-self:center">LinkedIn</dt>
+      <dd style="margin:0">
+        <a href="https://linkedin.com/in/chirag127" target="_blank" rel="noopener noreferrer"
+           style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--accent);text-underline-offset:0.2em;text-decoration-thickness:1px">
+          linkedin.com/in/chirag127
+        </a>
+      </dd>
+
+      <dt style="font-family:var(--font-ui);font-size:0.75rem;color:var(--faint);align-self:center">Email</dt>
+      <dd style="margin:0">
+        <a href="mailto:hi@chirag127.in"
+           style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--accent);text-underline-offset:0.2em;text-decoration-thickness:1px">
+          hi@chirag127.in
+        </a>
+      </dd>
+
+      <dt style="font-family:var(--font-ui);font-size:0.75rem;color:var(--faint);align-self:center">Last.fm</dt>
+      <dd style="margin:0">
+        <a href="https://www.last.fm/user/chirag127" target="_blank" rel="noopener noreferrer"
+           style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--accent);text-underline-offset:0.2em;text-decoration-thickness:1px">
+          last.fm/user/chirag127
+        </a>
+      </dd>
+
+      <dt style="font-family:var(--font-ui);font-size:0.75rem;color:var(--faint);align-self:center">Tools</dt>
+      <dd style="margin:0">
+        <a href="https://oriz.in" target="_blank" rel="noopener noreferrer"
+           style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem;color:var(--accent);text-underline-offset:0.2em;text-decoration-thickness:1px">
+          oriz.in
+        </a>
+      </dd>
+    </dl>
   </section>
 
 </Layout>

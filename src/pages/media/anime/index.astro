@@ -1,0 +1,91 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getMALAnime } from '~/lib/api'
+
+const [watching, completed] = await Promise.all([
+  getMALAnime('watching', 20),
+  getMALAnime('completed', 30),
+])
+---
+
+<Layout title="Anime" active="/media/">
+  <span class="kicker">Anime</span>
+  <h1 style="margin-bottom:2rem">Anime</h1>
+
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem">
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:120px">
+      <p class="kicker" style="margin-bottom:0.25rem">Watching</p>
+      <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{watching.length}</p>
+    </div>
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:120px">
+      <p class="kicker" style="margin-bottom:0.25rem">Completed</p>
+      <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{completed.length}</p>
+    </div>
+  </div>
+
+  <section style="margin-bottom:2.5rem">
+    <p class="kicker" style="margin-bottom:0.75rem">Currently Watching</p>
+    {watching.length === 0 ? (
+      <p style="color:var(--faint);font-size:0.9rem">Nothing in queue.</p>
+    ) : (
+      <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+        {watching.map((a: any, i: number) => {
+          const title = a.node?.title ?? 'Unknown'
+          const ep    = a.list_status?.num_episodes_watched
+          const total = a.node?.num_episodes
+          const score = a.list_status?.score
+          const malId = a.node?.id
+          return (
+            <a
+              href={malId ? `https://myanimelist.net/anime/${malId}` : '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={`display:flex;align-items:baseline;gap:1rem;padding:0.65rem 1rem;text-decoration:none;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}
+              class="list-row"
+            >
+              <span style="flex:1;font-size:0.9rem;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{title}</span>
+              {score > 0 && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--accent);flex-shrink:0">★ {score}</span>}
+              {ep != null && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0">{ep}{total ? `/${total}` : ''} ep</span>}
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+
+  <section>
+    <p class="kicker" style="margin-bottom:0.75rem">Completed ({completed.length})</p>
+    {completed.length === 0 ? (
+      <p style="color:var(--faint);font-size:0.9rem">None yet.</p>
+    ) : (
+      <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+        {completed.map((a: any, i: number) => {
+          const title = a.node?.title ?? 'Unknown'
+          const score = a.list_status?.score
+          const mean  = a.node?.mean
+          const malId = a.node?.id
+          return (
+            <a
+              href={malId ? `https://myanimelist.net/anime/${malId}` : '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={`display:flex;align-items:baseline;gap:1rem;padding:0.65rem 1rem;text-decoration:none;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}
+              class="list-row"
+            >
+              <span style="flex:1;font-size:0.9rem;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{title}</span>
+              {score > 0 && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--accent);flex-shrink:0">★ {score}</span>}
+              {!score && mean && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0">{Number(mean).toFixed(1)}</span>}
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+</Layout>
+
+<style>
+.list-row:hover {
+  background: var(--elevated);
+  text-decoration: none;
+}
+</style>

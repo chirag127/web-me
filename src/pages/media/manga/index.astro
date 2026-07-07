@@ -1,0 +1,90 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getMALManga } from '~/lib/api'
+
+const [reading, completed] = await Promise.all([
+  getMALManga('reading', 20),
+  getMALManga('completed', 30),
+])
+---
+
+<Layout title="Manga" active="/media/">
+  <span class="kicker">Manga</span>
+  <h1 style="margin-bottom:2rem">Manga</h1>
+
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem">
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:120px">
+      <p class="kicker" style="margin-bottom:0.25rem">Reading</p>
+      <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{reading.length}</p>
+    </div>
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:120px">
+      <p class="kicker" style="margin-bottom:0.25rem">Completed</p>
+      <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{completed.length}</p>
+    </div>
+  </div>
+
+  <section style="margin-bottom:2.5rem">
+    <p class="kicker" style="margin-bottom:0.75rem">Currently Reading</p>
+    {reading.length === 0 ? (
+      <p style="color:var(--faint);font-size:0.9rem">Nothing in queue.</p>
+    ) : (
+      <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+        {reading.map((m: any, i: number) => {
+          const title = m.node?.title ?? 'Unknown'
+          const ch    = m.list_status?.num_chapters_read
+          const score = m.list_status?.score
+          const malId = m.node?.id
+          return (
+            <a
+              href={malId ? `https://myanimelist.net/manga/${malId}` : '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={`display:flex;align-items:baseline;gap:1rem;padding:0.65rem 1rem;text-decoration:none;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}
+              class="list-row"
+            >
+              <span style="flex:1;font-size:0.9rem;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{title}</span>
+              {score > 0 && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--accent);flex-shrink:0">★ {score}</span>}
+              {ch > 0 && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0">ch {ch}</span>}
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+
+  <section>
+    <p class="kicker" style="margin-bottom:0.75rem">Completed ({completed.length})</p>
+    {completed.length === 0 ? (
+      <p style="color:var(--faint);font-size:0.9rem">None yet.</p>
+    ) : (
+      <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+        {completed.map((m: any, i: number) => {
+          const title = m.node?.title ?? 'Unknown'
+          const score = m.list_status?.score
+          const mean  = m.node?.mean
+          const malId = m.node?.id
+          return (
+            <a
+              href={malId ? `https://myanimelist.net/manga/${malId}` : '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={`display:flex;align-items:baseline;gap:1rem;padding:0.65rem 1rem;text-decoration:none;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}
+              class="list-row"
+            >
+              <span style="flex:1;font-size:0.9rem;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{title}</span>
+              {score > 0 && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--accent);flex-shrink:0">★ {score}</span>}
+              {!score && mean && <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--faint);flex-shrink:0">{Number(mean).toFixed(1)}</span>}
+            </a>
+          )
+        })}
+      </div>
+    )}
+  </section>
+</Layout>
+
+<style>
+.list-row:hover {
+  background: var(--elevated);
+  text-decoration: none;
+}
+</style>

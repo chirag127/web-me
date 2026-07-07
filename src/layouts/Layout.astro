@@ -1,25 +1,56 @@
 ---
 import '../styles/global.css'
+
 interface Props {
   title: string
   description?: string
   active?: string
 }
-const { title, description = 'Chirag Singhal — personal OS', active = '' } = Astro.props
-const NAV = [
-  { href: '/',           icon: '◉', label: 'Home' },
-  { href: '/music/',     icon: '♫', label: 'Music' },
-  { href: '/movies/',    icon: '▶', label: 'Movies' },
-  { href: '/tv/',        icon: '⊡', label: 'TV' },
-  { href: '/anime/',     icon: '⊛', label: 'Anime' },
-  { href: '/manga/',     icon: '⊕', label: 'Manga' },
-  { href: '/books/',     icon: '⊞', label: 'Books' },
-  { href: '/activity/',  icon: '⊘', label: 'Activity' },
-  { href: '/about/',     icon: '◎', label: 'About' },
-  { href: '/work/',      icon: '◈', label: 'Work' },
-  { href: '/writing/',   icon: '◧', label: 'Writing' },
+
+const { title, description = 'Chirag Singhal — personal site', active = '/' } = Astro.props
+
+const path = Astro.url.pathname
+
+function isActive(href: string): boolean {
+  if (href === '/') return path === '/'
+  return path.startsWith(href)
+}
+
+const WORK_NAV = [
+  { href: '/',          label: 'Home' },
+  { href: '/work/',     label: 'Work' },
+  { href: '/projects/', label: 'Projects' },
+  { href: '/skills/',   label: 'Skills' },
+]
+
+const INFO_NAV = [
+  { href: '/about/',   label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+]
+
+const MEDIA_SUBNAV = [
+  { href: '/media/music/',    label: 'Music' },
+  { href: '/media/movies/',   label: 'Movies' },
+  { href: '/media/tv/',       label: 'TV Shows' },
+  { href: '/media/anime/',    label: 'Anime' },
+  { href: '/media/manga/',    label: 'Manga' },
+  { href: '/media/books/',    label: 'Books' },
+  { href: '/media/activity/', label: 'Activity' },
+]
+
+const isMediaSection = path.startsWith('/media/')
+
+// Top 6 for mobile tab bar
+const MOBILE_NAV = [
+  { href: '/',          label: 'Home' },
+  { href: '/work/',     label: 'Work' },
+  { href: '/projects/', label: 'Projects' },
+  { href: '/about/',    label: 'About' },
+  { href: '/media/',    label: 'Media' },
+  { href: '/contact/',  label: 'Contact' },
 ]
 ---
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -29,40 +60,292 @@ const NAV = [
   <meta name="description" content={description} />
   <link rel="canonical" href={`https://me.oriz.in${Astro.url.pathname}`} />
   <link rel="icon" href="https://github.com/chirag127.png?size=32" type="image/png" />
+  <meta property="og:title" content={`${title} · chirag127`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={`https://me.oriz.in${Astro.url.pathname}`} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@chirag127" />
 </head>
-<body class="flex min-h-dvh" style="background:var(--bg)">
-  <!-- Sidebar -->
-  <nav class="sidebar" aria-label="Navigation" style="position:fixed;top:0;left:0;width:var(--sidebar-w);height:100dvh;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;padding:1.25rem 0.75rem 1rem;gap:2px;overflow-y:auto;z-index:100">
-    <a href="/" style="font-family:var(--font-display);font-size:1.5rem;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding:0 0.5rem 1rem;border-bottom:1px solid var(--border);margin-bottom:0.5rem;display:block">CS</a>
-    <ul style="list-style:none;flex:1;display:flex;flex-direction:column;gap:2px">
-      {NAV.map(n => (
-        <li><a href={n.href} style={`display:flex;align-items:center;gap:0.6rem;padding:0.5rem 0.6rem;border-radius:6px;font-size:0.875rem;font-weight:500;color:${active===n.href?'var(--primary)':'var(--muted)'};background:${active===n.href?'var(--primary-dim)':'transparent'};transition:all 120ms`}>
-          <span style="width:1.1rem;text-align:center;font-size:0.95rem">{n.icon}</span>
-          {n.label}
-        </a></li>
-      ))}
-    </ul>
-    <a href="https://oriz.in" style="font-size:0.75rem;color:var(--faint);padding:0.5rem 0.6rem;border-top:1px solid var(--border);margin-top:auto">← oriz.in</a>
-  </nav>
-  <!-- Main -->
-  <main style="margin-left:var(--sidebar-w);flex:1;padding:2rem 2.5rem 5rem;max-width:1100px">
-    <slot />
-  </main>
-  <!-- Bottom tabs (mobile) -->
-  <nav class="tabs" aria-label="Mobile nav" style="display:none;position:fixed;bottom:0;left:0;right:0;height:var(--tabs-h);background:var(--surface);border-top:1px solid var(--border);z-index:100;overflow-x:auto">
-    {NAV.slice(0,7).map(n => (
-      <a href={n.href} style={`display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;min-width:48px;padding:6px 2px;color:${active===n.href?'var(--primary)':'var(--faint)'};font-size:0.58rem;text-transform:uppercase;letter-spacing:0.04em;gap:2px`}>
-        <span style="font-size:1.1rem">{n.icon}</span>
-        {n.label}
-      </a>
+<body>
+  <!-- Sticky header -->
+  <header class="site-header">
+    <a href="/" class="brand nav-link">
+      chirag<span class="accent-text">127</span> / me
+    </a>
+  </header>
+
+  <div class="layout-wrap">
+    <!-- Sidebar -->
+    <nav class="sidebar" aria-label="Primary navigation">
+      <div class="nav-group">
+        <span class="nav-group-label">Work</span>
+        <ul>
+          {WORK_NAV.map(n => (
+            <li>
+              <a
+                href={n.href}
+                class={`nav-link sidebar-link${isActive(n.href) ? ' active' : ''}`}
+              >{n.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <span class="nav-group-label">Info</span>
+        <ul>
+          {INFO_NAV.map(n => (
+            <li>
+              <a
+                href={n.href}
+                class={`nav-link sidebar-link${isActive(n.href) ? ' active' : ''}`}
+              >{n.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <details class="nav-group nav-group-collapsible" open={isMediaSection || undefined}>
+        <summary class="nav-group-label nav-group-toggle">Life &#9662;</summary>
+        <ul>
+          <li>
+            <a
+              href="/media/"
+              class={`nav-link sidebar-link${path === '/media/' ? ' active' : ''}`}
+            >Media</a>
+          </li>
+          {isMediaSection && MEDIA_SUBNAV.map(n => (
+            <li>
+              <a
+                href={n.href}
+                class={`nav-link sidebar-link sidebar-sublink${isActive(n.href) ? ' active' : ''}`}
+              >{n.label}</a>
+            </li>
+          ))}
+        </ul>
+      </details>
+
+      <div class="sidebar-footer">
+        <a href="https://oriz.in" class="nav-link back-link">← oriz.in</a>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <slot />
+    </main>
+  </div>
+
+  <!-- Mobile bottom tab bar -->
+  <nav class="tab-bar" aria-label="Mobile navigation">
+    {MOBILE_NAV.map(n => (
+      <a
+        href={n.href}
+        class={`tab-item nav-link${isActive(n.href) ? ' active' : ''}`}
+      >{n.label}</a>
     ))}
   </nav>
 </body>
 </html>
+
 <style>
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  padding: 0 1.5rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.brand:hover {
+  color: var(--fg);
+}
+
+/* Layout wrapper */
+.layout-wrap {
+  display: flex;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  gap: 3rem;
+  min-height: calc(100dvh - 3rem);
+}
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  padding: 2rem 0;
+  border-right: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: sticky;
+  top: 3rem;
+  height: calc(100dvh - 3rem);
+  overflow-y: auto;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.nav-group-label {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--faint);
+  padding: 0 0.75rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.nav-group ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 0.3rem 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.sidebar-link:hover {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.sidebar-link.active {
+  color: var(--fg);
+}
+
+.sidebar-sublink {
+  padding-left: 1.5rem;
+  font-size: 0.77rem;
+}
+
+/* Collapsible nav group */
+.nav-group-collapsible summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.nav-group-collapsible summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-group-toggle {
+  cursor: pointer;
+}
+
+.nav-group-toggle:hover {
+  color: var(--muted);
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  margin-top: auto;
+  padding: 0 0.75rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+}
+
+.back-link {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--faint);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 2.5rem 1.5rem 5rem 0;
+  min-width: 0;
+}
+
+/* Mobile tab bar */
+.tab-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--tabs-h);
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  z-index: 200;
+  overflow-x: auto;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 48px;
+  padding: 0 4px;
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tab-item:hover {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.tab-item.active {
+  color: var(--fg);
+}
+
+/* Mobile breakpoint */
 @media (max-width: 768px) {
-  .sidebar { display: none !important; }
-  .tabs { display: flex !important; }
-  main { margin-left: 0 !important; padding: 1.25rem 1rem 5rem !important; }
+  .sidebar {
+    display: none;
+  }
+
+  .layout-wrap {
+    gap: 0;
+  }
+
+  .main-content {
+    padding: 1.5rem 1rem 5rem;
+  }
+
+  .tab-bar {
+    display: flex;
+  }
 }
 </style>

@@ -4,6 +4,7 @@ const MAL_ID      = import.meta.env.MAL_CLIENT_ID      ?? ''
 const MAL_USER    = import.meta.env.MAL_USERNAME        ?? 'chirag127'
 const LASTFM_KEY  = import.meta.env.LASTFM_API_KEY     ?? ''
 const LASTFM_USER = import.meta.env.LASTFM_USERNAME    ?? 'lastfmwhy'
+const LB_USER     = import.meta.env.LISTENBRAINZ_USERNAME ?? 'chirag127'
 const GR_ID       = import.meta.env.GOODREADS_USER_ID  ?? '132482257'
 const DISCORD_ID  = import.meta.env.DISCORD_USER_ID    ?? '799956529847205898'
 const GH_USER     = 'chirag127'
@@ -159,7 +160,53 @@ export async function getBlogPosts() {
       title: item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/)?.[1] ?? item.match(/<title>(.*?)<\/title>/)?.[1] ?? '',
       link:  item.match(/<link>(.*?)<\/link>/)?.[1] ?? '',
       date:  item.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] ?? '',
-      desc:  item.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/)?.[1]?.slice(0,120) ?? '',
+      desc:  item.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/)?.[1]?.slice(0, 120) ?? '',
     }))
   }, [])
+}
+
+// ---- ListenBrainz (free, no key needed) ----
+
+export async function getLBRecentTracks(count = 10) {
+  return safe(async () => {
+    const r = await fetch(`https://api.listenbrainz.org/1/user/${LB_USER}/listens?count=${count}`)
+    if (!r.ok) return []
+    const d = await r.json()
+    return (d.payload?.listens ?? []).map((l: any) => ({
+      track:     l.track_metadata?.track_name ?? '',
+      artist:    l.track_metadata?.artist_name ?? '',
+      release:   l.track_metadata?.release_name ?? '',
+      ts:        l.listened_at,
+      mbid:      l.track_metadata?.additional_info?.recording_mbid ?? '',
+    }))
+  }, [])
+}
+
+export async function getLBListeningNow() {
+  return safe(async () => {
+    const r = await fetch(`https://api.listenbrainz.org/1/user/${LB_USER}/playing-now`)
+    if (!r.ok) return null
+    const d = await r.json()
+    const listen = d.payload?.listens?.[0]
+    if (!listen) return null
+    return {
+      track:   listen.track_metadata?.track_name ?? '',
+      artist:  listen.track_metadata?.artist_name ?? '',
+      release: listen.track_metadata?.release_name ?? '',
+    }
+  }, null)
+}
+
+export async function getLBStats(range: 'week' | 'month' | 'year' | 'all_time' = 'month') {
+  return safe(async () => {
+    const [artists, recordings] = await Promise.all([
+      fetch(`https://api.listenbrainz.org/1/stats/user/${LB_USER}/artists?range=${range}&count=10`).then(r => r.ok ? r.json() : {}),
+      fetch(`https://api.listenbrainz.org/1/stats/user/${LB_USER}/recordings?range=${range}&count=10`).then(r => r.ok ? r.json() : {}),
+    ])
+    return {
+      topArtists:   artists.payload?.artists ?? [],
+      topTracks:    recordings.payload?.recordings ?? [],
+      totalCount:   artists.payload?.total_artist_count ?? 0,
+    }
+  }, { topArtists: [], topTracks: [], totalCount: 0 })
 }

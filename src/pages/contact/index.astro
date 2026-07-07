@@ -1,0 +1,117 @@
+---
+import Layout from '~/layouts/Layout.astro'
+---
+<Layout title="Contact" description="Get in touch with Chirag Singhal — open to roles, collaborations, and interesting conversations." active="/contact/">
+
+  <header style="margin-bottom:2.5rem">
+    <span class="kicker">Contact</span>
+    <h1 style="font-family:var(--font-display);font-size:2rem;font-weight:600;letter-spacing:-0.02em;color:var(--fg);margin:0 0 0.75rem">Get in Touch</h1>
+    <p style="font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;color:var(--muted);line-height:1.7;max-width:60ch;margin:0">
+      Open to roles, collaborations, and interesting conversations.
+    </p>
+  </header>
+
+  <!-- Contact methods -->
+  <section style="margin-bottom:2.5rem">
+    <div style="display:flex;flex-direction:column;gap:0.75rem;max-width:60ch">
+
+      <div style="display:flex;align-items:center;gap:1rem">
+        <span style="font-family:ui-monospace,monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);width:5rem;flex-shrink:0">Email</span>
+        <a href="mailto:hi@chirag127.in" style="color:#0066cc;text-decoration:underline;text-underline-offset:0.2em;text-decoration-thickness:1px;font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem">hi@chirag127.in</a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:1rem">
+        <span style="font-family:ui-monospace,monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);width:5rem;flex-shrink:0">LinkedIn</span>
+        <a href="https://linkedin.com/in/chirag127" target="_blank" rel="noopener noreferrer" style="color:#0066cc;text-decoration:underline;text-underline-offset:0.2em;text-decoration-thickness:1px;font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem">linkedin.com/in/chirag127</a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:1rem">
+        <span style="font-family:ui-monospace,monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);width:5rem;flex-shrink:0">GitHub</span>
+        <a href="https://github.com/chirag127" target="_blank" rel="noopener noreferrer" style="color:#0066cc;text-decoration:underline;text-underline-offset:0.2em;text-decoration-thickness:1px;font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.95rem">github.com/chirag127</a>
+      </div>
+
+    </div>
+  </section>
+
+  <hr style="border:none;border-top:1px solid rgba(255,255,255,0.10);margin:0 0 2.5rem;max-width:60ch" />
+
+  <!-- Contact form -->
+  <section>
+    <span class="kicker" style="margin-bottom:1rem">Send a message</span>
+
+    <form
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      style="display:flex;flex-direction:column;gap:1.25rem;max-width:60ch"
+    >
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+      <input type="hidden" name="redirect" value="false" />
+
+      <div style="display:flex;flex-direction:column;gap:0.4rem">
+        <label for="contact-name" style="font-family:ui-monospace,monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)">Name</label>
+        <input
+          id="contact-name"
+          type="text"
+          name="name"
+          required
+          placeholder="Your name"
+          style="background:#1a1a1e;border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:0.6rem 0.75rem;color:#eaeaec;font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.9rem;width:100%;outline:none"
+          onfocus="this.style.borderColor='#0066cc'"
+          onblur="this.style.borderColor='rgba(255,255,255,0.10)'"
+        />
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.4rem">
+        <label for="contact-email" style="font-family:ui-monospace,monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)">Email</label>
+        <input
+          id="contact-email"
+          type="email"
+          name="email"
+          required
+          placeholder="you@example.com"
+          style="background:#1a1a1e;border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:0.6rem 0.75rem;color:#eaeaec;font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.9rem;width:100%;outline:none"
+          onfocus="this.style.borderColor='#0066cc'"
+          onblur="this.style.borderColor='rgba(255,255,255,0.10)'"
+        />
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.4rem">
+        <label for="contact-subject" style="font-family:ui-monospace,monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)">Subject</label>
+        <input
+          id="contact-subject"
+          type="text"
+          name="subject"
+          value="Recruiter Inquiry"
+          placeholder="Subject"
+          style="background:#1a1a1e;border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:0.6rem 0.75rem;color:#eaeaec;font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.9rem;width:100%;outline:none"
+          onfocus="this.style.borderColor='#0066cc'"
+          onblur="this.style.borderColor='rgba(255,255,255,0.10)'"
+        />
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0.4rem">
+        <label for="contact-message" style="font-family:ui-monospace,monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)">Message</label>
+        <textarea
+          id="contact-message"
+          name="message"
+          required
+          rows="6"
+          placeholder="Your message…"
+          style="background:#1a1a1e;border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:0.6rem 0.75rem;color:#eaeaec;font-family:Charter,'Bitstream Charter',Cambria,Georgia,serif;font-size:0.9rem;width:100%;outline:none;resize:vertical;line-height:1.6"
+          onfocus="this.style.borderColor='#0066cc'"
+          onblur="this.style.borderColor='rgba(255,255,255,0.10)'"
+        ></textarea>
+      </div>
+
+      <div>
+        <button
+          type="submit"
+          style="background:#0066cc;color:#eaeaec;border:none;border-radius:6px;padding:0.65rem 1.5rem;font-family:ui-monospace,monospace;font-size:0.8rem;letter-spacing:0.05em;cursor:pointer"
+          onmouseover="this.style.background='#0055aa'"
+          onmouseout="this.style.background='#0066cc'"
+        >Send Message</button>
+      </div>
+    </form>
+  </section>
+
+</Layout>

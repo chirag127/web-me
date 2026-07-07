@@ -1,0 +1,46 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const hubs = [
+  { href: '/media/music/',    label: 'Music',        icon: '♫', desc: 'Last.fm scrobbles' },
+  { href: '/media/movies/',   label: 'Movies',       icon: '▶', desc: 'Trakt history' },
+  { href: '/media/tv/',       label: 'TV Shows',     icon: '⊡', desc: 'Trakt history' },
+  { href: '/media/anime/',    label: 'Anime',        icon: '⊛', desc: 'MyAnimeList' },
+  { href: '/media/manga/',    label: 'Manga',        icon: '⊞', desc: 'MyAnimeList' },
+  { href: '/media/books/',    label: 'Books',        icon: '◫', desc: 'Goodreads shelves' },
+  { href: '/media/activity/', label: 'Activity',     icon: '◉', desc: 'Combined feed' },
+]
+---
+
+<Layout title="Media" active="/media/">
+  <span class="kicker">Media</span>
+  <h1 style="margin-bottom:0.5rem">What I'm into</h1>
+  <p style="color:var(--muted);font-size:0.95rem;margin-bottom:2.5rem;max-width:48ch">
+    What I watch, listen to, and read — tracked automatically.
+  </p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem">
+    {hubs.map(h => (
+      <a
+        href={h.href}
+        style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1.25rem 1.5rem;text-decoration:none;display:flex;flex-direction:column;gap:0.5rem"
+        class="hub-card"
+      >
+        <span style="font-size:1.5rem;line-height:1">{h.icon}</span>
+        <span style="font-family:var(--font-display);font-weight:600;font-size:0.95rem;color:var(--fg);letter-spacing:-0.01em">{h.label}</span>
+        <span style="font-family:var(--font-ui);font-size:0.7rem;color:var(--muted)">{h.desc}</span>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+.hub-card:hover {
+  border-color: var(--accent);
+  color: inherit;
+  text-decoration: none;
+}
+.hub-card:hover span:last-child {
+  color: var(--accent);
+}
+</style>

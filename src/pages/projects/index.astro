@@ -1,0 +1,205 @@
+---
+import Layout from '~/layouts/Layout.astro'
+
+const projects = [
+  {
+    name: 'Oriz — 1000+ Free Online Tools Platform',
+    url: 'https://oriz.in',
+    urlLabel: 'oriz.in',
+    github: null,
+    stack: ['TypeScript', 'React', 'Astro', 'Python', 'Cloudflare Workers', 'Firebase', 'Razorpay'],
+    bullets: [
+      '192+ client-side tools across 8 categories; Astro + React + TypeScript + Tailwind on Cloudflare Pages',
+      '10 AI/LLM providers integrated: Gemini, Groq, Mistral, Cohere, NVIDIA NIM, OpenRouter, Cerebras, HuggingFace',
+      '40+ cryptographic algorithms, 100% client-side processing for privacy; 8 serverless edge functions',
+      'Multi-cloud: Firebase, Supabase, Turso, Upstash Redis, Cloudflare R2, Algolia, Sanity, Razorpay',
+    ],
+  },
+  {
+    name: 'NexusAI — Multi-Agent RAG Platform',
+    url: 'https://github.com/chirag127/NexusAI-Agentic-Workflows',
+    urlLabel: 'github.com/chirag127/NexusAI-Agentic-Workflows',
+    github: 'https://github.com/chirag127/NexusAI-Agentic-Workflows',
+    stack: ['Python', 'LangGraph', 'OpenAI', 'Docker', 'Kubernetes', 'Neo4j'],
+    bullets: [
+      'LangGraph orchestrating multiple autonomous LLM agents for complex agentic workflows',
+      'Graph-based RAG pipeline with Neo4j + Vector Embeddings for knowledge retrieval',
+      'Kubernetes deployment with auto-scaling for production workloads',
+    ],
+  },
+  {
+    name: 'TubeDigest — Multimodal Sponsor Detection',
+    url: 'https://github.com/chirag127/TubeDigest-AI-Sponsor-Block',
+    urlLabel: 'github.com/chirag127/TubeDigest-AI-Sponsor-Block',
+    github: 'https://github.com/chirag127/TubeDigest-AI-Sponsor-Block',
+    stack: ['Python', 'Transformers', 'ONNX Runtime', 'PyTorch'],
+    bullets: [
+      'Hugging Face Transformers for sponsor segment detection using Audio + Text modalities',
+      'Fine-tuned T5 model with 3× inference speedup via ONNX Runtime + quantization',
+      'Flask microservice with sub-second latency for real-time detection',
+    ],
+  },
+  {
+    name: 'Olivia — Edge AI Voice Assistant',
+    url: 'https://github.com/chirag127/Olivia-Voice-Assistant',
+    urlLabel: 'github.com/chirag127/Olivia-Voice-Assistant',
+    github: 'https://github.com/chirag127/Olivia-Voice-Assistant',
+    stack: ['Python', 'Edge AI', 'Llama-3', 'TensorFlow Lite'],
+    bullets: [
+      'Local LLMs (Llama-3) for intent classification — fully offline, zero cloud latency',
+      'Edge computing architecture enabling privacy-first voice processing on-device',
+      'Plugin-based IoT integration for extensible smart home and automation control',
+    ],
+  },
+  {
+    name: 'Crawl4AI — Distributed RAG Ingestion',
+    url: 'https://github.com/chirag127/Crawl4AI-LLM-Optimized-Web-Crawler',
+    urlLabel: 'github.com/chirag127/Crawl4AI-LLM-Optimized-Web-Crawler',
+    github: 'https://github.com/chirag127/Crawl4AI-LLM-Optimized-Web-Crawler',
+    stack: ['Python', 'Redis', 'Distributed Crawling', 'Selenium'],
+    bullets: [
+      'Redis task queues for massive dataset ingestion at scale across distributed workers',
+      'Stealth drivers, proxy rotation, anti-bot bypass for reliable large-scale crawling',
+      'HTML → structured JSON/Markdown pipeline optimized for Vector DB ingestion',
+    ],
+  },
+  {
+    name: 'OmniPublish — Content Orchestration Engine',
+    url: 'https://github.com/chirag127/OmniPublish-Platform',
+    urlLabel: 'github.com/chirag127/OmniPublish-Platform',
+    github: 'https://github.com/chirag127/OmniPublish-Platform',
+    stack: ['Python', 'Microservices', 'Node.js', 'System Design'],
+    bullets: [
+      'API Gateway using Adapter Pattern unifying 17+ publishing platforms under one interface',
+      'Circuit Breaker + Celery async retry for fault tolerance across platform integrations',
+      'Microservices architecture enabling independent scaling per publishing channel',
+    ],
+  },
+]
+---
+
+<Layout title="Projects" description="Key engineering projects — tools platforms, AI/ML systems, distributed crawlers, and content orchestration." active="/projects/">
+
+  <div class="section-title">
+    <span class="kicker">Key Projects</span>
+    <h1>Projects</h1>
+  </div>
+
+  <div class="projects-grid">
+    {projects.map(p => (
+      <article class="card project-card">
+        <h2 class="project-name">{p.name}</h2>
+
+        <div class="chip-row">
+          {p.stack.map(tech => (
+            <span class="chip">{tech}</span>
+          ))}
+        </div>
+
+        <ul class="project-bullets">
+          {p.bullets.map(b => (
+            <li>{b}</li>
+          ))}
+        </ul>
+
+        <div class="project-links">
+          <a
+            href={p.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >{p.urlLabel}</a>
+        </div>
+      </article>
+    ))}
+  </div>
+
+</Layout>
+
+<style>
+.section-title {
+  margin-bottom: 2.5rem;
+}
+
+.section-title h1 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 2rem;
+  color: var(--fg);
+  margin-top: 0.25rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+}
+
+.project-name {
+  font-family: Charter, "Bitstream Charter", Cambria, Georgia, serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  margin-bottom: 0.75rem;
+  max-width: none;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.project-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 70ch;
+}
+
+.project-bullets li {
+  font-family: Charter, "Bitstream Charter", Cambria, Georgia, serif;
+  font-size: 0.925rem;
+  color: var(--muted);
+  line-height: 1.55;
+  padding-left: 1em;
+  position: relative;
+  max-width: none;
+}
+
+.project-bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--faint);
+}
+
+.project-links {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.75rem;
+}
+
+.project-link {
+  font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  word-break: break-all;
+}
+
+.project-link:hover {
+  text-decoration-thickness: 2px;
+}
+</style>

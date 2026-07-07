@@ -1,0 +1,49 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getTraktMovies, getTraktStats } from '~/lib/api'
+
+const [movies, stats] = await Promise.all([getTraktMovies(20), getTraktStats()])
+
+const moviesWatched: number = stats?.movies?.plays ?? 0
+const minutesWatched: number = stats?.movies?.minutes ?? 0
+const hoursWatched: number = Math.round(minutesWatched / 60)
+---
+
+<Layout title="Movies" active="/media/">
+  <span class="kicker">Movies</span>
+  <h1 style="margin-bottom:2rem">Watching</h1>
+
+  {(moviesWatched > 0 || hoursWatched > 0) && (
+    <div style="display:flex;gap:1rem;margin-bottom:2.5rem;flex-wrap:wrap">
+      {(moviesWatched > 0 ? [{ label: 'Movies watched', value: moviesWatched.toLocaleString() }] : [])
+        .concat(hoursWatched > 0 ? [{ label: 'Hours watched', value: hoursWatched.toLocaleString() }] : [])
+        .map((s: { label: string; value: string }) => (
+          <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:140px">
+            <p class="kicker" style="margin-bottom:0.25rem">{s.label}</p>
+            <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{s.value}</p>
+          </div>
+        ))}
+    </div>
+  )}
+
+  <p class="kicker" style="margin-bottom:0.75rem">Recent Movies</p>
+
+  {movies.length === 0 ? (
+    <p style="color:var(--faint);font-size:0.9rem">No movie data. Set <code>TRAKT_CLIENT_ID</code> to load.</p>
+  ) : (
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+      {movies.map((entry: any, i: number) => {
+        const movie = entry.movie ?? entry
+        const title: string = movie.title ?? 'Unknown'
+        const year: number | null = movie.year ?? null
+        const watchedAt: string | null = entry.watched_at ?? null
+        return (
+          <div style={`display:flex;align-items:baseline;gap:1rem;padding:0.65rem 1rem;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}>
+            <span style="flex:1;font-size:0.9rem;color:var(--fg)">{title}</span>
+            {year && <span style="font-family:var(--font-ui);font-size:0.75rem;color:var(--faint);flex-shrink:0">{year}</span>}
+          </div>
+        )
+      })}
+    </div>
+  )}
+</Layout>

@@ -1,0 +1,81 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmRecent, getLastfmTopArtists, getLastfmUserInfo } from '~/lib/api'
+
+const [recent, topArtists, userInfo] = await Promise.all([
+  getLastfmRecent(10),
+  getLastfmTopArtists('1month', 8),
+  getLastfmUserInfo(),
+])
+
+const nowPlaying = recent.find((t: any) => t['@attr']?.nowplaying === 'true')
+const totalScrobbles = userInfo.playcount ? Number(userInfo.playcount).toLocaleString() : '—'
+
+function timeAgo(uts: string | undefined): string {
+  if (!uts) return ''
+  const diff = Math.floor(Date.now() / 1000) - Number(uts)
+  if (diff < 60) return 'just now'
+  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`
+  return `${Math.floor(diff / 86400)}d ago`
+}
+---
+
+<Layout title="Music" active="/media/">
+  <span class="kicker">Music</span>
+  <h1 style="margin-bottom:0.35rem">Listening</h1>
+  <p style="color:var(--muted);font-size:0.9rem;margin-bottom:2rem">
+    Tracked via <a href={`https://www.last.fm/user/${userInfo.name ?? 'lastfmwhy'}`} target="_blank" rel="noopener">last.fm/{userInfo.name ?? 'lastfmwhy'}</a>.
+    {totalScrobbles !== '—' && <span> {totalScrobbles} scrobbles total.</span>}
+  </p>
+
+  {nowPlaying && (
+    <div style="background:var(--paper);border:1px solid var(--accent);border-radius:6px;padding:0.9rem 1.25rem;margin-bottom:2rem;display:flex;align-items:center;gap:1rem">
+      <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0"></span>
+      <div style="min-width:0">
+        <p style="font-family:var(--font-ui);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.15rem">Now Playing</p>
+        <p style="font-size:0.95rem;font-weight:600;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{nowPlaying.name}</p>
+        <p style="color:var(--muted);font-size:0.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{nowPlaying.artist?.['#text']}</p>
+      </div>
+    </div>
+  )}
+
+  {topArtists.length > 0 && (
+    <section style="margin-bottom:2.5rem">
+      <p class="kicker" style="margin-bottom:0.75rem">Top Artists — This Month</p>
+      <ol style="list-style:none;display:flex;flex-direction:column;gap:0">
+        {topArtists.map((a: any, i: number) => (
+          <li style={`display:flex;align-items:center;gap:1rem;padding:0.6rem 0;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}>
+            <span style="font-family:var(--font-ui);font-size:0.7rem;color:var(--faint);width:1.25rem;text-align:right;flex-shrink:0">{i + 1}</span>
+            <span style="flex:1;font-size:0.9rem;color:var(--fg)">{a.name}</span>
+            <span style="font-family:var(--font-ui);font-size:0.75rem;color:var(--muted);flex-shrink:0">{Number(a.playcount).toLocaleString()} plays</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  <section>
+    <p class="kicker" style="margin-bottom:0.75rem">Recent Tracks</p>
+    {recent.length === 0 ? (
+      <p style="color:var(--faint);font-size:0.9rem">No recent scrobbles.</p>
+    ) : (
+      <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+        {recent.map((t: any, i: number) => {
+          const isNow = t['@attr']?.nowplaying === 'true'
+          return (
+            <div style={`display:flex;align-items:center;gap:1rem;padding:0.65rem 1rem;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}>
+              <div style="min-width:0;flex:1">
+                <p style="font-size:0.875rem;font-weight:500;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{t.name}</p>
+                <p style="font-size:0.78rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{t.artist?.['#text']}</p>
+              </div>
+              <span style={`font-family:var(--font-ui);font-size:0.72rem;flex-shrink:0;${isNow ? 'color:var(--accent)' : 'color:var(--faint)'}`}>
+                {isNow ? '▶ now' : timeAgo(t.date?.uts)}
+              </span>
+            </div>
+          )
+        })}
+      </div>
+    )}
+  </section>
+</Layout>

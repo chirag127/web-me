@@ -1,0 +1,77 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { getGoodreadsShelf } from '~/lib/api'
+
+const [currentlyReading, read] = await Promise.all([
+  getGoodreadsShelf('currently-reading'),
+  getGoodreadsShelf('read'),
+])
+---
+
+<Layout title="Books" active="/media/">
+  <span class="kicker">Books</span>
+  <h1 style="margin-bottom:2rem">Reading</h1>
+
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem">
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:120px">
+      <p class="kicker" style="margin-bottom:0.25rem">Reading</p>
+      <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{currentlyReading.length || '—'}</p>
+    </div>
+    <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.5rem;min-width:120px">
+      <p class="kicker" style="margin-bottom:0.25rem">Read</p>
+      <p style="font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--fg)">{read.length || '—'}</p>
+    </div>
+  </div>
+
+  {currentlyReading.length > 0 && (
+    <section style="margin-bottom:2.5rem">
+      <p class="kicker" style="margin-bottom:0.75rem">Currently Reading</p>
+      <div style="display:flex;flex-direction:column;gap:0.75rem">
+        {currentlyReading.map((book: any) => (
+          <a
+            href={book.link || '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:1rem 1.25rem;text-decoration:none;display:flex;flex-direction:column;gap:0.2rem"
+            class="book-row"
+          >
+            <span style="font-size:0.95rem;font-weight:600;color:var(--fg)">{book.title}</span>
+            <span style="font-size:0.82rem;color:var(--muted)">{book.author}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section>
+    <p class="kicker" style="margin-bottom:0.75rem">Read</p>
+    {read.length === 0 ? (
+      <p style="color:var(--faint);font-size:0.9rem">No books logged. Connect Goodreads to load.</p>
+    ) : (
+      <div style="background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden">
+        {read.map((book: any, i: number) => (
+          <a
+            href={book.link || '#'}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={`display:flex;align-items:baseline;gap:1rem;padding:0.65rem 1rem;text-decoration:none;${i > 0 ? 'border-top:1px solid var(--rule)' : ''}`}
+            class="list-row"
+          >
+            <span style="flex:1;font-size:0.9rem;color:var(--fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{book.title}</span>
+            <span style="font-size:0.8rem;color:var(--muted);flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:12rem">{book.author}</span>
+            {book.rating && book.rating !== '0' && (
+              <span style="font-family:var(--font-ui);font-size:0.72rem;color:var(--accent);flex-shrink:0">★ {book.rating}</span>
+            )}
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+</Layout>
+
+<style>
+.book-row:hover, .list-row:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+</style>
