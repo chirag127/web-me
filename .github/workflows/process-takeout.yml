@@ -1,0 +1,143 @@
+name: Process Google Takeout
+
+on:
+  schedule:
+    - cron: '0 3 1 * *'   # 03:00 UTC on 1st of every month
+  workflow_dispatch:        # manual trigger anytime
+
+jobs:
+  process-takeout:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install googleapis
+
+      - name: Download latest Takeout from Google Drive
+        id: download
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: |
+          node << 'EOF'
+          const { google } = require('googleapis');
+          const fs = require('fs');
+          const path = require('path');
+          const https = require('https');
+          const { execSync } = require('child_process');
+
+          async function main() {
+            const auth = new google.auth.OAuth2(
+              process.env.GOOGLE_CLIENT_ID,
+              process.env.GOOGLE_CLIENT_SECRET
+            );
+            auth.setCredentials({ refresh_token: process.env.GOOGLE_REFRESH_TOKEN });
+
+            const drive = google.drive({ version: 'v3', auth });
+
+            // Find latest Takeout folder in Google Drive
+            const res = await drive.files.list({
+              q: "name contains 'takeout' and mimeType = 'application/zip' and trashed = false",
+              orderBy: 'createdTime desc',
+              pageSize: 1,
+              fields: 'files(id, name, createdTime, size)',
+            });
+
+            if (!res.data.files?.length) {
+              console.log('No Takeout files found in Google Drive. Set Takeout to export to Drive at takeout.google.com');
+              process.exit(0);
+            }
+
+            const file = res.data.files[0];
+            console.log(`Found: ${file.name} (${Math.round(file.size / 1024 / 1024)}MB) created ${file.createdTime}`);
+
+            // Download the file
+            const dest = '/tmp/takeout.zip';
+            const response = await drive.files.get(
+              { fileId: file.id, alt: 'media' },
+              { responseType: 'stream' }
+            );
+
+            await new Promise((resolve, reject) => {
+              const ws = fs.createWriteStream(dest);
+              response.data.pipe(ws);
+              ws.on('finish', resolve);
+              ws.on('error', reject);
+            });
+
+            console.log('Downloaded to', dest);
+
+            // Extract relevant files
+            execSync(`unzip -o ${dest} "*/YouTube*" "*/watch-history.json" "*/Takeout/Fit/**" "*/Location History/**" -d /tmp/takeout-extracted/ 2>/dev/null || true`);
+
+            // Parse YouTube watch history
+            const ytHistoryFiles = execSync('find /tmp/takeout-extracted -name "watch-history.json" 2>/dev/null').toString().trim().split('\n').filter(Boolean);
+            if (ytHistoryFiles.length) {
+              const history = JSON.parse(fs.readFileSync(ytHistoryFiles[0], 'utf-8'));
+              const recent = history.slice(0, 200).map(item => ({
+                title: item.title?.replace('Watched ', '') ?? '',
+                url: item.titleUrl ?? '',
+                channel: item.subtitles?.[0]?.name ?? '',
+                time: item.time ?? '',
+              }));
+              fs.writeFileSync('public/data/youtube-recent.json', JSON.stringify(recent, null, 2));
+
+              // Stats
+              const channels = {};
+              history.forEach(item => {
+                const ch = item.subtitles?.[0]?.name;
+                if (ch) channels[ch] = (channels[ch] || 0) + 1;
+              });
+              const topChannels = Object.entries(channels).sort((a,b) => b[1]-a[1]).slice(0, 20).map(([name, count]) => ({ name, count }));
+              fs.writeFileSync('public/data/youtube-stats.json', JSON.stringify({
+                total: history.length,
+                top_channels: topChannels,
+                last_updated: new Date().toISOString(),
+              }, null, 2));
+
+              console.log(`YouTube: ${history.length} watch history entries, ${topChannels.length} top channels`);
+            }
+
+            // Parse Google Fit sleep data
+            const fitSleepFiles = execSync('find /tmp/takeout-extracted -name "*.json" -path "*/Fit/*" 2>/dev/null').toString().trim().split('\n').filter(Boolean);
+            if (fitSleepFiles.length) {
+              const sleepSessions = [];
+              for (const f of fitSleepFiles.slice(0, 50)) {
+                try {
+                  const data = JSON.parse(fs.readFileSync(f, 'utf-8'));
+                  if (data.session && data.session.activityType === 72) { // 72 = sleep
+                    sleepSessions.push({
+                      start: data.session.startTimeMillis,
+                      end: data.session.endTimeMillis,
+                      duration_min: Math.round((data.session.endTimeMillis - data.session.startTimeMillis) / 60000),
+                    });
+                  }
+                } catch {}
+              }
+              if (sleepSessions.length) {
+                fs.writeFileSync('public/data/fit-sleep.json', JSON.stringify(sleepSessions.slice(-90), null, 2));
+                console.log(`Fit: ${sleepSessions.length} sleep sessions`);
+              }
+            }
+
+            console.log('Done processing Takeout');
+          }
+
+          main().catch(e => { console.error(e.message); process.exit(0); }); // exit 0 — don't fail the workflow
+          EOF
+
+      - name: Commit Takeout data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/youtube-recent.json public/data/youtube-stats.json public/data/fit-sleep.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore(data): process monthly Google Takeout $(date -u +%Y-%m)"
+          git push
