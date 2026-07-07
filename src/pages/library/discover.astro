@@ -1,0 +1,480 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+let nowPlaying: any[] = []
+let trendingMovies: any[] = []
+let trendingTV: any[] = []
+let topRatedMovies: any[] = []
+let onTheAir: any[] = []
+let popularMovies: any[] = []
+
+try { nowPlaying = JSON.parse(readFileSync(join(process.cwd(), 'public/data/tmdb-now-playing.json'), 'utf-8')) } catch {}
+try { trendingMovies = JSON.parse(readFileSync(join(process.cwd(), 'public/data/tmdb-trending-movies.json'), 'utf-8')) } catch {}
+try { trendingTV = JSON.parse(readFileSync(join(process.cwd(), 'public/data/tmdb-trending-tv.json'), 'utf-8')) } catch {}
+try { topRatedMovies = JSON.parse(readFileSync(join(process.cwd(), 'public/data/tmdb-top-rated-movies.json'), 'utf-8')) } catch {}
+try { onTheAir = JSON.parse(readFileSync(join(process.cwd(), 'public/data/tmdb-on-the-air.json'), 'utf-8')) } catch {}
+try { popularMovies = JSON.parse(readFileSync(join(process.cwd(), 'public/data/tmdb-popular-movies.json'), 'utf-8')) } catch {}
+
+function ratingColor(r: number): string {
+  if (r >= 8) return '#10b981'
+  if (r >= 7) return '#f59e0b'
+  return '#6b7280'
+}
+
+function extractYear(d: string): string {
+  if (!d) return ''
+  return d.substring(0, 4)
+}
+---
+
+<Layout title="Discover" description="What's trending in movies and TV — TMDB data">
+
+  <div class="page-updated">DATA · 2026-07-07</div>
+
+  <div class="kicker">LIBRARY · DISCOVER</div>
+  <h1 class="page-title">Discover</h1>
+  <p class="page-subtitle">What's trending in movies &amp; TV.</p>
+
+  <!-- NOW PLAYING IN CINEMAS -->
+  {nowPlaying.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="section-header">
+        <span class="kicker">NOW PLAYING IN CINEMAS</span>
+        <span class="badge badge--rose">{nowPlaying.length} films</span>
+      </div>
+      <div class="scroll-row">
+        {nowPlaying.slice(0, 20).map((m: any) => (
+          <div class="poster-card">
+            <div class="poster-wrap">
+              {m.poster && (
+                <img
+                  src={`https://image.tmdb.org/t/p/w342${m.poster}`}
+                  alt={m.title}
+                  class="poster-img"
+                  loading="lazy"
+                  onerror="this.parentElement.style.display='none'"
+                />
+              )}
+              <div class="poster-rating" style={`color:${ratingColor(m.rating || 0)}`}>
+                ★ {(m.rating || 0).toFixed(1)}
+              </div>
+            </div>
+            <div class="poster-title">{m.title}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- TRENDING MOVIES -->
+  {trendingMovies.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="section-header">
+        <span class="kicker">TRENDING THIS WEEK — MOVIES</span>
+        <span class="badge badge--indigo">{trendingMovies.length} films</span>
+      </div>
+      <div class="posters-grid">
+        {trendingMovies.slice(0, 8).map((m: any) => (
+          <div class="poster-grid-card">
+            <div class="poster-wrap-grid">
+              {m.poster && (
+                <img
+                  src={`https://image.tmdb.org/t/p/w342${m.poster}`}
+                  alt={m.title}
+                  class="poster-img-grid"
+                  loading="lazy"
+                  onerror="this.parentElement.style.display='none'"
+                />
+              )}
+              {m.backdrop && (
+                <div class="poster-hover-overlay" style={`background-image:url(https://image.tmdb.org/t/p/w780${m.backdrop})`}>
+                  <div class="overlay-content">
+                    <div class="overlay-title">{m.title}</div>
+                    {m.overview && <p class="overlay-overview">{m.overview?.substring(0, 120)}…</p>}
+                    <div class="overlay-rating">★ {(m.rating || 0).toFixed(1)}</div>
+                  </div>
+                </div>
+              )}
+              <div class="poster-rating-grid" style={`color:${ratingColor(m.rating || 0)}`}>
+                ★ {(m.rating || 0).toFixed(1)}
+              </div>
+            </div>
+            <div class="poster-grid-title">{m.title}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- TRENDING TV -->
+  {trendingTV.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="section-header">
+        <span class="kicker">TRENDING TV</span>
+        <span class="badge badge--violet">{trendingTV.length} shows</span>
+      </div>
+      <div class="posters-grid">
+        {trendingTV.slice(0, 8).map((m: any) => (
+          <div class="poster-grid-card">
+            <div class="poster-wrap-grid">
+              {m.poster && (
+                <img
+                  src={`https://image.tmdb.org/t/p/w342${m.poster}`}
+                  alt={m.title}
+                  class="poster-img-grid"
+                  loading="lazy"
+                  onerror="this.parentElement.style.display='none'"
+                />
+              )}
+              {m.backdrop && (
+                <div class="poster-hover-overlay" style={`background-image:url(https://image.tmdb.org/t/p/w780${m.backdrop})`}>
+                  <div class="overlay-content">
+                    <div class="overlay-title">{m.title}</div>
+                    {m.overview && <p class="overlay-overview">{m.overview?.substring(0, 120)}…</p>}
+                    <div class="overlay-rating">★ {(m.rating || 0).toFixed(1)}</div>
+                  </div>
+                </div>
+              )}
+              <div class="poster-rating-grid" style={`color:${ratingColor(m.rating || 0)}`}>
+                ★ {(m.rating || 0).toFixed(1)}
+              </div>
+            </div>
+            <div class="poster-grid-title">{m.title}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- TOP RATED ALL TIME — MOVIES -->
+  {topRatedMovies.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="section-header">
+        <span class="kicker">TOP RATED ALL TIME — MOVIES</span>
+      </div>
+      <div class="card ranked-list">
+        {topRatedMovies.slice(0, 20).map((m: any, i: number) => (
+          <div class="ranked-row">
+            <span class="rank">#{i + 1}</span>
+            {m.poster && (
+              <img
+                src={`https://image.tmdb.org/t/p/w92${m.poster}`}
+                alt={m.title}
+                class="ranked-poster"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+            )}
+            <span class="ranked-title">{m.title}</span>
+            <span class="ranked-year">{extractYear(m.release || '')}</span>
+            <span class="ranked-rating" style={`color:${ratingColor(m.rating || 0)}`}>★ {(m.rating || 0).toFixed(1)}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- ON THE AIR -->
+  {onTheAir.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="section-header">
+        <span class="kicker">ON THE AIR</span>
+        <span class="badge badge--emerald">LIVE</span>
+      </div>
+      <div class="card ranked-list">
+        {onTheAir.slice(0, 15).map((m: any, i: number) => (
+          <div class="ranked-row">
+            <span class="rank">#{i + 1}</span>
+            {m.poster && (
+              <img
+                src={`https://image.tmdb.org/t/p/w92${m.poster}`}
+                alt={m.title}
+                class="ranked-poster"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+            )}
+            <span class="ranked-title">{m.title}</span>
+            <span class="ranked-year">{m.genres ? m.genres.slice(0, 2).join(', ') : ''}</span>
+            <span class="ranked-rating" style={`color:${ratingColor(m.rating || 0)}`}>★ {(m.rating || 0).toFixed(1)}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+</Layout>
+
+<style>
+  .page-updated {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+    letter-spacing: 0.05em;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--t-1);
+    margin: 0.5rem 0 0.5rem;
+    background: linear-gradient(135deg, var(--rose) 0%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+    color: var(--t-3);
+    margin-bottom: 2rem;
+  }
+
+  .section-block {
+    margin-top: 3rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  /* Now Playing scroll row */
+  .scroll-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.1) transparent;
+  }
+
+  .poster-card {
+    flex-shrink: 0;
+    width: 100px;
+  }
+
+  .poster-wrap {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--overlay);
+    border: 1px solid var(--border);
+  }
+
+  .poster-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .poster-rating {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    background: rgba(0,0,0,0.8);
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  .poster-title {
+    font-size: 11px;
+    color: var(--t-3);
+    margin-top: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* 4-col poster grid */
+  .posters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .poster-grid-card {
+    cursor: default;
+  }
+
+  .poster-wrap-grid {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/3;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--overlay);
+    border: 1px solid var(--border);
+  }
+
+  .poster-img-grid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 200ms;
+  }
+
+  .poster-hover-overlay {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 250ms;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .poster-wrap-grid:hover .poster-hover-overlay {
+    opacity: 1;
+  }
+
+  .poster-wrap-grid:hover .poster-img-grid {
+    opacity: 0.3;
+  }
+
+  .overlay-content {
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, transparent 100%);
+    width: 100%;
+  }
+
+  .overlay-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .overlay-overview {
+    font-size: 10px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+
+  .overlay-rating {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  .poster-rating-grid {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    background: rgba(0,0,0,0.75);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+
+  .poster-grid-title {
+    font-size: 11px;
+    color: var(--t-3);
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Ranked list */
+  .ranked-list {
+    padding: 0;
+    overflow: hidden;
+    margin-top: 0;
+  }
+
+  .ranked-row {
+    display: grid;
+    grid-template-columns: 40px 36px 1fr 60px 60px;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    transition: background 80ms;
+  }
+
+  .ranked-row:last-child {
+    border-bottom: none;
+  }
+
+  .ranked-row:hover {
+    background: rgba(255,255,255,0.03);
+  }
+
+  .rank {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--t-4);
+    text-align: right;
+  }
+
+  .ranked-poster {
+    width: 32px;
+    height: 48px;
+    border-radius: 3px;
+    object-fit: cover;
+  }
+
+  .ranked-title {
+    font-size: 13px;
+    color: var(--t-2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ranked-year {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ranked-rating {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .animate-in {
+    animation: fadeUp 0.4s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Badge variants missing from global */
+  .badge--violet {
+    background: rgba(139,92,246,0.15);
+    color: #a78bfa;
+    border-color: rgba(139,92,246,0.3);
+  }
+</style>

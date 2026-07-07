@@ -1,0 +1,459 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+let wakatime: any = {}
+let lastfmUser: any = {}
+let traktStats: any = {}
+let habiticaUser: any = {}
+let ghUser: any = {}
+let npmPackages: any[] = []
+let lbPlaying: any = null
+let traktMovies: any[] = []
+
+try { wakatime = JSON.parse(readFileSync(join(process.cwd(), 'public/data/wakatime-stats-7d.json'), 'utf-8')) } catch {}
+try { lastfmUser = JSON.parse(readFileSync(join(process.cwd(), 'public/data/lastfm-user.json'), 'utf-8')) } catch {}
+try { traktStats = JSON.parse(readFileSync(join(process.cwd(), 'public/data/trakt-stats.json'), 'utf-8')) } catch {}
+try { habiticaUser = JSON.parse(readFileSync(join(process.cwd(), 'public/data/habitica-user.json'), 'utf-8')) } catch {}
+try { ghUser = JSON.parse(readFileSync(join(process.cwd(), 'public/data/github-user.json'), 'utf-8')) } catch {}
+try { npmPackages = JSON.parse(readFileSync(join(process.cwd(), 'public/data/npm-packages.json'), 'utf-8')) } catch {}
+try { lbPlaying = JSON.parse(readFileSync(join(process.cwd(), 'public/data/lb-playing-now.json'), 'utf-8')) } catch {}
+try { traktMovies = JSON.parse(readFileSync(join(process.cwd(), 'public/data/trakt-movies-enriched.json'), 'utf-8')) } catch {}
+
+const topLang = wakatime.languages?.[0]?.name || '—'
+const topLangTime = wakatime.languages?.[0]?.text || ''
+const codingHours = wakatime.human_readable || '—'
+const scrobbles = lastfmUser.playcount || 0
+const moviesWatched = traktStats.movies?.watched || 0
+const episodesWatched = traktStats.episodes?.watched || 0
+const habiticaLevel = habiticaUser?.data?.stats?.lvl || 0
+const habiticaClass = habiticaUser?.data?.stats?.class || ''
+const habiticaName = habiticaUser?.data?.profile?.name || 'Chirag'
+const ghRepos = ghUser.public_repos || 0
+const npmCount = npmPackages.length
+
+const statCards = [
+  {
+    label: 'CODING THIS WEEK',
+    value: codingHours,
+    sub: `Top: ${topLang} ${topLangTime}`,
+    color: '#6366f1',
+    icon: '⌨',
+    href: '/me/wakatime',
+  },
+  {
+    label: 'MUSIC SCROBBLES',
+    value: Number(scrobbles).toLocaleString(),
+    sub: `${lastfmUser.artist_count || 0} artists · ${lastfmUser.track_count || 0} tracks`,
+    color: '#f43f5e',
+    icon: '♪',
+    href: '/library/music/',
+  },
+  {
+    label: 'MOVIES WATCHED',
+    value: moviesWatched,
+    sub: `${traktStats.movies?.minutes ? Math.round(traktStats.movies.minutes / 60) + ' hrs' : ''}`,
+    color: '#f59e0b',
+    icon: '▶',
+    href: '/library/movies/',
+  },
+  {
+    label: 'TV EPISODES',
+    value: episodesWatched.toLocaleString(),
+    sub: `${traktStats.shows?.watched || 0} shows watched`,
+    color: '#8b5cf6',
+    icon: '⊡',
+    href: '/library/tv/',
+  },
+  {
+    label: 'HABITICA LEVEL',
+    value: habiticaLevel,
+    sub: `${habiticaClass} · ${habiticaName}`,
+    color: '#10b981',
+    icon: '⚔',
+    href: '/me/productivity',
+  },
+  {
+    label: 'GITHUB REPOS',
+    value: ghRepos,
+    sub: `${ghUser.followers || 0} followers`,
+    color: '#6366f1',
+    icon: '◧',
+    href: '/work/open-source',
+  },
+  {
+    label: 'NPM PACKAGES',
+    value: npmCount,
+    sub: `Published packages`,
+    color: '#f43f5e',
+    icon: '◈',
+    href: '/work/open-source',
+  },
+  {
+    label: 'DAILY CODING AVG',
+    value: wakatime.daily_average || '—',
+    sub: `7-day average`,
+    color: '#06b6d4',
+    icon: '◉',
+    href: '/me/wakatime',
+  },
+]
+---
+
+<Layout title="Dashboard" description="Live personal stats — coding, music, movies, gaming">
+
+  <div class="page-updated">DATA · 2026-07-07</div>
+
+  <div class="kicker">ME · STATS</div>
+  <h1 class="page-title">Dashboard</h1>
+  <p class="page-subtitle">Live data from all my trackers.</p>
+
+  <!-- Bento stat grid -->
+  <div class="bento-grid animate-in">
+    {statCards.map((card) => (
+      <a href={card.href} class="card stat-bento-card">
+        <div class="stat-bento-top">
+          <span class="stat-bento-icon" style={`color:${card.color}`}>{card.icon}</span>
+          <span class="stat-bento-label">{card.label}</span>
+        </div>
+        <div class="stat-bento-value" style={`color:${card.color}`}>{card.value}</div>
+        <div class="stat-bento-sub">{card.sub}</div>
+      </a>
+    ))}
+  </div>
+
+  <!-- Coding breakdown -->
+  {wakatime.languages && wakatime.languages.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="kicker">CODING BREAKDOWN — LAST 7 DAYS</div>
+      <div class="card lang-breakdown">
+        {wakatime.languages.slice(0, 8).map((lang: any) => (
+          <div class="lang-row">
+            <span class="lang-name">{lang.name}</span>
+            <div class="lang-bar-wrap">
+              <div class="lang-bar" style={`width:${lang.percent}%;background:${lang.color || '#6366f1'}`}></div>
+            </div>
+            <span class="lang-pct">{lang.percent?.toFixed(1)}%</span>
+            <span class="lang-time">{lang.text}</span>
+          </div>
+        ))}
+        <div class="lang-total">
+          <span>Total:</span>
+          <strong>{wakatime.human_readable}</strong>
+          <span>·</span>
+          <span>Avg {wakatime.daily_average}/day</span>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Currently listening -->
+  {lbPlaying?.playing_now && (
+    <section class="section-block animate-in">
+      <div class="kicker">NOW PLAYING</div>
+      <div class="card now-playing-card">
+        <div class="np-dot"><span class="glow-dot"></span></div>
+        <div class="np-info">
+          <div class="np-track">{lbPlaying.track_metadata?.track_name}</div>
+          <div class="np-artist">{lbPlaying.track_metadata?.artist_name} · {lbPlaying.track_metadata?.release_name}</div>
+        </div>
+        <span class="badge badge--emerald">LIVE</span>
+      </div>
+    </section>
+  )}
+
+  <!-- Last movie watched -->
+  {traktMovies.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="kicker">LAST MOVIE WATCHED</div>
+      <div class="card last-movie-card">
+        {traktMovies[0]._tmdb?.poster && (
+          <img
+            src={traktMovies[0]._tmdb.poster}
+            alt={traktMovies[0].movie?.title}
+            class="last-movie-poster"
+            loading="lazy"
+            onerror="this.parentElement.style.display='none'"
+          />
+        )}
+        <div class="last-movie-info">
+          <div class="last-movie-title">{traktMovies[0].movie?.title} <span class="last-movie-year">({traktMovies[0].movie?.year})</span></div>
+          {traktMovies[0]._tmdb?.overview && (
+            <p class="last-movie-overview">{traktMovies[0]._tmdb.overview.substring(0, 180)}…</p>
+          )}
+          <div class="last-movie-meta">
+            {traktMovies[0]._tmdb?.rating && (
+              <span class="last-movie-rating">★ {traktMovies[0]._tmdb.rating.toFixed(1)}</span>
+            )}
+            {traktMovies[0]._tmdb?.genres?.slice(0, 3).map((g: string) => (
+              <span class="chip">{g}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+</Layout>
+
+<style>
+  .page-updated {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+    letter-spacing: 0.05em;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--t-1);
+    margin: 0.5rem 0 0.5rem;
+    background: linear-gradient(135deg, var(--emerald) 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+    color: var(--t-3);
+    margin-bottom: 2rem;
+  }
+
+  .section-block {
+    margin-top: 3rem;
+  }
+
+  /* Bento grid */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .stat-bento-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: border-color 120ms, background 80ms;
+    cursor: pointer;
+  }
+
+  .stat-bento-card:hover {
+    border-color: rgba(99,102,241,0.3);
+    background: rgba(255,255,255,0.03);
+  }
+
+  .stat-bento-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .stat-bento-icon {
+    font-size: 16px;
+  }
+
+  .stat-bento-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    color: var(--t-4);
+  }
+
+  .stat-bento-value {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .stat-bento-sub {
+    font-size: 11px;
+    color: var(--t-4);
+    font-family: var(--font-mono);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Language breakdown */
+  .lang-breakdown {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .lang-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 50px 100px;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .lang-row:last-of-type {
+    border-bottom: none;
+  }
+
+  .lang-name {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--t-2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lang-bar-wrap {
+    height: 4px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .lang-bar {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 400ms ease;
+  }
+
+  .lang-pct {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--t-3);
+    text-align: right;
+  }
+
+  .lang-time {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+    text-align: right;
+  }
+
+  .lang-total {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--t-4);
+    border-top: 1px solid var(--border);
+  }
+
+  .lang-total strong {
+    color: var(--t-2);
+  }
+
+  /* Now playing */
+  .now-playing-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .np-dot {
+    flex-shrink: 0;
+  }
+
+  .np-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .np-track {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--t-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .np-artist {
+    font-size: 12px;
+    color: var(--t-3);
+    margin-top: 2px;
+  }
+
+  /* Last movie */
+  .last-movie-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .last-movie-poster {
+    width: 64px;
+    height: 96px;
+    border-radius: 6px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+  }
+
+  .last-movie-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .last-movie-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--t-1);
+    margin-bottom: 6px;
+  }
+
+  .last-movie-year {
+    color: var(--t-4);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .last-movie-overview {
+    font-size: 12px;
+    color: var(--t-3);
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .last-movie-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .last-movie-rating {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  .animate-in {
+    animation: fadeUp 0.4s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>

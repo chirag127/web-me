@@ -1,6 +1,221 @@
 [
   {
     "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      }
+    ],
+    "mbid": "c488371e-5f70-47ba-89ae-c787d4c6a9fc",
+    "album": {
+      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
+      "#text": "Bloom"
+    },
+    "name": "Plum",
+    "@attr": {
+      "nowplaying": "true"
+    },
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Plum"
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      }
+    ],
+    "mbid": "c488371e-5f70-47ba-89ae-c787d4c6a9fc",
+    "album": {
+      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
+      "#text": "Bloom"
+    },
+    "name": "Plum",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Plum",
+    "date": {
+      "uts": "1783445182",
+      "#text": "07 Jul 2026, 17:26"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "7f2ef001-7a96-49d3-8978-e22d3ad7b138",
+      "#text": "WILD"
+    },
+    "name": "EASE",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/EASE",
+    "date": {
+      "uts": "1783444938",
+      "#text": "07 Jul 2026, 17:22"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      }
+    ],
+    "mbid": "0758cc5d-9b6d-4791-b600-87ebd14c4f1f",
+    "album": {
+      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
+      "#text": "Bloom"
+    },
+    "name": "Animal",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Animal",
+    "date": {
+      "uts": "1783444686",
+      "#text": "07 Jul 2026, 17:18"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      }
+    ],
+    "mbid": "c45abe48-2fd0-4327-9b84-cc5c6d628930",
+    "album": {
+      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
+      "#text": "Bloom"
+    },
+    "name": "Bloom",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Bloom",
+    "date": {
+      "uts": "1783444427",
+      "#text": "07 Jul 2026, 17:13"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Optimization"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "A Bootcamp for Machine Learning, Inverse Problems, and Control",
+    "url": "https://www.last.fm/music/Optimization/_/A+Bootcamp+for+Machine+Learning,+Inverse+Problems,+and+Control",
+    "date": {
+      "uts": "1783443772",
+      "#text": "07 Jul 2026, 17:02"
+    }
+  },
+  {
+    "artist": {
       "mbid": "",
       "#text": "Troye Sivan Gets Ready for"
     },
@@ -29,10 +244,11 @@
       "#text": ""
     },
     "name": "The Idol",
-    "@attr": {
-      "nowplaying": "true"
-    },
-    "url": "https://www.last.fm/music/Troye+Sivan+Gets+Ready+for/_/The+Idol"
+    "url": "https://www.last.fm/music/Troye+Sivan+Gets+Ready+for/_/The+Idol",
+    "date": {
+      "uts": "1783443627",
+      "#text": "07 Jul 2026, 17:00"
+    }
   },
   {
     "artist": {
@@ -3416,222 +3632,6 @@
     "date": {
       "uts": "1783240985",
       "#text": "05 Jul 2026, 08:43"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "bc153bd5-7963-4195-a6fb-c38588f31007",
-      "#text": "Ruel"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "0ee7f3e7-68ef-4dab-b492-eafd112dccae",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Not Thinkin' Bout You",
-    "url": "https://www.last.fm/music/Ruel/_/Not+Thinkin%27+Bout+You",
-    "date": {
-      "uts": "1783240787",
-      "#text": "05 Jul 2026, 08:39"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "fb0c1ce1-a31b-4d30-aa68-0101213526c2",
-      "#text": "Omar Rudberg"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Jag e nån annan",
-    "url": "https://www.last.fm/music/Omar+Rudberg/_/Jag+e+n%C3%A5n+annan",
-    "date": {
-      "uts": "1783240602",
-      "#text": "05 Jul 2026, 08:36"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Justin Bieber"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Intentions (Official Video (Short Version)) ft. Quavo",
-    "url": "https://www.last.fm/music/Justin+Bieber/_/Intentions+(Official+Video+(Short+Version))+ft.+Quavo",
-    "date": {
-      "uts": "1783240376",
-      "#text": "05 Jul 2026, 08:32"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "c45abe48-2fd0-4327-9b84-cc5c6d628930",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Bloom",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Bloom",
-    "date": {
-      "uts": "1783230145",
-      "#text": "05 Jul 2026, 05:42"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "c45abe48-2fd0-4327-9b84-cc5c6d628930",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Bloom",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Bloom",
-    "date": {
-      "uts": "1783230023",
-      "#text": "05 Jul 2026, 05:40"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "fb0c1ce1-a31b-4d30-aa68-0101213526c2",
-      "#text": "Omar Rudberg"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Jag e nån annan",
-    "url": "https://www.last.fm/music/Omar+Rudberg/_/Jag+e+n%C3%A5n+annan",
-    "date": {
-      "uts": "1783228917",
-      "#text": "05 Jul 2026, 05:21"
     }
   }
 ]

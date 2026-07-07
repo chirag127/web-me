@@ -2,13 +2,14 @@
   "playing_now": true,
   "track_metadata": {
     "additional_info": {
-      "duration_ms": 330000,
-      "recording_msid": "09690ecf-da5d-4629-9264-0474f7b0ba3e",
+      "duration_ms": 230000,
+      "recording_msid": "3a0c6eb1-f992-44b4-9515-4a35f47816a7",
       "submission_client": "Pano Scrobbler",
       "submission_client_version": "4.41"
     },
-    "artist_name": "Troye Sivan Gets Ready for",
-    "track_name": "The Idol"
+    "artist_name": "Troye Sivan",
+    "release_name": "Bloom",
+    "track_name": "Plum"
   },
   "user_name": "chirag127"
 }

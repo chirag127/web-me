@@ -71,7 +71,7 @@
     "@attr": {
       "rank": "2"
     },
-    "playcount": "18"
+    "playcount": "19"
   },
   {
     "streamable": {
@@ -559,6 +559,43 @@
       "fulltrack": "0",
       "#text": "0"
     },
+    "mbid": "0758cc5d-9b6d-4791-b600-87ebd14c4f1f",
+    "name": "Animal",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/Troye+Sivan",
+      "name": "Troye Sivan",
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4"
+    },
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Animal",
+    "duration": "265",
+    "@attr": {
+      "rank": "16"
+    },
+    "playcount": "6"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
     "mbid": "a16e6dab-38d7-4ec6-b751-c1ebb5e62c22",
     "name": "We Don't Talk Anymore (feat. Selena Gomez)",
     "image": [
@@ -587,7 +624,7 @@
     "url": "https://www.last.fm/music/Charlie+Puth/_/We+Don%27t+Talk+Anymore+(feat.+Selena+Gomez)",
     "duration": "217",
     "@attr": {
-      "rank": "16"
+      "rank": "17"
     },
     "playcount": "5"
   },
@@ -624,7 +661,7 @@
     "url": "https://www.last.fm/music/Harry+Styles/_/Falling",
     "duration": "0",
     "@attr": {
-      "rank": "17"
+      "rank": "18"
     },
     "playcount": "5"
   },
@@ -661,7 +698,7 @@
     "url": "https://www.last.fm/music/Lauv/_/Changes",
     "duration": "160",
     "@attr": {
-      "rank": "18"
+      "rank": "19"
     },
     "playcount": "5"
   },
@@ -698,7 +735,7 @@
     "url": "https://www.last.fm/music/Lauv/_/Come+Back+Home",
     "duration": "0",
     "@attr": {
-      "rank": "19"
+      "rank": "20"
     },
     "playcount": "5"
   },
@@ -735,7 +772,7 @@
     "url": "https://www.last.fm/music/Lauv/_/Modern+Loneliness",
     "duration": "252",
     "@attr": {
-      "rank": "20"
+      "rank": "21"
     },
     "playcount": "5"
   },
@@ -771,43 +808,6 @@
     },
     "url": "https://www.last.fm/music/Omar+Rudberg/_/Red+Light",
     "duration": "161",
-    "@attr": {
-      "rank": "21"
-    },
-    "playcount": "5"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "0758cc5d-9b6d-4791-b600-87ebd14c4f1f",
-    "name": "Animal",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Troye+Sivan",
-      "name": "Troye Sivan",
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4"
-    },
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Animal",
-    "duration": "265",
     "@attr": {
       "rank": "22"
     },

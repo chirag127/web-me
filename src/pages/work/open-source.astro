@@ -1,0 +1,483 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+let ghUser: any = {}
+let ghRepos: any[] = []
+let npmPackages: any[] = []
+
+try { ghUser = JSON.parse(readFileSync(join(process.cwd(), 'public/data/github-user.json'), 'utf-8')) } catch {}
+try { ghRepos = JSON.parse(readFileSync(join(process.cwd(), 'public/data/github-repos.json'), 'utf-8')) } catch {}
+try { npmPackages = JSON.parse(readFileSync(join(process.cwd(), 'public/data/npm-packages.json'), 'utf-8')) } catch {}
+
+const ownRepos = ghRepos.filter((r: any) => !r.fork).sort((a: any, b: any) => b.stargazers_count - a.stargazers_count)
+const featuredRepos = ownRepos.slice(0, 6)
+const allRepos = ownRepos.slice(6)
+
+function langColor(lang: string): string {
+  const map: Record<string, string> = {
+    Python: '#3b82f6', JavaScript: '#eab308', TypeScript: '#3b82f6',
+    Go: '#06b6d4', Rust: '#f97316', HTML: '#f97316', CSS: '#8b5cf6',
+    Shell: '#10b981', Vue: '#10b981', Svelte: '#f97316', Java: '#f97316',
+    'C++': '#6366f1', C: '#6366f1', Ruby: '#f43f5e', PHP: '#8b5cf6',
+  }
+  return map[lang] || '#6b7280'
+}
+
+function relativeDate(dateStr: string): string {
+  if (!dateStr) return ''
+  const d = new Date(dateStr)
+  const now = new Date()
+  const diffMs = now.getTime() - d.getTime()
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
+  if (diffDays < 1) return 'today'
+  if (diffDays < 7) return `${diffDays}d ago`
+  if (diffDays < 30) return `${Math.floor(diffDays / 7)}w ago`
+  if (diffDays < 365) return `${Math.floor(diffDays / 30)}mo ago`
+  return `${Math.floor(diffDays / 365)}y ago`
+}
+
+const totalStars = ownRepos.reduce((s: number, r: any) => s + (r.stargazers_count || 0), 0)
+const totalNpmDownloads = npmPackages.reduce((s: number, p: any) => s + (p.downloads || 0), 0)
+---
+
+<Layout title="Open Source" description="Chirag Singhal's open source work — 353+ GitHub repos and npm packages">
+
+  <div class="page-updated">DATA · 2026-07-07</div>
+
+  <div class="kicker">WORK · OPEN SOURCE</div>
+  <h1 class="page-title">Open Source</h1>
+  <p class="page-subtitle">{ghUser.public_repos || 353}+ repos on GitHub.</p>
+
+  <!-- GitHub Profile Card -->
+  <div class="card gh-profile animate-in">
+    <img
+      src={ghUser.avatar_url || 'https://github.com/chirag127.png'}
+      alt="chirag127"
+      class="gh-avatar"
+      loading="lazy"
+    />
+    <div class="gh-info">
+      <div class="gh-name">{ghUser.name || 'Chirag Singhal'}</div>
+      <div class="gh-bio">{ghUser.bio || 'Software Engineer · Open Source'}</div>
+      <div class="gh-stats">
+        <span class="gh-stat"><strong>{ghUser.public_repos || 353}</strong> repos</span>
+        <span class="gh-sep">·</span>
+        <span class="gh-stat"><strong>{ghUser.followers || 82}</strong> followers</span>
+        <span class="gh-sep">·</span>
+        <span class="gh-stat"><strong>{totalStars}</strong> stars</span>
+        <span class="gh-sep">·</span>
+        <span class="gh-stat"><strong>{npmPackages.length}</strong> npm packages</span>
+      </div>
+    </div>
+    <a href={ghUser.html_url || 'https://github.com/chirag127'} target="_blank" rel="noopener" class="gh-link">GitHub ↗</a>
+  </div>
+
+  <!-- Featured Repos -->
+  <section class="section-block animate-in">
+    <div class="kicker">FEATURED REPOS</div>
+    <div class="repos-grid">
+      {featuredRepos.map((repo: any) => (
+        <a href={repo.html_url} target="_blank" rel="noopener" class="card-glow repo-card">
+          <div class="repo-top">
+            <span class="repo-name">{repo.name}</span>
+            {repo.language && (
+              <span class="lang-badge" style={`background:${langColor(repo.language)}20;color:${langColor(repo.language)};border-color:${langColor(repo.language)}40`}>
+                {repo.language}
+              </span>
+            )}
+          </div>
+          <p class="repo-desc">{repo.description || 'No description'}</p>
+          {repo.topics && repo.topics.length > 0 && (
+            <div class="topics-row">
+              {repo.topics.slice(0, 3).map((t: string) => (
+                <span class="chip">{t}</span>
+              ))}
+            </div>
+          )}
+          <div class="repo-meta">
+            <span class="repo-stat">★ {repo.stargazers_count}</span>
+            <span class="repo-sep">·</span>
+            <span class="repo-date">{relativeDate(repo.pushed_at)}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- All Repos Table -->
+  {allRepos.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="kicker">ALL REPOS <span class="kicker-count">({ownRepos.length} total)</span></div>
+      <div class="card repos-table">
+        <div class="table-header">
+          <span>NAME</span>
+          <span>LANGUAGE</span>
+          <span>STARS</span>
+          <span>PUSHED</span>
+        </div>
+        {allRepos.map((repo: any) => (
+          <a href={repo.html_url} target="_blank" rel="noopener" class="table-row">
+            <span class="table-name">{repo.name}</span>
+            <span class="table-lang">
+              {repo.language && (
+                <span class="lang-dot" style={`background:${langColor(repo.language)}`}></span>
+              )}
+              {repo.language || '—'}
+            </span>
+            <span class="table-stars">★ {repo.stargazers_count}</span>
+            <span class="table-date">{relativeDate(repo.pushed_at)}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- npm Packages -->
+  {npmPackages.length > 0 && (
+    <section class="section-block animate-in">
+      <div class="kicker">NPM PACKAGES <span class="kicker-count">({npmPackages.length} packages · {totalNpmDownloads.toLocaleString()} downloads)</span></div>
+      <div class="npm-grid">
+        {npmPackages.map((pkg: any) => (
+          <a href={pkg.package?.links?.npm || `https://npmjs.com/package/${pkg.package?.name}`} target="_blank" rel="noopener" class="card npm-card">
+            <div class="npm-top">
+              <span class="badge badge--indigo">{pkg.package?.name}</span>
+              <span class="npm-version">v{pkg.package?.version}</span>
+            </div>
+            <p class="npm-desc">{pkg.package?.description || 'npm package'}</p>
+            <div class="npm-meta">
+              <span class="npm-downloads">{(pkg.downloads || 0).toLocaleString()} downloads</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+</Layout>
+
+<style>
+  .page-updated {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+    letter-spacing: 0.05em;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--t-1);
+    margin: 0.5rem 0 0.5rem;
+    background: linear-gradient(135deg, var(--indigo) 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+    color: var(--t-3);
+    margin-bottom: 2rem;
+  }
+
+  .kicker-count {
+    color: var(--t-4);
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  /* GitHub profile */
+  .gh-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .gh-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid rgba(99,102,241,0.3);
+    flex-shrink: 0;
+  }
+
+  .gh-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .gh-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--t-1);
+    margin-bottom: 2px;
+  }
+
+  .gh-bio {
+    font-size: 12px;
+    color: var(--t-3);
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .gh-stats {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .gh-stat {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--t-3);
+  }
+
+  .gh-stat strong {
+    color: var(--t-2);
+  }
+
+  .gh-sep {
+    color: var(--t-4);
+    font-size: 11px;
+  }
+
+  .gh-link {
+    font-size: 12px;
+    color: var(--indigo);
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Featured repos grid */
+  .repos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .repo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-decoration: none;
+  }
+
+  .repo-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .repo-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--t-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lang-badge {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .repo-desc {
+    font-size: 12px;
+    color: var(--t-3);
+    line-height: 1.5;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .topics-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .repo-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .repo-stat {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--amber);
+  }
+
+  .repo-sep {
+    color: var(--t-4);
+    font-size: 11px;
+  }
+
+  .repo-date {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--t-4);
+  }
+
+  /* Repos table */
+  .repos-table {
+    margin-top: 1rem;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 80px 80px;
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+    letter-spacing: 0.08em;
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 80px 80px;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    text-decoration: none;
+    transition: background 80ms;
+    align-items: center;
+  }
+
+  .table-row:last-child {
+    border-bottom: none;
+  }
+
+  .table-row:hover {
+    background: rgba(255,255,255,0.03);
+  }
+
+  .table-name {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--t-2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .table-lang {
+    font-size: 11px;
+    color: var(--t-3);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .lang-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .table-stars {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--amber);
+  }
+
+  .table-date {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+  }
+
+  /* npm packages */
+  .npm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .npm-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: border-color 120ms;
+  }
+
+  .npm-card:hover {
+    border-color: rgba(99,102,241,0.3);
+  }
+
+  .npm-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .npm-version {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--t-4);
+  }
+
+  .npm-desc {
+    font-size: 12px;
+    color: var(--t-3);
+    line-height: 1.4;
+    flex: 1;
+  }
+
+  .npm-meta {
+    margin-top: auto;
+  }
+
+  .npm-downloads {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--emerald);
+  }
+
+  .section-block {
+    margin-top: 3rem;
+  }
+
+  .animate-in {
+    animation: fadeUp 0.4s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>

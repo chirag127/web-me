@@ -1,9 +1,36 @@
 ---
 import Layout from '~/layouts/Layout.astro'
 import { getLanyard } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
 const lanyard = await getLanyard().catch(() => null)
 const discordStatus = lanyard?.discord_status ?? 'offline'
+
+let ghUser = { public_repos: 0, followers: 0 }
+try { ghUser = JSON.parse(readFileSync(join(process.cwd(), 'public/data/github-user.json'), 'utf-8')) } catch {}
+
+let traktStats = { movies: { watched: 0 }, shows: { watched: 0 } }
+try { traktStats = JSON.parse(readFileSync(join(process.cwd(), 'public/data/trakt-stats.json'), 'utf-8')) } catch {}
+
+let lfmUser = { playcount: '0' }
+try { lfmUser = JSON.parse(readFileSync(join(process.cwd(), 'public/data/lastfm-user.json'), 'utf-8')) } catch {}
+
+let wakaStats = { human_readable: '0 hrs', languages: [] }
+try { wakaStats = JSON.parse(readFileSync(join(process.cwd(), 'public/data/wakatime-stats-7d.json'), 'utf-8')) } catch {}
+
+let lbNow = null
+try { lbNow = JSON.parse(readFileSync(join(process.cwd(), 'public/data/lb-playing-now.json'), 'utf-8')) } catch {}
+
+let recentMovies = []
+try { recentMovies = JSON.parse(readFileSync(join(process.cwd(), 'public/data/trakt-movies-enriched.json'), 'utf-8')) } catch {}
+
+let npmPkgs = []
+try { npmPkgs = JSON.parse(readFileSync(join(process.cwd(), 'public/data/npm-packages.json'), 'utf-8')) } catch {}
+
+const topLang = wakaStats.languages?.[0]?.name ?? null
+const lastMovie = recentMovies?.[0] ?? null
+const hasLiveData = lbNow?.track || lastMovie || topLang
 ---
 
 <Layout title="Home" description="Chirag Singhal — Software Engineer · Backend · AI Systems · Open Source">
@@ -40,6 +67,38 @@ const discordStatus = lanyard?.discord_status ?? 'offline'
     </div>
   </section>
 
+  <!-- Live Now -->
+  {hasLiveData && (
+    <section class="section-block animate-in live-section">
+      <div class="live-row">
+        {lbNow?.track && (
+          <div class="card live-card">
+            <span class="live-badge">NOW PLAYING</span>
+            <span class="live-track">🎵 {lbNow.track} — {lbNow.artist}</span>
+          </div>
+        )}
+        {lastMovie?._tmdb?.poster_path && (
+          <a href="/library/movies/watched" class="poster-card poster-card--sm">
+            <img
+              src={`https://image.tmdb.org/t/p/w185${lastMovie._tmdb.poster_path}`}
+              alt={lastMovie.movie?.title ?? 'Last watched'}
+              loading="lazy"
+            />
+            <div class="overlay">
+              <div class="overlay-title">{lastMovie.movie?.title}</div>
+            </div>
+          </a>
+        )}
+        {topLang && (
+          <div class="card live-card">
+            <span class="live-badge">THIS WEEK</span>
+            <span class="live-track">⌨ Coding in {topLang} · {wakaStats.human_readable}</span>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
   <!-- Stats Strip -->
   <div class="card stats-strip animate-in">
     <div class="stat-item">
@@ -48,13 +107,13 @@ const discordStatus = lanyard?.discord_status ?? 'offline'
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-number">192+</span>
-      <span class="stat-label">TOOLS BUILT</span>
+      <span class="stat-number">{ghUser.public_repos}+</span>
+      <span class="stat-label">GITHUB REPOS</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-number">8.81</span>
-      <span class="stat-label">CGPA · RANK 1</span>
+      <span class="stat-number">{Number(lfmUser.playcount).toLocaleString()}</span>
+      <span class="stat-label">SCROBBLES</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
@@ -62,6 +121,30 @@ const discordStatus = lanyard?.discord_status ?? 'offline'
       <span class="stat-label">JEE ADVANCED</span>
     </div>
   </div>
+
+  <!-- Bento Overview -->
+  <section class="section-block animate-in">
+    <div class="kicker">OVERVIEW</div>
+    <div class="bento bento-4">
+      <a href="/me/wakatime" class="card bento-tile">
+        <div class="bento-val">{wakaStats.human_readable}</div>
+        <div class="bento-key">Coding this week</div>
+        {topLang && <div class="bento-sub">{topLang}</div>}
+      </a>
+      <a href="/library/music/stats" class="card bento-tile">
+        <div class="bento-val">{Number(lfmUser.playcount).toLocaleString()}</div>
+        <div class="bento-key">Music scrobbles</div>
+      </a>
+      <a href="/library/movies/watched" class="card bento-tile">
+        <div class="bento-val">{traktStats.movies?.watched ?? 0}</div>
+        <div class="bento-key">Movies watched</div>
+      </a>
+      <a href="/work/open-source" class="card bento-tile">
+        <div class="bento-val">{ghUser.public_repos}+</div>
+        <div class="bento-key">GitHub repos</div>
+      </a>
+    </div>
+  </section>
 
   <!-- What I Do -->
   <section class="section-block animate-in">
@@ -216,6 +299,40 @@ const discordStatus = lanyard?.discord_status ?? 'offline'
     color: #818cf8;
   }
 
+  /* Live section */
+  .live-section {
+    margin-top: 2rem;
+  }
+
+  .live-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .live-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
+
+  .live-track {
+    font-size: 13px;
+    color: var(--t-2);
+    line-height: 1.4;
+  }
+
+  .poster-card--sm {
+    width: 72px;
+    flex-shrink: 0;
+    aspect-ratio: 2/3;
+    text-decoration: none;
+  }
+
   /* Stats strip */
   .stats-strip {
     display: flex;
@@ -243,6 +360,58 @@ const discordStatus = lanyard?.discord_status ?? 'offline'
     background: rgba(255,255,255,0.08);
     flex-shrink: 0;
     margin-right: 1.5rem;
+  }
+
+  /* Bento overview */
+  .bento-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .bento-4 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .bento-4 { grid-template-columns: 1fr; }
+  }
+
+  .bento-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-decoration: none;
+    padding: 16px 18px;
+  }
+
+  .bento-tile:hover {
+    text-decoration: none;
+  }
+
+  .bento-val {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--t-1);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .bento-key {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--t-3);
+    margin-top: 4px;
+  }
+
+  .bento-sub {
+    font-size: 11px;
+    color: var(--indigo-light);
+    font-family: var(--font-mono);
   }
 
   /* What I Do cards */

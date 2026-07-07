@@ -427,24 +427,61 @@ async function fetchToggl() {
 
 async function fetchJikan() {
   const user = process.env.MAL_USERNAME ?? 'chirag127'
-  const h: Record<string,string> = {
+  const jikanUA: Record<string,string> = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
   }
-  const base = 'https://api.jikan.moe/v4'
+  const jikanBase = 'https://api.jikan.moe/v4'
 
-  // Jikan rate limit: 3 req/s — sequential with 400ms gap
-  const calls: Array<{ url: string; file: string }> = [
-    { url: `${base}/users/${user}/animelist?status=1`, file: 'jikan-anime-watching.json' },
-    { url: `${base}/users/${user}/animelist?status=2`, file: 'jikan-anime-completed.json' },
-    { url: `${base}/users/${user}/animelist?status=6`, file: 'jikan-anime-plan.json' },
-    { url: `${base}/users/${user}/mangalist?status=1`, file: 'jikan-manga-reading.json' },
-    { url: `${base}/users/${user}/mangalist?status=2`, file: 'jikan-manga-completed.json' },
-    { url: `${base}/users/${user}/mangalist?status=6`, file: 'jikan-manga-plan.json' },
+  // MAL direct API as fallback (requires MAL_CLIENT_ID)
+  const malH = MAL_ID ? { 'X-MAL-CLIENT-ID': MAL_ID, 'User-Agent': jikanUA['User-Agent'] } : null
+  const malBase = `https://api.myanimelist.net/v2/users/${user}`
+  const animeFields = 'fields=list_status,main_picture,mean,num_episodes,media_type'
+  const mangaFields = 'fields=list_status,main_picture,mean,media_type'
+
+  // Normalize MAL direct format to match Jikan format for pages
+  const malToJikan = (items: any[], type: 'anime' | 'manga') =>
+    items.map(item => ({
+      entry: {
+        mal_id: item.node?.id,
+        title: item.node?.title ?? '',
+        images: { jpg: { image_url: item.node?.main_picture?.medium ?? '', large_image_url: item.node?.main_picture?.large ?? '' } },
+        type: item.node?.media_type ?? '',
+        num_episodes: item.node?.num_episodes ?? 0,
+      },
+      score: item.list_status?.score ?? 0,
+      status: item.list_status?.status ?? '',
+      num_episodes_watched: item.list_status?.num_episodes_watched ?? 0,
+      num_chapters_read: item.list_status?.num_chapters_read ?? 0,
+    }))
+
+  const fetchWithFallback = async (jikanUrl: string, malUrl: string | null, file: string) => {
+    // Try Jikan first
+    const jikanData = await safeFetch(jikanUrl, jikanUA)
+    const jikanItems = (jikanData as any)?.data
+    if (Array.isArray(jikanItems) && jikanItems.length > 0) {
+      save(file, jikanItems); return
+    }
+    // Jikan miss — fall back to MAL direct
+    if (malUrl && malH) {
+      const malData = await safeFetch(malUrl, malH)
+      const malItems = (malData as any)?.data ?? []
+      const type = file.includes('manga') ? 'manga' : 'anime'
+      save(file, malToJikan(malItems, type)); return
+    }
+    save(file, [])
+  }
+
+  const calls = [
+    { jikan: `${jikanBase}/users/${user}/animelist?status=1`, mal: malH ? `${malBase}/animelist?${animeFields}&status=watching&limit=200&sort=list_updated_at` : null, file: 'jikan-anime-watching.json' },
+    { jikan: `${jikanBase}/users/${user}/animelist?status=2`, mal: malH ? `${malBase}/animelist?${animeFields}&status=completed&limit=500&sort=list_updated_at` : null, file: 'jikan-anime-completed.json' },
+    { jikan: `${jikanBase}/users/${user}/animelist?status=6`, mal: malH ? `${malBase}/animelist?${animeFields}&status=plan_to_watch&limit=200` : null, file: 'jikan-anime-plan.json' },
+    { jikan: `${jikanBase}/users/${user}/mangalist?status=1`, mal: malH ? `${malBase}/mangalist?${mangaFields}&status=reading&limit=200&sort=list_updated_at` : null, file: 'jikan-manga-reading.json' },
+    { jikan: `${jikanBase}/users/${user}/mangalist?status=2`, mal: malH ? `${malBase}/mangalist?${mangaFields}&status=completed&limit=500&sort=list_updated_at` : null, file: 'jikan-manga-completed.json' },
+    { jikan: `${jikanBase}/users/${user}/mangalist?status=6`, mal: malH ? `${malBase}/mangalist?${mangaFields}&status=plan_to_read&limit=200` : null, file: 'jikan-manga-plan.json' },
   ]
 
-  for (const { url, file } of calls) {
-    const data = await safeFetch(url, h)
-    save(file, (data as any)?.data ?? [])
+  for (const { jikan, mal, file } of calls) {
+    await fetchWithFallback(jikan, mal, file)
     await new Promise(r => setTimeout(r, 400))
   }
 }

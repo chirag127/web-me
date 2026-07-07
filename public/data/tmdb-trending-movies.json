@@ -7,8 +7,8 @@
     "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
     "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-    "rating": 8.258,
-    "votes": 2223,
+    "rating": 8.3,
+    "votes": 2230,
     "release": "2026-05-13",
     "genres": [
       27,
@@ -24,7 +24,7 @@
     "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
     "poster": "https://image.tmdb.org/t/p/w342/lwmXob14Bslv1YcVT1VYt3zBfs9.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
-    "rating": 7.707,
+    "rating": 7.7,
     "votes": 82,
     "release": "2026-06-10",
     "genres": [
@@ -42,8 +42,8 @@
     "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
     "poster": "https://image.tmdb.org/t/p/w342/rQ0f1Y3t9w3DxVxuVydkgqQ2Hji.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-    "rating": 7.167,
-    "votes": 9,
+    "rating": 7.45,
+    "votes": 10,
     "release": "2026-07-08",
     "genres": [
       10751,
@@ -61,8 +61,8 @@
     "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
     "poster": "https://image.tmdb.org/t/p/w342/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
-    "rating": 7.004,
-    "votes": 262,
+    "rating": 7,
+    "votes": 263,
     "release": "2026-06-30",
     "genres": [
       12,
@@ -79,7 +79,7 @@
     "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
     "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
-    "rating": 7.399,
+    "rating": 7.4,
     "votes": 508,
     "release": "2026-06-17",
     "genres": [
@@ -89,24 +89,6 @@
       12
     ],
     "popularity": 615.5682
-  },
-  {
-    "id": 1368337,
-    "tmdb_id": 1368337,
-    "type": "movie",
-    "title": "The Odyssey",
-    "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-    "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
-    "rating": 0,
-    "votes": 0,
-    "release": "2026-07-15",
-    "genres": [
-      12,
-      28,
-      14
-    ],
-    "popularity": 74.4739
   },
   {
     "id": 1083381,
@@ -127,6 +109,24 @@
     "popularity": 500.5101
   },
   {
+    "id": 1368337,
+    "tmdb_id": 1368337,
+    "type": "movie",
+    "title": "The Odyssey",
+    "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+    "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-07-15",
+    "genres": [
+      12,
+      28,
+      14
+    ],
+    "popularity": 74.4739
+  },
+  {
     "id": 1315772,
     "tmdb_id": 1315772,
     "type": "movie",
@@ -134,8 +134,8 @@
     "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
     "poster": "https://image.tmdb.org/t/p/w342/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-    "rating": 6.4,
-    "votes": 117,
+    "rating": 6.453,
+    "votes": 118,
     "release": "2026-06-24",
     "genres": [
       12,
@@ -181,23 +181,6 @@
     "popularity": 33.4769
   },
   {
-    "id": 1314481,
-    "tmdb_id": 1314481,
-    "type": "movie",
-    "title": "The Devil Wears Prada 2",
-    "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-    "poster": "https://image.tmdb.org/t/p/w342/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-    "rating": 6.983,
-    "votes": 1279,
-    "release": "2026-04-29",
-    "genres": [
-      35,
-      18
-    ],
-    "popularity": 366.7109
-  },
-  {
     "id": 969681,
     "tmdb_id": 969681,
     "type": "movie",
@@ -216,6 +199,23 @@
     "popularity": 83.5185
   },
   {
+    "id": 1314481,
+    "tmdb_id": 1314481,
+    "type": "movie",
+    "title": "The Devil Wears Prada 2",
+    "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+    "poster": "https://image.tmdb.org/t/p/w342/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+    "rating": 6.984,
+    "votes": 1280,
+    "release": "2026-04-29",
+    "genres": [
+      35,
+      18
+    ],
+    "popularity": 366.7109
+  },
+  {
     "id": 1081003,
     "tmdb_id": 1081003,
     "type": "movie",
@@ -223,8 +223,8 @@
     "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
     "poster": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
-    "rating": 6.232,
-    "votes": 379,
+    "rating": 6.243,
+    "votes": 381,
     "release": "2026-06-24",
     "genres": [
       28,
@@ -232,6 +232,23 @@
       878
     ],
     "popularity": 120.2224
+  },
+  {
+    "id": 687163,
+    "tmdb_id": 687163,
+    "type": "movie",
+    "title": "Project Hail Mary",
+    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+    "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+    "rating": 8.675,
+    "votes": 5768,
+    "release": "2026-03-15",
+    "genres": [
+      878,
+      12
+    ],
+    "popularity": 164.0596
   },
   {
     "id": 936075,
@@ -249,23 +266,6 @@
       18
     ],
     "popularity": 189.9972
-  },
-  {
-    "id": 687163,
-    "tmdb_id": 687163,
-    "type": "movie",
-    "title": "Project Hail Mary",
-    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-    "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-    "rating": 8.675,
-    "votes": 5765,
-    "release": "2026-03-15",
-    "genres": [
-      878,
-      12
-    ],
-    "popularity": 164.0596
   },
   {
     "id": 1301421,
@@ -320,21 +320,22 @@
     "popularity": 28.095
   },
   {
-    "id": 950028,
-    "tmdb_id": 950028,
+    "id": 1318413,
+    "tmdb_id": 1318413,
     "type": "movie",
-    "title": "The Invite",
-    "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-    "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
-    "rating": 7.9,
-    "votes": 15,
-    "release": "2026-06-25",
+    "title": "Pressure",
+    "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
+    "poster": "https://image.tmdb.org/t/p/w342/gFjEggtrejCN79r6SXRjM269OtG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
+    "rating": 7.541,
+    "votes": 122,
+    "release": "2026-05-25",
     "genres": [
-      18,
-      35
+      53,
+      36,
+      10752
     ],
-    "popularity": 21.6483
+    "popularity": 28.6088
   },
   {
     "id": 1275779,
