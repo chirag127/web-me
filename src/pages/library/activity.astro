@@ -1,34 +1,104 @@
 ---
+/*
+ * Data pre-fetched to:
+ *   public/data/lastfm-recent.json
+ *   public/data/trakt-movies-enriched.json (or trakt-movies.json)
+ *   public/data/jikan-anime-watching.json
+ */
 import Layout from '~/layouts/Layout.astro'
-import { getLastfmRecent, getTraktMovies, getMALAnime } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [lfRecent, movies, anime] = await Promise.all([
-  getLastfmRecent(5),
-  getTraktMovies(5),
-  getMALAnime('watching', 5),
-])
+function loadJson(name: string, fallback: any = []) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return fallback }
+}
 
-type FeedItem = { type: string; title: string; sub?: string; ts?: string }
+const lfRecent: any[] = loadJson('lastfm-recent.json')
+const movies: any[]   = loadJson('trakt-movies-enriched.json') as any[]
+const anime: any[]    = loadJson('jikan-anime-watching.json')
+
+type FeedItem = { type: string; typeLabel: string; title: string; sub?: string; ts?: number }
+
 const feed: FeedItem[] = [
-  ...lfRecent.map((t: any) => ({ type: '♪', title: t.name, sub: t.artist['#text'] })),
-  ...movies.map((m: any)  => ({ type: '▶', title: m.movie?.title ?? '', sub: String(m.movie?.year ?? '') })),
-  ...anime.map((a: any)   => ({ type: '◉', title: a.node?.title ?? '', sub: 'watching' })),
+  ...lfRecent.filter((t: any) => !t['@attr']?.nowplaying).slice(0, 5).map((t: any) => ({
+    type: 'MUSIC',
+    typeLabel: '♪',
+    title: t.name ?? '',
+    sub: t.artist?.['#text'] ?? '',
+    ts: t.date?.uts ? Number(t.date.uts) : undefined,
+  })),
+  ...movies.filter((m: any) => m.movie).slice(0, 5).map((m: any) => ({
+    type: 'MOVIE',
+    typeLabel: '▶',
+    title: m.movie?.title ?? '',
+    sub: String(m.movie?.year ?? ''),
+    ts: m.watched_at ? Math.floor(new Date(m.watched_at).getTime() / 1000) : undefined,
+  })),
+  ...anime.slice(0, 3).map((a: any) => ({
+    type: 'ANIME',
+    typeLabel: '◉',
+    title: a.node?.title ?? a.title ?? '',
+    sub: 'watching',
+    ts: undefined,
+  })),
 ]
----
-<Layout title="Activity" description="Chirag Singhal — activity feed">
-  <div style="padding-top: 2rem; max-width: 600px;">
-    <h1 class="page-title">Activity</h1>
-    <p class="page-sub">Combined feed: music, movies, anime.</p>
 
-    <div>
+feed.sort((a, b) => (b.ts ?? 0) - (a.ts ?? 0))
+
+function timeAgo(uts?: number) {
+  if (!uts) return ''
+  const diff = Math.floor(Date.now() / 1000 - uts)
+  if (diff < 60) return `${diff}s ago`
+  if (diff < 3600) return `${Math.floor(diff/60)}m ago`
+  if (diff < 86400) return `${Math.floor(diff/3600)}h ago`
+  return `${Math.floor(diff/86400)}d ago`
+}
+
+const typeColor: Record<string, string> = {
+  MUSIC: '#818cf8',
+  MOVIE: '#34d399',
+  ANIME: '#f472b6',
+}
+---
+
+<Layout title="Activity" active="/library/activity/">
+  <div class="page-header">
+    <div class="kicker">LIBRARY · ACTIVITY</div>
+    <h1>Activity</h1>
+    <p class="muted">Combined feed · music, movies, anime</p>
+  </div>
+
+  {feed.length === 0 ? (
+    <p class="muted" style="font-size:0.85rem">No data yet · check back soon</p>
+  ) : (
+    <div class="feed">
       {feed.map(f => (
-        <div style="display:flex;align-items:center;height:36px;gap:10px;border-bottom:1px solid var(--border);">
-          <span style="width:16px;font-size:12px;color:var(--primary);flex-shrink:0;text-align:center;">{f.type}</span>
-          <span style="font-size:13px;color:var(--t-secondary);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{f.title}</span>
-          {f.sub && <span style="font-size:12px;color:var(--t-muted);flex-shrink:0;">{f.sub}</span>}
+        <div class="feed-row">
+          <span class="type-badge" style={`color:${typeColor[f.type] ?? 'var(--muted)'}`}>{f.typeLabel}</span>
+          <span class="type-label" style={`color:${typeColor[f.type] ?? 'var(--muted)'}`}>{f.type}</span>
+          <div class="feed-info">
+            <span class="feed-title">{f.title}</span>
+            {f.sub && <span class="feed-sub">{f.sub}</span>}
+          </div>
+          {f.ts && <span class="feed-time">{timeAgo(f.ts)}</span>}
         </div>
       ))}
-      {feed.length === 0 && <p style="font-size:13px;color:var(--t-muted);">No activity data available.</p>}
     </div>
-  </div>
+  )}
 </Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .feed { display: flex; flex-direction: column; gap: 2px; }
+  .feed-row { display: flex; align-items: center; gap: 0.75rem; padding: 7px 10px; border-radius: 6px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .feed-row:hover { background: rgba(255,255,255,0.02); }
+  .type-badge { font-size: 0.875rem; flex-shrink: 0; width: 1rem; text-align: center; }
+  .type-label { font-size: 0.6rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; flex-shrink: 0; width: 2.75rem; }
+  .feed-info { flex: 1; min-width: 0; display: flex; align-items: baseline; gap: 0.5rem; overflow: hidden; }
+  .feed-title { font-size: 0.8125rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 1; min-width: 0; }
+  .feed-sub { font-size: 0.72rem; color: var(--muted, #71717a); white-space: nowrap; flex-shrink: 0; }
+  .feed-time { font-size: 0.68rem; color: var(--faint, #52525b); font-family: var(--font-mono, monospace); white-space: nowrap; flex-shrink: 0; }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
+</style>

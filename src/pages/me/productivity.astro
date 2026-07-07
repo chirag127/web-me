@@ -1,0 +1,227 @@
+---
+import { readFileSync } from 'fs'
+import { join } from 'path'
+import Layout from '~/layouts/Layout.astro'
+
+function readObj(filename: string): any {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return {} }
+}
+function readData(filename: string): any[] {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
+}
+
+const habiticaUser  = readObj('habitica-user.json')
+const habits        = readData('habitica-habits.json')
+const dailies       = readData('habitica-dailies.json')
+const todos         = readData('habitica-todos.json')
+const toggl         = readObj('toggl-summary.json')
+
+const stats   = habiticaUser?.data?.stats ?? {}
+const profile = habiticaUser?.data?.profile ?? {}
+const auth    = habiticaUser?.data?.auth?.local ?? {}
+
+const hp    = stats.hp    ?? 0
+const maxHP = stats.maxHealth ?? 50
+const mp    = stats.mp    ?? 0
+const maxMP = stats.maxMP ?? 30
+const exp   = stats.exp   ?? 0
+const toNext = stats.toNextLevel ?? 25
+const lvl   = stats.lvl   ?? 1
+const cls   = stats.class ?? 'warrior'
+const gp    = stats.gp    ?? 0
+
+const hpPct  = Math.min(100, Math.round((hp / maxHP) * 100))
+const mpPct  = Math.min(100, Math.round((mp / maxMP) * 100))
+const expPct = Math.min(100, Math.round((exp / toNext) * 100))
+
+// Toggl: sum all sub_group seconds
+const togglGroups  = toggl?.groups ?? []
+let togglTotalSec  = 0
+const togglProjects: { name: string; seconds: number }[] = []
+for (const g of togglGroups) {
+  for (const sg of (g.sub_groups ?? [])) {
+    togglTotalSec += sg.seconds ?? 0
+    if (sg.title) togglProjects.push({ name: sg.title, seconds: sg.seconds ?? 0 })
+  }
+}
+function fmtSec(s: number) {
+  const h = Math.floor(s / 3600)
+  const m = Math.floor((s % 3600) / 60)
+  if (h > 0) return `${h}h ${m}m`
+  return `${m}m`
+}
+
+const CLASS_COLORS: Record<string, string> = {
+  warrior: '#f97316', healer: '#22c55e', wizard: '#818cf8', rogue: '#f59e0b',
+}
+---
+
+<Layout title="Productivity" active="/me/productivity">
+  <div class="page-header">
+    <div class="kicker">ME · PRODUCTIVITY</div>
+    <h1>Productivity</h1>
+    <p class="muted">Habitica habits + Toggl time tracking.</p>
+  </div>
+
+  <!-- Habitica character -->
+  <div class="card" style="margin-bottom:1rem">
+    <div class="card-title">HABITICA · CHARACTER</div>
+    <div class="char-header">
+      <div>
+        <span class="badge" style={`background:${CLASS_COLORS[cls] ?? '#818cf8'}22;color:${CLASS_COLORS[cls] ?? '#818cf8'};border-color:${CLASS_COLORS[cls] ?? '#818cf8'}44`}>
+          Level {lvl} {cls.charAt(0).toUpperCase() + cls.slice(1)}
+        </span>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:4px">{auth.username ?? profile.name ?? 'chirag127'}</div>
+      </div>
+      <div class="gp-badge">
+        <span class="gp-val">{Math.floor(gp)}</span>
+        <span class="gp-lbl">GP</span>
+      </div>
+    </div>
+
+    <div class="bars">
+      <div class="bar-row">
+        <span class="bar-lbl">HP</span>
+        <div class="bar-track">
+          <div class="bar-fill hp" style={`width:${hpPct}%`}></div>
+        </div>
+        <span class="bar-val">{Math.floor(hp)}/{maxHP}</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-lbl">MP</span>
+        <div class="bar-track">
+          <div class="bar-fill mp" style={`width:${mpPct}%`}></div>
+        </div>
+        <span class="bar-val">{Math.floor(mp)}/{maxMP}</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-lbl">XP</span>
+        <div class="bar-track">
+          <div class="bar-fill xp" style={`width:${expPct}%`}></div>
+        </div>
+        <span class="bar-val">{exp}/{toNext}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col">
+
+    <!-- Habits -->
+    <div class="card">
+      <div class="card-title">HABITS ({habits.length})</div>
+      {habits.length === 0 ? (
+        <p class="empty-msg">No habits yet.</p>
+      ) : (
+        <ul class="task-list">
+          {habits.map((h: any) => (
+            <li class="task-row">
+              <span class="task-text">{h.text}</span>
+              {(h.counterUp > 0 || h.streak > 0) && (
+                <span class="streak-badge">+{h.counterUp ?? h.streak ?? 0}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+
+    <!-- Dailies -->
+    <div class="card">
+      <div class="card-title">DAILIES ({dailies.length})</div>
+      {dailies.length === 0 ? (
+        <p class="empty-msg">No dailies yet.</p>
+      ) : (
+        <ul class="task-list">
+          {dailies.map((d: any) => (
+            <li class="task-row daily-row">
+              <span class:list={['check', { done: d.completed }]}>{d.completed ? '✓' : '○'}</span>
+              <span class="task-text">{d.text}</span>
+              {d.streak > 0 && <span class="streak-badge">{d.streak}🔥</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+
+  </div>
+
+  <!-- Todos -->
+  {todos.length > 0 && (
+    <div class="card" style="margin-top:1rem">
+      <div class="card-title">TO-DOS ({todos.filter((t: any) => !t.completed).length} open)</div>
+      <ul class="task-list">
+        {todos.filter((t: any) => !t.completed).slice(0, 10).map((t: any) => (
+          <li class="task-row daily-row">
+            <span class="check">○</span>
+            <span class="task-text">{t.text}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  <!-- Toggl -->
+  <div class="card" style="margin-top:1rem">
+    <div class="card-title">TOGGL · TIME TRACKED</div>
+    {togglTotalSec === 0 ? (
+      <p class="empty-msg">No Toggl data.</p>
+    ) : (
+      <>
+        <div class="toggl-total">
+          <span class="stat-number">{fmtSec(togglTotalSec)}</span>
+          <span class="stat-lbl">TOTAL TRACKED</span>
+        </div>
+        {togglProjects.length > 0 && (
+          <ul class="task-list" style="margin-top:0.75rem">
+            {togglProjects.map((p: any) => (
+              <li class="task-row">
+                <span class="task-text">{p.name}</span>
+                <span class="streak-badge">{fmtSec(p.seconds)}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </>
+    )}
+  </div>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+
+  .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 1.25rem; }
+  .card-title { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; color: var(--faint, #52525b); margin-bottom: 0.75rem; }
+
+  .char-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+  .badge { display: inline-block; font-size: 0.7rem; font-family: var(--font-mono, monospace); padding: 3px 8px; border-radius: 12px; border: 1px solid; }
+  .gp-badge { text-align: right; }
+  .gp-val { display: block; font-family: var(--font-display, Outfit); font-size: 1.25rem; font-weight: 700; color: #eab308; line-height: 1; }
+  .gp-lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); }
+
+  .bars { display: flex; flex-direction: column; gap: 8px; }
+  .bar-row { display: flex; align-items: center; gap: 0.5rem; }
+  .bar-lbl { font-size: 0.7rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); width: 1.75rem; }
+  .bar-track { flex: 1; height: 7px; background: rgba(255,255,255,0.06); border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width 400ms; }
+  .bar-fill.hp  { background: #22c55e; }
+  .bar-fill.mp  { background: #60a5fa; }
+  .bar-fill.xp  { background: #f59e0b; }
+  .bar-val { font-size: 0.7rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); width: 5rem; text-align: right; }
+
+  .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+
+  .task-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .task-row { display: flex; align-items: center; gap: 0.5rem; padding: 4px 0; }
+  .daily-row { gap: 0.6rem; }
+  .check { font-size: 0.8rem; flex-shrink: 0; color: var(--muted, #71717a); }
+  .check.done { color: #22c55e; }
+  .task-text { flex: 1; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .streak-badge { font-size: 0.7rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); white-space: nowrap; }
+
+  .stat-number { font-family: var(--font-display, Outfit); font-size: 1.25rem; font-weight: 700; color: #818cf8; line-height: 1; }
+  .stat-lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); margin-left: 0.5rem; }
+  .toggl-total { display: flex; align-items: baseline; gap: 0.25rem; }
+
+  .empty-msg { font-size: 0.8125rem; color: var(--muted, #71717a); }
+</style>

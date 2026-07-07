@@ -1,6 +1,41 @@
 [
   {
     "artist": {
+      "mbid": "",
+      "#text": "Troye Sivan Gets Ready for"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "The Idol",
+    "@attr": {
+      "nowplaying": "true"
+    },
+    "url": "https://www.last.fm/music/Troye+Sivan+Gets+Ready+for/_/The+Idol"
+  },
+  {
+    "artist": {
       "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
       "#text": "Lauv"
     },
@@ -8,31 +43,68 @@
     "image": [
       {
         "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/da023c0c6854f695807857d825c5e930.jpg"
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e32f8fb6e1101d6277ede3b370767005.jpg"
       },
       {
         "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/da023c0c6854f695807857d825c5e930.jpg"
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e32f8fb6e1101d6277ede3b370767005.jpg"
       },
       {
         "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/da023c0c6854f695807857d825c5e930.jpg"
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e32f8fb6e1101d6277ede3b370767005.jpg"
       },
       {
         "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/da023c0c6854f695807857d825c5e930.jpg"
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e32f8fb6e1101d6277ede3b370767005.jpg"
       }
     ],
-    "mbid": "060bd240-3068-40b5-9899-a2b0134f6168",
+    "mbid": "4fbb1e4a-c5c7-4694-a971-a3668bcffa17",
     "album": {
-      "mbid": "4016fe50-d212-4e28-9ebc-b53c7efcf6ad",
-      "#text": "~how i’m feeling~"
+      "mbid": "fbbbbfda-8f82-4dbf-8bb1-2038dc2cb632",
+      "#text": "Feelings"
     },
-    "name": "Sad Forever",
-    "@attr": {
-      "nowplaying": "true"
+    "name": "Feelings",
+    "url": "https://www.last.fm/music/Lauv/_/Feelings",
+    "date": {
+      "uts": "1783442807",
+      "#text": "07 Jul 2026, 16:46"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
+      "#text": "Lauv"
     },
-    "url": "https://www.last.fm/music/Lauv/_/Sad+Forever"
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8468ee40bfcc967cf393901609cd0a23.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8468ee40bfcc967cf393901609cd0a23.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8468ee40bfcc967cf393901609cd0a23.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8468ee40bfcc967cf393901609cd0a23.jpg"
+      }
+    ],
+    "mbid": "680f16ac-d179-42f2-960b-cb96f28fabda",
+    "album": {
+      "mbid": "",
+      "#text": "~I MISS YOU~"
+    },
+    "name": "Never Not",
+    "url": "https://www.last.fm/music/Lauv/_/Never+Not",
+    "date": {
+      "uts": "1783442597",
+      "#text": "07 Jul 2026, 16:43"
+    }
   },
   {
     "artist": {
@@ -540,7 +612,7 @@
   },
   {
     "artist": {
-      "mbid": "c33c2065-b1c3-4406-b066-d33a9e2ea71a",
+      "mbid": "",
       "#text": "OneRepublic"
     },
     "streamable": "0",
@@ -3560,78 +3632,6 @@
     "date": {
       "uts": "1783228917",
       "#text": "05 Jul 2026, 05:21"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "c45abe48-2fd0-4327-9b84-cc5c6d628930",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Bloom",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Bloom",
-    "date": {
-      "uts": "1783228788",
-      "#text": "05 Jul 2026, 05:19"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
-      "#text": "Lauv"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "10ba60ed-f74e-40f8-9cb7-0602c694d689",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Come Back Home",
-    "url": "https://www.last.fm/music/Lauv/_/Come+Back+Home",
-    "date": {
-      "uts": "1783228456",
-      "#text": "05 Jul 2026, 05:14"
     }
   }
 ]

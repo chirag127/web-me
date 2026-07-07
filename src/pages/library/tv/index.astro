@@ -1,19 +1,26 @@
 ---
 /*
- * API (TV shows history): https://api.trakt.tv/users/chirag127/history/shows?limit=100
- * API (currently watching): https://api.trakt.tv/users/chirag127/watching
- * Headers: trakt-api-version: 2, trakt-api-key: CLIENT_ID
+ * Data pre-fetched to: public/data/trakt-stats.json, public/data/trakt-shows-enriched.json
  */
 import Layout from '~/layouts/Layout.astro'
-import { getTraktShows, getTraktStats } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [shows, stats] = await Promise.all([getTraktShows(100), getTraktStats()])
-const s = stats as any
+function loadJson(name: string, fallback: any = []) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return fallback }
+}
+
+const showsRaw: any[] = loadJson('trakt-shows-enriched.json')
+const stats: any      = loadJson('trakt-stats.json', {})
+const s               = stats
+
+// deduplicate by show title (keep first occurrence = most recent)
 const unique = new Map<string, any>()
-for (const item of shows) {
+for (const item of showsRaw) {
   if (item.show && !unique.has(item.show.title)) unique.set(item.show.title, item)
 }
-const uniqueShows = [...unique.values()]
+const shows = [...unique.values()]
 ---
 
 <Layout title="TV Shows" active="/library/tv/">
@@ -24,29 +31,45 @@ const uniqueShows = [...unique.values()]
   </div>
 
   <div class="stats-row">
-    <div class="stat"><span class="val">{s?.shows?.watched ?? uniqueShows.length}</span><span class="lbl">SHOWS</span></div>
+    <div class="stat"><span class="val">{s?.shows?.watched ?? shows.length}</span><span class="lbl">SHOWS</span></div>
     <div class="divider"></div>
     <div class="stat"><span class="val">{s?.episodes?.watched?.toLocaleString?.() ?? '—'}</span><span class="lbl">EPISODES</span></div>
     <div class="divider"></div>
     <div class="stat"><span class="val">{Math.round((s?.episodes?.minutes ?? 0)/60)}</span><span class="lbl">HOURS</span></div>
   </div>
 
-  {uniqueShows.length === 0 ? (
+  {shows.length === 0 ? (
     <div class="empty-state">
-      <p>No data. Set <code>TRAKT_CLIENT_ID</code> in CF Pages env vars.</p>
+      <p>No data yet · check back soon</p>
     </div>
   ) : (
     <>
       <div class="kicker" style="margin-bottom:0.5rem">RECENTLY WATCHED</div>
+      <div class="poster-grid">
+        {shows.slice(0, 20).map((item: any) => (
+          <div class="poster-card">
+            {item._tmdb?.poster ? (
+              <img src={`https://image.tmdb.org/t/p/w185${item._tmdb.poster}`} alt={item.show?.title ?? ''}
+                class="poster-img" loading="lazy" onerror="this.style.display='none'" />
+            ) : (
+              <div class="poster-placeholder"></div>
+            )}
+            <div class="poster-title">{item.show?.title}</div>
+            <div class="poster-year">{item.show?.year}</div>
+          </div>
+        ))}
+      </div>
+
+      <div class="kicker" style="margin: 1.5rem 0 0.5rem">ALL SHOWS</div>
       <ol class="subject-list">
-        {uniqueShows.slice(0, 50).map((s: any, i: number) => (
+        {shows.map((item: any, i: number) => (
           <li class="subject-row">
             <span class="rank">{i + 1}</span>
             <div class="subject-info">
-              <span class="subject-name">{s.show.title}</span>
-              {s.episode && <span class="subject-sub">S{s.episode.season}E{s.episode.number} · {s.episode.title}</span>}
+              <span class="subject-name">{item.show?.title}</span>
+              {item.episode && <span class="subject-sub">S{item.episode.season}E{item.episode.number} · {item.episode.title}</span>}
             </div>
-            <span class="subject-meta">{s.show.year}</span>
+            <span class="subject-meta">{item.show?.year}</span>
           </li>
         ))}
       </ol>
@@ -62,6 +85,12 @@ const uniqueShows = [...unique.values()]
   .val { font-family: var(--font-display, Outfit); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; }
   .lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
   .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
+  .poster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+  .poster-card { display: flex; flex-direction: column; gap: 4px; }
+  .poster-img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 5px; background: rgba(255,255,255,0.04); }
+  .poster-placeholder { width: 100%; aspect-ratio: 2/3; background: rgba(255,255,255,0.04); border-radius: 5px; }
+  .poster-title { font-size: 0.72rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .poster-year { font-size: 0.65rem; color: var(--muted, #71717a); }
   .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
   .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
   .subject-row:hover { background: rgba(255,255,255,0.03); }
@@ -71,4 +100,5 @@ const uniqueShows = [...unique.values()]
   .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
   .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
   .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>

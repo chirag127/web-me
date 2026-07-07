@@ -1,13 +1,19 @@
 ---
 /*
- * API (movie hub): combine watched + watchlist stats from Trakt
- * https://api.trakt.tv/users/chirag127/stats
+ * Data pre-fetched to: public/data/trakt-stats.json, public/data/trakt-movies-enriched.json
  */
 import Layout from '~/layouts/Layout.astro'
-import { getTraktStats } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const stats = await getTraktStats()
-const s = stats as any
+function loadJson(name: string, fallback: any = null) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return fallback }
+}
+
+const stats: any    = loadJson('trakt-stats.json') ?? {}
+const movies: any[] = loadJson('trakt-movies-enriched.json') ?? []
+const recent        = movies.slice(0, 6)
 ---
 
 <Layout title="Movies" active="/library/movies/">
@@ -18,14 +24,34 @@ const s = stats as any
   </div>
 
   <div class="stats-row">
-    <div class="stat"><span class="val">{s?.movies?.watched ?? '—'}</span><span class="lbl">WATCHED</span></div>
+    <div class="stat"><span class="val">{stats?.movies?.watched ?? '—'}</span><span class="lbl">WATCHED</span></div>
     <div class="divider"></div>
-    <div class="stat"><span class="val">{Math.round((s?.movies?.minutes ?? 0)/60)}</span><span class="lbl">HOURS</span></div>
+    <div class="stat"><span class="val">{Math.round((stats?.movies?.minutes ?? 0)/60)}</span><span class="lbl">HOURS</span></div>
     <div class="divider"></div>
-    <div class="stat"><span class="val">{s?.movies?.collected ?? '—'}</span><span class="lbl">COLLECTED</span></div>
+    <div class="stat"><span class="val">{stats?.movies?.collected ?? '—'}</span><span class="lbl">COLLECTED</span></div>
   </div>
 
-  <nav class="sub-nav">
+  {recent.length > 0 && (
+    <>
+      <div class="kicker" style="margin-bottom:0.5rem">RECENTLY WATCHED</div>
+      <div class="poster-grid">
+        {recent.map((m: any) => (
+          <a href={`https://www.themoviedb.org/movie/${m.movie?.ids?.tmdb}`} target="_blank" rel="noopener" class="poster-card">
+            {m._tmdb?.poster ? (
+              <img src={`https://image.tmdb.org/t/p/w185${m._tmdb.poster}`} alt={m.movie?.title ?? ''}
+                class="poster-img" loading="lazy" onerror="this.style.display='none'" />
+            ) : (
+              <div class="poster-placeholder"></div>
+            )}
+            <div class="poster-title">{m.movie?.title}</div>
+            <div class="poster-year">{m.movie?.year}</div>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
+  <nav class="sub-nav" style="margin-top:1.5rem">
     <a href="/library/movies/watched/">Watched →</a>
     <a href="/library/movies/watchlist/">Watchlist →</a>
     <a href="/library/activity/">Activity feed →</a>
@@ -40,7 +66,15 @@ const s = stats as any
   .val { font-family: var(--font-display, Outfit); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; }
   .lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
   .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
+  .poster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem; }
+  .poster-card { display: flex; flex-direction: column; gap: 4px; text-decoration: none; }
+  .poster-card:hover .poster-title { color: #fff; }
+  .poster-img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 5px; background: rgba(255,255,255,0.04); }
+  .poster-placeholder { width: 100%; aspect-ratio: 2/3; background: rgba(255,255,255,0.04); border-radius: 5px; }
+  .poster-title { font-size: 0.72rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .poster-year { font-size: 0.65rem; color: var(--muted, #71717a); }
   .sub-nav { display: flex; flex-direction: column; gap: 6px; }
   .sub-nav a { font-size: 0.875rem; color: var(--muted, #71717a); text-decoration: none; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); transition: background 120ms; }
   .sub-nav a:hover { background: rgba(255,255,255,0.04); color: #fff; }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>

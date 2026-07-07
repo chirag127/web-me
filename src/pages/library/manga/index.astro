@@ -1,16 +1,23 @@
 ---
-/*
- * MAL API (reading manga): https://api.myanimelist.net/v2/users/chirag127/mangalist?fields=list_status,main_picture,mean&status=reading&limit=100
- * Header: X-MAL-CLIENT-ID: CLIENT_ID
- */
+import { readFileSync } from 'fs'
+import { join } from 'path'
 import Layout from '~/layouts/Layout.astro'
-import { getMALManga } from '~/lib/api'
 
-const [reading, completed, planToRead] = await Promise.all([
-  getMALManga('reading', 50),
-  getMALManga('completed', 100),
-  getMALManga('plan_to_read', 50),
-])
+function readData(filename: string): any[] {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
+}
+
+const jikanReading  = readData('jikan-manga-reading.json')
+const reading       = jikanReading.length ? jikanReading : readData('mal-manga-reading.json')
+const jikanComp     = readData('jikan-manga-completed.json')
+const completed     = jikanComp.length ? jikanComp : readData('mal-manga-completed.json')
+const jikanPlan     = readData('jikan-manga-plan.json')
+const planToRead    = jikanPlan.length ? jikanPlan : readData('mal-manga-plan.json')
+const isJikan       = jikanReading.length > 0 || jikanComp.length > 0 || jikanPlan.length > 0
+
+function getTitle(item: any) { return isJikan ? item?.entry?.title : item?.node?.title }
+function getScore(item: any) { return isJikan ? item?.score : item?.list_status?.score }
+function getCover(item: any) { return isJikan ? item?.entry?.images?.jpg?.image_url : item?.node?.main_picture?.medium }
 ---
 
 <Layout title="Manga" active="/library/manga/">
@@ -28,19 +35,28 @@ const [reading, completed, planToRead] = await Promise.all([
     <div class="stat"><span class="val">{planToRead.length}</span><span class="lbl">QUEUED</span></div>
   </div>
 
-  {reading.length > 0 && (
+  {reading.length > 0 ? (
     <>
       <div class="kicker" style="margin-bottom:0.5rem">CURRENTLY READING</div>
       <ol class="subject-list" style="margin-bottom:1.5rem">
-        {reading.map((m: any, i: number) => (
-          <li class="subject-row">
-            <span class="rank">{i + 1}</span>
-            <span class="subject-name">{m.node.title}</span>
-            {m.list_status.score > 0 && <span class="subject-meta">★ {m.list_status.score}</span>}
-          </li>
-        ))}
+        {reading.map((m: any, i: number) => {
+          const cover = getCover(m)
+          const score = getScore(m)
+          return (
+            <li class="subject-row">
+              <span class="rank">{i + 1}</span>
+              {cover && <img src={cover} alt="" class="cover" loading="lazy" />}
+              <span class="subject-name">{getTitle(m)}</span>
+              {score > 0 && <span class="subject-meta">★ {score}</span>}
+            </li>
+          )
+        })}
       </ol>
     </>
+  ) : (
+    <div class="empty-state" style="margin-bottom:1.5rem">
+      <p>No reading data — MAL list may be private or empty.</p>
+    </div>
   )}
 
   <nav class="sub-nav">
@@ -57,12 +73,14 @@ const [reading, completed, planToRead] = await Promise.all([
   .val { font-family: var(--font-display, Outfit); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; }
   .lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
   .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
-  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
-  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 6px 8px; border-radius: 5px; }
   .subject-row:hover { background: rgba(255,255,255,0.03); }
   .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.75rem; text-align: right; flex-shrink: 0; }
+  .cover { width: 32px; height: 46px; object-fit: cover; border-radius: 3px; flex-shrink: 0; }
   .subject-name { flex: 1; font-size: 0.8125rem; color: var(--fg, #fff); }
   .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
   .sub-nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
   .sub-nav a { font-size: 0.8rem; color: var(--muted, #71717a); text-decoration: none; }
   .sub-nav a:hover { color: #fff; }

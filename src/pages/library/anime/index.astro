@@ -1,13 +1,26 @@
 ---
-/*
- * MAL API (watching): https://api.myanimelist.net/v2/users/chirag127/animelist?fields=list_status,main_picture,mean,num_episodes&status=watching&limit=100
- * Header: X-MAL-CLIENT-ID: CLIENT_ID
- * MAL profile: https://myanimelist.net/profile/chirag127
- */
+import { readFileSync } from 'fs'
+import { join } from 'path'
 import Layout from '~/layouts/Layout.astro'
-import { getMALAnime } from '~/lib/api'
 
-const watching = await getMALAnime('watching', 100)
+function readData(filename: string): any[] {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
+}
+
+const jikanWatching = readData('jikan-anime-watching.json')
+const malWatching   = readData('mal-anime-watching.json')
+const watching      = jikanWatching.length ? jikanWatching : malWatching
+const isJikan       = jikanWatching.length > 0
+
+const completedRaw = readData('jikan-anime-completed.json')
+const completed    = completedRaw.length ? completedRaw : readData('mal-anime-completed.json')
+const plannedRaw   = readData('jikan-anime-plan.json')
+const planned      = plannedRaw.length ? plannedRaw : readData('mal-anime-plan.json')
+
+function getTitle(item: any)     { return isJikan ? item?.entry?.title : item?.node?.title }
+function getScore(item: any)     { return isJikan ? item?.score : item?.list_status?.score }
+function getEpWatched(item: any) { return isJikan ? item?.num_episodes_watched : item?.list_status?.num_episodes_watched }
+function getCover(item: any)     { return isJikan ? item?.entry?.images?.jpg?.image_url : item?.node?.main_picture?.medium }
 ---
 
 <Layout title="Currently Watching Anime" active="/library/anime/">
@@ -17,38 +30,58 @@ const watching = await getMALAnime('watching', 100)
     <p class="muted">{watching.length} series in progress · <a href="https://myanimelist.net/profile/chirag127" target="_blank" rel="noopener">MAL: chirag127 ↗</a></p>
   </div>
 
+  <div class="stats-row">
+    <div class="stat"><span class="val">{watching.length}</span><span class="lbl">WATCHING</span></div>
+    <div class="divider"></div>
+    <div class="stat"><span class="val">{completed.length}</span><span class="lbl">COMPLETED</span></div>
+    <div class="divider"></div>
+    <div class="stat"><span class="val">{planned.length}</span><span class="lbl">QUEUED</span></div>
+  </div>
+
   {watching.length === 0 ? (
     <div class="empty-state">
-      <p>No data. Set <code>MAL_CLIENT_ID</code> + <code>MAL_USERNAME</code> in CF Pages env vars.</p>
+      <p>No watching data — MAL list may be private or empty.</p>
     </div>
   ) : (
     <ol class="subject-list">
-      {watching.map((a: any, i: number) => (
-        <li class="subject-row">
-          <span class="rank">{i + 1}</span>
-          <div class="subject-info">
-            <span class="subject-name">{a.node.title}</span>
-            <span class="subject-sub">Ep {a.list_status.num_episodes_watched}/{a.node.num_episodes ?? '?'}</span>
-          </div>
-          {a.list_status.score > 0 && <span class="subject-meta">★ {a.list_status.score}</span>}
-        </li>
-      ))}
+      {watching.map((a: any, i: number) => {
+        const cover     = getCover(a)
+        const score     = getScore(a)
+        const epWatched = getEpWatched(a)
+        return (
+          <li class="subject-row">
+            <span class="rank">{i + 1}</span>
+            {cover && <img src={cover} alt="" class="cover" loading="lazy" />}
+            <div class="subject-info">
+              <span class="subject-name">{getTitle(a)}</span>
+              {epWatched != null && <span class="subject-sub">Ep {epWatched}</span>}
+            </div>
+            {score > 0 && <span class="subject-meta">★ {score}</span>}
+          </li>
+        )
+      })}
     </ol>
   )}
 
   <nav class="sub-nav" style="margin-top:1.5rem">
-    <a href="/library/anime/completed/">Completed →</a>
-    <a href="/library/anime/plan-to-watch/">Plan to Watch →</a>
+    <a href="/library/anime/completed/">Completed ({completed.length}) →</a>
+    <a href="/library/anime/plan-to-watch/">Plan to Watch ({planned.length}) →</a>
   </nav>
 </Layout>
 
 <style>
   .page-header { margin-bottom: 1.5rem; }
   .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
-  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
-  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .stats-row { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .val { font-family: var(--font-display, Outfit); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; }
+  .lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
+  .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 6px 8px; border-radius: 5px; }
   .subject-row:hover { background: rgba(255,255,255,0.03); }
   .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.75rem; text-align: right; flex-shrink: 0; }
+  .cover { width: 32px; height: 46px; object-fit: cover; border-radius: 3px; flex-shrink: 0; }
   .subject-info { flex: 1; min-width: 0; }
   .subject-name { display: block; font-size: 0.8125rem; color: var(--fg, #fff); }
   .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }

@@ -1,16 +1,22 @@
 ---
 /*
- * API: https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=lastfmwhy&api_key=KEY&format=json&period=1month&limit=50
- * Fallback: https://api.listenbrainz.org/1/stats/user/chirag127/artists?range=month&count=50
+ * Data pre-fetched to: public/data/lastfm-top-artists.json, public/data/lb-stats-month.json
  */
 import Layout from '~/layouts/Layout.astro'
-import { getLastfmTopArtists, getLBStats } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [lfArtists, lbStats] = await Promise.all([
-  getLastfmTopArtists('1month', 50),
-  getLBStats('month'),
-])
-const artists = lfArtists.length ? lfArtists : lbStats.topArtists
+function loadJson(name: string, fallback: any = []) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return fallback }
+}
+
+const lfArtists: any[]  = loadJson('lastfm-top-artists.json')
+const lbStats: any      = loadJson('lb-stats-month.json', {})
+
+const artists = lfArtists.length
+  ? lfArtists.slice(0, 20)
+  : (lbStats?.payload?.artists ?? []).slice(0, 20)
 ---
 
 <Layout title="Top Artists · Music" active="/library/music/top-artists/">
@@ -22,15 +28,19 @@ const artists = lfArtists.length ? lfArtists : lbStats.topArtists
 
   {artists.length === 0 ? (
     <div class="empty-state">
-      <p>No data. Set <code>LASTFM_API_KEY</code> + <code>LASTFM_USERNAME</code> in CF Pages env vars.</p>
-      <p class="faint" style="font-size:0.75rem;margin-top:0.5rem">
-        Direct: <a href="https://www.last.fm/user/lastfmwhy/library/artists" target="_blank" rel="noopener">last.fm/user/lastfmwhy/library/artists ↗</a>
+      <p>No data yet · check back soon</p>
+      <p style="font-size:0.75rem;margin-top:0.5rem">
+        <a href="https://www.last.fm/user/lastfmwhy/library/artists" target="_blank" rel="noopener">last.fm/user/lastfmwhy/library/artists ↗</a>
       </p>
     </div>
   ) : (
     <ol class="subject-list">
       {artists.map((a: any, i: number) => (
         <li class="subject-row">
+          {a.image?.[2]?.['#text'] && (
+            <img src={a.image[2]['#text']} alt="" class="thumb" loading="lazy"
+              onerror="this.style.display='none'" />
+          )}
           <span class="rank">{i + 1}</span>
           <span class="subject-name">{a.name ?? a.artist_name}</span>
           <span class="subject-meta">{(a.playcount ?? a.listen_count ?? '').toLocaleString()} plays</span>
@@ -46,8 +56,10 @@ const artists = lfArtists.length ? lfArtists : lbStats.topArtists
   .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
   .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); }
   .subject-row:hover { background: rgba(255,255,255,0.04); }
+  .thumb { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
   .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.5rem; text-align: right; flex-shrink: 0; }
   .subject-name { flex: 1; font-size: 0.875rem; color: var(--fg, #fff); }
   .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); white-space: nowrap; }
   .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>

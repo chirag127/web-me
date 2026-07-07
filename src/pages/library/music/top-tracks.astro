@@ -1,39 +1,41 @@
 ---
 /*
- * API: https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=lastfmwhy&api_key=KEY&format=json&period=1month&limit=50
- * Fallback: https://api.listenbrainz.org/1/stats/user/chirag127/recordings?range=month&count=50
+ * Data pre-fetched to: public/data/lastfm-top-tracks.json
  */
 import Layout from '~/layouts/Layout.astro'
-import { getLastfmTopTracks, getLBStats } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [lfTracks, lbStats] = await Promise.all([
-  getLastfmTopTracks('1month', 50),
-  getLBStats('month'),
-])
-const tracks = lfTracks.length ? lfTracks : lbStats.topTracks
+let tracks: any[] = []
+try { tracks = JSON.parse(readFileSync(join(process.cwd(), 'public/data/lastfm-top-tracks.json'), 'utf-8')) } catch {}
+tracks = tracks.slice(0, 20)
 ---
 
 <Layout title="Top Tracks · Music" active="/library/music/top-tracks/">
   <div class="page-header">
     <div class="kicker">MUSIC · TOP TRACKS</div>
     <h1>Top Tracks</h1>
-    <p class="muted">Last 30 days · Last.fm + ListenBrainz</p>
+    <p class="muted">Last 30 days · Last.fm</p>
   </div>
 
   {tracks.length === 0 ? (
     <div class="empty-state">
-      <p>No data. Set <code>LASTFM_API_KEY</code> in CF Pages env vars.</p>
+      <p>No data yet · check back soon</p>
     </div>
   ) : (
     <ol class="subject-list">
       {tracks.map((t: any, i: number) => (
         <li class="subject-row">
+          {t.image?.[2]?.['#text'] && (
+            <img src={t.image[2]['#text']} alt="" class="thumb" loading="lazy"
+              onerror="this.style.display='none'" />
+          )}
           <span class="rank">{i + 1}</span>
           <div class="subject-info">
-            <span class="subject-name">{t.name ?? t.recording_name}</span>
-            <span class="subject-sub">{t.artist?.['#text'] ?? t.artist_name ?? ''}</span>
+            <span class="subject-name">{t.name}</span>
+            <span class="subject-sub">{t.artist?.name ?? t.artist?.['#text'] ?? ''}</span>
           </div>
-          <span class="subject-meta">{(t.playcount ?? t.listen_count ?? '').toLocaleString()} plays</span>
+          <span class="subject-meta">{(t.playcount ?? '').toLocaleString()} plays</span>
         </li>
       ))}
     </ol>
@@ -46,10 +48,12 @@ const tracks = lfTracks.length ? lfTracks : lbStats.topTracks
   .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
   .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); }
   .subject-row:hover { background: rgba(255,255,255,0.04); }
+  .thumb { width: 32px; height: 32px; border-radius: 3px; object-fit: cover; flex-shrink: 0; }
   .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.5rem; text-align: right; flex-shrink: 0; }
   .subject-info { flex: 1; min-width: 0; }
   .subject-name { display: block; font-size: 0.875rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .subject-sub { display: block; font-size: 0.75rem; color: var(--muted, #71717a); }
   .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); white-space: nowrap; }
   .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>

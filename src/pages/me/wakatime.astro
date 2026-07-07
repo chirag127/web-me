@@ -1,0 +1,180 @@
+---
+import { readFileSync } from 'fs'
+import { join } from 'path'
+import Layout from '~/layouts/Layout.astro'
+
+function readObj(filename: string): any {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return {} }
+}
+function readData(filename: string): any[] {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
+}
+
+const s7d       = readObj('wakatime-stats-7d.json')
+const s30d      = readObj('wakatime-stats-30d.json')
+const allTime   = readObj('wakatime-all-time.json')
+const projects  = readData('wakatime-projects.json')
+
+const langs7d   = (s7d.languages  ?? []).slice(0, 10)
+const projects7d = (s7d.projects  ?? []).slice(0, 8)
+const editors7d  = (s7d.editors   ?? []).filter((e: any) => e.name !== 'Unknown Editor').slice(0, 5)
+
+const langs30d   = (s30d.languages ?? []).slice(0, 10)
+
+const LANG_COLORS: Record<string, string> = {
+  Python: '#3b82f6', JavaScript: '#eab308', TypeScript: '#60a5fa',
+  CSS: '#ec4899', HTML: '#f97316', Rust: '#f59e0b',
+  Bash: '#22c55e', Markdown: '#a78bfa', JSON: '#94a3b8',
+  YAML: '#06b6d4', PowerShell: '#818cf8', Go: '#22d3ee',
+  Other: '#52525b',
+}
+---
+
+<Layout title="Coding Activity" active="/me/wakatime">
+  <div class="page-header">
+    <div class="kicker">ME · CODING ACTIVITY</div>
+    <h1>Coding Activity</h1>
+    <p class="muted">Powered by <a href="https://wakatime.com/@chirag127" target="_blank" rel="noopener">WakaTime ↗</a></p>
+  </div>
+
+  <!-- Top stats -->
+  <div class="stats-grid">
+    {s7d.human_readable && (
+      <div class="stat-card">
+        <span class="stat-number">{s7d.human_readable}</span>
+        <span class="stat-lbl">THIS WEEK</span>
+      </div>
+    )}
+    {s7d.daily_average && (
+      <div class="stat-card">
+        <span class="stat-number">{s7d.daily_average}</span>
+        <span class="stat-lbl">DAILY AVG (7D)</span>
+      </div>
+    )}
+    {s30d.human_readable && (
+      <div class="stat-card">
+        <span class="stat-number">{s30d.human_readable}</span>
+        <span class="stat-lbl">LAST 30 DAYS</span>
+      </div>
+    )}
+    {allTime.human_readable && (
+      <div class="stat-card">
+        <span class="stat-number">{allTime.human_readable}</span>
+        <span class="stat-lbl">ALL TIME</span>
+      </div>
+    )}
+  </div>
+
+  <div class="two-col">
+
+    <!-- Languages 7d -->
+    {langs7d.length > 0 && (
+      <div class="card">
+        <div class="card-title">LANGUAGES · 7 DAYS</div>
+        <div class="lang-bars">
+          {langs7d.map((l: any) => (
+            <div class="lang-row">
+              <span class="lang-dot" style={`background:${LANG_COLORS[l.name] ?? '#52525b'}`}></span>
+              <span class="lang-name">{l.name}</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style={`width:${Math.min(l.percent, 100)}%;background:${LANG_COLORS[l.name] ?? '#52525b'}`}></div>
+              </div>
+              <span class="lang-time">{l.text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Languages 30d -->
+    {langs30d.length > 0 && (
+      <div class="card">
+        <div class="card-title">LANGUAGES · 30 DAYS</div>
+        <div class="lang-bars">
+          {langs30d.map((l: any) => (
+            <div class="lang-row">
+              <span class="lang-dot" style={`background:${LANG_COLORS[l.name] ?? '#52525b'}`}></span>
+              <span class="lang-name">{l.name}</span>
+              <div class="bar-bg">
+                <div class="bar-fill" style={`width:${Math.min(l.percent, 100)}%;background:${LANG_COLORS[l.name] ?? '#52525b'}`}></div>
+              </div>
+              <span class="lang-time">{l.text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+  </div>
+
+  <!-- Top projects -->
+  {projects7d.length > 0 && (
+    <div class="card" style="margin-top:1rem">
+      <div class="card-title">TOP PROJECTS · 7 DAYS</div>
+      <ol class="project-list">
+        {projects7d.map((p: any, i: number) => (
+          <li class="project-row">
+            <span class="rank">{i + 1}</span>
+            <span class="project-name">{p.name}</span>
+            <div class="bar-bg bar-sm">
+              <div class="bar-fill" style={`width:${Math.min(p.percent, 100)}%;background:#818cf8`}></div>
+            </div>
+            <span class="project-time">{p.text}</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )}
+
+  <!-- Editors -->
+  {editors7d.length > 0 && (
+    <div class="card" style="margin-top:1rem">
+      <div class="card-title">EDITORS · 7 DAYS</div>
+      <div class="editor-list">
+        {editors7d.map((e: any) => (
+          <div class="editor-row">
+            <span class="editor-name">{e.name}</span>
+            <div class="bar-bg">
+              <div class="bar-fill" style={`width:${Math.min(e.percent, 100)}%;background:#34d399`}></div>
+            </div>
+            <span class="editor-time">{e.text}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-bottom: 1.5rem; }
+  .stat-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 1rem; }
+  .stat-number { display: block; font-family: var(--font-display, Outfit); font-size: 1.25rem; font-weight: 700; color: #818cf8; line-height: 1; margin-bottom: 4px; }
+  .stat-lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
+
+  .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 1.25rem; }
+  .card-title { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; color: var(--faint, #52525b); margin-bottom: 0.75rem; }
+
+  .lang-bars { display: flex; flex-direction: column; gap: 7px; }
+  .lang-row { display: flex; align-items: center; gap: 0.5rem; }
+  .lang-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .lang-name { font-size: 0.75rem; color: var(--fg, #fff); width: 6.5rem; flex-shrink: 0; }
+  .bar-bg { flex: 1; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; }
+  .bar-sm { height: 4px; }
+  .bar-fill { height: 100%; border-radius: 3px; }
+  .lang-time { font-size: 0.7rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); width: 7rem; text-align: right; flex-shrink: 0; }
+
+  .project-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .project-row { display: flex; align-items: center; gap: 0.5rem; }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.25rem; text-align: right; flex-shrink: 0; }
+  .project-name { font-size: 0.8125rem; color: var(--fg, #fff); width: 8rem; flex-shrink: 0; }
+  .project-time { font-size: 0.7rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); width: 7rem; text-align: right; flex-shrink: 0; }
+
+  .editor-list { display: flex; flex-direction: column; gap: 7px; }
+  .editor-row { display: flex; align-items: center; gap: 0.5rem; }
+  .editor-name { font-size: 0.75rem; color: var(--fg, #fff); width: 8rem; flex-shrink: 0; }
+  .editor-time { font-size: 0.7rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); width: 7rem; text-align: right; flex-shrink: 0; }
+</style>

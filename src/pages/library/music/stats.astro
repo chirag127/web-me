@@ -1,41 +1,47 @@
 ---
 /*
- * API: https://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=lastfmwhy&api_key=KEY&format=json
- * ListenBrainz stats: https://api.listenbrainz.org/1/stats/user/chirag127/artists?range=all_time&count=10
+ * Data pre-fetched to: public/data/lastfm-user.json, public/data/lb-stats-all.json
  */
 import Layout from '~/layouts/Layout.astro'
-import { getLastfmUserInfo, getLBStats } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [lfUser, lbMonth, lbYear, lbAll] = await Promise.all([
-  getLastfmUserInfo(),
-  getLBStats('month'),
-  getLBStats('year'),
-  getLBStats('all_time'),
-])
+function loadJson(name: string, fallback: any = null) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return fallback }
+}
+
+const lfUser: any  = loadJson('lastfm-user.json')
+const lbAll: any   = loadJson('lb-stats-all.json')
+
+const since = lfUser?.registered?.unixtime
+  ? new Date(Number(lfUser.registered.unixtime) * 1000).getFullYear()
+  : null
 ---
 
 <Layout title="Music Stats" active="/library/music/stats/">
   <div class="page-header">
     <div class="kicker">MUSIC · STATS</div>
     <h1>Listening Stats</h1>
+    {since && <p class="muted">Last.fm since {since}</p>}
   </div>
 
   <div class="stats-grid">
     <div class="stat-card">
-      <div class="stat-value">{(lfUser as any)?.playcount?.toLocaleString?.() ?? '—'}</div>
+      <div class="stat-value">{lfUser?.playcount?.toLocaleString?.() ?? '—'}</div>
       <div class="stat-label">TOTAL SCROBBLES</div>
       <div class="stat-source">Last.fm · lastfmwhy</div>
     </div>
     <div class="stat-card">
-      <div class="stat-value">{(lfUser as any)?.artist_count?.toLocaleString?.() ?? '—'}</div>
+      <div class="stat-value">{lfUser?.artist_count?.toLocaleString?.() ?? '—'}</div>
       <div class="stat-label">ARTISTS</div>
     </div>
     <div class="stat-card">
-      <div class="stat-value">{(lfUser as any)?.track_count?.toLocaleString?.() ?? '—'}</div>
+      <div class="stat-value">{lfUser?.track_count?.toLocaleString?.() ?? '—'}</div>
       <div class="stat-label">TRACKS</div>
     </div>
     <div class="stat-card">
-      <div class="stat-value">{(lfUser as any)?.album_count?.toLocaleString?.() ?? '—'}</div>
+      <div class="stat-value">{lfUser?.album_count?.toLocaleString?.() ?? '—'}</div>
       <div class="stat-label">ALBUMS</div>
     </div>
   </div>
@@ -54,4 +60,5 @@ const [lfUser, lbMonth, lbYear, lbAll] = await Promise.all([
   .stat-value { font-family: var(--font-display, Outfit, sans-serif); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; margin-bottom: 0.25rem; }
   .stat-label { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
   .stat-source { font-size: 0.65rem; color: var(--faint, #52525b); margin-top: 0.25rem; }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>

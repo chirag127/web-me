@@ -1,33 +1,149 @@
 ---
-/*
- * Steam API: https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?steamid=STEAM_ID&key=STEAM_KEY&format=json
- * Steam profile: https://steamcommunity.com/id/chirag127/
- * Note: Set STEAM_API_KEY + STEAM_USER_ID in CF Pages env vars to enable.
- * Without key: links to Steam profile directly.
- */
+import { readFileSync } from 'fs'
+import { join } from 'path'
 import Layout from '~/layouts/Layout.astro'
+
+function readData(filename: string): any[] {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
+}
+function readObj(filename: string): any {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return {} }
+}
+
+const games   = readData('games-manual.json')
+const waka7d  = readObj('wakatime-stats-7d.json')
+
+const topProjects = (waka7d.projects ?? []).slice(0, 5)
+const topLangs    = (waka7d.languages ?? []).slice(0, 5)
+
+const LANG_COLORS: Record<string, string> = {
+  Python: '#3b82f6', JavaScript: '#eab308', TypeScript: '#60a5fa',
+  CSS: '#ec4899', HTML: '#f97316', Rust: '#f59e0b',
+  Bash: '#22c55e', Markdown: '#a78bfa', JSON: '#94a3b8',
+  YAML: '#06b6d4', PowerShell: '#818cf8', Other: '#52525b',
+}
 ---
 
 <Layout title="Gaming" active="/library/gaming/">
   <div class="page-header">
     <div class="kicker">LIBRARY · GAMING</div>
     <h1>Gaming</h1>
+    <p class="muted">Manual tracking + coding activity.</p>
   </div>
 
-  <div class="empty-state">
-    <p>Steam integration coming soon.</p>
-    <p style="font-size:0.75rem;margin-top:0.5rem;color:var(--faint)">
-      Set <code>STEAM_API_KEY</code> + <code>STEAM_USER_ID</code> in CF Pages env vars.<br/>
-      API: <code style="font-size:0.7rem">api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/</code>
-    </p>
-    <div style="margin-top:1rem;display:flex;gap:0.75rem;flex-wrap:wrap">
-      <a href="https://steamcommunity.com/id/chirag127/" target="_blank" rel="noopener" style="font-size:0.8rem;color:var(--muted)">Steam profile ↗</a>
+  <!-- Games list -->
+  {games.length === 0 ? (
+    <div class="card" style="margin-bottom:1.5rem">
+      <div class="kicker" style="margin-bottom:0.5rem">GAMES</div>
+      <div class="empty-state">
+        <p>No games tracked yet — add entries to <code>public/data/games-manual.json</code>.</p>
+        <p style="font-size:0.75rem;margin-top:0.5rem;color:var(--faint)">
+          Format: <code>{"{"}"title","platform","status","rating","year_played","cover_url"{"}"}</code>
+        </p>
+      </div>
     </div>
-  </div>
+  ) : (
+    <div style="margin-bottom:1.5rem">
+      <div class="kicker" style="margin-bottom:0.5rem">GAMES ({games.length})</div>
+      <ol class="subject-list">
+        {games.map((g: any, i: number) => (
+          <li class="subject-row">
+            <span class="rank">{i + 1}</span>
+            {g.cover_url && <img src={g.cover_url} alt="" class="cover" loading="lazy" />}
+            <div class="subject-info">
+              <span class="subject-name">{g.title}</span>
+              <span class="subject-sub">{g.platform} · {g.status}{g.year_played ? ` · ${g.year_played}` : ''}</span>
+            </div>
+            {g.rating > 0 && <span class="subject-meta">★ {g.rating}</span>}
+          </li>
+        ))}
+      </ol>
+    </div>
+  )}
+
+  <!-- WakaTime coding sidebar -->
+  {waka7d.human_readable && (
+    <div class="card">
+      <div class="kicker" style="margin-bottom:0.75rem">CODING THIS WEEK</div>
+      <div class="stats-row" style="margin-bottom:1rem">
+        <div class="stat">
+          <span class="stat-number">{waka7d.human_readable}</span>
+          <span class="stat-lbl">TOTAL</span>
+        </div>
+        <div class="divider"></div>
+        <div class="stat">
+          <span class="stat-number">{waka7d.daily_average}</span>
+          <span class="stat-lbl">DAILY AVG</span>
+        </div>
+      </div>
+
+      {topLangs.length > 0 && (
+        <div style="margin-bottom:1rem">
+          <div class="section-label">LANGUAGES</div>
+          <div class="lang-bars">
+            {topLangs.map((l: any) => (
+              <div class="lang-row">
+                <span class="lang-name">{l.name}</span>
+                <div class="bar-bg">
+                  <div class="bar-fill" style={`width:${l.percent}%;background:${LANG_COLORS[l.name] ?? '#52525b'}`}></div>
+                </div>
+                <span class="lang-pct">{l.percent}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {topProjects.length > 0 && (
+        <div>
+          <div class="section-label">TOP PROJECTS</div>
+          <ol class="project-list">
+            {topProjects.map((p: any, i: number) => (
+              <li class="project-row">
+                <span class="rank">{i + 1}</span>
+                <span class="project-name">{p.name}</span>
+                <span class="project-time">{p.text}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
+
+      <a href="/me/wakatime" class="more-link">Full coding activity →</a>
+    </div>
+  )}
 </Layout>
 
 <style>
   .page-header { margin-bottom: 1.5rem; }
   .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
-  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+  .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 1.25rem; }
+  .stats-row { display: flex; align-items: center; gap: 1.5rem; }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .stat-number { font-family: var(--font-display, Outfit); font-size: 1.25rem; font-weight: 700; color: #818cf8; line-height: 1; }
+  .stat-lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
+  .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
+  .section-label { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; color: var(--faint, #52525b); margin-bottom: 0.5rem; }
+  .lang-bars { display: flex; flex-direction: column; gap: 6px; }
+  .lang-row { display: flex; align-items: center; gap: 0.5rem; }
+  .lang-name { font-size: 0.75rem; color: var(--fg, #fff); width: 7rem; flex-shrink: 0; }
+  .bar-bg { flex: 1; height: 6px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; transition: width 300ms; }
+  .lang-pct { font-size: 0.7rem; font-family: var(--font-mono, monospace); color: var(--muted, #71717a); width: 3rem; text-align: right; }
+  .project-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .project-row { display: flex; align-items: center; gap: 0.75rem; padding: 4px 0; }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.25rem; text-align: right; flex-shrink: 0; }
+  .project-name { flex: 1; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .project-time { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .more-link { display: inline-block; margin-top: 1rem; font-size: 0.8rem; color: var(--muted, #71717a); text-decoration: none; }
+  .more-link:hover { color: #fff; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 6px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .cover { width: 32px; height: 46px; object-fit: cover; border-radius: 3px; flex-shrink: 0; }
+  .subject-info { flex: 1; min-width: 0; }
+  .subject-name { display: block; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .empty-state { padding: 1rem; font-size: 0.875rem; color: var(--muted, #71717a); }
 </style>

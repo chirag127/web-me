@@ -1,15 +1,20 @@
 ---
 /*
- * API (recently watched): https://api.trakt.tv/users/chirag127/history/movies?limit=100
- * Headers: trakt-api-version: 2, trakt-api-key: CLIENT_ID
- * Stats: https://api.trakt.tv/users/chirag127/stats
+ * Data pre-fetched to: public/data/trakt-movies-enriched.json, public/data/trakt-stats.json
  */
 import Layout from '~/layouts/Layout.astro'
-import { getTraktMovies, getTraktStats } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [movies, stats] = await Promise.all([getTraktMovies(100), getTraktStats()])
-const watched = (stats as any)?.movies?.watched ?? movies.length
-const hours = Math.round(((stats as any)?.movies?.minutes ?? 0) / 60)
+function loadJson(name: string, fallback: any = []) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return fallback }
+}
+
+const movies: any[] = loadJson('trakt-movies-enriched.json')
+const stats: any    = loadJson('trakt-stats.json', {})
+const watched       = stats?.movies?.watched ?? movies.length
+const hours         = Math.round((stats?.movies?.minutes ?? 0) / 60)
 ---
 
 <Layout title="Movies Watched" active="/library/movies/watched/">
@@ -21,32 +26,44 @@ const hours = Math.round(((stats as any)?.movies?.minutes ?? 0) / 60)
 
   {movies.length === 0 ? (
     <div class="empty-state">
-      <p>No data. Set <code>TRAKT_CLIENT_ID</code> in CF Pages env vars.</p>
-      <p class="faint" style="font-size:0.75rem;margin-top:0.5rem">
-        Direct: <a href="https://trakt.tv/users/chirag127/history/movies" target="_blank" rel="noopener">trakt.tv/users/chirag127/history ↗</a>
+      <p>No data yet · check back soon</p>
+      <p style="font-size:0.75rem;margin-top:0.5rem">
+        <a href="https://trakt.tv/users/chirag127/history/movies" target="_blank" rel="noopener">trakt.tv/users/chirag127/history ↗</a>
       </p>
     </div>
   ) : (
-    <ol class="subject-list">
-      {movies.filter((m: any) => m.movie).map((m: any, i: number) => (
-        <li class="subject-row">
-          <span class="rank">{i + 1}</span>
-          <span class="subject-name">{m.movie.title}</span>
-          <span class="subject-meta">{m.movie.year}</span>
-        </li>
+    <div class="poster-grid">
+      {movies.filter((m: any) => m.movie).map((m: any) => (
+        <a href={`https://www.themoviedb.org/movie/${m.movie?.ids?.tmdb}`} target="_blank" rel="noopener" class="poster-card">
+          {m._tmdb?.poster ? (
+            <div class="poster-wrap">
+              <img src={`https://image.tmdb.org/t/p/w185${m._tmdb.poster}`} alt={m.movie?.title ?? ''}
+                class="poster-img" loading="lazy" onerror="this.style.display='none'" />
+              {m._tmdb?.rating && <span class="rating-badge">{m._tmdb.rating.toFixed(1)}</span>}
+            </div>
+          ) : (
+            <div class="poster-placeholder"></div>
+          )}
+          <div class="poster-title">{m.movie?.title}</div>
+          <div class="poster-year">{m.movie?.year}</div>
+        </a>
       ))}
-    </ol>
+    </div>
   )}
 </Layout>
 
 <style>
   .page-header { margin-bottom: 1.5rem; }
   .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
-  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
-  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
-  .subject-row:hover { background: rgba(255,255,255,0.03); }
-  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.75rem; text-align: right; flex-shrink: 0; }
-  .subject-name { flex: 1; font-size: 0.8125rem; color: var(--fg, #fff); }
-  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .poster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.75rem; }
+  .poster-card { display: flex; flex-direction: column; gap: 4px; text-decoration: none; }
+  .poster-card:hover .poster-title { color: #fff; }
+  .poster-wrap { position: relative; }
+  .poster-img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 5px; background: rgba(255,255,255,0.04); display: block; }
+  .poster-placeholder { width: 100%; aspect-ratio: 2/3; background: rgba(255,255,255,0.04); border-radius: 5px; }
+  .rating-badge { position: absolute; bottom: 4px; right: 4px; background: rgba(0,0,0,0.7); color: #fbbf24; font-size: 0.65rem; font-family: var(--font-mono, monospace); padding: 1px 4px; border-radius: 3px; }
+  .poster-title { font-size: 0.72rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .poster-year { font-size: 0.65rem; color: var(--muted, #71717a); }
   .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>

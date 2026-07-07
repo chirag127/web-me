@@ -1,20 +1,29 @@
 ---
 /*
- * API: https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=lastfmwhy&api_key=KEY&format=json&limit=200
- * Fallback: https://api.listenbrainz.org/1/user/chirag127/listens?count=200
- * Live now-playing: https://api.listenbrainz.org/1/user/chirag127/playing-now
+ * Data pre-fetched to: public/data/lastfm-recent.json, public/data/lb-playing-now.json
  */
 import Layout from '~/layouts/Layout.astro'
-import { getLastfmRecent, getLBRecentTracks, getLBListeningNow } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [recent, lbNow, lbRecent] = await Promise.all([
-  getLastfmRecent(100),
-  getLBListeningNow(),
-  getLBRecentTracks(50),
-])
+function loadJson(name: string, fallback: any = []) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return fallback }
+}
 
-const nowPlaying = (recent[0] as any)?.['@attr']?.nowplaying ? recent[0] : null
-const tracks = recent.filter((t: any) => !t['@attr']?.nowplaying).slice(0, 100)
+const recent: any[]  = loadJson('lastfm-recent.json')
+const lbNow: any     = loadJson('lb-playing-now.json', null)
+
+const tracks = recent.filter((t: any) => !t['@attr']?.nowplaying).slice(0, 20)
+
+function timeAgo(uts: string | number) {
+  if (!uts) return ''
+  const diff = Math.floor((Date.now() / 1000) - Number(uts))
+  if (diff < 60) return `${diff}s ago`
+  if (diff < 3600) return `${Math.floor(diff/60)}m ago`
+  if (diff < 86400) return `${Math.floor(diff/3600)}h ago`
+  return `${Math.floor(diff/86400)}d ago`
+}
 ---
 
 <Layout title="Recent Scrobbles · Music" active="/library/music/">
@@ -28,29 +37,37 @@ const tracks = recent.filter((t: any) => !t['@attr']?.nowplaying).slice(0, 100)
     </p>
   </div>
 
-  {(nowPlaying ?? lbNow) && (
+  {lbNow?.track_metadata && (
     <div class="now-playing">
       <span class="np-dot"></span>
       <span class="np-label">NOW PLAYING</span>
       <span class="np-track">
-        {(nowPlaying as any)?.name ?? lbNow?.track}
-        <span class="np-artist"> — {(nowPlaying as any)?.artist?.['#text'] ?? lbNow?.artist}</span>
+        {lbNow.track_metadata.track_name}
+        <span class="np-artist"> — {lbNow.track_metadata.artist_name}</span>
       </span>
     </div>
   )}
 
-  <ol class="subject-list">
-    {tracks.map((t: any, i: number) => (
-      <li class="subject-row">
-        <span class="rank">{i + 1}</span>
-        <div class="subject-info">
-          <span class="subject-name">{t.name}</span>
-          <span class="subject-sub">{t.artist?.['#text']}</span>
-        </div>
-        <span class="subject-meta">{t.date?.['#text'] ?? ''}</span>
-      </li>
-    ))}
-  </ol>
+  {tracks.length === 0 ? (
+    <p class="muted" style="font-size:0.85rem">No data yet · check back soon</p>
+  ) : (
+    <ol class="subject-list">
+      {tracks.map((t: any, i: number) => (
+        <li class="subject-row">
+          <span class="rank">{i + 1}</span>
+          {t.image?.[2]?.['#text'] && (
+            <img src={t.image[2]['#text']} alt="" class="thumb" loading="lazy"
+              onerror="this.style.display='none'" />
+          )}
+          <div class="subject-info">
+            <span class="subject-name">{t.name}</span>
+            <span class="subject-sub">{t.artist?.['#text']}</span>
+          </div>
+          <span class="subject-meta">{timeAgo(t.date?.uts)}</span>
+        </li>
+      ))}
+    </ol>
+  )}
 
   <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
     <a href="/library/music/top-artists/" style="font-size:0.8rem; color:var(--muted)">Top Artists →</a>
@@ -71,9 +88,11 @@ const tracks = recent.filter((t: any) => !t['@attr']?.nowplaying).slice(0, 100)
   .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
   .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
   .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .thumb { width: 32px; height: 32px; border-radius: 3px; object-fit: cover; flex-shrink: 0; }
   .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.5rem; text-align: right; flex-shrink: 0; }
   .subject-info { flex: 1; min-width: 0; }
   .subject-name { display: block; font-size: 0.8125rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
   .subject-meta { font-size: 0.68rem; color: var(--faint, #52525b); font-family: var(--font-mono, monospace); white-space: nowrap; }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>
