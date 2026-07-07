@@ -53,7 +53,8 @@ const GH_USER     = process.env.GH_USERNAME        ?? 'chirag127'
 const TMDB_TOKEN  = process.env.TMDB_READ_ACCESS_TOKEN ?? ''  // Bearer read-access token
 const HAB_USER    = process.env.HABITICA_USER_ID    ?? ''
 const HAB_TOKEN   = process.env.HABITICA_API_TOKEN  ?? ''
-const TOGGL_TOKEN = process.env.TOGGL_API_TOKEN     ?? ''
+const TOGGL_TOKEN  = process.env.TOGGL_API_TOKEN     ?? ''
+const WAKA_KEY    = process.env.WAKATIME_API_KEY    ?? ''
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -466,6 +467,52 @@ async function fetchBlog() {
   }
 }
 
+async function fetchWakaTime() {
+  // API: https://wakatime.com/api/v1
+  // Docs: https://wakatime.com/developers
+  // Auth: Basic auth with base64(api_key) — static token, no OAuth
+  if (!WAKA_KEY) { console.log('  ⚠ WAKATIME_API_KEY not set — skipping WakaTime'); return }
+  const auth = Buffer.from(WAKA_KEY).toString('base64')
+  const h = { Authorization: `Basic ${auth}` }
+  const base = 'https://wakatime.com/api/v1'
+
+  const [stats7d, statsAllTime, langs, editors, projects] = await Promise.all([
+    safeFetch(`${base}/users/current/stats/last_7_days`, h),
+    safeFetch(`${base}/users/current/stats/all_time`, h),
+    safeFetch(`${base}/users/current/stats/last_30_days`, h),
+    safeFetch(`${base}/users/current/all_time_since_today`, h),
+    safeFetch(`${base}/users/current/projects?order=total_seconds_desc`, h),
+  ])
+
+  const shape7d  = (stats7d as any)?.data ?? {}
+  const shapeAll = (statsAllTime as any)?.data ?? {}
+  const shape30  = (langs as any)?.data ?? {}
+
+  save('wakatime-stats-7d.json', {
+    total_seconds:     shape7d.total_seconds ?? 0,
+    human_readable:    shape7d.human_readable_total ?? '',
+    daily_average:     shape7d.human_readable_daily_average ?? '',
+    languages:         (shape7d.languages ?? []).slice(0, 10),
+    editors:           (shape7d.editors ?? []).slice(0, 5),
+    projects:          (shape7d.projects ?? []).slice(0, 10),
+    operating_systems: (shape7d.operating_systems ?? []).slice(0, 5),
+    categories:        (shape7d.categories ?? []).slice(0, 5),
+  })
+  save('wakatime-stats-30d.json', {
+    total_seconds:  shape30.total_seconds ?? 0,
+    human_readable: shape30.human_readable_total ?? '',
+    languages:      (shape30.languages ?? []).slice(0, 15),
+    editors:        (shape30.editors ?? []).slice(0, 5),
+    projects:       (shape30.projects ?? []).slice(0, 15),
+  })
+  save('wakatime-all-time.json', {
+    total_seconds:  (editors as any)?.data?.total_seconds ?? shapeAll.total_seconds ?? 0,
+    human_readable: (editors as any)?.data?.text ?? shapeAll.human_readable_total ?? '',
+    is_up_to_date:  (editors as any)?.data?.is_up_to_date ?? false,
+  })
+  save('wakatime-projects.json', Array.isArray((projects as any)?.data) ? (projects as any).data.slice(0, 30) : [])
+}
+
 // ---- main ------------------------------------------------------------------
 async function main() {
   console.log('\n📦 Fetching data for me.oriz.in build...\n')
@@ -478,6 +525,7 @@ async function main() {
   console.log(`  LASTFM_API_KEY:        ${LASTFM_KEY ? '✓ set' : '✗ missing'}`)
   console.log(`  HARDCOVER_TOKEN:       ${HC_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  TMDB_READ_ACCESS_TOKEN:${TMDB_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  WAKATIME_API_KEY:      ${WAKA_KEY  ? '✓ set' : '✗ missing'}`)
   console.log(`  DISCORD_USER_ID:       ${DISCORD_ID}`)
   console.log(`  HABITICA_USER_ID:      ${HAB_USER ? '✓ set' : '✗ missing'}`)
   console.log(`  HABITICA_API_TOKEN:    ${HAB_TOKEN ? '✓ set' : '✗ missing'}`)
@@ -494,6 +542,7 @@ async function main() {
     fetchNpm().then(() => console.log('✅ npm done')).catch(e => console.error('❌ npm', e.message)),
     fetchLanyard().then(() => console.log('✅ Lanyard done')).catch(e => console.error('❌ Lanyard', e.message)),
     fetchBlog().then(() => console.log('✅ Blog RSS done')).catch(e => console.error('❌ Blog', e.message)),
+    fetchWakaTime().then(() => console.log('✅ WakaTime done')).catch(e => console.error('❌ WakaTime', e.message)),
     fetchHabitica().then(() => console.log('✅ Habitica done')).catch(e => console.error('❌ Habitica', e.message)),
     fetchToggl().then(() => console.log('✅ Toggl done')).catch(e => console.error('❌ Toggl', e.message)),
     fetchJikan().then(() => console.log('✅ Jikan done')).catch(e => console.error('❌ Jikan', e.message)),
