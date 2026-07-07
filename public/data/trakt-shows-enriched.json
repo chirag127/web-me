@@ -1,1 +1,289 @@
-[]
+[
+  {
+    "id": 12036708489,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 11,
+      "title": "Blood Tastes Like Iron",
+      "ids": {
+        "trakt": 999479,
+        "tvdb": 4852774,
+        "imdb": "tt4056868",
+        "tmdb": 1019406,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/frgVn3ww547TVQH8vS2bWKZnEBu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/1rEPk87q49PspQmBJ74bwsXBVkH.jpg",
+      "overview": "Makoto 'Smile' Tsukimoto and his friend Yutaka 'Peco' Hoshino have been playing table tennis together since they were kids, but as they enter high school, they find that the game, and how they see it, has changed. Peco, brimming with confidence and energy, wants to be the best in the world, but the reserved Smile has little fighting spirit and doesn't want to sacrifice others' happiness just to win, despite his innate talent. As the two grow, and experience the ups and downs of the sport – and life – they try to figure out exactly who they really are and what drives them to play.",
+      "rating": 8.2,
+      "votes": 133,
+      "runtime": 23,
+      "genres": [
+        "Animation",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Koki Uchiyama",
+          "character": "Makoto 'Smile' Tsukimoto (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/sllSm3iZZWVLTBrDZQRtWrZUfEj.jpg"
+        },
+        {
+          "name": "Fukujuro Katayama",
+          "character": "Yutaka 'Peco' Hoshino (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/jyVzXXNeWvPQG9YhTsS8DVTjIHG.jpg"
+        },
+        {
+          "name": "Yousei Bun",
+          "character": "Wenge 'China' Kong (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/lFnD0EU7lUU0SEq6M40jlWDIKB8.jpg"
+        },
+        {
+          "name": "Shunsuke Sakuya",
+          "character": "Ryuuichi 'Dragon' Kazama (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/tbIQ3CFxZM9wl5S4YMwqhrs5VNS.jpg"
+        },
+        {
+          "name": "Subaru Kimura",
+          "character": "Manabu 'Demon' Sakuma (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/8o24ix4Lk9WduRXFDI6Nmip5Deq.jpg"
+        }
+      ],
+      "tagline": "Enter the hero! Enter the hero! Enter the hero!",
+      "status": "Ended",
+      "homepage": "https://www.pingpong-anime.tv/"
+    }
+  },
+  {
+    "id": 12035559131,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 8,
+      "title": "Episode 8",
+      "ids": {
+        "trakt": 10751456,
+        "tvdb": 9882281,
+        "imdb": "tt28942282",
+        "tmdb": 4564761,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/bc3bmTdnoKcRuO9xdQKgAbB7Y9Z.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/u23G9KZregWHs1use6ir1fX27gl.jpg",
+      "overview": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
+      "rating": 8.201,
+      "votes": 7886,
+      "runtime": 0,
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Asa Butterfield",
+          "character": "Otis Milburn",
+          "photo": "https://image.tmdb.org/t/p/w185/1IoQIesuvI9o1IpYZqdjBWvKhRf.jpg"
+        },
+        {
+          "name": "Gillian Anderson",
+          "character": "Jean Milburn",
+          "photo": "https://image.tmdb.org/t/p/w185/3Ny8ZYahb33vpqNEPNCE2IOXPew.jpg"
+        },
+        {
+          "name": "Ncuti Gatwa",
+          "character": "Eric Effiong",
+          "photo": "https://image.tmdb.org/t/p/w185/vLFh9kdB2G06ugwYmRNpxiXhbN0.jpg"
+        },
+        {
+          "name": "Emma Mackey",
+          "character": "Maeve Wiley",
+          "photo": "https://image.tmdb.org/t/p/w185/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg"
+        },
+        {
+          "name": "Kedar Williams-Stirling",
+          "character": "Jackson Marchetti",
+          "photo": "https://image.tmdb.org/t/p/w185/dhXjEwdKhhObMgU1Y8cA1MgZnUL.jpg"
+        }
+      ],
+      "tagline": "Growth is a group project.",
+      "status": "Ended",
+      "homepage": "https://www.netflix.com/title/80197526"
+    }
+  },
+  {
+    "id": 12035552307,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 10,
+      "title": "Main History Banana Chahta hoon",
+      "ids": {
+        "trakt": 4513525,
+        "tvdb": 7985947,
+        "imdb": null,
+        "tmdb": 2458796,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/fiimZ9Xt5cPTPHNrbS4QautBXpU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/tTYP1npvBU90NthceezScfXGiOl.jpg",
+      "overview": "Set in 1980's & 90's Bombay, Scam 1992 follows the life of Harshad Mehta - a stockbroker who single-handedly took the stock market to dizzying heights & his catastrophic downfall. Being directed by National Award-winning filmmaker Hansal Mehta, the series is based on journalist Debashis Basu & Sucheta Dalal's book \"The Scam\".",
+      "rating": 8.277,
+      "votes": 146,
+      "runtime": 55,
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Pratik Gandhi",
+          "character": "Harshad Mehta",
+          "photo": "https://image.tmdb.org/t/p/w185/dM6X5HrC1WKMfk3MwQJk1YFelk9.jpg"
+        },
+        {
+          "name": "Shreya Dhanwanthary",
+          "character": "Sucheta Dalal/Narrator",
+          "photo": "https://image.tmdb.org/t/p/w185/kzLK1i4bQeajhzRAMPZAonAM6b7.jpg"
+        },
+        {
+          "name": "Anjali Barot",
+          "character": "Jyoti Harshad Mehta",
+          "photo": "https://image.tmdb.org/t/p/w185/djcMRo1huQYy4RcsHk7ANSyrDJi.jpg"
+        },
+        {
+          "name": "Hemant Kher",
+          "character": "Ashwin Mehta",
+          "photo": "https://image.tmdb.org/t/p/w185/h3Ww8WDxxRGymQ6vkn2VWMVksxk.jpg"
+        },
+        {
+          "name": "Chirag Vohra",
+          "character": "Bhushan Bhatt",
+          "photo": "https://image.tmdb.org/t/p/w185/AoOQWaYS45dIWLpGrlxn4CTGcNh.jpg"
+        }
+      ],
+      "tagline": "",
+      "status": "Ended",
+      "homepage": "https://www.sonyliv.com/shows/scam-1992-the-harshad-mehta-1700000292"
+    }
+  },
+  {
+    "id": 12022457311,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 24,
+      "title": "Unraveling the Mystery: A Big Bang Farewell",
+      "ids": {
+        "trakt": 3524428,
+        "tvdb": 7159758,
+        "imdb": "tt10269988",
+        "tmdb": 2767846,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/an3uTx1P0XgHPylgfPV6W7yxKAo.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/rwYvhVv0vwbulMwxOfEsuAr1JrT.jpg",
+      "overview": "Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door.",
+      "rating": 7.92,
+      "votes": 12547,
+      "runtime": 22,
+      "genres": [
+        "Comedy"
+      ],
+      "cast": [
+        {
+          "name": "Johnny Galecki",
+          "character": "Leonard Hofstadter",
+          "photo": "https://image.tmdb.org/t/p/w185/5zTHvvKpR9VUkzHxGnbrdB51Kyc.jpg"
+        },
+        {
+          "name": "Jim Parsons",
+          "character": "Sheldon Cooper",
+          "photo": "https://image.tmdb.org/t/p/w185/gbFlludUECPpy70K4tZLbOwmoUr.jpg"
+        },
+        {
+          "name": "Kaley Cuoco",
+          "character": "Penny",
+          "photo": "https://image.tmdb.org/t/p/w185/c01Ma8Jrr2OJ6uoikPwDK34Y8eK.jpg"
+        },
+        {
+          "name": "Simon Helberg",
+          "character": "Howard Wolowitz",
+          "photo": "https://image.tmdb.org/t/p/w185/zGrQSfQEw0vO6otWdSXiBHfwv7S.jpg"
+        },
+        {
+          "name": "Kunal Nayyar",
+          "character": "Rajesh Koothrappali",
+          "photo": "https://image.tmdb.org/t/p/w185/oG2dZRzA790XhSoSG7HE7zWH9C1.jpg"
+        }
+      ],
+      "tagline": "Smart is the new sexy.",
+      "status": "Ended",
+      "homepage": "http://www.cbs.com/shows/big_bang_theory/"
+    }
+  }
+]

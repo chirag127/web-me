@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt15574124",
+        "plex": {
+          "guid": "6163f6a27fa9b99d6f3b1f77",
+          "slug": "peaky-blinders-the-immortal-man"
+        },
+        "slug": "peaky-blinders-the-immortal-man-2026",
+        "tmdb": 875828,
+        "trakt": 701249
+      },
+      "year": 2026,
+      "title": "Peaky Blinders: The Immortal Man"
+    },
+    "rank": 2,
+    "id": 1450145309,
+    "listed_at": "2026-03-26T11:14:49.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt36619926",
+        "plex": {
+          "guid": "6813a52db371af844e449a62",
+          "slug": "heartstopper-forever"
+        },
+        "slug": "heartstopper-forever-2026",
+        "tmdb": 1468683,
+        "trakt": 1203125
+      },
+      "year": 2026,
+      "title": "Heartstopper Forever"
+    },
+    "rank": 4,
+    "id": 1418555170,
+    "listed_at": "2026-01-29T09:26:19.000Z",
+    "notes": null,
+    "my_rating": null
+  }
+]

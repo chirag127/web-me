@@ -1,1 +1,2117 @@
-[]
+[
+  {
+    "id": 12037202303,
+    "watched_at": "2026-02-21T13:10:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "year": 2002,
+      "ids": {
+        "trakt": 546,
+        "slug": "harry-potter-and-the-chamber-of-secrets-2002",
+        "imdb": "tt0295297",
+        "tmdb": 672
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/1stUIsjawROZxjiCMtqqXqgfZWC.jpg",
+      "overview": "Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione's magical abilities and courage.",
+      "rating": 7.706,
+      "votes": 23710,
+      "runtime": 161,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Kenneth Branagh",
+          "character": "Gilderoy Lockhart",
+          "photo": "https://image.tmdb.org/t/p/w185/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg"
+        },
+        {
+          "name": "Toby Jones",
+          "character": "Dobby (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/y6kLmjLgZ1sceaE4Zi1fwF0YsvZ.jpg"
+        }
+      ],
+      "tagline": "Something evil has returned to Hogwarts!",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-chamber-secrets"
+    }
+  },
+  {
+    "id": 12037202260,
+    "watched_at": "2026-02-21T13:10:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "year": 2004,
+      "ids": {
+        "trakt": 547,
+        "slug": "harry-potter-and-the-prisoner-of-azkaban-2004",
+        "imdb": "tt0304141",
+        "tmdb": 673
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/htmYEfH7TQgzsXHCnNXxmoYKQtL.jpg",
+      "overview": "Harry Potter's life is in danger once more as dangerous wizard Sirius Black has escaped from Azkaban Prison and is heading to Hogwarts.",
+      "rating": 8.009,
+      "votes": 23278,
+      "runtime": 141,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Robbie Coltrane",
+          "character": "Rubeus Hagrid",
+          "photo": "https://image.tmdb.org/t/p/w185/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg"
+        },
+        {
+          "name": "Michael Gambon",
+          "character": "Albus Dumbledore",
+          "photo": "https://image.tmdb.org/t/p/w185/3jdWkDKf4IODbG4JKTeaC7AzxZH.jpg"
+        }
+      ],
+      "tagline": "Something wicked this way comes.",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-prisoner-azkaban"
+    }
+  },
+  {
+    "id": 12037202203,
+    "watched_at": "2026-02-21T13:10:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Deathly Hallows: Part 2",
+      "year": 2011,
+      "ids": {
+        "trakt": 7229,
+        "slug": "harry-potter-and-the-deathly-hallows-part-2-2011",
+        "imdb": "tt1201607",
+        "tmdb": 12445
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/c54HpQmuwXjHq2C9wmoACjxoom3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/cbcpDn6XJaIGoOil1bKuskU8ds4.jpg",
+      "overview": "Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.",
+      "rating": 8.08,
+      "votes": 22093,
+      "runtime": 130,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Ralph Fiennes",
+          "character": "Lord Voldemort",
+          "photo": "https://image.tmdb.org/t/p/w185/tJr9GcmGNHhLVVEH3i7QYbj6hBi.jpg"
+        },
+        {
+          "name": "Alan Rickman",
+          "character": "Severus Snape",
+          "photo": "https://image.tmdb.org/t/p/w185/7tADZs4ILE93oJ5pAh6mKQFEq2m.jpg"
+        }
+      ],
+      "tagline": "It all ends.",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-deathly-hallows-part-2"
+    }
+  },
+  {
+    "id": 12037202145,
+    "watched_at": "2026-02-21T13:10:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Goblet of Fire",
+      "year": 2005,
+      "ids": {
+        "trakt": 548,
+        "slug": "harry-potter-and-the-goblet-of-fire-2005",
+        "imdb": "tt0330373",
+        "tmdb": 674
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/1OV7hau4D3rWGS5bu8sqBYeVpe.jpg",
+      "overview": "When his name emerges from the Goblet of Fire, Harry Potter becomes a competitor in a grueling battle for glory among three wizarding schools. Signs of Voldemort's return emerge as Harry's friends help him prepare for the Triwizard Tournament.",
+      "rating": 7.803,
+      "votes": 22288,
+      "runtime": 157,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Brendan Gleeson",
+          "character": "Alastor 'Mad-Eye' Moody",
+          "photo": "https://image.tmdb.org/t/p/w185/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg"
+        },
+        {
+          "name": "Michael Gambon",
+          "character": "Albus Dumbledore",
+          "photo": "https://image.tmdb.org/t/p/w185/3jdWkDKf4IODbG4JKTeaC7AzxZH.jpg"
+        }
+      ],
+      "tagline": "Dark and difficult times lie ahead.",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-goblet-fire"
+    }
+  },
+  {
+    "id": 12037202086,
+    "watched_at": "2026-02-21T13:10:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "year": 2009,
+      "ids": {
+        "trakt": 610,
+        "slug": "harry-potter-and-the-half-blood-prince-2009",
+        "imdb": "tt0417741",
+        "tmdb": 767
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/urDWNffjwmNi5IQaezw9GwqkUXa.jpg",
+      "overview": "Dumbledore tries to prepare Harry for the final battle with Voldemort while Death Eaters wreak havoc in both Muggle and Wizard worlds.",
+      "rating": 7.7,
+      "votes": 20894,
+      "runtime": 153,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Jim Broadbent",
+          "character": "Horace Slughorn",
+          "photo": "https://image.tmdb.org/t/p/w185/s7lXYfrsJoGA4vKmyv61SPgABmR.jpg"
+        },
+        {
+          "name": "Michael Gambon",
+          "character": "Albus Dumbledore",
+          "photo": "https://image.tmdb.org/t/p/w185/3jdWkDKf4IODbG4JKTeaC7AzxZH.jpg"
+        }
+      ],
+      "tagline": "Dark secrets revealed.",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-half-blood-prince"
+    }
+  },
+  {
+    "id": 12037202030,
+    "watched_at": "2026-02-21T13:10:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Deathly Hallows: Part 1",
+      "year": 2010,
+      "ids": {
+        "trakt": 7228,
+        "slug": "harry-potter-and-the-deathly-hallows-part-1-2010",
+        "imdb": "tt0926084",
+        "tmdb": 12444
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/vcrgU0KaNj5mKUCIQSUdiQwTE9y.jpg",
+      "overview": "Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.",
+      "rating": 7.734,
+      "votes": 20485,
+      "runtime": 146,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Toby Jones",
+          "character": "Dobby (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/y6kLmjLgZ1sceaE4Zi1fwF0YsvZ.jpg"
+        },
+        {
+          "name": "Helena Bonham Carter",
+          "character": "Bellatrix Lestrange",
+          "photo": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        }
+      ],
+      "tagline": "Nowhere is safe.",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-deathly-hallows-part-1"
+    }
+  },
+  {
+    "id": 12037201726,
+    "watched_at": "2026-02-21T13:09:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "year": 2007,
+      "ids": {
+        "trakt": 549,
+        "slug": "harry-potter-and-the-order-of-the-phoenix-2007",
+        "imdb": "tt0373889",
+        "tmdb": 675
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/5aOyriWkPec0zUDxmHFP9qMmBaj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/pkxPkHOPJjOvzfQOclANEBT8OfK.jpg",
+      "overview": "When a new professor's methods leave Hogwarts unprepared to fight the rising tide of evil, Harry teaches students how to defend against the dark arts.",
+      "rating": 7.672,
+      "votes": 20909,
+      "runtime": 138,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Imelda Staunton",
+          "character": "Dolores Umbridge",
+          "photo": "https://image.tmdb.org/t/p/w185/96LYLMnUOWZ4DFXEeQPItNsxzEP.jpg"
+        },
+        {
+          "name": "Helena Bonham Carter",
+          "character": "Bellatrix Lestrange",
+          "photo": "https://image.tmdb.org/t/p/w185/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
+        }
+      ],
+      "tagline": "The rebellion begins.",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-order-phoenix"
+    }
+  },
+  {
+    "id": 12037201175,
+    "watched_at": "2026-02-21T13:09:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "year": 2001,
+      "ids": {
+        "trakt": 545,
+        "slug": "harry-potter-and-the-philosopher-s-stone-2001",
+        "imdb": "tt0241527",
+        "tmdb": 671
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
+      "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+      "rating": 7.9,
+      "votes": 29748,
+      "runtime": 152,
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Daniel Radcliffe",
+          "character": "Harry Potter",
+          "photo": "https://image.tmdb.org/t/p/w185/uUFfo8RANo7tuckB6AZAnESne55.jpg"
+        },
+        {
+          "name": "Rupert Grint",
+          "character": "Ron Weasley",
+          "photo": "https://image.tmdb.org/t/p/w185/q2KZZ0ltTEl7Sf8volNFV1JDEP4.jpg"
+        },
+        {
+          "name": "Emma Watson",
+          "character": "Hermione Granger",
+          "photo": "https://image.tmdb.org/t/p/w185/A14lLCZYDhfYdBa0fFRpwMDiwRN.jpg"
+        },
+        {
+          "name": "Richard Harris",
+          "character": "Albus Dumbledore",
+          "photo": "https://image.tmdb.org/t/p/w185/lCvcVMuxrg1f5A8OMqY9AqkkcZR.jpg"
+        },
+        {
+          "name": "Tom Felton",
+          "character": "Draco Malfoy",
+          "photo": "https://image.tmdb.org/t/p/w185/etmtUBzJ1i1XJTLS6MkotJFE1se.jpg"
+        }
+      ],
+      "tagline": "Let the magic begin.",
+      "status": "Released",
+      "homepage": "https://www.warnerbros.com/movies/harry-potter-and-sorcerers-stone"
+    }
+  },
+  {
+    "id": 12035529172,
+    "watched_at": "2026-02-20T17:06:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Social Network",
+      "year": 2010,
+      "ids": {
+        "trakt": 24279,
+        "slug": "the-social-network-2010",
+        "imdb": "tt1285016",
+        "tmdb": 37799
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
+      "overview": "In 2003, Harvard undergrad and computer programmer Mark Zuckerberg begins work on a new concept that eventually turns into the global social network known as Facebook. Six years later, Mark is one of the youngest billionaires ever, but his unprecedented success leads to both personal and legal complications when he ends up on the receiving end of two lawsuits, one involving his former friend.",
+      "rating": 7.4,
+      "votes": 13237,
+      "runtime": 121,
+      "genres": [
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Jesse Eisenberg",
+          "character": "Mark Zuckerberg",
+          "photo": "https://image.tmdb.org/t/p/w185/yYhwWRcxDHTn63gSEF1vnDAD7cD.jpg"
+        },
+        {
+          "name": "Andrew Garfield",
+          "character": "Eduardo Saverin",
+          "photo": "https://image.tmdb.org/t/p/w185/beO5YvbTjrr5yy8hW26KVDMSr35.jpg"
+        },
+        {
+          "name": "Armie Hammer",
+          "character": "Cameron Winklevoss / Tyler Winklevoss",
+          "photo": "https://image.tmdb.org/t/p/w185/4Z5nLW2biRjqstDMKqSaeQYAesK.jpg"
+        },
+        {
+          "name": "Justin Timberlake",
+          "character": "Sean Parker",
+          "photo": "https://image.tmdb.org/t/p/w185/6Yk5t9RwkdkAT8Qv45934Eez2CA.jpg"
+        },
+        {
+          "name": "Rooney Mara",
+          "character": "Erica Albright",
+          "photo": "https://image.tmdb.org/t/p/w185/zT6UyHFHEQ9RcKykplWCycKBnoS.jpg"
+        }
+      ],
+      "tagline": "You don't get to 500 million friends without making a few enemies.",
+      "status": "Released",
+      "homepage": "https://www.sonypictures.com/movies/thesocialnetwork"
+    }
+  },
+  {
+    "id": 12035528827,
+    "watched_at": "2026-02-20T17:05:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Big Short",
+      "year": 2015,
+      "ids": {
+        "trakt": 199563,
+        "slug": "the-big-short-2015",
+        "imdb": "tt1596363",
+        "tmdb": 318846
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/u6UyFHkkpUGzZec88PYaaamya5E.jpg",
+      "overview": "The men who made millions from a global economic meltdown.",
+      "rating": 7.367,
+      "votes": 9891,
+      "runtime": 131,
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Steve Carell",
+          "character": "Mark Baum",
+          "photo": "https://image.tmdb.org/t/p/w185/cS7Cbyff6wFVfUGem497vy9LS7A.jpg"
+        },
+        {
+          "name": "Christian Bale",
+          "character": "Michael Burry",
+          "photo": "https://image.tmdb.org/t/p/w185/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg"
+        },
+        {
+          "name": "Ryan Gosling",
+          "character": "Jared Vennett",
+          "photo": "https://image.tmdb.org/t/p/w185/lyUyVARQKhGxaxy0FbPJCQRpiaW.jpg"
+        },
+        {
+          "name": "Brad Pitt",
+          "character": "Ben Rickert",
+          "photo": "https://image.tmdb.org/t/p/w185/m09Y1YfPPeNYYUSHnnVqahkrC1o.jpg"
+        },
+        {
+          "name": "Marisa Tomei",
+          "character": "Cynthia Baum",
+          "photo": "https://image.tmdb.org/t/p/w185/5w6qM8FWsl5SutKSpx6Va64eCTE.jpg"
+        }
+      ],
+      "tagline": "This is a true story.",
+      "status": "Released",
+      "homepage": "http://www.thebigshortmovie.com"
+    }
+  },
+  {
+    "id": 12022308068,
+    "watched_at": "2026-02-15T16:05:00.000Z",
+    "action": "checkin",
+    "type": "movie",
+    "movie": {
+      "title": "The Karate Kid",
+      "year": 2010,
+      "ids": {
+        "trakt": 24931,
+        "slug": "the-karate-kid-2010",
+        "imdb": "tt1155076",
+        "tmdb": 38575
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/b1RBy3l297N0c7PHjlz35cClWju.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/v8DepuF6gizphLzIyNZeQiB0hij.jpg",
+      "overview": "12-year-old Dre Parker could've been the most popular kid in Detroit, but his mother's latest career move has landed him in China. Dre immediately falls for his classmate Mei Ying but the cultural differences make such a friendship impossible. Even worse, Dre's feelings make him an enemy of the class bully, Cheng. With no friends in a strange land, Dre has nowhere to turn but maintenance man Mr. Han, who is a kung fu master. As Han teaches Dre that kung fu is not about punches and parries, but maturity and calm, Dre realizes that facing down the bullies will be the fight of his life.",
+      "rating": 6.569,
+      "votes": 6597,
+      "runtime": 140,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Family"
+      ],
+      "cast": [
+        {
+          "name": "Jaden Smith",
+          "character": "Dre Parker",
+          "photo": "https://image.tmdb.org/t/p/w185/aXCn1kRjs4sZS55xSrdmjbht7SM.jpg"
+        },
+        {
+          "name": "Jackie Chan",
+          "character": "Mr. Han",
+          "photo": "https://image.tmdb.org/t/p/w185/nraZoTzwJQPHspAVsKfgl3RXKKa.jpg"
+        },
+        {
+          "name": "Taraji P. Henson",
+          "character": "Sherry Parker",
+          "photo": "https://image.tmdb.org/t/p/w185/jUU2X9mDwJaAniEmJOfvImBS9qb.jpg"
+        },
+        {
+          "name": "Wenwen Han",
+          "character": "Meiying",
+          "photo": "https://image.tmdb.org/t/p/w185/86LJVLV4qcF2g6SxfDlqW1lkzZB.jpg"
+        },
+        {
+          "name": "Zac Wang",
+          "character": "Cheng",
+          "photo": "https://image.tmdb.org/t/p/w185/bXVR7TbR8xXBT1fAwCAgLmbubq1.jpg"
+        }
+      ],
+      "tagline": "A challenge he never imagined. A teacher he never expected.",
+      "status": "Released",
+      "homepage": "https://www.sonypictures.com/movies/thekaratekid"
+    }
+  },
+  {
+    "id": 12022308792,
+    "watched_at": "2026-02-15T13:45:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Karate Kid Part II",
+      "year": 1986,
+      "ids": {
+        "trakt": 4346,
+        "slug": "the-karate-kid-part-ii-1986",
+        "imdb": "tt0091326",
+        "tmdb": 8856
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/k0OwgRR6PNu7h3SiqpCbRdZWNaG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/7rfcRXbFD0xr8NteNq1hwXUd4Af.jpg",
+      "overview": "Summoned by his dying father, Miyagi returns to his homeland of Okinawa, with Daniel, after a 40-year exile. There he must confront Yukie, the love of his youth, and Sato, his former best friend turned vengeful rival. Sato is bent on a fight to the death, even if it means the destruction of their village. Daniel finds his own love in Yukia's niece, Kumiko, and his own enemy in Sato's nephew, the vicious Chozen. Now, far away from the tournaments, cheering crowds and safety of home, Daniel will face his greatest challenge ever when the cost of honor is life itself.",
+      "rating": 6.345,
+      "votes": 2493,
+      "runtime": 113,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Action",
+        "Romance",
+        "Family"
+      ],
+      "cast": [
+        {
+          "name": "Ralph Macchio",
+          "character": "Daniel LaRusso",
+          "photo": "https://image.tmdb.org/t/p/w185/AoqqL9UlyPrcTLnpzbQvKXPvXrz.jpg"
+        },
+        {
+          "name": "Pat Morita",
+          "character": "Mr. Miyagi",
+          "photo": "https://image.tmdb.org/t/p/w185/dwnjbEvhKRanS5xTaI1NkZ98aM9.jpg"
+        },
+        {
+          "name": "Danny Kamekona",
+          "character": "Sato Toguchi",
+          "photo": "https://image.tmdb.org/t/p/w185/8MOa97iZjazhRxjBvLLba9N1JDW.jpg"
+        },
+        {
+          "name": "Nobu McCarthy",
+          "character": "Yukie",
+          "photo": "https://image.tmdb.org/t/p/w185/to7CUnkDaPYn2gUYi4BMBCUuAFZ.jpg"
+        },
+        {
+          "name": "Yuji Okumoto",
+          "character": "Chozen Toguchi",
+          "photo": "https://image.tmdb.org/t/p/w185/eACYrrdj8kZnYMCpUTghbpJ9nVk.jpg"
+        }
+      ],
+      "tagline": "One more lesson to share. The price of honor. The power of friendship. And the way you must fight when only the winner survives.",
+      "status": "Released",
+      "homepage": ""
+    }
+  },
+  {
+    "id": 12022308344,
+    "watched_at": "2026-02-15T13:45:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Karate Kid Part III",
+      "year": 1989,
+      "ids": {
+        "trakt": 5678,
+        "slug": "the-karate-kid-part-iii-1989",
+        "imdb": "tt0097647",
+        "tmdb": 10495
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/lVZ3r0iDwGejlCvFEvXGzhQB9ds.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/c12c7Rpq4kakQiaZIQgp5aTaDFB.jpg",
+      "overview": "Despondent over the closing of his karate school, Cobra Kai teacher John Kreese joins a ruthless businessman and martial artist to get revenge on Daniel and Mr. Miyagi.",
+      "rating": 5.925,
+      "votes": 1841,
+      "runtime": 112,
+      "genres": [
+        "Action",
+        "Family",
+        "Drama",
+        "Adventure"
+      ],
+      "cast": [
+        {
+          "name": "Ralph Macchio",
+          "character": "Daniel LaRusso",
+          "photo": "https://image.tmdb.org/t/p/w185/AoqqL9UlyPrcTLnpzbQvKXPvXrz.jpg"
+        },
+        {
+          "name": "Pat Morita",
+          "character": "Mr. Miyagi",
+          "photo": "https://image.tmdb.org/t/p/w185/dwnjbEvhKRanS5xTaI1NkZ98aM9.jpg"
+        },
+        {
+          "name": "Robyn Lively",
+          "character": "Jessica Andrews",
+          "photo": "https://image.tmdb.org/t/p/w185/tz4oKXOkJhHZezaQUTgo66gPn77.jpg"
+        },
+        {
+          "name": "Thomas Ian Griffith",
+          "character": "Terry Silver",
+          "photo": "https://image.tmdb.org/t/p/w185/4h1qQeZMG2drwEEat6WKG0rbPVC.jpg"
+        },
+        {
+          "name": "Martin Kove",
+          "character": "John Kreese",
+          "photo": "https://image.tmdb.org/t/p/w185/cuRi6YRaCrXOFU8cmqf5uTk0sUV.jpg"
+        }
+      ],
+      "tagline": "First it was teacher to student. Then it was father to son. Now, it's man to man.",
+      "status": "Released",
+      "homepage": ""
+    }
+  },
+  {
+    "id": 12022306558,
+    "watched_at": "2026-02-15T13:44:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Karate Kid",
+      "year": 1984,
+      "ids": {
+        "trakt": 1261,
+        "slug": "the-karate-kid-1984",
+        "imdb": "tt0087538",
+        "tmdb": 1885
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/1mp4ViklKvA0WXXsNvNx0RBuiit.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/j1xaeJZOEOiVBD1rk3dg4YaAk23.jpg",
+      "overview": "New Jersey teen Daniel LaRusso moves to Los Angeles with his mother, and soon strikes up a relationship with Ali. He quickly finds himself the target of bullying by a group of thugs, led by Ali's ex-boyfriend Johnny, who study karate at the Cobra Kai dojo under ruthless sensei John Kreese. Fortunately, Daniel befriends Mr. Miyagi, an unassuming repairman who just happens to be a martial arts master himself. Miyagi takes Daniel under his wing, training him in a more compassionate form of karate for self-defense and, later, preparing him to compete against the brutal Cobra Kai.",
+      "rating": 7.2,
+      "votes": 4742,
+      "runtime": 127,
+      "genres": [
+        "Action",
+        "Drama",
+        "Family"
+      ],
+      "cast": [
+        {
+          "name": "Ralph Macchio",
+          "character": "Daniel LaRusso",
+          "photo": "https://image.tmdb.org/t/p/w185/AoqqL9UlyPrcTLnpzbQvKXPvXrz.jpg"
+        },
+        {
+          "name": "Pat Morita",
+          "character": "Mr. Miyagi",
+          "photo": "https://image.tmdb.org/t/p/w185/dwnjbEvhKRanS5xTaI1NkZ98aM9.jpg"
+        },
+        {
+          "name": "Elisabeth Shue",
+          "character": "Ali Mills",
+          "photo": "https://image.tmdb.org/t/p/w185/1pmjDSLvOuqKW1P2KRPlpFMeUFe.jpg"
+        },
+        {
+          "name": "William Zabka",
+          "character": "Johnny Lawrence",
+          "photo": "https://image.tmdb.org/t/p/w185/1n1a8jM9lmk7lfDxtZoOesTkIIU.jpg"
+        },
+        {
+          "name": "Martin Kove",
+          "character": "John Kreese",
+          "photo": "https://image.tmdb.org/t/p/w185/cuRi6YRaCrXOFU8cmqf5uTk0sUV.jpg"
+        }
+      ],
+      "tagline": "He taught him the secret to karate lies in the mind and heart. Not in the hands.",
+      "status": "Released",
+      "homepage": "https://www.sonypictures.com/movies/thekaratekid0"
+    }
+  },
+  {
+    "id": 12018551819,
+    "watched_at": "2026-02-14T11:01:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Housemaid",
+      "year": 2025,
+      "ids": {
+        "trakt": 1117195,
+        "slug": "the-housemaid-2025",
+        "imdb": "tt27543632",
+        "tmdb": 1368166
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/zTnAnYIn0Iv3cn0ZHlzLhou3ybm.jpg",
+      "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+      "rating": 7.3,
+      "votes": 2563,
+      "runtime": 131,
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "cast": [
+        {
+          "name": "Sydney Sweeney",
+          "character": "Millie Calloway",
+          "photo": "https://image.tmdb.org/t/p/w185/qYiaSl0Eb7G3VaxOg8PxExCFwon.jpg"
+        },
+        {
+          "name": "Amanda Seyfried",
+          "character": "Nina Winchester",
+          "photo": "https://image.tmdb.org/t/p/w185/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg"
+        },
+        {
+          "name": "Brandon Sklenar",
+          "character": "Andrew Winchester",
+          "photo": "https://image.tmdb.org/t/p/w185/juLH1EhkY1Xx9Zai2H4icvfn4pD.jpg"
+        },
+        {
+          "name": "Michele Morrone",
+          "character": "Enzo",
+          "photo": "https://image.tmdb.org/t/p/w185/cOWSjiG2CI2PiCx69bCJiQVHyrD.jpg"
+        },
+        {
+          "name": "Indiana Elle",
+          "character": "Cece Winchester",
+          "photo": "https://image.tmdb.org/t/p/w185/d9Bk6BWiPmWIx1Ssx36GqReFjQJ.jpg"
+        }
+      ],
+      "tagline": "Discover what lies behind closed doors.",
+      "status": "Released",
+      "homepage": "https://thehousemaid.movie"
+    }
+  },
+  {
+    "id": 12018470764,
+    "watched_at": "2026-02-14T10:00:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Ne Zha 2",
+      "year": 2025,
+      "ids": {
+        "trakt": 787956,
+        "slug": "ne-zha-2-2025",
+        "imdb": "tt34956443",
+        "tmdb": 980477
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/cb5NyNrqiCNNoDkA8FfxHAtypdG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/zxi6WQPVc0uQAG5TtLsKvxYHApC.jpg",
+      "overview": "After a catastrophic event leaves their bodies destroyed, Ne Zha and Ao Bing are granted a fragile second chance at life. As tensions rise between the dragon clans and celestial forces, the two must undergo a series of perilous trials that will test their bond, challenge their identities, and decide the fate of both mortals and immortals.",
+      "rating": 8.15,
+      "votes": 740,
+      "runtime": 144,
+      "genres": [
+        "Animation",
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ],
+      "cast": [
+        {
+          "name": "Lu Yanting",
+          "character": "Young Nezha (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/vKpOzPutTaPf03rWXiLuK8R2K3B.jpg"
+        },
+        {
+          "name": "Joseph",
+          "character": "Youth Nezha / Jie Jie Shou Left (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/1TgCL0mlekWivRNo1voCwUZ8I5s.jpg"
+        },
+        {
+          "name": "Han Mo",
+          "character": "Ao Bing (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/6Ueom0Y4pjIG9B6zjQlfIbgcGhH.jpg"
+        },
+        {
+          "name": "Chen Hao",
+          "character": "Li Jing (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/eBZJW1NCBFDh3U3xImf0vCCnDpy.jpg"
+        },
+        {
+          "name": "Lu Qi",
+          "character": "Mrs. Yin (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/eGoSeaM1c6KCLiRIqM8LJq5S5L5.jpg"
+        }
+      ],
+      "tagline": "Witness a hero reborn.",
+      "status": "Released",
+      "homepage": "https://a24films.com/films/ne-zha-2"
+    }
+  },
+  {
+    "id": 12018469682,
+    "watched_at": "2026-02-14T09:59:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Ne Zha",
+      "year": 2019,
+      "ids": {
+        "trakt": 459090,
+        "slug": "ne-zha-2019",
+        "imdb": "tt10627720",
+        "tmdb": 615453
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/phM9bb6s9c60LA8qwsdk7U1N2cS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/k1pJslKr4aDayw9kWwWnlC3MIP3.jpg",
+      "overview": "A young boy is born as the reincarnation of a demonic power, into a society that hates and fears him. Destined by prophecy to bring destruction to the world, Nezha must choose between good and evil to see if he can change his fate.",
+      "rating": 7.909,
+      "votes": 893,
+      "runtime": 110,
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
+      "cast": [
+        {
+          "name": "Lu Yanting",
+          "character": "Young Nezha (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/vKpOzPutTaPf03rWXiLuK8R2K3B.jpg"
+        },
+        {
+          "name": "Joseph",
+          "character": "Youth Nezha (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/1TgCL0mlekWivRNo1voCwUZ8I5s.jpg"
+        },
+        {
+          "name": "Han Mo",
+          "character": "Ao Bing (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/6Ueom0Y4pjIG9B6zjQlfIbgcGhH.jpg"
+        },
+        {
+          "name": "Chen Hao",
+          "character": "Li Jing (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/eBZJW1NCBFDh3U3xImf0vCCnDpy.jpg"
+        },
+        {
+          "name": "Lu Qi",
+          "character": "Lady Yin (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/eGoSeaM1c6KCLiRIqM8LJq5S5L5.jpg"
+        }
+      ],
+      "tagline": "Fight your fate",
+      "status": "Released",
+      "homepage": "https://www.wellgousa.com/films/ne-zha"
+    }
+  },
+  {
+    "id": 12018453342,
+    "watched_at": "2026-02-14T09:46:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Titanic",
+      "year": 1997,
+      "ids": {
+        "trakt": 475,
+        "slug": "titanic-1997",
+        "imdb": "tt0120338",
+        "tmdb": 597
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/xnHVX37XZEp33hhCbYlQFq7ux1J.jpg",
+      "overview": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.",
+      "rating": 7.902,
+      "votes": 27300,
+      "runtime": 194,
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "cast": [
+        {
+          "name": "Leonardo DiCaprio",
+          "character": "Jack Dawson",
+          "photo": "https://image.tmdb.org/t/p/w185/mkdRcVIQl4WZhDf1vXKWTD7HZrZ.jpg"
+        },
+        {
+          "name": "Kate Winslet",
+          "character": "Rose DeWitt Bukater",
+          "photo": "https://image.tmdb.org/t/p/w185/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg"
+        },
+        {
+          "name": "Billy Zane",
+          "character": "Cal Hockley",
+          "photo": "https://image.tmdb.org/t/p/w185/wr4fuwLzQvW1G0MS7cmQ3ObFjvL.jpg"
+        },
+        {
+          "name": "Kathy Bates",
+          "character": "Molly Brown",
+          "photo": "https://image.tmdb.org/t/p/w185/qZRTzTjV4OC1Ii9a0n8QBS9zMOd.jpg"
+        },
+        {
+          "name": "Frances Fisher",
+          "character": "Ruth DeWitt Bukater",
+          "photo": "https://image.tmdb.org/t/p/w185/3iNDgd54IIj8g8hGqhhUjM6TeWd.jpg"
+        }
+      ],
+      "tagline": "Nothing on earth could come between them.",
+      "status": "Released",
+      "homepage": "https://www.paramountmovies.com/movies/titanic"
+    }
+  },
+  {
+    "id": 12018260353,
+    "watched_at": "2026-02-14T07:36:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Avatar",
+      "year": 2009,
+      "ids": {
+        "trakt": 12269,
+        "slug": "avatar-2009",
+        "imdb": "tt0499549",
+        "tmdb": 19995
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
+      "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "rating": 7.608,
+      "votes": 34156,
+      "runtime": 162,
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "cast": [
+        {
+          "name": "Sam Worthington",
+          "character": "Jake Sully",
+          "photo": "https://image.tmdb.org/t/p/w185/vM1WIfYQ1HUBtlVPwB9Hp9fLcn8.jpg"
+        },
+        {
+          "name": "Zoe Saldaña",
+          "character": "Neytiri",
+          "photo": "https://image.tmdb.org/t/p/w185/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg"
+        },
+        {
+          "name": "Sigourney Weaver",
+          "character": "Dr. Grace Augustine",
+          "photo": "https://image.tmdb.org/t/p/w185/wTSnfktNBLd6kwQxgvkqYw6vEon.jpg"
+        },
+        {
+          "name": "Stephen Lang",
+          "character": "Colonel Miles Quaritch",
+          "photo": "https://image.tmdb.org/t/p/w185/gnO5VfkDgA2fsHweD0622LUY3Hu.jpg"
+        },
+        {
+          "name": "Michelle Rodriguez",
+          "character": "Trudy Chacon",
+          "photo": "https://image.tmdb.org/t/p/w185/wVcbrae4eRqGMFZz8Eh52Dl1biP.jpg"
+        }
+      ],
+      "tagline": "Enter the world of Pandora.",
+      "status": "Released",
+      "homepage": "https://www.avatar.com/movies/avatar"
+    }
+  },
+  {
+    "id": 12016543977,
+    "watched_at": "2026-02-13T16:49:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "year": 2005,
+      "ids": {
+        "trakt": 329,
+        "slug": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-2005",
+        "imdb": "tt0363771",
+        "tmdb": 411
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/tuDhEdza074bA497bO9WFEPs6O6.jpg",
+      "overview": "Siblings Lucy, Edmund, Susan and Peter step through a magical wardrobe and find the land of Narnia. There, they discover a charming, once peaceful kingdom that has been plunged into eternal winter by the evil White Witch, Jadis. Aided by the wise and magnificent lion, Aslan, the children lead Narnia into a spectacular, climactic battle to be free of the Witch's glacial powers forever.",
+      "rating": 7.139,
+      "votes": 11572,
+      "runtime": 143,
+      "genres": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "William Moseley",
+          "character": "Peter Pevensie",
+          "photo": "https://image.tmdb.org/t/p/w185/skssqN3yL90iK5b9DtSg6fEQn1f.jpg"
+        },
+        {
+          "name": "Anna Popplewell",
+          "character": "Susan Pevensie",
+          "photo": "https://image.tmdb.org/t/p/w185/7GXEPxNCbc6EtnulCEPWnEvKJIN.jpg"
+        },
+        {
+          "name": "Skandar Keynes",
+          "character": "Edmund Pevensie",
+          "photo": "https://image.tmdb.org/t/p/w185/pIdgY16c6AzmCD31pXlCR9SjLlM.jpg"
+        },
+        {
+          "name": "Georgie Henley",
+          "character": "Lucy Pevensie",
+          "photo": "https://image.tmdb.org/t/p/w185/dW7ZQfrm2A4rVtZrIPbWOUXNvsJ.jpg"
+        },
+        {
+          "name": "Liam Neeson",
+          "character": "Aslan (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/g0iIEyt9ILiKTG0g8K69US5VtLy.jpg"
+        }
+      ],
+      "tagline": "The beloved masterpiece comes to life.",
+      "status": "Released",
+      "homepage": ""
+    }
+  },
+  {
+    "id": 12013763735,
+    "watched_at": "2026-02-12T06:34:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Rise of the Planet of the Apes",
+      "year": 2011,
+      "ids": {
+        "trakt": 44345,
+        "slug": "rise-of-the-planet-of-the-apes-2011",
+        "imdb": "tt1318514",
+        "tmdb": 61791
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/oqA45qMyyo1TtrnVEBKxqmTPhbN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/6cCF0KMUO2QmrVsQFujkQduREXX.jpg",
+      "overview": "A highly intelligent chimpanzee named Caesar has been living a peaceful suburban life ever since he was born. But when he gets taken to a cruel primate facility, Caesar decides to revolt against those who have harmed him.",
+      "rating": 7.3,
+      "votes": 12815,
+      "runtime": 105,
+      "genres": [
+        "Thriller",
+        "Action",
+        "Drama",
+        "Science Fiction"
+      ],
+      "cast": [
+        {
+          "name": "Andy Serkis",
+          "character": "Caesar",
+          "photo": "https://image.tmdb.org/t/p/w185/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg"
+        },
+        {
+          "name": "James Franco",
+          "character": "Will Rodman",
+          "photo": "https://image.tmdb.org/t/p/w185/bjmAntHGiibLZixH8nTNVBzaFQn.jpg"
+        },
+        {
+          "name": "Freida Pinto",
+          "character": "Caroline Aranha",
+          "photo": "https://image.tmdb.org/t/p/w185/tub18dfDNMxlempVIuPXh8fmZVs.jpg"
+        },
+        {
+          "name": "John Lithgow",
+          "character": "Charles Rodman",
+          "photo": "https://image.tmdb.org/t/p/w185/ajfuBSm1HuVqFJlbTmAlza62Xxr.jpg"
+        },
+        {
+          "name": "Brian Cox",
+          "character": "John Landon",
+          "photo": "https://image.tmdb.org/t/p/w185/scSjbFCTRngXlkJRoKptM5kQGw7.jpg"
+        }
+      ],
+      "tagline": "Evolution becomes revolution.",
+      "status": "Released",
+      "homepage": "https://www.20thcenturystudios.com/movies/rise-of-the-planet-of-the-apes"
+    }
+  },
+  {
+    "id": 12011655713,
+    "watched_at": "2026-02-11T14:47:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Jungle Book",
+      "year": 2016,
+      "ids": {
+        "trakt": 176503,
+        "slug": "the-jungle-book-2016",
+        "imdb": "tt3040964",
+        "tmdb": 278927
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/2Epx7F9X7DrFptn4seqn4mzBVks.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/8oYykF1Qhrb8fC2qZqD71EzRywg.jpg",
+      "overview": "After a threat from the tiger Shere Khan, Mowgli, a man-cub fostered by wolves, is forced to flee the jungle, and he embarks on a journey of self-discovery with the help of the panther, Bagheera, and the free-spirited bear, Baloo.",
+      "rating": 6.876,
+      "votes": 8532,
+      "runtime": 106,
+      "genres": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "cast": [
+        {
+          "name": "Neel Sethi",
+          "character": "Mowgli",
+          "photo": "https://image.tmdb.org/t/p/w185/aPAStca2iW94rfiosXWvGi6xRGM.jpg"
+        },
+        {
+          "name": "Bill Murray",
+          "character": "Baloo (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg"
+        },
+        {
+          "name": "Ben Kingsley",
+          "character": "Bagheera (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/k3Dmu49B2akwDvgqy52MOxznI59.jpg"
+        },
+        {
+          "name": "Idris Elba",
+          "character": "Shere Khan (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+        },
+        {
+          "name": "Scarlett Johansson",
+          "character": "Kaa (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        }
+      ],
+      "tagline": "The legend comes to life.",
+      "status": "Released",
+      "homepage": "http://movies.disney.com/the-jungle-book-2016"
+    }
+  },
+  {
+    "id": 12011655127,
+    "watched_at": "2026-02-11T14:46:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Captain Phillips",
+      "year": 2013,
+      "ids": {
+        "trakt": 77333,
+        "slug": "captain-phillips-2013",
+        "imdb": "tt1535109",
+        "tmdb": 109424
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/8Td0kkocW6sD3uRpzwfMfkqMWhx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/ihdFypo7MyfJvDSjK7Sbnsjhu8H.jpg",
+      "overview": "The true story of Captain Richard Phillips and the 2009 hijacking by Somali pirates of the US-flagged MV Maersk Alabama, the first American cargo ship to be hijacked in two hundred years.",
+      "rating": 7.541,
+      "votes": 7536,
+      "runtime": 134,
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "cast": [
+        {
+          "name": "Tom Hanks",
+          "character": "Captain Richard Phillips",
+          "photo": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+          "name": "Barkhad Abdi",
+          "character": "Muse",
+          "photo": "https://image.tmdb.org/t/p/w185/utfeg8GnGyW3aVNcRfhII9RCXB6.jpg"
+        },
+        {
+          "name": "Barkhad Abdirahman",
+          "character": "Bilal",
+          "photo": "https://image.tmdb.org/t/p/w185/o5K3tGiClerpgpCOpqFZGJ5cd28.jpg"
+        },
+        {
+          "name": "Faysal  Ahmed",
+          "character": "Najee",
+          "photo": "https://image.tmdb.org/t/p/w185/jrnwwBq4Xq3UADdAb028ddK32eD.jpg"
+        },
+        {
+          "name": "Mahat M. Ali",
+          "character": "Elmi",
+          "photo": "https://image.tmdb.org/t/p/w185/lV31hBFhk0YT7ktv7OVMqonA7yz.jpg"
+        }
+      ],
+      "tagline": "Out here survival is everything.",
+      "status": "Released",
+      "homepage": "http://www.captainphillipsmovie.com"
+    }
+  },
+  {
+    "id": 12011259462,
+    "watched_at": "2026-02-11T11:30:00.000Z",
+    "action": "checkin",
+    "type": "movie",
+    "movie": {
+      "title": "Ready Player One",
+      "year": 2018,
+      "ids": {
+        "trakt": 214279,
+        "slug": "ready-player-one-2018",
+        "imdb": "tt1677720",
+        "tmdb": 333339
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/5a7lMDn3nAj2ByO0X1fg6BhUphR.jpg",
+      "overview": "When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.",
+      "rating": 7.589,
+      "votes": 17036,
+      "runtime": 140,
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "cast": [
+        {
+          "name": "Tye Sheridan",
+          "character": "Parzival / Wade",
+          "photo": "https://image.tmdb.org/t/p/w185/d5ZS2fjqC98cIGkhEGX0fRYhku4.jpg"
+        },
+        {
+          "name": "Olivia Cooke",
+          "character": "Art3mis / Samantha",
+          "photo": "https://image.tmdb.org/t/p/w185/eIpUKrBoddAM0PoNv8n2Mq99VO1.jpg"
+        },
+        {
+          "name": "Ben Mendelsohn",
+          "character": "Sorrento",
+          "photo": "https://image.tmdb.org/t/p/w185/pA9mu9D2IolVA0v2Yo0tJm6uUyI.jpg"
+        },
+        {
+          "name": "Lena Waithe",
+          "character": "Aech / Helen",
+          "photo": "https://image.tmdb.org/t/p/w185/yidK25mjpxTTYCICmZnxgks6utx.jpg"
+        },
+        {
+          "name": "T.J. Miller",
+          "character": "I-R0k (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/rRrVvBxOkyYM5XdLXimShHR1Itn.jpg"
+        }
+      ],
+      "tagline": "A better reality awaits.",
+      "status": "Released",
+      "homepage": "http://readyplayeronemovie.com"
+    }
+  },
+  {
+    "id": 12009225071,
+    "watched_at": "2026-02-10T11:45:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Spider-Man: Into the Spider-Verse",
+      "year": 2018,
+      "ids": {
+        "trakt": 205404,
+        "slug": "spider-man-into-the-spider-verse-2018",
+        "imdb": "tt4633694",
+        "tmdb": 324857
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/8mnXR9rey5uQ08rZAvzojKWbDQS.jpg",
+      "overview": "Struggling to find his place in the world while juggling school and family, Brooklyn teenager Miles Morales is unexpectedly bitten by a radioactive spider and develops unfathomable powers just like the one and only Spider-Man. While wrestling with the implications of his new abilities, Miles discovers a super collider created by the madman Wilson \"Kingpin\" Fisk, causing others from across the Spider-Verse to be inadvertently transported to his dimension.",
+      "rating": 8.392,
+      "votes": 17368,
+      "runtime": 117,
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "cast": [
+        {
+          "name": "Shameik Moore",
+          "character": "Miles Morales (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/ovUKfVOwJ7CadEHaG3NDsfA5xRq.jpg"
+        },
+        {
+          "name": "Jake Johnson",
+          "character": "Peter B. Parker (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/3UNfW2qZgRkW81neNVfQvaRC92K.jpg"
+        },
+        {
+          "name": "Hailee Steinfeld",
+          "character": "Gwen Stacy (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/4K2dzM3odGiVZOQOD6RjVxNq2ZQ.jpg"
+        },
+        {
+          "name": "Mahershala Ali",
+          "character": "Uncle Aaron (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg"
+        },
+        {
+          "name": "Brian Tyree Henry",
+          "character": "Jefferson Davis (voice)",
+          "photo": "https://image.tmdb.org/t/p/w185/2MsJh0bpyzwvOUnXOltHp3j85Pb.jpg"
+        }
+      ],
+      "tagline": "Enter a universe where more than one wears the mask.",
+      "status": "Released",
+      "homepage": "https://www.sonypictures.com/movies/spidermanintothespiderverse"
+    }
+  },
+  {
+    "id": 12006592584,
+    "watched_at": "2026-02-09T16:36:00.000Z",
+    "action": "checkin",
+    "type": "movie",
+    "movie": {
+      "title": "Doctor Strange",
+      "year": 2016,
+      "ids": {
+        "trakt": 181311,
+        "slug": "doctor-strange-2016",
+        "imdb": "tt1211837",
+        "tmdb": 284052
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/3zvZ699gMW2RhWc0GisIukzq0Ls.jpg",
+      "overview": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+      "rating": 7.423,
+      "votes": 23532,
+      "runtime": 115,
+      "genres": [
+        "Fantasy",
+        "Adventure",
+        "Action"
+      ],
+      "cast": [
+        {
+          "name": "Benedict Cumberbatch",
+          "character": "Dr. Stephen Strange",
+          "photo": "https://image.tmdb.org/t/p/w185/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg"
+        },
+        {
+          "name": "Chiwetel Ejiofor",
+          "character": "Mordo",
+          "photo": "https://image.tmdb.org/t/p/w185/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg"
+        },
+        {
+          "name": "Rachel McAdams",
+          "character": "Dr. Christine Palmer",
+          "photo": "https://image.tmdb.org/t/p/w185/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg"
+        },
+        {
+          "name": "Benedict Wong",
+          "character": "Wong",
+          "photo": "https://image.tmdb.org/t/p/w185/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg"
+        },
+        {
+          "name": "Mads Mikkelsen",
+          "character": "Kaecilius",
+          "photo": "https://image.tmdb.org/t/p/w185/AsX4bdvZ8UCayWTmAf9lAqOA8V7.jpg"
+        }
+      ],
+      "tagline": "The impossibilities are endless.",
+      "status": "Released",
+      "homepage": "https://www.marvel.com/movies/doctor-strange"
+    }
+  },
+  {
+    "id": 12006413758,
+    "watched_at": "2026-02-09T12:25:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Avengers: Infinity War",
+      "year": 2018,
+      "ids": {
+        "trakt": 191797,
+        "slug": "avengers-infinity-war-2018",
+        "imdb": "tt4154756",
+        "tmdb": 299536
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+      "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+      "rating": 8.238,
+      "votes": 32217,
+      "runtime": 149,
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "cast": [
+        {
+          "name": "Robert Downey Jr.",
+          "character": "Tony Stark / Iron Man",
+          "photo": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+          "name": "Chris Evans",
+          "character": "Steve Rogers / Captain America",
+          "photo": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+          "name": "Chris Hemsworth",
+          "character": "Thor",
+          "photo": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+          "name": "Josh Brolin",
+          "character": "Thanos",
+          "photo": "https://image.tmdb.org/t/p/w185/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg"
+        },
+        {
+          "name": "Mark Ruffalo",
+          "character": "Bruce Banner / Hulk",
+          "photo": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        }
+      ],
+      "tagline": "Destiny arrives all the same.",
+      "status": "Released",
+      "homepage": "https://www.marvel.com/movies/avengers-infinity-war"
+    }
+  },
+  {
+    "id": 12006410427,
+    "watched_at": "2026-02-09T12:20:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Captain America: Civil War",
+      "year": 2016,
+      "ids": {
+        "trakt": 169105,
+        "slug": "captain-america-civil-war-2016",
+        "imdb": "tt3498820",
+        "tmdb": 271110
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg",
+      "overview": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
+      "rating": 7.449,
+      "votes": 24130,
+      "runtime": 147,
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "cast": [
+        {
+          "name": "Chris Evans",
+          "character": "Steve Rogers / Captain America",
+          "photo": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+          "name": "Robert Downey Jr.",
+          "character": "Tony Stark / Iron Man",
+          "photo": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+          "name": "Scarlett Johansson",
+          "character": "Natasha Romanoff / Black Widow",
+          "photo": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        },
+        {
+          "name": "Sebastian Stan",
+          "character": "Bucky Barnes / Winter Soldier",
+          "photo": "https://image.tmdb.org/t/p/w185/nKZgixTbHFXpkzzIpMFdLX98GYh.jpg"
+        },
+        {
+          "name": "Anthony Mackie",
+          "character": "Sam Wilson / Falcon",
+          "photo": "https://image.tmdb.org/t/p/w185/eZSIDrtTzhvabyjrmIITQLsjx8h.jpg"
+        }
+      ],
+      "tagline": "United we stand. Divided we fall.",
+      "status": "Released",
+      "homepage": "https://www.marvel.com/movies/captain-america-civil-war"
+    }
+  },
+  {
+    "id": 12006393659,
+    "watched_at": "2026-02-09T12:06:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Black Panther",
+      "year": 2018,
+      "ids": {
+        "trakt": 181313,
+        "slug": "black-panther-2018",
+        "imdb": "tt1825683",
+        "tmdb": 284054
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/19Ed4XgjahPm4U8JT7SnntERIlt.jpg",
+      "overview": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+      "rating": 7.4,
+      "votes": 23585,
+      "runtime": 135,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "cast": [
+        {
+          "name": "Chadwick Boseman",
+          "character": "T'Challa / Black Panther",
+          "photo": "https://image.tmdb.org/t/p/w185/nL16SKfyP1b7Hk6LsuWiqMfbdb8.jpg"
+        },
+        {
+          "name": "Michael B. Jordan",
+          "character": "Erik Killmonger",
+          "photo": "https://image.tmdb.org/t/p/w185/sMBpav8cK7t7Nk0yf4tuNOqNUyW.jpg"
+        },
+        {
+          "name": "Lupita Nyong'o",
+          "character": "Nakia",
+          "photo": "https://image.tmdb.org/t/p/w185/mJMpsADPpt0bmXEzs3ywrUiCkpD.jpg"
+        },
+        {
+          "name": "Danai Gurira",
+          "character": "Okoye",
+          "photo": "https://image.tmdb.org/t/p/w185/z7H7QeQvr24vskGlANQhG43vozQ.jpg"
+        },
+        {
+          "name": "Martin Freeman",
+          "character": "Everett K. Ross",
+          "photo": "https://image.tmdb.org/t/p/w185/nrO54AzrxiNgCjBUOSz6ebyxDZY.jpg"
+        }
+      ],
+      "tagline": "Long live the king.",
+      "status": "Released",
+      "homepage": "https://www.marvel.com/movies/black-panther"
+    }
+  },
+  {
+    "id": 12001232967,
+    "watched_at": "2026-02-07T15:14:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Forrest Gump",
+      "year": 1994,
+      "ids": {
+        "trakt": 9,
+        "slug": "forrest-gump-1994",
+        "imdb": "tt0109830",
+        "tmdb": 13
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/66Kn4XWhkuPkJxOJyPEx4U2CUfN.jpg",
+      "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+      "rating": 8.5,
+      "votes": 29918,
+      "runtime": 142,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "cast": [
+        {
+          "name": "Tom Hanks",
+          "character": "Forrest Gump",
+          "photo": "https://image.tmdb.org/t/p/w185/oFvZoKI6lvU03n4YoNGAll9rkas.jpg"
+        },
+        {
+          "name": "Robin Wright",
+          "character": "Jenny Curran",
+          "photo": "https://image.tmdb.org/t/p/w185/d3rIv0y2p0jMsQ7ViR7O1606NZa.jpg"
+        },
+        {
+          "name": "Gary Sinise",
+          "character": "Lieutenant Dan Taylor",
+          "photo": "https://image.tmdb.org/t/p/w185/olRjiV8ZhBixQiTvrGwXhpVXxsV.jpg"
+        },
+        {
+          "name": "Sally Field",
+          "character": "Mrs. Gump",
+          "photo": "https://image.tmdb.org/t/p/w185/iMeq1j9Xwvaf6PbTJ0FQz69fpuA.jpg"
+        },
+        {
+          "name": "Mykelti Williamson",
+          "character": "Bubba Blue",
+          "photo": "https://image.tmdb.org/t/p/w185/dR16zD9AjnHWbeN5OVmJWE0vSax.jpg"
+        }
+      ],
+      "tagline": "The world will never be the same once you've seen it through the eyes of Forrest Gump.",
+      "status": "Released",
+      "homepage": "https://www.paramountmovies.com/movies/forrest-gump"
+    }
+  },
+  {
+    "id": 12001232803,
+    "watched_at": "2026-02-07T15:14:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Joker",
+      "year": 2019,
+      "ids": {
+        "trakt": 322988,
+        "slug": "joker-2019",
+        "imdb": "tt7286456",
+        "tmdb": 475557
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/rlay2M5QYvi6igbGcFjq8jxeusY.jpg",
+      "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+      "rating": 8.123,
+      "votes": 27861,
+      "runtime": 122,
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Joaquin Phoenix",
+          "character": "Arthur Fleck",
+          "photo": "https://image.tmdb.org/t/p/w185/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg"
+        },
+        {
+          "name": "Robert De Niro",
+          "character": "Murray Franklin",
+          "photo": "https://image.tmdb.org/t/p/w185/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg"
+        },
+        {
+          "name": "Zazie Beetz",
+          "character": "Sophie Dumond",
+          "photo": "https://image.tmdb.org/t/p/w185/sgxzT54GnvgeMnOZgpQQx9csAdd.jpg"
+        },
+        {
+          "name": "Frances Conroy",
+          "character": "Penny Fleck",
+          "photo": "https://image.tmdb.org/t/p/w185/aJRQAkO24L6bH8qkkE5Iv1nA3gf.jpg"
+        },
+        {
+          "name": "Brett Cullen",
+          "character": "Thomas Wayne",
+          "photo": "https://image.tmdb.org/t/p/w185/4P6TsRcnr9MRbXlCdHitulGM5LT.jpg"
+        }
+      ],
+      "tagline": "Put on a happy face.",
+      "status": "Released",
+      "homepage": "http://www.jokermovie.net/"
+    }
+  },
+  {
+    "id": 12001232498,
+    "watched_at": "2026-02-07T15:13:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "ids": {
+        "trakt": 191798,
+        "slug": "avengers-endgame-2019",
+        "imdb": "tt4154796",
+        "tmdb": 299534
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+      "rating": 8.238,
+      "votes": 27966,
+      "runtime": 181,
+      "genres": [
+        "Adventure",
+        "Science Fiction",
+        "Action"
+      ],
+      "cast": [
+        {
+          "name": "Robert Downey Jr.",
+          "character": "Tony Stark / Iron Man",
+          "photo": "https://image.tmdb.org/t/p/w185/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        },
+        {
+          "name": "Chris Evans",
+          "character": "Steve Rogers / Captain America",
+          "photo": "https://image.tmdb.org/t/p/w185/3bOGNsHlrswhyW79uvIHH1V43JI.jpg"
+        },
+        {
+          "name": "Mark Ruffalo",
+          "character": "Bruce Banner / Hulk",
+          "photo": "https://image.tmdb.org/t/p/w185/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
+        },
+        {
+          "name": "Chris Hemsworth",
+          "character": "Thor",
+          "photo": "https://image.tmdb.org/t/p/w185/piQGdoIQOF3C1EI5cbYZLAW1gfj.jpg"
+        },
+        {
+          "name": "Scarlett Johansson",
+          "character": "Natasha Romanoff / Black Widow",
+          "photo": "https://image.tmdb.org/t/p/w185/druW5adKddizHNSoPbI0q7Mvn0K.jpg"
+        }
+      ],
+      "tagline": "Avenge the fallen.",
+      "status": "Released",
+      "homepage": "https://www.marvel.com/movies/avengers-endgame"
+    }
+  },
+  {
+    "id": 12001232418,
+    "watched_at": "2026-02-07T15:13:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Wolf of Wall Street",
+      "year": 2013,
+      "ids": {
+        "trakt": 75735,
+        "slug": "the-wolf-of-wall-street-2013",
+        "imdb": "tt0993846",
+        "tmdb": 106646
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/7Nwnmyzrtd0FkcRyPqmdzTPppQa.jpg",
+      "overview": "A New York stockbroker refuses to cooperate in a large securities fraud case involving corruption on Wall Street, corporate banking world and mob infiltration. Based on Jordan Belfort's autobiography.",
+      "rating": 8.028,
+      "votes": 26060,
+      "runtime": 180,
+      "genres": [
+        "Crime",
+        "Drama",
+        "Comedy"
+      ],
+      "cast": [
+        {
+          "name": "Leonardo DiCaprio",
+          "character": "Jordan Belfort",
+          "photo": "https://image.tmdb.org/t/p/w185/mkdRcVIQl4WZhDf1vXKWTD7HZrZ.jpg"
+        },
+        {
+          "name": "Jonah Hill",
+          "character": "Donnie Azoff",
+          "photo": "https://image.tmdb.org/t/p/w185/cymlWttB83MsAGR2EkTgANtjeRH.jpg"
+        },
+        {
+          "name": "Margot Robbie",
+          "character": "Naomi Lapaglia",
+          "photo": "https://image.tmdb.org/t/p/w185/au6Hq8nQXJD67mDtl34ZOm8DXrh.jpg"
+        },
+        {
+          "name": "Matthew McConaughey",
+          "character": "Mark Hanna",
+          "photo": "https://image.tmdb.org/t/p/w185/lCySuYjhXix3FzQdS4oceDDrXKI.jpg"
+        },
+        {
+          "name": "Kyle Chandler",
+          "character": "Agent Patrick Denham",
+          "photo": "https://image.tmdb.org/t/p/w185/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg"
+        }
+      ],
+      "tagline": "Earn. Spend. Party.",
+      "status": "Released",
+      "homepage": "http://www.thewolfofwallstreet.com/"
+    }
+  },
+  {
+    "id": 12001232168,
+    "watched_at": "2026-02-07T15:13:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Parasite",
+      "year": 2019,
+      "ids": {
+        "trakt": 343180,
+        "slug": "parasite-2019",
+        "imdb": "tt6751668",
+        "tmdb": 496243
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/wCuUKiRaz0wEESsYqmQy005xvTE.jpg",
+      "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+      "rating": 8.492,
+      "votes": 20829,
+      "runtime": 133,
+      "genres": [
+        "Comedy",
+        "Thriller",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Song Kang-ho",
+          "character": "Kim Ki-taek",
+          "photo": "https://image.tmdb.org/t/p/w185/kBM9UTPYXUA2RNk210DXhztLFns.jpg"
+        },
+        {
+          "name": "Lee Sun-kyun",
+          "character": "Park Dong-ik",
+          "photo": "https://image.tmdb.org/t/p/w185/nHFBbSFohzOUOvMxPVwe3Es2nJw.jpg"
+        },
+        {
+          "name": "Cho Yeo-jeong",
+          "character": "Yeon-kyo",
+          "photo": "https://image.tmdb.org/t/p/w185/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg"
+        },
+        {
+          "name": "Choi Woo-shik",
+          "character": "Ki-woo",
+          "photo": "https://image.tmdb.org/t/p/w185/hRDiuKWwe156zRjEu826eci7H3r.jpg"
+        },
+        {
+          "name": "Park So-dam",
+          "character": "Ki-jung",
+          "photo": "https://image.tmdb.org/t/p/w185/fGVOikpvivopeATDy6ZzLdKYXDu.jpg"
+        }
+      ],
+      "tagline": "Act like you own the place.",
+      "status": "Released",
+      "homepage": "https://www.parasite-movie.com/"
+    }
+  },
+  {
+    "id": 12001232084,
+    "watched_at": "2026-02-07T15:13:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "ids": {
+        "trakt": 234,
+        "slug": "the-shawshank-redemption-1994",
+        "imdb": "tt0111161",
+        "tmdb": 278
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+      "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      "rating": 8.724,
+      "votes": 30702,
+      "runtime": 142,
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "cast": [
+        {
+          "name": "Tim Robbins",
+          "character": "Andy Dufresne",
+          "photo": "https://image.tmdb.org/t/p/w185/3FfJMIVwXgsIXbAT8ECBSZJAncR.jpg"
+        },
+        {
+          "name": "Morgan Freeman",
+          "character": "Ellis Boyd 'Red' Redding",
+          "photo": "https://image.tmdb.org/t/p/w185/jPsLqiYGSofU4s6BjrxnefMfabb.jpg"
+        },
+        {
+          "name": "Bob Gunton",
+          "character": "Warden Norton",
+          "photo": "https://image.tmdb.org/t/p/w185/ulbVvuBToBN3aCGcV028hwO0MOP.jpg"
+        },
+        {
+          "name": "William Sadler",
+          "character": "Heywood",
+          "photo": "https://image.tmdb.org/t/p/w185/rWeb2kjYCA7V9MC9kRwRpm57YoY.jpg"
+        },
+        {
+          "name": "Clancy Brown",
+          "character": "Captain Byron T. Hadley",
+          "photo": "https://image.tmdb.org/t/p/w185/1JeBRNG7VS7r64V9lOvej9bZXW5.jpg"
+        }
+      ],
+      "tagline": "Fear can hold you prisoner. Hope can set you free.",
+      "status": "Released",
+      "homepage": ""
+    }
+  },
+  {
+    "id": 11981062619,
+    "watched_at": "2024-03-17T16:30:00.000Z",
+    "action": "watch",
+    "type": "movie",
+    "movie": {
+      "title": "Young Royals Forever",
+      "year": 2024,
+      "ids": {
+        "trakt": 1010193,
+        "slug": "young-royals-forever-2024",
+        "imdb": "tt31402962",
+        "tmdb": 1247154
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/o6JJoH3WslqrqjO9JjApkyQNQTB.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/drhhblIRRJZPzJzPJ0AIkKto0Aq.jpg",
+      "overview": "From casting to the final scene, this special shows how the cast and crew of \"Young Royals\" brought Wilhelm and Simon's heartwarming journey to life.",
+      "rating": 7.4,
+      "votes": 25,
+      "runtime": 53,
+      "genres": [
+        "Documentary"
+      ],
+      "cast": [
+        {
+          "name": "Edvin Ryding",
+          "character": "Self",
+          "photo": "https://image.tmdb.org/t/p/w185/d7fcmwBi974TD3soI4VG88c8YN2.jpg"
+        },
+        {
+          "name": "Omar Rudberg",
+          "character": "Self",
+          "photo": "https://image.tmdb.org/t/p/w185/yxmdQZ2m6hnTMKcaSCDJF19kFm.jpg"
+        },
+        {
+          "name": "Nikita Uggla",
+          "character": "Self",
+          "photo": "https://image.tmdb.org/t/p/w185/ydnVNKjGNh8OL7TX6Owtv1dlLBQ.jpg"
+        },
+        {
+          "name": "Frida Argento",
+          "character": "Self",
+          "photo": "https://image.tmdb.org/t/p/w185/7G0ONaNprsznxY7TmBNPmPpCWH7.jpg"
+        },
+        {
+          "name": "Malte Gårdinger",
+          "character": "Self",
+          "photo": "https://image.tmdb.org/t/p/w185/vDtILRvipBzF2bVqZBiqMQ1HehP.jpg"
+        }
+      ],
+      "tagline": "Together we made a revolution",
+      "status": "Released",
+      "homepage": "https://www.netflix.com/title/81726604"
+    }
+  }
+]

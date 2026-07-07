@@ -1,1 +1,6002 @@
-[]
+[
+  {
+    "id": 12036708489,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 11,
+      "title": "Blood Tastes Like Iron",
+      "ids": {
+        "trakt": 999479,
+        "tvdb": 4852774,
+        "imdb": "tt4056868",
+        "tmdb": 1019406,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708488,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 10,
+      "title": "I Thought You Were the Hero!!",
+      "ids": {
+        "trakt": 999477,
+        "tvdb": 4852772,
+        "imdb": "tt4056870",
+        "tmdb": 1019405,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708487,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 9,
+      "title": "Gonna Cry a Bit",
+      "ids": {
+        "trakt": 999475,
+        "tvdb": 4852771,
+        "imdb": "tt4056872",
+        "tmdb": 1019404,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708486,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 8,
+      "title": "The Hero Appears",
+      "ids": {
+        "trakt": 999474,
+        "tvdb": 4852770,
+        "imdb": "tt4056874",
+        "tmdb": 1019403,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708485,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 7,
+      "title": "Yes, My Coach",
+      "ids": {
+        "trakt": 999471,
+        "tvdb": 4852769,
+        "imdb": "tt4056876",
+        "tmdb": 1019402,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708483,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 5,
+      "title": "Where Did I Go Wrong?",
+      "ids": {
+        "trakt": 999467,
+        "tvdb": 4852767,
+        "imdb": "tt4056880",
+        "tmdb": 1019400,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708482,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 4,
+      "title": "The Only Way to Be Sure You Won't Lose Is to Not Fight",
+      "ids": {
+        "trakt": 999464,
+        "tvdb": 4852766,
+        "imdb": "tt4056882",
+        "tmdb": 1019399,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708480,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 3,
+      "title": "Staking Your Life on Table Tennis Is Revolting",
+      "ids": {
+        "trakt": 999462,
+        "tvdb": 4852765,
+        "imdb": "tt3874948",
+        "tmdb": 1019398,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708479,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 2,
+      "title": "Smile Is a Robot",
+      "ids": {
+        "trakt": 999460,
+        "tvdb": 4852764,
+        "imdb": "tt3811396",
+        "tmdb": 1019397,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12036708478,
+    "watched_at": "2026-02-21T05:38:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 1,
+      "title": "The Wind Makes It Too Hard to Hear",
+      "ids": {
+        "trakt": 963189,
+        "tvdb": 4772303,
+        "imdb": "tt3823436",
+        "tmdb": 984674,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Ping Pong the Animation",
+      "year": 2014,
+      "ids": {
+        "trakt": 60369,
+        "slug": "ping-pong-the-animation",
+        "tvdb": 277464,
+        "imdb": "tt3592032",
+        "tmdb": 60811,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559131,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 8,
+      "title": "Episode 8",
+      "ids": {
+        "trakt": 10751456,
+        "tvdb": 9882281,
+        "imdb": "tt28942282",
+        "tmdb": 4564761,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559130,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 7,
+      "title": "Episode 7",
+      "ids": {
+        "trakt": 10751455,
+        "tvdb": 9882280,
+        "imdb": "tt28942002",
+        "tmdb": 4564760,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559129,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 6,
+      "title": "Episode 6",
+      "ids": {
+        "trakt": 10751454,
+        "tvdb": 9882279,
+        "imdb": "tt28941928",
+        "tmdb": 4564759,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559128,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 5,
+      "title": "Episode 5",
+      "ids": {
+        "trakt": 10751453,
+        "tvdb": 9882278,
+        "imdb": "tt28941778",
+        "tmdb": 4564758,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559127,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 4,
+      "title": "Episode 4",
+      "ids": {
+        "trakt": 10751452,
+        "tvdb": 9882277,
+        "imdb": "tt28941769",
+        "tmdb": 4564757,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559126,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 3,
+      "title": "Episode 3",
+      "ids": {
+        "trakt": 10751451,
+        "tvdb": 9882276,
+        "imdb": "tt28941739",
+        "tmdb": 4564756,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559123,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 2,
+      "title": "Episode 2",
+      "ids": {
+        "trakt": 10751450,
+        "tvdb": 9882275,
+        "imdb": "tt28941726",
+        "tmdb": 4564755,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559122,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 4,
+      "number": 1,
+      "title": "Episode 1",
+      "ids": {
+        "trakt": 10751449,
+        "tvdb": 9882274,
+        "imdb": "tt15494890",
+        "tmdb": 4564754,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559121,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 8,
+      "title": "Episode 8",
+      "ids": {
+        "trakt": 5386292,
+        "tvdb": 8507469,
+        "imdb": "tt14923652",
+        "tmdb": 3099443,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559120,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 7,
+      "title": "Episode 7",
+      "ids": {
+        "trakt": 5386291,
+        "tvdb": 8507467,
+        "imdb": "tt13986134",
+        "tmdb": 3099442,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559118,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 6,
+      "title": "Episode 6",
+      "ids": {
+        "trakt": 5386290,
+        "tvdb": 8507465,
+        "imdb": "tt13986132",
+        "tmdb": 3099441,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559117,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 5,
+      "title": "Episode 5",
+      "ids": {
+        "trakt": 5386288,
+        "tvdb": 8507463,
+        "imdb": "tt13945456",
+        "tmdb": 3099440,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559116,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 4,
+      "title": "Episode 4",
+      "ids": {
+        "trakt": 5386287,
+        "tvdb": 8507462,
+        "imdb": "tt13945454",
+        "tmdb": 3099439,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559115,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 3,
+      "title": "Episode 3",
+      "ids": {
+        "trakt": 5260438,
+        "tvdb": 8507460,
+        "imdb": "tt13945446",
+        "tmdb": 3042830,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559114,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 2,
+      "title": "Episode 2",
+      "ids": {
+        "trakt": 5260437,
+        "tvdb": 8507458,
+        "imdb": "tt13945444",
+        "tmdb": 3042829,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559113,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 1,
+      "title": "Episode 1",
+      "ids": {
+        "trakt": 5260436,
+        "tvdb": 8507456,
+        "imdb": "tt11761560",
+        "tmdb": 3042769,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559112,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 8,
+      "title": "Episode 8",
+      "ids": {
+        "trakt": 3871263,
+        "tvdb": 7488863,
+        "imdb": "tt9699202",
+        "tmdb": 1997018,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559111,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 7,
+      "title": "Episode 7",
+      "ids": {
+        "trakt": 3871262,
+        "tvdb": 7488862,
+        "imdb": "tt9699204",
+        "tmdb": 1997017,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559110,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 6,
+      "title": "Episode 6",
+      "ids": {
+        "trakt": 3871261,
+        "tvdb": 7488861,
+        "imdb": "tt9699196",
+        "tmdb": 1997016,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559109,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 5,
+      "title": "Episode 5",
+      "ids": {
+        "trakt": 3871260,
+        "tvdb": 7488860,
+        "imdb": "tt9699194",
+        "tmdb": 1997015,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559108,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 4,
+      "title": "Episode 4",
+      "ids": {
+        "trakt": 3871259,
+        "tvdb": 7488859,
+        "imdb": "tt9699192",
+        "tmdb": 1997014,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559107,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 3,
+      "title": "Episode 3",
+      "ids": {
+        "trakt": 3855497,
+        "tvdb": 7480887,
+        "imdb": "tt9699186",
+        "tmdb": 1994668,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559106,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 2,
+      "title": "Episode 2",
+      "ids": {
+        "trakt": 3855303,
+        "tvdb": 7480886,
+        "imdb": "tt9699190",
+        "tmdb": 1994667,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559105,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 2,
+      "number": 1,
+      "title": "Episode 1",
+      "ids": {
+        "trakt": 3321741,
+        "tvdb": 7465114,
+        "imdb": "tt9699184",
+        "tmdb": 1988423,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559104,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 8,
+      "title": "Episode 8",
+      "ids": {
+        "trakt": 3263795,
+        "tvdb": 6927863,
+        "imdb": "tt8601980",
+        "tmdb": 1666367,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559103,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 7,
+      "title": "Episode 7",
+      "ids": {
+        "trakt": 3263794,
+        "tvdb": 6927862,
+        "imdb": "tt8601978",
+        "tmdb": 1666366,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559102,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 6,
+      "title": "Episode 6",
+      "ids": {
+        "trakt": 3263792,
+        "tvdb": 6927861,
+        "imdb": "tt8601972",
+        "tmdb": 1666365,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559100,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 5,
+      "title": "Episode 5",
+      "ids": {
+        "trakt": 3263791,
+        "tvdb": 6927857,
+        "imdb": "tt8601970",
+        "tmdb": 1666363,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559099,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 4,
+      "title": "Episode 4",
+      "ids": {
+        "trakt": 3263790,
+        "tvdb": 6927854,
+        "imdb": "tt8601960",
+        "tmdb": 1666362,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559098,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 3,
+      "title": "Episode 3",
+      "ids": {
+        "trakt": 3263789,
+        "tvdb": 6927853,
+        "imdb": "tt8601956",
+        "tmdb": 1666361,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559097,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 2,
+      "title": "Episode 2",
+      "ids": {
+        "trakt": 3263788,
+        "tvdb": 6927852,
+        "imdb": "tt8601954",
+        "tmdb": 1666360,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035559096,
+    "watched_at": "2026-02-20T17:33:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 1,
+      "title": "Episode 1",
+      "ids": {
+        "trakt": 3263786,
+        "tvdb": 6927356,
+        "imdb": "tt8431282",
+        "tmdb": 1639849,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Sex Education",
+      "year": 2019,
+      "ids": {
+        "trakt": 140590,
+        "slug": "sex-education",
+        "tvdb": 356317,
+        "imdb": "tt7767422",
+        "tmdb": 81356,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552307,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 10,
+      "title": "Main History Banana Chahta hoon",
+      "ids": {
+        "trakt": 4513525,
+        "tvdb": 7985947,
+        "imdb": null,
+        "tmdb": 2458796,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552306,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 9,
+      "title": "Ek Crore Ka Suitcase",
+      "ids": {
+        "trakt": 4508273,
+        "tvdb": 7985117,
+        "imdb": null,
+        "tmdb": 2458096,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552305,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 8,
+      "title": "Matador",
+      "ids": {
+        "trakt": 4508271,
+        "tvdb": 7985116,
+        "imdb": null,
+        "tmdb": 2457767,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552304,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 7,
+      "title": "Dalal Street Ka Dariya",
+      "ids": {
+        "trakt": 4508269,
+        "tvdb": 7985115,
+        "imdb": null,
+        "tmdb": 2457766,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552303,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 6,
+      "title": "Stop Press",
+      "ids": {
+        "trakt": 4508267,
+        "tvdb": 7985114,
+        "imdb": null,
+        "tmdb": 2457765,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552302,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 5,
+      "title": "Kundli Mein Shani",
+      "ids": {
+        "trakt": 4508265,
+        "tvdb": 7985113,
+        "imdb": null,
+        "tmdb": 2457698,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552300,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 4,
+      "title": "Harshad Mehta Is A Liar",
+      "ids": {
+        "trakt": 4508263,
+        "tvdb": 7985112,
+        "imdb": null,
+        "tmdb": 2457697,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552299,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 3,
+      "title": "Paise Ki Dukaan",
+      "ids": {
+        "trakt": 4508261,
+        "tvdb": 7985111,
+        "imdb": null,
+        "tmdb": 2457696,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552298,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 2,
+      "title": "Cobra Killer",
+      "ids": {
+        "trakt": 4508259,
+        "tvdb": 7985110,
+        "imdb": null,
+        "tmdb": 2457695,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12035552297,
+    "watched_at": "2026-02-20T17:27:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 1,
+      "title": "Risk Se Ishq",
+      "ids": {
+        "trakt": 4508257,
+        "tvdb": 7985108,
+        "imdb": "tt13172846",
+        "tmdb": 2456303,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "year": 2020,
+      "ids": {
+        "trakt": 167958,
+        "slug": "scam-1992-the-harshad-mehta-story",
+        "tvdb": 389680,
+        "imdb": "tt12392504",
+        "tmdb": 111188,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457311,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 24,
+      "title": "Unraveling the Mystery: A Big Bang Farewell",
+      "ids": {
+        "trakt": 3524428,
+        "tvdb": 7159758,
+        "imdb": "tt10269988",
+        "tmdb": 2767846,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457310,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 23,
+      "title": "The Change Constant / The Stockholm Syndrome",
+      "ids": {
+        "trakt": 3507719,
+        "tvdb": 7161279,
+        "imdb": "tt6674734",
+        "tmdb": 1786931,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457309,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 22,
+      "title": "The Maternal Conclusion",
+      "ids": {
+        "trakt": 3499513,
+        "tvdb": 7153508,
+        "imdb": "tt6674730",
+        "tmdb": 1779190,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457308,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 21,
+      "title": "The Plagiarism Schism",
+      "ids": {
+        "trakt": 3493221,
+        "tvdb": 7146880,
+        "imdb": "tt6674732",
+        "tmdb": 1778893,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457307,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 20,
+      "title": "The Decision Reverberation",
+      "ids": {
+        "trakt": 3473596,
+        "tvdb": 7128890,
+        "imdb": "tt6674728",
+        "tmdb": 1749469,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457306,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 19,
+      "title": "The Inspiration Deprivation",
+      "ids": {
+        "trakt": 3462094,
+        "tvdb": 7117710,
+        "imdb": "tt6674720",
+        "tmdb": 1749468,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457305,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 18,
+      "title": "The Laureate Accumulation",
+      "ids": {
+        "trakt": 3440742,
+        "tvdb": 7099719,
+        "imdb": "tt6674724",
+        "tmdb": 1748952,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457304,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 17,
+      "title": "The Conference Valuation",
+      "ids": {
+        "trakt": 3386929,
+        "tvdb": 7048797,
+        "imdb": "tt6674726",
+        "tmdb": 1713493,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457303,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 16,
+      "title": "The D & D Vortex",
+      "ids": {
+        "trakt": 3373210,
+        "tvdb": 7037091,
+        "imdb": "tt6674718",
+        "tmdb": 1712585,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457302,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 15,
+      "title": "The Donation Oscillation",
+      "ids": {
+        "trakt": 3356300,
+        "tvdb": 7018622,
+        "imdb": "tt6674716",
+        "tmdb": 1694025,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457300,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 14,
+      "title": "The Meteorite Manifestation",
+      "ids": {
+        "trakt": 3347600,
+        "tvdb": 7009000,
+        "imdb": "tt6674712",
+        "tmdb": 1677264,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457299,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 13,
+      "title": "The Confirmation Polarization",
+      "ids": {
+        "trakt": 3317248,
+        "tvdb": 6987000,
+        "imdb": "tt6674714",
+        "tmdb": 1675687,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457298,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 12,
+      "title": "The Propagation Proposition",
+      "ids": {
+        "trakt": 3275577,
+        "tvdb": 6938260,
+        "imdb": "tt6674708",
+        "tmdb": 1648382,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457297,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 11,
+      "title": "The Paintball Scattering",
+      "ids": {
+        "trakt": 3273293,
+        "tvdb": 6937351,
+        "imdb": "tt6674706",
+        "tmdb": 1639117,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457296,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 10,
+      "title": "The VCR Illumination",
+      "ids": {
+        "trakt": 3248689,
+        "tvdb": 6913270,
+        "imdb": "tt6674710",
+        "tmdb": 1628622,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457295,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 9,
+      "title": "The Citation Negation",
+      "ids": {
+        "trakt": 3218328,
+        "tvdb": 6887208,
+        "imdb": "tt6674698",
+        "tmdb": 1615073,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457294,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 8,
+      "title": "The Consummation Deviation",
+      "ids": {
+        "trakt": 3218327,
+        "tvdb": 6887183,
+        "imdb": "tt6674702",
+        "tmdb": 1614628,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457293,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 7,
+      "title": "The Grant Allocation Derivation",
+      "ids": {
+        "trakt": 3205502,
+        "tvdb": 6873461,
+        "imdb": "tt6674696",
+        "tmdb": 1604724,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457292,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 6,
+      "title": "The Imitation Perturbation",
+      "ids": {
+        "trakt": 3193819,
+        "tvdb": 6860580,
+        "imdb": "tt6674704",
+        "tmdb": 1593014,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457291,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 5,
+      "title": "The Planetarium Collision",
+      "ids": {
+        "trakt": 3174625,
+        "tvdb": 6842655,
+        "imdb": "tt6674694",
+        "tmdb": 1593011,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457290,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 4,
+      "title": "The Tam Turbulence",
+      "ids": {
+        "trakt": 3163031,
+        "tvdb": 6833867,
+        "imdb": "tt6674690",
+        "tmdb": 1575223,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457289,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 3,
+      "title": "The Procreation Calculation",
+      "ids": {
+        "trakt": 3076942,
+        "tvdb": 6833864,
+        "imdb": "tt6674692",
+        "tmdb": 1575221,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457288,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 2,
+      "title": "The Wedding Gift Wormhole",
+      "ids": {
+        "trakt": 3076941,
+        "tvdb": 6808099,
+        "imdb": "tt6674688",
+        "tmdb": 1572527,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457287,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 12,
+      "number": 1,
+      "title": "The Conjugal Configuration",
+      "ids": {
+        "trakt": 2979674,
+        "tvdb": 6755587,
+        "imdb": "tt6673778",
+        "tmdb": 1534358,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457286,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 24,
+      "title": "The Bow Tie Asymmetry",
+      "ids": {
+        "trakt": 2937117,
+        "tvdb": 6617323,
+        "imdb": "tt6674430",
+        "tmdb": 1477740,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457285,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 23,
+      "title": "The Sibling Realignment",
+      "ids": {
+        "trakt": 2937116,
+        "tvdb": 6617322,
+        "imdb": "tt6674424",
+        "tmdb": 1473373,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457284,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 22,
+      "title": "The Monetary Insufficiency",
+      "ids": {
+        "trakt": 2937115,
+        "tvdb": 6617321,
+        "imdb": "tt6674428",
+        "tmdb": 1465376,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457283,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 21,
+      "title": "The Comet Polarization",
+      "ids": {
+        "trakt": 2935730,
+        "tvdb": 6614322,
+        "imdb": "tt6674432",
+        "tmdb": 1465375,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457282,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 20,
+      "title": "The Reclusive Potential",
+      "ids": {
+        "trakt": 2926233,
+        "tvdb": 6600689,
+        "imdb": "tt6674434",
+        "tmdb": 1465165,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457281,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 19,
+      "title": "The Tenant Disassociation",
+      "ids": {
+        "trakt": 2919856,
+        "tvdb": 6589204,
+        "imdb": "tt6674454",
+        "tmdb": 1454903,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457280,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 18,
+      "title": "The Gates Excitation",
+      "ids": {
+        "trakt": 2895366,
+        "tvdb": 6557317,
+        "imdb": "tt6674456",
+        "tmdb": 1434701,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457279,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 17,
+      "title": "The Athenaeum Allocation",
+      "ids": {
+        "trakt": 2889538,
+        "tvdb": 6549611,
+        "imdb": "tt6674452",
+        "tmdb": 1434700,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457278,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 16,
+      "title": "The Neonatal Nomenclature",
+      "ids": {
+        "trakt": 2854214,
+        "tvdb": 6498115,
+        "imdb": "tt6674448",
+        "tmdb": 1431840,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457277,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 15,
+      "title": "The Novelization Correlation",
+      "ids": {
+        "trakt": 2846069,
+        "tvdb": 6486419,
+        "imdb": "tt6674462",
+        "tmdb": 1426838,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457276,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 14,
+      "title": "The Separation Triangulation",
+      "ids": {
+        "trakt": 2830936,
+        "tvdb": 6468765,
+        "imdb": "tt6674466",
+        "tmdb": 1418484,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457275,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 13,
+      "title": "The Solo Oscillation",
+      "ids": {
+        "trakt": 2819221,
+        "tvdb": 6453565,
+        "imdb": "tt6674468",
+        "tmdb": 1406758,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457273,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 12,
+      "title": "The Matrimonial Metric",
+      "ids": {
+        "trakt": 2808529,
+        "tvdb": 6436133,
+        "imdb": "tt6674472",
+        "tmdb": 1406757,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457272,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 11,
+      "title": "The Celebration Reverberation",
+      "ids": {
+        "trakt": 2799864,
+        "tvdb": 6420024,
+        "imdb": "tt6674476",
+        "tmdb": 1400067,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457271,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 10,
+      "title": "The Confidence Erosion",
+      "ids": {
+        "trakt": 2793743,
+        "tvdb": 6410397,
+        "imdb": "tt6674480",
+        "tmdb": 1400066,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457270,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 9,
+      "title": "The Bitcoin Entanglement",
+      "ids": {
+        "trakt": 2779956,
+        "tvdb": 6389649,
+        "imdb": "tt6674486",
+        "tmdb": 1391231,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457269,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 8,
+      "title": "The Tesla Recoil",
+      "ids": {
+        "trakt": 2768254,
+        "tvdb": 6371975,
+        "imdb": "tt6674490",
+        "tmdb": 1391230,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457268,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 7,
+      "title": "The Geology Methodology",
+      "ids": {
+        "trakt": 2756767,
+        "tvdb": 6357448,
+        "imdb": "tt6674492",
+        "tmdb": 1391209,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457267,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 6,
+      "title": "The Proton Regeneration",
+      "ids": {
+        "trakt": 2749328,
+        "tvdb": 6346730,
+        "imdb": "tt6674494",
+        "tmdb": 1383967,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457266,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 5,
+      "title": "The Collaboration Contamination",
+      "ids": {
+        "trakt": 2735962,
+        "tvdb": 6324497,
+        "imdb": "tt6674496",
+        "tmdb": 1369087,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457265,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 4,
+      "title": "The Explosion Implosion",
+      "ids": {
+        "trakt": 2726537,
+        "tvdb": 6311198,
+        "imdb": "tt6674498",
+        "tmdb": 1369086,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457264,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 3,
+      "title": "The Relaxation Integration",
+      "ids": {
+        "trakt": 2711814,
+        "tvdb": 6288202,
+        "imdb": "tt6674504",
+        "tmdb": 1369085,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457263,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 2,
+      "title": "The Retraction Reaction",
+      "ids": {
+        "trakt": 2705687,
+        "tvdb": 6277743,
+        "imdb": "tt6674506",
+        "tmdb": 1369083,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457262,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 11,
+      "number": 1,
+      "title": "The Proposal Proposal",
+      "ids": {
+        "trakt": 2543344,
+        "tvdb": 6112057,
+        "imdb": "tt6673774",
+        "tmdb": 1343852,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457261,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 24,
+      "title": "The Long Distance Dissonance",
+      "ids": {
+        "trakt": 2536990,
+        "tvdb": 6026836,
+        "imdb": "tt6706254",
+        "tmdb": 1303313,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457260,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 23,
+      "title": "The Gyroscopic Collapse",
+      "ids": {
+        "trakt": 2536989,
+        "tvdb": 6026835,
+        "imdb": "tt6706250",
+        "tmdb": 1303312,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457259,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 22,
+      "title": "The Cognition Regeneration",
+      "ids": {
+        "trakt": 2536988,
+        "tvdb": 6026834,
+        "imdb": "tt6565530",
+        "tmdb": 1303311,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457258,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 21,
+      "title": "The Separation Agitation",
+      "ids": {
+        "trakt": 2530511,
+        "tvdb": 6016356,
+        "imdb": "tt6565524",
+        "tmdb": 1297790,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457257,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 20,
+      "title": "The Recollection Dissipation",
+      "ids": {
+        "trakt": 2524003,
+        "tvdb": 6005941,
+        "imdb": "tt6565516",
+        "tmdb": 1296166,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457256,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 19,
+      "title": "The Collaboration Fluctuation",
+      "ids": {
+        "trakt": 2502157,
+        "tvdb": 5975781,
+        "imdb": "tt6565514",
+        "tmdb": 1285746,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457255,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 18,
+      "title": "The Escape Hatch Identification",
+      "ids": {
+        "trakt": 2492472,
+        "tvdb": 5963134,
+        "imdb": "tt6565510",
+        "tmdb": 1279264,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457254,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 17,
+      "title": "The Comic-Con Conundrum",
+      "ids": {
+        "trakt": 2486713,
+        "tvdb": 5952327,
+        "imdb": "tt6527026",
+        "tmdb": 1270566,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457253,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 16,
+      "title": "The Allowance Evaporation",
+      "ids": {
+        "trakt": 2478976,
+        "tvdb": 5939843,
+        "imdb": "tt6495864",
+        "tmdb": 1270524,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457252,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 15,
+      "title": "The Locomotion Reverberation",
+      "ids": {
+        "trakt": 2473985,
+        "tvdb": 5933590,
+        "imdb": "tt6438684",
+        "tmdb": 1258774,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457251,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 14,
+      "title": "The Emotion Detection Automation",
+      "ids": {
+        "trakt": 2458599,
+        "tvdb": 5911146,
+        "imdb": "tt6414316",
+        "tmdb": 1258773,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457250,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 13,
+      "title": "The Romance Recalibration",
+      "ids": {
+        "trakt": 2434892,
+        "tvdb": 5880148,
+        "imdb": "tt6337212",
+        "tmdb": 1254471,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457248,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 12,
+      "title": "The Holiday Summation",
+      "ids": {
+        "trakt": 2421973,
+        "tvdb": 5864719,
+        "imdb": "tt6320950",
+        "tmdb": 1252065,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457247,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 11,
+      "title": "The Birthday Synchronicity",
+      "ids": {
+        "trakt": 2322321,
+        "tvdb": 5852363,
+        "imdb": "tt6255770",
+        "tmdb": 1247340,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457246,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 10,
+      "title": "The Property Division Collision",
+      "ids": {
+        "trakt": 2322318,
+        "tvdb": 5821331,
+        "imdb": "tt6255718",
+        "tmdb": 1242471,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457245,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 9,
+      "title": "The Geology Elevation",
+      "ids": {
+        "trakt": 2322310,
+        "tvdb": 5818673,
+        "imdb": "tt6214960",
+        "tmdb": 1240547,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457244,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 8,
+      "title": "The Brain Bowl Incubation",
+      "ids": {
+        "trakt": 2322308,
+        "tvdb": 5788094,
+        "imdb": "tt6189462",
+        "tmdb": 1237227,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457243,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 7,
+      "title": "The Veracity Elasticity",
+      "ids": {
+        "trakt": 2313223,
+        "tvdb": 5787224,
+        "imdb": "tt6186420",
+        "tmdb": 1236541,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457241,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 6,
+      "title": "The Fetal Kick Catalyst",
+      "ids": {
+        "trakt": 2313222,
+        "tvdb": 5779076,
+        "imdb": "tt5825290",
+        "tmdb": 1231939,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457240,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 5,
+      "title": "The Hot Tub Contamination",
+      "ids": {
+        "trakt": 2313216,
+        "tvdb": 5728929,
+        "imdb": "tt6077690",
+        "tmdb": 1229980,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457239,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 4,
+      "title": "The Cohabitation Experimentation",
+      "ids": {
+        "trakt": 2298781,
+        "tvdb": 5728928,
+        "imdb": "tt6062772",
+        "tmdb": 1229282,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457237,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 3,
+      "title": "The Dependence Transcendence",
+      "ids": {
+        "trakt": 2298780,
+        "tvdb": 5723041,
+        "imdb": "tt5996928",
+        "tmdb": 1221933,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457235,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 2,
+      "title": "The Military Miniaturization",
+      "ids": {
+        "trakt": 2267810,
+        "tvdb": 5714255,
+        "imdb": "tt5973910",
+        "tmdb": 1221932,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457234,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 10,
+      "number": 1,
+      "title": "The Conjugal Conjecture",
+      "ids": {
+        "trakt": 2244839,
+        "tvdb": 5654968,
+        "imdb": "tt3603372",
+        "tmdb": 1221931,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457233,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 24,
+      "title": "The Convergence Convergence",
+      "ids": {
+        "trakt": 2184694,
+        "tvdb": 5580583,
+        "imdb": "tt5562854",
+        "tmdb": 1189556,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457232,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 23,
+      "title": "The Line Substitution Solution",
+      "ids": {
+        "trakt": 2184693,
+        "tvdb": 5579744,
+        "imdb": "tt5597960",
+        "tmdb": 1189555,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457231,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 22,
+      "title": "The Fermentation Bifurcation",
+      "ids": {
+        "trakt": 2184692,
+        "tvdb": 5573269,
+        "imdb": "tt5597958",
+        "tmdb": 1187582,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457230,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 21,
+      "title": "The Viewing Party Combustion",
+      "ids": {
+        "trakt": 2184691,
+        "tvdb": 5556823,
+        "imdb": "tt5586050",
+        "tmdb": 1179058,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457229,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 20,
+      "title": "The Big Bear Precipitation",
+      "ids": {
+        "trakt": 2181271,
+        "tvdb": 5551964,
+        "imdb": "tt5586046",
+        "tmdb": 1179057,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457228,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 19,
+      "title": "The Solder Excursion Diversion",
+      "ids": {
+        "trakt": 2169547,
+        "tvdb": 5537607,
+        "imdb": "tt5522908",
+        "tmdb": 1173421,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457227,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 18,
+      "title": "The Application Deterioration",
+      "ids": {
+        "trakt": 2162795,
+        "tvdb": 5529050,
+        "imdb": "tt5497250",
+        "tmdb": 1173420,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457226,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 17,
+      "title": "The Celebration Experimentation",
+      "ids": {
+        "trakt": 2145521,
+        "tvdb": 5507659,
+        "imdb": "tt5436356",
+        "tmdb": 1165278,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457225,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 16,
+      "title": "The Positive Negative Reaction",
+      "ids": {
+        "trakt": 2140009,
+        "tvdb": 5499997,
+        "imdb": "tt5376678",
+        "tmdb": 1163453,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457224,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 15,
+      "title": "The Valentino Submergence",
+      "ids": {
+        "trakt": 2130037,
+        "tvdb": 5487474,
+        "imdb": "tt5341496",
+        "tmdb": 1160735,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457223,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 14,
+      "title": "The Meemaw Materialization",
+      "ids": {
+        "trakt": 2121704,
+        "tvdb": 5479688,
+        "imdb": "tt5295650",
+        "tmdb": 1157668,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457222,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 13,
+      "title": "The Empathy Optimization",
+      "ids": {
+        "trakt": 2087315,
+        "tvdb": 5442484,
+        "imdb": "tt5273740",
+        "tmdb": 1149676,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457221,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 12,
+      "title": "The Sales Call Sublimation",
+      "ids": {
+        "trakt": 2081130,
+        "tvdb": 5436033,
+        "imdb": "tt5273742",
+        "tmdb": 1149672,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457220,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 11,
+      "title": "The Opening Night Excitation",
+      "ids": {
+        "trakt": 2058961,
+        "tvdb": 5406713,
+        "imdb": "tt5143516",
+        "tmdb": 1147325,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457219,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 10,
+      "title": "The Earworm Reverberation",
+      "ids": {
+        "trakt": 2052057,
+        "tvdb": 5398852,
+        "imdb": "tt5143508",
+        "tmdb": 1136314,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457218,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 9,
+      "title": "The Platonic Permutation",
+      "ids": {
+        "trakt": 2040192,
+        "tvdb": 5384384,
+        "imdb": "tt5143500",
+        "tmdb": 1135344,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457217,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 8,
+      "title": "The Mystery Date Observation",
+      "ids": {
+        "trakt": 2034709,
+        "tvdb": 5378695,
+        "imdb": "tt5117928",
+        "tmdb": 1135343,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457216,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 7,
+      "title": "The Spock Resonance",
+      "ids": {
+        "trakt": 1998592,
+        "tvdb": 5341206,
+        "imdb": "tt5073156",
+        "tmdb": 1112200,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457215,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 6,
+      "title": "The Helium Insufficiency",
+      "ids": {
+        "trakt": 1998590,
+        "tvdb": 5341207,
+        "imdb": "tt5090816",
+        "tmdb": 1131419,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457213,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 5,
+      "title": "The Perspiration Implementation",
+      "ids": {
+        "trakt": 1994271,
+        "tvdb": 5336345,
+        "imdb": "tt5027380",
+        "tmdb": 1112199,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457212,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 4,
+      "title": "The 2003 Approximation",
+      "ids": {
+        "trakt": 1990453,
+        "tvdb": 5333194,
+        "imdb": "tt4995126",
+        "tmdb": 1112198,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457211,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 3,
+      "title": "The Bachelor Party Corrosion",
+      "ids": {
+        "trakt": 1971269,
+        "tvdb": 5316861,
+        "imdb": "tt4962326",
+        "tmdb": 1105616,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457210,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 2,
+      "title": "The Separation Oscillation",
+      "ids": {
+        "trakt": 1965697,
+        "tvdb": 5312556,
+        "imdb": "tt4938690",
+        "tmdb": 1105615,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457209,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 9,
+      "number": 1,
+      "title": "The Matrimonial Momentum",
+      "ids": {
+        "trakt": 1860456,
+        "tvdb": 5248007,
+        "imdb": "tt3603346",
+        "tmdb": 1105614,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457208,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 24,
+      "title": "The Commitment Determination",
+      "ids": {
+        "trakt": 1765395,
+        "tvdb": 5173432,
+        "imdb": "tt3862738",
+        "tmdb": 1050576,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457207,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 23,
+      "title": "The Maternal Combustion",
+      "ids": {
+        "trakt": 1765394,
+        "tvdb": 5173431,
+        "imdb": "tt3862734",
+        "tmdb": 1050575,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457206,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 22,
+      "title": "The Graduation Transmission",
+      "ids": {
+        "trakt": 1765393,
+        "tvdb": 5173430,
+        "imdb": "tt3862732",
+        "tmdb": 1050574,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457205,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 21,
+      "title": "The Communication Deterioration",
+      "ids": {
+        "trakt": 1765392,
+        "tvdb": 5169863,
+        "imdb": "tt3862728",
+        "tmdb": 1050573,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457204,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 20,
+      "title": "The Fortification Implementation",
+      "ids": {
+        "trakt": 1765391,
+        "tvdb": 5155402,
+        "imdb": "tt3862726",
+        "tmdb": 1046726,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457203,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 19,
+      "title": "The Skywalker Incursion",
+      "ids": {
+        "trakt": 1765390,
+        "tvdb": 5149888,
+        "imdb": "tt3862724",
+        "tmdb": 1046725,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457202,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 18,
+      "title": "The Leftover Thermalization",
+      "ids": {
+        "trakt": 1763644,
+        "tvdb": 5135832,
+        "imdb": "tt3862722",
+        "tmdb": 1044789,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457201,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 17,
+      "title": "The Colonization Application",
+      "ids": {
+        "trakt": 1754505,
+        "tvdb": 5127444,
+        "imdb": "tt3862720",
+        "tmdb": 1044145,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457199,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 16,
+      "title": "The Intimacy Acceleration",
+      "ids": {
+        "trakt": 1726181,
+        "tvdb": 5110663,
+        "imdb": "tt3862714",
+        "tmdb": 1041629,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457198,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 15,
+      "title": "The Comic Book Store Regeneration",
+      "ids": {
+        "trakt": 1726180,
+        "tvdb": 5110662,
+        "imdb": "tt3862710",
+        "tmdb": 1041899,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457196,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 14,
+      "title": "The Troll Manifestation",
+      "ids": {
+        "trakt": 1723953,
+        "tvdb": 5108937,
+        "imdb": "tt3862712",
+        "tmdb": 1039676,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457195,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 13,
+      "title": "The Anxiety Optimization",
+      "ids": {
+        "trakt": 1405050,
+        "tvdb": 5077937,
+        "imdb": "tt3862708",
+        "tmdb": 1031868,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457194,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 12,
+      "title": "The Space Probe Disintegration",
+      "ids": {
+        "trakt": 1392148,
+        "tvdb": 5066301,
+        "imdb": "tt3823254",
+        "tmdb": 1023703,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457193,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 11,
+      "title": "The Clean Room Infiltration",
+      "ids": {
+        "trakt": 1392147,
+        "tvdb": 5049225,
+        "imdb": "tt3823252",
+        "tmdb": 1019131,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457192,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 10,
+      "title": "The Champagne Reflection",
+      "ids": {
+        "trakt": 1392146,
+        "tvdb": 5039499,
+        "imdb": "tt3823250",
+        "tmdb": 1018201,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457190,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 9,
+      "title": "The Septum Deviation",
+      "ids": {
+        "trakt": 1392145,
+        "tvdb": 5033323,
+        "imdb": "tt3823248",
+        "tmdb": 1016510,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457189,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 8,
+      "title": "The Prom Equivalency",
+      "ids": {
+        "trakt": 1392144,
+        "tvdb": 5002091,
+        "imdb": "tt3823242",
+        "tmdb": 1012428,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457188,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 7,
+      "title": "The Misinterpretation Agitation",
+      "ids": {
+        "trakt": 75534,
+        "tvdb": 5021431,
+        "imdb": "tt3823244",
+        "tmdb": 1001385,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457187,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 6,
+      "title": "The Expedition Approximation",
+      "ids": {
+        "trakt": 75533,
+        "tvdb": 4997387,
+        "imdb": "tt3823240",
+        "tmdb": 1001384,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457186,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 5,
+      "title": "The Focus Attenuation",
+      "ids": {
+        "trakt": 75532,
+        "tvdb": 4997386,
+        "imdb": "tt3811816",
+        "tmdb": 1001383,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457185,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 4,
+      "title": "The Hook-Up Reverberation",
+      "ids": {
+        "trakt": 75531,
+        "tvdb": 4996845,
+        "imdb": "tt3811814",
+        "tmdb": 1001382,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457184,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 3,
+      "title": "The First Pitch Insufficiency",
+      "ids": {
+        "trakt": 75530,
+        "tvdb": 4917011,
+        "imdb": "tt3811812",
+        "tmdb": 1001381,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457183,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 2,
+      "title": "The Junior Professor Solution",
+      "ids": {
+        "trakt": 75529,
+        "tvdb": 4917010,
+        "imdb": "tt3807172",
+        "tmdb": 1000641,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457182,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 8,
+      "number": 1,
+      "title": "The Locomotion Interruption",
+      "ids": {
+        "trakt": 75528,
+        "tvdb": 4917009,
+        "imdb": "tt3596130",
+        "tmdb": 1000640,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457181,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 24,
+      "title": "The Status Quo Combustion",
+      "ids": {
+        "trakt": 75527,
+        "tvdb": 4840954,
+        "imdb": "tt3572184",
+        "tmdb": 975625,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457180,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 23,
+      "title": "The Gorilla Dissolution",
+      "ids": {
+        "trakt": 75526,
+        "tvdb": 4840953,
+        "imdb": "tt3572182",
+        "tmdb": 975272,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457179,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 22,
+      "title": "The Proton Transmogrification",
+      "ids": {
+        "trakt": 75525,
+        "tvdb": 4840952,
+        "imdb": "tt3572176",
+        "tmdb": 974378,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457178,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 21,
+      "title": "The Anything Can Happen Recurrence",
+      "ids": {
+        "trakt": 75524,
+        "tvdb": 4840951,
+        "imdb": "tt3572170",
+        "tmdb": 974377,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457177,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 20,
+      "title": "The Relationship Diremption",
+      "ids": {
+        "trakt": 75523,
+        "tvdb": 4840057,
+        "imdb": "tt3554854",
+        "tmdb": 973988,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457176,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 19,
+      "title": "The Indecision Amalgamation",
+      "ids": {
+        "trakt": 75522,
+        "tvdb": 4792593,
+        "imdb": "tt3521964",
+        "tmdb": 973688,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457175,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 18,
+      "title": "The Mommy Observation",
+      "ids": {
+        "trakt": 75521,
+        "tvdb": 4792592,
+        "imdb": "tt3517894",
+        "tmdb": 973094,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457174,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 17,
+      "title": "The Friendship Turbulence",
+      "ids": {
+        "trakt": 75520,
+        "tvdb": 4792591,
+        "imdb": "tt3521962",
+        "tmdb": 972676,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457173,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 16,
+      "title": "The Table Polarization",
+      "ids": {
+        "trakt": 75519,
+        "tvdb": 4783271,
+        "imdb": "tt3507240",
+        "tmdb": 972131,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457172,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 15,
+      "title": "The Locomotive Manipulation",
+      "ids": {
+        "trakt": 75518,
+        "tvdb": 4773931,
+        "imdb": "tt3477310",
+        "tmdb": 971376,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457170,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 14,
+      "title": "The Convention Conundrum",
+      "ids": {
+        "trakt": 75517,
+        "tvdb": 4764530,
+        "imdb": "tt3453320",
+        "tmdb": 971295,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457169,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 13,
+      "title": "The Occupation Recalibration",
+      "ids": {
+        "trakt": 75516,
+        "tvdb": 4749334,
+        "imdb": "tt3337730",
+        "tmdb": 970481,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457168,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 12,
+      "title": "The Hesitation Ramification",
+      "ids": {
+        "trakt": 75515,
+        "tvdb": 4720502,
+        "imdb": "tt3337728",
+        "tmdb": 969409,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457167,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 11,
+      "title": "The Cooper Extraction",
+      "ids": {
+        "trakt": 75514,
+        "tvdb": 4720503,
+        "imdb": "tt3337724",
+        "tmdb": 969334,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457166,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 10,
+      "title": "The Discovery Dissipation",
+      "ids": {
+        "trakt": 75513,
+        "tvdb": 4714074,
+        "imdb": "tt3338358",
+        "tmdb": 968871,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457165,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 9,
+      "title": "The Thanksgiving Decoupling",
+      "ids": {
+        "trakt": 75512,
+        "tvdb": 4705246,
+        "imdb": "tt3309570",
+        "tmdb": 968153,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457164,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 8,
+      "title": "The Itchy Brain Simulation",
+      "ids": {
+        "trakt": 75511,
+        "tvdb": 4700015,
+        "imdb": "tt3303726",
+        "tmdb": 966296,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457163,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 7,
+      "title": "The Proton Displacement",
+      "ids": {
+        "trakt": 75510,
+        "tvdb": 4694392,
+        "imdb": "tt3229396",
+        "tmdb": 966295,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457161,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 6,
+      "title": "The Romance Resonance",
+      "ids": {
+        "trakt": 75509,
+        "tvdb": 4668380,
+        "imdb": "tt3229394",
+        "tmdb": 966293,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457160,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 5,
+      "title": "The Workplace Proximity",
+      "ids": {
+        "trakt": 75508,
+        "tvdb": 4668379,
+        "imdb": "tt3229392",
+        "tmdb": 64782,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457159,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 4,
+      "title": "The Raiders Minimization",
+      "ids": {
+        "trakt": 75507,
+        "tvdb": 4635787,
+        "imdb": "tt3221722",
+        "tmdb": 64780,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457158,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 3,
+      "title": "The Scavenger Vortex",
+      "ids": {
+        "trakt": 75506,
+        "tvdb": 4635786,
+        "imdb": "tt3218670",
+        "tmdb": 64779,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457157,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 2,
+      "title": "The Deception Verification",
+      "ids": {
+        "trakt": 75505,
+        "tvdb": 4623192,
+        "imdb": "tt2933998",
+        "tmdb": 64781,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457156,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 7,
+      "number": 1,
+      "title": "The Hofstadter Insufficiency",
+      "ids": {
+        "trakt": 75504,
+        "tvdb": 4594867,
+        "imdb": "tt3111660",
+        "tmdb": 64778,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457155,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 6,
+      "number": 24,
+      "title": "The Bon Voyage Reaction",
+      "ids": {
+        "trakt": 75503,
+        "tvdb": 4516560,
+        "imdb": "tt2891288",
+        "tmdb": 64759,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457154,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 6,
+      "number": 23,
+      "title": "The Love Spell Potential",
+      "ids": {
+        "trakt": 75502,
+        "tvdb": 4516559,
+        "imdb": "tt2852720",
+        "tmdb": 64760,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457153,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 6,
+      "number": 22,
+      "title": "The Proton Resurgence",
+      "ids": {
+        "trakt": 75501,
+        "tvdb": 4516558,
+        "imdb": "tt2833352",
+        "tmdb": 64761,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "id": 12022457152,
+    "watched_at": "2026-02-15T15:11:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 6,
+      "number": 21,
+      "title": "The Closure Alternative",
+      "ids": {
+        "trakt": 75500,
+        "tvdb": 4516557,
+        "imdb": "tt2833366",
+        "tmdb": 64758,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "The Big Bang Theory",
+      "year": 2007,
+      "ids": {
+        "trakt": 1409,
+        "slug": "the-big-bang-theory",
+        "tvdb": 80379,
+        "imdb": "tt0898266",
+        "tmdb": 1418,
+        "tvrage": null
+      }
+    }
+  }
+]

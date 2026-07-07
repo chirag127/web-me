@@ -137,9 +137,13 @@ async function fetchListenBrainz() {
 
 async function fetchTrakt() {
   if (!TRAKT_ID) { console.log('  ⚠ TRAKT_CLIENT_ID not set — skipping Trakt'); return }
-  // Use Bearer token if available (required for private user data), fall back to client-id-only
-  const h: Record<string,string> = { 'trakt-api-version': '2', 'trakt-api-key': TRAKT_ID }
-  if (TRAKT_TOKEN) h['Authorization'] = `Bearer ${TRAKT_TOKEN}`
+  // Client-id only — profile is public so no Bearer needed.
+  // User-Agent required: Cloudflare blocks Node's default undici UA with 403.
+  const h: Record<string,string> = {
+    'trakt-api-version': '2',
+    'trakt-api-key': TRAKT_ID,
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+  }
   const base = `https://api.trakt.tv/users/${TRAKT_USER}`
 
   const [historyMovies, historyShows, watchlist, stats] = await Promise.all([
@@ -152,7 +156,7 @@ async function fetchTrakt() {
   save('trakt-movies.json',    Array.isArray(historyMovies) ? historyMovies : [])
   save('trakt-shows.json',     Array.isArray(historyShows) ? historyShows : [])
   save('trakt-watchlist.json', Array.isArray(watchlist) ? watchlist : [])
-  save('trakt-stats.json',     historyMovies ? stats : {})
+  save('trakt-stats.json',     stats ?? {})
 }
 
 // TMDB base image URL
@@ -403,18 +407,20 @@ async function main() {
   console.log(`  DISCORD_USER_ID:       ${DISCORD_ID}`)
   console.log()
 
+  // Trakt must complete before TMDB enrichment reads its output files
   await Promise.allSettled([
     fetchLastfm().then(() => console.log('✅ Last.fm done')).catch(e => console.error('❌ Last.fm', e.message)),
     fetchListenBrainz().then(() => console.log('✅ ListenBrainz done')).catch(e => console.error('❌ ListenBrainz', e.message)),
-    fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message)),
     fetchMAL().then(() => console.log('✅ MAL done')).catch(e => console.error('❌ MAL', e.message)),
     fetchHardcover().then(() => console.log('✅ Hardcover done')).catch(e => console.error('❌ Hardcover', e.message)),
-    fetchTMDB().then(() => console.log('✅ TMDB done')).catch(e => console.error('❌ TMDB', e.message)),
     fetchGitHub().then(() => console.log('✅ GitHub done')).catch(e => console.error('❌ GitHub', e.message)),
     fetchNpm().then(() => console.log('✅ npm done')).catch(e => console.error('❌ npm', e.message)),
     fetchLanyard().then(() => console.log('✅ Lanyard done')).catch(e => console.error('❌ Lanyard', e.message)),
     fetchBlog().then(() => console.log('✅ Blog RSS done')).catch(e => console.error('❌ Blog', e.message)),
   ])
+  // Trakt first, then TMDB (enrichment reads trakt-*.json)
+  await fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message))
+  await fetchTMDB().then(() => console.log('✅ TMDB done')).catch(e => console.error('❌ TMDB', e.message))
 
   const elapsed = ((Date.now() - start) / 1000).toFixed(1)
   const files = (await import('fs')).readdirSync(DATA_DIR).filter(f => f.endsWith('.json'))
