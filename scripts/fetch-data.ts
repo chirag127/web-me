@@ -185,6 +185,7 @@ async function fetchHardcover() {
           title
           slug
           image { url }
+          isbn_13
           contributions(limit: 1) { author { name } }
         }
       }
@@ -199,14 +200,18 @@ async function fetchHardcover() {
 
   const books: any[] = (result as any)?.data?.me?.[0]?.user_books ?? []
 
-  const shape = (b: any) => ({
-    title:   b.book?.title ?? '',
-    slug:    b.book?.slug ?? '',
-    cover:   b.book?.image?.url ?? '',
-    author:  b.book?.contributions?.[0]?.author?.name ?? '',
-    rating:  b.rating,
-    updated: b.updated_at,
-  })
+  const shape = (b: any) => {
+    const cover = b.book?.image?.url
+      || (b.book?.isbn_13 ? `https://covers.openlibrary.org/b/isbn/${b.book.isbn_13}-M.jpg` : '')
+    return {
+      title:   b.book?.title ?? '',
+      slug:    b.book?.slug ?? '',
+      cover,
+      author:  b.book?.contributions?.[0]?.author?.name ?? '',
+      rating:  b.rating,
+      updated: b.updated_at,
+    }
+  }
 
   save('hardcover-reading.json',  books.filter(b => b.status_id === 2).map(shape))
   save('hardcover-read.json',     books.filter(b => b.status_id === 3).map(shape))
