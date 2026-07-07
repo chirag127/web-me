@@ -127,22 +127,16 @@ export async function getLastfmUserInfo() {
 }
 
 export async function getGoodreadsShelf(shelf = 'currently-reading') {
-  return safe(async () => {
-    const r = await fetch(`https://www.goodreads.com/review/list/${GR_ID}.xml?shelf=${shelf}&sort=date_updated&per_page=10`)
+  // Goodreads XML API deprecated (401). Use Hardcover instead.
+  return []
+}
+
+export async function getHardcoverBooks(status: 'reading' | 'read' | 'want' | 'dnf' = 'reading') {
+  try {
+    const r = await fetch(`/data/hardcover-${status}.json`)
     if (!r.ok) return []
-    const xml = await r.text()
-    const books: any[] = []
-    const items = xml.match(/<review>[\s\S]*?<\/review>/g) ?? []
-    for (const item of items.slice(0, 10)) {
-      const title  = item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/)?.[1] ?? ''
-      const author = item.match(/<name><!\[CDATA\[(.*?)\]\]><\/name>/)?.[1] ?? ''
-      const cover  = item.match(/<image_url>(.*?)<\/image_url>/)?.[1] ?? ''
-      const link   = item.match(/<link><!\[CDATA\[(.*?)\]\]><\/link>/)?.[1] ?? ''
-      const rating = item.match(/<rating>(\d)<\/rating>/)?.[1]
-      if (title) books.push({ title, author, cover, shelf, rating, link })
-    }
-    return books
-  }, [])
+    return r.json()
+  } catch { return [] }
 }
 
 export async function getGitHubStats() {

@@ -1,24 +1,30 @@
 ---
 /*
- * API (currently-reading): https://www.goodreads.com/review/list/132482257.xml?shelf=currently-reading&sort=date_updated&per_page=10
- * API (read): https://www.goodreads.com/review/list/132482257.xml?shelf=read&sort=date_read&per_page=100
- * Goodreads profile: https://www.goodreads.com/user/show/132482257-chirag-singhal
+ * API: https://api.hardcover.app/v1/graphql
+ * GraphQL query: me { user_books(limit:500) { status_id rating updated_at book { title slug image { url } contributions { author { name } } } } }
+ * status_id: 1=want-to-read, 2=currently-reading, 3=read, 4=did-not-finish
+ * Data pre-fetched to: public/data/hardcover-*.json
+ * Hardcover profile: https://hardcover.app/@chirag127
  */
 import Layout from '~/layouts/Layout.astro'
-import { getGoodreadsShelf } from '~/lib/api'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-const [reading, read, wantToRead] = await Promise.all([
-  getGoodreadsShelf('currently-reading'),
-  getGoodreadsShelf('read'),
-  getGoodreadsShelf('to-read'),
-])
+function loadJson(name: string) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', name), 'utf-8')) }
+  catch { return [] }
+}
+
+const reading   = loadJson('hardcover-reading.json')
+const read      = loadJson('hardcover-read.json')
+const wantToRead = loadJson('hardcover-want.json')
 ---
 
 <Layout title="Books" active="/library/books/">
   <div class="page-header">
     <div class="kicker">LIBRARY · BOOKS</div>
     <h1>Books</h1>
-    <p class="muted">via <a href="https://www.goodreads.com/user/show/132482257-chirag-singhal" target="_blank" rel="noopener">Goodreads ↗</a></p>
+    <p class="muted">via <a href="https://hardcover.app/@chirag127" target="_blank" rel="noopener">Hardcover ↗</a></p>
   </div>
 
   <div class="stats-row">
@@ -29,12 +35,13 @@ const [reading, read, wantToRead] = await Promise.all([
     <div class="stat"><span class="val">{wantToRead.length}</span><span class="lbl">WANT TO READ</span></div>
   </div>
 
-  {reading.length > 0 && (
+  {reading.length > 0 ? (
     <>
       <div class="kicker" style="margin-bottom:0.5rem">CURRENTLY READING</div>
       <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:1.5rem">
         {reading.map((b: any) => (
-          <a href={b.link} target="_blank" rel="noopener" class="book-row">
+          <a href={`https://hardcover.app/books/${b.slug}`} target="_blank" rel="noopener" class="book-row">
+            {b.cover && <img src={b.cover} alt={b.title} class="book-cover" loading="lazy" />}
             <div>
               <div class="book-title">{b.title}</div>
               <div class="book-author">{b.author}</div>
@@ -43,6 +50,8 @@ const [reading, read, wantToRead] = await Promise.all([
         ))}
       </div>
     </>
+  ) : (
+    <p class="muted" style="margin-bottom:1.5rem">No books in progress · <a href="https://hardcover.app/@chirag127" target="_blank" rel="noopener">Add on Hardcover ↗</a></p>
   )}
 
   <nav class="sub-nav">
@@ -59,11 +68,13 @@ const [reading, read, wantToRead] = await Promise.all([
   .val { font-family: var(--font-display, Outfit); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; }
   .lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
   .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
-  .book-row { display: block; padding: 8px 10px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); border-radius: 6px; text-decoration: none; transition: background 120ms; }
+  .book-row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); border-radius: 6px; text-decoration: none; transition: background 120ms; }
   .book-row:hover { background: rgba(255,255,255,0.04); }
+  .book-cover { width: 36px; height: 54px; border-radius: 3px; object-fit: cover; flex-shrink: 0; }
   .book-title { font-size: 0.875rem; color: var(--fg, #fff); }
   .book-author { font-size: 0.75rem; color: var(--muted, #71717a); margin-top: 1px; }
   .sub-nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
   .sub-nav a { font-size: 0.8rem; color: var(--muted, #71717a); text-decoration: none; }
   .sub-nav a:hover { color: #fff; }
+  .muted { color: var(--muted, #71717a); font-size: 0.85rem; }
 </style>

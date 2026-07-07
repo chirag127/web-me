@@ -29,7 +29,8 @@ const LASTFM_USER = process.env.LASTFM_USERNAME    ?? 'lastfmwhy'
 const LB_USER     = process.env.LISTENBRAINZ_USERNAME ?? 'chirag127'
 const GR_ID       = process.env.GOODREADS_USER_ID  ?? '132482257'
 const DISCORD_ID  = process.env.DISCORD_USER_ID    ?? '799956529847205898'
-const GH_USER     = 'chirag127'
+const HC_TOKEN    = process.env.HARDCOVER_TOKEN    ?? ''
+const HC_USER     = process.env.HARDCOVER_USERNAME ?? 'chirag127'
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -57,6 +58,22 @@ async function safeFetch(url: string, headers: Record<string, string> = {}): Pro
     return r.json()
   } catch (e: any) {
     console.warn(`    ⚠ Fetch failed: ${url} — ${e.message}`)
+    return null
+  }
+}
+
+async function safePost(url: string, headers: Record<string, string>, body: unknown): Promise<unknown> {
+  try {
+    const r = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...headers },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(20000),
+    })
+    if (!r.ok) { console.warn(`    ⚠ HTTP ${r.status}: ${url}`) ; return null }
+    return r.json()
+  } catch (e: any) {
+    console.warn(`    ⚠ Post failed: ${url} — ${e.message}`)
     return null
   }
 }
@@ -146,13 +163,55 @@ async function fetchMAL() {
 }
 
 async function fetchGoodreads() {
-  // Goodreads XML API deprecated — now returns 401.
-  // Fallback: save empty arrays so pages degrade gracefully.
-  // TODO: migrate to manual JSON list or Open Library API.
-  console.log('  ℹ Goodreads XML API deprecated (401) — saving empty data')
+  // Replaced by Hardcover (Goodreads XML API deprecated since 2020, returns 401)
+  console.log('  ℹ Goodreads deprecated — use Hardcover instead')
   save('goodreads-currently-reading.json', [])
   save('goodreads-read.json', [])
   save('goodreads-to-read.json', [])
+}
+
+async function fetchHardcover() {
+  // API: https://api.hardcover.app/v1/graphql
+  // GraphQL — status_id: 1=want-to-read, 2=currently-reading, 3=read, 4=did-not-finish
+  if (!HC_TOKEN) { console.log('  ⚠ HARDCOVER_TOKEN not set — skipping Hardcover'); return }
+
+  const query = `query {
+    me {
+      user_books(limit: 500, order_by: {updated_at: desc}) {
+        status_id
+        rating
+        updated_at
+        book {
+          title
+          slug
+          image { url }
+          contributions(limit: 1) { author { name } }
+        }
+      }
+    }
+  }`
+
+  const result = await safePost(
+    'https://api.hardcover.app/v1/graphql',
+    { authorization: `Bearer ${HC_TOKEN}` },
+    { query }
+  )
+
+  const books: any[] = (result as any)?.data?.me?.[0]?.user_books ?? []
+
+  const shape = (b: any) => ({
+    title:   b.book?.title ?? '',
+    slug:    b.book?.slug ?? '',
+    cover:   b.book?.image?.url ?? '',
+    author:  b.book?.contributions?.[0]?.author?.name ?? '',
+    rating:  b.rating,
+    updated: b.updated_at,
+  })
+
+  save('hardcover-reading.json',  books.filter(b => b.status_id === 2).map(shape))
+  save('hardcover-read.json',     books.filter(b => b.status_id === 3).map(shape))
+  save('hardcover-want.json',     books.filter(b => b.status_id === 1).map(shape))
+  save('hardcover-dnf.json',      books.filter(b => b.status_id === 4).map(shape))
 }
 
 async function fetchGitHub() {
@@ -204,7 +263,7 @@ async function main() {
   console.log(`  LASTFM_API_KEY:        ${LASTFM_KEY ? '✓ set' : '✗ missing'}`)
   console.log(`  LASTFM_USERNAME:       ${LASTFM_USER}`)
   console.log(`  LISTENBRAINZ_USERNAME: ${LB_USER}`)
-  console.log(`  GOODREADS_USER_ID:     ${GR_ID}`)
+  console.log(`  HARDCOVER_TOKEN:       ${HC_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  DISCORD_USER_ID:       ${DISCORD_ID}`)
   console.log()
 
@@ -213,7 +272,7 @@ async function main() {
     fetchListenBrainz().then(() => console.log('✅ ListenBrainz done')).catch(e => console.error('❌ ListenBrainz', e.message)),
     fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message)),
     fetchMAL().then(() => console.log('✅ MAL done')).catch(e => console.error('❌ MAL', e.message)),
-    fetchGoodreads().then(() => console.log('✅ Goodreads done')).catch(e => console.error('❌ Goodreads', e.message)),
+    fetchHardcover().then(() => console.log('✅ Hardcover done')).catch(e => console.error('❌ Hardcover', e.message)),
     fetchGitHub().then(() => console.log('✅ GitHub done')).catch(e => console.error('❌ GitHub', e.message)),
     fetchNpm().then(() => console.log('✅ npm done')).catch(e => console.error('❌ npm', e.message)),
     fetchLanyard().then(() => console.log('✅ Lanyard done')).catch(e => console.error('❌ Lanyard', e.message)),
