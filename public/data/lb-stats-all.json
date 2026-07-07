@@ -3,47 +3,57 @@
     {
       "artist_mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
       "artist_name": "Shawn Mendes",
-      "listen_count": 801
+      "listen_count": 843
     },
     {
       "artist_mbid": "e0140a67-e4d1-4f13-8a01-364355bee46e",
       "artist_name": "Justin Bieber",
-      "listen_count": 200
-    },
-    {
-      "artist_mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
-      "artist_name": "Bruno Mars",
-      "listen_count": 178
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "Troye Sivan",
-      "listen_count": 143
-    },
-    {
-      "artist_mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
-      "artist_name": "Charlie Puth",
-      "listen_count": 103
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "Justin Bieber",
-      "listen_count": 90
+      "listen_count": 240
     },
     {
       "artist_mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
       "artist_name": "Lauv",
-      "listen_count": 80
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "Shawn Mendes",
-      "listen_count": 79
+      "listen_count": 197
     },
     {
       "artist_mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
       "artist_name": "Troye Sivan",
-      "listen_count": 67
+      "listen_count": 184
+    },
+    {
+      "artist_mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
+      "artist_name": "Bruno Mars",
+      "listen_count": 183
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Troye Sivan",
+      "listen_count": 151
+    },
+    {
+      "artist_mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
+      "artist_name": "Charlie Puth",
+      "listen_count": 127
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Justin Bieber",
+      "listen_count": 98
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Shawn Mendes",
+      "listen_count": 87
+    },
+    {
+      "artist_mbid": "fb0c1ce1-a31b-4d30-aa68-0101213526c2",
+      "artist_name": "Omar Rudberg",
+      "listen_count": 66
+    },
+    {
+      "artist_mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
+      "artist_name": "Harry Styles",
+      "listen_count": 55
     },
     {
       "artist_mbid": null,
@@ -51,33 +61,33 @@
       "listen_count": 52
     },
     {
-      "artist_mbid": "fb0c1ce1-a31b-4d30-aa68-0101213526c2",
-      "artist_name": "Omar Rudberg",
-      "listen_count": 46
-    },
-    {
-      "artist_mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
-      "artist_name": "Harry Styles",
-      "listen_count": 45
-    },
-    {
       "artist_mbid": "bc153bd5-7963-4195-a6fb-c38588f31007",
       "artist_name": "Ruel",
-      "listen_count": 35
+      "listen_count": 43
     },
     {
       "artist_mbid": "b8a7c51f-362c-4dcb-a259-bc6e0095f0a6",
       "artist_name": "Ed Sheeran",
-      "listen_count": 35
+      "listen_count": 42
     },
     {
       "artist_mbid": "1a425bbd-cca4-4b2c-aeb7-71cb176c828a",
       "artist_name": "One Direction",
-      "listen_count": 34
+      "listen_count": 38
     },
     {
       "artist_mbid": null,
       "artist_name": "Ruel",
+      "listen_count": 33
+    },
+    {
+      "artist_mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
+      "artist_name": "Maroon 5",
+      "listen_count": 32
+    },
+    {
+      "artist_mbid": "28737730-ec70-4da5-89c5-77ac13c5c34d",
+      "artist_name": "Khalid",
       "listen_count": 31
     },
     {
@@ -86,28 +96,33 @@
       "listen_count": 28
     },
     {
-      "artist_mbid": "28737730-ec70-4da5-89c5-77ac13c5c34d",
-      "artist_name": "Khalid",
-      "listen_count": 27
-    },
-    {
-      "artist_mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
-      "artist_name": "Maroon 5",
-      "listen_count": 23
-    },
-    {
       "artist_mbid": "4757df70-6c3e-46b8-99c0-a68644595c9a",
       "artist_name": "Julia Michaels",
-      "listen_count": 23
+      "listen_count": 24
     },
     {
-      "artist_mbid": "7e9bd05a-117f-4cce-87bc-e011527a8b18",
-      "artist_name": "Miley Cyrus",
-      "listen_count": 21
+      "artist_mbid": "0d79fe8e-ba27-4859-bb8c-2f255f346853",
+      "artist_name": "BTS",
+      "listen_count": 23
     },
     {
       "artist_mbid": "0638ba22-040f-438d-83a5-9b670c4adaf5",
       "artist_name": "Ludacris",
+      "listen_count": 22
+    },
+    {
+      "artist_mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+      "artist_name": "Ariana Grande",
+      "listen_count": 22
+    },
+    {
+      "artist_mbid": "20244d07-534f-4eff-b4d4-930878889970",
+      "artist_name": "Taylor Swift",
+      "listen_count": 21
+    },
+    {
+      "artist_mbid": "7e9bd05a-117f-4cce-87bc-e011527a8b18",
+      "artist_name": "Miley Cyrus",
       "listen_count": 21
     },
     {
@@ -116,19 +131,24 @@
       "listen_count": 21
     },
     {
+      "artist_mbid": "ad322b8b-31b2-437d-8fd8-1af13c1d7b91",
+      "artist_name": "GIVĒON",
+      "listen_count": 20
+    },
+    {
       "artist_mbid": null,
       "artist_name": "Capitalmind",
       "listen_count": 20
     },
     {
-      "artist_mbid": "20244d07-534f-4eff-b4d4-930878889970",
-      "artist_name": "Taylor Swift",
-      "listen_count": 19
-    },
-    {
       "artist_mbid": null,
       "artist_name": "Mint",
       "listen_count": 19
+    },
+    {
+      "artist_mbid": "e4bc69e2-a064-4f93-ada1-f7f209cc1cc3",
+      "artist_name": "Selena Gomez",
+      "listen_count": 18
     },
     {
       "artist_mbid": null,
@@ -146,8 +166,8 @@
       "listen_count": 17
     },
     {
-      "artist_mbid": "ad322b8b-31b2-437d-8fd8-1af13c1d7b91",
-      "artist_name": "GIVĒON",
+      "artist_mbid": null,
+      "artist_name": "Charlie Puth",
       "listen_count": 17
     },
     {
@@ -156,8 +176,23 @@
       "listen_count": 17
     },
     {
+      "artist_mbid": "01b8b5bf-06cb-45da-85fb-61ada72fcd69",
+      "artist_name": "Camila Cabello",
+      "listen_count": 17
+    },
+    {
       "artist_mbid": null,
       "artist_name": "pranjal kamra",
+      "listen_count": 16
+    },
+    {
+      "artist_mbid": "6143403a-df6c-429e-8ee6-ef869896b0da",
+      "artist_name": "Quavo",
+      "listen_count": 16
+    },
+    {
+      "artist_mbid": "b46e298d-d3a5-4695-a03e-63e8c523b23e",
+      "artist_name": "Daniel Caesar",
       "listen_count": 16
     },
     {
@@ -166,8 +201,8 @@
       "listen_count": 16
     },
     {
-      "artist_mbid": null,
-      "artist_name": "Charlie Puth",
+      "artist_mbid": "91a81925-92f9-4fc9-b897-93cf01226282",
+      "artist_name": "The Chainsmokers",
       "listen_count": 15
     },
     {
@@ -181,6 +216,21 @@
       "listen_count": 14
     },
     {
+      "artist_mbid": "b2029169-2574-4305-820f-252a5fde3697",
+      "artist_name": "Meghan Trainor",
+      "listen_count": 14
+    },
+    {
+      "artist_mbid": "f1cc066a-6dd1-4b18-ae68-3708472ab4b1",
+      "artist_name": "LANY",
+      "listen_count": 14
+    },
+    {
+      "artist_mbid": "33cf3954-10af-4dcb-985f-9420d1fa4168",
+      "artist_name": "Dan + Shay",
+      "listen_count": 14
+    },
+    {
       "artist_mbid": null,
       "artist_name": "Common Stocks and Uncommon Profits",
       "listen_count": 14
@@ -191,72 +241,22 @@
       "listen_count": 14
     },
     {
-      "artist_mbid": "01b8b5bf-06cb-45da-85fb-61ada72fcd69",
-      "artist_name": "Camila Cabello",
-      "listen_count": 14
-    },
-    {
-      "artist_mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-      "artist_name": "Ariana Grande",
-      "listen_count": 14
-    },
-    {
-      "artist_mbid": "b2029169-2574-4305-820f-252a5fde3697",
-      "artist_name": "Meghan Trainor",
+      "artist_mbid": null,
+      "artist_name": "Young Royals",
       "listen_count": 13
     },
     {
-      "artist_mbid": "b46e298d-d3a5-4695-a03e-63e8c523b23e",
-      "artist_name": "Daniel Caesar",
+      "artist_mbid": "850a8b03-98a7-4fd3-afbd-5e5520b4ef5f",
+      "artist_name": "Conan Gray",
       "listen_count": 13
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "Why Congress is giving Freebies& MSP? How did Kerala's Crisis happen? ft Dr. Shashi Tharoor",
-      "listen_count": 12
-    },
-    {
-      "artist_mbid": "91a81925-92f9-4fc9-b897-93cf01226282",
-      "artist_name": "The Chainsmokers",
-      "listen_count": 12
-    },
-    {
-      "artist_mbid": "e4bc69e2-a064-4f93-ada1-f7f209cc1cc3",
-      "artist_name": "Selena Gomez",
-      "listen_count": 12
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "BOLLYWOOD SILVER SCREEN",
-      "listen_count": 12
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "Afasi & Filthy - Topic",
-      "listen_count": 12
-    },
-    {
-      "artist_mbid": "33cf3954-10af-4dcb-985f-9420d1fa4168",
-      "artist_name": "Dan + Shay",
-      "listen_count": 11
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "Lauv",
-      "listen_count": 10
-    },
-    {
-      "artist_mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533",
-      "artist_name": "Billie Eilish",
-      "listen_count": 10
     }
   ],
   "count": 50,
   "from_ts": 1009843200,
-  "last_updated": 1781652248,
+  "last_updated": 1783442077,
   "offset": 0,
   "range": "all_time",
-  "to_ts": 1781568044,
-  "total_artist_count": 1170,
+  "to_ts": 1783382448,
+  "total_artist_count": 1356,
   "user_id": "chirag127"
 }

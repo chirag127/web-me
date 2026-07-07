@@ -1,1 +1,15 @@
-null
+{
+  "playing_now": true,
+  "track_metadata": {
+    "additional_info": {
+      "duration_ms": 209000,
+      "recording_msid": "5f2f8700-4ccf-4608-84fa-6af6ff9f44c3",
+      "submission_client": "Pano Scrobbler",
+      "submission_client_version": "4.41"
+    },
+    "artist_name": "Lauv",
+    "release_name": "~how i’m feeling~",
+    "track_name": "Sad Forever"
+  },
+  "user_name": "chirag127"
+}

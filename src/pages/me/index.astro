@@ -1,30 +1,220 @@
 ---
 import Layout from '~/layouts/Layout.astro'
+
+const INTERESTS = [
+  'AI / LLMs',
+  'Open Source',
+  'Distributed Systems',
+  'PKM',
+  'Backend Engineering',
+  'Music',
+]
 ---
-<Layout title="About" description="Chirag Singhal — about me">
-  <div style="padding-top: 2rem; max-width: 600px;">
-    <h1 class="page-title">About</h1>
-    <p class="page-sub">Software engineer, open source contributor, builder.</p>
 
-    <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
-      <p style="font-size:13px;color:var(--t-secondary);line-height:1.7;">
-        Hi, I'm Chirag Singhal — a software engineer at TCS, building pricing engines and backend systems. I ship open source tools at oriz.in (192+ and counting), explore AI systems, and rank 1st in my university batch.
+<Layout title="About" description="Chirag Singhal — software engineer, open source builder">
+  <div class="me-root">
+
+    <div class="identity-row">
+      <div class="avatar" aria-hidden="true">CS</div>
+      <div class="identity-text">
+        <h1 class="identity-name">Chirag Singhal</h1>
+        <div class="identity-badges">
+          <span class="badge">Software Engineer @ TCS</span>
+          <span class="badge badge-emerald">Available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bio">
+      <p>
+        Software engineer at TCS building pricing engines and backend systems.
+        I ship open source tools and apps at oriz.in — 192+ and counting —
+        across AI integrations, distributed systems, and developer tooling.
       </p>
-      <p style="font-size:13px;color:var(--t-secondary);line-height:1.7;">
-        I work across the full stack — Python, TypeScript, React, Astro, FastAPI, Docker, Kubernetes — with a focus on backend performance, AI integrations, and developer tooling.
+      <p>
+        Ranked #1 in my university batch (AKTU 2025, 8.81 CGPA) and AWS certified.
+        I work across the full stack — Python, TypeScript, React, FastAPI, Docker,
+        Kubernetes — with a focus on backend performance and AI systems.
       </p>
     </div>
 
-    <div style="display:flex;flex-direction:column;gap:4px;">
-      {[
-        { href: '/me/gear',       label: 'Gear',       desc: 'Hardware + software setup' },
-        { href: '/me/philosophy', label: 'Philosophy', desc: '7 engineering principles' },
-      ].map(l => (
-        <a href={l.href} style="display:flex;align-items:center;justify-content:space-between;height:40px;padding:0 12px;border-radius:6px;border:1px solid var(--border);background:var(--surface);text-decoration:none;">
-          <span style="font-size:13px;color:#fff;">{l.label}</span>
-          <span style="font-size:12px;color:var(--t-muted);">{l.desc} →</span>
+    <section class="section">
+      <p class="kicker section-kicker">EDUCATION</p>
+      <div class="edu-grid">
+        <div class="card">
+          <div class="stat-number">8.81</div>
+          <div class="stat-label">CGPA</div>
+          <div class="edu-name">AKTU · B.Tech CSE</div>
+          <span class="badge badge-amber">Rank #1 · Batch 2025</span>
+        </div>
+        <div class="card">
+          <div class="stat-number">97%</div>
+          <div class="stat-label">CLASS XII</div>
+          <div class="edu-name">CBSE · Science</div>
+          <span class="badge badge-amber">JEE Advanced Top 1%</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="kicker section-kicker">INTERESTS</p>
+      <div class="chip-row">
+        {INTERESTS.map(i => <span class="chip">{i}</span>)}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="nav-grid">
+        <a href="/me/philosophy" class="card card-glow nav-card">
+          <div class="nav-card-title">Philosophy →</div>
+          <p class="nav-card-desc">7 engineering principles I live by</p>
         </a>
-      ))}
-    </div>
+        <a href="/me/gear" class="card card-glow nav-card">
+          <div class="nav-card-title">Gear →</div>
+          <p class="nav-card-desc">Hardware & software setup</p>
+        </a>
+      </div>
+    </section>
+
   </div>
 </Layout>
+
+<style>
+  .me-root {
+    padding-top: 2rem;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Identity */
+  .identity-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--indigo), #7c3aed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  .identity-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .identity-name {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--t-1);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .identity-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  /* Bio */
+  .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .bio p {
+    font-size: 15px;
+    color: var(--t-2);
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  /* Sections */
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-kicker {
+    margin: 0;
+  }
+
+  /* Education */
+  .edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .edu-name {
+    font-size: 13px;
+    color: var(--t-3);
+    margin: 4px 0 6px;
+  }
+
+  /* Chips */
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* Nav cards */
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .nav-card {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+
+  .nav-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .nav-card-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--t-1);
+    margin-bottom: 4px;
+  }
+
+  .nav-card-desc {
+    font-size: 13px;
+    color: var(--t-2);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 480px) {
+    .edu-grid,
+    .nav-grid {
+      grid-template-columns: 1fr;
+    }
+    .identity-row {
+      flex-wrap: wrap;
+    }
+  }
+</style>

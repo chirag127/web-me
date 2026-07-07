@@ -1,6 +1,113 @@
 [
   {
     "artist": {
+      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
+      "#text": "Lauv"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/da023c0c6854f695807857d825c5e930.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/da023c0c6854f695807857d825c5e930.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/da023c0c6854f695807857d825c5e930.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/da023c0c6854f695807857d825c5e930.jpg"
+      }
+    ],
+    "mbid": "060bd240-3068-40b5-9899-a2b0134f6168",
+    "album": {
+      "mbid": "4016fe50-d212-4e28-9ebc-b53c7efcf6ad",
+      "#text": "~how i’m feeling~"
+    },
+    "name": "Sad Forever",
+    "@attr": {
+      "nowplaying": "true"
+    },
+    "url": "https://www.last.fm/music/Lauv/_/Sad+Forever"
+  },
+  {
+    "artist": {
+      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
+      "#text": "Lauv"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/da023c0c6854f695807857d825c5e930.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/da023c0c6854f695807857d825c5e930.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/da023c0c6854f695807857d825c5e930.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/da023c0c6854f695807857d825c5e930.jpg"
+      }
+    ],
+    "mbid": "060bd240-3068-40b5-9899-a2b0134f6168",
+    "album": {
+      "mbid": "4016fe50-d212-4e28-9ebc-b53c7efcf6ad",
+      "#text": "~how i’m feeling~"
+    },
+    "name": "Sad Forever",
+    "url": "https://www.last.fm/music/Lauv/_/Sad+Forever",
+    "date": {
+      "uts": "1783442389",
+      "#text": "07 Jul 2026, 16:39"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "How To Kill A Volcano",
+    "url": "https://www.last.fm/music/MinuteEarth/_/How+To+Kill+A+Volcano",
+    "date": {
+      "uts": "1783442123",
+      "#text": "07 Jul 2026, 16:35"
+    }
+  },
+  {
+    "artist": {
       "mbid": "",
       "#text": "Lex Fridman Podcast"
     },
@@ -3525,78 +3632,6 @@
     "date": {
       "uts": "1783228456",
       "#text": "05 Jul 2026, 05:14"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Marshmello x Jonas Brothers"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Leave Before You Love Me",
-    "url": "https://www.last.fm/music/Marshmello+x+Jonas+Brothers/_/Leave+Before+You+Love+Me",
-    "date": {
-      "uts": "1783228288",
-      "#text": "05 Jul 2026, 05:11"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
-      "#text": "Lauv"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "060bd240-3068-40b5-9899-a2b0134f6168",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Sad Forever",
-    "url": "https://www.last.fm/music/Lauv/_/Sad+Forever",
-    "date": {
-      "uts": "1783228078",
-      "#text": "05 Jul 2026, 05:07"
     }
   }
 ]

@@ -4,60 +4,253 @@ import Layout from '~/layouts/Layout.astro'
 const PROJECTS = [
   {
     name: 'Oriz',
-    url: 'https://oriz.in',
-    desc: '192+ tools & apps shipped — personal OS for the web.',
-    tech: ['Astro','TypeScript','Cloudflare','Python'],
+    desc: '192+ tools & apps platform — personal OS for the web.',
+    tech: ['Astro', 'Cloudflare Pages', 'Workers', 'APIs'],
+    github: 'https://github.com/chirag127',
+    live: 'https://oriz.in',
+    impact: '192+',
+    impactLabel: 'TOOLS SHIPPED',
+    featured: true,
+    badges: ['open-source', 'live'],
   },
   {
     name: 'NexusAI',
-    url: 'https://github.com/chirag127/nexusai',
-    desc: 'Multi-agent orchestration platform built on LangGraph + Kubernetes.',
-    tech: ['LangGraph','K8s','Python','FastAPI'],
+    desc: 'Multi-agent RAG platform with LangGraph orchestration on Kubernetes.',
+    tech: ['LangGraph', 'FastAPI', 'Kubernetes', 'Redis', 'React'],
+    github: 'https://github.com/chirag127',
+    live: null,
+    impact: '10',
+    impactLabel: 'LLM PROVIDERS',
+    featured: false,
+    badges: ['open-source'],
   },
   {
     name: 'TubeDigest',
-    url: 'https://github.com/chirag127/tubedigest',
-    desc: 'YouTube video summarisation via T5 + ONNX inference pipeline.',
-    tech: ['T5','ONNX','Python','React'],
+    desc: 'YouTube AI summarisation via T5 + ONNX inference pipeline.',
+    tech: ['T5', 'ONNX', 'FastAPI', 'Chrome Ext'],
+    github: 'https://github.com/chirag127',
+    live: null,
+    impact: '40+',
+    impactLabel: 'ALGORITHMS',
+    featured: false,
+    badges: ['open-source'],
   },
   {
     name: 'Olivia',
-    url: 'https://github.com/chirag127/olivia',
-    desc: 'Local AI assistant powered by Llama-3 with voice interface.',
-    tech: ['Llama-3','Python','WebRTC'],
+    desc: 'Local AI voice assistant powered by Llama-3 with Whisper STT and a React frontend.',
+    tech: ['Llama-3', 'Whisper', 'FastAPI', 'React'],
+    github: 'https://github.com/chirag127',
+    live: null,
+    impact: null,
+    impactLabel: null,
+    featured: false,
+    badges: ['open-source'],
   },
   {
     name: 'Crawl4AI',
-    url: 'https://github.com/chirag127/crawl4ai',
-    desc: 'Distributed web crawler with Redis queue + structured data extraction.',
-    tech: ['Python','Redis','Playwright','FastAPI'],
+    desc: 'Distributed web crawler with Redis queue and structured data extraction.',
+    tech: ['Redis', 'Playwright', 'Python', 'Docker'],
+    github: 'https://github.com/chirag127',
+    live: null,
+    impact: null,
+    impactLabel: null,
+    featured: false,
+    badges: ['open-source'],
   },
   {
     name: 'OmniPublish',
-    url: 'https://github.com/chirag127/omnipublish',
-    desc: 'Cross-platform publishing via Adapter pattern + Celery task queue.',
-    tech: ['Python','Celery','Adapter','REST'],
+    desc: 'Cross-platform content publisher via Adapter pattern and Celery task queue.',
+    tech: ['Celery', 'Python', 'Adapter pattern'],
+    github: 'https://github.com/chirag127',
+    live: null,
+    impact: '17+',
+    impactLabel: 'PLATFORMS',
+    featured: false,
+    badges: ['open-source'],
   },
 ]
 ---
-<Layout title="Projects" description="Chirag Singhal — open source projects">
-  <div style="padding-top: 2rem; max-width: 640px;">
-    <h1 class="page-title">Projects</h1>
-    <p class="page-sub">Open source work and side projects.</p>
 
-    <div>
+<Layout title="Projects" description="Chirag Singhal — open source projects">
+  <div class="projects-root">
+    <header class="page-header">
+      <p class="kicker">WORK · PROJECTS</p>
+      <h1 class="text-display">Projects</h1>
+      <p class="page-sub">Open source work and side projects.</p>
+    </header>
+
+    <div class="grid">
       {PROJECTS.map(p => (
-        <div style="padding: 12px 0; border-bottom: 1px solid var(--border);">
-          <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px;">
-            <a href={p.url} target="_blank" rel="noopener" style="font-family:var(--font-display);font-weight:600;font-size:14px;color:#fff;text-decoration:none;">{p.name}</a>
-            <span style="font-size:12px;color:var(--cyan);">↗</span>
-          </div>
-          <p style="font-size:13px;color:var(--t-secondary);margin-bottom:6px;">{p.desc}</p>
-          <div class="chips">
-            {p.tech.map(t => <span class="tech-chip">{t}</span>)}
+        <div class={`card ${p.featured ? 'card-featured card-glow' : ''} ${p.featured ? 'col-span-full' : ''}`}>
+          {p.featured && <div class="featured-band" />}
+          <div class="card-inner">
+            <div class="card-header-row">
+              <span class="project-name">{p.name}</span>
+              <div class="badges">
+                {p.badges.includes('open-source') && <span class="badge">open-source</span>}
+                {p.badges.includes('live') && <span class="badge badge-emerald">live</span>}
+              </div>
+            </div>
+
+            {p.impact && (
+              <div class="metric">
+                <span class="stat-number">{p.impact}</span>
+                <span class="stat-label">{p.impactLabel}</span>
+              </div>
+            )}
+
+            <p class="project-desc">{p.desc}</p>
+
+            <div class="chip-row">
+              {p.tech.map(t => <span class="chip">{t}</span>)}
+            </div>
+
+            <div class="link-row">
+              <a href={p.github} target="_blank" rel="noopener" class="link-item" aria-label="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              {p.live && (
+                <a href={p.live} target="_blank" rel="noopener" class="link-item" aria-label="Live site">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+              )}
+            </div>
           </div>
         </div>
       ))}
     </div>
   </div>
 </Layout>
+
+<style>
+  .projects-root {
+    padding-top: 2rem;
+    max-width: 860px;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  .page-sub {
+    font-size: 14px;
+    color: var(--t-2);
+    margin-top: 0.25rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
+
+  .card-featured {
+    position: relative;
+  }
+
+  .featured-band {
+    height: 2px;
+    background: linear-gradient(to right, var(--indigo), #7c3aed);
+    border-radius: 8px 8px 0 0;
+    margin: -1px -1px 0;
+  }
+
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .card-featured .card-inner {
+    padding-top: 4px;
+  }
+
+  .card-header-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .project-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--t-1);
+  }
+
+  .badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .project-desc {
+    font-size: 13px;
+    color: var(--t-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .link-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 2px;
+  }
+
+  .link-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: var(--t-3);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .link-item:hover {
+    color: #818cf8;
+  }
+
+  .card {
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+  }
+
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .col-span-full {
+      grid-column: 1;
+    }
+  }
+</style>

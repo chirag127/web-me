@@ -2,32 +2,246 @@
 import Layout from '~/layouts/Layout.astro'
 
 const SKILLS = [
-  { group: 'LANGUAGES',   items: ['Python','TypeScript','JavaScript','SQL','Bash'] },
-  { group: 'FRONTEND',    items: ['React','Astro','Next.js','Tailwind CSS','HTML/CSS'] },
-  { group: 'BACKEND',     items: ['FastAPI','Node.js','Express','REST','GraphQL'] },
-  { group: 'AI / ML',     items: ['LangChain','LangGraph','RAG','ONNX','HuggingFace'] },
-  { group: 'DATABASES',   items: ['PostgreSQL','MongoDB','Redis','Turso','Firebase'] },
-  { group: 'INFRA',       items: ['Docker','Kubernetes','Terraform','AWS','Cloudflare'] },
-  { group: 'MESSAGING',   items: ['Kafka','Celery','RabbitMQ'] },
-  { group: 'TOOLING',     items: ['Git','GitHub Actions','pnpm','pytest','Playwright'] },
+  {
+    group: 'LANGUAGES',
+    icon: 'code',
+    items: [
+      { name: 'Python', expert: true },
+      { name: 'JavaScript', expert: true },
+      { name: 'TypeScript', expert: false },
+      { name: 'Go', expert: false },
+      { name: 'SQL', expert: false },
+      { name: 'Bash', expert: false },
+    ],
+  },
+  {
+    group: 'FRONTEND',
+    icon: 'layout',
+    items: [
+      { name: 'React', expert: true },
+      { name: 'Astro', expert: false },
+      { name: 'HTML5/CSS3', expert: false },
+      { name: 'Next.js', expert: false },
+      { name: 'TailwindCSS', expert: false },
+    ],
+  },
+  {
+    group: 'BACKEND',
+    icon: 'server',
+    items: [
+      { name: 'Node.js', expert: true },
+      { name: 'FastAPI', expert: true },
+      { name: 'Django', expert: false },
+      { name: 'Express.js', expert: false },
+      { name: 'REST APIs', expert: false },
+      { name: 'GraphQL', expert: false },
+      { name: 'gRPC', expert: false },
+    ],
+  },
+  {
+    group: 'AI / ML',
+    icon: 'brain',
+    glow: true,
+    items: [
+      { name: 'LangChain', expert: true },
+      { name: 'LangGraph', expert: false },
+      { name: 'HuggingFace', expert: false },
+      { name: 'ONNX', expert: false },
+      { name: 'T5', expert: false },
+      { name: 'Llama-3', expert: false },
+      { name: 'OpenAI API', expert: false },
+      { name: 'Whisper', expert: false },
+    ],
+  },
+  {
+    group: 'DATABASES',
+    icon: 'cylinder',
+    items: [
+      { name: 'PostgreSQL', expert: false },
+      { name: 'MongoDB', expert: false },
+      { name: 'Redis', expert: false },
+      { name: 'MySQL', expert: false },
+      { name: 'DynamoDB', expert: false },
+      { name: 'Turso', expert: false },
+    ],
+  },
+  {
+    group: 'INFRA',
+    icon: 'cloud',
+    items: [
+      { name: 'AWS', expert: true, amber: true },
+      { name: 'Docker', expert: false },
+      { name: 'Kubernetes', expert: false },
+      { name: 'GitHub Actions', expert: false },
+      { name: 'Cloudflare', expert: false },
+      { name: 'CI/CD', expert: false },
+    ],
+  },
+  {
+    group: 'MESSAGING',
+    icon: 'message',
+    items: [
+      { name: 'Kafka', expert: true },
+      { name: 'RabbitMQ', expert: false },
+      { name: 'Celery', expert: false },
+      { name: 'Redis Pub/Sub', expert: false },
+    ],
+  },
+  {
+    group: 'TOOLING',
+    icon: 'wrench',
+    items: [
+      { name: 'Git', expert: false },
+      { name: 'VS Code', expert: false },
+      { name: 'Playwright', expert: false },
+      { name: 'Claude Code', expert: false },
+      { name: 'Obsidian', expert: false },
+      { name: 'Screenpipe', expert: false },
+    ],
+  },
 ]
----
-<Layout title="Skills" description="Chirag Singhal — tech skills by category">
-  <div style="padding-top: 2rem; max-width: 640px;">
-    <h1 class="page-title">Skills</h1>
-    <p class="page-sub">Technologies grouped by domain.</p>
 
-    <table class="skill-table">
+const ICONS: Record<string, string> = {
+  code: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+  layout: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>`,
+  server: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>`,
+  brain: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1-.3 2-.8 2.7A4 4 0 0 1 16 12a4 4 0 0 1-1.5 3.1c.3.6.5 1.2.5 1.9a4 4 0 0 1-6 3.46A4 4 0 0 1 3 17c0-.7.2-1.3.5-1.9A4 4 0 0 1 2 12a4 4 0 0 1 .8-2.3C2.3 9 2 8 2 7a4 4 0 0 1 4-4 4 4 0 0 1 6-1z"/></svg>`,
+  cylinder: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>`,
+  cloud: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>`,
+  message: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  wrench: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
+}
+---
+
+<Layout title="Skills" description="Chirag Singhal — tech skills by category">
+  <div class="skills-root">
+    <header class="page-header">
+      <p class="kicker">WORK · SKILLS</p>
+      <h1 class="text-display">Skills</h1>
+      <p class="page-sub">Technologies grouped by domain.</p>
+    </header>
+
+    <div class="card summary-card">
+      <div class="summary-inner">
+        <div class="summary-stat">
+          <span class="stat-number">8</span>
+          <span class="stat-label">DOMAINS</span>
+        </div>
+        <div class="summary-divider" />
+        <div class="summary-stat">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">TECHNOLOGIES</span>
+        </div>
+        <div class="summary-divider" />
+        <div class="summary-stat">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">YRS PRODUCTION</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
       {SKILLS.map(s => (
-        <tr>
-          <td>{s.group}</td>
-          <td>
-            <div class="chips">
-              {s.items.map(i => <span class="tech-chip">{i}</span>)}
-            </div>
-          </td>
-        </tr>
+        <div class={`card ${s.glow ? 'card-glow' : ''}`}>
+          <div class="group-header">
+            <span class="group-icon" set:html={ICONS[s.icon]} />
+            <span class="kicker">{s.group}</span>
+          </div>
+          <div class="chip-row">
+            {s.items.map(item => (
+              item.expert
+                ? <span class={`badge${item.amber ? ' badge-amber' : ''}`}>{item.name}</span>
+                : <span class="chip">{item.name}</span>
+            ))}
+          </div>
+        </div>
       ))}
-    </table>
+    </div>
   </div>
 </Layout>
+
+<style>
+  .skills-root {
+    padding-top: 2rem;
+    max-width: 860px;
+  }
+
+  .page-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .page-sub {
+    font-size: 14px;
+    color: var(--t-2);
+    margin-top: 0.25rem;
+  }
+
+  .summary-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-inner {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .summary-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 1.5rem;
+  }
+
+  .summary-stat:first-child {
+    padding-left: 0;
+  }
+
+  .summary-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.08);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .group-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    color: var(--t-3);
+  }
+
+  .group-icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  @media (max-width: 700px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .summary-stat {
+      padding: 0 1rem;
+    }
+  }
+</style>

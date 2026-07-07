@@ -1,39 +1,229 @@
 ---
 import Layout from '~/layouts/Layout.astro'
 ---
-<Layout title="Career" description="Chirag Singhal — career timeline">
-  <div style="padding-top: 2rem; max-width: 600px;">
-    <h1 class="page-title">Career</h1>
+
+<Layout title="Career" description="Chirag Singhal — career timeline and work history">
+
+  <!-- Page header -->
+  <div class="page-header animate-in">
+    <div class="kicker">WORK · CAREER</div>
+    <h1 class="text-display">Career</h1>
     <p class="page-sub">Full-time roles and internships.</p>
-
-    <div class="timeline">
-
-      <!-- TCS -->
-      <div class="timeline-item">
-        <div style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);margin-bottom:4px;">Jun 2025 – Present</div>
-        <div style="font-family:var(--font-display);font-weight:600;font-size:14px;color:#fff;">Tata Consultancy Services</div>
-        <div style="font-size:13px;color:var(--t-secondary);margin-bottom:8px;">Software Engineer</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:4px;">
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>Optimized Python pricing engines — 60% latency reduction</li>
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>Architected modular data validation pipelines via RESTful APIs</li>
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>Automated CI/CD workflows, reduced production bugs</li>
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>Built React.js UI for real-time backend configuration visibility</li>
-        </ul>
-      </div>
-
-      <!-- QRsay -->
-      <div class="timeline-item">
-        <div style="font-family:var(--font-mono);font-size:11px;color:var(--t-muted);margin-bottom:4px;">Jul 2023 – May 2025</div>
-        <div style="font-family:var(--font-display);font-weight:600;font-size:14px;color:#fff;">QRsay.com</div>
-        <div style="font-size:13px;color:var(--t-secondary);margin-bottom:8px;">Software Developer — Full Stack</div>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:4px;">
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>Full SDLC ownership of Food E-commerce platform (Python, Node.js, MongoDB)</li>
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>40% reduction in API response times via DB tuning and indexing</li>
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>Real-time order processing with Kafka event-driven architecture</li>
-          <li style="font-size:13px;color:var(--t-secondary);padding-left:12px;position:relative;"><span style="position:absolute;left:0;color:var(--t-muted);">–</span>Integrated secure payment gateways end-to-end</li>
-        </ul>
-      </div>
-
-    </div>
   </div>
+
+  <!-- Timeline -->
+  <div class="timeline animate-in">
+
+    <!-- TCS -->
+    <div class="timeline-entry">
+      <div class="timeline-dot"></div>
+      <div class="card-glow job-card">
+        <div class="job-header">
+          <div>
+            <h2 class="job-company">Tata Consultancy Services</h2>
+            <p class="job-role">Software Engineer</p>
+          </div>
+          <span class="badge badge-amber">Jun 2025 – Present</span>
+        </div>
+        <div class="job-impact">
+          <span class="stat-number">60%</span>
+          <span class="stat-label">LATENCY REDUCED</span>
+        </div>
+        <div class="chips-row">
+          <span class="chip">Python</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">React.js</span>
+          <span class="chip">CI/CD</span>
+          <span class="chip">REST APIs</span>
+        </div>
+        <ul class="job-bullets">
+          <li>Optimized Python pricing engines — 60% latency reduction</li>
+          <li>Architected data validation pipelines via RESTful APIs</li>
+          <li>Automated CI/CD workflows, reduced production bugs</li>
+          <li>Built React.js UI for real-time backend config visibility</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- QRsay -->
+    <div class="timeline-entry">
+      <div class="timeline-dot"></div>
+      <div class="card-glow job-card">
+        <div class="job-header">
+          <div>
+            <h2 class="job-company">QRsay.com</h2>
+            <p class="job-role">Software Developer – Full Stack</p>
+          </div>
+          <span class="badge badge-amber">Jul 2023 – May 2025</span>
+        </div>
+        <div class="job-impact">
+          <span class="stat-number">40%</span>
+          <span class="stat-label">FASTER APIS</span>
+        </div>
+        <div class="chips-row">
+          <span class="chip">Python</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Kafka</span>
+          <span class="chip">Payments</span>
+        </div>
+        <ul class="job-bullets">
+          <li>Full SDLC of Food E-commerce platform (Python, Node.js, MongoDB)</li>
+          <li>40% reduction in API response times via DB tuning and indexing</li>
+          <li>Real-time order processing with Kafka event-driven architecture</li>
+          <li>Integrated secure payment gateways end-to-end</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA footer -->
+  <div class="card cta-footer animate-in">
+    <span class="glow-dot"></span>
+    <span class="cta-text">Open to senior SWE roles — <a href="mailto:hi@chirag127.in" class="cta-link">hi@chirag127.in</a></span>
+  </div>
+
 </Layout>
+
+<style>
+  .page-header {
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 640px;
+  }
+
+  .page-sub {
+    font-size: 14px;
+    color: var(--t-2);
+    margin-top: 0.4rem;
+  }
+
+  /* Timeline wrapper */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+    max-width: 680px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background: var(--indigo);
+    opacity: 0.4;
+  }
+
+  .timeline-entry {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -2.45rem;
+    top: 1.1rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--indigo);
+    box-shadow: 0 0 8px var(--indigo);
+    flex-shrink: 0;
+  }
+
+  /* Job card */
+  .job-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .job-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .job-company {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--t-1);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .job-role {
+    font-size: 14px;
+    color: var(--t-2);
+    margin: 0.2rem 0 0;
+  }
+
+  .job-impact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .chips-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* Bullets */
+  .job-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .job-bullets li {
+    font-size: 13px;
+    color: var(--t-2);
+    padding-left: 1.1rem;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .job-bullets li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #818cf8;
+    font-size: 12px;
+  }
+
+  /* CTA footer */
+  .cta-footer {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    max-width: 680px;
+    margin-left: 2rem;
+  }
+
+  .cta-text {
+    font-size: 14px;
+    color: var(--t-2);
+  }
+
+  .cta-link {
+    color: #818cf8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .cta-link:hover {
+    color: var(--t-1);
+  }
+</style>

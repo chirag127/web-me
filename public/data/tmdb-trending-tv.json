@@ -18,24 +18,6 @@
     "popularity": 487.287
   },
   {
-    "id": 94664,
-    "tmdb_id": 94664,
-    "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.5,
-    "votes": 1545,
-    "release": "2021-01-11",
-    "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 291.2468
-  },
-  {
     "id": 125988,
     "tmdb_id": 125988,
     "type": "tv",
@@ -51,6 +33,24 @@
       18
     ],
     "popularity": 211.8558
+  },
+  {
+    "id": 94664,
+    "tmdb_id": 94664,
+    "type": "tv",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.475,
+    "votes": 1546,
+    "release": "2021-01-11",
+    "genres": [
+      10759,
+      16,
+      10765
+    ],
+    "popularity": 291.2468
   },
   {
     "id": 253960,
@@ -70,6 +70,25 @@
     "popularity": 85.4998
   },
   {
+    "id": 60625,
+    "tmdb_id": 60625,
+    "type": "tv",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.677,
+    "votes": 11065,
+    "release": "2013-12-02",
+    "genres": [
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 163.5728
+  },
+  {
     "id": 124364,
     "tmdb_id": 124364,
     "type": "tv",
@@ -77,7 +96,7 @@
     "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.505,
+    "rating": 8.5,
     "votes": 3938,
     "release": "2022-02-20",
     "genres": [
@@ -142,25 +161,6 @@
     "popularity": 183.5939
   },
   {
-    "id": 60625,
-    "tmdb_id": 60625,
-    "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.677,
-    "votes": 11065,
-    "release": "2013-12-02",
-    "genres": [
-      16,
-      35,
-      10765,
-      10759
-    ],
-    "popularity": 163.5728
-  },
-  {
     "id": 254420,
     "tmdb_id": 254420,
     "type": "tv",
@@ -168,8 +168,8 @@
     "overview": "Before Elle Woods was a fish-out-of-water at Harvard, we meet her in 1995 in the tumultuous waters of high school where she encounters tricky friendships, forbidden romance, and questionable fashion choices. In this unexpected chapter of her adolescence, we learn about the experiences that shaped Elle into the iconic young woman we've come to know and love.",
     "poster": "https://image.tmdb.org/t/p/w342/dpH7Lyrs7z7MlTGgfeibryGnWAv.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/fcdYPWdwbQynogpa79QLw1ukRvN.jpg",
-    "rating": 8.14,
-    "votes": 25,
+    "rating": 8.204,
+    "votes": 27,
     "release": "2026-07-01",
     "genres": [
       35,
@@ -185,8 +185,8 @@
     "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
     "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.3,
-    "votes": 377,
+    "rating": 9.259,
+    "votes": 378,
     "release": "2026-05-15",
     "genres": [
       37,
@@ -212,24 +212,6 @@
     "popularity": 89.5475
   },
   {
-    "id": 153217,
-    "tmdb_id": 153217,
-    "type": "tv",
-    "title": "Sparks of Tomorrow",
-    "overview": "In an alternate past, an unlikely duo team up to look for a missing catalog that could bring electricity to the smoke-filled streets of Kyoto.",
-    "poster": "https://image.tmdb.org/t/p/w342/yDTcX4l5D3OFeYGsQVI5Jqxx1D7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/fx5JyhFvPn1GSm5ITtNNM6hmpUa.jpg",
-    "rating": 8,
-    "votes": 1,
-    "release": "2026-07-05",
-    "genres": [
-      16,
-      18,
-      10765
-    ],
-    "popularity": 39.2837
-  },
-  {
     "id": 79166,
     "tmdb_id": 79166,
     "type": "tv",
@@ -247,58 +229,40 @@
     "popularity": 29.469
   },
   {
-    "id": 82452,
-    "tmdb_id": 82452,
+    "id": 285574,
+    "tmdb_id": 285574,
     "type": "tv",
-    "title": "Avatar: The Last Airbender",
-    "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
-    "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-    "rating": 7.801,
-    "votes": 1212,
-    "release": "2024-02-22",
-    "genres": [
-      10759,
-      10765,
-      18,
-      10751
-    ],
-    "popularity": 210.9284
-  },
-  {
-    "id": 278178,
-    "tmdb_id": 278178,
-    "type": "tv",
-    "title": "I Will Find You",
-    "overview": "Wrongfully imprisoned for murdering his own son, a father sets out on a desperate rescue mission after learning the boy may still be alive.",
-    "poster": "https://image.tmdb.org/t/p/w342/pb9oYHHNzauiCQZT03MpDAg46GI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
-    "rating": 8.232,
-    "votes": 211,
-    "release": "2026-06-18",
-    "genres": [
-      18,
-      9648,
-      80
-    ],
-    "popularity": 99.177
-  },
-  {
-    "id": 223564,
-    "tmdb_id": 223564,
-    "type": "tv",
-    "title": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You",
-    "overview": "Rentaro Aijo was rejected 100 times in middle school. He visits a shrine and prays for better luck in high school. The God of Love appears and promises that he'll soon meet 100 people he's destined to date. But there's a catch—once destiny introduces someone to him, the two must happily love each other. If they don't, they'll die. What will befall Rentaro and his 100 girlfriends in high school?",
-    "poster": "https://image.tmdb.org/t/p/w342/kBiPU7I7TEJdDXu8tHgVrgL5zAU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/shXdGFZIEaSmiOkVW2BeEaPihuA.jpg",
-    "rating": 8.1,
-    "votes": 193,
-    "release": "2023-10-08",
+    "title": "I Want to Love You Till Your Dying Day",
+    "overview": "At a secret academy where orphaned girls are raised as weapons, death is routine and grief is forbidden. Sheena, a 14-year-old who questions this brutal life, meets Mimi, a mysterious, blood-soaked girl who refuses to break. In a world built on violence, the two cling to fragile hope and fight to hold on to their humanity.",
+    "poster": "https://image.tmdb.org/t/p/w342/nRGfKMc1nBRDEn5jQMFTcoSnb2l.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ppR5S0tqg53tVFA8Gc8CfkWkQG8.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-07-07",
     "genres": [
       16,
-      35
+      18,
+      10765
     ],
-    "popularity": 33.8688
+    "popularity": 3.8228
+  },
+  {
+    "id": 153217,
+    "tmdb_id": 153217,
+    "type": "tv",
+    "title": "Sparks of Tomorrow",
+    "overview": "In an alternate past, an unlikely duo team up to look for a missing catalog that could bring electricity to the smoke-filled streets of Kyoto.",
+    "poster": "https://image.tmdb.org/t/p/w342/yDTcX4l5D3OFeYGsQVI5Jqxx1D7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/fx5JyhFvPn1GSm5ITtNNM6hmpUa.jpg",
+    "rating": 8,
+    "votes": 1,
+    "release": "2026-07-05",
+    "genres": [
+      16,
+      18,
+      10765
+    ],
+    "popularity": 39.2837
   },
   {
     "id": 117120,
@@ -319,22 +283,61 @@
     "popularity": 2.5597
   },
   {
-    "id": 322055,
-    "tmdb_id": 322055,
+    "id": 82452,
+    "tmdb_id": 82452,
     "type": "tv",
-    "title": "The Prosecutor's Proposal",
-    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
-    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-    "rating": 4,
-    "votes": 3,
-    "release": "2026-06-25",
+    "title": "Avatar: The Last Airbender",
+    "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
+    "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
+    "rating": 7.801,
+    "votes": 1213,
+    "release": "2024-02-22",
     "genres": [
-      9648,
-      80,
-      18
+      10759,
+      10765,
+      18,
+      10751
     ],
-    "popularity": 151.2537
+    "popularity": 210.9284
+  },
+  {
+    "id": 65942,
+    "tmdb_id": 65942,
+    "type": "tv",
+    "title": "Re:ZERO -Starting Life in Another World-",
+    "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+    "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
+    "rating": 7.978,
+    "votes": 695,
+    "release": "2016-04-04",
+    "genres": [
+      16,
+      10759,
+      10765,
+      18,
+      9648
+    ],
+    "popularity": 84.9328
+  },
+  {
+    "id": 278178,
+    "tmdb_id": 278178,
+    "type": "tv",
+    "title": "I Will Find You",
+    "overview": "Wrongfully imprisoned for murdering his own son, a father sets out on a desperate rescue mission after learning the boy may still be alive.",
+    "poster": "https://image.tmdb.org/t/p/w342/pb9oYHHNzauiCQZT03MpDAg46GI.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
+    "rating": 8.224,
+    "votes": 212,
+    "release": "2026-06-18",
+    "genres": [
+      18,
+      9648,
+      80
+    ],
+    "popularity": 99.177
   },
   {
     "id": 312949,
