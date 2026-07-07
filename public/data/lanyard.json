@@ -1,0 +1,31 @@
+{
+  "kv": {},
+  "discord_user": {
+    "avatar": "c388dc221e583a3aad5ad11dbaa31bcd",
+    "avatar_decoration_data": null,
+    "bot": false,
+    "collectibles": null,
+    "discriminator": "0",
+    "display_name": "Chirag Singhal",
+    "display_name_styles": null,
+    "global_name": "Chirag Singhal",
+    "id": "799956529847205898",
+    "primary_guild": {
+      "badge": "66e6116fb71622d52bed149a17914270",
+      "identity_enabled": true,
+      "identity_guild_id": "423464391791476747",
+      "tag": "ZTM"
+    },
+    "public_flags": 64,
+    "username": "chiragsinghal127"
+  },
+  "activities": [],
+  "discord_status": "idle",
+  "active_on_discord_web": false,
+  "active_on_discord_desktop": false,
+  "active_on_discord_mobile": true,
+  "active_on_discord_embedded": false,
+  "active_on_discord_vr": false,
+  "listening_to_spotify": false,
+  "spotify": null
+}

@@ -1,0 +1,117 @@
+{
+  "artists": [
+    {
+      "artist_mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
+      "artist_name": "Shawn Mendes",
+      "listen_count": 3
+    },
+    {
+      "artist_mbid": "e0140a67-e4d1-4f13-8a01-364355bee46e",
+      "artist_name": "Justin Bieber",
+      "listen_count": 2
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "seVENUS",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "artist_name": "Troye Sivan",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Troye Sivan",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Quantum Computers Explained",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "1a425bbd-cca4-4b2c-aeb7-71cb176c828a",
+      "artist_name": "One Direction",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "fb0c1ce1-a31b-4d30-aa68-0101213526c2",
+      "artist_name": "Omar Rudberg",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "9a21832f-5104-42fa-b881-17a1ca66bfdb",
+      "artist_name": "Måns Zelmerlöw",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
+      "artist_name": "Maroon 5",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "122d63fc-8671-43e4-9752-34e846d62a9c",
+      "artist_name": "Katy Perry",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Justin Bieber",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "52689f06-8030-460d-bf80-c5a1cda2640f",
+      "artist_name": "Ernia",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Ed Sheeran",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "dc84c3f5-a44c-4a46-bf41-fd1640e3c99d",
+      "artist_name": "Djo",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
+      "artist_name": "Bruno Mars",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "f4abc0b5-3f7a-4eff-8f78-ac078dbce533",
+      "artist_name": "Billie Eilish",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": null,
+      "artist_name": "Benjamin Ingrosso",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "0d79fe8e-ba27-4859-bb8c-2f255f346853",
+      "artist_name": "BTS",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "ae09b518-a8d5-4a04-93e3-373b9bc8ed60",
+      "artist_name": "AliSoomroMusic",
+      "listen_count": 1
+    },
+    {
+      "artist_mbid": "46579862-aa41-4574-b16c-05e6d0b6dbeb",
+      "artist_name": "Afusic",
+      "listen_count": 1
+    }
+  ],
+  "count": 21,
+  "from_ts": 1735689600,
+  "last_updated": 1783428568,
+  "offset": 0,
+  "range": "year",
+  "to_ts": 1767225600,
+  "total_artist_count": 21,
+  "user_id": "chirag127"
+}
