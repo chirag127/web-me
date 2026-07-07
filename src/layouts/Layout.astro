@@ -25,11 +25,32 @@ const WORK_NAV = [
 ]
 
 const LIBRARY_NAV = [
-  { href: '/library/music',    label: 'Music',    icon: '♪' },
-  { href: '/library/movies',   label: 'Movies',   icon: '▶' },
-  { href: '/library/anime',    label: 'Anime',    icon: '◉' },
-  { href: '/library/books',    label: 'Books',    icon: '▣' },
-  { href: '/library/activity', label: 'Activity', icon: '◌' },
+  { href: '/library/music/',    label: 'Music',    icon: '♪', sub: [
+    { href: '/library/music/top-artists/', label: 'Top Artists' },
+    { href: '/library/music/top-tracks/',  label: 'Top Tracks' },
+    { href: '/library/music/stats/',       label: 'Stats' },
+  ]},
+  { href: '/library/movies/',   label: 'Movies',   icon: '▶', sub: [
+    { href: '/library/movies/watched/',   label: 'Watched' },
+    { href: '/library/movies/watchlist/', label: 'Watchlist' },
+  ]},
+  { href: '/library/tv/',       label: 'TV Shows', icon: '⊡' },
+  { href: '/library/anime/',    label: 'Anime',    icon: '◉', sub: [
+    { href: '/library/anime/completed/',    label: 'Completed' },
+    { href: '/library/anime/plan-to-watch/', label: 'Plan to Watch' },
+  ]},
+  { href: '/library/manga/',    label: 'Manga',    icon: '⊕', sub: [
+    { href: '/library/manga/completed/',    label: 'Completed' },
+    { href: '/library/manga/plan-to-read/', label: 'Plan to Read' },
+  ]},
+  { href: '/library/books/',    label: 'Books',    icon: '▣', sub: [
+    { href: '/library/books/read/',         label: 'Read' },
+    { href: '/library/books/want-to-read/', label: 'Want to Read' },
+  ]},
+  { href: '/library/gaming/',   label: 'Gaming',   icon: '◈' },
+  { href: '/library/videos/',   label: 'Videos',   icon: '▷' },
+  { href: '/library/podcasts/', label: 'Podcasts', icon: '◎' },
+  { href: '/library/activity/', label: 'Activity', icon: '◌' },
 ]
 
 const ME_NAV = [
@@ -136,11 +157,22 @@ const connectOpen = path.startsWith('/connect')
           <span>LIBRARY</span>
           <span class="nav-chevron">›</span>
         </summary>
-        {LIBRARY_NAV.map(n => (
-          <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
-            <span class="icon">{n.icon}</span>
-            {n.label}
-          </a>
+        {LIBRARY_NAV.map((n: any) => (
+          <div>
+            <a href={n.href} class:list={['sidebar-item', { active: isActive(n.href) }]}>
+              <span class="icon">{n.icon}</span>
+              {n.label}
+            </a>
+            {n.sub && n.sub.some((s: any) => path.startsWith(n.href)) && (
+              <div class="sidebar-sub">
+                {n.sub.map((s: any) => (
+                  <a href={s.href} class:list={['sidebar-item sidebar-item--sub', { active: path === s.href }]}>
+                    {s.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </details>
 

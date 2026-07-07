@@ -1,0 +1,60 @@
+---
+/*
+ * MAL API (watching): https://api.myanimelist.net/v2/users/chirag127/animelist?fields=list_status,main_picture,mean,num_episodes&status=watching&limit=100
+ * Header: X-MAL-CLIENT-ID: CLIENT_ID
+ * MAL profile: https://myanimelist.net/profile/chirag127
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getMALAnime } from '~/lib/api'
+
+const watching = await getMALAnime('watching', 100)
+---
+
+<Layout title="Currently Watching Anime" active="/library/anime/">
+  <div class="page-header">
+    <div class="kicker">ANIME · WATCHING</div>
+    <h1>Currently Watching</h1>
+    <p class="muted">{watching.length} series in progress · <a href="https://myanimelist.net/profile/chirag127" target="_blank" rel="noopener">MAL: chirag127 ↗</a></p>
+  </div>
+
+  {watching.length === 0 ? (
+    <div class="empty-state">
+      <p>No data. Set <code>MAL_CLIENT_ID</code> + <code>MAL_USERNAME</code> in CF Pages env vars.</p>
+    </div>
+  ) : (
+    <ol class="subject-list">
+      {watching.map((a: any, i: number) => (
+        <li class="subject-row">
+          <span class="rank">{i + 1}</span>
+          <div class="subject-info">
+            <span class="subject-name">{a.node.title}</span>
+            <span class="subject-sub">Ep {a.list_status.num_episodes_watched}/{a.node.num_episodes ?? '?'}</span>
+          </div>
+          {a.list_status.score > 0 && <span class="subject-meta">★ {a.list_status.score}</span>}
+        </li>
+      ))}
+    </ol>
+  )}
+
+  <nav class="sub-nav" style="margin-top:1.5rem">
+    <a href="/library/anime/completed/">Completed →</a>
+    <a href="/library/anime/plan-to-watch/">Plan to Watch →</a>
+  </nav>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.75rem; text-align: right; flex-shrink: 0; }
+  .subject-info { flex: 1; min-width: 0; }
+  .subject-name { display: block; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+  .sub-nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .sub-nav a { font-size: 0.8rem; color: var(--muted, #71717a); text-decoration: none; }
+  .sub-nav a:hover { color: #fff; }
+</style>

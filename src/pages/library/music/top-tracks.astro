@@ -1,0 +1,55 @@
+---
+/*
+ * API: https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=lastfmwhy&api_key=KEY&format=json&period=1month&limit=50
+ * Fallback: https://api.listenbrainz.org/1/stats/user/chirag127/recordings?range=month&count=50
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmTopTracks, getLBStats } from '~/lib/api'
+
+const [lfTracks, lbStats] = await Promise.all([
+  getLastfmTopTracks('1month', 50),
+  getLBStats('month'),
+])
+const tracks = lfTracks.length ? lfTracks : lbStats.topTracks
+---
+
+<Layout title="Top Tracks · Music" active="/library/music/top-tracks/">
+  <div class="page-header">
+    <div class="kicker">MUSIC · TOP TRACKS</div>
+    <h1>Top Tracks</h1>
+    <p class="muted">Last 30 days · Last.fm + ListenBrainz</p>
+  </div>
+
+  {tracks.length === 0 ? (
+    <div class="empty-state">
+      <p>No data. Set <code>LASTFM_API_KEY</code> in CF Pages env vars.</p>
+    </div>
+  ) : (
+    <ol class="subject-list">
+      {tracks.map((t: any, i: number) => (
+        <li class="subject-row">
+          <span class="rank">{i + 1}</span>
+          <div class="subject-info">
+            <span class="subject-name">{t.name ?? t.recording_name}</span>
+            <span class="subject-sub">{t.artist?.['#text'] ?? t.artist_name ?? ''}</span>
+          </div>
+          <span class="subject-meta">{(t.playcount ?? t.listen_count ?? '').toLocaleString()} plays</span>
+        </li>
+      ))}
+    </ol>
+  )}
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); }
+  .subject-row:hover { background: rgba(255,255,255,0.04); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.5rem; text-align: right; flex-shrink: 0; }
+  .subject-info { flex: 1; min-width: 0; }
+  .subject-name { display: block; font-size: 0.875rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .subject-sub { display: block; font-size: 0.75rem; color: var(--muted, #71717a); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); white-space: nowrap; }
+  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+</style>

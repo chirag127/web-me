@@ -1,0 +1,35 @@
+---
+/*
+ * YouTube Data API v3 (public playlists):
+ * https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&id=UC1hhJNIRqhARaF7nknBb2xA&key=YOUTUBE_API_KEY
+ * https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UC1hhJNIRqhARaF7nknBb2xA&maxResults=50&key=YOUTUBE_API_KEY
+ * Channel ID: UC1hhJNIRqhARaF7nknBb2xA (User ID: 1hhJNIRqhARaF7nknBb2xA)
+ * Note: Set YOUTUBE_API_KEY in CF Pages env vars to enable.
+ */
+import Layout from '~/layouts/Layout.astro'
+---
+
+<Layout title="Videos" active="/library/videos/">
+  <div class="page-header">
+    <div class="kicker">LIBRARY · VIDEOS</div>
+    <h1>Videos</h1>
+    <p class="muted">YouTube</p>
+  </div>
+
+  <div class="empty-state">
+    <p>YouTube integration coming soon.</p>
+    <p style="font-size:0.75rem;margin-top:0.5rem;color:var(--faint)">
+      Set <code>YOUTUBE_API_KEY</code> in CF Pages env vars.<br/>
+      Channel ID: <code style="font-size:0.7rem">UC1hhJNIRqhARaF7nknBb2xA</code>
+    </p>
+    <div style="margin-top:1rem">
+      <a href="https://www.youtube.com/channel/UC1hhJNIRqhARaF7nknBb2xA" target="_blank" rel="noopener" style="font-size:0.8rem;color:var(--muted)">YouTube channel ↗</a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+</style>

@@ -1,0 +1,53 @@
+---
+/*
+ * API: https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=lastfmwhy&api_key=KEY&format=json&period=1month&limit=50
+ * Fallback: https://api.listenbrainz.org/1/stats/user/chirag127/artists?range=month&count=50
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmTopArtists, getLBStats } from '~/lib/api'
+
+const [lfArtists, lbStats] = await Promise.all([
+  getLastfmTopArtists('1month', 50),
+  getLBStats('month'),
+])
+const artists = lfArtists.length ? lfArtists : lbStats.topArtists
+---
+
+<Layout title="Top Artists · Music" active="/library/music/top-artists/">
+  <div class="page-header">
+    <div class="kicker">MUSIC · TOP ARTISTS</div>
+    <h1>Top Artists</h1>
+    <p class="muted">Last 30 days · Last.fm + ListenBrainz</p>
+  </div>
+
+  {artists.length === 0 ? (
+    <div class="empty-state">
+      <p>No data. Set <code>LASTFM_API_KEY</code> + <code>LASTFM_USERNAME</code> in CF Pages env vars.</p>
+      <p class="faint" style="font-size:0.75rem;margin-top:0.5rem">
+        Direct: <a href="https://www.last.fm/user/lastfmwhy/library/artists" target="_blank" rel="noopener">last.fm/user/lastfmwhy/library/artists ↗</a>
+      </p>
+    </div>
+  ) : (
+    <ol class="subject-list">
+      {artists.map((a: any, i: number) => (
+        <li class="subject-row">
+          <span class="rank">{i + 1}</span>
+          <span class="subject-name">{a.name ?? a.artist_name}</span>
+          <span class="subject-meta">{(a.playcount ?? a.listen_count ?? '').toLocaleString()} plays</span>
+        </li>
+      ))}
+    </ol>
+  )}
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 6px 10px; border-radius: 6px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); }
+  .subject-row:hover { background: rgba(255,255,255,0.04); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.5rem; text-align: right; flex-shrink: 0; }
+  .subject-name { flex: 1; font-size: 0.875rem; color: var(--fg, #fff); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); white-space: nowrap; }
+  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+</style>

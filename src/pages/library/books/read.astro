@@ -1,0 +1,45 @@
+---
+/*
+ * API: https://www.goodreads.com/review/list/132482257.xml?shelf=read&sort=date_read&per_page=100
+ * Goodreads profile: https://www.goodreads.com/user/show/132482257-chirag-singhal
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getGoodreadsShelf } from '~/lib/api'
+
+const read = await getGoodreadsShelf('read')
+---
+
+<Layout title="Books Read" active="/library/books/">
+  <div class="page-header">
+    <div class="kicker">BOOKS · READ</div>
+    <h1>Read</h1>
+    <p class="muted">{read.length} books · <a href="https://www.goodreads.com/review/list/132482257-chirag-singhal?shelf=read" target="_blank" rel="noopener">Goodreads ↗</a></p>
+  </div>
+
+  <ol class="subject-list">
+    {read.map((b: any, i: number) => (
+      <li class="subject-row">
+        <span class="rank">{i + 1}</span>
+        <div class="subject-info">
+          <a href={b.link} target="_blank" rel="noopener" class="subject-name">{b.title}</a>
+          <span class="subject-sub">{b.author}</span>
+        </div>
+        {b.rating && b.rating !== '0' && <span class="subject-meta">{'★'.repeat(Number(b.rating))}</span>}
+      </li>
+    ))}
+  </ol>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 2rem; text-align: right; flex-shrink: 0; }
+  .subject-info { flex: 1; min-width: 0; }
+  .subject-name { display: block; font-size: 0.8125rem; color: var(--fg, #fff); text-decoration: none; }
+  .subject-name:hover { color: #818cf8; }
+  .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
+  .subject-meta { font-size: 0.72rem; color: #f59e0b; white-space: nowrap; }
+</style>

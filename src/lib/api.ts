@@ -52,6 +52,16 @@ export async function getTraktStats() {
   }, {})
 }
 
+export async function getTraktWatchlist(limit = 100) {
+  return safe(async () => {
+    if (!TRAKT_ID) return []
+    const r = await fetch(`https://api.trakt.tv/users/${TRAKT_USER}/watchlist/movies?limit=${limit}`, {
+      headers: { 'trakt-api-version': '2', 'trakt-api-key': TRAKT_ID }
+    })
+    return r.ok ? r.json() : []
+  }, [])
+}
+
 export async function getMALAnime(status = 'watching', limit = 30) {
   return safe(async () => {
     if (!MAL_ID) return []
@@ -93,6 +103,16 @@ export async function getLastfmTopArtists(period = '1month', limit = 12) {
     if (!r.ok) return []
     const d = await r.json()
     return d.topartists?.artist ?? []
+  }, [])
+}
+
+export async function getLastfmTopTracks(period = '1month', limit = 12) {
+  return safe(async () => {
+    if (!LASTFM_KEY) return []
+    const r = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${LASTFM_USER}&api_key=${LASTFM_KEY}&format=json&period=${period}&limit=${limit}`)
+    if (!r.ok) return []
+    const d = await r.json()
+    return d.toptracks?.track ?? []
   }, [])
 }
 

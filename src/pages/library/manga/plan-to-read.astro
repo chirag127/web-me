@@ -1,0 +1,38 @@
+---
+/*
+ * MAL API (plan_to_read): https://api.myanimelist.net/v2/users/chirag127/mangalist?fields=list_status,mean&status=plan_to_read&limit=200
+ * Header: X-MAL-CLIENT-ID: CLIENT_ID
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getMALManga } from '~/lib/api'
+
+const planToRead = await getMALManga('plan_to_read', 100)
+---
+
+<Layout title="Plan to Read · Manga" active="/library/manga/">
+  <div class="page-header">
+    <div class="kicker">MANGA · PLAN TO READ</div>
+    <h1>Plan to Read</h1>
+    <p class="muted">{planToRead.length} queued</p>
+  </div>
+  <ol class="subject-list">
+    {planToRead.map((m: any, i: number) => (
+      <li class="subject-row">
+        <span class="rank">{i + 1}</span>
+        <span class="subject-name">{m.node.title}</span>
+        {m.node.mean && <span class="subject-meta">avg ★ {m.node.mean}</span>}
+      </li>
+    ))}
+  </ol>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 2rem; text-align: right; flex-shrink: 0; }
+  .subject-name { flex: 1; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+</style>

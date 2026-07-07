@@ -1,0 +1,69 @@
+---
+/*
+ * API (currently-reading): https://www.goodreads.com/review/list/132482257.xml?shelf=currently-reading&sort=date_updated&per_page=10
+ * API (read): https://www.goodreads.com/review/list/132482257.xml?shelf=read&sort=date_read&per_page=100
+ * Goodreads profile: https://www.goodreads.com/user/show/132482257-chirag-singhal
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getGoodreadsShelf } from '~/lib/api'
+
+const [reading, read, wantToRead] = await Promise.all([
+  getGoodreadsShelf('currently-reading'),
+  getGoodreadsShelf('read'),
+  getGoodreadsShelf('to-read'),
+])
+---
+
+<Layout title="Books" active="/library/books/">
+  <div class="page-header">
+    <div class="kicker">LIBRARY · BOOKS</div>
+    <h1>Books</h1>
+    <p class="muted">via <a href="https://www.goodreads.com/user/show/132482257-chirag-singhal" target="_blank" rel="noopener">Goodreads ↗</a></p>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat"><span class="val">{reading.length}</span><span class="lbl">READING</span></div>
+    <div class="divider"></div>
+    <div class="stat"><span class="val">{read.length}</span><span class="lbl">READ</span></div>
+    <div class="divider"></div>
+    <div class="stat"><span class="val">{wantToRead.length}</span><span class="lbl">WANT TO READ</span></div>
+  </div>
+
+  {reading.length > 0 && (
+    <>
+      <div class="kicker" style="margin-bottom:0.5rem">CURRENTLY READING</div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:1.5rem">
+        {reading.map((b: any) => (
+          <a href={b.link} target="_blank" rel="noopener" class="book-row">
+            <div>
+              <div class="book-title">{b.title}</div>
+              <div class="book-author">{b.author}</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
+  <nav class="sub-nav">
+    <a href="/library/books/read/">Read ({read.length}) →</a>
+    <a href="/library/books/want-to-read/">Want to Read ({wantToRead.length}) →</a>
+  </nav>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .stats-row { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .val { font-family: var(--font-display, Outfit); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; }
+  .lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
+  .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
+  .book-row { display: block; padding: 8px 10px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); border-radius: 6px; text-decoration: none; transition: background 120ms; }
+  .book-row:hover { background: rgba(255,255,255,0.04); }
+  .book-title { font-size: 0.875rem; color: var(--fg, #fff); }
+  .book-author { font-size: 0.75rem; color: var(--muted, #71717a); margin-top: 1px; }
+  .sub-nav { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .sub-nav a { font-size: 0.8rem; color: var(--muted, #71717a); text-decoration: none; }
+  .sub-nav a:hover { color: #fff; }
+</style>

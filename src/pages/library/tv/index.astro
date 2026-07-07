@@ -1,0 +1,74 @@
+---
+/*
+ * API (TV shows history): https://api.trakt.tv/users/chirag127/history/shows?limit=100
+ * API (currently watching): https://api.trakt.tv/users/chirag127/watching
+ * Headers: trakt-api-version: 2, trakt-api-key: CLIENT_ID
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getTraktShows, getTraktStats } from '~/lib/api'
+
+const [shows, stats] = await Promise.all([getTraktShows(100), getTraktStats()])
+const s = stats as any
+const unique = new Map<string, any>()
+for (const item of shows) {
+  if (item.show && !unique.has(item.show.title)) unique.set(item.show.title, item)
+}
+const uniqueShows = [...unique.values()]
+---
+
+<Layout title="TV Shows" active="/library/tv/">
+  <div class="page-header">
+    <div class="kicker">LIBRARY · TV SHOWS</div>
+    <h1>TV Shows</h1>
+    <p class="muted">via <a href="https://trakt.tv/users/chirag127" target="_blank" rel="noopener">Trakt.tv ↗</a></p>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat"><span class="val">{s?.shows?.watched ?? uniqueShows.length}</span><span class="lbl">SHOWS</span></div>
+    <div class="divider"></div>
+    <div class="stat"><span class="val">{s?.episodes?.watched?.toLocaleString?.() ?? '—'}</span><span class="lbl">EPISODES</span></div>
+    <div class="divider"></div>
+    <div class="stat"><span class="val">{Math.round((s?.episodes?.minutes ?? 0)/60)}</span><span class="lbl">HOURS</span></div>
+  </div>
+
+  {uniqueShows.length === 0 ? (
+    <div class="empty-state">
+      <p>No data. Set <code>TRAKT_CLIENT_ID</code> in CF Pages env vars.</p>
+    </div>
+  ) : (
+    <>
+      <div class="kicker" style="margin-bottom:0.5rem">RECENTLY WATCHED</div>
+      <ol class="subject-list">
+        {uniqueShows.slice(0, 50).map((s: any, i: number) => (
+          <li class="subject-row">
+            <span class="rank">{i + 1}</span>
+            <div class="subject-info">
+              <span class="subject-name">{s.show.title}</span>
+              {s.episode && <span class="subject-sub">S{s.episode.season}E{s.episode.number} · {s.episode.title}</span>}
+            </div>
+            <span class="subject-meta">{s.show.year}</span>
+          </li>
+        ))}
+      </ol>
+    </>
+  )}
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .stats-row { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .val { font-family: var(--font-display, Outfit); font-size: 1.5rem; font-weight: 700; color: #818cf8; line-height: 1; }
+  .lbl { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted, #71717a); }
+  .divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.08); }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.75rem; text-align: right; flex-shrink: 0; }
+  .subject-info { flex: 1; min-width: 0; }
+  .subject-name { display: block; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+</style>

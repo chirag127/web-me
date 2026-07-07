@@ -320,3 +320,21 @@ details.nav-group[open] .nav-chevron { transform: rotate(90deg); }
 
 /* ── Chip gap wrap ── */
 .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+
+/* Sidebar sub-items (nested under library categories) */
+.sidebar-sub {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-item--sub {
+  padding-left: 2.5rem !important;
+  font-size: 0.75rem !important;
+  color: var(--faint, #52525b) !important;
+}
+.sidebar-item--sub:hover {
+  color: var(--muted, #71717a) !important;
+}
+.sidebar-item--sub.active {
+  color: var(--fg, #fff) !important;
+  background: rgba(99,102,241,0.06) !important;
+}

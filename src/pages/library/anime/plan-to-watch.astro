@@ -1,0 +1,39 @@
+---
+/*
+ * MAL API (plan_to_watch): https://api.myanimelist.net/v2/users/chirag127/animelist?fields=list_status,main_picture&status=plan_to_watch&limit=200
+ * Header: X-MAL-CLIENT-ID: CLIENT_ID
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getMALAnime } from '~/lib/api'
+
+const planToWatch = await getMALAnime('plan_to_watch', 100)
+---
+
+<Layout title="Plan to Watch · Anime" active="/library/anime/">
+  <div class="page-header">
+    <div class="kicker">ANIME · PLAN TO WATCH</div>
+    <h1>Plan to Watch</h1>
+    <p class="muted">{planToWatch.length} queued · <a href="https://myanimelist.net/animelist/chirag127?status=6" target="_blank" rel="noopener">MAL ↗</a></p>
+  </div>
+
+  <ol class="subject-list">
+    {planToWatch.map((a: any, i: number) => (
+      <li class="subject-row">
+        <span class="rank">{i + 1}</span>
+        <span class="subject-name">{a.node.title}</span>
+        {a.node.mean && <span class="subject-meta">avg ★ {a.node.mean}</span>}
+      </li>
+    ))}
+  </ol>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 2rem; text-align: right; flex-shrink: 0; }
+  .subject-name { flex: 1; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); white-space: nowrap; }
+</style>

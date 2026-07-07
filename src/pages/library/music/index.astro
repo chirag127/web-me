@@ -1,0 +1,79 @@
+---
+/*
+ * API: https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=lastfmwhy&api_key=KEY&format=json&limit=200
+ * Fallback: https://api.listenbrainz.org/1/user/chirag127/listens?count=200
+ * Live now-playing: https://api.listenbrainz.org/1/user/chirag127/playing-now
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getLastfmRecent, getLBRecentTracks, getLBListeningNow } from '~/lib/api'
+
+const [recent, lbNow, lbRecent] = await Promise.all([
+  getLastfmRecent(100),
+  getLBListeningNow(),
+  getLBRecentTracks(50),
+])
+
+const nowPlaying = (recent[0] as any)?.['@attr']?.nowplaying ? recent[0] : null
+const tracks = recent.filter((t: any) => !t['@attr']?.nowplaying).slice(0, 100)
+---
+
+<Layout title="Recent Scrobbles · Music" active="/library/music/">
+  <div class="page-header">
+    <div class="kicker">MUSIC · RECENT</div>
+    <h1>Recent Scrobbles</h1>
+    <p class="muted">
+      Last.fm · <a href="https://www.last.fm/user/lastfmwhy" target="_blank" rel="noopener">lastfmwhy ↗</a>
+      &nbsp;·&nbsp;
+      ListenBrainz · <a href="https://listenbrainz.org/user/chirag127/" target="_blank" rel="noopener">chirag127 ↗</a>
+    </p>
+  </div>
+
+  {(nowPlaying ?? lbNow) && (
+    <div class="now-playing">
+      <span class="np-dot"></span>
+      <span class="np-label">NOW PLAYING</span>
+      <span class="np-track">
+        {(nowPlaying as any)?.name ?? lbNow?.track}
+        <span class="np-artist"> — {(nowPlaying as any)?.artist?.['#text'] ?? lbNow?.artist}</span>
+      </span>
+    </div>
+  )}
+
+  <ol class="subject-list">
+    {tracks.map((t: any, i: number) => (
+      <li class="subject-row">
+        <span class="rank">{i + 1}</span>
+        <div class="subject-info">
+          <span class="subject-name">{t.name}</span>
+          <span class="subject-sub">{t.artist?.['#text']}</span>
+        </div>
+        <span class="subject-meta">{t.date?.['#text'] ?? ''}</span>
+      </li>
+    ))}
+  </ol>
+
+  <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+    <a href="/library/music/top-artists/" style="font-size:0.8rem; color:var(--muted)">Top Artists →</a>
+    <a href="/library/music/top-tracks/" style="font-size:0.8rem; color:var(--muted)">Top Tracks →</a>
+    <a href="/library/music/stats/" style="font-size:0.8rem; color:var(--muted)">Stats →</a>
+  </div>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .now-playing { display: flex; align-items: center; gap: 0.5rem; padding: 8px 12px; background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; margin-bottom: 1rem; }
+  .np-dot { width: 6px; height: 6px; background: #6366f1; border-radius: 50%; animation: pulse 2s infinite; flex-shrink: 0; }
+  .np-label { font-size: 0.65rem; font-family: var(--font-mono, monospace); letter-spacing: 0.08em; text-transform: uppercase; color: #818cf8; flex-shrink: 0; }
+  .np-track { font-size: 0.875rem; color: #fff; }
+  .np-artist { color: var(--muted, #71717a); }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.5rem; text-align: right; flex-shrink: 0; }
+  .subject-info { flex: 1; min-width: 0; }
+  .subject-name { display: block; font-size: 0.8125rem; color: var(--fg, #fff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
+  .subject-meta { font-size: 0.68rem; color: var(--faint, #52525b); font-family: var(--font-mono, monospace); white-space: nowrap; }
+</style>

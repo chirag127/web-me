@@ -1,0 +1,52 @@
+---
+/*
+ * API (recently watched): https://api.trakt.tv/users/chirag127/history/movies?limit=100
+ * Headers: trakt-api-version: 2, trakt-api-key: CLIENT_ID
+ * Stats: https://api.trakt.tv/users/chirag127/stats
+ */
+import Layout from '~/layouts/Layout.astro'
+import { getTraktMovies, getTraktStats } from '~/lib/api'
+
+const [movies, stats] = await Promise.all([getTraktMovies(100), getTraktStats()])
+const watched = (stats as any)?.movies?.watched ?? movies.length
+const hours = Math.round(((stats as any)?.movies?.minutes ?? 0) / 60)
+---
+
+<Layout title="Movies Watched" active="/library/movies/watched/">
+  <div class="page-header">
+    <div class="kicker">MOVIES · WATCHED</div>
+    <h1>Watched</h1>
+    <p class="muted">{watched} movies · {hours}h · via Trakt.tv</p>
+  </div>
+
+  {movies.length === 0 ? (
+    <div class="empty-state">
+      <p>No data. Set <code>TRAKT_CLIENT_ID</code> in CF Pages env vars.</p>
+      <p class="faint" style="font-size:0.75rem;margin-top:0.5rem">
+        Direct: <a href="https://trakt.tv/users/chirag127/history/movies" target="_blank" rel="noopener">trakt.tv/users/chirag127/history ↗</a>
+      </p>
+    </div>
+  ) : (
+    <ol class="subject-list">
+      {movies.filter((m: any) => m.movie).map((m: any, i: number) => (
+        <li class="subject-row">
+          <span class="rank">{i + 1}</span>
+          <span class="subject-name">{m.movie.title}</span>
+          <span class="subject-meta">{m.movie.year}</span>
+        </li>
+      ))}
+    </ol>
+  )}
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { font-size: 1.5rem; margin: 0.25rem 0; }
+  .subject-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .subject-row { display: flex; align-items: center; gap: 0.75rem; padding: 5px 8px; border-radius: 5px; }
+  .subject-row:hover { background: rgba(255,255,255,0.03); }
+  .rank { font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--faint, #52525b); width: 1.75rem; text-align: right; flex-shrink: 0; }
+  .subject-name { flex: 1; font-size: 0.8125rem; color: var(--fg, #fff); }
+  .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .empty-state { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.875rem; color: var(--muted, #71717a); }
+</style>
