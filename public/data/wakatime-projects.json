@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< Updated upstream
     "id": "630ab249-f156-4cc5-80ca-502f1efee5f9",
     "name": "me-site",
     "color": null,
@@ -16,6 +17,8 @@
     "human_readable_last_heartbeat_at": "Jul 8, 2026, 5:35 PM IST"
   },
   {
+=======
+>>>>>>> Stashed changes
     "id": "1094c8aa-7e89-47dc-8a04-d12e87dd61ed",
     "name": "ws",
     "color": null,
