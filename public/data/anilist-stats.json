@@ -5,11 +5,65 @@
     "anime": {
       "count": 4,
       "episodesWatched": 211,
-      "minutesWatched": 5027
+      "minutesWatched": 5027,
+      "meanScore": 100
     },
     "manga": {
       "count": 0,
-      "chaptersRead": 0
+      "chaptersRead": 0,
+      "volumesRead": 0,
+      "meanScore": 0
+    }
+  },
+  "favourites": {
+    "anime": {
+      "nodes": [
+        {
+          "id": 21519,
+          "title": {
+            "romaji": "Kimi no Na wa."
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21519-SUo3ZQuCbYhJ.png"
+          }
+        },
+        {
+          "id": 11061,
+          "title": {
+            "romaji": "HUNTER×HUNTER (2011)"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11061-y5gsT1hoHuHw.png"
+          }
+        },
+        {
+          "id": 1535,
+          "title": {
+            "romaji": "DEATH NOTE"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1535-kUgkcrfOrkUM.jpg"
+          }
+        },
+        {
+          "id": 101922,
+          "title": {
+            "romaji": "Kimetsu no Yaiba"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101922-WBsBl0ClmgYL.jpg"
+          }
+        },
+        {
+          "id": 112233,
+          "title": {
+            "romaji": "Boku to Joi no Shinsatsu Nisshi The Animation"
+          },
+          "coverImage": {
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112233-8iayoMmuk2qa.jpg"
+          }
+        }
+      ]
     }
   }
 }

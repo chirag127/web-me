@@ -219,7 +219,7 @@
     "@attr": {
       "rank": "6"
     },
-    "playcount": "11"
+    "playcount": "12"
   },
   {
     "streamable": {
@@ -1115,6 +1115,43 @@
       "#text": "0"
     },
     "mbid": "",
+    "name": "Stitches",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/Shawn+Mendes",
+      "name": "Shawn Mendes",
+      "mbid": "b7d92248-97e3-4450-8057-6fe06738f735"
+    },
+    "url": "https://www.last.fm/music/Shawn+Mendes/_/Stitches",
+    "duration": "206",
+    "@attr": {
+      "rank": "31"
+    },
+    "playcount": "4"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
+    "mbid": "",
     "name": "Wonder",
     "image": [
       {
@@ -1142,7 +1179,44 @@
     "url": "https://www.last.fm/music/Shawn+Mendes/_/Wonder",
     "duration": "172",
     "@attr": {
-      "rank": "31"
+      "rank": "32"
+    },
+    "playcount": "4"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
+    "mbid": "596863d9-7b83-498e-bca7-590fbf149a85",
+    "name": "Got Me Started",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/Troye+Sivan",
+      "name": "Troye Sivan",
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4"
+    },
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Got+Me+Started",
+    "duration": "198",
+    "@attr": {
+      "rank": "33"
     },
     "playcount": "4"
   },
@@ -1179,7 +1253,44 @@
     "url": "https://www.last.fm/music/Troye+Sivan/_/TALK+ME+DOWN+(Blue+Neighbourhood+3%2F3)",
     "duration": "0",
     "@attr": {
-      "rank": "32"
+      "rank": "34"
+    },
+    "playcount": "4"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
+    "mbid": "1ab9c1fb-7abf-4543-87c8-030ca668e3af",
+    "name": "THE QUIET",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/Troye+Sivan",
+      "name": "Troye Sivan",
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4"
+    },
+    "url": "https://www.last.fm/music/Troye+Sivan/_/THE+QUIET",
+    "duration": "226",
+    "@attr": {
+      "rank": "35"
     },
     "playcount": "4"
   },
@@ -1216,7 +1327,7 @@
     "url": "https://www.last.fm/music/5+Seconds+of+Summer/_/Easier",
     "duration": "157",
     "@attr": {
-      "rank": "33"
+      "rank": "36"
     },
     "playcount": "3"
   },
@@ -1253,7 +1364,7 @@
     "url": "https://www.last.fm/music/Charlie+Puth/_/Cheating+on+You",
     "duration": "196",
     "@attr": {
-      "rank": "34"
+      "rank": "37"
     },
     "playcount": "3"
   },
@@ -1290,7 +1401,44 @@
     "url": "https://www.last.fm/music/Charlie+Puth/_/That%27s+Not+How+This+Works+(feat.+dan+%252B+shay)",
     "duration": "165",
     "@attr": {
-      "rank": "35"
+      "rank": "38"
+    },
+    "playcount": "3"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
+    "mbid": "ffe9cffb-4b02-40f5-b20a-fc3e5d44e388",
+    "name": "double take",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/dhruv",
+      "name": "dhruv",
+      "mbid": ""
+    },
+    "url": "https://www.last.fm/music/dhruv/_/double+take",
+    "duration": "171",
+    "@attr": {
+      "rank": "39"
     },
     "playcount": "3"
   },
@@ -1327,7 +1475,7 @@
     "url": "https://www.last.fm/music/Ed+Sheeran/_/Barcelona",
     "duration": "191",
     "@attr": {
-      "rank": "36"
+      "rank": "40"
     },
     "playcount": "3"
   },
@@ -1364,7 +1512,7 @@
     "url": "https://www.last.fm/music/Harry+Styles/_/Adore+You",
     "duration": "207",
     "@attr": {
-      "rank": "37"
+      "rank": "41"
     },
     "playcount": "3"
   },
@@ -1401,7 +1549,44 @@
     "url": "https://www.last.fm/music/James+Smith/_/Tell+Me+That+You+Love+Me",
     "duration": "194",
     "@attr": {
-      "rank": "38"
+      "rank": "42"
+    },
+    "playcount": "3"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
+    "mbid": "",
+    "name": "Baby ft. Ludacris",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/Justin+Bieber",
+      "name": "Justin Bieber",
+      "mbid": ""
+    },
+    "url": "https://www.last.fm/music/Justin+Bieber/_/Baby+ft.+Ludacris",
+    "duration": "0",
+    "@attr": {
+      "rank": "43"
     },
     "playcount": "3"
   },
@@ -1438,7 +1623,44 @@
     "url": "https://www.last.fm/music/Justin+Bieber/_/Ghost",
     "duration": "153",
     "@attr": {
-      "rank": "39"
+      "rank": "44"
+    },
+    "playcount": "3"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
+    "mbid": "",
+    "name": "Love Yourself (PURPOSE : The Movement)",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/Justin+Bieber",
+      "name": "Justin Bieber",
+      "mbid": ""
+    },
+    "url": "https://www.last.fm/music/Justin+Bieber/_/Love+Yourself+(PURPOSE+:+The+Movement)",
+    "duration": "0",
+    "@attr": {
+      "rank": "45"
     },
     "playcount": "3"
   },
@@ -1475,7 +1697,7 @@
     "url": "https://www.last.fm/music/keshi/_/Soft+Spot",
     "duration": "204",
     "@attr": {
-      "rank": "40"
+      "rank": "46"
     },
     "playcount": "3"
   },
@@ -1512,7 +1734,7 @@
     "url": "https://www.last.fm/music/Lauv/_/****,+i%27m+lonely+(with+Anne-Marie)",
     "duration": "0",
     "@attr": {
-      "rank": "41"
+      "rank": "47"
     },
     "playcount": "3"
   },
@@ -1549,7 +1771,7 @@
     "url": "https://www.last.fm/music/Lauv/_/26",
     "duration": "159",
     "@attr": {
-      "rank": "42"
+      "rank": "48"
     },
     "playcount": "3"
   },
@@ -1586,7 +1808,7 @@
     "url": "https://www.last.fm/music/Lauv/_/Adrenaline",
     "duration": "0",
     "@attr": {
-      "rank": "43"
+      "rank": "49"
     },
     "playcount": "3"
   },
@@ -1621,228 +1843,6 @@
       "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11"
     },
     "url": "https://www.last.fm/music/Lauv/_/Bracelet",
-    "duration": "0",
-    "@attr": {
-      "rank": "44"
-    },
-    "playcount": "3"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "70fcc4de-36df-4430-bc47-82fcb4cc43b4",
-    "name": "Easy Love",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Lauv",
-      "name": "Lauv",
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11"
-    },
-    "url": "https://www.last.fm/music/Lauv/_/Easy+Love",
-    "duration": "0",
-    "@attr": {
-      "rank": "45"
-    },
-    "playcount": "3"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "03ad40c6-3464-48a4-9a45-c84a3971962a",
-    "name": "I Like Me Better",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Lauv",
-      "name": "Lauv",
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11"
-    },
-    "url": "https://www.last.fm/music/Lauv/_/I+Like+Me+Better",
-    "duration": "197",
-    "@attr": {
-      "rank": "46"
-    },
-    "playcount": "3"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "3cbde18a-b49c-4de3-9cf8-76a58245d7ef",
-    "name": "Love Somebody",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Lauv",
-      "name": "Lauv",
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11"
-    },
-    "url": "https://www.last.fm/music/Lauv/_/Love+Somebody",
-    "duration": "142",
-    "@attr": {
-      "rank": "47"
-    },
-    "playcount": "3"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "c968fb90-b5a1-429f-af79-59bb46157cf0",
-    "name": "Love U Like That",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Lauv",
-      "name": "Lauv",
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11"
-    },
-    "url": "https://www.last.fm/music/Lauv/_/Love+U+Like+That",
-    "duration": "211",
-    "@attr": {
-      "rank": "48"
-    },
-    "playcount": "3"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "",
-    "name": "Memories",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Maroon+5",
-      "name": "Maroon 5",
-      "mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe"
-    },
-    "url": "https://www.last.fm/music/Maroon+5/_/Memories",
-    "duration": "185",
-    "@attr": {
-      "rank": "49"
-    },
-    "playcount": "3"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "",
-    "name": "Help Me Out Ft. Julia Michaels",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Maroon+5,+Julia+Michaels",
-      "name": "Maroon 5, Julia Michaels",
-      "mbid": ""
-    },
-    "url": "https://www.last.fm/music/Maroon+5,+Julia+Michaels/_/Help+Me+Out+Ft.+Julia+Michaels",
     "duration": "0",
     "@attr": {
       "rank": "50"

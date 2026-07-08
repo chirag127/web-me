@@ -64,6 +64,14 @@ const IGDB_CLIENT_ID     = process.env.IGDB_CLIENT_ID     ?? ''
 const IGDB_CLIENT_SECRET = process.env.IGDB_CLIENT_SECRET ?? ''
 const NOTION_TOKEN  = process.env.NOTION_TOKEN            ?? ''
 const NOTION_DB_ID  = process.env.NOTION_JOURNAL_DB_ID    ?? ''
+const STEAM_KEY     = process.env.STEAM_API_KEY           ?? ''
+const STEAM_ID      = process.env.STEAM_ID                ?? ''
+const DEVTO_USER    = process.env.DEVTO_USERNAME          ?? 'chirag127'
+const HN_USER       = process.env.HASHNODE_USERNAME       ?? 'chirag127'
+const PH_TOKEN      = process.env.PRODUCTHUNT_TOKEN       ?? ''
+const SPOTIFY_CLIENT_ID      = process.env.SPOTIFY_CLIENT_ID      ?? ''
+const SPOTIFY_REFRESH_TOKEN  = process.env.SPOTIFY_REFRESH_TOKEN  ?? ''
+const SPOTIFY_CLIENT_SECRET  = process.env.SPOTIFY_CLIENT_SECRET  ?? ''
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -312,11 +320,35 @@ async function fetchMAL() {
 }
 
 async function fetchGoodreads() {
-  // Replaced by Hardcover (Goodreads XML API deprecated since 2020, returns 401)
-  console.log('  ℹ Goodreads deprecated — use Hardcover instead')
-  save('goodreads-currently-reading.json', [])
-  save('goodreads-read.json', [])
-  save('goodreads-to-read.json', [])
+  // Goodreads XML API deprecated since 2020. Use RSS shelf feed instead (still works).
+  const url = `https://www.goodreads.com/review/list_rss/${GR_ID}?shelf=currently-reading`
+  const h = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+  try {
+    const r = await fetch(url, { headers: h, signal: AbortSignal.timeout(15000) })
+    if (!r.ok) { console.warn(`    ⚠ Goodreads RSS HTTP ${r.status}`); save('goodreads-rss.json', []); return }
+    const xml = await r.text()
+    const items = xml.match(/<item>[\s\S]*?<\/item>/g) ?? []
+    const books = items.map(item => ({
+      title:     item.match(/<title>([\s\S]*?)<\/title>/)?.[1]?.trim() ?? '',
+      link:      item.match(/<link>([\s\S]*?)<\/link>/)?.[1]?.trim() ?? '',
+      author:    item.match(/<author_name>([\s\S]*?)<\/author_name>/)?.[1]?.trim() ?? '',
+      cover:     item.match(/<book_large_image_url>([\s\S]*?)<\/book_large_image_url>/)?.[1]?.trim() ?? item.match(/<book_image_url>([\s\S]*?)<\/book_image_url>/)?.[1]?.trim() ?? '',
+      rating:    item.match(/<user_rating>([\s\S]*?)<\/user_rating>/)?.[1]?.trim() ?? '',
+      pages:     item.match(/<num_pages>([\s\S]*?)<\/num_pages>/)?.[1]?.trim() ?? '',
+      pubDate:   item.match(/<pubDate>([\s\S]*?)<\/pubDate>/)?.[1]?.trim() ?? '',
+    }))
+    save('goodreads-rss.json', books)
+    // Keep stale compat files
+    save('goodreads-currently-reading.json', books)
+    save('goodreads-read.json', [])
+    save('goodreads-to-read.json', [])
+  } catch (e: any) {
+    console.warn(`  ⚠ Goodreads RSS: ${e.message}`)
+    save('goodreads-rss.json', [])
+    save('goodreads-currently-reading.json', [])
+    save('goodreads-read.json', [])
+    save('goodreads-to-read.json', [])
+  }
 }
 
 async function fetchHardcover() {
@@ -561,8 +593,11 @@ async function fetchAniList() {
       User(name: $name) {
         id name
         statistics {
-          anime { count episodesWatched minutesWatched }
-          manga { count chaptersRead }
+          anime { count episodesWatched minutesWatched meanScore }
+          manga { count chaptersRead volumesRead meanScore }
+        }
+        favourites {
+          anime { nodes { id title { romaji } coverImage { medium } } }
         }
       }
     }
@@ -816,6 +851,83 @@ async function fetchIGDB() {
   }
 }
 
+async function fetchReddit() {
+  const h = { 'User-Agent': 'me.oriz.in/1.0 (by /u/chirag127)' }
+  const [profile, posts] = await Promise.all([
+    safeFetch('https://www.reddit.com/user/chirag127/about.json', h),
+    safeFetch('https://www.reddit.com/user/chirag127/submitted.json?limit=10', h),
+  ])
+  save('reddit-profile.json', (profile as any)?.data ?? {})
+  save('reddit-posts.json',   ((posts as any)?.data?.children ?? []).map((c: any) => c.data))
+}
+
+async function fetchSteam() {
+  if (!STEAM_KEY || !STEAM_ID) { console.log('  ⚠ STEAM_API_KEY/STEAM_ID not set — skipping Steam'); return }
+  const data = await safeFetch(`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${STEAM_KEY}&steamids=${STEAM_ID}`)
+  save('steam-profile.json', (data as any)?.response?.players?.[0] ?? {})
+}
+
+async function fetchDevTo() {
+  const data = await safeFetch(`https://dev.to/api/articles?username=${DEVTO_USER}&per_page=10`)
+  save('devto-articles.json', Array.isArray(data) ? data : [])
+}
+
+async function fetchHashnode() {
+  const query = `{ user(username:"${HN_USER}") { posts(page:0,pageSize:10) { nodes { title brief url publishedAt } } } }`
+  try {
+    const r = await fetch('https://gql.hashnode.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'User-Agent': 'me.oriz.in/1.0' },
+      body: JSON.stringify({ query }),
+      signal: AbortSignal.timeout(15000),
+    })
+    if (!r.ok) { console.warn(`    ⚠ Hashnode HTTP ${r.status}`); save('hashnode-articles.json', []); return }
+    const text = await r.text()
+    let data: any
+    try { data = JSON.parse(text) } catch { console.warn(`    ⚠ Hashnode non-JSON response`); save('hashnode-articles.json', []); return }
+    save('hashnode-articles.json', data?.data?.user?.posts?.nodes ?? [])
+  } catch (e: any) {
+    console.warn(`    ⚠ Hashnode: ${e.message}`)
+    save('hashnode-articles.json', [])
+  }
+}
+
+async function fetchProductHunt() {
+  if (!PH_TOKEN) { console.log('  ⚠ PRODUCTHUNT_TOKEN not set — skipping ProductHunt'); return }
+  const query = `{ user(username:"chirag127") { madePosts(first:10) { edges { node { name tagline url votesCount createdAt thumbnail { url } } } } } }`
+  const data = await safePost('https://api.producthunt.com/v2/api/graphql', { Authorization: `Bearer ${PH_TOKEN}` }, { query })
+  const products = ((data as any)?.data?.user?.madePosts?.edges ?? []).map((e: any) => e.node)
+  save('producthunt-products.json', products)
+}
+
+async function fetchSpotify() {
+  if (!SPOTIFY_CLIENT_ID || !SPOTIFY_REFRESH_TOKEN) { console.log('  ⚠ SPOTIFY_CLIENT_ID/SPOTIFY_REFRESH_TOKEN not set — skipping Spotify'); return }
+
+  // Refresh access token
+  const secret = SPOTIFY_CLIENT_SECRET
+  const creds = Buffer.from(`${SPOTIFY_CLIENT_ID}:${secret}`).toString('base64')
+  let accessToken = ''
+  try {
+    const r = await fetch('https://accounts.spotify.com/api/token', {
+      method: 'POST',
+      headers: { 'Authorization': `Basic ${creds}`, 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: `grant_type=refresh_token&refresh_token=${encodeURIComponent(SPOTIFY_REFRESH_TOKEN)}`,
+      signal: AbortSignal.timeout(15000),
+    })
+    if (!r.ok) { console.warn(`    ⚠ Spotify token refresh HTTP ${r.status}`); return }
+    const t = await r.json() as any
+    accessToken = t.access_token
+  } catch (e: any) { console.warn(`    ⚠ Spotify token refresh: ${e.message}`); return }
+
+  const h = { Authorization: `Bearer ${accessToken}` }
+  const [artists, tracks] = await Promise.all([
+    safeFetch('https://api.spotify.com/v1/me/top/artists?limit=10&time_range=short_term', h),
+    safeFetch('https://api.spotify.com/v1/me/top/tracks?limit=10', h),
+  ])
+  save('spotify-top-artists.json', (artists as any)?.items ?? [])
+  save('spotify-top-tracks.json',  (tracks as any)?.items ?? [])
+}
+
 // ---- main ------------------------------------------------------------------
 async function main() {
   console.log('\n📦 Fetching data for me.oriz.in build...\n')
@@ -840,6 +952,13 @@ async function main() {
   console.log(`  NOTION_TOKEN:          ${NOTION_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  NOTION_JOURNAL_DB_ID:  ${NOTION_DB_ID ? '✓ set' : '✗ missing'}`)
   console.log(`  IGDB_CLIENT_ID:        ${IGDB_CLIENT_ID ? '✓ set' : '✗ missing'}`)
+  console.log(`  STEAM_API_KEY:         ${STEAM_KEY ? '✓ set' : '✗ missing'}`)
+  console.log(`  STEAM_ID:              ${STEAM_ID || '✗ missing'}`)
+  console.log(`  DEVTO_USERNAME:        ${DEVTO_USER}`)
+  console.log(`  HASHNODE_USERNAME:     ${HN_USER}`)
+  console.log(`  PRODUCTHUNT_TOKEN:     ${PH_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  SPOTIFY_CLIENT_ID:     ${SPOTIFY_CLIENT_ID ? '✓ set' : '✗ missing'}`)
+  console.log(`  SPOTIFY_REFRESH_TOKEN: ${SPOTIFY_REFRESH_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log()
 
   // Trakt must complete before TMDB enrichment reads its output files
@@ -862,6 +981,12 @@ async function main() {
     fetchOpenLibrary().then(() => console.log('✅ OpenLibrary done')).catch(e => console.error('❌ OpenLibrary', e.message)),
     fetchNotion().then(() => console.log('✅ Notion done')).catch(e => console.error('❌ Notion', e.message)),
     fetchIGDB().then(() => console.log('✅ IGDB done')).catch(e => console.error('❌ IGDB', e.message)),
+    fetchReddit().then(() => console.log('✅ Reddit done')).catch(e => console.error('❌ Reddit', e.message)),
+    fetchSteam().then(() => console.log('✅ Steam done')).catch(e => console.error('❌ Steam', e.message)),
+    fetchDevTo().then(() => console.log('✅ Dev.to done')).catch(e => console.error('❌ Dev.to', e.message)),
+    fetchHashnode().then(() => console.log('✅ Hashnode done')).catch(e => console.error('❌ Hashnode', e.message)),
+    fetchProductHunt().then(() => console.log('✅ ProductHunt done')).catch(e => console.error('❌ ProductHunt', e.message)),
+    fetchSpotify().then(() => console.log('✅ Spotify done')).catch(e => console.error('❌ Spotify', e.message)),
   ])
   // Trakt first, then TMDB (enrichment reads trakt-*.json)
   await fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message))
