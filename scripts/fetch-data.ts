@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * scripts/fetch-data.ts
  * Pre-build data fetcher — runs before `astro build` via `prebuild` npm hook.
@@ -53,9 +53,17 @@ const GH_USER     = process.env.GH_USERNAME        ?? 'chirag127'
 const TMDB_TOKEN  = process.env.TMDB_READ_ACCESS_TOKEN ?? ''  // Bearer read-access token
 const HAB_USER    = process.env.HABITICA_USER_ID    ?? ''
 const HAB_TOKEN   = process.env.HABITICA_API_TOKEN  ?? ''
+const BGG_USER    = process.env.BGG_USERNAME        ?? ''
 const TOGGL_TOKEN  = process.env.TOGGL_API_TOKEN     ?? ''
 const WAKA_KEY    = process.env.WAKATIME_API_KEY    ?? ''
-const ANILIST_USER = process.env.ANILIST_USERNAME  ?? 'chirag127'
+const ANILIST_USER  = process.env.ANILIST_USERNAME   ?? 'chirag127'
+const OL_USER       = process.env.OL_USERNAME        ?? 'chirag127'
+const PI_KEY        = process.env.PODCASTINDEX_API_KEY    ?? ''
+const PI_SECRET     = process.env.PODCASTINDEX_API_SECRET ?? ''
+const IGDB_CLIENT_ID     = process.env.IGDB_CLIENT_ID     ?? ''
+const IGDB_CLIENT_SECRET = process.env.IGDB_CLIENT_SECRET ?? ''
+const NOTION_TOKEN  = process.env.NOTION_TOKEN            ?? ''
+const NOTION_DB_ID  = process.env.NOTION_JOURNAL_DB_ID    ?? ''
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -401,6 +409,42 @@ async function fetchHabitica() {
   save('habitica-todos.json',   (todos as any)?.data ?? [])
 }
 
+async function fetchBGG() {
+  if (!BGG_USER) { console.log('  ⚠ BGG_USERNAME not set — skipping BGG'); return }
+
+  const url = `https://boardgamegeek.com/xmlapi2/collection?username=${BGG_USER}&own=1&stats=1`
+  const h = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+
+  // BGG returns 202 on first request — retry up to 5x with 3s delay
+  let xml: string | null = null
+  for (let attempt = 0; attempt < 5; attempt++) {
+    try {
+      const r = await fetch(url, { headers: h, signal: AbortSignal.timeout(15000) })
+      if (r.status === 202) { await new Promise(res => setTimeout(res, 3000)); continue }
+      if (!r.ok) { console.warn(`    ⚠ BGG HTTP ${r.status}`); break }
+      xml = await r.text(); break
+    } catch (e: any) { console.warn(`    ⚠ BGG: ${e.message}`); break }
+  }
+
+  if (!xml) { save('bgg-collection.json', []); return }
+
+  // Parse XML manually (avoid adding fast-xml-parser dep for now)
+  const items: any[] = []
+  const itemBlocks = xml.match(/<item[^>]*>[\s\S]*?<\/item>/g) ?? []
+  for (const block of itemBlocks) {
+    const id    = block.match(/objectid="(\d+)"/)?.[1] ?? ''
+    const name  = block.match(/<name sortindex[^>]*>([\s\S]*?)<\/name>/)?.[1]?.trim() ?? ''
+    const year  = block.match(/<yearpublished>([\s\S]*?)<\/yearpublished>/)?.[1]?.trim() ?? ''
+    const image = block.match(/<image>([\s\S]*?)<\/image>/)?.[1]?.trim() ?? ''
+    const thumb = block.match(/<thumbnail>([\s\S]*?)<\/thumbnail>/)?.[1]?.trim() ?? ''
+    const minP  = block.match(/minplayers value="(\d+)"/)?.[1] ?? ''
+    const maxP  = block.match(/maxplayers value="(\d+)"/)?.[1] ?? ''
+    const avg   = block.match(/average value="([\d.]+)"/)?.[1] ?? ''
+    const numPlays = block.match(/<numplays>([\s\S]*?)<\/numplays>/)?.[1]?.trim() ?? '0'
+    if (name) items.push({ id, name, year, image: image.startsWith('//') ? 'https:'+image : image, thumb: thumb.startsWith('//') ? 'https:'+thumb : thumb, minPlayers: minP, maxPlayers: maxP, avgRating: avg, numPlays })
+  }
+  save('bgg-collection.json', items)
+}
 async function fetchToggl() {
   if (!TOGGL_TOKEN) { console.log('  ⚠ TOGGL_API_TOKEN not set — skipping Toggl'); return }
   const auth = Buffer.from(`${TOGGL_TOKEN}:api_token`).toString('base64')
@@ -550,6 +594,40 @@ async function fetchAniList() {
   save('anilist-stats.json',            stats?.User ?? {})
 }
 
+
+async function fetchPodcasts() {
+  if (!PI_KEY || !PI_SECRET) {
+    console.log('  ⚠ PODCASTINDEX_API_KEY not set — skipping Podcast Index')
+    const manual = loadStale('podcasts-manual.json') as any[] ?? []
+    save('podcasts-enriched.json', manual)
+    return
+  }
+
+  // HMAC-SHA1 auth
+  const { createHmac } = await import('crypto')
+  const now = Math.floor(Date.now() / 1000).toString()
+  const hash = createHmac('sha1', PI_SECRET).update(PI_KEY + PI_SECRET + now).digest('hex')
+  const h = {
+    'X-Auth-Key':    PI_KEY,
+    'X-Auth-Date':   now,
+    'Authorization': `Podcastindex key="${PI_KEY}", name="chirag127", hash="${hash}"`,
+    'User-Agent':    'me.oriz.in/1.0',
+  }
+
+  const manual: any[] = (loadStale('podcasts-manual.json') as any[] ?? [])
+  const enriched = await Promise.all(manual.map(async (pod) => {
+    if (!pod.feedUrl && !pod.title) return pod
+    const query = pod.feedUrl
+      ? `https://api.podcastindex.org/api/1.0/podcasts/byfeedurl?url=${encodeURIComponent(pod.feedUrl)}`
+      : `https://api.podcastindex.org/api/1.0/search/byterm?q=${encodeURIComponent(pod.title)}&max=1`
+    const data = await safeFetch(query, h)
+    const feed = (data as any)?.feed ?? (data as any)?.feeds?.[0]
+    if (!feed) return pod
+    return { ...pod, title: feed.title, image: feed.image || feed.artwork, description: feed.description, episodeCount: feed.episodeCount, itunesId: feed.itunesId }
+  }))
+
+  save('podcasts-enriched.json', enriched)
+}
 async function fetchBlog() {
   try {
     const r = await fetch('https://blog.oriz.in/rss.xml', { signal: AbortSignal.timeout(10000) })
@@ -614,6 +692,130 @@ async function fetchWakaTime() {
   save('wakatime-projects.json', Array.isArray((projects as any)?.data) ? (projects as any).data.slice(0, 30) : [])
 }
 
+async function fetchOpenLibrary() {
+  const base = `https://openlibrary.org/people/${OL_USER}/books`
+  const h = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36' }
+
+  const [read, reading, want] = await Promise.all([
+    safeFetch(`${base}/already-read.json?limit=100`, h),
+    safeFetch(`${base}/currently-reading.json?limit=100`, h),
+    safeFetch(`${base}/want-to-read.json?limit=100`, h),
+  ])
+
+  const shape = (d: any) => (d?.reading_log_entries ?? []).map((e: any) => ({
+    title:      e.work?.title ?? '',
+    author:     e.work?.author_names?.[0] ?? '',
+    year:       e.work?.first_publish_year ?? '',
+    cover:      e.work?.cover_id ? `https://covers.openlibrary.org/b/id/${e.work.cover_id}-M.jpg` : '',
+    key:        e.work?.key ?? '',
+    loggedDate: e.logged_date ?? '',
+  }))
+
+  save('ol-read.json',    shape(read))
+  save('ol-reading.json', shape(reading))
+  save('ol-want.json',    shape(want))
+}
+
+async function fetchNotion() {
+  const token = process.env.NOTION_TOKEN ?? NOTION_TOKEN
+  const dbId  = process.env.NOTION_JOURNAL_DB_ID ?? NOTION_DB_ID
+  if (!token || !dbId) { console.log('  ⚠ NOTION_TOKEN/DB not set — skipping Notion'); return }
+
+  const data = await safePost(
+    `https://api.notion.com/v1/databases/${dbId}/query`,
+    { 'Authorization': `Bearer ${token}`, 'Notion-Version': '2022-06-28' },
+    { page_size: 50, sorts: [{ property: 'Date', direction: 'descending' }] }
+  )
+
+  const pages = (data as any)?.results ?? []
+  const entries = pages.map((p: any) => {
+    const props = p.properties ?? {}
+    return {
+      id:      p.id,
+      date:    props.Date?.date?.start ?? props.Created?.created_time?.slice(0,10) ?? '',
+      title:   props.Title?.title?.[0]?.plain_text ?? props.Name?.title?.[0]?.plain_text ?? '',
+      mood:    props.Mood?.select?.name ?? '',
+      energy:  props.Energy?.select?.name ?? '',
+      tags:    (props.Tags?.multi_select ?? []).map((t: any) => t.name),
+      notes:   (props.Notes?.rich_text ?? []).map((t: any) => t.plain_text).join(''),
+      url:     p.url ?? '',
+    }
+  })
+
+  save('notion-journal.json', entries)
+  save('notion-stats.json', {
+    total: entries.length,
+    moods: entries.reduce((acc: any, e: any) => { if (e.mood) acc[e.mood] = (acc[e.mood]||0)+1; return acc }, {}),
+    last_entry: entries[0]?.date ?? '',
+  })
+}
+
+
+async function fetchIGDB() {
+  const CLIENT_ID     = IGDB_CLIENT_ID
+  const CLIENT_SECRET = IGDB_CLIENT_SECRET
+  if (!CLIENT_ID || !CLIENT_SECRET) {
+    console.log('  ⚠ IGDB_CLIENT_ID not set — skipping IGDB enrichment')
+    // Fall back: enrich games-manual.json with whatever we have
+    const manual = (loadStale('games-manual.json') as any[]) ?? []
+    save('games-enriched.json', manual)
+    return
+  }
+
+  // 1. Get/refresh Twitch access token (cache in games-igdb-token.json)
+  let token = ''
+  const cached = loadStale('games-igdb-token.json') as any
+  if (cached?.access_token && cached?.expires_at > Date.now()) {
+    token = cached.access_token
+  } else {
+    const t = await safePost(
+      `https://id.twitch.tv/oauth2/token?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&grant_type=client_credentials`,
+      {}, {}
+    ) as any
+    if (!t?.access_token) { console.warn('    ⚠ IGDB token exchange failed'); return }
+    token = t.access_token
+    save('games-igdb-token.json', { access_token: t.access_token, expires_at: Date.now() + (t.expires_in - 300) * 1000 })
+  }
+
+  const h = { 'Client-ID': CLIENT_ID, 'Authorization': `Bearer ${token}` }
+
+  // 2. Enrich games-manual.json with IGDB metadata
+  const manual: any[] = (loadStale('games-manual.json') as any[]) ?? []
+  const enriched = await Promise.all(manual.map(async (game) => {
+    if (!game.title) return game
+    const results = await safePost('https://api.igdb.com/v4/games', h,
+      { query: `search "${game.title}"; fields name,cover.url,genres.name,rating,first_release_date,platforms.name; limit 1;` }
+    ) as any[]
+    const match = Array.isArray(results) ? results[0] : null
+    if (!match) return game
+    return {
+      ...game,
+      igdb_id:      match.id,
+      cover:        match.cover?.url?.replace('t_thumb','t_cover_big').replace('//',  'https://') ?? '',
+      genres:       (match.genres ?? []).map((g: any) => g.name),
+      rating:       match.rating ? Math.round(match.rating) : null,
+      release_year: match.first_release_date ? new Date(match.first_release_date * 1000).getFullYear() : null,
+      platforms:    (match.platforms ?? []).map((p: any) => p.name),
+    }
+  }))
+
+  save('games-enriched.json', enriched)
+
+  // 3. Also fetch trending/popular games (catalog data, no user needed)
+  const trending = await safePost('https://api.igdb.com/v4/games', h,
+    { query: 'fields name,cover.url,genres.name,rating,first_release_date; sort rating_count desc; where rating_count > 1000 & rating > 80; limit 20;' }
+  ) as any[]
+  if (Array.isArray(trending)) {
+    save('igdb-trending.json', trending.map(g => ({
+      id: g.id, name: g.name,
+      cover: g.cover?.url?.replace('t_thumb','t_cover_big').replace('//', 'https://') ?? '',
+      rating: g.rating ? Math.round(g.rating) : null,
+      year: g.first_release_date ? new Date(g.first_release_date * 1000).getFullYear() : null,
+      genres: (g.genres ?? []).map((x: any) => x.name),
+    })))
+  }
+}
+
 // ---- main ------------------------------------------------------------------
 async function main() {
   console.log('\n📦 Fetching data for me.oriz.in build...\n')
@@ -630,8 +832,14 @@ async function main() {
   console.log(`  DISCORD_USER_ID:       ${DISCORD_ID}`)
   console.log(`  HABITICA_USER_ID:      ${HAB_USER ? '✓ set' : '✗ missing'}`)
   console.log(`  HABITICA_API_TOKEN:    ${HAB_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  BGG_USERNAME:          ${BGG_USER || '✗ missing'}`)
   console.log(`  TOGGL_API_TOKEN:       ${TOGGL_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  ANILIST_USERNAME:      ${ANILIST_USER}`)
+  console.log(`  OL_USERNAME:           ${OL_USER}`)
+  console.log(`  PODCASTINDEX_API_KEY:  ${PI_KEY ? '✓ set' : '✗ missing'}`)
+  console.log(`  NOTION_TOKEN:          ${NOTION_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  NOTION_JOURNAL_DB_ID:  ${NOTION_DB_ID ? '✓ set' : '✗ missing'}`)
+  console.log(`  IGDB_CLIENT_ID:        ${IGDB_CLIENT_ID ? '✓ set' : '✗ missing'}`)
   console.log()
 
   // Trakt must complete before TMDB enrichment reads its output files
@@ -646,9 +854,14 @@ async function main() {
     fetchBlog().then(() => console.log('✅ Blog RSS done')).catch(e => console.error('❌ Blog', e.message)),
     fetchWakaTime().then(() => console.log('✅ WakaTime done')).catch(e => console.error('❌ WakaTime', e.message)),
     fetchHabitica().then(() => console.log('✅ Habitica done')).catch(e => console.error('❌ Habitica', e.message)),
+    fetchBGG().then(() => console.log('✅ BGG done')).catch(e => console.error('❌ BGG', e.message)),
     fetchToggl().then(() => console.log('✅ Toggl done')).catch(e => console.error('❌ Toggl', e.message)),
     fetchJikan().then(() => console.log('✅ Jikan done')).catch(e => console.error('❌ Jikan', e.message)),
     fetchAniList().then(() => console.log('✅ AniList done')).catch(e => console.error('❌ AniList', e.message)),
+    fetchPodcasts().then(() => console.log('✅ Podcast Index done')).catch(e => console.error('❌ Podcast Index', e.message)),
+    fetchOpenLibrary().then(() => console.log('✅ OpenLibrary done')).catch(e => console.error('❌ OpenLibrary', e.message)),
+    fetchNotion().then(() => console.log('✅ Notion done')).catch(e => console.error('❌ Notion', e.message)),
+    fetchIGDB().then(() => console.log('✅ IGDB done')).catch(e => console.error('❌ IGDB', e.message)),
   ])
   // Trakt first, then TMDB (enrichment reads trakt-*.json)
   await fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message))

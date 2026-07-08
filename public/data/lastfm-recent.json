@@ -2,7 +2,7 @@
   {
     "artist": {
       "mbid": "",
-      "#text": "Matt Pocock"
+      "#text": "uxpeak"
     },
     "streamable": "0",
     "image": [
@@ -28,11 +28,191 @@
       "mbid": "",
       "#text": ""
     },
-    "name": "How I use Claude Code for real engineering",
+    "name": "The UX Psychology Behind Apps People Can’t Stop Using",
     "@attr": {
       "nowplaying": "true"
     },
-    "url": "https://www.last.fm/music/Matt+Pocock/_/How+I+use+Claude+Code+for+real+engineering"
+    "url": "https://www.last.fm/music/uxpeak/_/The+UX+Psychology+Behind+Apps+People+Can%E2%80%99t+Stop+Using"
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "PolyMatter"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "How America’s 4,488 Banks Work",
+    "url": "https://www.last.fm/music/PolyMatter/_/How+America%E2%80%99s+4,488+Banks+Work",
+    "date": {
+      "uts": "1783486364",
+      "#text": "08 Jul 2026, 04:52"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "iOS 27 Beta 3 Released"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "What's New?",
+    "url": "https://www.last.fm/music/iOS+27+Beta+3+Released/_/What%27s+New%3F",
+    "date": {
+      "uts": "1783486078",
+      "#text": "08 Jul 2026, 04:47"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "iOS 27 Beta 3 Released"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "I really hope this isn’t a bug",
+    "url": "https://www.last.fm/music/iOS+27+Beta+3+Released/_/I+really+hope+this+isn%E2%80%99t+a+bug",
+    "date": {
+      "uts": "1783486018",
+      "#text": "08 Jul 2026, 04:46"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "iOS 27 Beta 3 Released"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Control center changes",
+    "url": "https://www.last.fm/music/iOS+27+Beta+3+Released/_/Control+center+changes",
+    "date": {
+      "uts": "1783485986",
+      "#text": "08 Jul 2026, 04:46"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "iOS 27 Beta 3 Released"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Size & Build number",
+    "url": "https://www.last.fm/music/iOS+27+Beta+3+Released/_/Size+&+Build+number",
+    "date": {
+      "uts": "1783485943",
+      "#text": "08 Jul 2026, 04:45"
+    }
   },
   {
     "artist": {
@@ -3452,186 +3632,6 @@
     "date": {
       "uts": "1783446624",
       "#text": "07 Jul 2026, 17:50"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      }
-    ],
-    "mbid": "06a2adc0-3215-467a-88ed-716a2fa911f3",
-    "album": {
-      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
-      "#text": "Bloom"
-    },
-    "name": "My My My!",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/My+My+My!",
-    "date": {
-      "uts": "1783446404",
-      "#text": "07 Jul 2026, 17:46"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
-      "#text": "Lauv"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1b86ffc5d0be9f611de0308414ff849b.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1b86ffc5d0be9f611de0308414ff849b.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1b86ffc5d0be9f611de0308414ff849b.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1b86ffc5d0be9f611de0308414ff849b.jpg"
-      }
-    ],
-    "mbid": "c968fb90-b5a1-429f-af79-59bb46157cf0",
-    "album": {
-      "mbid": "b71702aa-b3cb-4618-b347-8266f574a642",
-      "#text": "Love U Like That"
-    },
-    "name": "Love U Like That",
-    "url": "https://www.last.fm/music/Lauv/_/Love+U+Like+That",
-    "date": {
-      "uts": "1783445848",
-      "#text": "07 Jul 2026, 17:37"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
-      "#text": "Maroon 5"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/db4bcf472d972db98dc8052001e6e96a.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/db4bcf472d972db98dc8052001e6e96a.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/db4bcf472d972db98dc8052001e6e96a.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/db4bcf472d972db98dc8052001e6e96a.png"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": "Massive Hits"
-    },
-    "name": "Memories",
-    "url": "https://www.last.fm/music/Maroon+5/_/Memories",
-    "date": {
-      "uts": "1783445651",
-      "#text": "07 Jul 2026, 17:34"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
-      "#text": "Shawn Mendes"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ce9defe6cdbb3ef9d0aef857ddecd1ae.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ce9defe6cdbb3ef9d0aef857ddecd1ae.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ce9defe6cdbb3ef9d0aef857ddecd1ae.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ce9defe6cdbb3ef9d0aef857ddecd1ae.jpg"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": "Handwritten (Deluxe)"
-    },
-    "name": "Stitches",
-    "url": "https://www.last.fm/music/Shawn+Mendes/_/Stitches",
-    "date": {
-      "uts": "1783445405",
-      "#text": "07 Jul 2026, 17:30"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      }
-    ],
-    "mbid": "c488371e-5f70-47ba-89ae-c787d4c6a9fc",
-    "album": {
-      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
-      "#text": "Bloom"
-    },
-    "name": "Plum",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Plum",
-    "date": {
-      "uts": "1783445182",
-      "#text": "07 Jul 2026, 17:26"
     }
   }
 ]

@@ -10,7 +10,9 @@ function readObj(filename: string): any {
   try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return {} }
 }
 
-const games   = readData('games-manual.json')
+// Prefer enriched (IGDB metadata); fall back to manual
+const games   = readData('games-enriched.json').length ? readData('games-enriched.json') : readData('games-manual.json')
+const trending = readData('igdb-trending.json')
 const waka7d  = readObj('wakatime-stats-7d.json')
 
 const topProjects = (waka7d.projects ?? []).slice(0, 5)
@@ -28,13 +30,13 @@ const LANG_COLORS: Record<string, string> = {
   <div class="page-header">
     <div class="kicker">LIBRARY · GAMING</div>
     <h1>Gaming</h1>
-    <p class="muted">Manual tracking + coding activity.</p>
+    <p class="muted">Manual tracking + IGDB metadata enrichment.</p>
   </div>
 
-  <!-- Games list -->
+  <!-- Personal games list -->
   {games.length === 0 ? (
     <div class="card" style="margin-bottom:1.5rem">
-      <div class="kicker" style="margin-bottom:0.5rem">GAMES</div>
+      <div class="kicker" style="margin-bottom:0.5rem">MY GAMES</div>
       <div class="empty-state">
         <p>No games tracked yet — add entries to <code>public/data/games-manual.json</code>.</p>
         <p style="font-size:0.75rem;margin-top:0.5rem;color:var(--faint)">
@@ -44,20 +46,54 @@ const LANG_COLORS: Record<string, string> = {
     </div>
   ) : (
     <div style="margin-bottom:1.5rem">
-      <div class="kicker" style="margin-bottom:0.5rem">GAMES ({games.length})</div>
+      <div class="kicker" style="margin-bottom:0.5rem">MY GAMES ({games.length})</div>
       <ol class="subject-list">
         {games.map((g: any, i: number) => (
           <li class="subject-row">
             <span class="rank">{i + 1}</span>
-            {g.cover_url && <img src={g.cover_url} alt="" class="cover" loading="lazy" />}
+            {(g.cover || g.cover_url) && (
+              <img src={g.cover || g.cover_url} alt="" class="cover" loading="lazy" />
+            )}
             <div class="subject-info">
               <span class="subject-name">{g.title}</span>
-              <span class="subject-sub">{g.platform} · {g.status}{g.year_played ? ` · ${g.year_played}` : ''}</span>
+              <span class="subject-sub">
+                {g.platform}{g.status ? ` · ${g.status}` : ''}{g.year_played ? ` · ${g.year_played}` : ''}
+                {g.genres?.length ? ` · ${g.genres.slice(0,2).join(', ')}` : ''}
+              </span>
             </div>
-            {g.rating > 0 && <span class="subject-meta">★ {g.rating}</span>}
+            {(g.rating ?? 0) > 0 && (
+              <span class="subject-meta">★ {g.rating}</span>
+            )}
           </li>
         ))}
       </ol>
+    </div>
+  )}
+
+  <!-- IGDB Trending section (always shown if data present) -->
+  {trending.length > 0 && (
+    <div class="card" style="margin-bottom:1.5rem">
+      <div class="kicker" style="margin-bottom:0.75rem">TRENDING ON IGDB</div>
+      <div class="grid-4">
+        {trending.slice(0, 12).map((g: any) => (
+          <div class="game-card">
+            {g.cover ? (
+              <img src={g.cover} alt={g.name} class="game-cover" loading="lazy" />
+            ) : (
+              <div class="game-cover-placeholder"></div>
+            )}
+            <div class="game-info">
+              <span class="game-title">{g.name}</span>
+              <span class="game-meta">
+                {g.year ?? ''}{g.rating ? ` · ★ ${g.rating}` : ''}
+              </span>
+              {g.genres?.length > 0 && (
+                <span class="game-genre">{g.genres[0]}</span>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )}
 
@@ -146,4 +182,13 @@ const LANG_COLORS: Record<string, string> = {
   .subject-sub { display: block; font-size: 0.72rem; color: var(--muted, #71717a); }
   .subject-meta { font-size: 0.75rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
   .empty-state { padding: 1rem; font-size: 0.875rem; color: var(--muted, #71717a); }
+  /* IGDB trending grid */
+  .grid-4 { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 0.75rem; }
+  .game-card { display: flex; flex-direction: column; gap: 4px; }
+  .game-cover { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 4px; background: rgba(255,255,255,0.04); }
+  .game-cover-placeholder { width: 100%; aspect-ratio: 3/4; background: rgba(255,255,255,0.04); border-radius: 4px; }
+  .game-info { display: flex; flex-direction: column; gap: 2px; }
+  .game-title { font-size: 0.75rem; color: var(--fg, #fff); line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .game-meta { font-size: 0.68rem; color: var(--muted, #71717a); font-family: var(--font-mono, monospace); }
+  .game-genre { font-size: 0.65rem; color: var(--faint, #52525b); }
 </style>

@@ -2,14 +2,14 @@
   "playing_now": true,
   "track_metadata": {
     "additional_info": {
-      "duration": 204,
+      "duration": 231,
       "music_service_name": "YouTube",
-      "origin_url": "https://youtu.be/kZ-zzHVUrO4",
+      "origin_url": "https://youtu.be/2TlIg3VokY8",
       "submission_client": "Web Scrobbler",
       "submission_client_version": "3.22.0"
     },
-    "artist_name": "Matt Pocock",
-    "track_name": "How I use Claude Code for real engineering"
+    "artist_name": "uxpeak",
+    "track_name": "The UX Psychology Behind Apps People Can’t Stop Using"
   },
   "user_name": "chirag127"
 }

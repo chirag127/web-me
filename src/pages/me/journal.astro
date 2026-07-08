@@ -1,0 +1,316 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+let entries: any[] = []
+let stats: any = { total: 0, moods: {}, last_entry: '' }
+
+try { entries = JSON.parse(readFileSync(join(process.cwd(), 'public/data/notion-journal.json'), 'utf-8')) } catch {}
+try { stats   = JSON.parse(readFileSync(join(process.cwd(), 'public/data/notion-stats.json'), 'utf-8')) } catch {}
+
+const moodColors: Record<string, string> = {
+  Happy: '#22c55e', Good: '#86efac', Okay: '#fbbf24',
+  Meh: '#94a3b8', Bad: '#f87171', Awful: '#ef4444',
+}
+
+const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
+  .sort((a, b) => (b[1] as number) - (a[1] as number)) as [string, number][]
+---
+
+<Layout title="Journal" description="Daily logs via Notion — mood, energy, and notes.">
+  <div class="journal-root">
+
+    <p class="kicker">ME · JOURNAL</p>
+    <h1>Journal</h1>
+    <p class="subtitle">Daily logs via Notion.</p>
+
+    {entries.length === 0 ? (
+      <div class="empty-state">
+        <div class="empty-icon">◌</div>
+        <p class="empty-text">Share the Notion DB with the integration to see entries here.</p>
+        <p class="empty-hint">Open Notion page → <code>···</code> → Connections → add <strong>all</strong> integration.</p>
+      </div>
+    ) : (
+      <>
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-value">{stats.total}</div>
+            <div class="stat-label">ENTRIES</div>
+          </div>
+          {stats.last_entry && (
+            <div class="stat-card">
+              <div class="stat-value mono">{stats.last_entry}</div>
+              <div class="stat-label">LAST ENTRY</div>
+            </div>
+          )}
+          {Object.keys(stats.moods).length > 0 && (
+            <div class="stat-card mood-breakdown">
+              <div class="stat-label">MOOD BREAKDOWN</div>
+              <div class="mood-chips">
+                {moodEntries.map(([mood, count]) => (
+                    <span
+                      class="mood-chip"
+                      style={`background:${moodColors[mood] ?? '#6366f1'}22;color:${moodColors[mood] ?? '#6366f1'}`}
+                    >
+                      {mood} <span class="mood-count">{count}</span>
+                    </span>
+                  ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div class="entries-list">
+          {entries.map((e: any) => (
+            <div class="entry-card">
+              <div class="entry-header">
+                <span class="entry-date mono">{e.date}</span>
+                {e.mood && (
+                  <span
+                    class="mood-badge"
+                    style={`background:${moodColors[e.mood] ?? '#6366f1'}22;color:${moodColors[e.mood] ?? '#6366f1'}`}
+                  >
+                    {e.mood}
+                  </span>
+                )}
+                {e.energy && <span class="energy-badge">{e.energy}</span>}
+              </div>
+              {e.title && <div class="entry-title">{e.title}</div>}
+              {e.tags?.length > 0 && (
+                <div class="tag-row">
+                  {e.tags.map((t: string) => <span class="tag">{t}</span>)}
+                </div>
+              )}
+              {e.notes && (
+                <p class="entry-notes">{e.notes.slice(0, 240)}{e.notes.length > 240 ? '…' : ''}</p>
+              )}
+              {e.url && (
+                <a href={e.url} target="_blank" rel="noopener" class="entry-link">Open in Notion →</a>
+              )}
+            </div>
+          ))}
+        </div>
+      </>
+    )}
+
+  </div>
+</Layout>
+
+<style>
+  .journal-root {
+    padding-top: 2rem;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--indigo);
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--t-1);
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: var(--t-2);
+    margin: 0;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .empty-icon {
+    font-size: 2.5rem;
+    color: var(--t-3);
+  }
+
+  .empty-text {
+    font-size: 15px;
+    color: var(--t-2);
+    margin: 0;
+  }
+
+  .empty-hint {
+    font-size: 13px;
+    color: var(--t-3);
+    margin: 0;
+  }
+
+  .empty-hint code {
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  /* Stats row */
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    min-width: 120px;
+  }
+
+  .stat-value {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--t-1);
+    line-height: 1.2;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--t-3);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .mood-breakdown {
+    flex: 1;
+  }
+
+  .mood-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .mood-chip {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 20px;
+  }
+
+  .mood-count {
+    opacity: 0.8;
+    font-weight: 400;
+    margin-left: 2px;
+  }
+
+  /* Entries */
+  .entries-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .entry-card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: border-color 0.2s;
+  }
+
+  .entry-card:hover {
+    border-color: var(--indigo);
+  }
+
+  .entry-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .entry-date {
+    font-size: 13px;
+    color: var(--t-3);
+  }
+
+  .mono {
+    font-family: var(--font-mono, monospace);
+  }
+
+  .mood-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+
+  .energy-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: var(--surface-2);
+    color: var(--t-2);
+  }
+
+  .entry-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--t-1);
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    background: var(--surface-2);
+    color: var(--t-3);
+    border-radius: 20px;
+  }
+
+  .entry-notes {
+    font-size: 13px;
+    color: var(--t-2);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .entry-link {
+    font-size: 12px;
+    color: var(--indigo);
+    text-decoration: none;
+    align-self: flex-start;
+  }
+
+  .entry-link:hover {
+    text-decoration: underline;
+  }
+</style>

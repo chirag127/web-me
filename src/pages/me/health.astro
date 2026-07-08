@@ -1,0 +1,13 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import PrivateGuard from '~/components/PrivateGuard'
+---
+
+<Layout title="Health">
+  <PrivateGuard client:only="react">
+    <div style="padding: 40px;">
+      <h1 style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; color: var(--t-primary); margin-bottom: 12px;">Health</h1>
+      <p style="color: var(--t-secondary); font-size: 0.95rem;">Health data will appear here once Google Fit OAuth is set up.</p>
+    </div>
+  </PrivateGuard>
+</Layout>

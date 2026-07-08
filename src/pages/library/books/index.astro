@@ -15,9 +15,13 @@ function loadJson(name: string) {
   catch { return [] }
 }
 
-const reading   = loadJson('hardcover-reading.json')
+let reading   = loadJson('hardcover-reading.json')
 const read      = loadJson('hardcover-read.json')
 const wantToRead = loadJson('hardcover-want.json')
+
+if (!reading.length) {
+  try { reading = JSON.parse(readFileSync(join(process.cwd(), 'public/data/ol-reading.json'), 'utf-8')) } catch {}
+}
 ---
 
 <Layout title="Books" active="/library/books/">
