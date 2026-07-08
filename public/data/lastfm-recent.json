@@ -2,41 +2,6 @@
   {
     "artist": {
       "mbid": "",
-      "#text": "TanStack & MANY more packages affected"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "a deep dive & analysis",
-    "@attr": {
-      "nowplaying": "true"
-    },
-    "url": "https://www.last.fm/music/TanStack+&+MANY+more+packages+affected/_/a+deep+dive+&+analysis"
-  },
-  {
-    "artist": {
-      "mbid": "",
       "#text": "MinuteEarth"
     },
     "streamable": "0",

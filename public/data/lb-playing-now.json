@@ -1,15 +1,1 @@
-{
-  "playing_now": true,
-  "track_metadata": {
-    "additional_info": {
-      "duration": 17050,
-      "music_service_name": "YouTube",
-      "origin_url": "https://youtu.be/cUSKmWK5peA",
-      "submission_client": "Web Scrobbler",
-      "submission_client_version": "3.22.0"
-    },
-    "artist_name": "TanStack & MANY more packages affected",
-    "track_name": "a deep dive & analysis"
-  },
-  "user_name": "chirag127"
-}
+null
