@@ -1,6 +1,5 @@
 ---
 import Layout from '~/layouts/Layout.astro'
-import TwinChat from '~/components/TwinChat'
 ---
 
 <Layout title="Digital Twin" description="Chat with Chirag Singhal's AI digital twin — ask about his work, projects, and background.">
@@ -9,15 +8,146 @@ import TwinChat from '~/components/TwinChat'
     <div class="twin-header">
       <p class="kicker">ME · DIGITAL TWIN</p>
       <h1 class="twin-title">Chat with Chirag</h1>
-      <p class="twin-sub">AI-powered. Ask me anything about my work, projects, or background.</p>
+      <p class="twin-sub">AI-powered by g4f.dev. Ask me anything about my work, projects, or background.</p>
     </div>
 
-    <div class="twin-chat-wrap">
-      <TwinChat client:only="react" />
-    </div>
+    <div class="twin-chat-wrap" id="twin-embed"></div>
 
   </div>
+
+  <script type="module">
+    // Inline the twin chat directly on this page (no popup, full page)
+    const SYSTEM = `You are Chirag Singhal's AI digital twin. Answer in first person as Chirag.
+Background: Software Engineer at TCS (Jun 2025–Present). Previously Full Stack Developer at QRsay.com (Jul 2023–May 2025).
+Education: B.Tech CSE AKTU, CGPA 8.81 Rank #1. JEE Advanced Top 1%.
+Achievements: 60% latency reduction (Python pricing engines at TCS), 40% API speedup (QRsay), 192+ open source tools at oriz.in, AWS Certified Developer 2025.
+Stack: Python, FastAPI, Node.js, React, Kafka, LangChain, AWS, Docker, Kubernetes, PostgreSQL, MongoDB.
+Projects: Oriz (192+ tools), NexusAI (multi-agent RAG), TubeDigest (YouTube AI), Olivia (local AI), Crawl4AI.
+Philosophy: Ship fast, measure don't guess, build in public, free tiers only.
+Contact: hi@chirag127.in | github.com/chirag127
+Keep answers 2-4 sentences. Speak directly as Chirag.`;
+
+    const STARTERS = ["What's your tech stack?","Tell me about your projects","Are you available for hire?","What's your biggest achievement?"];
+    let messages = [];
+    let loading = false;
+
+    const root = document.getElementById('twin-embed');
+    root.innerHTML = `
+      <div id="twin-msgs" style="flex:1;overflow-y:auto;padding:16px 12px;display:flex;flex-direction:column;gap:10px;min-height:200px">
+        <div id="twin-empty" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;text-align:center;color:#79747E;gap:8px">
+          <div style="font-size:32px">◈</div>
+          <div style="color:#E6E1E5;font-weight:600;font-size:15px">Hey, I'm Chirag's AI twin</div>
+          <div style="font-size:13px">Ask about my experience, projects, or tech stack.</div>
+        </div>
+      </div>
+      <div id="twin-starters" style="padding:0 12px 10px;display:flex;flex-wrap:wrap;gap:6px"></div>
+      <div style="padding:12px;border-top:1px solid rgba(255,255,255,0.07);display:flex;gap:8px;background:#13111A">
+        <textarea id="twin-input" rows="1" placeholder="Ask me anything…" style="flex:1;background:#1C1B23;border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:#E6E1E5;font-family:Inter,sans-serif;font-size:14px;padding:10px 14px;outline:none;resize:none;line-height:1.5"></textarea>
+        <button id="twin-send" style="background:#4F378B;border:none;border-radius:10px;cursor:pointer;color:#fff;font-weight:600;font-size:13px;padding:10px 18px;height:44px;flex-shrink:0">Send</button>
+      </div>
+    `;
+
+    // Add starters
+    const startersEl = document.getElementById('twin-starters');
+    STARTERS.forEach(q => {
+      const btn = document.createElement('button');
+      btn.textContent = q;
+      btn.style.cssText = 'background:rgba(79,55,139,0.15);border:1px solid rgba(79,55,139,0.35);border-radius:20px;padding:5px 12px;font-size:12px;color:#B0A7C0;cursor:pointer;font-family:Inter,sans-serif';
+      btn.onclick = () => send(q);
+      startersEl.appendChild(btn);
+    });
+
+    async function send(text) {
+      if (!text?.trim() || loading) return;
+      loading = true;
+      document.getElementById('twin-empty')?.remove();
+      startersEl.style.display = 'none';
+      messages.push({role:'user', content: text});
+      document.getElementById('twin-input').value = '';
+      renderMessages();
+
+      // Typing indicator
+      const typing = document.createElement('div');
+      typing.id = 'twin-typing';
+      typing.style.cssText = 'display:flex;align-items:flex-end;gap:6px;padding:4px 0';
+      typing.innerHTML = '<div style="width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#4F378B,#7965AF);display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;flex-shrink:0">CS</div><div style="background:#211F26;border-radius:16px 16px 16px 4px;padding:10px 16px;color:#79747E;font-size:13px">typing...</div>';
+      document.getElementById('twin-msgs').appendChild(typing);
+      document.getElementById('twin-msgs').scrollTop = 9999;
+
+      try {
+        let reply = '';
+        // Try g4f.dev JS client
+        if (window.g4fClient) {
+          const res = await window.g4fClient.chat.completions.create({
+            model: 'gpt-4o-mini',
+            messages: [{role:'system',content:SYSTEM}, ...messages],
+          });
+          reply = res?.choices?.[0]?.message?.content || '';
+        }
+        // Fallback direct fetch
+        if (!reply) {
+          const r = await fetch('https://api.g4f.dev/v1/chat/completions', {
+            method:'POST', headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({model:'gpt-4o-mini', messages:[{role:'system',content:SYSTEM},...messages]}),
+            signal: AbortSignal.timeout(20000),
+          });
+          if (r.ok) { const d = await r.json(); reply = d?.choices?.[0]?.message?.content || ''; }
+        }
+        if (!reply) throw new Error('No response from AI');
+        messages.push({role:'assistant', content: reply});
+      } catch(e) {
+        messages.push({role:'assistant', content: '⚠️ ' + (e.message || 'Connection failed. Try again.')});
+      } finally {
+        loading = false;
+        typing.remove();
+        renderMessages();
+        document.getElementById('twin-msgs').scrollTop = 9999;
+      }
+    }
+
+    function renderMessages() {
+      const el = document.getElementById('twin-msgs');
+      // Remove all message bubbles (keep empty state if present)
+      el.querySelectorAll('.twin-msg').forEach(m => m.remove());
+      messages.forEach(m => {
+        const row = document.createElement('div');
+        row.className = 'twin-msg';
+        row.style.cssText = `display:flex;align-items:flex-end;gap:6px;flex-direction:${m.role==='user'?'row-reverse':'row'}`;
+        const av = document.createElement('div');
+        av.style.cssText = `width:22px;height:22px;border-radius:50%;background:${m.role==='user'?'linear-gradient(135deg,#6B4EFF,#9C7AF0)':'linear-gradient(135deg,#4F378B,#7965AF)'};display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;flex-shrink:0`;
+        av.textContent = m.role==='user'?'You':'CS';
+        const bubble = document.createElement('div');
+        bubble.style.cssText = `max-width:78%;padding:10px 14px;font-size:14px;line-height:1.55;border-radius:${m.role==='user'?'16px 16px 4px 16px':'16px 16px 16px 4px'};background:${m.role==='user'?'#4F378B':'#211F26'};color:${m.role==='user'?'#fff':'#E6E1E5'};font-family:Inter,sans-serif`;
+        bubble.textContent = m.content;
+        row.appendChild(av); row.appendChild(bubble);
+        el.appendChild(row);
+      });
+    }
+
+    document.getElementById('twin-send').onclick = () => send(document.getElementById('twin-input').value);
+    document.getElementById('twin-input').addEventListener('keydown', e => { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send(e.target.value);} });
+
+    // Load g4f client
+    const s = document.createElement('script');
+    s.type = 'module';
+    s.textContent = "import Client from 'https://g4f.dev/dist/js/client.js'; window.g4fClient = new Client();";
+    document.head.appendChild(s);
+  </script>
 </Layout>
+
+<style>
+  .twin-root { padding-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; height: calc(100vh - 100px); }
+  .twin-title { font-family: var(--font-display); font-weight: 800; font-size: 1.75rem; color: var(--t-1); margin: 0; }
+  .twin-sub { font-size: 14px; color: var(--t-2); margin: 0; }
+  .twin-header { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+  .twin-chat-wrap {
+    flex: 1; min-height: 0; background: #0F0D13;
+    border: 1px solid rgba(208,188,255,0.12);
+    border-radius: 16px; overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  #twin-msgs { flex: 1; overflow-y: auto; }
+</style>
 
 <style>
   .twin-root {

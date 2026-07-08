@@ -160,7 +160,7 @@ function ChatWindow({ onClose }: { onClose: () => void }) {
           fontFamily: 'Outfit,system-ui,sans-serif', fontWeight: 700, fontSize: 12, color: '#fff',
         }}>CS</div>
         <div style={{ flex: 1 }}>
-          <div style={{ color: '#E6E0E9', fontWeight: 600, fontSize: 14 }}>Chirag's AI Twin</div>
+          <div style={{ color: '#E6E0E9', fontWeight: 600, fontSize: 14 }}>Ask Chirag AI</div>
           <div style={{ color: '#6B9953', fontSize: 11, display: 'flex', alignItems: 'center', gap: 3 }}>
             <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#6B9953', display: 'inline-block' }} />
             Always online
@@ -310,7 +310,7 @@ export default function TwinWidget() {
       <button
         className="twin-fab"
         onClick={() => setOpen(o => !o)}
-        title="Chat with Chirag's AI Twin"
+        title="Ask Chirag AI"
         style={{
           position: 'fixed', bottom: 20, right: 20, zIndex: 9999,
           width: 56, height: 56, borderRadius: '50%',
@@ -324,7 +324,7 @@ export default function TwinWidget() {
           fontFamily: 'Outfit,system-ui,sans-serif', fontWeight: 700, fontSize: 15,
         }}
       >
-        {open ? '×' : 'CS'}
+        {open ? '×' : 'AI'}
       </button>
     </>
   );
