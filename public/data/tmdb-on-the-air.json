@@ -7,8 +7,8 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.365,
-    "votes": 6501,
+    "rating": 8.366,
+    "votes": 6503,
     "release": "2022-08-21",
     "genres": [
       10765,
@@ -43,8 +43,8 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.166,
-    "votes": 2182,
+    "rating": 8.2,
+    "votes": 2183,
     "release": "2023-05-04",
     "genres": [
       10765,
@@ -60,8 +60,8 @@
     "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
     "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 7.2,
-    "votes": 5,
+    "rating": 8,
+    "votes": 7,
     "release": "2026-07-03",
     "genres": [
       16,
@@ -76,10 +76,10 @@
     "type": "tv",
     "title": "Agent Kim Reactivated",
     "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-    "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.405,
-    "votes": 21,
+    "rating": 7.386,
+    "votes": 22,
     "release": "2026-06-26",
     "genres": [
       10759,
@@ -113,8 +113,8 @@
     "overview": "An elite team of FBI profilers analyze the country's most twisted criminal minds, anticipating their next moves before they strike again. The Behavioral Analysis Unit's most experienced agent is David Rossi, a founding member of the BAU who returns to help the team solve new cases.",
     "poster": "https://image.tmdb.org/t/p/w342/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
-    "rating": 8.3,
-    "votes": 4107,
+    "rating": 8.302,
+    "votes": 4108,
     "release": "2005-09-22",
     "genres": [
       80,
@@ -132,7 +132,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
     "rating": 8.678,
-    "votes": 11070,
+    "votes": 11071,
     "release": "2013-12-02",
     "genres": [
       16,
@@ -197,6 +197,24 @@
     "popularity": 135.6298
   },
   {
+    "id": 2661,
+    "tmdb_id": 2661,
+    "type": "tv",
+    "title": "Kamen Rider",
+    "overview": "Takeshi Hongo is a promising young man with a passion for motorcycle racing. However, his dreams are suddenly ruined when he gets kidnapped by Shocker, the evil secret organization planning to dominate the world. After being remodeled into a cyborg, Takeshi escapes and swears to protect the world from the inhuman monsters.",
+    "poster": "https://image.tmdb.org/t/p/w342/2DIBDFHiKQawz4WPsYekl9DHwyA.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/usLRh1bcbL0Q9X8zf6rL4OV1qrA.jpg",
+    "rating": 6.4,
+    "votes": 103,
+    "release": "1971-04-03",
+    "genres": [
+      10759,
+      10765,
+      18
+    ],
+    "popularity": 129.423
+  },
+  {
     "id": 33238,
     "tmdb_id": 33238,
     "type": "tv",
@@ -229,24 +247,6 @@
       35
     ],
     "popularity": 129.0713
-  },
-  {
-    "id": 2661,
-    "tmdb_id": 2661,
-    "type": "tv",
-    "title": "Kamen Rider",
-    "overview": "Takeshi Hongo is a promising young man with a passion for motorcycle racing. However, his dreams are suddenly ruined when he gets kidnapped by Shocker, the evil secret organization planning to dominate the world. After being remodeled into a cyborg, Takeshi escapes and swears to protect the world from the inhuman monsters.",
-    "poster": "https://image.tmdb.org/t/p/w342/2DIBDFHiKQawz4WPsYekl9DHwyA.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/usLRh1bcbL0Q9X8zf6rL4OV1qrA.jpg",
-    "rating": 6.4,
-    "votes": 103,
-    "release": "1971-04-03",
-    "genres": [
-      10759,
-      10765,
-      18
-    ],
-    "popularity": 129.423
   },
   {
     "id": 223911,
@@ -335,19 +335,19 @@
     "popularity": 98.4574
   },
   {
-    "id": 206559,
-    "tmdb_id": 206559,
+    "id": 4656,
+    "tmdb_id": 4656,
     "type": "tv",
-    "title": "Binnelanders",
-    "overview": "A South African Afrikaans soap opera. It is set in and around the fictional private hospital, Binneland Kliniek, in Pretoria, and the storyline follows the trials, trauma and tribulations of the staff and patients of the hospital.",
-    "poster": "https://image.tmdb.org/t/p/w342/3bzECfllho8PphdYujLUIuhncJD.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/s1dTt4M31q2HwD5Fkl1tf5tQzJg.jpg",
-    "rating": 5.532,
-    "votes": 111,
-    "release": "2005-10-13",
+    "title": "Raw",
+    "overview": "A regularly scheduled, live, year-round program featuring some of the biggest WWE Superstars.",
+    "poster": "https://image.tmdb.org/t/p/w342/fstEe6RsyNyPUnMwNcL20iNl0nE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/eGPH1IwktalozwCmeLTp3aPbHGC.jpg",
+    "rating": 6.8,
+    "votes": 362,
+    "release": "1993-01-11",
     "genres": [
-      10766
+      10764
     ],
-    "popularity": 95.7532
+    "popularity": 95.2914
   }
 ]

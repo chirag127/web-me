@@ -1,22 +1,5 @@
 [
   {
-    "id": 125988,
-    "tmdb_id": 125988,
-    "type": "tv",
-    "title": "Silo",
-    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.2,
-    "votes": 2183,
-    "release": "2023-05-04",
-    "genres": [
-      10765,
-      18
-    ],
-    "popularity": 220.5324
-  },
-  {
     "id": 94997,
     "tmdb_id": 94997,
     "type": "tv",
@@ -25,7 +8,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.366,
-    "votes": 6502,
+    "votes": 6504,
     "release": "2022-08-21",
     "genres": [
       10765,
@@ -33,6 +16,41 @@
       10759
     ],
     "popularity": 445.2424
+  },
+  {
+    "id": 125988,
+    "tmdb_id": 125988,
+    "type": "tv",
+    "title": "Silo",
+    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+    "rating": 8.167,
+    "votes": 2184,
+    "release": "2023-05-04",
+    "genres": [
+      10765,
+      18
+    ],
+    "popularity": 220.5324
+  },
+  {
+    "id": 138502,
+    "tmdb_id": 138502,
+    "type": "tv",
+    "title": "X-Men '97",
+    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+    "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+    "rating": 8.6,
+    "votes": 720,
+    "release": "2024-03-20",
+    "genres": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 80.3398
   },
   {
     "id": 94664,
@@ -51,24 +69,6 @@
       10765
     ],
     "popularity": 314.1214
-  },
-  {
-    "id": 138502,
-    "tmdb_id": 138502,
-    "type": "tv",
-    "title": "X-Men '97",
-    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-    "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-    "rating": 8.563,
-    "votes": 720,
-    "release": "2024-03-20",
-    "genres": [
-      16,
-      10759,
-      10765
-    ],
-    "popularity": 80.3398
   },
   {
     "id": 253960,
@@ -124,51 +124,15 @@
     "popularity": 466.6079
   },
   {
-    "id": 299167,
-    "tmdb_id": 299167,
-    "type": "tv",
-    "title": "Dutton Ranch",
-    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.26,
-    "votes": 381,
-    "release": "2026-05-15",
-    "genres": [
-      37,
-      18
-    ],
-    "popularity": 216.2204
-  },
-  {
-    "id": 60625,
-    "tmdb_id": 60625,
-    "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.678,
-    "votes": 11071,
-    "release": "2013-12-02",
-    "genres": [
-      16,
-      35,
-      10765,
-      10759
-    ],
-    "popularity": 174.1707
-  },
-  {
     "id": 296206,
     "tmdb_id": 296206,
     "type": "tv",
     "title": "Agent Kim Reactivated",
     "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-    "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.405,
-    "votes": 21,
+    "rating": 7.386,
+    "votes": 22,
     "release": "2026-06-26",
     "genres": [
       10759,
@@ -195,21 +159,56 @@
     "popularity": 69.7429
   },
   {
-    "id": 136315,
-    "tmdb_id": 136315,
+    "id": 299167,
+    "tmdb_id": 299167,
     "type": "tv",
-    "title": "The Bear",
-    "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
-    "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
-    "rating": 8.136,
-    "votes": 1793,
-    "release": "2022-06-23",
+    "title": "Dutton Ranch",
+    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+    "rating": 9.26,
+    "votes": 381,
+    "release": "2026-05-15",
     "genres": [
-      18,
+      37,
+      18
+    ],
+    "popularity": 216.2204
+  },
+  {
+    "id": 98177,
+    "tmdb_id": 98177,
+    "type": "tv",
+    "title": "Trying",
+    "overview": "All Nikki and Jason want is a baby—the one thing they can't have. So they decide to adopt. With their dysfunctional friends, screwball families, and chaotic lives, will the adoption panel agree that they're ready to be parents?",
+    "poster": "https://image.tmdb.org/t/p/w342/eHTDuZp8UtbSK1XehE59UJrgOXg.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/g3zOfRXWCEm8kZACHqLsbz3W5Qa.jpg",
+    "rating": 7.6,
+    "votes": 130,
+    "release": "2020-05-01",
+    "genres": [
       35
     ],
-    "popularity": 85.8942
+    "popularity": 10.1524
+  },
+  {
+    "id": 60625,
+    "tmdb_id": 60625,
+    "type": "tv",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.678,
+    "votes": 11071,
+    "release": "2013-12-02",
+    "genres": [
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 174.1707
   },
   {
     "id": 322055,
@@ -230,6 +229,22 @@
     "popularity": 156.2422
   },
   {
+    "id": 290232,
+    "tmdb_id": 290232,
+    "type": "tv",
+    "title": "I'm Not Afraid",
+    "overview": "10-year-old Miguel stumbles upon a terrifying secret involving a boy trapped in a hole near his home.",
+    "poster": "https://image.tmdb.org/t/p/w342/ctDqarHjLlrKhKx1j7N4rF746qQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/9eHQh4Ji4wWksUSln264LZt3NfL.jpg",
+    "rating": 10,
+    "votes": 1,
+    "release": "2026-07-08",
+    "genres": [
+      18
+    ],
+    "popularity": 4.203
+  },
+  {
     "id": 153217,
     "tmdb_id": 153217,
     "type": "tv",
@@ -248,23 +263,77 @@
     "popularity": 37.9489
   },
   {
-    "id": 82452,
-    "tmdb_id": 82452,
+    "id": 136315,
+    "tmdb_id": 136315,
     "type": "tv",
-    "title": "Avatar: The Last Airbender",
-    "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
-    "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-    "rating": 7.797,
-    "votes": 1224,
-    "release": "2024-02-22",
+    "title": "The Bear",
+    "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+    "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+    "rating": 8.136,
+    "votes": 1793,
+    "release": "2022-06-23",
     "genres": [
+      18,
+      35
+    ],
+    "popularity": 85.8942
+  },
+  {
+    "id": 106449,
+    "tmdb_id": 106449,
+    "type": "tv",
+    "title": "A Record of a Mortal's Journey to Immortality",
+    "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
+    "poster": "https://image.tmdb.org/t/p/w342/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/8NIvQY34tNPc4txNeym2zEYk9ek.jpg",
+    "rating": 8.4,
+    "votes": 81,
+    "release": "",
+    "genres": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 73.9682
+  },
+  {
+    "id": 65942,
+    "tmdb_id": 65942,
+    "type": "tv",
+    "title": "Re:ZERO -Starting Life in Another World-",
+    "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+    "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
+    "rating": 7.982,
+    "votes": 697,
+    "release": "2016-04-04",
+    "genres": [
+      16,
       10759,
       10765,
       18,
-      10751
+      9648
     ],
-    "popularity": 196.0005
+    "popularity": 84.5694
+  },
+  {
+    "id": 255358,
+    "tmdb_id": 255358,
+    "type": "tv",
+    "title": "THE GHOST IN THE SHELL",
+    "overview": "2029, a near-future Japan. The full cyborg Motoko Kusanagi envisions a task force that preemptively strikes emerging threats. She and her team are scouted by Daisuke Aramaki as Public Security Section 9, AKA the \"Shell Squad.\" An international conspiracy hints at a hacker known as The \"Puppet Master.\" What fate awaits Kusanagi? What is the hacker's endgame? A new era of cyberpunk action begins!",
+    "poster": "https://image.tmdb.org/t/p/w342/uEfNGaxbKI1xWmUy3DIndlaxUkz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/app8YXZ4NS0hMTYZuIA6zx92xVm.jpg",
+    "rating": 6.2,
+    "votes": 3,
+    "release": "2026-07-07",
+    "genres": [
+      16,
+      10765,
+      10759
+    ],
+    "popularity": 20.5791
   },
   {
     "id": 277439,
@@ -282,79 +351,5 @@
       80
     ],
     "popularity": 41.949
-  },
-  {
-    "id": 65942,
-    "tmdb_id": 65942,
-    "type": "tv",
-    "title": "Re:ZERO -Starting Life in Another World-",
-    "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
-    "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
-    "rating": 8,
-    "votes": 695,
-    "release": "2016-04-04",
-    "genres": [
-      16,
-      10759,
-      10765,
-      18,
-      9648
-    ],
-    "popularity": 84.5694
-  },
-  {
-    "id": 312949,
-    "tmdb_id": 312949,
-    "type": "tv",
-    "title": "Chainsmoker Cat",
-    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8,
-    "votes": 7,
-    "release": "2026-07-03",
-    "genres": [
-      16,
-      35,
-      10765
-    ],
-    "popularity": 247.7006
-  },
-  {
-    "id": 106449,
-    "tmdb_id": 106449,
-    "type": "tv",
-    "title": "A Record of a Mortal's Journey to Immortality",
-    "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
-    "poster": "https://image.tmdb.org/t/p/w342/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/8NIvQY34tNPc4txNeym2zEYk9ek.jpg",
-    "rating": 8.4,
-    "votes": 81,
-    "release": "2020-07-25",
-    "genres": [
-      16,
-      10759,
-      10765
-    ],
-    "popularity": 73.9682
-  },
-  {
-    "id": 278178,
-    "tmdb_id": 278178,
-    "type": "tv",
-    "title": "I Will Find You",
-    "overview": "Wrongfully imprisoned for murdering his own son, a father sets out on a desperate rescue mission after learning the boy may still be alive.",
-    "poster": "https://image.tmdb.org/t/p/w342/pb9oYHHNzauiCQZT03MpDAg46GI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/yOna5ZGXrvWO2HdOCKcahx2sCDN.jpg",
-    "rating": 8.22,
-    "votes": 216,
-    "release": "2026-06-18",
-    "genres": [
-      18,
-      9648,
-      80
-    ],
-    "popularity": 94.8104
   }
 ]

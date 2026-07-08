@@ -759,7 +759,7 @@ async function fetchNotion() {
   const data = await safePost(
     `https://api.notion.com/v1/databases/${dbId}/query`,
     { 'Authorization': `Bearer ${token}`, 'Notion-Version': '2022-06-28' },
-    { page_size: 50, sorts: [{ property: 'Date', direction: 'descending' }] }
+    { page_size: 50, sorts: [{ timestamp: 'created_time', direction: 'descending' }] }
   )
 
   const pages = (data as any)?.results ?? []

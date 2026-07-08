@@ -2,14 +2,14 @@
   "playing_now": true,
   "track_metadata": {
     "additional_info": {
-      "duration_ms": 263000,
-      "recording_msid": "a7280d8f-e90b-4340-bbf6-8864fd3db76a",
-      "submission_client": "Pano Scrobbler",
-      "submission_client_version": "4.41"
+      "duration": 17050,
+      "music_service_name": "YouTube",
+      "origin_url": "https://youtu.be/cUSKmWK5peA",
+      "submission_client": "Web Scrobbler",
+      "submission_client_version": "3.22.0"
     },
-    "artist_name": "MinuteEarth",
-    "release_name": "Minute Earth",
-    "track_name": "There’s Really Only One Way To Die"
+    "artist_name": "TanStack & MANY more packages affected",
+    "track_name": "a deep dive & analysis"
   },
   "user_name": "chirag127"
 }

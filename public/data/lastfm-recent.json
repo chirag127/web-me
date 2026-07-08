@@ -2,6 +2,329 @@
   {
     "artist": {
       "mbid": "",
+      "#text": "TanStack & MANY more packages affected"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "a deep dive & analysis",
+    "@attr": {
+      "nowplaying": "true"
+    },
+    "url": "https://www.last.fm/music/TanStack+&+MANY+more+packages+affected/_/a+deep+dive+&+analysis"
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "Why Haven't We Domesticated Monkeys?",
+    "url": "https://www.last.fm/music/MinuteEarth/_/Why+Haven%27t+We+Domesticated+Monkeys%3F",
+    "date": {
+      "uts": "1783504571",
+      "#text": "08 Jul 2026, 09:56"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "Why Hives Turn Against Their Queens",
+    "url": "https://www.last.fm/music/MinuteEarth/_/Why+Hives+Turn+Against+Their+Queens",
+    "date": {
+      "uts": "1783504443",
+      "#text": "08 Jul 2026, 09:54"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "40 Years Without A New Antibiotic. Why?",
+    "url": "https://www.last.fm/music/MinuteEarth/_/40+Years+Without+A+New+Antibiotic.+Why%3F",
+    "date": {
+      "uts": "1783504294",
+      "#text": "08 Jul 2026, 09:51"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "When Does It Make Sense To Kill Your Sibling?",
+    "url": "https://www.last.fm/music/MinuteEarth/_/When+Does+It+Make+Sense+To+Kill+Your+Sibling%3F",
+    "date": {
+      "uts": "1783504156",
+      "#text": "08 Jul 2026, 09:49"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "Hottest Place",
+    "url": "https://www.last.fm/music/MinuteEarth/_/Hottest+Place",
+    "date": {
+      "uts": "1783504110",
+      "#text": "08 Jul 2026, 09:48"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "Delta Works",
+    "url": "https://www.last.fm/music/MinuteEarth/_/Delta+Works",
+    "date": {
+      "uts": "1783504065",
+      "#text": "08 Jul 2026, 09:47"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "Could This Thing *Really* Fly?",
+    "url": "https://www.last.fm/music/MinuteEarth/_/Could+This+Thing+*Really*+Fly%3F",
+    "date": {
+      "uts": "1783503971",
+      "#text": "08 Jul 2026, 09:46"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "MinuteEarth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Minute Earth"
+    },
+    "name": "Invasive Species",
+    "url": "https://www.last.fm/music/MinuteEarth/_/Invasive+Species",
+    "date": {
+      "uts": "1783503925",
+      "#text": "08 Jul 2026, 09:45"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
       "#text": "MinuteEarth"
     },
     "streamable": "0",
@@ -29,10 +352,11 @@
       "#text": "Minute Earth"
     },
     "name": "There’s Really Only One Way To Die",
-    "@attr": {
-      "nowplaying": "true"
-    },
-    "url": "https://www.last.fm/music/MinuteEarth/_/There%E2%80%99s+Really+Only+One+Way+To+Die"
+    "url": "https://www.last.fm/music/MinuteEarth/_/There%E2%80%99s+Really+Only+One+Way+To+Die",
+    "date": {
+      "uts": "1783503802",
+      "#text": "08 Jul 2026, 09:43"
+    }
   },
   {
     "artist": {
@@ -3308,330 +3632,6 @@
     "date": {
       "uts": "1783486078",
       "#text": "08 Jul 2026, 04:47"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "iOS 27 Beta 3 Released"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "I really hope this isn’t a bug",
-    "url": "https://www.last.fm/music/iOS+27+Beta+3+Released/_/I+really+hope+this+isn%E2%80%99t+a+bug",
-    "date": {
-      "uts": "1783486018",
-      "#text": "08 Jul 2026, 04:46"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "iOS 27 Beta 3 Released"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Control center changes",
-    "url": "https://www.last.fm/music/iOS+27+Beta+3+Released/_/Control+center+changes",
-    "date": {
-      "uts": "1783485986",
-      "#text": "08 Jul 2026, 04:46"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "iOS 27 Beta 3 Released"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Size & Build number",
-    "url": "https://www.last.fm/music/iOS+27+Beta+3+Released/_/Size+&+Build+number",
-    "date": {
-      "uts": "1783485943",
-      "#text": "08 Jul 2026, 04:45"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Matt Pocock"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "How I use Claude Code for real engineering",
-    "url": "https://www.last.fm/music/Matt+Pocock/_/How+I+use+Claude+Code+for+real+engineering",
-    "date": {
-      "uts": "1783485720",
-      "#text": "08 Jul 2026, 04:42"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Kurzgesagt – In a Nutshell"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "What’s It Like to Be Killed by Nature’s Most Brutal Predator",
-    "url": "https://www.last.fm/music/Kurzgesagt+%E2%80%93+In+a+Nutshell/_/What%E2%80%99s+It+Like+to+Be+Killed+by+Nature%E2%80%99s+Most+Brutal+Predator",
-    "date": {
-      "uts": "1783485592",
-      "#text": "08 Jul 2026, 04:39"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Better Stack"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Why Document Ingestion Breaks (pdfminer, pandas, tesseract issues)",
-    "url": "https://www.last.fm/music/Better+Stack/_/Why+Document+Ingestion+Breaks+(pdfminer,+pandas,+tesseract+issues)",
-    "date": {
-      "uts": "1783485227",
-      "#text": "08 Jul 2026, 04:33"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Better Stack"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Why Your RAG Pipeline Is Failing (LLM Hallucinations Explained)",
-    "url": "https://www.last.fm/music/Better+Stack/_/Why+Your+RAG+Pipeline+Is+Failing+(LLM+Hallucinations+Explained)",
-    "date": {
-      "uts": "1783485182",
-      "#text": "08 Jul 2026, 04:33"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Better Stack"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Open Source Is Back. Goodbye Claude.",
-    "url": "https://www.last.fm/music/Better+Stack/_/Open+Source+Is+Back.+Goodbye+Claude.",
-    "date": {
-      "uts": "1783485077",
-      "#text": "08 Jul 2026, 04:31"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "AI For You"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Claude Opus 4.8 for FREE! (50 Project in Free Plan)",
-    "url": "https://www.last.fm/music/AI+For+You/_/Claude+Opus+4.8+for+FREE!+(50+Project+in+Free+Plan)",
-    "date": {
-      "uts": "1783484996",
-      "#text": "08 Jul 2026, 04:29"
     }
   }
 ]
