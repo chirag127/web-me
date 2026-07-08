@@ -45,11 +45,11 @@ jobs:
 
             const drive = google.drive({ version: 'v3', auth });
 
-            // Find latest Takeout folder in Google Drive
+            // Find latest Takeout folder in Google Drive — get largest zip (the main archive)
             const res = await drive.files.list({
               q: "name contains 'takeout' and mimeType = 'application/zip' and trashed = false",
               orderBy: 'createdTime desc',
-              pageSize: 1,
+              pageSize: 10,
               fields: 'files(id, name, createdTime, size)',
             });
 
@@ -58,7 +58,8 @@ jobs:
               process.exit(0);
             }
 
-            const file = res.data.files[0];
+            // Pick largest file (main archive, not metadata/0-byte files)
+            const file = res.data.files.sort((a, b) => parseInt(b.size||'0') - parseInt(a.size||'0'))[0];
             console.log(`Found: ${file.name} (${Math.round(file.size / 1024 / 1024)}MB) created ${file.createdTime}`);
 
             // Download the file
