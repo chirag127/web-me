@@ -502,6 +502,58 @@ async function fetchToggl() {
   save('toggl-summary.json', summary ?? {})
 }
 
+async function fetchMoonReader() {
+  // Moon+ Reader Pro backup parser
+  // User drops moonreader-backup.zip into public/data/ manually
+  // Backup contains reading_progress.xml with: book title, current page, total pages
+  const zipPath = join(DATA_DIR, 'moonreader-backup.zip')
+  if (!existsSync(zipPath)) {
+    console.log('  ⚠ moonreader-backup.zip not found — skipping Moon+ Reader')
+    save('moonreader-books.json', [])
+    return
+  }
+
+  // Extract reading_progress.xml from zip
+  const { execSync } = await import('child_process')
+  try {
+    execSync(`unzip -p "${zipPath}" "reading_progress.xml" > "${join(DATA_DIR, 'moonreader-progress.xml')}" 2>/dev/null || true`)
+    const xmlContent = existsSync(join(DATA_DIR, 'moonreader-progress.xml'))
+      ? readFileSync(join(DATA_DIR, 'moonreader-progress.xml'), 'utf-8')
+      : ''
+
+    if (!xmlContent || xmlContent.length < 50) {
+      save('moonreader-books.json', [])
+      return
+    }
+
+    // Parse XML: extract book entries
+    // Format: <book title="..." totalPage="N" curPage="N" bookPath="..." />
+    const books: any[] = []
+    const bookMatches = xmlContent.match(/<book[^>]*>/g) ?? []
+    for (const tag of bookMatches) {
+      const title = tag.match(/title="([^"]+)"/)?.[1] ?? ''
+      const total = parseInt(tag.match(/totalPage="(\d+)"/)?.[1] ?? '0')
+      const current = parseInt(tag.match(/curPage="(\d+)"/)?.[1] ?? '0')
+      const path = tag.match(/bookPath="([^"]+)"/)?.[1] ?? ''
+      const progress = total > 0 ? Math.round((current / total) * 100) : 0
+      if (title && total > 0) {
+        books.push({ title, current_page: current, total_pages: total, progress_pct: progress, path })
+      }
+    }
+    // Sort by progress descending (currently reading = high progress but not 100%)
+    books.sort((a, b) => {
+      if (a.progress_pct === 100 && b.progress_pct !== 100) return 1
+      if (b.progress_pct === 100 && a.progress_pct !== 100) return -1
+      return b.current_page - a.current_page
+    })
+    save('moonreader-books.json', books)
+    console.log(`  Moon+ Reader: ${books.length} books (${books.filter(b => b.progress_pct > 0 && b.progress_pct < 100).length} in progress)`)
+  } catch (e: any) {
+    console.warn(`  ⚠ Moon+ Reader parse failed: ${e.message}`)
+    save('moonreader-books.json', [])
+  }
+}
+
 async function fetchJikan() {
   const user = process.env.MAL_USERNAME ?? 'chirag127'
   const jikanUA: Record<string,string> = {
@@ -987,6 +1039,7 @@ async function main() {
     fetchHashnode().then(() => console.log('✅ Hashnode done')).catch(e => console.error('❌ Hashnode', e.message)),
     fetchProductHunt().then(() => console.log('✅ ProductHunt done')).catch(e => console.error('❌ ProductHunt', e.message)),
     fetchSpotify().then(() => console.log('✅ Spotify done')).catch(e => console.error('❌ Spotify', e.message)),
+    fetchMoonReader().then(() => console.log('✅ Moon+ Reader done')).catch(e => console.error('❌ Moon+ Reader', e.message)),
   ])
   // Trakt first, then TMDB (enrichment reads trakt-*.json)
   await fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message))
