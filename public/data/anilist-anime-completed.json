@@ -1,0 +1,56 @@
+[
+  {
+    "media": {
+      "id": 11061,
+      "title": {
+        "romaji": "HUNTER×HUNTER (2011)",
+        "english": "Hunter x Hunter (2011)"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11061-y5gsT1hoHuHw.png",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11061-y5gsT1hoHuHw.png"
+      },
+      "episodes": 148,
+      "status": "FINISHED"
+    },
+    "score": 10,
+    "progress": 148,
+    "status": "COMPLETED"
+  },
+  {
+    "media": {
+      "id": 1535,
+      "title": {
+        "romaji": "DEATH NOTE",
+        "english": "Death Note"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1535-kUgkcrfOrkUM.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1535-kUgkcrfOrkUM.jpg"
+      },
+      "episodes": 37,
+      "status": "FINISHED"
+    },
+    "score": 0,
+    "progress": 37,
+    "status": "COMPLETED"
+  },
+  {
+    "media": {
+      "id": 21828,
+      "title": {
+        "romaji": "Shoujo Ramune",
+        "english": null
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21828-3KDKm3Zu2DyX.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21828-3KDKm3Zu2DyX.jpg"
+      },
+      "episodes": null,
+      "status": "RELEASING"
+    },
+    "score": 10,
+    "progress": 4,
+    "status": "COMPLETED"
+  }
+]

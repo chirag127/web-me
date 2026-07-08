@@ -55,6 +55,7 @@ const HAB_USER    = process.env.HABITICA_USER_ID    ?? ''
 const HAB_TOKEN   = process.env.HABITICA_API_TOKEN  ?? ''
 const TOGGL_TOKEN  = process.env.TOGGL_API_TOKEN     ?? ''
 const WAKA_KEY    = process.env.WAKATIME_API_KEY    ?? ''
+const ANILIST_USER = process.env.ANILIST_USERNAME  ?? 'chirag127'
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -486,6 +487,69 @@ async function fetchJikan() {
   }
 }
 
+async function fetchAniList() {
+  // API: https://graphql.anilist.co (POST, no auth for public queries)
+  // User chirag127 confirmed: id 6510015, 4 anime, 211 episodes watched
+  const base = 'https://graphql.anilist.co'
+
+  const query = `
+    query($name: String, $status: MediaListStatus) {
+      MediaListCollection(userName: $name, type: ANIME, status: $status) {
+        lists { entries {
+          media { id title { romaji english } coverImage { medium large } episodes status }
+          score progress status
+        }}
+      }
+    }
+  `
+  const mangaQuery = `
+    query($name: String, $status: MediaListStatus) {
+      MediaListCollection(userName: $name, type: MANGA, status: $status) {
+        lists { entries {
+          media { id title { romaji english } coverImage { medium large } chapters }
+          score progress status
+        }}
+      }
+    }
+  `
+  const statsQuery = `
+    query($name: String) {
+      User(name: $name) {
+        id name
+        statistics {
+          anime { count episodesWatched minutesWatched }
+          manga { count chaptersRead }
+        }
+      }
+    }
+  `
+
+  const post = async (q: string, vars: Record<string,unknown>) => {
+    const r = await safePost(base, { 'Content-Type': 'application/json' }, { query: q, variables: vars })
+    return (r as any)?.data
+  }
+
+  const [watching, completed, planning, mangaReading, mangaCompleted, mangaPlan, stats] = await Promise.all([
+    post(query, { name: ANILIST_USER, status: 'CURRENT' }),
+    post(query, { name: ANILIST_USER, status: 'COMPLETED' }),
+    post(query, { name: ANILIST_USER, status: 'PLANNING' }),
+    post(mangaQuery, { name: ANILIST_USER, status: 'CURRENT' }),
+    post(mangaQuery, { name: ANILIST_USER, status: 'COMPLETED' }),
+    post(mangaQuery, { name: ANILIST_USER, status: 'PLANNING' }),
+    post(statsQuery, { name: ANILIST_USER }),
+  ])
+
+  const entries = (d: any) => d?.MediaListCollection?.lists?.flatMap((l: any) => l.entries) ?? []
+
+  save('anilist-anime-watching.json',   entries(watching))
+  save('anilist-anime-completed.json',  entries(completed))
+  save('anilist-anime-plan.json',       entries(planning))
+  save('anilist-manga-reading.json',    entries(mangaReading))
+  save('anilist-manga-completed.json',  entries(mangaCompleted))
+  save('anilist-manga-plan.json',       entries(mangaPlan))
+  save('anilist-stats.json',            stats?.User ?? {})
+}
+
 async function fetchBlog() {
   try {
     const r = await fetch('https://blog.oriz.in/rss.xml', { signal: AbortSignal.timeout(10000) })
@@ -567,6 +631,7 @@ async function main() {
   console.log(`  HABITICA_USER_ID:      ${HAB_USER ? '✓ set' : '✗ missing'}`)
   console.log(`  HABITICA_API_TOKEN:    ${HAB_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  TOGGL_API_TOKEN:       ${TOGGL_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  ANILIST_USERNAME:      ${ANILIST_USER}`)
   console.log()
 
   // Trakt must complete before TMDB enrichment reads its output files
@@ -583,6 +648,7 @@ async function main() {
     fetchHabitica().then(() => console.log('✅ Habitica done')).catch(e => console.error('❌ Habitica', e.message)),
     fetchToggl().then(() => console.log('✅ Toggl done')).catch(e => console.error('❌ Toggl', e.message)),
     fetchJikan().then(() => console.log('✅ Jikan done')).catch(e => console.error('❌ Jikan', e.message)),
+    fetchAniList().then(() => console.log('✅ AniList done')).catch(e => console.error('❌ AniList', e.message)),
   ])
   // Trakt first, then TMDB (enrichment reads trakt-*.json)
   await fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message))

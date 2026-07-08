@@ -1,0 +1,56 @@
+[
+  {
+    "media": {
+      "id": 20954,
+      "title": {
+        "romaji": "Koe no Katachi",
+        "english": "A Silent Voice"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20954-sYRfE5jQRtSB.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20954-sYRfE5jQRtSB.jpg"
+      },
+      "episodes": 1,
+      "status": "FINISHED"
+    },
+    "score": 0,
+    "progress": 0,
+    "status": "CURRENT"
+  },
+  {
+    "media": {
+      "id": 101922,
+      "title": {
+        "romaji": "Kimetsu no Yaiba",
+        "english": "Demon Slayer: Kimetsu no Yaiba"
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101922-WBsBl0ClmgYL.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101922-WBsBl0ClmgYL.jpg"
+      },
+      "episodes": 26,
+      "status": "FINISHED"
+    },
+    "score": 10,
+    "progress": 26,
+    "status": "CURRENT"
+  },
+  {
+    "media": {
+      "id": 112233,
+      "title": {
+        "romaji": "Boku to Joi no Shinsatsu Nisshi The Animation",
+        "english": null
+      },
+      "coverImage": {
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112233-8iayoMmuk2qa.jpg",
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112233-8iayoMmuk2qa.jpg"
+      },
+      "episodes": 1,
+      "status": "FINISHED"
+    },
+    "score": 0,
+    "progress": 0,
+    "status": "CURRENT"
+  }
+]

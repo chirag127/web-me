@@ -1,170 +1,170 @@
 {
-  "total_seconds": 127089.822,
-  "human_readable": "35 hrs 18 mins",
-  "daily_average": "5 hrs 2 mins",
+  "total_seconds": 192199.219,
+  "human_readable": "53 hrs 23 mins",
+  "daily_average": "7 hrs 37 mins",
   "languages": [
     {
       "name": "Other",
-      "total_seconds": 88045.142,
-      "percent": 40.93,
-      "digital": "24:27",
-      "decimal": "24.45",
-      "text": "24 hrs 27 mins",
-      "hours": 24,
-      "minutes": 27
+      "total_seconds": 107954.857,
+      "percent": 35.97,
+      "digital": "29:59",
+      "decimal": "29.98",
+      "text": "29 hrs 59 mins",
+      "hours": 29,
+      "minutes": 59
     },
     {
       "name": "Markdown",
-      "total_seconds": 53130.129,
-      "percent": 24.7,
-      "digital": "14:45",
-      "decimal": "14.75",
-      "text": "14 hrs 45 mins",
-      "hours": 14,
-      "minutes": 45
+      "total_seconds": 68022.842,
+      "percent": 22.66,
+      "digital": "18:53",
+      "decimal": "18.88",
+      "text": "18 hrs 53 mins",
+      "hours": 18,
+      "minutes": 53
     },
     {
       "name": "JSON",
-      "total_seconds": 27357.807,
-      "percent": 12.72,
-      "digital": "7:35",
-      "decimal": "7.58",
-      "text": "7 hrs 35 mins",
-      "hours": 7,
-      "minutes": 35
-    },
-    {
-      "name": "Bash",
-      "total_seconds": 14809.852,
-      "percent": 6.88,
-      "digital": "4:06",
-      "decimal": "4.10",
-      "text": "4 hrs 6 mins",
-      "hours": 4,
-      "minutes": 6
-    },
-    {
-      "name": "TypeScript",
-      "total_seconds": 7342.334,
-      "percent": 3.41,
-      "digital": "2:02",
-      "decimal": "2.03",
-      "text": "2 hrs 2 mins",
-      "hours": 2,
-      "minutes": 2
+      "total_seconds": 42682.676,
+      "percent": 14.22,
+      "digital": "11:51",
+      "decimal": "11.85",
+      "text": "11 hrs 51 mins",
+      "hours": 11,
+      "minutes": 51
     },
     {
       "name": "JavaScript",
-      "total_seconds": 6954.521,
-      "percent": 3.23,
-      "digital": "1:55",
-      "decimal": "1.92",
-      "text": "1 hr 55 mins",
-      "hours": 1,
-      "minutes": 55
+      "total_seconds": 17540.576,
+      "percent": 5.84,
+      "digital": "4:52",
+      "decimal": "4.87",
+      "text": "4 hrs 52 mins",
+      "hours": 4,
+      "minutes": 52
+    },
+    {
+      "name": "TypeScript",
+      "total_seconds": 15215.342,
+      "percent": 5.07,
+      "digital": "4:13",
+      "decimal": "4.22",
+      "text": "4 hrs 13 mins",
+      "hours": 4,
+      "minutes": 13
     },
     {
       "name": "PowerShell",
-      "total_seconds": 6150.285,
-      "percent": 2.86,
-      "digital": "1:42",
-      "decimal": "1.70",
-      "text": "1 hr 42 mins",
-      "hours": 1,
-      "minutes": 42
+      "total_seconds": 12245.17,
+      "percent": 4.08,
+      "digital": "3:24",
+      "decimal": "3.40",
+      "text": "3 hrs 24 mins",
+      "hours": 3,
+      "minutes": 24
+    },
+    {
+      "name": "Bash",
+      "total_seconds": 10717.595,
+      "percent": 3.57,
+      "digital": "2:58",
+      "decimal": "2.97",
+      "text": "2 hrs 58 mins",
+      "hours": 2,
+      "minutes": 58
     },
     {
       "name": "YAML",
-      "total_seconds": 3712.458,
-      "percent": 1.73,
-      "digital": "1:01",
-      "decimal": "1.02",
-      "text": "1 hr 1 min",
+      "total_seconds": 10336.872,
+      "percent": 3.44,
+      "digital": "2:52",
+      "decimal": "2.87",
+      "text": "2 hrs 52 mins",
+      "hours": 2,
+      "minutes": 52
+    },
+    {
+      "name": "Astro",
+      "total_seconds": 4056.606,
+      "percent": 1.35,
+      "digital": "1:07",
+      "decimal": "1.12",
+      "text": "1 hr 7 mins",
       "hours": 1,
-      "minutes": 1
+      "minutes": 7
     },
     {
-      "name": "Python",
-      "total_seconds": 1944.792,
-      "percent": 0.9,
-      "digital": "0:32",
-      "decimal": "0.53",
-      "text": "32 mins",
+      "name": "Git Config",
+      "total_seconds": 2512.16,
+      "percent": 0.84,
+      "digital": "0:41",
+      "decimal": "0.68",
+      "text": "41 mins",
       "hours": 0,
-      "minutes": 32
-    },
-    {
-      "name": "Rust",
-      "total_seconds": 1058.86,
-      "percent": 0.49,
-      "digital": "0:17",
-      "decimal": "0.28",
-      "text": "17 mins",
-      "hours": 0,
-      "minutes": 17
+      "minutes": 41
     }
   ],
   "editors": [
     {
-      "total_seconds": 119909.355,
+      "total_seconds": 191657.252,
       "name": "Claude Code",
-      "ai_additions": 27246,
-      "ai_deletions": 3501,
+      "ai_additions": 47245,
+      "ai_deletions": 8654,
       "human_additions": 0,
       "human_deletions": 0,
       "ai_agent_line_changes": {
-        "Opus": 28491,
-        "Sonnet": 2005,
+        "Opus": 43741,
+        "Sonnet": 11907,
         "Haiku": 251
       },
       "ai_agent_costs": {
-        "Opus": 6844.480265,
-        "Sonnet": 524.037522,
-        "Haiku": 28.308445,
-        "Qwen": 0.66978
+        "Opus": 12246.96748,
+        "Haiku": 202.437079,
+        "Sonnet": 2722.389672,
+        "Qwen": 1.385898
       },
-      "ai_input_tokens": 1562060392,
-      "ai_output_tokens": 2530164,
-      "ai_prompt_length_avg": 3146,
-      "ai_prompt_length_avg_per_session": 6559,
-      "ai_prompt_length_median_per_session": 873,
-      "ai_prompt_length_sum": 1594993,
-      "ai_prompt_events_total": 507,
-      "ai_prompt_events_avg_per_session": 12,
+      "ai_input_tokens": 3533558042,
+      "ai_output_tokens": 5870129,
+      "ai_prompt_length_avg": 3581,
+      "ai_prompt_length_avg_per_session": 7460,
+      "ai_prompt_length_median_per_session": 604,
+      "ai_prompt_length_sum": 2449629,
+      "ai_prompt_events_total": 684,
+      "ai_prompt_events_avg_per_session": 15,
       "ai_prompt_events_median_per_session": 6,
-      "ai_sessions": 44,
+      "ai_sessions": 47,
       "ai_agent_breakdown": [
         {
           "name": "Opus",
-          "lines": 28491,
-          "cost": 6844.480265
+          "lines": 43741,
+          "cost": 12246.96748
         },
         {
           "name": "Sonnet",
-          "lines": 2005,
-          "cost": 524.037522
+          "lines": 11907,
+          "cost": 2722.389672
         },
         {
           "name": "Haiku",
           "lines": 251,
-          "cost": 28.308445
+          "cost": 202.437079
         },
         {
           "name": "Qwen",
           "lines": 0,
-          "cost": 0.66978
+          "cost": 1.385898
         }
       ],
-      "ai_agent_total_cost": 7397.4960120000005,
-      "percent": 55.74,
-      "digital": "33:18",
-      "decimal": "33.30",
-      "text": "33 hrs 18 mins",
-      "hours": 33,
-      "minutes": 18
+      "ai_agent_total_cost": 15173.180128999998,
+      "percent": 63.85,
+      "digital": "53:14",
+      "decimal": "53.23",
+      "text": "53 hrs 14 mins",
+      "hours": 53,
+      "minutes": 14
     },
     {
-      "total_seconds": 82323.95,
+      "total_seconds": 98621.51,
       "name": "Chrome",
       "ai_additions": 0,
       "ai_deletions": 0,
@@ -184,63 +184,65 @@
       "ai_sessions": 0,
       "ai_agent_breakdown": [],
       "ai_agent_total_cost": 0,
-      "percent": 38.27,
-      "digital": "22:52",
-      "decimal": "22.87",
-      "text": "22 hrs 52 mins",
-      "hours": 22,
-      "minutes": 52
+      "percent": 32.86,
+      "digital": "27:23",
+      "decimal": "27.38",
+      "text": "27 hrs 23 mins",
+      "hours": 27,
+      "minutes": 23
     },
     {
-      "total_seconds": 11340.617,
+      "total_seconds": 8379.717,
       "name": "VS Code",
-      "ai_additions": 0,
-      "ai_deletions": 0,
-      "human_additions": 6,
-      "human_deletions": 123,
-      "ai_agent_line_changes": {},
-      "ai_agent_costs": {
-        "Claude-Code": 20.364126,
-        "Opencode-Cli": 1.681227,
-        "DeepSeek": 0.368373
+      "ai_additions": 1,
+      "ai_deletions": 10,
+      "human_additions": 138,
+      "human_deletions": 1303,
+      "ai_agent_line_changes": {
+        "Opencode-Cli": 11
       },
-      "ai_input_tokens": 7222602,
-      "ai_output_tokens": 49728,
-      "ai_prompt_length_avg": 3938,
-      "ai_prompt_length_avg_per_session": 4079,
-      "ai_prompt_length_median_per_session": 1098,
-      "ai_prompt_length_sum": 291446,
-      "ai_prompt_events_total": 74,
-      "ai_prompt_events_avg_per_session": 3,
+      "ai_agent_costs": {
+        "Opencode-Cli": 1.585473,
+        "Claude-Code": 35.979855,
+        "Exec-Wakatime": 0.06651
+      },
+      "ai_input_tokens": 12344651,
+      "ai_output_tokens": 39859,
+      "ai_prompt_length_avg": 4640,
+      "ai_prompt_length_avg_per_session": 5520,
+      "ai_prompt_length_median_per_session": 132,
+      "ai_prompt_length_sum": 436174,
+      "ai_prompt_events_total": 94,
+      "ai_prompt_events_avg_per_session": 2,
       "ai_prompt_events_median_per_session": 1,
-      "ai_sessions": 29,
+      "ai_sessions": 41,
       "ai_agent_breakdown": [
+        {
+          "name": "Opencode-Cli",
+          "lines": 11,
+          "cost": 1.585473
+        },
         {
           "name": "Claude-Code",
           "lines": 0,
-          "cost": 20.364126
+          "cost": 35.979855
         },
         {
-          "name": "Opencode-Cli",
+          "name": "Exec-Wakatime",
           "lines": 0,
-          "cost": 1.681227
-        },
-        {
-          "name": "DeepSeek",
-          "lines": 0,
-          "cost": 0.368373
+          "cost": 0.06651
         }
       ],
-      "ai_agent_total_cost": 22.413726,
-      "percent": 5.27,
-      "digital": "3:09",
-      "decimal": "3.15",
-      "text": "3 hrs 9 mins",
-      "hours": 3,
-      "minutes": 9
+      "ai_agent_total_cost": 37.631838,
+      "percent": 2.79,
+      "digital": "2:19",
+      "decimal": "2.32",
+      "text": "2 hrs 19 mins",
+      "hours": 2,
+      "minutes": 19
     },
     {
-      "total_seconds": 1491.042,
+      "total_seconds": 1495.597,
       "name": "Edge",
       "ai_additions": 0,
       "ai_deletions": 0,
@@ -260,16 +262,309 @@
       "ai_sessions": 0,
       "ai_agent_breakdown": [],
       "ai_agent_total_cost": 0,
-      "percent": 0.69,
+      "percent": 0.5,
       "digital": "0:24",
       "decimal": "0.40",
       "text": "24 mins",
       "hours": 0,
       "minutes": 24
+    }
+  ],
+  "projects": [
+    {
+      "total_seconds": 116767.683,
+      "name": "oriz",
+      "ai_additions": 21717,
+      "ai_deletions": 927,
+      "human_additions": 4,
+      "human_deletions": 77,
+      "ai_agent_line_changes": {
+        "Opus": 19422,
+        "Sonnet": 2971,
+        "Haiku": 251
+      },
+      "ai_agent_costs": {
+        "Sonnet": 1144.176939,
+        "Opus": 5798.86247,
+        "Haiku": 14.042181,
+        "Opencode-Cli": 0.285462,
+        "Claude-Code": 19.227324
+      },
+      "ai_input_tokens": 1549844952,
+      "ai_output_tokens": 2760825,
+      "ai_prompt_length_avg": 4030,
+      "ai_prompt_length_avg_per_session": 7915,
+      "ai_prompt_length_median_per_session": 546,
+      "ai_prompt_length_sum": 1612130,
+      "ai_prompt_events_total": 400,
+      "ai_prompt_events_avg_per_session": 9,
+      "ai_prompt_events_median_per_session": 4,
+      "ai_sessions": 45,
+      "ai_agent_breakdown": [
+        {
+          "name": "Opus",
+          "lines": 19422,
+          "cost": 5798.86247
+        },
+        {
+          "name": "Sonnet",
+          "lines": 2971,
+          "cost": 1144.176939
+        },
+        {
+          "name": "Haiku",
+          "lines": 251,
+          "cost": 14.042181
+        },
+        {
+          "name": "Claude-Code",
+          "lines": 0,
+          "cost": 19.227324
+        },
+        {
+          "name": "Opencode-Cli",
+          "lines": 0,
+          "cost": 0.285462
+        }
+      ],
+      "ai_agent_total_cost": 6976.594376,
+      "percent": 38.9,
+      "digital": "32:26",
+      "decimal": "32.43",
+      "text": "32 hrs 26 mins",
+      "hours": 32,
+      "minutes": 26
     },
     {
-      "total_seconds": 70,
-      "name": "Unknown Editor",
+      "total_seconds": 30436.19,
+      "name": "omniroute",
+      "ai_additions": 500,
+      "ai_deletions": 10,
+      "human_additions": 0,
+      "human_deletions": 0,
+      "ai_agent_line_changes": {
+        "Opus": 499,
+        "Opencode-Cli": 11
+      },
+      "ai_agent_costs": {
+        "Opus": 870.594315,
+        "Opencode-Cli": 0.929424,
+        "Haiku": 102.594283,
+        "Sonnet": 119.210109,
+        "Claude-Code": 4.068726
+      },
+      "ai_input_tokens": 315524339,
+      "ai_output_tokens": 518312,
+      "ai_prompt_length_avg": 2010,
+      "ai_prompt_length_avg_per_session": 1397,
+      "ai_prompt_length_median_per_session": 772,
+      "ai_prompt_length_sum": 122607,
+      "ai_prompt_events_total": 61,
+      "ai_prompt_events_avg_per_session": 3,
+      "ai_prompt_events_median_per_session": 1,
+      "ai_sessions": 19,
+      "ai_agent_breakdown": [
+        {
+          "name": "Opus",
+          "lines": 499,
+          "cost": 870.594315
+        },
+        {
+          "name": "Opencode-Cli",
+          "lines": 11,
+          "cost": 0.929424
+        },
+        {
+          "name": "Sonnet",
+          "lines": 0,
+          "cost": 119.210109
+        },
+        {
+          "name": "Haiku",
+          "lines": 0,
+          "cost": 102.594283
+        },
+        {
+          "name": "Claude-Code",
+          "lines": 0,
+          "cost": 4.068726
+        }
+      ],
+      "ai_agent_total_cost": 1097.396857,
+      "percent": 10.14,
+      "digital": "8:27",
+      "decimal": "8.45",
+      "text": "8 hrs 27 mins",
+      "hours": 8,
+      "minutes": 27
+    },
+    {
+      "total_seconds": 27775.466,
+      "name": "ws",
+      "ai_additions": 3069,
+      "ai_deletions": 1473,
+      "human_additions": 133,
+      "human_deletions": 1219,
+      "ai_agent_line_changes": {
+        "Sonnet": 652,
+        "Opus": 3890
+      },
+      "ai_agent_costs": {
+        "Sonnet": 428.357991,
+        "Claude-Code": 11.695974,
+        "Opus": 1439.61604,
+        "Haiku": 16.346292,
+        "Qwen": 1.385898,
+        "Opencode-Cli": 0.10707
+      },
+      "ai_input_tokens": 448128423,
+      "ai_output_tokens": 730768,
+      "ai_prompt_length_avg": 3404,
+      "ai_prompt_length_avg_per_session": 1616,
+      "ai_prompt_length_median_per_session": 132,
+      "ai_prompt_length_sum": 435768,
+      "ai_prompt_events_total": 128,
+      "ai_prompt_events_avg_per_session": 14,
+      "ai_prompt_events_median_per_session": 4,
+      "ai_sessions": 9,
+      "ai_agent_breakdown": [
+        {
+          "name": "Opus",
+          "lines": 3890,
+          "cost": 1439.61604
+        },
+        {
+          "name": "Sonnet",
+          "lines": 652,
+          "cost": 428.357991
+        },
+        {
+          "name": "Haiku",
+          "lines": 0,
+          "cost": 16.346292
+        },
+        {
+          "name": "Claude-Code",
+          "lines": 0,
+          "cost": 11.695974
+        },
+        {
+          "name": "Qwen",
+          "lines": 0,
+          "cost": 1.385898
+        },
+        {
+          "name": "Opencode-Cli",
+          "lines": 0,
+          "cost": 0.10707
+        }
+      ],
+      "ai_agent_total_cost": 1897.5092650000001,
+      "percent": 9.25,
+      "digital": "7:42",
+      "decimal": "7.70",
+      "text": "7 hrs 42 mins",
+      "hours": 7,
+      "minutes": 42
+    },
+    {
+      "total_seconds": 17353.301,
+      "name": "screenpipe",
+      "ai_additions": 830,
+      "ai_deletions": 255,
+      "human_additions": 0,
+      "human_deletions": 0,
+      "ai_agent_line_changes": {
+        "Sonnet": 343,
+        "Opus": 742
+      },
+      "ai_agent_costs": {
+        "Sonnet": 47.609166,
+        "Opus": 706.941935,
+        "Haiku": 6.609454
+      },
+      "ai_input_tokens": 163010473,
+      "ai_output_tokens": 220040,
+      "ai_prompt_length_avg": 10774,
+      "ai_prompt_length_avg_per_session": 11943,
+      "ai_prompt_length_median_per_session": 6899,
+      "ai_prompt_length_sum": 129288,
+      "ai_prompt_events_total": 12,
+      "ai_prompt_events_avg_per_session": 2,
+      "ai_prompt_events_median_per_session": 1,
+      "ai_sessions": 8,
+      "ai_agent_breakdown": [
+        {
+          "name": "Opus",
+          "lines": 742,
+          "cost": 706.941935
+        },
+        {
+          "name": "Sonnet",
+          "lines": 343,
+          "cost": 47.609166
+        },
+        {
+          "name": "Haiku",
+          "lines": 0,
+          "cost": 6.609454
+        }
+      ],
+      "ai_agent_total_cost": 761.1605549999999,
+      "percent": 5.78,
+      "digital": "4:49",
+      "decimal": "4.82",
+      "text": "4 hrs 49 mins",
+      "hours": 4,
+      "minutes": 49
+    },
+    {
+      "total_seconds": 10993.669,
+      "name": "me-site",
+      "ai_additions": 4303,
+      "ai_deletions": 557,
+      "human_additions": 0,
+      "human_deletions": 0,
+      "ai_agent_line_changes": {
+        "Sonnet": 4860
+      },
+      "ai_agent_costs": {
+        "Sonnet": 481.560651,
+        "Opus": 62.247555
+      },
+      "ai_input_tokens": 172054752,
+      "ai_output_tokens": 236070,
+      "ai_prompt_length_avg": 2437,
+      "ai_prompt_length_avg_per_session": 2322,
+      "ai_prompt_length_median_per_session": 2322,
+      "ai_prompt_length_sum": 95049,
+      "ai_prompt_events_total": 39,
+      "ai_prompt_events_avg_per_session": 20,
+      "ai_prompt_events_median_per_session": 20,
+      "ai_sessions": 2,
+      "ai_agent_breakdown": [
+        {
+          "name": "Sonnet",
+          "lines": 4860,
+          "cost": 481.560651
+        },
+        {
+          "name": "Opus",
+          "lines": 0,
+          "cost": 62.247555
+        }
+      ],
+      "ai_agent_total_cost": 543.808206,
+      "percent": 3.66,
+      "digital": "3:03",
+      "decimal": "3.05",
+      "text": "3 hrs 3 mins",
+      "hours": 3,
+      "minutes": 3
+    },
+    {
+      "total_seconds": 6430.462,
+      "name": "me-archive",
       "ai_additions": 0,
       "ai_deletions": 0,
       "human_additions": 0,
@@ -278,255 +573,117 @@
       "ai_agent_costs": {},
       "ai_input_tokens": 0,
       "ai_output_tokens": 0,
-      "ai_prompt_length_avg": 2,
-      "ai_prompt_length_avg_per_session": 2,
-      "ai_prompt_length_median_per_session": 2,
-      "ai_prompt_length_sum": 2,
-      "ai_prompt_events_total": 1,
-      "ai_prompt_events_avg_per_session": 1,
-      "ai_prompt_events_median_per_session": 1,
-      "ai_sessions": 1,
+      "ai_prompt_length_avg": 0,
+      "ai_prompt_length_avg_per_session": 0,
+      "ai_prompt_length_median_per_session": 0,
+      "ai_prompt_length_sum": 0,
+      "ai_prompt_events_total": 0,
+      "ai_prompt_events_avg_per_session": 0,
+      "ai_prompt_events_median_per_session": 0,
+      "ai_sessions": 0,
       "ai_agent_breakdown": [],
       "ai_agent_total_cost": 0,
-      "percent": 0.03,
-      "digital": "0:01",
-      "decimal": "0.02",
-      "text": "1 min",
-      "hours": 0,
-      "minutes": 1
-    }
-  ],
-  "projects": [
-    {
-      "total_seconds": 103913.565,
-      "name": "oriz",
-      "ai_additions": 17050,
-      "ai_deletions": 885,
-      "human_additions": 5,
-      "human_deletions": 116,
-      "ai_agent_line_changes": {
-        "Opus": 16090,
-        "Sonnet": 1594,
-        "Haiku": 251
-      },
-      "ai_agent_costs": {
-        "Opus": 3518.230035,
-        "Sonnet": 326.881902,
-        "Claude-Code": 10.06902,
-        "Haiku": 16.401288,
-        "Opencode-Cli": 0.002214,
-        "DeepSeek": 0.368373
-      },
-      "ai_input_tokens": 827406725,
-      "ai_output_tokens": 1403780,
-      "ai_prompt_length_avg": 3707,
-      "ai_prompt_length_avg_per_session": 5582,
-      "ai_prompt_length_median_per_session": 1042,
-      "ai_prompt_length_sum": 1556823,
-      "ai_prompt_events_total": 420,
-      "ai_prompt_events_avg_per_session": 9,
-      "ai_prompt_events_median_per_session": 1,
-      "ai_sessions": 45,
-      "ai_agent_breakdown": [
-        {
-          "name": "Opus",
-          "lines": 16090,
-          "cost": 3518.230035
-        },
-        {
-          "name": "Sonnet",
-          "lines": 1594,
-          "cost": 326.881902
-        },
-        {
-          "name": "Haiku",
-          "lines": 251,
-          "cost": 16.401288
-        },
-        {
-          "name": "Claude-Code",
-          "lines": 0,
-          "cost": 10.06902
-        },
-        {
-          "name": "DeepSeek",
-          "lines": 0,
-          "cost": 0.368373
-        },
-        {
-          "name": "Opencode-Cli",
-          "lines": 0,
-          "cost": 0.002214
-        }
-      ],
-      "ai_agent_total_cost": 3871.952832,
-      "percent": 48.3,
-      "digital": "28:51",
-      "decimal": "28.85",
-      "text": "28 hrs 51 mins",
-      "hours": 28,
-      "minutes": 51
+      "percent": 2.14,
+      "digital": "1:47",
+      "decimal": "1.78",
+      "text": "1 hr 47 mins",
+      "hours": 1,
+      "minutes": 47
     },
     {
-      "total_seconds": 18330.574,
-      "name": "screenpipe",
-      "ai_additions": 488,
-      "ai_deletions": 169,
+      "total_seconds": 6225.412,
+      "name": "NXEnhanced",
+      "ai_additions": 156,
+      "ai_deletions": 73,
       "human_additions": 0,
       "human_deletions": 0,
       "ai_agent_line_changes": {
-        "Opus": 657
+        "Sonnet": 229
       },
       "ai_agent_costs": {
-        "Opus": 675.43213,
-        "Haiku": 6.609454
+        "Opus": 382.94335,
+        "Sonnet": 108.874839
       },
-      "ai_input_tokens": 140918765,
-      "ai_output_tokens": 204045,
-      "ai_prompt_length_avg": 12913,
-      "ai_prompt_length_avg_per_session": 11984,
-      "ai_prompt_length_median_per_session": 6899,
-      "ai_prompt_length_sum": 129133,
-      "ai_prompt_events_total": 10,
-      "ai_prompt_events_avg_per_session": 1,
-      "ai_prompt_events_median_per_session": 1,
-      "ai_sessions": 8,
+      "ai_input_tokens": 111675433,
+      "ai_output_tokens": 240970,
+      "ai_prompt_length_avg": 1666,
+      "ai_prompt_length_avg_per_session": 1666,
+      "ai_prompt_length_median_per_session": 1666,
+      "ai_prompt_length_sum": 13330,
+      "ai_prompt_events_total": 8,
+      "ai_prompt_events_avg_per_session": 8,
+      "ai_prompt_events_median_per_session": 8,
+      "ai_sessions": 1,
       "ai_agent_breakdown": [
-        {
-          "name": "Opus",
-          "lines": 657,
-          "cost": 675.43213
-        },
-        {
-          "name": "Haiku",
-          "lines": 0,
-          "cost": 6.609454
-        }
-      ],
-      "ai_agent_total_cost": 682.0415840000001,
-      "percent": 8.52,
-      "digital": "5:05",
-      "decimal": "5.08",
-      "text": "5 hrs 5 mins",
-      "hours": 5,
-      "minutes": 5
-    },
-    {
-      "total_seconds": 17518.476,
-      "name": "omniroute",
-      "ai_additions": 0,
-      "ai_deletions": 0,
-      "human_additions": 0,
-      "human_deletions": 0,
-      "ai_agent_line_changes": {},
-      "ai_agent_costs": {
-        "Opus": 382.79601,
-        "Opencode-Cli": 0.13911,
-        "Haiku": 2.620823,
-        "Sonnet": 2.883318
-      },
-      "ai_input_tokens": 79693506,
-      "ai_output_tokens": 98799,
-      "ai_prompt_length_avg": 1684,
-      "ai_prompt_length_avg_per_session": 1541,
-      "ai_prompt_length_median_per_session": 171,
-      "ai_prompt_length_sum": 48844,
-      "ai_prompt_events_total": 29,
-      "ai_prompt_events_avg_per_session": 2,
-      "ai_prompt_events_median_per_session": 1,
-      "ai_sessions": 14,
-      "ai_agent_breakdown": [
-        {
-          "name": "Opus",
-          "lines": 0,
-          "cost": 382.79601
-        },
         {
           "name": "Sonnet",
-          "lines": 0,
-          "cost": 2.883318
+          "lines": 229,
+          "cost": 108.874839
         },
         {
-          "name": "Haiku",
+          "name": "Opus",
           "lines": 0,
-          "cost": 2.620823
-        },
-        {
-          "name": "Opencode-Cli",
-          "lines": 0,
-          "cost": 0.13911
+          "cost": 382.94335
         }
       ],
-      "ai_agent_total_cost": 388.43926100000004,
-      "percent": 8.14,
-      "digital": "4:51",
-      "decimal": "4.85",
-      "text": "4 hrs 51 mins",
-      "hours": 4,
-      "minutes": 51
+      "ai_agent_total_cost": 491.818189,
+      "percent": 2.07,
+      "digital": "1:43",
+      "decimal": "1.72",
+      "text": "1 hr 43 mins",
+      "hours": 1,
+      "minutes": 43
     },
     {
-      "total_seconds": 10560.465,
-      "name": "ws",
-      "ai_additions": 1422,
-      "ai_deletions": 1470,
+      "total_seconds": 6150.204,
+      "name": "agent-configs",
+      "ai_additions": 1336,
+      "ai_deletions": 47,
       "human_additions": 0,
       "human_deletions": 0,
       "ai_agent_line_changes": {
-        "Sonnet": 244,
-        "Opus": 2648
+        "Opus": 1252,
+        "Sonnet": 131
       },
       "ai_agent_costs": {
-        "Sonnet": 95.075001,
-        "Claude-Code": 9.307275,
-        "Opus": 590.90887,
-        "Haiku": 2.371473,
-        "Qwen": 0.66978
+        "Opus": 308.274025,
+        "Haiku": 0.050088,
+        "Sonnet": 71.631915
       },
-      "ai_input_tokens": 153914518,
-      "ai_output_tokens": 340653,
-      "ai_prompt_length_avg": 1833,
-      "ai_prompt_length_avg_per_session": 1420,
-      "ai_prompt_length_median_per_session": 1122,
-      "ai_prompt_length_sum": 106305,
-      "ai_prompt_events_total": 58,
-      "ai_prompt_events_avg_per_session": 14,
-      "ai_prompt_events_median_per_session": 14,
-      "ai_sessions": 4,
+      "ai_input_tokens": 85010483,
+      "ai_output_tokens": 114343,
+      "ai_prompt_length_avg": 254,
+      "ai_prompt_length_avg_per_session": 137,
+      "ai_prompt_length_median_per_session": 126,
+      "ai_prompt_length_sum": 7614,
+      "ai_prompt_events_total": 30,
+      "ai_prompt_events_avg_per_session": 3,
+      "ai_prompt_events_median_per_session": 0,
+      "ai_sessions": 11,
       "ai_agent_breakdown": [
         {
           "name": "Opus",
-          "lines": 2648,
-          "cost": 590.90887
+          "lines": 1252,
+          "cost": 308.274025
         },
         {
           "name": "Sonnet",
-          "lines": 244,
-          "cost": 95.075001
-        },
-        {
-          "name": "Claude-Code",
-          "lines": 0,
-          "cost": 9.307275
+          "lines": 131,
+          "cost": 71.631915
         },
         {
           "name": "Haiku",
           "lines": 0,
-          "cost": 2.371473
-        },
-        {
-          "name": "Qwen",
-          "lines": 0,
-          "cost": 0.66978
+          "cost": 0.050088
         }
       ],
-      "ai_agent_total_cost": 698.332399,
-      "percent": 4.91,
-      "digital": "2:56",
-      "decimal": "2.93",
-      "text": "2 hrs 56 mins",
-      "hours": 2,
-      "minutes": 56
+      "ai_agent_total_cost": 379.956028,
+      "percent": 2.05,
+      "digital": "1:42",
+      "decimal": "1.70",
+      "text": "1 hr 42 mins",
+      "hours": 1,
+      "minutes": 42
     },
     {
       "total_seconds": 6140.944,
@@ -549,7 +706,7 @@
       "ai_sessions": 0,
       "ai_agent_breakdown": [],
       "ai_agent_total_cost": 0,
-      "percent": 2.85,
+      "percent": 2.05,
       "digital": "1:42",
       "decimal": "1.70",
       "text": "1 hr 42 mins",
@@ -557,219 +714,103 @@
       "minutes": 42
     },
     {
-      "total_seconds": 3819.97,
-      "name": "agent-configs",
-      "ai_additions": 580,
-      "ai_deletions": 42,
+      "total_seconds": 5777.094,
+      "name": "blog",
+      "ai_additions": 1109,
+      "ai_deletions": 243,
       "human_additions": 0,
       "human_deletions": 0,
       "ai_agent_line_changes": {
-        "Opus": 491,
-        "Sonnet": 131
+        "Opus": 411,
+        "Sonnet": 941
       },
       "ai_agent_costs": {
-        "Opus": 94.41371,
-        "Haiku": 0.050088,
-        "Sonnet": 71.631915
+        "Opus": 64.9961,
+        "Sonnet": 115.564236
       },
-      "ai_input_tokens": 42556650,
-      "ai_output_tokens": 50697,
-      "ai_prompt_length_avg": 284,
-      "ai_prompt_length_avg_per_session": 119,
-      "ai_prompt_length_median_per_session": 126,
-      "ai_prompt_length_sum": 4835,
-      "ai_prompt_events_total": 17,
-      "ai_prompt_events_avg_per_session": 2,
-      "ai_prompt_events_median_per_session": 0,
-      "ai_sessions": 8,
+      "ai_input_tokens": 51121177,
+      "ai_output_tokens": 79891,
+      "ai_prompt_length_avg": 2316,
+      "ai_prompt_length_avg_per_session": 1403,
+      "ai_prompt_length_median_per_session": 940,
+      "ai_prompt_length_sum": 46310,
+      "ai_prompt_events_total": 20,
+      "ai_prompt_events_avg_per_session": 7,
+      "ai_prompt_events_median_per_session": 4,
+      "ai_sessions": 3,
       "ai_agent_breakdown": [
-        {
-          "name": "Opus",
-          "lines": 491,
-          "cost": 94.41371
-        },
         {
           "name": "Sonnet",
-          "lines": 131,
-          "cost": 71.631915
+          "lines": 941,
+          "cost": 115.564236
         },
         {
-          "name": "Haiku",
-          "lines": 0,
-          "cost": 0.050088
+          "name": "Opus",
+          "lines": 411,
+          "cost": 64.9961
         }
       ],
-      "ai_agent_total_cost": 166.095713,
-      "percent": 1.78,
-      "digital": "1:03",
-      "decimal": "1.05",
-      "text": "1 hr 3 mins",
+      "ai_agent_total_cost": 180.560336,
+      "percent": 1.92,
+      "digital": "1:36",
+      "decimal": "1.60",
+      "text": "1 hr 36 mins",
       "hours": 1,
-      "minutes": 3
-    },
-    {
-      "total_seconds": 3801,
-      "name": "C5420321",
-      "ai_additions": 0,
-      "ai_deletions": 0,
-      "human_additions": 0,
-      "human_deletions": 0,
-      "ai_agent_line_changes": {},
-      "ai_agent_costs": {
-        "Opencode-Cli": 1.276386
-      },
-      "ai_input_tokens": 298332,
-      "ai_output_tokens": 25426,
-      "ai_prompt_length_avg": 181,
-      "ai_prompt_length_avg_per_session": 129,
-      "ai_prompt_length_median_per_session": 93,
-      "ai_prompt_length_sum": 1445,
-      "ai_prompt_events_total": 8,
-      "ai_prompt_events_avg_per_session": 2,
-      "ai_prompt_events_median_per_session": 2,
-      "ai_sessions": 4,
-      "ai_agent_breakdown": [
-        {
-          "name": "Opencode-Cli",
-          "lines": 0,
-          "cost": 1.276386
-        }
-      ],
-      "ai_agent_total_cost": 1.276386,
-      "percent": 1.77,
-      "digital": "1:03",
-      "decimal": "1.05",
-      "text": "1 hr 3 mins",
-      "hours": 1,
-      "minutes": 3
-    },
-    {
-      "total_seconds": 3112.292,
-      "name": "agenticSeek",
-      "ai_additions": 0,
-      "ai_deletions": 0,
-      "human_additions": 0,
-      "human_deletions": 0,
-      "ai_agent_line_changes": {},
-      "ai_agent_costs": {},
-      "ai_input_tokens": 0,
-      "ai_output_tokens": 0,
-      "ai_prompt_length_avg": 0,
-      "ai_prompt_length_avg_per_session": 0,
-      "ai_prompt_length_median_per_session": 0,
-      "ai_prompt_length_sum": 0,
-      "ai_prompt_events_total": 0,
-      "ai_prompt_events_avg_per_session": 0,
-      "ai_prompt_events_median_per_session": 0,
-      "ai_sessions": 0,
-      "ai_agent_breakdown": [],
-      "ai_agent_total_cost": 0,
-      "percent": 1.45,
-      "digital": "0:51",
-      "decimal": "0.85",
-      "text": "51 mins",
-      "hours": 0,
-      "minutes": 51
-    },
-    {
-      "total_seconds": 3015.758,
-      "name": "openai-edge-tts",
-      "ai_additions": 0,
-      "ai_deletions": 0,
-      "human_additions": 0,
-      "human_deletions": 0,
-      "ai_agent_line_changes": {},
-      "ai_agent_costs": {},
-      "ai_input_tokens": 0,
-      "ai_output_tokens": 0,
-      "ai_prompt_length_avg": 0,
-      "ai_prompt_length_avg_per_session": 0,
-      "ai_prompt_length_median_per_session": 0,
-      "ai_prompt_length_sum": 0,
-      "ai_prompt_events_total": 0,
-      "ai_prompt_events_avg_per_session": 0,
-      "ai_prompt_events_median_per_session": 0,
-      "ai_sessions": 0,
-      "ai_agent_breakdown": [],
-      "ai_agent_total_cost": 0,
-      "percent": 1.4,
-      "digital": "0:50",
-      "decimal": "0.83",
-      "text": "50 mins",
-      "hours": 0,
-      "minutes": 50
-    },
-    {
-      "total_seconds": 2678.865,
-      "name": "GoogleBard",
-      "ai_additions": 0,
-      "ai_deletions": 0,
-      "human_additions": 0,
-      "human_deletions": 0,
-      "ai_agent_line_changes": {},
-      "ai_agent_costs": {},
-      "ai_input_tokens": 0,
-      "ai_output_tokens": 0,
-      "ai_prompt_length_avg": 0,
-      "ai_prompt_length_avg_per_session": 0,
-      "ai_prompt_length_median_per_session": 0,
-      "ai_prompt_length_sum": 0,
-      "ai_prompt_events_total": 0,
-      "ai_prompt_events_avg_per_session": 0,
-      "ai_prompt_events_median_per_session": 0,
-      "ai_sessions": 0,
-      "ai_agent_breakdown": [],
-      "ai_agent_total_cost": 0,
-      "percent": 1.25,
-      "digital": "0:44",
-      "decimal": "0.73",
-      "text": "44 mins",
-      "hours": 0,
-      "minutes": 44
+      "minutes": 36
     }
   ],
   "operating_systems": [
     {
-      "total_seconds": 215134.964,
+      "total_seconds": 300154.076,
       "name": "Windows",
       "percent": 100,
-      "digital": "59:45",
-      "decimal": "59.75",
-      "text": "59 hrs 45 mins",
-      "hours": 59,
-      "minutes": 45
+      "digital": "83:22",
+      "decimal": "83.37",
+      "text": "83 hrs 22 mins",
+      "hours": 83,
+      "minutes": 22
     }
   ],
   "categories": [
     {
       "name": "AI Coding",
-      "total_seconds": 130755.85,
-      "percent": 60.78,
-      "digital": "36:19",
-      "decimal": "36.32",
-      "text": "36 hrs 19 mins",
-      "hours": 36,
-      "minutes": 19
+      "total_seconds": 199812.462,
+      "percent": 66.57,
+      "digital": "55:30",
+      "decimal": "55.50",
+      "text": "55 hrs 30 mins",
+      "hours": 55,
+      "minutes": 30
     },
     {
       "name": "Browsing",
-      "total_seconds": 83814.992,
-      "percent": 38.96,
-      "digital": "23:16",
-      "decimal": "23.27",
-      "text": "23 hrs 16 mins",
-      "hours": 23,
-      "minutes": 16
+      "total_seconds": 100117.107,
+      "percent": 33.36,
+      "digital": "27:48",
+      "decimal": "27.80",
+      "text": "27 hrs 48 mins",
+      "hours": 27,
+      "minutes": 48
     },
     {
       "name": "Coding",
-      "total_seconds": 564.122,
-      "percent": 0.26,
-      "digital": "0:09",
-      "decimal": "0.15",
-      "text": "9 mins",
+      "total_seconds": 212.57,
+      "percent": 0.07,
+      "digital": "0:03",
+      "decimal": "0.05",
+      "text": "3 mins",
       "hours": 0,
-      "minutes": 9
+      "minutes": 3
+    },
+    {
+      "name": "Writing Docs",
+      "total_seconds": 11.937,
+      "percent": 0,
+      "digital": "0:00",
+      "decimal": "0.00",
+      "text": "0 secs",
+      "hours": 0,
+      "minutes": 0
     }
   ]
 }

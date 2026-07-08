@@ -7,13 +7,27 @@ function readData(filename: string): any[] {
   try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
 }
 
-const jikan    = readData('jikan-anime-completed.json')
-const completed = jikan.length ? jikan : readData('mal-anime-completed.json')
-const isJikan   = jikan.length > 0
+// AniList preferred; Jikan fallback; MAL last
+const anilist = readData('anilist-anime-completed.json')
+const jikan   = anilist.length ? [] : readData('jikan-anime-completed.json')
+const completed = anilist.length ? anilist : (jikan.length ? jikan : readData('mal-anime-completed.json'))
+const source: 'anilist' | 'jikan' | 'mal' = anilist.length ? 'anilist' : (jikan.length ? 'jikan' : 'mal')
 
-function getTitle(item: any) { return isJikan ? item?.entry?.title : item?.node?.title }
-function getScore(item: any) { return isJikan ? item?.score : item?.list_status?.score }
-function getCover(item: any) { return isJikan ? item?.entry?.images?.jpg?.image_url : item?.node?.main_picture?.medium }
+function getTitle(item: any) {
+  if (source === 'anilist') return item?.media?.title?.romaji || item?.media?.title?.english
+  if (source === 'jikan')   return item?.entry?.title
+  return item?.node?.title
+}
+function getScore(item: any) {
+  if (source === 'anilist') return item?.score
+  if (source === 'jikan')   return item?.score
+  return item?.list_status?.score
+}
+function getCover(item: any) {
+  if (source === 'anilist') return item?.media?.coverImage?.large || item?.media?.coverImage?.medium
+  if (source === 'jikan')   return item?.entry?.images?.jpg?.image_url
+  return item?.node?.main_picture?.medium
+}
 ---
 
 <Layout title="Completed Anime" active="/library/anime/">

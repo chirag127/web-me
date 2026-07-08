@@ -2,14 +2,14 @@
   "playing_now": true,
   "track_metadata": {
     "additional_info": {
-      "duration_ms": 230000,
-      "recording_msid": "3a0c6eb1-f992-44b4-9515-4a35f47816a7",
-      "submission_client": "Pano Scrobbler",
-      "submission_client_version": "4.41"
+      "duration": 204,
+      "music_service_name": "YouTube",
+      "origin_url": "https://youtu.be/kZ-zzHVUrO4",
+      "submission_client": "Web Scrobbler",
+      "submission_client_version": "3.22.0"
     },
-    "artist_name": "Troye Sivan",
-    "release_name": "Bloom",
-    "track_name": "Plum"
+    "artist_name": "Matt Pocock",
+    "track_name": "How I use Claude Code for real engineering"
   },
   "user_name": "chirag127"
 }

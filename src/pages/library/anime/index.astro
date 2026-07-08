@@ -7,20 +7,46 @@ function readData(filename: string): any[] {
   try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
 }
 
-const jikanWatching = readData('jikan-anime-watching.json')
-const malWatching   = readData('mal-anime-watching.json')
-const watching      = jikanWatching.length ? jikanWatching : malWatching
-const isJikan       = jikanWatching.length > 0
+// AniList preferred; Jikan fallback; MAL last
+let watching: any[] = []
+let source: 'anilist' | 'jikan' | 'mal' = 'anilist'
+const anilistWatching = readData('anilist-anime-watching.json')
+if (anilistWatching.length) {
+  watching = anilistWatching
+} else {
+  const jikanWatching = readData('jikan-anime-watching.json')
+  if (jikanWatching.length) { watching = jikanWatching; source = 'jikan' }
+  else { watching = readData('mal-anime-watching.json'); source = 'mal' }
+}
 
-const completedRaw = readData('jikan-anime-completed.json')
-const completed    = completedRaw.length ? completedRaw : readData('mal-anime-completed.json')
-const plannedRaw   = readData('jikan-anime-plan.json')
-const planned      = plannedRaw.length ? plannedRaw : readData('mal-anime-plan.json')
+const anilistCompleted = readData('anilist-anime-completed.json')
+const completed = anilistCompleted.length ? anilistCompleted
+  : (readData('jikan-anime-completed.json').length ? readData('jikan-anime-completed.json') : readData('mal-anime-completed.json'))
 
-function getTitle(item: any)     { return isJikan ? item?.entry?.title : item?.node?.title }
-function getScore(item: any)     { return isJikan ? item?.score : item?.list_status?.score }
-function getEpWatched(item: any) { return isJikan ? item?.num_episodes_watched : item?.list_status?.num_episodes_watched }
-function getCover(item: any)     { return isJikan ? item?.entry?.images?.jpg?.image_url : item?.node?.main_picture?.medium }
+const anilistPlanned = readData('anilist-anime-plan.json')
+const planned = anilistPlanned.length ? anilistPlanned
+  : (readData('jikan-anime-plan.json').length ? readData('jikan-anime-plan.json') : readData('mal-anime-plan.json'))
+
+function getTitle(item: any) {
+  if (source === 'anilist') return item?.media?.title?.romaji || item?.media?.title?.english
+  if (source === 'jikan')   return item?.entry?.title
+  return item?.node?.title
+}
+function getScore(item: any) {
+  if (source === 'anilist') return item?.score
+  if (source === 'jikan')   return item?.score
+  return item?.list_status?.score
+}
+function getEpWatched(item: any) {
+  if (source === 'anilist') return item?.progress
+  if (source === 'jikan')   return item?.num_episodes_watched
+  return item?.list_status?.num_episodes_watched
+}
+function getCover(item: any) {
+  if (source === 'anilist') return item?.media?.coverImage?.large || item?.media?.coverImage?.medium
+  if (source === 'jikan')   return item?.entry?.images?.jpg?.image_url
+  return item?.node?.main_picture?.medium
+}
 ---
 
 <Layout title="Currently Watching Anime" active="/library/anime/">
