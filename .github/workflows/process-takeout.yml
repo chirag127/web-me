@@ -58,12 +58,25 @@ jobs:
               process.exit(0);
             }
 
+            // Log ALL found files with sizes
+            console.log(`Found ${res.data.files.length} Takeout file(s):`);
+            res.data.files.forEach(f => console.log(`  ${f.name} size=${f.size||'unknown'} created=${f.createdTime} id=${f.id}`));
+
             // Pick largest file (main archive, not metadata/0-byte files)
             const file = res.data.files.sort((a, b) => parseInt(b.size||'0') - parseInt(a.size||'0'))[0];
-            console.log(`Found: ${file.name} (${Math.round(file.size / 1024 / 1024)}MB) created ${file.createdTime}`);
+            const fileSizeMB = file.size ? Math.round(parseInt(file.size) / 1024 / 1024) : 0;
+            console.log(`Selecting: ${file.name} (${fileSizeMB}MB) created ${file.createdTime}`);
+
+            // Verify file has content before downloading
+            if (!file.size || parseInt(file.size) === 0) {
+              console.log('WARNING: Selected file has 0 size, skipping download');
+              process.exit(0);
+            }
 
             // Download the file
             const dest = '/tmp/takeout.zip';
+            console.log(`Downloading ${file.name} (${fileSizeMB}MB)...`);
+            let downloadedBytes = 0;
             const response = await drive.files.get(
               { fileId: file.id, alt: 'media' },
               { responseType: 'stream' }
@@ -71,15 +84,36 @@ jobs:
 
             await new Promise((resolve, reject) => {
               const ws = fs.createWriteStream(dest);
+              response.data.on('data', chunk => {
+                downloadedBytes += chunk.length;
+                if (downloadedBytes % (10 * 1024 * 1024) < chunk.length) {
+                  console.log(`  Downloaded ${Math.round(downloadedBytes / 1024 / 1024)}MB...`);
+                }
+              });
+              response.data.on('error', err => { console.error('Download stream error:', err.message); reject(err); });
               response.data.pipe(ws);
               ws.on('finish', resolve);
               ws.on('error', reject);
             });
 
-            console.log('Downloaded to', dest);
+            const downloadedSizeMB = Math.round(downloadedBytes / 1024 / 1024);
+            console.log(`Downloaded to ${dest} (${downloadedSizeMB}MB)`);
+            if (downloadedBytes === 0) {
+              console.log('ERROR: Downloaded file is empty');
+              process.exit(1);
+            }
 
             // Extract relevant files
             execSync(`unzip -o ${dest} "*/YouTube*" "*/watch-history.json" "*/Takeout/Fit/**" "*/Location History/**" -d /tmp/takeout-extracted/ 2>/dev/null || true`);
+
+            // Log what was extracted
+            try {
+              const extracted = execSync('find /tmp/takeout-extracted -type f 2>/dev/null').toString().trim();
+              const extractedFiles = extracted.split('\n').filter(Boolean);
+              console.log(`Extracted ${extractedFiles.length} file(s) from archive:`);
+              extractedFiles.slice(0, 30).forEach(f => console.log('  ' + f));
+              if (extractedFiles.length > 30) console.log(`  ... and ${extractedFiles.length - 30} more`);
+            } catch(e) { console.log('Could not list extracted files:', e.message); }
 
             // Parse YouTube watch history
             const ytHistoryFiles = execSync('find /tmp/takeout-extracted -name "watch-history.json" 2>/dev/null').toString().trim().split('\n').filter(Boolean);
@@ -172,6 +206,22 @@ jobs:
               }
             }
 
+            // Parse Maps location history
+            const mapsFiles = execSync('find /tmp/takeout-extracted -name "Records.json" -path "*/Location History/*" 2>/dev/null').toString().trim().split('\n').filter(Boolean);
+            if (mapsFiles.length) {
+              try {
+                const mapsData = JSON.parse(fs.readFileSync(mapsFiles[0], 'utf-8'));
+                const locations = mapsData.locations || [];
+                // Get unique countries/places from last 1000 locations
+                const recent = locations.slice(-1000);
+                fs.writeFileSync('public/data/maps-locations.json', JSON.stringify({
+                  total_points: locations.length,
+                  last_1000: recent.map(l => ({ lat: l.latitudeE7/1e7, lng: l.longitudeE7/1e7, time: l.timestamp })),
+                }, null, 2));
+                console.log('Maps: ' + locations.length + ' location points');
+              } catch(e) { console.log('Maps parse error:', e.message); }
+            }
+
             console.log('Done processing Takeout');
           }
 
@@ -182,6 +232,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/youtube-recent.json public/data/youtube-stats.json public/data/fit-sleep.json public/data/fit-daily.json 2>/dev/null || true
+          git add public/data/youtube-recent.json public/data/youtube-stats.json public/data/fit-sleep.json public/data/fit-daily.json public/data/maps-locations.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "chore(data): process monthly Google Takeout $(date -u +%Y-%m)"
           git push
