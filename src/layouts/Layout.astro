@@ -62,6 +62,7 @@ const LIBRARY_NAV = [
 
 const ME_NAV = [
   { href: '/me',              label: 'About',           icon: '◉' },
+  { href: '/me/now',          label: 'Now',             icon: '◌' },
   { href: '/me/gear',         label: 'Gear',            icon: '◧' },
   { href: '/me/philosophy',   label: 'Philosophy',      icon: '◈' },
   { href: '/me/wakatime',     label: 'Coding Activity', icon: '◈' },
@@ -121,6 +122,9 @@ const connectOpen = path.startsWith('/connect')
       "https://linkedin.com/in/chirag127"
     ]
   })} />
+
+  <!-- Build time (for DataAge component) -->
+  <script set:html={`window.__BUILD_TIME__="${new Date().toISOString()}"`}></script>
 
   <!-- Puter.js -->
   <script src="https://js.puter.com/v2/" defer></script>
