@@ -72,6 +72,9 @@ const PH_TOKEN      = process.env.PRODUCTHUNT_TOKEN       ?? ''
 const SPOTIFY_CLIENT_ID      = process.env.SPOTIFY_CLIENT_ID      ?? ''
 const SPOTIFY_REFRESH_TOKEN  = process.env.SPOTIFY_REFRESH_TOKEN  ?? ''
 const SPOTIFY_CLIENT_SECRET  = process.env.SPOTIFY_CLIENT_SECRET  ?? ''
+const GOOGLE_CLIENT_ID       = process.env.GOOGLE_CLIENT_ID       ?? ''
+const GOOGLE_CLIENT_SECRET   = process.env.GOOGLE_CLIENT_SECRET   ?? ''
+const GOOGLE_REFRESH_TOKEN   = process.env.GOOGLE_REFRESH_TOKEN   ?? ''
 
 // ---- helpers ---------------------------------------------------------------
 mkdirSync(DATA_DIR, { recursive: true })
@@ -803,6 +806,70 @@ async function fetchOpenLibrary() {
   save('ol-want.json',    shape(want))
 }
 
+async function fetchGoogleApis() {
+  const clientId     = process.env.GOOGLE_CLIENT_ID     ?? ''
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET ?? ''
+  const refresh      = process.env.GOOGLE_REFRESH_TOKEN ?? ''
+  if (!clientId || !clientSecret || !refresh) {
+    console.log('  ⚠ Google credentials not set — skipping Google APIs')
+    return
+  }
+
+  // Exchange refresh token for access token (form-encoded, not JSON)
+  let access = ''
+  try {
+    const r = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ client_id: clientId, client_secret: clientSecret, refresh_token: refresh, grant_type: 'refresh_token' }),
+      signal: AbortSignal.timeout(15000),
+    })
+    const d = await r.json() as any
+    access = d.access_token ?? ''
+  } catch (e: any) { console.warn('  ⚠ Google token exchange failed:', e.message); return }
+  if (!access) { console.warn('  ⚠ Google: no access token'); return }
+
+  const gh = { Authorization: `Bearer ${access}` }
+
+  // Gmail
+  const [gmailProfile, gmailInbox] = await Promise.all([
+    safeFetch('https://gmail.googleapis.com/gmail/v1/users/me/profile', gh),
+    safeFetch('https://gmail.googleapis.com/gmail/v1/users/me/labels/INBOX', gh),
+  ])
+  if (gmailProfile) {
+    save('gmail-profile.json', { email: (gmailProfile as any).emailAddress, total_messages: (gmailProfile as any).messagesTotal, total_threads: (gmailProfile as any).threadsTotal })
+    save('gmail-inbox.json', { unread: (gmailInbox as any)?.messagesUnread ?? 0, total: (gmailInbox as any)?.messagesTotal ?? 0 })
+  }
+
+  // Calendar
+  const calList = await safeFetch('https://www.googleapis.com/calendar/v3/calendarList', gh)
+  if (calList) {
+    const now = new Date().toISOString()
+    const events = await safeFetch(`https://www.googleapis.com/calendar/v3/calendars/primary/events?maxResults=10&orderBy=startTime&singleEvents=true&timeMin=${now}`, gh) as any
+    save('calendar-events.json', (events?.items ?? []).map((e: any) => ({
+      id: e.id,
+      title: e.summary ?? '',
+      start: e.start?.dateTime ?? e.start?.date ?? '',
+      end: e.end?.dateTime ?? e.end?.date ?? '',
+      location: e.location ?? '',
+      description: (e.description ?? '').slice(0, 200),
+    })))
+  }
+
+  // YouTube subscriptions (requires youtube.readonly scope)
+  const ytSubs = await safeFetch('https://www.googleapis.com/youtube/v3/subscriptions?part=snippet&mine=true&maxResults=50&order=relevance', gh) as any
+  if (ytSubs) {
+    save('youtube-subscriptions.json', {
+      total: ytSubs.pageInfo?.totalResults ?? 0,
+      subscriptions: (ytSubs.items ?? []).map((i: any) => ({
+        title: i.snippet?.title ?? '',
+        channel_id: i.snippet?.resourceId?.channelId ?? '',
+        thumbnail: i.snippet?.thumbnails?.default?.url ?? '',
+      }))
+    })
+  }
+}
+
 async function fetchNotion() {
   const token = process.env.NOTION_TOKEN ?? NOTION_TOKEN
   const dbId  = process.env.NOTION_JOURNAL_DB_ID ?? NOTION_DB_ID
@@ -1011,6 +1078,9 @@ async function main() {
   console.log(`  PRODUCTHUNT_TOKEN:     ${PH_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log(`  SPOTIFY_CLIENT_ID:     ${SPOTIFY_CLIENT_ID ? '✓ set' : '✗ missing'}`)
   console.log(`  SPOTIFY_REFRESH_TOKEN: ${SPOTIFY_REFRESH_TOKEN ? '✓ set' : '✗ missing'}`)
+  console.log(`  GOOGLE_CLIENT_ID:      ${GOOGLE_CLIENT_ID ? '✓ set' : '✗ missing'}`)
+  console.log(`  GOOGLE_CLIENT_SECRET:  ${GOOGLE_CLIENT_SECRET ? '✓ set' : '✗ missing'}`)
+  console.log(`  GOOGLE_REFRESH_TOKEN:  ${GOOGLE_REFRESH_TOKEN ? '✓ set' : '✗ missing'}`)
   console.log()
 
   // Trakt must complete before TMDB enrichment reads its output files
@@ -1040,6 +1110,7 @@ async function main() {
     fetchProductHunt().then(() => console.log('✅ ProductHunt done')).catch(e => console.error('❌ ProductHunt', e.message)),
     fetchSpotify().then(() => console.log('✅ Spotify done')).catch(e => console.error('❌ Spotify', e.message)),
     fetchMoonReader().then(() => console.log('✅ Moon+ Reader done')).catch(e => console.error('❌ Moon+ Reader', e.message)),
+    fetchGoogleApis().then(() => console.log('✅ Google APIs done')).catch(e => console.error('❌ Google APIs', e.message)),
   ])
   // Trakt first, then TMDB (enrichment reads trakt-*.json)
   await fetchTrakt().then(() => console.log('✅ Trakt done')).catch(e => console.error('❌ Trakt', e.message))

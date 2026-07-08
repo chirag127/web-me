@@ -7,8 +7,8 @@
     "overview": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
     "poster": "https://image.tmdb.org/t/p/w342/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
-    "rating": 9.457,
-    "votes": 616,
+    "rating": 9.458,
+    "votes": 617,
     "release": "2026-06-05",
     "genres": [
       10759,
@@ -25,8 +25,8 @@
     "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
     "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.26,
-    "votes": 381,
+    "rating": 9.251,
+    "votes": 382,
     "release": "2026-05-15",
     "genres": [
       37,
@@ -61,8 +61,8 @@
     "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
     "poster": "https://image.tmdb.org/t/p/w342/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
-    "rating": 8.949,
-    "votes": 642,
+    "rating": 8.9,
+    "votes": 645,
     "release": "2026-05-13",
     "genres": [
       18
@@ -78,7 +78,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
     "rating": 8.947,
-    "votes": 18062,
+    "votes": 18063,
     "release": "2008-01-20",
     "genres": [
       18,
@@ -111,10 +111,10 @@
     "type": "tv",
     "title": "Avatar: The Last Airbender",
     "overview": "In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
-    "poster": "https://image.tmdb.org/t/p/w342/yaGt4GIutpbXHsv48tWceWg6s56.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/9RQhVb3r3mCMqYVhLoCu4EvuipP.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/7oBGhqJIghRBvOwo5Qe0yM0cnMc.jpg",
     "rating": 8.77,
-    "votes": 4933,
+    "votes": 4935,
     "release": "2005-02-21",
     "genres": [
       16,
@@ -122,6 +122,24 @@
       10765
     ],
     "popularity": 34.6185
+  },
+  {
+    "id": 85077,
+    "tmdb_id": 85077,
+    "type": "tv",
+    "title": "The Chosen",
+    "overview": "The life of Christ through the eyes of those who encountered him.",
+    "poster": "https://image.tmdb.org/t/p/w342/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/3siv3RaQrdr2tQiv9jHq71sLlzo.jpg",
+    "rating": 8.757,
+    "votes": 908,
+    "release": "2019-04-21",
+    "genres": [
+      10759,
+      10751,
+      18
+    ],
+    "popularity": 81.3464
   },
   {
     "id": 219246,
@@ -138,24 +156,6 @@
       18
     ],
     "popularity": 28.6189
-  },
-  {
-    "id": 85077,
-    "tmdb_id": 85077,
-    "type": "tv",
-    "title": "The Chosen",
-    "overview": "The life of Christ through the eyes of those who encountered him.",
-    "poster": "https://image.tmdb.org/t/p/w342/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/3siv3RaQrdr2tQiv9jHq71sLlzo.jpg",
-    "rating": 8.754,
-    "votes": 906,
-    "release": "2019-04-21",
-    "genres": [
-      10759,
-      10751,
-      18
-    ],
-    "popularity": 81.3464
   },
   {
     "id": 94605,
@@ -217,8 +217,8 @@
     "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
     "poster": "https://image.tmdb.org/t/p/w342/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
-    "rating": 8.7,
-    "votes": 827,
+    "rating": 8.728,
+    "votes": 828,
     "release": "2025-01-09",
     "genres": [
       18
@@ -234,12 +234,28 @@
     "poster": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/3URK0z9PzpVNJrGE7XOuyy6KFzk.jpg",
     "rating": 8.718,
-    "votes": 7998,
+    "votes": 7999,
     "release": "2019-05-06",
     "genres": [
       18
     ],
     "popularity": 34.9275
+  },
+  {
+    "id": 64010,
+    "tmdb_id": 64010,
+    "type": "tv",
+    "title": "Reply 1988",
+    "overview": "Take a nostalgic trip back to the late 1980s through the lives of five families and their five teenage kids living in a small neighbourhood in Seoul.",
+    "poster": "https://image.tmdb.org/t/p/w342/i3xQJlQRff4k5IMEY55l4iKaKl3.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/sZH7lGs06skRKkrqp1LRi57VVMb.jpg",
+    "rating": 8.749,
+    "votes": 217,
+    "release": "2015-11-06",
+    "genres": [
+      35
+    ],
+    "popularity": 17.3658
   },
   {
     "id": 31911,
@@ -259,22 +275,6 @@
       18
     ],
     "popularity": 85.0782
-  },
-  {
-    "id": 64010,
-    "tmdb_id": 64010,
-    "type": "tv",
-    "title": "Reply 1988",
-    "overview": "Take a nostalgic trip back to the late 1980s through the lives of five families and their five teenage kids living in a small neighbourhood in Seoul.",
-    "poster": "https://image.tmdb.org/t/p/w342/i3xQJlQRff4k5IMEY55l4iKaKl3.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/sZH7lGs06skRKkrqp1LRi57VVMb.jpg",
-    "rating": 8.711,
-    "votes": 218,
-    "release": "2015-11-06",
-    "genres": [
-      35
-    ],
-    "popularity": 17.3658
   },
   {
     "id": 60059,
@@ -301,32 +301,14 @@
     "overview": "With the aid of unexpected friends, a gifted but introverted student confronts bullies and violent foes — unaware of how dangerous his world will become.",
     "poster": "https://image.tmdb.org/t/p/w342/5Sd01WeraL2oA3Vv6O4rcRxockn.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/q5mJ4oKfGc6Cr9reIHFzD0pQzre.jpg",
-    "rating": 8.7,
-    "votes": 475,
+    "rating": 8.709,
+    "votes": 476,
     "release": "2022-11-18",
     "genres": [
       10759,
       18
     ],
     "popularity": 71.2491
-  },
-  {
-    "id": 1429,
-    "tmdb_id": 1429,
-    "type": "tv",
-    "title": "Attack on Titan",
-    "overview": "100 years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
-    "poster": "https://image.tmdb.org/t/p/w342/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
-    "rating": 8.682,
-    "votes": 7517,
-    "release": "2013-04-07",
-    "genres": [
-      16,
-      10765,
-      10759
-    ],
-    "popularity": 38.6921
   },
   {
     "id": 261145,
@@ -346,5 +328,23 @@
       10765
     ],
     "popularity": 45.1026
+  },
+  {
+    "id": 1429,
+    "tmdb_id": 1429,
+    "type": "tv",
+    "title": "Attack on Titan",
+    "overview": "100 years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
+    "poster": "https://image.tmdb.org/t/p/w342/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
+    "rating": 8.682,
+    "votes": 7517,
+    "release": "2013-04-07",
+    "genres": [
+      16,
+      10765,
+      10759
+    ],
+    "popularity": 38.6921
   }
 ]

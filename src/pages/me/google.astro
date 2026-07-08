@@ -1,0 +1,234 @@
+---
+import { readFileSync } from 'fs'
+import { join } from 'path'
+import Layout from '~/layouts/Layout.astro'
+
+function readObj(filename: string): any {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return null }
+}
+function readArr(filename: string): any[] {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
+}
+
+const gmailProfile  = readObj('gmail-profile.json')
+const gmailInbox    = readObj('gmail-inbox.json')
+const calEvents     = readArr('calendar-events.json')
+const ytData        = readObj('youtube-subscriptions.json')
+const ytSubs        = ytData?.subscriptions ?? []
+
+function fmtDate(iso: string): string {
+  if (!iso) return ''
+  try {
+    return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }).format(new Date(iso))
+  } catch { return iso }
+}
+
+const hasData = gmailProfile || calEvents.length > 0 || ytSubs.length > 0
+---
+
+<Layout title="Google Activity" active="/me/google">
+  <div class="page-header">
+    <div class="kicker">ME · GOOGLE</div>
+    <h1>Google Activity</h1>
+  </div>
+
+  {!hasData ? (
+    <div class="empty-state">
+      <span class="empty-icon">◈</span>
+      <p>No Google data available. Set GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, and GOOGLE_REFRESH_TOKEN.</p>
+    </div>
+  ) : (
+    <div class="google-wrap">
+
+      {gmailProfile && (
+        <section class="card">
+          <h2 class="section-heading">Gmail</h2>
+          <div class="gmail-header">
+            <span class="gmail-email">{gmailProfile.email}</span>
+            {gmailInbox?.unread > 0 && (
+              <span class="unread-badge">{gmailInbox.unread} unread</span>
+            )}
+          </div>
+          <div class="stat-row">
+            <div class="stat-card">
+              <span class="stat-number">{(gmailProfile.total_messages ?? 0).toLocaleString()}</span>
+              <span class="stat-lbl">TOTAL MESSAGES</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">{(gmailProfile.total_threads ?? 0).toLocaleString()}</span>
+              <span class="stat-lbl">THREADS</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">{(gmailInbox?.unread ?? 0).toLocaleString()}</span>
+              <span class="stat-lbl">INBOX UNREAD</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">{(gmailInbox?.total ?? 0).toLocaleString()}</span>
+              <span class="stat-lbl">INBOX TOTAL</span>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {ytSubs.length > 0 && (
+        <section class="card">
+          <h2 class="section-heading">
+            YouTube Subscriptions
+            {ytData?.total > 0 && <span class="count-badge">{ytData.total.toLocaleString()} total</span>}
+          </h2>
+          <div class="yt-grid">
+            {ytSubs.slice(0, 10).map((sub: any) => (
+              <a
+                href={`https://www.youtube.com/channel/${sub.channel_id}`}
+                target="_blank"
+                rel="noopener"
+                class="yt-card"
+              >
+                {sub.thumbnail ? (
+                  <img src={sub.thumbnail} alt={sub.title} class="yt-thumb" width="40" height="40" />
+                ) : (
+                  <div class="yt-thumb yt-thumb-placeholder">▶</div>
+                )}
+                <span class="yt-title">{sub.title}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {calEvents.length > 0 && (
+        <section class="card">
+          <h2 class="section-heading">Upcoming Events</h2>
+          <div class="events-list">
+            {calEvents.map((ev: any) => (
+              <div class="event-row">
+                <div class="event-time muted">{fmtDate(ev.start)}</div>
+                <div class="event-title">{ev.title || '(no title)'}</div>
+                {ev.location && <div class="event-loc muted">{ev.location}</div>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+    </div>
+  )}
+</Layout>
+
+<style>
+  .google-wrap { display: flex; flex-direction: column; gap: 24px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .section-heading {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+    color: var(--t-muted); text-transform: uppercase;
+    margin: 0 0 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+
+  .count-badge {
+    font-size: 11px; font-weight: 600;
+    background: var(--overlay);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 7px;
+    color: var(--t-muted);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  /* Gmail */
+  .gmail-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 16px;
+  }
+  .gmail-email { font-weight: 600; font-size: 15px; color: var(--t-primary); }
+  .unread-badge {
+    font-size: 11px; font-weight: 600;
+    background: rgba(234, 67, 53, 0.12);
+    color: #ea4335;
+    border: 1px solid rgba(234, 67, 53, 0.25);
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+
+  .stat-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .stat-card {
+    background: var(--overlay);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex; flex-direction: column; gap: 2px;
+    min-width: 100px;
+  }
+  .stat-number { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--t-primary); }
+  .stat-lbl { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; color: var(--t-muted); }
+
+  /* YouTube */
+  .yt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+  }
+  .yt-card {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--overlay);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: border-color 120ms;
+  }
+  .yt-card:hover { border-color: var(--t-muted); }
+  .yt-thumb {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+  }
+  .yt-thumb-placeholder {
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff0000;
+    font-size: 14px;
+    border-radius: 50%;
+  }
+  .yt-title {
+    font-size: 13px; font-weight: 500;
+    color: var(--t-primary);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  /* Calendar */
+  .events-list { display: flex; flex-direction: column; gap: 2px; }
+  .event-row {
+    background: var(--overlay);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex; flex-direction: column; gap: 3px;
+    transition: border-color 120ms;
+  }
+  .event-row:hover { border-color: var(--t-muted); }
+  .event-time { font-size: 11px; font-family: var(--font-mono); }
+  .event-title { font-size: 14px; font-weight: 500; color: var(--t-primary); }
+  .event-loc { font-size: 12px; }
+
+  /* Shared */
+  .muted { color: var(--t-muted); }
+
+  .empty-state {
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+    padding: 64px 24px;
+    color: var(--t-muted);
+    text-align: center;
+  }
+  .empty-icon { font-size: 32px; }
+</style>
