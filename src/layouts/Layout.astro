@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import TwinWidget from '../components/TwinChat'
 
 interface Props {
   title: string
@@ -272,6 +273,9 @@ const connectOpen = path.startsWith('/connect')
       </a>
     </div>
   </nav>
+
+  <!-- AI Digital Twin floating widget (all pages) -->
+  <TwinWidget client:only="react" />
 
 </body>
 </html>
