@@ -1,1 +1,15 @@
-null
+{
+  "playing_now": true,
+  "track_metadata": {
+    "additional_info": {
+      "duration_ms": 240000,
+      "recording_msid": "1f37ae8c-6edb-4fe7-91ad-5f70bcca1446",
+      "submission_client": "Pano Scrobbler",
+      "submission_client_version": "4.41"
+    },
+    "artist_name": "One Direction",
+    "release_name": "FOUR (Deluxe)",
+    "track_name": "Night Changes"
+  },
+  "user_name": "chirag127"
+}
