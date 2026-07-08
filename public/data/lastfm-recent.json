@@ -2,6 +2,869 @@
   {
     "artist": {
       "mbid": "",
+      "#text": "Move 4"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Dynamic Workflows & /goal",
+    "@attr": {
+      "nowplaying": "true"
+    },
+    "url": "https://www.last.fm/music/Move+4/_/Dynamic+Workflows+&+%2Fgoal"
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Move 4"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Dynamic Workflows & /goal",
+    "url": "https://www.last.fm/music/Move+4/_/Dynamic+Workflows+&+%2Fgoal",
+    "date": {
+      "uts": "1783490151",
+      "#text": "08 Jul 2026, 05:55"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Move 2"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "The Consultant Audit",
+    "url": "https://www.last.fm/music/Move+2/_/The+Consultant+Audit",
+    "date": {
+      "uts": "1783490077",
+      "#text": "08 Jul 2026, 05:54"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "The API Cost"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Fable 5 vs Opus 4.8",
+    "url": "https://www.last.fm/music/The+API+Cost/_/Fable+5+vs+Opus+4.8",
+    "date": {
+      "uts": "1783490002",
+      "#text": "08 Jul 2026, 05:53"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "The One Test"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Can a Cheaper Model Redo This?",
+    "url": "https://www.last.fm/music/The+One+Test/_/Can+a+Cheaper+Model+Redo+This%3F",
+    "date": {
+      "uts": "1783489968",
+      "#text": "08 Jul 2026, 05:52"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fable 5 Goes API"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Only",
+    "url": "https://www.last.fm/music/Fable+5+Goes+API/_/Only",
+    "date": {
+      "uts": "1783489930",
+      "#text": "08 Jul 2026, 05:52"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "BETTERWAY"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Japan's Real Plan In The AI Race Is Genius",
+    "url": "https://www.last.fm/music/BETTERWAY/_/Japan%27s+Real+Plan+In+The+AI+Race+Is+Genius",
+    "date": {
+      "uts": "1783489622",
+      "#text": "08 Jul 2026, 05:47"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "ByteMonk"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Claude Code? Here's What Hackers See",
+    "url": "https://www.last.fm/music/ByteMonk/_/Claude+Code%3F+Here%27s+What+Hackers+See",
+    "date": {
+      "uts": "1783489459",
+      "#text": "08 Jul 2026, 05:44"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "ByteMonk"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Why AI writes insecure code",
+    "url": "https://www.last.fm/music/ByteMonk/_/Why+AI+writes+insecure+code",
+    "date": {
+      "uts": "1783489351",
+      "#text": "08 Jul 2026, 05:42"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "ByteMonk"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Vibe coding and the trust gap",
+    "url": "https://www.last.fm/music/ByteMonk/_/Vibe+coding+and+the+trust+gap",
+    "date": {
+      "uts": "1783489306",
+      "#text": "08 Jul 2026, 05:41"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "1"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Language Servers",
+    "url": "https://www.last.fm/music/1/_/Language+Servers",
+    "date": {
+      "uts": "1783489167",
+      "#text": "08 Jul 2026, 05:39"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "2"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "GitHub MCP",
+    "url": "https://www.last.fm/music/2/_/GitHub+MCP",
+    "date": {
+      "uts": "1783489125",
+      "#text": "08 Jul 2026, 05:38"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Tech With Tim"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Plugin Marketplace",
+    "url": "https://www.last.fm/music/Tech+With+Tim/_/Plugin+Marketplace",
+    "date": {
+      "uts": "1783489042",
+      "#text": "08 Jul 2026, 05:37"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "PawelCodeStuff"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Trees, commits and the history graph",
+    "url": "https://www.last.fm/music/PawelCodeStuff/_/Trees,+commits+and+the+history+graph",
+    "date": {
+      "uts": "1783488733",
+      "#text": "08 Jul 2026, 05:32"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "PawelCodeStuff"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "How Git works under the hood",
+    "url": "https://www.last.fm/music/PawelCodeStuff/_/How+Git+works+under+the+hood",
+    "date": {
+      "uts": "1783488688",
+      "#text": "08 Jul 2026, 05:31"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Multi"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Agent Orchestration Patterns",
+    "url": "https://www.last.fm/music/Multi/_/Agent+Orchestration+Patterns",
+    "date": {
+      "uts": "1783488586",
+      "#text": "08 Jul 2026, 05:29"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Michael Anthony Gartland"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Troye Sivan at Madison Square Garden with Dance to This on September 23, 2024.",
+    "url": "https://www.last.fm/music/Michael+Anthony+Gartland/_/Troye+Sivan+at+Madison+Square+Garden+with+Dance+to+This+on+September+23,+2024.",
+    "date": {
+      "uts": "1783488375",
+      "#text": "08 Jul 2026, 05:26"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Maximilian Schwarzmüller"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Google is losing and FIRING (?) top personnel",
+    "url": "https://www.last.fm/music/Maximilian+Schwarzm%C3%BCller/_/Google+is+losing+and+FIRING+(%3F)+top+personnel",
+    "date": {
+      "uts": "1783487919",
+      "#text": "08 Jul 2026, 05:18"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Maximilian Schwarzmüller"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Relax",
+    "url": "https://www.last.fm/music/Maximilian+Schwarzm%C3%BCller/_/Relax",
+    "date": {
+      "uts": "1783487833",
+      "#text": "08 Jul 2026, 05:17"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Maximilian Schwarzmüller"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Dario's Difficult Davos Discussions",
+    "url": "https://www.last.fm/music/Maximilian+Schwarzm%C3%BCller/_/Dario%27s+Difficult+Davos+Discussions",
+    "date": {
+      "uts": "1783487691",
+      "#text": "08 Jul 2026, 05:14"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Futurepedia"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Full generation example",
+    "url": "https://www.last.fm/music/Futurepedia/_/Full+generation+example",
+    "date": {
+      "uts": "1783487657",
+      "#text": "08 Jul 2026, 05:14"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Futurepedia"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Intro",
+    "url": "https://www.last.fm/music/Futurepedia/_/Intro",
+    "date": {
+      "uts": "1783487625",
+      "#text": "08 Jul 2026, 05:13"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "I Built my Son an Over"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Engineered Robot",
+    "url": "https://www.last.fm/music/I+Built+my+Son+an+Over/_/Engineered+Robot",
+    "date": {
+      "uts": "1783487293",
+      "#text": "08 Jul 2026, 05:08"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "AI + me"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "It's difficult",
+    "url": "https://www.last.fm/music/AI+%252B+me/_/It%27s+difficult",
+    "date": {
+      "uts": "1783487019",
+      "#text": "08 Jul 2026, 05:03"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
       "#text": "uxpeak"
     },
     "streamable": "0",
@@ -29,10 +892,11 @@
       "#text": ""
     },
     "name": "The UX Psychology Behind Apps People Can’t Stop Using",
-    "@attr": {
-      "nowplaying": "true"
-    },
-    "url": "https://www.last.fm/music/uxpeak/_/The+UX+Psychology+Behind+Apps+People+Can%E2%80%99t+Stop+Using"
+    "url": "https://www.last.fm/music/uxpeak/_/The+UX+Psychology+Behind+Apps+People+Can%E2%80%99t+Stop+Using",
+    "date": {
+      "uts": "1783486660",
+      "#text": "08 Jul 2026, 04:57"
+    }
   },
   {
     "artist": {
@@ -2768,870 +3632,6 @@
     "date": {
       "uts": "1783453411",
       "#text": "07 Jul 2026, 19:43"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "3377f3bb-60fc-4403-aea9-7e800612e060",
-      "#text": "Halsey"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/7cc615cfc9d831585d53116f8d7c2fa6.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/7cc615cfc9d831585d53116f8d7c2fa6.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/7cc615cfc9d831585d53116f8d7c2fa6.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/7cc615cfc9d831585d53116f8d7c2fa6.jpg"
-      }
-    ],
-    "mbid": "01aeecae-dff0-4a57-a8f1-d3a7acd2763f",
-    "album": {
-      "mbid": "",
-      "#text": "So Fresh: The Hits Of Summer 2019 + The Best Of 2018"
-    },
-    "name": "Without Me",
-    "url": "https://www.last.fm/music/Halsey/_/Without+Me",
-    "date": {
-      "uts": "1783453173",
-      "#text": "07 Jul 2026, 19:39"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Dance To This ft. Ariana Grande",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Dance+To+This+ft.+Ariana+Grande",
-    "date": {
-      "uts": "1783452923",
-      "#text": "07 Jul 2026, 19:35"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      }
-    ],
-    "mbid": "f75b6b94-46b3-4c0a-af56-05b4dfbee957",
-    "album": {
-      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
-      "#text": "Bloom"
-    },
-    "name": "Lucky Strike",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Lucky+Strike",
-    "date": {
-      "uts": "1783452675",
-      "#text": "07 Jul 2026, 19:31"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ae98e9576b706abd661307b8a1a79bf9.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ae98e9576b706abd661307b8a1a79bf9.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ae98e9576b706abd661307b8a1a79bf9.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ae98e9576b706abd661307b8a1a79bf9.jpg"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": "Love Diary"
-    },
-    "name": "HEAVEN",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/HEAVEN",
-    "date": {
-      "uts": "1783452421",
-      "#text": "07 Jul 2026, 19:27"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Martin Garrix & Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/304ca47d310fe499c6201e2b0134f8d9.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/304ca47d310fe499c6201e2b0134f8d9.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/304ca47d310fe499c6201e2b0134f8d9.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/304ca47d310fe499c6201e2b0134f8d9.jpg"
-      }
-    ],
-    "mbid": "1dc62d9d-486f-4864-8d1c-0e601b189f13",
-    "album": {
-      "mbid": "",
-      "#text": "MNM Summertime 2017"
-    },
-    "name": "There for You",
-    "url": "https://www.last.fm/music/Martin+Garrix+&+Troye+Sivan/_/There+for+You",
-    "date": {
-      "uts": "1783452200",
-      "#text": "07 Jul 2026, 19:23"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
-      "#text": "Charlie Puth"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "3acffba9-6cb5-49cc-8b10-80f97206f5f0",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "That's Not How This Works (feat. dan + shay)",
-    "url": "https://www.last.fm/music/Charlie+Puth/_/That%27s+Not+How+This+Works+(feat.+dan+%252B+shay)",
-    "date": {
-      "uts": "1783451988",
-      "#text": "07 Jul 2026, 19:19"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
-      "#text": "Charlie Puth"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e38d4d3d3bbd6c152b9df0ebcab6cb67.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e38d4d3d3bbd6c152b9df0ebcab6cb67.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e38d4d3d3bbd6c152b9df0ebcab6cb67.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e38d4d3d3bbd6c152b9df0ebcab6cb67.png"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": "Best of Charlie Puth"
-    },
-    "name": "BOY",
-    "url": "https://www.last.fm/music/Charlie+Puth/_/BOY",
-    "date": {
-      "uts": "1783451723",
-      "#text": "07 Jul 2026, 19:15"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Justin Bieber"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Intentions (Official Video (Short Version)) ft. Quavo",
-    "url": "https://www.last.fm/music/Justin+Bieber/_/Intentions+(Official+Video+(Short+Version))+ft.+Quavo",
-    "date": {
-      "uts": "1783451287",
-      "#text": "07 Jul 2026, 19:08"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f018307055339656a43de6f27b992268.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f018307055339656a43de6f27b992268.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f018307055339656a43de6f27b992268.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f018307055339656a43de6f27b992268.jpg"
-      }
-    ],
-    "mbid": "34a5f529-f8bf-4e74-ae31-77e2e3325f66",
-    "album": {
-      "mbid": "",
-      "#text": "Blue Neighbourhood (Deluxe)"
-    },
-    "name": "TALK ME DOWN",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/TALK+ME+DOWN",
-    "date": {
-      "uts": "1783451041",
-      "#text": "07 Jul 2026, 19:04"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      }
-    ],
-    "mbid": "0ac42915-c526-4d51-a2e4-b72f617f53f8",
-    "album": {
-      "mbid": "1fa2d99a-d754-499f-ba6c-8fac8c43ab18",
-      "#text": "Blue Neighbourhood"
-    },
-    "name": "YOUTH",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/YOUTH",
-    "date": {
-      "uts": "1783450837",
-      "#text": "07 Jul 2026, 19:00"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
-      "#text": "Harry Styles"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/7940fbb1df766b4683951aed490a8b5a.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/7940fbb1df766b4683951aed490a8b5a.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/7940fbb1df766b4683951aed490a8b5a.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/7940fbb1df766b4683951aed490a8b5a.jpg"
-      }
-    ],
-    "mbid": "60df9158-1815-4b02-887f-d4c4b5b63579",
-    "album": {
-      "mbid": "5c8a772d-fb0a-46ab-a5d8-6317546b727a",
-      "#text": "Fine Line"
-    },
-    "name": "Falling",
-    "url": "https://www.last.fm/music/Harry+Styles/_/Falling",
-    "date": {
-      "uts": "1783450369",
-      "#text": "07 Jul 2026, 18:52"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Shawn Mendes"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Castle On The Hill / Treat You Better",
-    "url": "https://www.last.fm/music/Shawn+Mendes/_/Castle+On+The+Hill+%2F+Treat+You+Better",
-    "date": {
-      "uts": "1783449928",
-      "#text": "07 Jul 2026, 18:45"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Shawn Mendes, Zedd"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Lost In Japan (Original + Remix)",
-    "url": "https://www.last.fm/music/Shawn+Mendes,+Zedd/_/Lost+In+Japan+(Original+%252B+Remix)",
-    "date": {
-      "uts": "1783449693",
-      "#text": "07 Jul 2026, 18:41"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Ruth B."
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b17a9abfea511e21d39252f35f80e58e.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b17a9abfea511e21d39252f35f80e58e.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b17a9abfea511e21d39252f35f80e58e.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b17a9abfea511e21d39252f35f80e58e.jpg"
-      }
-    ],
-    "mbid": "af67c81b-23ad-435b-9821-e8abd3eec514",
-    "album": {
-      "mbid": "09347d26-d891-4d84-bd35-82fc2a509728",
-      "#text": "Safe Haven"
-    },
-    "name": "Dandelions",
-    "url": "https://www.last.fm/music/Ruth+B./_/Dandelions",
-    "date": {
-      "uts": "1783449457",
-      "#text": "07 Jul 2026, 18:37"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/0a8521c16d07751d4ea03546825a4dea.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/0a8521c16d07751d4ea03546825a4dea.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/0a8521c16d07751d4ea03546825a4dea.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/0a8521c16d07751d4ea03546825a4dea.jpg"
-      }
-    ],
-    "mbid": "4d8f94fb-c927-4328-b8e0-61ccc44c2189",
-    "album": {
-      "mbid": "",
-      "#text": "Something to Give Each Other"
-    },
-    "name": "One of Your Girls",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/One+of+Your+Girls",
-    "date": {
-      "uts": "1783449052",
-      "#text": "07 Jul 2026, 18:30"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
-      "#text": "Lauv"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e32f8fb6e1101d6277ede3b370767005.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e32f8fb6e1101d6277ede3b370767005.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e32f8fb6e1101d6277ede3b370767005.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e32f8fb6e1101d6277ede3b370767005.jpg"
-      }
-    ],
-    "mbid": "4fbb1e4a-c5c7-4694-a971-a3668bcffa17",
-    "album": {
-      "mbid": "fbbbbfda-8f82-4dbf-8bb1-2038dc2cb632",
-      "#text": "Feelings"
-    },
-    "name": "Feelings",
-    "url": "https://www.last.fm/music/Lauv/_/Feelings",
-    "date": {
-      "uts": "1783448867",
-      "#text": "07 Jul 2026, 18:27"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
-      "#text": "Maroon 5"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1fd6e49508d7b077c8344f45853ded46.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1fd6e49508d7b077c8344f45853ded46.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1fd6e49508d7b077c8344f45853ded46.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1fd6e49508d7b077c8344f45853ded46.jpg"
-      }
-    ],
-    "mbid": "b8c4bdcb-3ab0-4217-9d2b-045c93c9ce23",
-    "album": {
-      "mbid": "0182bd21-033a-41e9-bfcf-79feaefb56b2",
-      "#text": "V"
-    },
-    "name": "Sugar",
-    "url": "https://www.last.fm/music/Maroon+5/_/Sugar",
-    "date": {
-      "uts": "1783448565",
-      "#text": "07 Jul 2026, 18:22"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b2836b0cb18afef9444c59596bf6c7dc.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b2836b0cb18afef9444c59596bf6c7dc.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b2836b0cb18afef9444c59596bf6c7dc.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b2836b0cb18afef9444c59596bf6c7dc.png"
-      }
-    ],
-    "mbid": "b4f707d5-8440-4f87-b489-8ba47bdd50be",
-    "album": {
-      "mbid": "533573b9-9f3c-400f-be2d-ac11a94fb02a",
-      "#text": "TRXYE"
-    },
-    "name": "Happy Little Pill",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Happy+Little+Pill",
-    "date": {
-      "uts": "1783448306",
-      "#text": "07 Jul 2026, 18:18"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f018307055339656a43de6f27b992268.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f018307055339656a43de6f27b992268.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f018307055339656a43de6f27b992268.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f018307055339656a43de6f27b992268.jpg"
-      }
-    ],
-    "mbid": "aa261a18-db7e-4021-9f05-079c42a26181",
-    "album": {
-      "mbid": "",
-      "#text": "Blue Neighbourhood (Deluxe)"
-    },
-    "name": "BITE",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/BITE",
-    "date": {
-      "uts": "1783447756",
-      "#text": "07 Jul 2026, 18:09"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      }
-    ],
-    "mbid": "a45c3b70-d333-4170-ba7a-80871cdf8150",
-    "album": {
-      "mbid": "1fa2d99a-d754-499f-ba6c-8fac8c43ab18",
-      "#text": "Blue Neighbourhood"
-    },
-    "name": "SWIMMING POOLS",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/SWIMMING+POOLS",
-    "date": {
-      "uts": "1783447550",
-      "#text": "07 Jul 2026, 18:05"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/220c9bd1c528cd3d8621a63b1ca95d37.jpg"
-      }
-    ],
-    "mbid": "1ab9c1fb-7abf-4543-87c8-030ca668e3af",
-    "album": {
-      "mbid": "1fa2d99a-d754-499f-ba6c-8fac8c43ab18",
-      "#text": "Blue Neighbourhood"
-    },
-    "name": "THE QUIET",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/THE+QUIET",
-    "date": {
-      "uts": "1783447321",
-      "#text": "07 Jul 2026, 18:02"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Marshmello x Jonas Brothers"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Leave Before You Love Me",
-    "url": "https://www.last.fm/music/Marshmello+x+Jonas+Brothers/_/Leave+Before+You+Love+Me",
-    "date": {
-      "uts": "1783447149",
-      "#text": "07 Jul 2026, 17:59"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "IN A DREAM (from In A Dream EP Live)",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/IN+A+DREAM+(from+In+A+Dream+EP+Live)",
-    "date": {
-      "uts": "1783446908",
-      "#text": "07 Jul 2026, 17:55"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "OneRepublic"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/a6db79e1b3744e1a8e871cb913554258.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/a6db79e1b3744e1a8e871cb913554258.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/a6db79e1b3744e1a8e871cb913554258.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/a6db79e1b3744e1a8e871cb913554258.png"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "0f33c50f-0d40-43f9-b76f-9c516499c302",
-      "#text": "Native"
-    },
-    "name": "Counting Stars",
-    "url": "https://www.last.fm/music/OneRepublic/_/Counting+Stars",
-    "date": {
-      "uts": "1783446624",
-      "#text": "07 Jul 2026, 17:50"
     }
   }
 ]
