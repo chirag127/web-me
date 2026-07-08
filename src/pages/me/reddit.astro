@@ -1,0 +1,188 @@
+---
+import { readFileSync } from 'fs'
+import { join } from 'path'
+import Layout from '~/layouts/Layout.astro'
+
+function readObj(filename: string): any {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return null }
+}
+function readArr(filename: string): any[] {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', filename), 'utf-8')) } catch { return [] }
+}
+
+const profile = readObj('reddit-profile.json')
+const posts   = readArr('reddit-posts.json')
+
+function timeAgo(utc: number): string {
+  const diff = Math.floor(Date.now() / 1000) - utc
+  if (diff < 60)     return `${diff}s ago`
+  if (diff < 3600)   return `${Math.floor(diff / 60)}m ago`
+  if (diff < 86400)  return `${Math.floor(diff / 3600)}h ago`
+  if (diff < 2592000) return `${Math.floor(diff / 86400)}d ago`
+  return `${Math.floor(diff / 2592000)}mo ago`
+}
+
+const totalKarma = profile?.total_karma ?? ((profile?.link_karma ?? 0) + (profile?.comment_karma ?? 0))
+---
+
+<Layout title="Reddit" active="/me/reddit">
+  <div class="page-header">
+    <div class="kicker">ME · REDDIT</div>
+    <h1>Reddit</h1>
+  </div>
+
+  {!profile && posts.length === 0 ? (
+    <div class="empty-state">
+      <span class="empty-icon">◈</span>
+      <p>No Reddit data available.</p>
+    </div>
+  ) : (
+    <div class="reddit-wrap">
+
+      {profile && (
+        <div class="profile-card">
+          <div class="profile-left">
+            {profile.icon_img ? (
+              <img src={profile.icon_img} alt={profile.name} class="avatar" width="48" height="48" />
+            ) : (
+              <div class="avatar avatar-placeholder">u/</div>
+            )}
+            <div>
+              <div class="username">u/{profile.name}</div>
+              {profile.subreddit?.public_description && (
+                <div class="bio muted">{profile.subreddit.public_description}</div>
+              )}
+            </div>
+          </div>
+          <div class="karma-row">
+            <div class="stat-card">
+              <span class="stat-number">{totalKarma.toLocaleString()}</span>
+              <span class="stat-lbl">TOTAL KARMA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">{(profile.link_karma ?? 0).toLocaleString()}</span>
+              <span class="stat-lbl">POST KARMA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">{(profile.comment_karma ?? 0).toLocaleString()}</span>
+              <span class="stat-lbl">COMMENT KARMA</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {posts.length > 0 && (
+        <section class="posts-section">
+          <h2 class="section-heading">Recent Posts</h2>
+          <div class="posts-list">
+            {posts.map((post: any) => (
+              <div class="post-row">
+                <div class="post-meta-top">
+                  <span class="subreddit-badge">r/{post.subreddit}</span>
+                  <span class="post-time muted">{timeAgo(post.created_utc)}</span>
+                </div>
+                <a href={`https://reddit.com${post.permalink}`} target="_blank" rel="noopener" class="post-title">
+                  {post.title}
+                </a>
+                <div class="post-stats">
+                  <span class="post-stat">▲ {(post.score ?? 0).toLocaleString()}</span>
+                  <span class="post-stat">◌ {(post.num_comments ?? 0).toLocaleString()} comments</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+    </div>
+  )}
+</Layout>
+
+<style>
+  .reddit-wrap { display: flex; flex-direction: column; gap: 32px; }
+
+  /* Profile card */
+  .profile-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profile-left { display: flex; align-items: center; gap: 14px; }
+  .avatar {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid var(--border);
+  }
+  .avatar-placeholder {
+    display: flex; align-items: center; justify-content: center;
+    background: var(--overlay);
+    font-size: 14px;
+    color: var(--t-muted);
+    font-family: var(--font-mono);
+  }
+  .username { font-weight: 600; font-size: 15px; color: var(--t-primary); }
+  .bio { font-size: 13px; margin-top: 4px; max-width: 480px; }
+
+  .karma-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .stat-card {
+    background: var(--overlay);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex; flex-direction: column; gap: 2px;
+    min-width: 100px;
+  }
+  .stat-number { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--t-primary); }
+  .stat-lbl { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; color: var(--t-muted); }
+
+  /* Posts */
+  .section-heading { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: var(--t-muted); text-transform: uppercase; margin: 0 0 12px; }
+  .posts-list { display: flex; flex-direction: column; gap: 2px; }
+  .post-row {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex; flex-direction: column; gap: 6px;
+    transition: border-color 120ms;
+  }
+  .post-row:hover { border-color: var(--t-muted); }
+
+  .post-meta-top { display: flex; align-items: center; gap: 10px; }
+  .subreddit-badge {
+    font-size: 11px; font-weight: 600;
+    background: rgba(255, 69, 0, 0.1);
+    color: #ff6314;
+    border: 1px solid rgba(255, 69, 0, 0.2);
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-family: var(--font-mono);
+  }
+  .post-time { font-size: 11px; }
+
+  .post-title {
+    font-size: 14px; font-weight: 500;
+    color: var(--t-primary);
+    text-decoration: none;
+    line-height: 1.45;
+  }
+  .post-title:hover { color: #f59e0b; }
+
+  .post-stats { display: flex; gap: 14px; }
+  .post-stat { font-size: 12px; color: var(--t-muted); }
+
+  /* Empty state */
+  .empty-state {
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+    padding: 64px 24px;
+    color: var(--t-muted);
+    text-align: center;
+  }
+  .empty-icon { font-size: 32px; }
+</style>

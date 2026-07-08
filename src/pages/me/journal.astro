@@ -9,13 +9,25 @@ let stats: any = { total: 0, moods: {}, last_entry: '' }
 try { entries = JSON.parse(readFileSync(join(process.cwd(), 'public/data/notion-journal.json'), 'utf-8')) } catch {}
 try { stats   = JSON.parse(readFileSync(join(process.cwd(), 'public/data/notion-stats.json'), 'utf-8')) } catch {}
 
-const moodColors: Record<string, string> = {
-  Happy: '#22c55e', Good: '#86efac', Okay: '#fbbf24',
-  Meh: '#94a3b8', Bad: '#f87171', Awful: '#ef4444',
+// Emoji-keyed mood colors (MD3 token names)
+const moodMeta: Record<string, { color: string; bg: string; label: string }> = {
+  '😊': { color: '#059669', bg: '#d1fae5', label: 'Happy' },
+  '😐': { color: '#d97706', bg: '#fef3c7', label: 'Okay' },
+  '😞': { color: '#e11d48', bg: '#ffe4e6', label: 'Sad' },
+  '😤': { color: '#dc2626', bg: '#fee2e2', label: 'Frustrated' },
+  '😴': { color: '#64748b', bg: '#f1f5f9', label: 'Tired' },
+}
+
+function moodStyle(mood: string) {
+  const m = moodMeta[mood]
+  if (!m) return { color: '#6366f1', bg: '#eef2ff' }
+  return m
 }
 
 const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
   .sort((a, b) => (b[1] as number) - (a[1] as number)) as [string, number][]
+
+const hasData = entries.length > 0
 ---
 
 <Layout title="Journal" description="Daily logs via Notion — mood, energy, and notes.">
@@ -25,11 +37,18 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
     <h1>Journal</h1>
     <p class="subtitle">Daily logs via Notion.</p>
 
-    {entries.length === 0 ? (
-      <div class="empty-state">
-        <div class="empty-icon">◌</div>
-        <p class="empty-text">Share the Notion DB with the integration to see entries here.</p>
-        <p class="empty-hint">Open Notion page → <code>···</code> → Connections → add <strong>all</strong> integration.</p>
+    {!hasData ? (
+      <div class="setup-card">
+        <div class="setup-icon" aria-hidden="true">📓</div>
+        <h2 class="setup-title">Connect your Notion journal</h2>
+        <p class="setup-desc">No entries yet. Share your Notion database with the integration:</p>
+        <ol class="setup-steps">
+          <li>Open your Notion page → click <kbd>···</kbd> (top right) → <strong>Connections</strong> → add the <strong>all</strong> integration</li>
+          <li>Data appears here after the next daily refresh</li>
+        </ol>
+        <a class="setup-link" href="https://app.notion.com" target="_blank" rel="noopener">
+          Open app.notion.com →
+        </a>
       </div>
     ) : (
       <>
@@ -44,52 +63,51 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
               <div class="stat-label">LAST ENTRY</div>
             </div>
           )}
-          {Object.keys(stats.moods).length > 0 && (
+          {moodEntries.length > 0 && (
             <div class="stat-card mood-breakdown">
               <div class="stat-label">MOOD BREAKDOWN</div>
-              <div class="mood-chips">
-                {moodEntries.map(([mood, count]) => (
-                    <span
-                      class="mood-chip"
-                      style={`background:${moodColors[mood] ?? '#6366f1'}22;color:${moodColors[mood] ?? '#6366f1'}`}
-                    >
-                      {mood} <span class="mood-count">{count}</span>
+              <div class="chip-row">
+                {moodEntries.map(([mood, count]) => {
+                  const s = moodStyle(mood)
+                  return (
+                    <span class="chip" style={`background:${s.bg};color:${s.color}`}>
+                      {mood} <span class="chip-count">{count}</span>
                     </span>
-                  ))}
+                  )
+                })}
               </div>
             </div>
           )}
         </div>
 
         <div class="entries-list">
-          {entries.map((e: any) => (
-            <div class="entry-card">
-              <div class="entry-header">
-                <span class="entry-date mono">{e.date}</span>
-                {e.mood && (
-                  <span
-                    class="mood-badge"
-                    style={`background:${moodColors[e.mood] ?? '#6366f1'}22;color:${moodColors[e.mood] ?? '#6366f1'}`}
-                  >
-                    {e.mood}
-                  </span>
-                )}
-                {e.energy && <span class="energy-badge">{e.energy}</span>}
-              </div>
-              {e.title && <div class="entry-title">{e.title}</div>}
-              {e.tags?.length > 0 && (
-                <div class="tag-row">
-                  {e.tags.map((t: string) => <span class="tag">{t}</span>)}
+          {entries.map((e: any) => {
+            const ms = e.mood ? moodStyle(e.mood) : null
+            const preview = e.notes ? e.notes.slice(0, 120) + (e.notes.length > 120 ? '…' : '') : null
+            return (
+              <div class="entry-card">
+                <div class="entry-header">
+                  <span class="entry-date mono">{e.date}</span>
+                  {e.mood && ms && (
+                    <span class="mood-badge" style={`background:${ms.bg};color:${ms.color}`}>
+                      {e.mood}
+                    </span>
+                  )}
+                  {e.energy && <span class="energy-chip">{e.energy}</span>}
                 </div>
-              )}
-              {e.notes && (
-                <p class="entry-notes">{e.notes.slice(0, 240)}{e.notes.length > 240 ? '…' : ''}</p>
-              )}
-              {e.url && (
-                <a href={e.url} target="_blank" rel="noopener" class="entry-link">Open in Notion →</a>
-              )}
-            </div>
-          ))}
+                {e.title && <div class="entry-title">{e.title}</div>}
+                {e.tags?.length > 0 && (
+                  <div class="chip-row">
+                    {e.tags.map((t: string) => <span class="chip">{t}</span>)}
+                  </div>
+                )}
+                {preview && <p class="entry-notes">{preview}</p>}
+                {e.url && (
+                  <a href={e.url} target="_blank" rel="noopener" class="entry-link">Open in Notion →</a>
+                )}
+              </div>
+            )
+          })}
         </div>
       </>
     )}
@@ -129,41 +147,68 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
     margin: 0;
   }
 
-  /* Empty state */
-  .empty-state {
-    text-align: center;
-    padding: 3rem 1rem;
-    border: 1px dashed var(--border);
-    border-radius: 12px;
+  /* Setup card */
+  .setup-card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
   }
 
-  .empty-icon {
-    font-size: 2.5rem;
-    color: var(--t-3);
+  .setup-icon {
+    font-size: 2rem;
   }
 
-  .empty-text {
-    font-size: 15px;
+  .setup-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--t-1);
+    margin: 0;
+  }
+
+  .setup-desc {
+    font-size: 14px;
     color: var(--t-2);
     margin: 0;
   }
 
-  .empty-hint {
-    font-size: 13px;
-    color: var(--t-3);
+  .setup-steps {
+    font-size: 14px;
+    color: var(--t-2);
     margin: 0;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 
-  .empty-hint code {
-    background: var(--surface-2);
-    padding: 1px 5px;
-    border-radius: 4px;
-    font-size: 12px;
+  .setup-steps li {
+    line-height: 1.6;
   }
+
+  kbd {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 12px;
+    font-family: var(--font-mono, monospace);
+  }
+
+  .setup-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--indigo);
+    text-decoration: none;
+    margin-top: 4px;
+  }
+
+  .setup-link:hover { text-decoration: underline; }
 
   /* Stats row */
   .stats-row {
@@ -175,7 +220,7 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
   .stat-card {
     background: var(--surface-1);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 14px 18px;
     min-width: 120px;
   }
@@ -197,31 +242,32 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
     margin-top: 4px;
   }
 
-  .mood-breakdown {
-    flex: 1;
-  }
+  .mood-breakdown { flex: 1; }
 
-  .mood-chips {
+  /* Chips */
+  .chip-row {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-top: 6px;
   }
 
-  .mood-chip {
-    font-size: 12px;
+  .chip {
+    font-size: 11px;
     font-weight: 600;
-    padding: 3px 8px;
+    padding: 3px 9px;
     border-radius: 20px;
+    background: var(--surface-2);
+    color: var(--t-3);
   }
 
-  .mood-count {
-    opacity: 0.8;
+  .chip-count {
+    opacity: 0.75;
     font-weight: 400;
     margin-left: 2px;
   }
 
-  /* Entries */
+  /* Entry list */
   .entries-list {
     display: flex;
     flex-direction: column;
@@ -231,7 +277,7 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
   .entry-card {
     background: var(--surface-1);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 14px 16px;
     display: flex;
     flex-direction: column;
@@ -239,9 +285,7 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
     transition: border-color 0.2s;
   }
 
-  .entry-card:hover {
-    border-color: var(--indigo);
-  }
+  .entry-card:hover { border-color: var(--indigo); }
 
   .entry-header {
     display: flex;
@@ -255,18 +299,16 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
     color: var(--t-3);
   }
 
-  .mono {
-    font-family: var(--font-mono, monospace);
-  }
+  .mono { font-family: var(--font-mono, monospace); }
 
   .mood-badge {
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 13px;
     padding: 2px 8px;
     border-radius: 20px;
+    font-weight: 600;
   }
 
-  .energy-badge {
+  .energy-chip {
     font-size: 11px;
     font-weight: 600;
     padding: 2px 8px;
@@ -280,20 +322,6 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
     font-weight: 700;
     font-size: 1rem;
     color: var(--t-1);
-  }
-
-  .tag-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-
-  .tag {
-    font-size: 11px;
-    padding: 2px 8px;
-    background: var(--surface-2);
-    color: var(--t-3);
-    border-radius: 20px;
   }
 
   .entry-notes {
@@ -310,7 +338,5 @@ const moodEntries: [string, number][] = Object.entries(stats.moods ?? {})
     align-self: flex-start;
   }
 
-  .entry-link:hover {
-    text-decoration: underline;
-  }
+  .entry-link:hover { text-decoration: underline; }
 </style>

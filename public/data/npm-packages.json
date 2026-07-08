@@ -6,7 +6,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-08T05:16:10.852Z",
-    "searchScore": 38.995064,
+    "searchScore": 39.001255,
     "package": {
       "name": "@chirag127/astro-shell",
       "keywords": [
@@ -36,7 +36,7 @@
       }
     },
     "score": {
-      "final": 38.995064,
+      "final": 39.001255,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -54,7 +54,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T09:46:09.730Z",
-    "searchScore": 38.260876,
+    "searchScore": 38.263683,
     "package": {
       "name": "@chirag127/astro-chrome",
       "keywords": [
@@ -84,7 +84,7 @@
       }
     },
     "score": {
-      "final": 38.260876,
+      "final": 38.263683,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -102,7 +102,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T17:16:09.674Z",
-    "searchScore": 33.354362,
+    "searchScore": 33.355724,
     "package": {
       "name": "@chirag127/astro-data",
       "keywords": [
@@ -132,7 +132,7 @@
       }
     },
     "score": {
-      "final": 33.354362,
+      "final": 33.355724,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -150,7 +150,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T13:36:09.116Z",
-    "searchScore": 32.77514,
+    "searchScore": 32.782677,
     "package": {
       "name": "@chirag127/astro-test-utils",
       "keywords": [
@@ -184,7 +184,7 @@
       }
     },
     "score": {
-      "final": 32.77514,
+      "final": 32.782677,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -202,7 +202,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T04:56:09.440Z",
-    "searchScore": 32.461807,
+    "searchScore": 32.46313,
     "package": {
       "name": "@chirag127/omni-publish",
       "keywords": [
@@ -244,7 +244,7 @@
       }
     },
     "score": {
-      "final": 32.461807,
+      "final": 32.46313,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -262,7 +262,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-07T22:46:19.992Z",
-    "searchScore": 31.762276,
+    "searchScore": 31.76958,
     "package": {
       "name": "@chirag127/astro-billing",
       "keywords": [
@@ -295,7 +295,7 @@
       }
     },
     "score": {
-      "final": 31.762276,
+      "final": 31.76958,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -313,7 +313,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-03T10:51:09.563Z",
-    "searchScore": 29.970184,
+    "searchScore": 29.972383,
     "package": {
       "name": "envpact-cli",
       "keywords": [
@@ -351,7 +351,7 @@
       }
     },
     "score": {
-      "final": 29.970184,
+      "final": 29.972383,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -369,7 +369,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T13:11:07.114Z",
-    "searchScore": 29.370512,
+    "searchScore": 29.377346,
     "package": {
       "name": "@chirag127/astro-pwa",
       "keywords": [
@@ -399,7 +399,7 @@
       }
     },
     "score": {
-      "final": 29.370512,
+      "final": 29.377346,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -417,7 +417,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T13:11:06.911Z",
-    "searchScore": 29.05548,
+    "searchScore": 29.06029,
     "package": {
       "name": "@chirag127/astro-distribute",
       "keywords": [
@@ -447,7 +447,7 @@
       }
     },
     "score": {
-      "final": 29.05548,
+      "final": 29.06029,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -465,7 +465,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-04T08:31:08.499Z",
-    "searchScore": 27.329172,
+    "searchScore": 27.33553,
     "package": {
       "name": "secenv-mcp",
       "keywords": [
@@ -501,7 +501,7 @@
       }
     },
     "score": {
-      "final": 27.329172,
+      "final": 27.33553,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -519,7 +519,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-07T05:56:25.537Z",
-    "searchScore": 25.629486,
+    "searchScore": 25.633556,
     "package": {
       "name": "envpact-mcp",
       "keywords": [
@@ -558,7 +558,7 @@
       }
     },
     "score": {
-      "final": 25.629486,
+      "final": 25.633556,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -576,7 +576,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T05:56:09.141Z",
-    "searchScore": 24.488707,
+    "searchScore": 24.49364,
     "package": {
       "name": "@chirag127/oriz-ai-providers",
       "keywords": [
@@ -618,7 +618,7 @@
       }
     },
     "score": {
-      "final": 24.488707,
+      "final": 24.49364,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -636,7 +636,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T10:36:10.807Z",
-    "searchScore": 24.247496,
+    "searchScore": 24.248486,
     "package": {
       "name": "@chirag127/astro-forms",
       "keywords": [
@@ -672,7 +672,7 @@
       }
     },
     "score": {
-      "final": 24.247496,
+      "final": 24.248486,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -690,7 +690,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T10:36:09.030Z",
-    "searchScore": 23.775393,
+    "searchScore": 23.78086,
     "package": {
       "name": "@chirag127/astro-tools",
       "keywords": [
@@ -726,7 +726,7 @@
       }
     },
     "score": {
-      "final": 23.775393,
+      "final": 23.78086,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -744,7 +744,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T12:41:08.163Z",
-    "searchScore": 23.711882,
+    "searchScore": 23.722778,
     "package": {
       "name": "@chirag127/auth-cli",
       "keywords": [
@@ -774,7 +774,7 @@
       }
     },
     "score": {
-      "final": 23.711882,
+      "final": 23.722778,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -792,7 +792,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T10:36:10.549Z",
-    "searchScore": 23.5217,
+    "searchScore": 23.523426,
     "package": {
       "name": "@chirag127/astro-content",
       "keywords": [
@@ -823,7 +823,7 @@
       }
     },
     "score": {
-      "final": 23.5217,
+      "final": 23.523426,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -841,7 +841,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T12:41:08.446Z",
-    "searchScore": 23.497665,
+    "searchScore": 23.508463,
     "package": {
       "name": "@chirag127/auth-vsc",
       "keywords": [
@@ -871,7 +871,7 @@
       }
     },
     "score": {
-      "final": 23.497665,
+      "final": 23.508463,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -889,7 +889,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T12:41:09.091Z",
-    "searchScore": 23.469095,
+    "searchScore": 23.473824,
     "package": {
       "name": "@chirag127/auth-core",
       "keywords": [
@@ -919,7 +919,7 @@
       }
     },
     "score": {
-      "final": 23.469095,
+      "final": 23.473824,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -937,7 +937,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T07:06:06.774Z",
-    "searchScore": 23.410286,
+    "searchScore": 23.415003,
     "package": {
       "name": "@chirag127/oriz-ui",
       "keywords": [
@@ -971,7 +971,7 @@
       }
     },
     "score": {
-      "final": 23.410286,
+      "final": 23.415003,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -989,7 +989,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T17:06:09.125Z",
-    "searchScore": 23.280613,
+    "searchScore": 23.285969,
     "package": {
       "name": "@chirag127/oriz-book-build",
       "keywords": [
@@ -1027,7 +1027,7 @@
       }
     },
     "score": {
-      "final": 23.280613,
+      "final": 23.285969,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -1045,7 +1045,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T06:46:09.001Z",
-    "searchScore": 22.975693,
+    "searchScore": 22.979496,
     "package": {
       "name": "@chirag127/oriz-rate-limit",
       "keywords": [
@@ -1080,7 +1080,7 @@
       }
     },
     "score": {
-      "final": 22.975693,
+      "final": 22.979496,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -1098,7 +1098,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T13:06:09.508Z",
-    "searchScore": 22.45315,
+    "searchScore": 22.456717,
     "package": {
       "name": "@chirag127/astro-widgets",
       "keywords": [
@@ -1128,7 +1128,7 @@
       }
     },
     "score": {
-      "final": 22.45315,
+      "final": 22.456717,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -1146,7 +1146,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-05T12:41:08.686Z",
-    "searchScore": 21.868568,
+    "searchScore": 21.870174,
     "package": {
       "name": "@chirag127/auth-wxt",
       "keywords": [
@@ -1176,7 +1176,7 @@
       }
     },
     "score": {
-      "final": 21.868568,
+      "final": 21.870174,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -1194,7 +1194,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T06:46:07.226Z",
-    "searchScore": 21.6092,
+    "searchScore": 21.61263,
     "package": {
       "name": "@chirag127/oriz-seo",
       "keywords": [
@@ -1230,7 +1230,7 @@
       }
     },
     "score": {
-      "final": 21.6092,
+      "final": 21.61263,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -1248,7 +1248,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T06:46:08.657Z",
-    "searchScore": 21.57865,
+    "searchScore": 21.580233,
     "package": {
       "name": "@chirag127/oriz-consent",
       "keywords": [
@@ -1284,7 +1284,7 @@
       }
     },
     "score": {
-      "final": 21.57865,
+      "final": 21.580233,
       "detail": {
         "popularity": 1,
         "quality": 1,
@@ -1302,7 +1302,7 @@
     },
     "dependents": 0,
     "updated": "2026-07-06T06:46:07.035Z",
-    "searchScore": 21.538895,
+    "searchScore": 21.542316,
     "package": {
       "name": "@chirag127/oriz-analytics",
       "keywords": [
@@ -1337,7 +1337,7 @@
       }
     },
     "score": {
-      "final": 21.538895,
+      "final": 21.542316,
       "detail": {
         "popularity": 1,
         "quality": 1,
