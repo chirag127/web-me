@@ -1,0 +1,69 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import TwinChat from '~/components/TwinChat'
+---
+
+<Layout title="Digital Twin" description="Chat with Chirag Singhal's AI digital twin — ask about his work, projects, and background.">
+  <div class="twin-root">
+
+    <div class="twin-header">
+      <p class="kicker">ME · DIGITAL TWIN</p>
+      <h1 class="twin-title">Chat with Chirag</h1>
+      <p class="twin-sub">AI-powered. Ask me anything about my work, projects, or background.</p>
+    </div>
+
+    <div class="twin-chat-wrap">
+      <TwinChat client:only="react" />
+    </div>
+
+  </div>
+</Layout>
+
+<style>
+  .twin-root {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: calc(100vh - 72px);
+    max-height: 900px;
+  }
+
+  .twin-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .twin-title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--t-1);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .twin-sub {
+    font-size: 14px;
+    color: var(--t-2);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .twin-chat-wrap {
+    flex: 1;
+    min-height: 0;
+  }
+
+  @media (max-width: 600px) {
+    .twin-root {
+      padding-top: 1rem;
+      gap: 1rem;
+    }
+    .twin-title {
+      font-size: 1.4rem;
+    }
+  }
+</style>
