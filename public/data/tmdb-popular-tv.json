@@ -7,8 +7,8 @@
     "overview": "The dynamic between the two contrasting personalities, a seasoned cop who prefers old-school methods and a tech-savvy cop who relies on modern technology for investigations, as they navigate their partnership in solving crimes.",
     "poster": "https://image.tmdb.org/t/p/w342/ajkBXNt5tcNsc0cVpTSZW24oyUg.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/eAXSlqAJwpdsZ59G10lao9OJ4SG.jpg",
-    "rating": 9,
-    "votes": 3,
+    "rating": 9.2,
+    "votes": 4,
     "release": "2026-07-03",
     "genres": [
       80,
@@ -26,8 +26,8 @@
     "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.505,
-    "votes": 3940,
+    "rating": 8.5,
+    "votes": 3941,
     "release": "2022-02-20",
     "genres": [
       9648,
@@ -45,7 +45,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.366,
-    "votes": 6502,
+    "votes": 6504,
     "release": "2022-08-21",
     "genres": [
       10765,
@@ -67,38 +67,6 @@
     "release": "2003-04-28",
     "genres": [],
     "popularity": 372.7057
-  },
-  {
-    "id": 17892,
-    "tmdb_id": 17892,
-    "type": "tv",
-    "title": "Unter uns",
-    "overview": "Unter uns is a German television soap opera, first broadcast on RTL on 28 November 1994. Centered around the lives of the people in a residential house, which is set in the fictional Schillerallee in Cologne. Since the show debuted the baker's family Weigel is the series core family. Unter uns isn't based on a foreign soap opera like Verbotene Liebe or Gute Zeiten, schlechte Zeiten. After Gute Zeiten, schlechte Zeiten, the show was the second daily soap for RTL, followed years later in 2006 by Alles was zählt. The show aired its 3,500th episode on 30 December 2008.",
-    "poster": "https://image.tmdb.org/t/p/w342/aD1QIba9mohAsdPHCjpWtrlumyp.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4Kw16UfxZ4jTOmlXIBMOtgVpAM2.jpg",
-    "rating": 7.8,
-    "votes": 5,
-    "release": "1994-11-28",
-    "genres": [
-      10766
-    ],
-    "popularity": 249.1763
-  },
-  {
-    "id": 241002,
-    "tmdb_id": 241002,
-    "type": "tv",
-    "title": "Adam's Sweet Agony",
-    "overview": "This is the story of a boy, who became the lone Adam among four billion Eves. In a world where a pandemic has rendered all men impotent, high school student Itsuki is the exception who escaped it. In order to protect this secret, he transfers to a very special high school, which turns out to be composed of 90% girls! There, he encounters an upbeat and friendly senior, a sexually frustrated female teacher, a tomboyish school 'prince,' and an heiress from a wealthy family. For Itsuki, who has his pick of any woman in the world, the question remains: which one will he choose?",
-    "poster": "https://image.tmdb.org/t/p/w342/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/bM4nCynOSA5oCNqLsqb1Fo56sZQ.jpg",
-    "rating": 6.875,
-    "votes": 36,
-    "release": "2024-01-08",
-    "genres": [
-      16
-    ],
-    "popularity": 275.4365
   },
   {
     "id": 94664,
@@ -126,8 +94,8 @@
     "overview": "In the criminal justice system, sexually-based offenses are considered especially heinous. In New York City, the dedicated detectives who investigate these vicious felonies are members of an elite squad known as the Special Victims Unit. These are their stories.",
     "poster": "https://image.tmdb.org/t/p/w342/iofokHZoUB4Qhik4PflvJl8TT6a.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
-    "rating": 7.952,
-    "votes": 4275,
+    "rating": 7.953,
+    "votes": 4277,
     "release": "1999-09-20",
     "genres": [
       80,
@@ -137,21 +105,54 @@
     "popularity": 279.2415
   },
   {
-    "id": 299167,
-    "tmdb_id": 299167,
+    "id": 241002,
+    "tmdb_id": 241002,
     "type": "tv",
-    "title": "Dutton Ranch",
-    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.263,
-    "votes": 380,
-    "release": "2026-05-15",
+    "title": "Adam's Sweet Agony",
+    "overview": "This is the story of a boy, who became the lone Adam among four billion Eves. In a world where a pandemic has rendered all men impotent, high school student Itsuki is the exception who escaped it. In order to protect this secret, he transfers to a very special high school, which turns out to be composed of 90% girls! There, he encounters an upbeat and friendly senior, a sexually frustrated female teacher, a tomboyish school 'prince,' and an heiress from a wealthy family. For Itsuki, who has his pick of any woman in the world, the question remains: which one will he choose?",
+    "poster": "https://image.tmdb.org/t/p/w342/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/bM4nCynOSA5oCNqLsqb1Fo56sZQ.jpg",
+    "rating": 6.875,
+    "votes": 36,
+    "release": "2024-01-08",
     "genres": [
-      37,
-      18
+      16
     ],
-    "popularity": 216.2204
+    "popularity": 275.4365
+  },
+  {
+    "id": 17892,
+    "tmdb_id": 17892,
+    "type": "tv",
+    "title": "Unter uns",
+    "overview": "Unter uns is a German television soap opera, first broadcast on RTL on 28 November 1994. Centered around the lives of the people in a residential house, which is set in the fictional Schillerallee in Cologne. Since the show debuted the baker's family Weigel is the series core family. Unter uns isn't based on a foreign soap opera like Verbotene Liebe or Gute Zeiten, schlechte Zeiten. After Gute Zeiten, schlechte Zeiten, the show was the second daily soap for RTL, followed years later in 2006 by Alles was zählt. The show aired its 3,500th episode on 30 December 2008.",
+    "poster": "https://image.tmdb.org/t/p/w342/aD1QIba9mohAsdPHCjpWtrlumyp.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4Kw16UfxZ4jTOmlXIBMOtgVpAM2.jpg",
+    "rating": 7.8,
+    "votes": 5,
+    "release": "1994-11-28",
+    "genres": [
+      10766
+    ],
+    "popularity": 249.1763
+  },
+  {
+    "id": 312949,
+    "tmdb_id": 312949,
+    "type": "tv",
+    "title": "Chainsmoker Cat",
+    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+    "rating": 8.444,
+    "votes": 9,
+    "release": "2026-07-03",
+    "genres": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 247.7006
   },
   {
     "id": 79744,
@@ -161,8 +162,8 @@
     "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
     "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
-    "rating": 8.55,
-    "votes": 3359,
+    "rating": 8.6,
+    "votes": 3360,
     "release": "2018-10-16",
     "genres": [
       80,
@@ -179,8 +180,8 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.166,
-    "votes": 2182,
+    "rating": 8.2,
+    "votes": 2185,
     "release": "2023-05-04",
     "genres": [
       10765,
@@ -189,23 +190,38 @@
     "popularity": 220.5324
   },
   {
-    "id": 82452,
-    "tmdb_id": 82452,
+    "id": 299167,
+    "tmdb_id": 299167,
     "type": "tv",
-    "title": "Avatar: The Last Airbender",
-    "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
-    "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-    "rating": 7.801,
-    "votes": 1222,
-    "release": "2024-02-22",
+    "title": "Dutton Ranch",
+    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+    "rating": 9.251,
+    "votes": 382,
+    "release": "2026-05-15",
     "genres": [
-      10759,
-      10765,
-      18,
-      10751
+      37,
+      18
     ],
-    "popularity": 196.0005
+    "popularity": 216.2204
+  },
+  {
+    "id": 549,
+    "tmdb_id": 549,
+    "type": "tv",
+    "title": "Law & Order",
+    "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
+    "poster": "https://image.tmdb.org/t/p/w342/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+    "rating": 7.289,
+    "votes": 695,
+    "release": "1990-09-13",
+    "genres": [
+      80,
+      18
+    ],
+    "popularity": 214.3846
   },
   {
     "id": 1434,
@@ -215,8 +231,8 @@
     "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
     "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
-    "rating": 7.4,
-    "votes": 4999,
+    "rating": 7.405,
+    "votes": 5000,
     "release": "1999-01-31",
     "genres": [
       16,
@@ -232,8 +248,8 @@
     "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
     "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
-    "rating": 8.31,
-    "votes": 8515,
+    "rating": 8.311,
+    "votes": 8514,
     "release": "2005-09-13",
     "genres": [
       18,
@@ -241,22 +257,6 @@
       10765
     ],
     "popularity": 208.0347
-  },
-  {
-    "id": 1416,
-    "tmdb_id": 1416,
-    "type": "tv",
-    "title": "Grey's Anatomy",
-    "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
-    "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
-    "rating": 8.2,
-    "votes": 10956,
-    "release": "2005-03-27",
-    "genres": [
-      18
-    ],
-    "popularity": 203.5622
   },
   {
     "id": 5920,
@@ -277,39 +277,55 @@
     "popularity": 206.1662
   },
   {
-    "id": 312949,
-    "tmdb_id": 312949,
+    "id": 1416,
+    "tmdb_id": 1416,
     "type": "tv",
-    "title": "Chainsmoker Cat",
-    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 7.667,
-    "votes": 6,
-    "release": "2026-07-03",
+    "title": "Grey's Anatomy",
+    "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
+    "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+    "rating": 8.2,
+    "votes": 10956,
+    "release": "2005-03-27",
     "genres": [
-      16,
-      35,
-      10765
-    ],
-    "popularity": 247.7006
-  },
-  {
-    "id": 549,
-    "tmdb_id": 549,
-    "type": "tv",
-    "title": "Law & Order",
-    "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
-    "poster": "https://image.tmdb.org/t/p/w342/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
-    "rating": 7.289,
-    "votes": 695,
-    "release": "1990-09-13",
-    "genres": [
-      80,
       18
     ],
-    "popularity": 214.3846
+    "popularity": 203.5622
+  },
+  {
+    "id": 95897,
+    "tmdb_id": 95897,
+    "type": "tv",
+    "title": "Overflow",
+    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
+    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
+    "rating": 7.33,
+    "votes": 88,
+    "release": "2020-01-06",
+    "genres": [
+      16
+    ],
+    "popularity": 196.9415
+  },
+  {
+    "id": 82452,
+    "tmdb_id": 82452,
+    "type": "tv",
+    "title": "Avatar: The Last Airbender",
+    "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
+    "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
+    "rating": 7.797,
+    "votes": 1224,
+    "release": "2024-02-22",
+    "genres": [
+      10759,
+      10765,
+      18,
+      10751
+    ],
+    "popularity": 196.0005
   },
   {
     "id": 4614,
@@ -328,22 +344,5 @@
       10759
     ],
     "popularity": 194.393
-  },
-  {
-    "id": 317270,
-    "tmdb_id": 317270,
-    "type": "tv",
-    "title": "Minnale",
-    "overview": "",
-    "poster": "https://image.tmdb.org/t/p/w342/wACr0ARXdPXZeakkw2ecg4PrDId.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/CrH69HLWkrQM7leATarmoSydIN.jpg",
-    "rating": 0,
-    "votes": 0,
-    "release": "2018-08-06",
-    "genres": [
-      18,
-      10766
-    ],
-    "popularity": 174.0508
   }
 ]

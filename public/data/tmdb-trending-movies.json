@@ -7,8 +7,8 @@
     "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
     "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-    "rating": 8.3,
-    "votes": 2313,
+    "rating": 8.26,
+    "votes": 2317,
     "release": "2026-05-13",
     "genres": [
       27,
@@ -22,9 +22,9 @@
     "type": "movie",
     "title": "The Furious",
     "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
-    "poster": "https://image.tmdb.org/t/p/w342/lwmXob14Bslv1YcVT1VYt3zBfs9.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tN0iXjm7qbHnGG4WGrNOGqmTMDt.jpg",
-    "rating": 7.702,
+    "rating": 7.7,
     "votes": 94,
     "release": "2026-06-10",
     "genres": [
@@ -33,24 +33,6 @@
       53
     ],
     "popularity": 210.6776
-  },
-  {
-    "id": 1202033,
-    "tmdb_id": 1202033,
-    "type": "movie",
-    "title": "Enola Holmes 3",
-    "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
-    "poster": "https://image.tmdb.org/t/p/w342/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
-    "rating": 6.971,
-    "votes": 279,
-    "release": "2026-06-30",
-    "genres": [
-      12,
-      80,
-      9648
-    ],
-    "popularity": 180.8214
   },
   {
     "id": 1108427,
@@ -70,6 +52,24 @@
       12
     ],
     "popularity": 73.7014
+  },
+  {
+    "id": 1202033,
+    "tmdb_id": 1202033,
+    "type": "movie",
+    "title": "Enola Holmes 3",
+    "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
+    "poster": "https://image.tmdb.org/t/p/w342/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
+    "rating": 7,
+    "votes": 280,
+    "release": "2026-06-30",
+    "genres": [
+      12,
+      80,
+      9648
+    ],
+    "popularity": 180.8214
   },
   {
     "id": 1368314,
@@ -96,8 +96,8 @@
     "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
     "poster": "https://image.tmdb.org/t/p/w342/wLvUuBF2Yj0JmMGLUdRRVu7LvNB.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
-    "rating": 7.4,
-    "votes": 523,
+    "rating": 7.394,
+    "votes": 524,
     "release": "2026-06-17",
     "genres": [
       16,
@@ -106,6 +106,42 @@
       12
     ],
     "popularity": 632.7407
+  },
+  {
+    "id": 1368337,
+    "tmdb_id": 1368337,
+    "type": "movie",
+    "title": "The Odyssey",
+    "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+    "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-07-15",
+    "genres": [
+      12,
+      28,
+      14
+    ],
+    "popularity": 93.8248
+  },
+  {
+    "id": 1081003,
+    "tmdb_id": 1081003,
+    "type": "movie",
+    "title": "Supergirl",
+    "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+    "poster": "https://image.tmdb.org/t/p/w342/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
+    "rating": 6.2,
+    "votes": 399,
+    "release": "2026-06-24",
+    "genres": [
+      28,
+      12,
+      878
+    ],
+    "popularity": 109.8346
   },
   {
     "id": 1315772,
@@ -128,40 +164,21 @@
     "popularity": 185.401
   },
   {
-    "id": 1081003,
-    "tmdb_id": 1081003,
+    "id": 1212763,
+    "tmdb_id": 1212763,
     "type": "movie",
-    "title": "Supergirl",
-    "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-    "poster": "https://image.tmdb.org/t/p/w342/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
-    "rating": 6.2,
-    "votes": 399,
-    "release": "2026-06-24",
+    "title": "Evil Dead Burn",
+    "overview": "After the loss of her husband, a woman seeks solace with her in-laws. As one by one they transform into deadites, she comes to discover that the vows she took in life - survive even in death.",
+    "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+    "rating": 7.786,
+    "votes": 7,
+    "release": "2026-07-07",
     "genres": [
-      28,
-      12,
-      878
+      27,
+      53
     ],
-    "popularity": 109.8346
-  },
-  {
-    "id": 1368337,
-    "tmdb_id": 1368337,
-    "type": "movie",
-    "title": "The Odyssey",
-    "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-    "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
-    "rating": 0,
-    "votes": 0,
-    "release": "2026-07-15",
-    "genres": [
-      12,
-      28,
-      14
-    ],
-    "popularity": 93.8248
+    "popularity": 44.0353
   },
   {
     "id": 1083381,
@@ -171,7 +188,7 @@
     "overview": "A strange doorway appears in the basement of a furniture showroom.",
     "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-    "rating": 6.837,
+    "rating": 6.8,
     "votes": 934,
     "release": "2026-05-27",
     "genres": [
@@ -189,31 +206,14 @@
     "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
     "poster": "https://image.tmdb.org/t/p/w342/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-    "rating": 6.995,
-    "votes": 1300,
+    "rating": 6.997,
+    "votes": 1301,
     "release": "2026-04-29",
     "genres": [
       35,
       18
     ],
     "popularity": 359.2358
-  },
-  {
-    "id": 1212763,
-    "tmdb_id": 1212763,
-    "type": "movie",
-    "title": "Evil Dead Burn",
-    "overview": "After the loss of her husband, a woman seeks solace with her in-laws. As one by one they transform into deadites, she comes to discover that the vows she took in life - survive even in death.",
-    "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
-    "rating": 7.8,
-    "votes": 6,
-    "release": "2026-07-07",
-    "genres": [
-      27,
-      53
-    ],
-    "popularity": 44.0353
   },
   {
     "id": 969681,
@@ -242,13 +242,30 @@
     "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
     "rating": 8.676,
-    "votes": 5798,
+    "votes": 5799,
     "release": "2026-03-15",
     "genres": [
       878,
       12
     ],
     "popularity": 162.3307
+  },
+  {
+    "id": 1710008,
+    "tmdb_id": 1710008,
+    "type": "movie",
+    "title": "Nothing to Lose",
+    "overview": "She gave everything to become a mother, so when her young son falls ill, Jada will stop at  nothing to find a donor and save him — no matter the cost.",
+    "poster": "https://image.tmdb.org/t/p/w342/3SKN8QZptMm8KfCCQtEmyh1Zkgz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4aItlv6M7Lag8ZcCHEZmVRquO1R.jpg",
+    "rating": 5,
+    "votes": 1,
+    "release": "2026-07-08",
+    "genres": [
+      18,
+      28
+    ],
+    "popularity": 1.498
   },
   {
     "id": 936075,
@@ -293,7 +310,7 @@
     "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
     "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
-    "rating": 6.613,
+    "rating": 6.6,
     "votes": 203,
     "release": "2026-06-19",
     "genres": [
@@ -302,6 +319,23 @@
       80
     ],
     "popularity": 252.345
+  },
+  {
+    "id": 950028,
+    "tmdb_id": 950028,
+    "type": "movie",
+    "title": "The Invite",
+    "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+    "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
+    "rating": 7.917,
+    "votes": 18,
+    "release": "2026-06-25",
+    "genres": [
+      18,
+      35
+    ],
+    "popularity": 21.6215
   },
   {
     "id": 1705729,
@@ -318,39 +352,5 @@
       28
     ],
     "popularity": 27.4954
-  },
-  {
-    "id": 1273221,
-    "tmdb_id": 1273221,
-    "type": "movie",
-    "title": "Scary Movie",
-    "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-    "poster": "https://image.tmdb.org/t/p/w342/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-    "rating": 5.4,
-    "votes": 422,
-    "release": "2026-06-03",
-    "genres": [
-      35,
-      27
-    ],
-    "popularity": 470.8216
-  },
-  {
-    "id": 950028,
-    "tmdb_id": 950028,
-    "type": "movie",
-    "title": "The Invite",
-    "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-    "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
-    "rating": 7.9,
-    "votes": 17,
-    "release": "2026-06-25",
-    "genres": [
-      18,
-      35
-    ],
-    "popularity": 21.6215
   }
 ]

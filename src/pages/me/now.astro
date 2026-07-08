@@ -1,0 +1,394 @@
+---
+import Layout from '~/layouts/Layout.astro'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+function loadJson(file: string, fallback: any = null) {
+  try { return JSON.parse(readFileSync(join(process.cwd(), 'public/data', file), 'utf-8')) }
+  catch { return fallback }
+}
+
+const lbNow        = loadJson('lb-playing-now.json')       // null or object
+const lbRecent     = loadJson('lb-recent.json', [])        // array
+const waka         = loadJson('wakatime-stats-7d.json', {})
+const habitica     = loadJson('habitica-user.json', {})
+const traktStats   = loadJson('trakt-stats.json', {})
+const traktMovies  = loadJson('trakt-movies.json', [])
+const aniWatching  = loadJson('anilist-anime-watching.json', [])
+const aniStats     = loadJson('anilist-stats.json', {})
+const fit          = loadJson('fit-daily.json', {})
+const toggl        = loadJson('toggl-recent.json', [])
+const hardcover    = loadJson('hardcover-reading.json', [])
+
+// --- Music ---
+const playingNow = lbNow && typeof lbNow === 'object' && lbNow.track_metadata
+  ? lbNow : null
+const lastTrack = !playingNow && lbRecent.length > 0
+  ? lbRecent[0] : null
+const musicTrack = playingNow
+  ? playingNow.track_metadata
+  : (lastTrack ? lastTrack.track_metadata : null)
+const isLive = !!playingNow
+
+// --- WakaTime ---
+const wakaHours    = waka.human_readable || '—'
+const topLang      = waka.languages?.[0]?.name || '—'
+const topProject   = waka.projects?.[0]?.name || '—'
+const topLangPct   = waka.languages?.[0]?.percent?.toFixed(0) || '0'
+const topProjHours = waka.projects?.[0]?.text || '—'
+
+// --- Habitica ---
+const hLevel  = habitica?.stats?.lvl ?? 1
+const hClass  = habitica?.stats?.class || 'warrior'
+const hHp     = habitica?.stats?.hp ?? 0
+const hMaxHp  = habitica?.stats?.maxHealth ?? 50
+const hStreak = habitica?.achievements?.streak ?? 0
+
+// --- Trakt ---
+const lastMovie   = traktMovies[0]?.movie || null
+const moviesTotal = traktStats?.movies?.watched ?? 0
+const epTotal     = traktStats?.episodes?.watched ?? 0
+
+// --- Anime ---
+const watchingNow  = aniWatching[0] || null
+const animeTotal   = aniStats?.statistics?.anime?.count ?? 0
+const animeMinutes = aniStats?.statistics?.anime?.minutesWatched ?? 0
+const animeHours   = Math.round(animeMinutes / 60)
+
+// --- Fitness ---
+const last7Days   = fit.last_7_days || []
+const todayFit    = last7Days[last7Days.length - 1] || null
+const todaySteps  = todayFit?.steps ?? 0
+const todayDist   = todayFit ? (todayFit.distance_m / 1000).toFixed(1) : '0'
+const avgSteps    = fit.avg_steps_last_30d ?? 0
+
+// --- Toggl ---
+const togglToday = Array.isArray(toggl) ? toggl : []
+const togglTotalSecs = togglToday.reduce((sum: number, e: any) => {
+  const dur = typeof e.duration === 'number' ? e.duration : 0
+  return sum + (dur > 0 ? dur : 0)
+}, 0)
+const togglHours = Math.floor(togglTotalSecs / 3600)
+const togglMins  = Math.floor((togglTotalSecs % 3600) / 60)
+const togglProjects = [...new Set(togglToday.map((e: any) => e.project_name || e.project).filter(Boolean))].slice(0, 3)
+
+// --- Books ---
+const currentBook = Array.isArray(hardcover) ? hardcover[0] : null
+
+// --- Date ---
+const now = new Date()
+const updatedDate = now.toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })
+---
+
+<Layout title="Now" description="What Chirag is up to right now — live data snapshot.">
+
+  <h1 class="page-title" style="margin-bottom:4px;">Now</h1>
+  <p class="page-subtitle" style="margin-bottom:32px;">What I'm up to — updated daily.</p>
+
+  <div class="now-grid">
+
+    <!-- Currently: Music -->
+    <section class="now-section">
+      <div class="section-label">Currently listening</div>
+      {musicTrack ? (
+        <div class="card now-card now-music">
+          <div class="music-icon">{isLive ? '♫' : '♪'}</div>
+          <div class="music-info">
+            <div class="music-track">{musicTrack.track_name}</div>
+            <div class="music-artist">{musicTrack.artist_name}</div>
+            {musicTrack.release_name && (
+              <div class="music-album">{musicTrack.release_name}</div>
+            )}
+          </div>
+          {isLive && <span class="live-badge">LIVE</span>}
+        </div>
+      ) : (
+        <div class="card now-card now-empty">
+          <span class="empty-icon">♪</span>
+          <span>No scrobble data yet today.</span>
+        </div>
+      )}
+    </section>
+
+    <!-- This week: Coding -->
+    <section class="now-section">
+      <div class="section-label">This week — coding</div>
+      <div class="card now-card now-coding">
+        <div class="coding-grid">
+          <div class="coding-stat">
+            <div class="coding-value">{wakaHours}</div>
+            <div class="coding-key">TOTAL</div>
+          </div>
+          <div class="coding-stat">
+            <div class="coding-value">{topLang}</div>
+            <div class="coding-key">TOP LANGUAGE · {topLangPct}%</div>
+          </div>
+          <div class="coding-stat">
+            <div class="coding-value">{topProject}</div>
+            <div class="coding-key">TOP PROJECT · {topProjHours}</div>
+          </div>
+        </div>
+        <a href="/me/wakatime" class="now-link">→ full coding activity</a>
+      </div>
+    </section>
+
+    <!-- Time tracked today -->
+    {togglToday.length > 0 && (
+      <section class="now-section">
+        <div class="section-label">Time tracked today</div>
+        <div class="card now-card now-toggl">
+          <div class="toggl-total">
+            {togglHours > 0 ? `${togglHours}h ${togglMins}m` : `${togglMins}m`}
+            <span class="toggl-sub">tracked</span>
+          </div>
+          {togglProjects.length > 0 && (
+            <div class="toggl-projects">
+              {togglProjects.map((p: string) => (
+                <span class="tag">{p}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    )}
+
+    <!-- Lately: Movies -->
+    <section class="now-section">
+      <div class="section-label">Lately — movies & TV</div>
+      <div class="card now-card now-media">
+        {lastMovie && (
+          <div class="media-item">
+            <span class="media-icon">▶</span>
+            <div>
+              <div class="media-title">{lastMovie.title} <span class="media-year">({lastMovie.year})</span></div>
+              <div class="media-meta">last watched</div>
+            </div>
+          </div>
+        )}
+        <div class="media-stats">
+          <span class="media-chip">{moviesTotal} movies</span>
+          <span class="media-chip">{epTotal.toLocaleString()} episodes</span>
+        </div>
+        <a href="/library/movies/" class="now-link">→ full watch history</a>
+      </div>
+    </section>
+
+    <!-- Lately: Anime -->
+    <section class="now-section">
+      <div class="section-label">Lately — anime</div>
+      <div class="card now-card now-anime">
+        {watchingNow ? (
+          <div class="media-item">
+            <img
+              src={watchingNow.media?.coverImage?.medium}
+              alt={watchingNow.media?.title?.english || watchingNow.media?.title?.romaji}
+              class="anime-thumb"
+              loading="lazy"
+            />
+            <div>
+              <div class="media-title">{watchingNow.media?.title?.english || watchingNow.media?.title?.romaji}</div>
+              <div class="media-meta">currently watching · ep {watchingNow.progress}/{watchingNow.media?.episodes || '?'}</div>
+            </div>
+          </div>
+        ) : (
+          <div class="media-item">
+            <span class="media-icon">◉</span>
+            <div class="media-title">{aniStats?.favourites?.anime?.nodes?.[0]?.title?.romaji || 'Kimi no Na wa.'}</div>
+            <div class="media-meta">all-time fav</div>
+          </div>
+        )}
+        <div class="media-stats">
+          <span class="media-chip">{animeTotal} titles</span>
+          <span class="media-chip">{animeHours}h watched</span>
+        </div>
+        <a href="/library/anime/" class="now-link">→ anime list</a>
+      </div>
+    </section>
+
+    <!-- Life: Steps -->
+    <section class="now-section">
+      <div class="section-label">Life — fitness</div>
+      <div class="card now-card now-fit">
+        <div class="fit-today">
+          <span class="fit-steps">{todaySteps.toLocaleString()}</span>
+          <span class="fit-unit">steps today · {todayDist} km</span>
+        </div>
+        <div class="fit-avg">avg {avgSteps.toLocaleString()} steps/day (30d)</div>
+        <a href="/me/health" class="now-link">→ fitness data</a>
+      </div>
+    </section>
+
+    <!-- Life: Habitica -->
+    <section class="now-section">
+      <div class="section-label">Life — habits (Habitica)</div>
+      <div class="card now-card now-habitica">
+        <div class="hab-level">
+          <span class="hab-lv">Lv {hLevel}</span>
+          <span class="hab-class">{hClass.charAt(0).toUpperCase() + hClass.slice(1)}</span>
+        </div>
+        <div class="hab-hp-bar">
+          <div class="hab-hp-fill" style={`width:${Math.round((hHp / hMaxHp) * 100)}%`}></div>
+        </div>
+        <div class="hab-meta">
+          {hHp.toFixed(0)}/{hMaxHp} HP
+          {hStreak > 0 && <span class="hab-streak">· {hStreak} day streak</span>}
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading -->
+    {currentBook ? (
+      <section class="now-section">
+        <div class="section-label">Reading</div>
+        <div class="card now-card now-book">
+          <span class="book-icon">▣</span>
+          <div class="book-info">
+            <div class="book-title">{currentBook.title || currentBook.book?.title || 'Current read'}</div>
+            <div class="book-author">{currentBook.author || currentBook.book?.author || ''}</div>
+          </div>
+        </div>
+      </section>
+    ) : (
+      <section class="now-section">
+        <div class="section-label">Reading</div>
+        <div class="card now-card now-empty">
+          <span class="empty-icon">▣</span>
+          <span>No book in progress right now.</span>
+        </div>
+      </section>
+    )}
+
+  </div>
+
+  <p class="now-updated">Last updated: {updatedDate}</p>
+
+</Layout>
+
+<style>
+  .now-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .now-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--t-tertiary);
+  }
+
+  .now-card {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100px;
+  }
+
+  /* Music */
+  .now-music {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .music-icon {
+    font-size: 24px;
+    color: var(--accent);
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .music-info { flex: 1; min-width: 0; }
+  .music-track { font-weight: 600; font-size: 14px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .music-artist { font-size: 13px; color: var(--t-secondary); margin-top: 2px; }
+  .music-album { font-size: 11px; color: var(--t-muted); margin-top: 2px; }
+  .live-badge {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.1em;
+    background: rgba(239,68,68,0.15); color: #f87171;
+    border: 1px solid rgba(239,68,68,0.3); border-radius: 4px;
+    padding: 2px 6px; flex-shrink: 0; align-self: flex-start; margin-top: 2px;
+  }
+
+  /* Coding */
+  .coding-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  .coding-stat { display: flex; flex-direction: column; gap: 2px; }
+  .coding-value { font-size: 13px; font-weight: 600; color: #fff; word-break: break-word; }
+  .coding-key { font-size: 10px; color: var(--t-muted); letter-spacing: 0.05em; }
+
+  /* Toggl */
+  .toggl-total { font-size: 22px; font-weight: 700; color: #fff; display: flex; align-items: baseline; gap: 6px; }
+  .toggl-sub { font-size: 12px; font-weight: 400; color: var(--t-muted); }
+  .toggl-projects { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-size: 11px; padding: 2px 8px;
+    background: var(--overlay); border: 1px solid var(--border);
+    border-radius: 100px; color: var(--t-secondary);
+  }
+
+  /* Media */
+  .media-item { display: flex; align-items: flex-start; gap: 10px; }
+  .media-icon { font-size: 18px; color: var(--accent); flex-shrink: 0; margin-top: 1px; }
+  .media-title { font-size: 13px; font-weight: 600; color: #fff; }
+  .media-year { font-weight: 400; color: var(--t-muted); }
+  .media-meta { font-size: 11px; color: var(--t-muted); margin-top: 2px; }
+  .media-stats { display: flex; gap: 6px; flex-wrap: wrap; }
+  .media-chip {
+    font-size: 11px; padding: 2px 8px;
+    background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 100px; color: #818cf8;
+  }
+  .anime-thumb { width: 36px; height: 52px; border-radius: 4px; object-fit: cover; flex-shrink: 0; }
+
+  /* Fitness */
+  .fit-today { display: flex; align-items: baseline; gap: 8px; }
+  .fit-steps { font-size: 28px; font-weight: 700; color: #fff; }
+  .fit-unit { font-size: 12px; color: var(--t-muted); }
+  .fit-avg { font-size: 12px; color: var(--t-tertiary); }
+
+  /* Habitica */
+  .hab-level { display: flex; align-items: center; gap: 8px; }
+  .hab-lv { font-size: 20px; font-weight: 700; color: #fff; }
+  .hab-class { font-size: 12px; color: var(--t-muted); }
+  .hab-hp-bar {
+    height: 6px; background: var(--overlay);
+    border-radius: 3px; overflow: hidden;
+  }
+  .hab-hp-fill { height: 100%; background: #4ade80; border-radius: 3px; transition: width 0.5s; }
+  .hab-meta { font-size: 11px; color: var(--t-muted); }
+  .hab-streak { color: #f59e0b; }
+
+  /* Books */
+  .now-book { flex-direction: row; align-items: flex-start; gap: 12px; }
+  .book-icon { font-size: 22px; color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+  .book-title { font-size: 14px; font-weight: 600; color: #fff; }
+  .book-author { font-size: 12px; color: var(--t-muted); margin-top: 3px; }
+
+  /* Empty state */
+  .now-empty { flex-direction: row; align-items: center; gap: 10px; color: var(--t-muted); font-size: 13px; }
+  .empty-icon { font-size: 18px; }
+
+  /* Link */
+  .now-link { font-size: 11px; color: #818cf8; text-decoration: none; margin-top: auto; }
+  .now-link:hover { color: #a5b4fc; }
+
+  /* Footer */
+  .now-updated {
+    font-size: 11px; color: var(--t-muted);
+    margin-top: 8px; padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .coding-grid { grid-template-columns: 1fr 1fr; }
+    .now-grid { grid-template-columns: 1fr; }
+  }
+</style>
