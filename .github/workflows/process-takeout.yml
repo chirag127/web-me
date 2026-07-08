@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install googleapis
-
       - name: Download latest Takeout from Google Drive
         id: download
         env:
@@ -30,42 +27,39 @@ jobs:
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
           node << 'EOF'
-          const { google } = require('googleapis');
           const fs = require('fs');
-          const path = require('path');
-          const https = require('https');
           const { execSync } = require('child_process');
+          const { createWriteStream } = require('fs');
+          const { pipeline } = require('stream/promises');
 
           async function main() {
-            const auth = new google.auth.OAuth2(
-              process.env.GOOGLE_CLIENT_ID,
-              process.env.GOOGLE_CLIENT_SECRET
-            );
-            auth.setCredentials({ refresh_token: process.env.GOOGLE_REFRESH_TOKEN });
-
-            const drive = google.drive({ version: 'v3', auth });
-
-            // Find latest Takeout folder in Google Drive — get largest zip (the main archive)
-            const res = await drive.files.list({
-              q: "name contains 'takeout' and mimeType = 'application/zip' and trashed = false",
-              orderBy: 'createdTime desc',
-              pageSize: 10,
-              fields: 'files(id, name, createdTime, size)',
+            // Exchange refresh token for access token
+            const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+              method: 'POST',
+              headers: {'Content-Type':'application/x-www-form-urlencoded'},
+              body: new URLSearchParams({
+                client_id: process.env.GOOGLE_CLIENT_ID,
+                client_secret: process.env.GOOGLE_CLIENT_SECRET,
+                refresh_token: process.env.GOOGLE_REFRESH_TOKEN,
+                grant_type: 'refresh_token',
+              })
             });
+            const { access_token } = await tokenRes.json();
+            console.log('Access token obtained:', access_token ? 'yes' : 'NO');
 
-            if (!res.data.files?.length) {
-              console.log('No Takeout files found in Google Drive. Set Takeout to export to Drive at takeout.google.com');
-              process.exit(0);
-            }
+            // List Drive files
+            const listRes = await fetch('https://www.googleapis.com/drive/v3/files?q=' + encodeURIComponent("name contains 'takeout' and mimeType = 'application/zip' and trashed = false") + '&orderBy=createdTime desc&pageSize=10&fields=files(id,name,size,createdTime)', {
+              headers: {'Authorization': 'Bearer ' + access_token}
+            });
+            const { files } = await listRes.json();
+            console.log('Found', files?.length, 'takeout files');
+            if (!files?.length) { console.log('No files found'); process.exit(0); }
+            files.forEach(f => console.log(' -', f.name, Math.round(f.size/1024/1024)+'MB'));
 
-            // Log ALL found files with sizes
-            console.log(`Found ${res.data.files.length} Takeout file(s):`);
-            res.data.files.forEach(f => console.log(`  ${f.name} size=${f.size||'unknown'} created=${f.createdTime} id=${f.id}`));
-
-            // Pick largest file (main archive, not metadata/0-byte files)
-            const file = res.data.files.sort((a, b) => parseInt(b.size||'0') - parseInt(a.size||'0'))[0];
+            // Pick largest
+            const file = files.sort((a,b) => parseInt(b.size||0)-parseInt(a.size||0))[0];
             const fileSizeMB = file.size ? Math.round(parseInt(file.size) / 1024 / 1024) : 0;
-            console.log(`Selecting: ${file.name} (${fileSizeMB}MB) created ${file.createdTime}`);
+            console.log('Downloading:', file.name, fileSizeMB+'MB');
 
             // Verify file has content before downloading
             if (!file.size || parseInt(file.size) === 0) {
@@ -73,31 +67,14 @@ jobs:
               process.exit(0);
             }
 
-            // Download the file
+            // Stream download
             const dest = '/tmp/takeout.zip';
-            console.log(`Downloading ${file.name} (${fileSizeMB}MB)...`);
-            let downloadedBytes = 0;
-            const response = await drive.files.get(
-              { fileId: file.id, alt: 'media' },
-              { responseType: 'stream' }
-            );
-
-            await new Promise((resolve, reject) => {
-              const ws = fs.createWriteStream(dest);
-              response.data.on('data', chunk => {
-                downloadedBytes += chunk.length;
-                if (downloadedBytes % (10 * 1024 * 1024) < chunk.length) {
-                  console.log(`  Downloaded ${Math.round(downloadedBytes / 1024 / 1024)}MB...`);
-                }
-              });
-              response.data.on('error', err => { console.error('Download stream error:', err.message); reject(err); });
-              response.data.pipe(ws);
-              ws.on('finish', resolve);
-              ws.on('error', reject);
+            const dlRes = await fetch('https://www.googleapis.com/drive/v3/files/' + file.id + '?alt=media', {
+              headers: {'Authorization': 'Bearer ' + access_token}
             });
-
-            const downloadedSizeMB = Math.round(downloadedBytes / 1024 / 1024);
-            console.log(`Downloaded to ${dest} (${downloadedSizeMB}MB)`);
+            await pipeline(dlRes.body, createWriteStream(dest));
+            const downloadedBytes = fs.statSync(dest).size;
+            console.log(`Downloaded to ${dest} (${Math.round(downloadedBytes/1024/1024)}MB)`);
             if (downloadedBytes === 0) {
               console.log('ERROR: Downloaded file is empty');
               process.exit(1);
