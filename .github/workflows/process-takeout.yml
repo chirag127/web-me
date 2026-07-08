@@ -131,6 +131,47 @@ jobs:
               }
             }
 
+            // Parse Google Fit daily activity CSV
+            const fitCsvFiles = execSync('find /tmp/takeout-extracted -name "Daily activity metrics.csv" 2>/dev/null').toString().trim().split('\n').filter(Boolean);
+            if (fitCsvFiles.length) {
+              const lines = fs.readFileSync(fitCsvFiles[0], 'utf-8').split('\n');
+              const headers = lines[0].split(',');
+              const stepIdx = headers.indexOf('Step count');
+              const calIdx = headers.indexOf('Calories (kcal)');
+              const distIdx = headers.indexOf('Distance (m)');
+              const hrIdx = headers.indexOf('Average heart rate (bpm)');
+              const dateIdx = headers.indexOf('Date');
+              const rows = lines.slice(1).filter(l => l.trim()).map(l => {
+                const cols = l.split(',');
+                return {
+                  date: cols[dateIdx] || '',
+                  steps: Math.round(parseFloat(cols[stepIdx] || '0') || 0),
+                  calories: Math.round((parseFloat(cols[calIdx] || '0') || 0) * 10) / 10,
+                  distance_m: Math.round((parseFloat(cols[distIdx] || '0') || 0) * 10) / 10,
+                  heart_rate_avg: cols[hrIdx] || '',
+                };
+              }).filter(r => r.date);
+
+              if (rows.length) {
+                const steps = rows.map(r => r.steps);
+                const avgAll = Math.round(steps.reduce((a,b)=>a+b,0)/steps.length);
+                const last30 = rows.slice(-30);
+                const avg30 = Math.round(last30.reduce((a,b)=>a+b.steps,0)/last30.length);
+                const totalKm = Math.round(rows.reduce((a,r)=>a+r.distance_m,0)/100)/10;
+
+                fs.writeFileSync('public/data/fit-daily.json', JSON.stringify({
+                  total_days: rows.length,
+                  date_range: { start: rows[0].date, end: rows[rows.length-1].date },
+                  avg_steps_all_time: avgAll,
+                  avg_steps_last_30d: avg30,
+                  total_distance_km: totalKm,
+                  last_30_days: rows.slice(-30),
+                  last_7_days: rows.slice(-7),
+                }, null, 2));
+                console.log(`Fit: ${rows.length} days, avg ${avgAll} steps/day, ${totalKm} km total`);
+              }
+            }
+
             console.log('Done processing Takeout');
           }
 
@@ -141,6 +182,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/youtube-recent.json public/data/youtube-stats.json public/data/fit-sleep.json 2>/dev/null || true
+          git add public/data/youtube-recent.json public/data/youtube-stats.json public/data/fit-sleep.json public/data/fit-daily.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "chore(data): process monthly Google Takeout $(date -u +%Y-%m)"
           git push
