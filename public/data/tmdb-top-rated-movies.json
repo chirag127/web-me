@@ -16,7 +16,7 @@
       10751,
       14
     ],
-    "popularity": 90.9091
+    "popularity": 91.477
   },
   {
     "id": 278,
@@ -27,13 +27,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
     "rating": 8.724,
-    "votes": 30706,
+    "votes": 30707,
     "release": "1994-09-23",
     "genres": [
       18,
       80
     ],
-    "popularity": 164.1629
+    "popularity": 159.3015
   },
   {
     "id": 936075,
@@ -44,13 +44,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
     "rating": 8.707,
-    "votes": 3337,
+    "votes": 3342,
     "release": "2026-04-22",
     "genres": [
       10402,
       18
     ],
-    "popularity": 189.9972
+    "popularity": 182.9313
   },
   {
     "id": 238,
@@ -61,13 +61,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tSPT36ZKlP2WVHJLM4cQPLSzv3b.jpg",
     "rating": 8.687,
-    "votes": 23123,
+    "votes": 23124,
     "release": "1972-03-14",
     "genres": [
       18,
       80
     ],
-    "popularity": 41.3474
+    "popularity": 41.6182
   },
   {
     "id": 687163,
@@ -77,14 +77,14 @@
     "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
     "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-    "rating": 8.674,
-    "votes": 5778,
+    "rating": 8.675,
+    "votes": 5787,
     "release": "2026-03-15",
     "genres": [
       878,
       12
     ],
-    "popularity": 164.0596
+    "popularity": 162.3307
   },
   {
     "id": 240,
@@ -101,7 +101,7 @@
       18,
       80
     ],
-    "popularity": 26.9725
+    "popularity": 27.2068
   },
   {
     "id": 424,
@@ -119,7 +119,7 @@
       36,
       10752
     ],
-    "popularity": 24.8635
+    "popularity": 25.4754
   },
   {
     "id": 389,
@@ -135,7 +135,7 @@
     "genres": [
       18
     ],
-    "popularity": 24.515
+    "popularity": 24.7305
   },
   {
     "id": 1330021,
@@ -145,14 +145,14 @@
     "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
     "poster": "https://image.tmdb.org/t/p/w342/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
-    "rating": 8.551,
-    "votes": 702,
+    "rating": 8.553,
+    "votes": 703,
     "release": "2026-05-07",
     "genres": [
       18,
       9648
     ],
-    "popularity": 21.6649
+    "popularity": 22.8149
   },
   {
     "id": 1383731,
@@ -169,7 +169,7 @@
       28,
       53
     ],
-    "popularity": 20.0528
+    "popularity": 19.7051
   },
   {
     "id": 129,
@@ -187,7 +187,7 @@
       10751,
       14
     ],
-    "popularity": 37.8428
+    "popularity": 38.1207
   },
   {
     "id": 155,
@@ -205,7 +205,7 @@
       80,
       53
     ],
-    "popularity": 40.6599
+    "popularity": 41.5566
   },
   {
     "id": 19404,
@@ -223,7 +223,7 @@
       18,
       10749
     ],
-    "popularity": 13.2449
+    "popularity": 13.8505
   },
   {
     "id": 497,
@@ -241,7 +241,7 @@
       18,
       80
     ],
-    "popularity": 28.0309
+    "popularity": 29.5859
   },
   {
     "id": 122,
@@ -259,7 +259,7 @@
       14,
       28
     ],
-    "popularity": 38.2423
+    "popularity": 39.3488
   },
   {
     "id": 1181678,
@@ -276,7 +276,7 @@
       35,
       10749
     ],
-    "popularity": 9.9138
+    "popularity": 10.4954
   },
   {
     "id": 496243,
@@ -287,14 +287,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/wCuUKiRaz0wEESsYqmQy005xvTE.jpg",
     "rating": 8.492,
-    "votes": 20830,
+    "votes": 20831,
     "release": "2019-05-30",
     "genres": [
       35,
       53,
       18
     ],
-    "popularity": 31.4305
+    "popularity": 31.794
   },
   {
     "id": 680,
@@ -305,14 +305,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
     "rating": 8.482,
-    "votes": 30374,
+    "votes": 30375,
     "release": "1994-09-10",
     "genres": [
       53,
       80,
       35
     ],
-    "popularity": 38.6649
+    "popularity": 37.3786
   },
   {
     "id": 372058,
@@ -330,7 +330,7 @@
       10749,
       18
     ],
-    "popularity": 27.0061
+    "popularity": 27.4574
   },
   {
     "id": 157336,
@@ -341,13 +341,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
     "rating": 8.48,
-    "votes": 40222,
+    "votes": 40225,
     "release": "2014-11-05",
     "genres": [
       12,
       18,
       878
     ],
-    "popularity": 63.8141
+    "popularity": 65.4087
   }
 ]

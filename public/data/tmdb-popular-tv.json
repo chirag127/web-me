@@ -16,7 +16,7 @@
       9648,
       35
     ],
-    "popularity": 640.3988
+    "popularity": 751.5008
   },
   {
     "id": 124364,
@@ -27,14 +27,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
     "rating": 8.505,
-    "votes": 3939,
+    "votes": 3940,
     "release": "2022-02-20",
     "genres": [
       9648,
       18,
       10765
     ],
-    "popularity": 508.3089
+    "popularity": 466.6079
   },
   {
     "id": 94997,
@@ -44,15 +44,15 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.364,
-    "votes": 6497,
+    "rating": 8.366,
+    "votes": 6502,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 487.287
+    "popularity": 445.2424
   },
   {
     "id": 4304,
@@ -66,7 +66,7 @@
     "votes": 4,
     "release": "2003-04-28",
     "genres": [],
-    "popularity": 441.7605
+    "popularity": 372.7057
   },
   {
     "id": 17892,
@@ -82,7 +82,7 @@
     "genres": [
       10766
     ],
-    "popularity": 314.2718
+    "popularity": 249.1763
   },
   {
     "id": 241002,
@@ -98,7 +98,7 @@
     "genres": [
       16
     ],
-    "popularity": 303.5639
+    "popularity": 275.4365
   },
   {
     "id": 94664,
@@ -116,7 +116,7 @@
       16,
       10765
     ],
-    "popularity": 291.2468
+    "popularity": 314.1214
   },
   {
     "id": 2734,
@@ -134,7 +134,7 @@
       18,
       9648
     ],
-    "popularity": 268.0654
+    "popularity": 279.2415
   },
   {
     "id": 299167,
@@ -151,7 +151,7 @@
       37,
       18
     ],
-    "popularity": 229.9619
+    "popularity": 216.2204
   },
   {
     "id": 79744,
@@ -169,7 +169,7 @@
       18,
       35
     ],
-    "popularity": 226.6492
+    "popularity": 233.2856
   },
   {
     "id": 125988,
@@ -180,13 +180,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
     "rating": 8.166,
-    "votes": 2181,
+    "votes": 2182,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 211.8558
+    "popularity": 220.5324
   },
   {
     "id": 82452,
@@ -196,8 +196,8 @@
     "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
     "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-    "rating": 7.8,
-    "votes": 1214,
+    "rating": 7.801,
+    "votes": 1222,
     "release": "2024-02-22",
     "genres": [
       10759,
@@ -205,7 +205,7 @@
       18,
       10751
     ],
-    "popularity": 210.9284
+    "popularity": 196.0005
   },
   {
     "id": 1434,
@@ -215,14 +215,14 @@
     "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
     "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
-    "rating": 7.406,
+    "rating": 7.4,
     "votes": 4999,
     "release": "1999-01-31",
     "genres": [
       16,
       35
     ],
-    "popularity": 210.7771
+    "popularity": 211.2458
   },
   {
     "id": 1622,
@@ -240,7 +240,7 @@
       9648,
       10765
     ],
-    "popularity": 208.6372
+    "popularity": 208.0347
   },
   {
     "id": 1416,
@@ -256,7 +256,7 @@
     "genres": [
       18
     ],
-    "popularity": 206.8211
+    "popularity": 203.5622
   },
   {
     "id": 5920,
@@ -274,7 +274,7 @@
       18,
       9648
     ],
-    "popularity": 205.9935
+    "popularity": 206.1662
   },
   {
     "id": 312949,
@@ -284,15 +284,15 @@
     "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
     "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 7.5,
-    "votes": 4,
+    "rating": 7.667,
+    "votes": 6,
     "release": "2026-07-03",
     "genres": [
       16,
       35,
       10765
     ],
-    "popularity": 204.3703
+    "popularity": 247.7006
   },
   {
     "id": 549,
@@ -309,7 +309,7 @@
       80,
       18
     ],
-    "popularity": 202.4898
+    "popularity": 214.3846
   },
   {
     "id": 4614,
@@ -327,7 +327,7 @@
       18,
       10759
     ],
-    "popularity": 197.5532
+    "popularity": 194.393
   },
   {
     "id": 317270,
@@ -344,6 +344,6 @@
       18,
       10766
     ],
-    "popularity": 195.4794
+    "popularity": 174.0508
   }
 ]
