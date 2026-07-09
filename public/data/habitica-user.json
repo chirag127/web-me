@@ -8,8 +8,8 @@
     },
     "timestamps": {
       "created": "2026-07-07T15:48:14.172Z",
-      "loggedin": "2026-07-07T15:48:14.172Z",
-      "updated": "2026-07-08T12:12:06.235Z"
+      "loggedin": "2026-07-09T04:46:46.545Z",
+      "updated": "2026-07-09T06:09:26.817Z"
     },
     "facebook": {},
     "google": {
@@ -59,7 +59,8 @@
       "extraMonths": 0,
       "gemsBought": 0,
       "cumulativeCount": 0,
-      "mysteryItems": []
+      "mysteryItems": [],
+      "dateUpdated": "2026-07-09T04:46:46.593Z"
     }
   },
   "flags": {
@@ -120,7 +121,7 @@
     "weeklyRecapEmailsPhase": 0,
     "lastWeeklyRecap": "2026-07-07T15:48:14.173Z",
     "communityGuidelinesAccepted": false,
-    "cronCount": 0,
+    "cronCount": 1,
     "welcomed": true,
     "armoireEnabled": true,
     "armoireOpened": false,
@@ -128,12 +129,22 @@
     "cardReceived": false,
     "warnedLowHealth": false,
     "initializedUserHistory": true,
-    "thirdPartyTools": "2026-07-07T16:12:48.032Z",
+    "thirdPartyTools": "2026-07-08T16:14:02.361Z",
     "newStuff": false
   },
   "history": {
-    "exp": [],
-    "todos": []
+    "exp": [
+      {
+        "date": "2026-07-09T04:46:46.545Z",
+        "value": 12
+      }
+    ],
+    "todos": [
+      {
+        "date": "2026-07-09T04:46:46.545Z",
+        "value": -8
+      }
+    ]
   },
   "items": {
     "gear": {
@@ -168,7 +179,8 @@
         "eyewear_special_pinkHalfMoon": true,
         "eyewear_special_redHalfMoon": true,
         "eyewear_special_whiteHalfMoon": true,
-        "eyewear_special_yellowHalfMoon": true
+        "eyewear_special_yellowHalfMoon": true,
+        "armor_special_bardRobes": true
       }
     },
     "special": {
@@ -194,8 +206,8 @@
       "goodluckReceived": []
     },
     "lastDrop": {
-      "count": 0,
-      "date": "2026-07-07T15:48:14.173Z"
+      "count": 1,
+      "date": "2026-07-09T04:46:53.305Z"
     },
     "currentPet": "",
     "currentMount": "",
@@ -206,7 +218,9 @@
     "hatchingPotions": {
       "Base": 1
     },
-    "food": {},
+    "food": {
+      "Fish": 1
+    },
     "mounts": {},
     "quests": {
       "dustbunnies": 1
@@ -220,7 +234,7 @@
   "party": {
     "quest": {
       "progress": {
-        "up": 1,
+        "up": 1.4936344747040902,
         "down": 0,
         "collectedItems": 0,
         "collect": {}
@@ -317,7 +331,8 @@
     "webhooks": {},
     "improvementCategories": [],
     "background": "violet",
-    "analyticsConsent": true
+    "analyticsConsent": true,
+    "timezoneOffsetAtLastCron": -330
   },
   "profile": {
     "name": "chirag127"
@@ -330,10 +345,10 @@
       "con": 0,
       "stealth": 0,
       "streaks": false,
-      "snowball": false,
-      "spookySparkles": false,
+      "seafoam": false,
       "shinySeed": false,
-      "seafoam": false
+      "snowball": false,
+      "spookySparkles": false
     },
     "training": {
       "int": 0,
@@ -341,20 +356,20 @@
       "str": 0,
       "con": 0
     },
-    "hp": 48,
-    "mp": 10.25,
-    "exp": 12,
-    "gp": 2,
-    "lvl": 1,
+    "hp": 50,
+    "mp": 11,
+    "exp": 5,
+    "gp": 4.987268949408181,
+    "lvl": 2,
     "class": "warrior",
-    "points": 0,
+    "points": 2,
     "str": 0,
     "con": 0,
     "int": 0,
     "per": 0,
-    "toNextLevel": 25,
+    "toNextLevel": 50,
     "maxHealth": 50,
-    "maxMP": 30
+    "maxMP": 32
   },
   "inbox": {
     "newMessages": 0,
@@ -398,15 +413,15 @@
     ]
   },
   "_id": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
-  "_v": 18,
+  "_v": 25,
   "balance": 0,
   "_subSignature": "NOT_RUNNING",
   "challenges": [],
   "guilds": [],
-  "loginIncentives": 0,
+  "loginIncentives": 1,
   "invitesSent": 0,
   "pinnedItemsOrder": [],
-  "lastCron": "2026-07-07T15:48:14.173Z",
+  "lastCron": "2026-07-09T04:46:46.545Z",
   "newMessages": {},
   "notifications": [],
   "tags": [
@@ -440,7 +455,14 @@
     }
   ],
   "extra": {},
-  "pushDevices": [],
+  "pushDevices": [
+    {
+      "regId": "dMJBdJr0R5C1mydbZpNogk:APA91bGWBeyHpNzqxxCEzGWlmSADV2ZxJwHcPCCkSh6SgvCgfIlLvj1mqztOHkc3p1I-BFhTXZ20lx9HRcS3UrDDTKBq4YBxu4zFkwJd_u112AK0jMVh-CA",
+      "type": "android",
+      "createdAt": "2026-07-09T04:46:41.988Z",
+      "updatedAt": "2026-07-09T04:46:46.612Z"
+    }
+  ],
   "webhooks": [],
   "pinnedItems": [
     {
@@ -470,5 +492,5 @@
   ],
   "unpinnedItems": [],
   "id": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
-  "needsCron": true
+  "needsCron": false
 }

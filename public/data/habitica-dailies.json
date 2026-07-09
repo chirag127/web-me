@@ -5,7 +5,7 @@
     "text": "5 minutes of quiet breathing",
     "notes": "Tap to choose your schedule!",
     "tags": [],
-    "value": 0,
+    "value": -1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -27,15 +27,22 @@
     },
     "streak": 0,
     "nextDue": [
-      "2026-07-07T18:30:00.000Z",
-      "2026-07-08T18:30:00.000Z",
       "2026-07-09T18:30:00.000Z",
       "2026-07-10T18:30:00.000Z",
       "2026-07-12T18:30:00.000Z",
-      "2026-07-13T18:30:00.000Z"
+      "2026-07-13T18:30:00.000Z",
+      "2026-07-14T18:30:00.000Z",
+      "2026-07-15T18:30:00.000Z"
     ],
     "yesterDaily": true,
-    "history": [],
+    "history": [
+      {
+        "date": 1783572406602,
+        "value": -1,
+        "isDue": true,
+        "completed": false
+      }
+    ],
     "completed": false,
     "collapseChecklist": false,
     "startDate": "2026-07-06T18:30:00.000Z",
@@ -44,7 +51,7 @@
     "checklist": [],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.929Z",
-    "updatedAt": "2026-07-07T15:49:09.929Z",
+    "updatedAt": "2026-07-09T04:46:46.889Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "isDue": true,
     "id": "8a6ad462-adf7-4713-b912-b2f11b023eff"
@@ -55,7 +62,7 @@
     "text": "Finish homework",
     "notes": "Tap to choose your homework schedule!",
     "tags": [],
-    "value": 0,
+    "value": -1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -77,15 +84,22 @@
     },
     "streak": 0,
     "nextDue": [
-      "2026-07-07T18:30:00.000Z",
-      "2026-07-08T18:30:00.000Z",
       "2026-07-09T18:30:00.000Z",
       "2026-07-10T18:30:00.000Z",
       "2026-07-12T18:30:00.000Z",
-      "2026-07-13T18:30:00.000Z"
+      "2026-07-13T18:30:00.000Z",
+      "2026-07-14T18:30:00.000Z",
+      "2026-07-15T18:30:00.000Z"
     ],
     "yesterDaily": true,
-    "history": [],
+    "history": [
+      {
+        "date": 1783572406603,
+        "value": -1,
+        "isDue": true,
+        "completed": false
+      }
+    ],
     "completed": false,
     "collapseChecklist": false,
     "startDate": "2026-07-06T18:30:00.000Z",
@@ -94,7 +108,7 @@
     "checklist": [],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.928Z",
-    "updatedAt": "2026-07-07T15:49:09.928Z",
+    "updatedAt": "2026-07-09T04:46:46.969Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "isDue": true,
     "id": "9bb1e3bb-a520-48da-ba51-c3acf1828b07"
@@ -105,7 +119,7 @@
     "text": "Floss",
     "notes": "Tap to make any changes!",
     "tags": [],
-    "value": 0,
+    "value": -1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -127,15 +141,22 @@
     },
     "streak": 0,
     "nextDue": [
-      "2026-07-07T18:30:00.000Z",
-      "2026-07-08T18:30:00.000Z",
       "2026-07-09T18:30:00.000Z",
       "2026-07-10T18:30:00.000Z",
       "2026-07-12T18:30:00.000Z",
-      "2026-07-13T18:30:00.000Z"
+      "2026-07-13T18:30:00.000Z",
+      "2026-07-14T18:30:00.000Z",
+      "2026-07-15T18:30:00.000Z"
     ],
     "yesterDaily": true,
-    "history": [],
+    "history": [
+      {
+        "date": 1783572406600,
+        "value": -1,
+        "isDue": true,
+        "completed": false
+      }
+    ],
     "completed": false,
     "collapseChecklist": false,
     "startDate": "2026-07-06T18:30:00.000Z",
@@ -144,7 +165,7 @@
     "checklist": [],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.925Z",
-    "updatedAt": "2026-07-07T15:49:09.925Z",
+    "updatedAt": "2026-07-09T04:46:46.699Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "isDue": true,
     "id": "cbdc2fd7-fdff-4d26-a3e4-ec2237d66176"
@@ -155,7 +176,7 @@
     "text": "Stretching >> Daily workout routine",
     "notes": "Tap to choose your schedule and specify exercises!",
     "tags": [],
-    "value": 0,
+    "value": -1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -177,15 +198,22 @@
     },
     "streak": 0,
     "nextDue": [
-      "2026-07-07T18:30:00.000Z",
-      "2026-07-08T18:30:00.000Z",
       "2026-07-09T18:30:00.000Z",
       "2026-07-10T18:30:00.000Z",
       "2026-07-12T18:30:00.000Z",
-      "2026-07-13T18:30:00.000Z"
+      "2026-07-13T18:30:00.000Z",
+      "2026-07-14T18:30:00.000Z",
+      "2026-07-15T18:30:00.000Z"
     ],
     "yesterDaily": true,
-    "history": [],
+    "history": [
+      {
+        "date": 1783572406601,
+        "value": -1,
+        "isDue": true,
+        "completed": false
+      }
+    ],
     "completed": false,
     "collapseChecklist": false,
     "startDate": "2026-07-06T18:30:00.000Z",
@@ -194,7 +222,7 @@
     "checklist": [],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.922Z",
-    "updatedAt": "2026-07-07T15:49:09.922Z",
+    "updatedAt": "2026-07-09T04:46:46.810Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "isDue": true,
     "id": "ce0f0400-94f0-4784-aa89-8eec84299214"
@@ -205,7 +233,7 @@
     "text": "Work on creative project",
     "notes": "Tap to specify the name of your current project + set the schedule!",
     "tags": [],
-    "value": 0,
+    "value": -1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -227,15 +255,22 @@
     },
     "streak": 0,
     "nextDue": [
-      "2026-07-07T18:30:00.000Z",
-      "2026-07-08T18:30:00.000Z",
       "2026-07-09T18:30:00.000Z",
       "2026-07-10T18:30:00.000Z",
       "2026-07-12T18:30:00.000Z",
-      "2026-07-13T18:30:00.000Z"
+      "2026-07-13T18:30:00.000Z",
+      "2026-07-14T18:30:00.000Z",
+      "2026-07-15T18:30:00.000Z"
     ],
     "yesterDaily": true,
-    "history": [],
+    "history": [
+      {
+        "date": 1783572406604,
+        "value": -1,
+        "isDue": true,
+        "completed": false
+      }
+    ],
     "completed": false,
     "collapseChecklist": false,
     "startDate": "2026-07-06T18:30:00.000Z",
@@ -244,7 +279,7 @@
     "checklist": [],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.920Z",
-    "updatedAt": "2026-07-07T15:49:09.920Z",
+    "updatedAt": "2026-07-09T04:46:47.121Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "isDue": true,
     "id": "043bc69a-c8ac-4d5f-ab89-6478a9da5f4d"
@@ -255,7 +290,7 @@
     "text": "Wash dishes",
     "notes": "Tap to choose your schedule!",
     "tags": [],
-    "value": 0,
+    "value": -1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -277,15 +312,22 @@
     },
     "streak": 0,
     "nextDue": [
-      "2026-07-07T18:30:00.000Z",
-      "2026-07-08T18:30:00.000Z",
       "2026-07-09T18:30:00.000Z",
       "2026-07-10T18:30:00.000Z",
       "2026-07-12T18:30:00.000Z",
-      "2026-07-13T18:30:00.000Z"
+      "2026-07-13T18:30:00.000Z",
+      "2026-07-14T18:30:00.000Z",
+      "2026-07-15T18:30:00.000Z"
     ],
     "yesterDaily": true,
-    "history": [],
+    "history": [
+      {
+        "date": 1783572406597,
+        "value": -1,
+        "isDue": true,
+        "completed": false
+      }
+    ],
     "completed": false,
     "collapseChecklist": false,
     "startDate": "2026-07-06T18:30:00.000Z",
@@ -294,7 +336,7 @@
     "checklist": [],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.918Z",
-    "updatedAt": "2026-07-07T15:49:09.918Z",
+    "updatedAt": "2026-07-09T04:46:46.649Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "isDue": true,
     "id": "0b681aa4-639d-4051-a86e-a550bfe0431b"
@@ -305,7 +347,7 @@
     "text": "Most important task >> Worked on today’s most important task",
     "notes": "Tap to specify your most important task",
     "tags": [],
-    "value": 0,
+    "value": -1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -327,15 +369,22 @@
     },
     "streak": 0,
     "nextDue": [
-      "2026-07-07T18:30:00.000Z",
-      "2026-07-08T18:30:00.000Z",
       "2026-07-09T18:30:00.000Z",
       "2026-07-10T18:30:00.000Z",
       "2026-07-12T18:30:00.000Z",
-      "2026-07-13T18:30:00.000Z"
+      "2026-07-13T18:30:00.000Z",
+      "2026-07-14T18:30:00.000Z",
+      "2026-07-15T18:30:00.000Z"
     ],
     "yesterDaily": true,
-    "history": [],
+    "history": [
+      {
+        "date": 1783572406598,
+        "value": -1,
+        "isDue": true,
+        "completed": false
+      }
+    ],
     "completed": false,
     "collapseChecklist": false,
     "startDate": "2026-07-06T18:30:00.000Z",
@@ -344,7 +393,7 @@
     "checklist": [],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.916Z",
-    "updatedAt": "2026-07-07T15:49:09.916Z",
+    "updatedAt": "2026-07-09T04:46:46.682Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "isDue": true,
     "id": "5bc70b9a-8049-4e9d-9844-21bf5f3775ce"

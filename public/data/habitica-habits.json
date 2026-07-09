@@ -5,7 +5,7 @@
     "text": "Take a short break",
     "notes": "",
     "tags": [],
-    "value": 1,
+    "value": 1.48726896031426,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -25,11 +25,17 @@
         "value": 1,
         "scoredUp": 1,
         "scoredDown": 0
+      },
+      {
+        "date": 1783572413304,
+        "value": 1.48726896031426,
+        "scoredUp": 1,
+        "scoredDown": 0
       }
     ],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.929Z",
-    "updatedAt": "2026-07-07T15:49:21.084Z",
+    "updatedAt": "2026-07-09T04:46:53.307Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "id": "f3d6bbf9-16a7-445b-8155-52161f781724"
   },
@@ -39,7 +45,7 @@
     "text": "Study/Procrastinate",
     "notes": "",
     "tags": [],
-    "value": 4.255940168063077e-7,
+    "value": 1.000000414687937,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -51,7 +57,7 @@
     "up": true,
     "down": true,
     "counterUp": 1,
-    "counterDown": 1,
+    "counterDown": 0,
     "frequency": "daily",
     "history": [
       {
@@ -59,11 +65,17 @@
         "value": 4.255940168063077e-7,
         "scoredUp": 1,
         "scoredDown": 1
+      },
+      {
+        "date": 1783572420334,
+        "value": 1.000000414687937,
+        "scoredUp": 1,
+        "scoredDown": 0
       }
     ],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.927Z",
-    "updatedAt": "2026-07-07T16:03:24.470Z",
+    "updatedAt": "2026-07-09T04:47:00.337Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "id": "c135e66a-d4a2-467d-95a4-319b3f86eaa5"
   },
@@ -73,7 +85,7 @@
     "text": "Eat Health/Junk Food",
     "notes": "",
     "tags": [],
-    "value": 0,
+    "value": 1,
     "priority": 1,
     "attribute": "str",
     "challenge": {},
@@ -84,13 +96,20 @@
     "byHabitica": false,
     "up": true,
     "down": true,
-    "counterUp": 0,
+    "counterUp": 1,
     "counterDown": 0,
     "frequency": "daily",
-    "history": [],
+    "history": [
+      {
+        "date": 1783572423205,
+        "value": 1,
+        "scoredUp": 1,
+        "scoredDown": 0
+      }
+    ],
     "reminders": [],
     "createdAt": "2026-07-07T15:49:09.923Z",
-    "updatedAt": "2026-07-07T15:49:09.923Z",
+    "updatedAt": "2026-07-09T04:47:03.207Z",
     "userId": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
     "id": "f73605cb-7357-4862-8b94-0814c5d368d7"
   },
