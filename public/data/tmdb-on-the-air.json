@@ -8,32 +8,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.366,
-    "votes": 6510,
+    "votes": 6523,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 445.2424
-  },
-  {
-    "id": 94664,
-    "tmdb_id": 94664,
-    "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.476,
-    "votes": 1549,
-    "release": "2021-01-11",
-    "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 314.1214
+    "popularity": 412.7348
   },
   {
     "id": 312949,
@@ -43,15 +25,33 @@
     "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
     "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.4,
-    "votes": 9,
+    "rating": 8.6,
+    "votes": 11,
     "release": "2026-07-03",
     "genres": [
       16,
       35,
       10765
     ],
-    "popularity": 247.7006
+    "popularity": 378.8917
+  },
+  {
+    "id": 94664,
+    "tmdb_id": 94664,
+    "type": "tv",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.5,
+    "votes": 1553,
+    "release": "2021-01-11",
+    "genres": [
+      10759,
+      16,
+      10765
+    ],
+    "popularity": 310.3409
   },
   {
     "id": 125988,
@@ -61,69 +61,14 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.167,
-    "votes": 2189,
+    "rating": 8.2,
+    "votes": 2197,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 220.5324
-  },
-  {
-    "id": 60625,
-    "tmdb_id": 60625,
-    "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.679,
-    "votes": 11074,
-    "release": "2013-12-02",
-    "genres": [
-      16,
-      35,
-      10765,
-      10759
-    ],
-    "popularity": 174.1707
-  },
-  {
-    "id": 4057,
-    "tmdb_id": 4057,
-    "type": "tv",
-    "title": "Criminal Minds",
-    "overview": "An elite team of FBI profilers analyze the country's most twisted criminal minds, anticipating their next moves before they strike again. The Behavioral Analysis Unit's most experienced agent is David Rossi, a founding member of the BAU who returns to help the team solve new cases.",
-    "poster": "https://image.tmdb.org/t/p/w342/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
-    "rating": 8.303,
-    "votes": 4109,
-    "release": "2005-09-22",
-    "genres": [
-      80,
-      18,
-      9648
-    ],
-    "popularity": 173.2822
-  },
-  {
-    "id": 296206,
-    "tmdb_id": 296206,
-    "type": "tv",
-    "title": "Agent Kim Reactivated",
-    "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-    "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.4,
-    "votes": 22,
-    "release": "2026-06-26",
-    "genres": [
-      10759,
-      80,
-      18
-    ],
-    "popularity": 169.0085
+    "popularity": 228.8736
   },
   {
     "id": 322055,
@@ -141,7 +86,147 @@
       80,
       18
     ],
-    "popularity": 156.2422
+    "popularity": 203.6516
+  },
+  {
+    "id": 316540,
+    "tmdb_id": 316540,
+    "type": "tv",
+    "title": "Bittersweet Love",
+    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
+    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-07-03",
+    "genres": [
+      18
+    ],
+    "popularity": 187.7864
+  },
+  {
+    "id": 303493,
+    "tmdb_id": 303493,
+    "type": "tv",
+    "title": "Knot",
+    "overview": "A young man’s life changes forever when a powerful Alpha marks him, binding their fates together in an inescapable bond.",
+    "poster": "https://image.tmdb.org/t/p/w342/8z62pp4K602d1y6079oU1GBeiAG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/zq22918LdWTkBstphgUfxDZUO7i.jpg",
+    "rating": 7.4,
+    "votes": 6,
+    "release": "2026-06-30",
+    "genres": [
+      18,
+      10765,
+      10759
+    ],
+    "popularity": 171.1162
+  },
+  {
+    "id": 60625,
+    "tmdb_id": 60625,
+    "type": "tv",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.679,
+    "votes": 11082,
+    "release": "2013-12-02",
+    "genres": [
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 170.7749
+  },
+  {
+    "id": 4057,
+    "tmdb_id": 4057,
+    "type": "tv",
+    "title": "Criminal Minds",
+    "overview": "An elite team of FBI profilers analyze the country's most twisted criminal minds, anticipating their next moves before they strike again. The Behavioral Analysis Unit's most experienced agent is David Rossi, a founding member of the BAU who returns to help the team solve new cases.",
+    "poster": "https://image.tmdb.org/t/p/w342/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
+    "rating": 8.303,
+    "votes": 4111,
+    "release": "2005-09-22",
+    "genres": [
+      80,
+      18,
+      9648
+    ],
+    "popularity": 168.3096
+  },
+  {
+    "id": 296206,
+    "tmdb_id": 296206,
+    "type": "tv",
+    "title": "Agent Kim Reactivated",
+    "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+    "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+    "rating": 7.043,
+    "votes": 23,
+    "release": "2026-06-26",
+    "genres": [
+      10759,
+      80,
+      18
+    ],
+    "popularity": 155.1324
+  },
+  {
+    "id": 70672,
+    "tmdb_id": 70672,
+    "type": "tv",
+    "title": "Men on a Mission",
+    "overview": "Male celebs play make-believe as high schoolers, welcoming star transfer students every week and engaging in battles of witty humor and slapstick.",
+    "poster": "https://image.tmdb.org/t/p/w342/2jIi55JtYKJTL1km8qHMuUilOWo.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/a8a8z4aJr40zYgRMfmSESppX2eO.jpg",
+    "rating": 7.357,
+    "votes": 42,
+    "release": "2015-12-05",
+    "genres": [
+      10764,
+      35
+    ],
+    "popularity": 131.7823
+  },
+  {
+    "id": 2224,
+    "tmdb_id": 2224,
+    "type": "tv",
+    "title": "The Daily Show",
+    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
+    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
+    "rating": 6.4,
+    "votes": 641,
+    "release": "1996-07-22",
+    "genres": [
+      10763,
+      35
+    ],
+    "popularity": 127.301
+  },
+  {
+    "id": 22980,
+    "tmdb_id": 22980,
+    "type": "tv",
+    "title": "Watch What Happens Live with Andy Cohen",
+    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
+    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
+    "rating": 5,
+    "votes": 87,
+    "release": "2009-07-16",
+    "genres": [
+      10767,
+      35
+    ],
+    "popularity": 124.2835
   },
   {
     "id": 62245,
@@ -159,58 +244,7 @@
       10751,
       35
     ],
-    "popularity": 150.276
-  },
-  {
-    "id": 70672,
-    "tmdb_id": 70672,
-    "type": "tv",
-    "title": "Men on a Mission",
-    "overview": "Male celebs play make-believe as high schoolers, welcoming star transfer students every week and engaging in battles of witty humor and slapstick.",
-    "poster": "https://image.tmdb.org/t/p/w342/2jIi55JtYKJTL1km8qHMuUilOWo.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/a8a8z4aJr40zYgRMfmSESppX2eO.jpg",
-    "rating": 7.357,
-    "votes": 42,
-    "release": "2015-12-05",
-    "genres": [
-      10764,
-      35
-    ],
-    "popularity": 148.3839
-  },
-  {
-    "id": 316540,
-    "tmdb_id": 316540,
-    "type": "tv",
-    "title": "Bittersweet Love",
-    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
-    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
-    "rating": 0,
-    "votes": 0,
-    "release": "2026-07-03",
-    "genres": [
-      18
-    ],
-    "popularity": 145.5945
-  },
-  {
-    "id": 303493,
-    "tmdb_id": 303493,
-    "type": "tv",
-    "title": "Knot",
-    "overview": "A young man’s life changes forever when a powerful Alpha marks him, binding their fates together in an inescapable bond.",
-    "poster": "https://image.tmdb.org/t/p/w342/8z62pp4K602d1y6079oU1GBeiAG.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/zq22918LdWTkBstphgUfxDZUO7i.jpg",
-    "rating": 8,
-    "votes": 3,
-    "release": "2026-06-30",
-    "genres": [
-      18,
-      10765,
-      10759
-    ],
-    "popularity": 135.6298
+    "popularity": 117.4505
   },
   {
     "id": 2661,
@@ -228,24 +262,7 @@
       10765,
       18
     ],
-    "popularity": 129.423
-  },
-  {
-    "id": 22980,
-    "tmdb_id": 22980,
-    "type": "tv",
-    "title": "Watch What Happens Live with Andy Cohen",
-    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
-    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
-    "rating": 5,
-    "votes": 87,
-    "release": "2009-07-16",
-    "genres": [
-      10767,
-      35
-    ],
-    "popularity": 129.0713
+    "popularity": 116.6781
   },
   {
     "id": 33238,
@@ -262,24 +279,7 @@
       35,
       10764
     ],
-    "popularity": 128.0445
-  },
-  {
-    "id": 2224,
-    "tmdb_id": 2224,
-    "type": "tv",
-    "title": "The Daily Show",
-    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
-    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
-    "rating": 6.4,
-    "votes": 641,
-    "release": "1996-07-22",
-    "genres": [
-      10763,
-      35
-    ],
-    "popularity": 125.5402
+    "popularity": 115.9618
   },
   {
     "id": 223911,
@@ -298,7 +298,24 @@
       18,
       10765
     ],
-    "popularity": 105.9248
+    "popularity": 108.7857
+  },
+  {
+    "id": 57532,
+    "tmdb_id": 57532,
+    "type": "tv",
+    "title": "PAW Patrol",
+    "overview": "Marshall, Rocky, Rubble, Zuma and Skye are doing their best to protect the people of their town. Led by Ryder, a tech-savvy 10-year-old boy, each of them is equipped with special equipment and together they help anyone who finds themselves in trouble. No task is too big for them and no puppy is too small.",
+    "poster": "https://image.tmdb.org/t/p/w342/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7OrV2aAH5Yp7hA9zCCvUloLvZtl.jpg",
+    "rating": 7,
+    "votes": 813,
+    "release": "2013-08-12",
+    "genres": [
+      16,
+      10762
+    ],
+    "popularity": 106.8725
   },
   {
     "id": 315038,
@@ -315,7 +332,7 @@
       35,
       18
     ],
-    "popularity": 103.2537
+    "popularity": 98.6187
   },
   {
     "id": 259231,
@@ -325,29 +342,13 @@
     "overview": "\"If the dark night comes to an end, I will stand in front of tens of thousands of people, slashing my sword into the abyss, staining the sky with blood!\" Have you ever thought that monsters from ancient myths lurk under the bright neon cities? Have you ever thought that above the moon hanging high above the heads of the world, there are gods watching over the world? Have you ever thought that in the crowded modern cities, there are extraordinary people who walk the world in place of gods?",
     "poster": "https://image.tmdb.org/t/p/w342/n4lEQkgCDuOP3TNvIjkzn5QjRp.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/aZCidnkhigXUUdhgNDB2qCSaAwl.jpg",
-    "rating": 7.882,
+    "rating": 7.9,
     "votes": 17,
     "release": "2024-07-31",
     "genres": [
       16,
       10765
     ],
-    "popularity": 98.4574
-  },
-  {
-    "id": 206559,
-    "tmdb_id": 206559,
-    "type": "tv",
-    "title": "Binnelanders",
-    "overview": "A South African Afrikaans soap opera. It is set in and around the fictional private hospital, Binneland Kliniek, in Pretoria, and the storyline follows the trials, trauma and tribulations of the staff and patients of the hospital.",
-    "poster": "https://image.tmdb.org/t/p/w342/3bzECfllho8PphdYujLUIuhncJD.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/s1dTt4M31q2HwD5Fkl1tf5tQzJg.jpg",
-    "rating": 5.532,
-    "votes": 111,
-    "release": "2005-10-13",
-    "genres": [
-      10766
-    ],
-    "popularity": 95.7532
+    "popularity": 97.4745
   }
 ]

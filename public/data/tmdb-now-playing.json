@@ -7,8 +7,8 @@
     "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
     "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-    "rating": 8.264,
-    "votes": 2368,
+    "rating": 8.273,
+    "votes": 2453,
     "release": "2026-05-13",
     "genres": [
       27,
@@ -22,10 +22,10 @@
     "type": "movie",
     "title": "Toy Story 5",
     "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-    "poster": "https://image.tmdb.org/t/p/w342/wLvUuBF2Yj0JmMGLUdRRVu7LvNB.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
     "rating": 7.4,
-    "votes": 530,
+    "votes": 538,
     "release": "2026-06-17",
     "genres": [
       16,
@@ -41,10 +41,10 @@
     "type": "movie",
     "title": "Disclosure Day",
     "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-    "poster": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/9XKXO68h0KGMCQ9ZZEdP0DWfcXS.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
-    "rating": 6.691,
-    "votes": 830,
+    "rating": 6.7,
+    "votes": 837,
     "release": "2026-06-10",
     "genres": [
       878,
@@ -60,8 +60,8 @@
     "overview": "A strange doorway appears in the basement of a furniture showroom.",
     "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-    "rating": 6.8,
-    "votes": 942,
+    "rating": 6.82,
+    "votes": 959,
     "release": "2026-05-27",
     "genres": [
       27,
@@ -78,14 +78,32 @@
     "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
     "poster": "https://image.tmdb.org/t/p/w342/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-    "rating": 5.394,
-    "votes": 426,
+    "rating": 5.406,
+    "votes": 432,
     "release": "2026-06-03",
     "genres": [
       35,
       27
     ],
     "popularity": 462.1724
+  },
+  {
+    "id": 1280738,
+    "tmdb_id": 1280738,
+    "type": "movie",
+    "title": "The Furious",
+    "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
+    "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
+    "rating": 7.6,
+    "votes": 119,
+    "release": "2026-06-10",
+    "genres": [
+      28,
+      80,
+      53
+    ],
+    "popularity": 275.0029
   },
   {
     "id": 1413976,
@@ -95,8 +113,8 @@
     "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
     "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
-    "rating": 6.584,
-    "votes": 209,
+    "rating": 6.553,
+    "votes": 218,
     "release": "2026-06-19",
     "genres": [
       53,
@@ -113,8 +131,8 @@
     "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
     "poster": "https://image.tmdb.org/t/p/w342/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/szKv713FcUXx6hcfdY369vtkmzr.jpg",
-    "rating": 7.139,
-    "votes": 165,
+    "rating": 7.186,
+    "votes": 172,
     "release": "2026-04-30",
     "genres": [
       27,
@@ -123,42 +141,21 @@
     "popularity": 214.656
   },
   {
-    "id": 1280738,
-    "tmdb_id": 1280738,
+    "id": 1368314,
+    "tmdb_id": 1368314,
     "type": "movie",
-    "title": "The Furious",
-    "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
-    "poster": "https://image.tmdb.org/t/p/w342/mwRspK4RPa5dSYS4Aul8KyZ1qcW.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tN0iXjm7qbHnGG4WGrNOGqmTMDt.jpg",
-    "rating": 7.637,
-    "votes": 106,
-    "release": "2026-06-10",
+    "title": "Passenger",
+    "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+    "poster": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
+    "rating": 5.721,
+    "votes": 147,
+    "release": "2026-05-20",
     "genres": [
-      28,
-      80,
+      27,
       53
     ],
-    "popularity": 275.0029
-  },
-  {
-    "id": 1315772,
-    "tmdb_id": 1315772,
-    "type": "movie",
-    "title": "Minions & Monsters",
-    "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-    "poster": "https://image.tmdb.org/t/p/w342/sO3O1szSYuXLwtkobU5TExQ6Wfa.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-    "rating": 6.395,
-    "votes": 129,
-    "release": "2026-06-24",
-    "genres": [
-      12,
-      16,
-      35,
-      10751,
-      14
-    ],
-    "popularity": 166.274
+    "popularity": 184.6921
   },
   {
     "id": 936075,
@@ -168,8 +165,8 @@
     "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
     "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
-    "rating": 8.706,
-    "votes": 3351,
+    "rating": 8.702,
+    "votes": 3374,
     "release": "2026-04-22",
     "genres": [
       10402,
@@ -185,8 +182,8 @@
     "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
     "poster": "https://image.tmdb.org/t/p/w342/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
-    "rating": 6.976,
-    "votes": 296,
+    "rating": 6.995,
+    "votes": 312,
     "release": "2026-06-30",
     "genres": [
       12,
@@ -196,39 +193,24 @@
     "popularity": 169.8106
   },
   {
-    "id": 1368314,
-    "tmdb_id": 1368314,
+    "id": 1315772,
+    "tmdb_id": 1315772,
     "type": "movie",
-    "title": "Passenger",
-    "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
-    "poster": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
-    "rating": 5.7,
-    "votes": 137,
-    "release": "2026-05-20",
+    "title": "Minions & Monsters",
+    "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+    "poster": "https://image.tmdb.org/t/p/w342/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+    "rating": 6.39,
+    "votes": 136,
+    "release": "2026-06-24",
     "genres": [
-      27,
-      53
+      12,
+      16,
+      35,
+      10751,
+      14
     ],
-    "popularity": 184.6921
-  },
-  {
-    "id": 931285,
-    "tmdb_id": 931285,
-    "type": "movie",
-    "title": "Mortal Kombat II",
-    "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-    "poster": "https://image.tmdb.org/t/p/w342/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
-    "rating": 7.981,
-    "votes": 1898,
-    "release": "2026-05-06",
-    "genres": [
-      28,
-      14,
-      12
-    ],
-    "popularity": 149.3051
+    "popularity": 166.274
   },
   {
     "id": 1279493,
@@ -238,14 +220,32 @@
     "overview": "A nightclub owner is on the verge of leaving his dangerous past behind for retirement with his girlfriend. When masked gunmen rob him and he finds himself squeezed by ruthless cartels, a mysterious newcomer arrives with an interest in buying the business. With danger closing in from all sides, he must navigate a deadly web of deception, power, and survival  -  where escape may no longer be an option.",
     "poster": "https://image.tmdb.org/t/p/w342/zlkeH0s7dDxcnuPcHBqAyXFUxqN.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/mVHyU4pnu9b2LWByPGGM0GGCA1v.jpg",
-    "rating": 6.7,
-    "votes": 29,
+    "rating": 6.5,
+    "votes": 31,
     "release": "2026-06-18",
     "genres": [
       28,
       53
     ],
     "popularity": 153.7142
+  },
+  {
+    "id": 931285,
+    "tmdb_id": 931285,
+    "type": "movie",
+    "title": "Mortal Kombat II",
+    "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+    "poster": "https://image.tmdb.org/t/p/w342/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+    "rating": 7.976,
+    "votes": 1913,
+    "release": "2026-05-06",
+    "genres": [
+      28,
+      14,
+      12
+    ],
+    "popularity": 149.3051
   },
   {
     "id": 1155818,
@@ -266,6 +266,41 @@
     "popularity": 120.8873
   },
   {
+    "id": 1645603,
+    "tmdb_id": 1645603,
+    "type": "movie",
+    "title": "Night of the Living Dead",
+    "overview": "A ragtag group barricade themselves in an old Pennsylvania farmhouse to remain safe from a horde of flesh-eating ghouls ravaging the Northeast.",
+    "poster": "https://image.tmdb.org/t/p/w342/5l0klDtj2v4FMFOGGCEH23AQb30.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/h1x4YiBtQEGY2dMx7k0fvlErlSn.jpg",
+    "rating": 7.7,
+    "votes": 3,
+    "release": "2026-07-03",
+    "genres": [
+      27
+    ],
+    "popularity": 99.1751
+  },
+  {
+    "id": 1108427,
+    "tmdb_id": 1108427,
+    "type": "movie",
+    "title": "Moana",
+    "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+    "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+    "rating": 4.758,
+    "votes": 33,
+    "release": "2026-07-08",
+    "genres": [
+      10751,
+      14,
+      35,
+      12
+    ],
+    "popularity": 98.5184
+  },
+  {
     "id": 1081003,
     "tmdb_id": 1081003,
     "type": "movie",
@@ -273,8 +308,8 @@
     "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
     "poster": "https://image.tmdb.org/t/p/w342/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
-    "rating": 6.219,
-    "votes": 407,
+    "rating": 6.213,
+    "votes": 415,
     "release": "2026-06-24",
     "genres": [
       28,
@@ -284,22 +319,6 @@
     "popularity": 98.442
   },
   {
-    "id": 1397385,
-    "tmdb_id": 1397385,
-    "type": "movie",
-    "title": "Little Brother",
-    "overview": "A tightly wound realtor's picture-perfect life gets an extreme makeover when his lovably chaotic \"little brother\" suddenly reappears.",
-    "poster": "https://image.tmdb.org/t/p/w342/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/bdwv8Hsu4Bnz8aRbH5MQ9clQ0DG.jpg",
-    "rating": 6.387,
-    "votes": 203,
-    "release": "2026-06-18",
-    "genres": [
-      35
-    ],
-    "popularity": 90.487
-  },
-  {
     "id": 1368337,
     "tmdb_id": 1368337,
     "type": "movie",
@@ -307,8 +326,8 @@
     "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
     "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
-    "rating": 10,
-    "votes": 1,
+    "rating": 5.5,
+    "votes": 4,
     "release": "2026-07-15",
     "genres": [
       12,
@@ -325,28 +344,12 @@
     "overview": "Young Macy is abducted by a deranged, monstrous figure who wants to raise her as its child.",
     "poster": "https://image.tmdb.org/t/p/w342/sTPUg3XtdcKRAS5Vwsi1GYPFhNZ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/rhuEN18ZimDOva3guaWZA4hYgLB.jpg",
-    "rating": 6,
-    "votes": 117,
+    "rating": 5.956,
+    "votes": 124,
     "release": "2026-03-06",
     "genres": [
       27
     ],
     "popularity": 94.4069
-  },
-  {
-    "id": 1645603,
-    "tmdb_id": 1645603,
-    "type": "movie",
-    "title": "Night of the Living Dead",
-    "overview": "A ragtag group barricade themselves in an old Pennsylvania farmhouse to remain safe from a horde of flesh-eating ghouls ravaging the Northeast.",
-    "poster": "https://image.tmdb.org/t/p/w342/5l0klDtj2v4FMFOGGCEH23AQb30.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/h1x4YiBtQEGY2dMx7k0fvlErlSn.jpg",
-    "rating": 7.667,
-    "votes": 3,
-    "release": "2026-07-03",
-    "genres": [
-      27
-    ],
-    "popularity": 99.1751
   }
 ]

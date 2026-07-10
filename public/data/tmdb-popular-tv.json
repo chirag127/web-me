@@ -7,8 +7,8 @@
     "overview": "The dynamic between the two contrasting personalities, a seasoned cop who prefers old-school methods and a tech-savvy cop who relies on modern technology for investigations, as they navigate their partnership in solving crimes.",
     "poster": "https://image.tmdb.org/t/p/w342/ajkBXNt5tcNsc0cVpTSZW24oyUg.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/eAXSlqAJwpdsZ59G10lao9OJ4SG.jpg",
-    "rating": 9,
-    "votes": 5,
+    "rating": 8.111,
+    "votes": 9,
     "release": "2026-07-03",
     "genres": [
       80,
@@ -16,7 +16,25 @@
       9648,
       35
     ],
-    "popularity": 747.08
+    "popularity": 727.9824
+  },
+  {
+    "id": 312949,
+    "tmdb_id": 312949,
+    "type": "tv",
+    "title": "Chainsmoker Cat",
+    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+    "rating": 8.6,
+    "votes": 11,
+    "release": "2026-07-03",
+    "genres": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 472.8364
   },
   {
     "id": 124364,
@@ -26,15 +44,15 @@
     "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.503,
-    "votes": 3944,
+    "rating": 8.505,
+    "votes": 3952,
     "release": "2022-02-20",
     "genres": [
       9648,
       18,
       10765
     ],
-    "popularity": 422.8659
+    "popularity": 394.3642
   },
   {
     "id": 94997,
@@ -45,14 +63,32 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.366,
-    "votes": 6512,
+    "votes": 6526,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 412.7348
+    "popularity": 395.1918
+  },
+  {
+    "id": 94664,
+    "tmdb_id": 94664,
+    "type": "tv",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.479,
+    "votes": 1554,
+    "release": "2021-01-11",
+    "genres": [
+      10759,
+      16,
+      10765
+    ],
+    "popularity": 309.8209
   },
   {
     "id": 4304,
@@ -66,25 +102,7 @@
     "votes": 4,
     "release": "2003-04-28",
     "genres": [],
-    "popularity": 285.1086
-  },
-  {
-    "id": 94664,
-    "tmdb_id": 94664,
-    "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.479,
-    "votes": 1552,
-    "release": "2021-01-11",
-    "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 310.3409
+    "popularity": 189.9817
   },
   {
     "id": 2734,
@@ -95,14 +113,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/iofokHZoUB4Qhik4PflvJl8TT6a.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
     "rating": 7.953,
-    "votes": 4277,
+    "votes": 4280,
     "release": "1999-09-20",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 270.275
+    "popularity": 266.9215
   },
   {
     "id": 241002,
@@ -118,41 +136,7 @@
     "genres": [
       16
     ],
-    "popularity": 236.7658
-  },
-  {
-    "id": 17892,
-    "tmdb_id": 17892,
-    "type": "tv",
-    "title": "Unter uns",
-    "overview": "Unter uns is a German television soap opera, first broadcast on RTL on 28 November 1994. Centered around the lives of the people in a residential house, which is set in the fictional Schillerallee in Cologne. Since the show debuted the baker's family Weigel is the series core family. Unter uns isn't based on a foreign soap opera like Verbotene Liebe or Gute Zeiten, schlechte Zeiten. After Gute Zeiten, schlechte Zeiten, the show was the second daily soap for RTL, followed years later in 2006 by Alles was zählt. The show aired its 3,500th episode on 30 December 2008.",
-    "poster": "https://image.tmdb.org/t/p/w342/aD1QIba9mohAsdPHCjpWtrlumyp.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4Kw16UfxZ4jTOmlXIBMOtgVpAM2.jpg",
-    "rating": 7.8,
-    "votes": 5,
-    "release": "1994-11-28",
-    "genres": [
-      10766
-    ],
-    "popularity": 162.5052
-  },
-  {
-    "id": 312949,
-    "tmdb_id": 312949,
-    "type": "tv",
-    "title": "Chainsmoker Cat",
-    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.4,
-    "votes": 9,
-    "release": "2026-07-03",
-    "genres": [
-      16,
-      35,
-      10765
-    ],
-    "popularity": 378.8917
+    "popularity": 211.7346
   },
   {
     "id": 79744,
@@ -162,15 +146,15 @@
     "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
     "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
-    "rating": 8.549,
-    "votes": 3361,
+    "rating": 8.548,
+    "votes": 3364,
     "release": "2018-10-16",
     "genres": [
       80,
       18,
       35
     ],
-    "popularity": 231.9076
+    "popularity": 224.1698
   },
   {
     "id": 125988,
@@ -180,31 +164,32 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.168,
-    "votes": 2190,
+    "rating": 8.2,
+    "votes": 2201,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 228.8736
+    "popularity": 226.2373
   },
   {
-    "id": 299167,
-    "tmdb_id": 299167,
+    "id": 1622,
+    "tmdb_id": 1622,
     "type": "tv",
-    "title": "Dutton Ranch",
-    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.262,
-    "votes": 389,
-    "release": "2026-05-15",
+    "title": "Supernatural",
+    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
+    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+    "rating": 8.312,
+    "votes": 8521,
+    "release": "2005-09-13",
     "genres": [
-      37,
-      18
+      18,
+      9648,
+      10765
     ],
-    "popularity": 204.5176
+    "popularity": 196.6288
   },
   {
     "id": 549,
@@ -221,42 +206,7 @@
       80,
       18
     ],
-    "popularity": 207.0234
-  },
-  {
-    "id": 1434,
-    "tmdb_id": 1434,
-    "type": "tv",
-    "title": "Family Guy",
-    "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
-    "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
-    "rating": 7.405,
-    "votes": 5001,
-    "release": "1999-01-31",
-    "genres": [
-      16,
-      35
-    ],
-    "popularity": 195.5011
-  },
-  {
-    "id": 1622,
-    "tmdb_id": 1622,
-    "type": "tv",
-    "title": "Supernatural",
-    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
-    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
-    "rating": 8.311,
-    "votes": 8515,
-    "release": "2005-09-13",
-    "genres": [
-      18,
-      9648,
-      10765
-    ],
-    "popularity": 207.6063
+    "popularity": 197.181
   },
   {
     "id": 5920,
@@ -267,14 +217,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg",
     "rating": 8.357,
-    "votes": 4390,
+    "votes": 4391,
     "release": "2008-09-23",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 205.5285
+    "popularity": 205.1894
   },
   {
     "id": 1416,
@@ -285,12 +235,47 @@
     "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
     "rating": 8.209,
-    "votes": 10957,
+    "votes": 10958,
     "release": "2005-03-27",
     "genres": [
       18
     ],
-    "popularity": 204.731
+    "popularity": 195.1347
+  },
+  {
+    "id": 299167,
+    "tmdb_id": 299167,
+    "type": "tv",
+    "title": "Dutton Ranch",
+    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+    "rating": 9.246,
+    "votes": 398,
+    "release": "2026-05-15",
+    "genres": [
+      37,
+      18
+    ],
+    "popularity": 187.4425
+  },
+  {
+    "id": 322055,
+    "tmdb_id": 322055,
+    "type": "tv",
+    "title": "The Prosecutor's Proposal",
+    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
+    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
+    "rating": 5,
+    "votes": 4,
+    "release": "2026-06-25",
+    "genres": [
+      9648,
+      80,
+      18
+    ],
+    "popularity": 244.8945
   },
   {
     "id": 95897,
@@ -306,7 +291,24 @@
     "genres": [
       16
     ],
-    "popularity": 198.4605
+    "popularity": 186.9328
+  },
+  {
+    "id": 1434,
+    "tmdb_id": 1434,
+    "type": "tv",
+    "title": "Family Guy",
+    "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+    "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
+    "rating": 7.405,
+    "votes": 5003,
+    "release": "1999-01-31",
+    "genres": [
+      16,
+      35
+    ],
+    "popularity": 173.7087
   },
   {
     "id": 82452,
@@ -316,8 +318,8 @@
     "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
     "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-    "rating": 7.801,
-    "votes": 1228,
+    "rating": 7.805,
+    "votes": 1235,
     "release": "2024-02-22",
     "genres": [
       10759,
@@ -325,24 +327,22 @@
       18,
       10751
     ],
-    "popularity": 190.0948
+    "popularity": 174.3884
   },
   {
-    "id": 4614,
-    "tmdb_id": 4614,
+    "id": 316540,
+    "tmdb_id": 316540,
     "type": "tv",
-    "title": "NCIS",
-    "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
-    "poster": "https://image.tmdb.org/t/p/w342/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
-    "rating": 7.614,
-    "votes": 2525,
-    "release": "2003-09-23",
+    "title": "Bittersweet Love",
+    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
+    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-07-03",
     "genres": [
-      80,
-      18,
-      10759
+      18
     ],
-    "popularity": 183.7261
+    "popularity": 204.0836
   }
 ]

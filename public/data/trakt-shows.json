@@ -1,5 +1,35 @@
 [
   {
+    "id": 13518951683,
+    "watched_at": "2026-07-10T05:57:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 1,
+      "title": "Episode 1",
+      "ids": {
+        "trakt": 12880642,
+        "tvdb": 11006247,
+        "imdb": "tt36131221",
+        "tmdb": 6027264,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "If Wishes Could Kill",
+      "year": 2026,
+      "ids": {
+        "trakt": 278535,
+        "slug": "if-wishes-could-kill",
+        "tvdb": 461062,
+        "imdb": "tt36104233",
+        "tmdb": 285838,
+        "tvrage": null
+      }
+    }
+  },
+  {
     "id": 12036708489,
     "watched_at": "2026-02-21T05:38:00.000Z",
     "action": "watch",
@@ -5953,36 +5983,6 @@
         "tvdb": 4516558,
         "imdb": "tt2833352",
         "tmdb": 64761,
-        "tvrage": null
-      }
-    },
-    "show": {
-      "title": "The Big Bang Theory",
-      "year": 2007,
-      "ids": {
-        "trakt": 1409,
-        "slug": "the-big-bang-theory",
-        "tvdb": 80379,
-        "imdb": "tt0898266",
-        "tmdb": 1418,
-        "tvrage": null
-      }
-    }
-  },
-  {
-    "id": 12022457152,
-    "watched_at": "2026-02-15T15:11:00.000Z",
-    "action": "watch",
-    "type": "episode",
-    "episode": {
-      "season": 6,
-      "number": 21,
-      "title": "The Closure Alternative",
-      "ids": {
-        "trakt": 75500,
-        "tvdb": 4516557,
-        "imdb": "tt2833366",
-        "tmdb": 64758,
         "tvrage": null
       }
     },

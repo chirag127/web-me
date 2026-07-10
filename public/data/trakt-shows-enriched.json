@@ -1,5 +1,77 @@
 [
   {
+    "id": 13518951683,
+    "watched_at": "2026-07-10T05:57:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "season": 1,
+      "number": 1,
+      "title": "Episode 1",
+      "ids": {
+        "trakt": 12880642,
+        "tvdb": 11006247,
+        "imdb": "tt36131221",
+        "tmdb": 6027264,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "If Wishes Could Kill",
+      "year": 2026,
+      "ids": {
+        "trakt": 278535,
+        "slug": "if-wishes-could-kill",
+        "tvdb": 461062,
+        "imdb": "tt36104233",
+        "tmdb": 285838,
+        "tvrage": null
+      }
+    },
+    "_tmdb": {
+      "poster": "https://image.tmdb.org/t/p/w342/2CfTNVaR8kZQkWtWWE3Cntaiq33.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w780/zV9WYOfFr4MAnzXXD8PR5J6JnN3.jpg",
+      "overview": "A mysterious app promises wishes — then starts a countdown to death. As a group of teens becomes entangled, they must break the deadly chain to survive.",
+      "rating": 8.088,
+      "votes": 147,
+      "runtime": 60,
+      "genres": [
+        "Mystery",
+        "Drama"
+      ],
+      "cast": [
+        {
+          "name": "Jeon So-young",
+          "character": "Yoo Se-ah",
+          "photo": "https://image.tmdb.org/t/p/w185/b66oPHkDcqdVaXgYR8yf291sfjU.jpg"
+        },
+        {
+          "name": "Baek Sun-ho",
+          "character": "Kim Gun-woo",
+          "photo": "https://image.tmdb.org/t/p/w185/laCfweiT6RDh8mf439OrGh9blD1.jpg"
+        },
+        {
+          "name": "Kang Mi-na",
+          "character": "Im Na-ri",
+          "photo": "https://image.tmdb.org/t/p/w185/sIGBlUCXt8pBqZhjesm4PKthEIn.jpg"
+        },
+        {
+          "name": "Hyun Woo-seok",
+          "character": "Kang Ha-joon",
+          "photo": "https://image.tmdb.org/t/p/w185/ij9JemBr4CMHXFjiNWIPVFvzIw0.jpg"
+        },
+        {
+          "name": "Lee Hyo-je",
+          "character": "Choi Hyeong-wook",
+          "photo": "https://image.tmdb.org/t/p/w185/wt0uE34RJCsELecJy27VlkqqZlb.jpg"
+        }
+      ],
+      "tagline": "Got a wish worth dying for?",
+      "status": "Ended",
+      "homepage": "https://www.netflix.com/title/81975196"
+    }
+  },
+  {
     "id": 12036708489,
     "watched_at": "2026-02-21T05:38:00.000Z",
     "action": "watch",
@@ -105,7 +177,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/u23G9KZregWHs1use6ir1fX27gl.jpg",
       "overview": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
       "rating": 8.202,
-      "votes": 7888,
+      "votes": 7889,
       "runtime": 0,
       "genres": [
         "Comedy",
@@ -249,7 +321,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/rwYvhVv0vwbulMwxOfEsuAr1JrT.jpg",
       "overview": "Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door.",
       "rating": 7.92,
-      "votes": 12550,
+      "votes": 12556,
       "runtime": 22,
       "genres": [
         "Comedy"
