@@ -2,6 +2,834 @@
   {
     "artist": {
       "mbid": "",
+      "#text": "AI News: GPT"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "OpenAI SuperApp",
+    "url": "https://www.last.fm/music/AI+News:+GPT/_/OpenAI+SuperApp",
+    "date": {
+      "uts": "1783701838",
+      "#text": "10 Jul 2026, 16:43"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "GPT"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "6",
+    "url": "https://www.last.fm/music/GPT/_/6",
+    "date": {
+      "uts": "1783701798",
+      "#text": "10 Jul 2026, 16:43"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Dr Shashi Tharoor MP"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Britain Does Owe Reparations",
+    "url": "https://www.last.fm/music/Dr+Shashi+Tharoor+MP/_/Britain+Does+Owe+Reparations",
+    "date": {
+      "uts": "1783701138",
+      "#text": "10 Jul 2026, 16:32"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Shashi Tharoor Vs Vikram Sampath"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Debating Heritage, History & Hubris",
+    "url": "https://www.last.fm/music/Shashi+Tharoor+Vs+Vikram+Sampath/_/Debating+Heritage,+History+&+Hubris",
+    "date": {
+      "uts": "1783700591",
+      "#text": "10 Jul 2026, 16:23"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Brut India"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Is Reservation Compromising Merit? Shashi Tharoor & D.Y. Chandrachud Answers",
+    "url": "https://www.last.fm/music/Brut+India/_/Is+Reservation+Compromising+Merit%3F+Shashi+Tharoor+&+D.Y.+Chandrachud+Answers",
+    "date": {
+      "uts": "1783700356",
+      "#text": "10 Jul 2026, 16:19"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Are Men Unsafe in India?"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "National Commission for Men Bill Introduced",
+    "url": "https://www.last.fm/music/Are+Men+Unsafe+in+India%3F/_/National+Commission+for+Men+Bill+Introduced",
+    "date": {
+      "uts": "1783699964",
+      "#text": "10 Jul 2026, 16:12"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "In A Dream EP Live",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/In+A+Dream+EP+Live",
+    "date": {
+      "uts": "1783698346",
+      "#text": "10 Jul 2026, 15:45"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Blue Neighbourhood Trilogy (Director’s Cut)",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Blue+Neighbourhood+Trilogy+(Director%E2%80%99s+Cut)",
+    "date": {
+      "uts": "1783697822",
+      "#text": "10 Jul 2026, 15:37"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "BIG BASH LEAGUE IN INDIA"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "PM Modi's Major Cricket Announcement",
+    "url": "https://www.last.fm/music/BIG+BASH+LEAGUE+IN+INDIA/_/PM+Modi%27s+Major+Cricket+Announcement",
+    "date": {
+      "uts": "1783697589",
+      "#text": "10 Jul 2026, 15:33"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Iran's 'Savage' Threat To Europe After Gulf Strikes"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Ankit Agrawal Study IQ",
+    "url": "https://www.last.fm/music/Iran%27s+%27Savage%27+Threat+To+Europe+After+Gulf+Strikes/_/Ankit+Agrawal+Study+IQ",
+    "date": {
+      "uts": "1783673914",
+      "#text": "10 Jul 2026, 08:58"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
+      "#text": "Harry Styles"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/7940fbb1df766b4683951aed490a8b5a.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/7940fbb1df766b4683951aed490a8b5a.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/7940fbb1df766b4683951aed490a8b5a.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/7940fbb1df766b4683951aed490a8b5a.jpg"
+      }
+    ],
+    "mbid": "bf02e5a2-3f7e-4e1f-8253-b592c11befea",
+    "album": {
+      "mbid": "5c8a772d-fb0a-46ab-a5d8-6317546b727a",
+      "#text": "Fine Line"
+    },
+    "name": "Adore You",
+    "url": "https://www.last.fm/music/Harry+Styles/_/Adore+You",
+    "date": {
+      "uts": "1783669491",
+      "#text": "10 Jul 2026, 07:44"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
+      "#text": "Charlie Puth"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "3acffba9-6cb5-49cc-8b10-80f97206f5f0",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "That's Not How This Works (feat. dan + shay)",
+    "url": "https://www.last.fm/music/Charlie+Puth/_/That%27s+Not+How+This+Works+(feat.+dan+%252B+shay)",
+    "date": {
+      "uts": "1783669279",
+      "#text": "10 Jul 2026, 07:41"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "bc153bd5-7963-4195-a6fb-c38588f31007",
+      "#text": "Ruel"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/eacc91cc917f7f7ee54a743db731cb70.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/eacc91cc917f7f7ee54a743db731cb70.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/eacc91cc917f7f7ee54a743db731cb70.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/eacc91cc917f7f7ee54a743db731cb70.jpg"
+      }
+    ],
+    "mbid": "3f809996-08c9-41f6-ab68-e89fa0bf3c65",
+    "album": {
+      "mbid": "2c629936-0e61-4f49-a93d-266f604a40ca",
+      "#text": "Younger"
+    },
+    "name": "Younger",
+    "url": "https://www.last.fm/music/Ruel/_/Younger",
+    "date": {
+      "uts": "1783668989",
+      "#text": "10 Jul 2026, 07:36"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f5882ddaea5c7724e229b86849df4daa.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f5882ddaea5c7724e229b86849df4daa.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f5882ddaea5c7724e229b86849df4daa.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f5882ddaea5c7724e229b86849df4daa.jpg"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "8f1e2ccc-43b3-40d9-8ddf-8c2eedb630d7",
+      "#text": "Angel Baby"
+    },
+    "name": "Angel Baby",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Angel+Baby",
+    "date": {
+      "uts": "1783668767",
+      "#text": "10 Jul 2026, 07:32"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e116e0be-c371-4d57-bc09-e2d762d82540",
+      "#text": "Jeremy Zucker"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Indie Mix"
+    },
+    "name": "comethru",
+    "url": "https://www.last.fm/music/Jeremy+Zucker/_/comethru",
+    "date": {
+      "uts": "1783668577",
+      "#text": "10 Jul 2026, 07:29"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
+      "#text": "Shawn Mendes"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ae06e2fcdfade4102007dcc5ffa9423d.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ae06e2fcdfade4102007dcc5ffa9423d.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ae06e2fcdfade4102007dcc5ffa9423d.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ae06e2fcdfade4102007dcc5ffa9423d.jpg"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Illuminate (Deluxe)"
+    },
+    "name": "Three Empty Words",
+    "url": "https://www.last.fm/music/Shawn+Mendes/_/Three+Empty+Words",
+    "date": {
+      "uts": "1783668353",
+      "#text": "10 Jul 2026, 07:25"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "b8a7c51f-362c-4dcb-a259-bc6e0095f0a6",
+      "#text": "Ed Sheeran"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/d904dd085fb44fabcfd0834b8d2a5d92.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/d904dd085fb44fabcfd0834b8d2a5d92.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/d904dd085fb44fabcfd0834b8d2a5d92.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/d904dd085fb44fabcfd0834b8d2a5d92.png"
+      }
+    ],
+    "mbid": "83183d93-a7ec-4470-95f7-25a99156eba3",
+    "album": {
+      "mbid": "3ec0cc3a-d3ff-4dff-8509-a133637debca",
+      "#text": "x (Deluxe Edition)"
+    },
+    "name": "Photograph",
+    "url": "https://www.last.fm/music/Ed+Sheeran/_/Photograph",
+    "date": {
+      "uts": "1783668078",
+      "#text": "10 Jul 2026, 07:21"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
+      "#text": "Harry Styles"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/7940fbb1df766b4683951aed490a8b5a.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/7940fbb1df766b4683951aed490a8b5a.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/7940fbb1df766b4683951aed490a8b5a.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/7940fbb1df766b4683951aed490a8b5a.jpg"
+      }
+    ],
+    "mbid": "60df9158-1815-4b02-887f-d4c4b5b63579",
+    "album": {
+      "mbid": "5c8a772d-fb0a-46ab-a5d8-6317546b727a",
+      "#text": "Fine Line"
+    },
+    "name": "Falling",
+    "url": "https://www.last.fm/music/Harry+Styles/_/Falling",
+    "date": {
+      "uts": "1783667829",
+      "#text": "10 Jul 2026, 07:17"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/0aba7bb154427e3825073d9fd0c4f9ea.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "7f2ef001-7a96-49d3-8978-e22d3ad7b138",
+      "#text": "WILD"
+    },
+    "name": "EASE",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/EASE",
+    "date": {
+      "uts": "1783667585",
+      "#text": "10 Jul 2026, 07:13"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f018307055339656a43de6f27b992268.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f018307055339656a43de6f27b992268.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f018307055339656a43de6f27b992268.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f018307055339656a43de6f27b992268.jpg"
+      }
+    ],
+    "mbid": "aa261a18-db7e-4021-9f05-079c42a26181",
+    "album": {
+      "mbid": "",
+      "#text": "Blue Neighbourhood (Deluxe)"
+    },
+    "name": "BITE",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/BITE",
+    "date": {
+      "uts": "1783667283",
+      "#text": "10 Jul 2026, 07:08"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": "Love Diary"
+    },
+    "name": "HEAVEN",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/HEAVEN",
+    "date": {
+      "uts": "1783667029",
+      "#text": "10 Jul 2026, 07:03"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f018307055339656a43de6f27b992268.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f018307055339656a43de6f27b992268.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f018307055339656a43de6f27b992268.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f018307055339656a43de6f27b992268.jpg"
+      }
+    ],
+    "mbid": "34a5f529-f8bf-4e74-ae31-77e2e3325f66",
+    "album": {
+      "mbid": "",
+      "#text": "Blue Neighbourhood (Deluxe)"
+    },
+    "name": "TALK ME DOWN",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/TALK+ME+DOWN",
+    "date": {
+      "uts": "1783666783",
+      "#text": "10 Jul 2026, 06:59"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "#text": "Troye Sivan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
+      }
+    ],
+    "mbid": "0758cc5d-9b6d-4791-b600-87ebd14c4f1f",
+    "album": {
+      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
+      "#text": "Bloom"
+    },
+    "name": "Animal",
+    "url": "https://www.last.fm/music/Troye+Sivan/_/Animal",
+    "date": {
+      "uts": "1783666532",
+      "#text": "10 Jul 2026, 06:55"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
       "#text": "Better Stack"
     },
     "streamable": "0",
@@ -2769,834 +3597,6 @@
     "date": {
       "uts": "1783581335",
       "#text": "09 Jul 2026, 07:15"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "The Efficient Engineer"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "The San Bruno Pipeline Explosion",
-    "url": "https://www.last.fm/music/The+Efficient+Engineer/_/The+San+Bruno+Pipeline+Explosion",
-    "date": {
-      "uts": "1783581194",
-      "#text": "09 Jul 2026, 07:13"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "How does the space station never run out of oxygen?"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Alvaro Romero-Calvo and Theo St Francis",
-    "url": "https://www.last.fm/music/How+does+the+space+station+never+run+out+of+oxygen%3F/_/Alvaro+Romero-Calvo+and+Theo+St+Francis",
-    "date": {
-      "uts": "1783581056",
-      "#text": "09 Jul 2026, 07:10"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Jake Van Clief"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Welcome, and what Afternoon Tea is",
-    "url": "https://www.last.fm/music/Jake+Van+Clief/_/Welcome,+and+what+Afternoon+Tea+is",
-    "date": {
-      "uts": "1783580671",
-      "#text": "09 Jul 2026, 07:04"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Matt Wolfe"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Logo Reveals & Lower Thirds",
-    "url": "https://www.last.fm/music/Matt+Wolfe/_/Logo+Reveals+&+Lower+Thirds",
-    "date": {
-      "uts": "1783580269",
-      "#text": "09 Jul 2026, 06:57"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Matt Wolfe"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Stock Footage On Demand",
-    "url": "https://www.last.fm/music/Matt+Wolfe/_/Stock+Footage+On+Demand",
-    "date": {
-      "uts": "1783580237",
-      "#text": "09 Jul 2026, 06:57"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Matt Wolfe"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Background VFX With Gemini",
-    "url": "https://www.last.fm/music/Matt+Wolfe/_/Background+VFX+With+Gemini",
-    "date": {
-      "uts": "1783580126",
-      "#text": "09 Jul 2026, 06:55"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Matt Wolfe"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "The Runway Intro Formula",
-    "url": "https://www.last.fm/music/Matt+Wolfe/_/The+Runway+Intro+Formula",
-    "date": {
-      "uts": "1783579978",
-      "#text": "09 Jul 2026, 06:52"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Matt Wolfe"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Why AI VFX (And Not AI Slop)",
-    "url": "https://www.last.fm/music/Matt+Wolfe/_/Why+AI+VFX+(And+Not+AI+Slop)",
-    "date": {
-      "uts": "1783579938",
-      "#text": "09 Jul 2026, 06:52"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Fireship"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "NGINX Explained in 100 Seconds",
-    "url": "https://www.last.fm/music/Fireship/_/NGINX+Explained+in+100+Seconds",
-    "date": {
-      "uts": "1783579369",
-      "#text": "09 Jul 2026, 06:42"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "33cf3954-10af-4dcb-985f-9420d1fa4168",
-      "#text": "Dan + Shay"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e7752da88d4e13640f558e480f81115f.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e7752da88d4e13640f558e480f81115f.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e7752da88d4e13640f558e480f81115f.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e7752da88d4e13640f558e480f81115f.jpg"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "8dd7d34d-77ab-456b-b834-da433b6b0425",
-      "#text": "Good Things"
-    },
-    "name": "10,000 Hours",
-    "url": "https://www.last.fm/music/Dan+%252B+Shay/_/10,000+Hours",
-    "date": {
-      "uts": "1783579357",
-      "#text": "09 Jul 2026, 06:42"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "33cf3954-10af-4dcb-985f-9420d1fa4168",
-      "#text": "Dan + Shay"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e7752da88d4e13640f558e480f81115f.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e7752da88d4e13640f558e480f81115f.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e7752da88d4e13640f558e480f81115f.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e7752da88d4e13640f558e480f81115f.jpg"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "8dd7d34d-77ab-456b-b834-da433b6b0425",
-      "#text": "Good Things"
-    },
-    "name": "10,000 Hours",
-    "url": "https://www.last.fm/music/Dan+%252B+Shay/_/10,000+Hours",
-    "date": {
-      "uts": "1783579054",
-      "#text": "09 Jul 2026, 06:37"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Fireship"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Kubernetes Explained in 100 Seconds",
-    "url": "https://www.last.fm/music/Fireship/_/Kubernetes+Explained+in+100+Seconds",
-    "date": {
-      "uts": "1783578964",
-      "#text": "09 Jul 2026, 06:36"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Fireship"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "100+ Docker Concepts you Need to Know",
-    "url": "https://www.last.fm/music/Fireship/_/100%252B+Docker+Concepts+you+Need+to+Know",
-    "date": {
-      "uts": "1783578837",
-      "#text": "09 Jul 2026, 06:33"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Singh in USA"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "The new wave after RAG",
-    "url": "https://www.last.fm/music/Singh+in+USA/_/The+new+wave+after+RAG",
-    "date": {
-      "uts": "1783578770",
-      "#text": "09 Jul 2026, 06:32"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Demo: E"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "commerce Agent Support",
-    "url": "https://www.last.fm/music/Demo:+E/_/commerce+Agent+Support",
-    "date": {
-      "uts": "1783578670",
-      "#text": "09 Jul 2026, 06:31"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Cole Medin"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Two Types of AI Agents",
-    "url": "https://www.last.fm/music/Cole+Medin/_/Two+Types+of+AI+Agents",
-    "date": {
-      "uts": "1783578587",
-      "#text": "09 Jul 2026, 06:29"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Demo: E"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "commerce Agent Support",
-    "url": "https://www.last.fm/music/Demo:+E/_/commerce+Agent+Support",
-    "date": {
-      "uts": "1783578068",
-      "#text": "09 Jul 2026, 06:21"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Cole Medin"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Production Agent System Architecture",
-    "url": "https://www.last.fm/music/Cole+Medin/_/Production+Agent+System+Architecture",
-    "date": {
-      "uts": "1783578023",
-      "#text": "09 Jul 2026, 06:20"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Cole Medin"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Why Personal Agents Don't Scale",
-    "url": "https://www.last.fm/music/Cole+Medin/_/Why+Personal+Agents+Don%27t+Scale",
-    "date": {
-      "uts": "1783577966",
-      "#text": "09 Jul 2026, 06:19"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Cole Medin"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Two Types of AI Agents",
-    "url": "https://www.last.fm/music/Cole+Medin/_/Two+Types+of+AI+Agents",
-    "date": {
-      "uts": "1783577924",
-      "#text": "09 Jul 2026, 06:18"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
-      "#text": "Shawn Mendes"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/05867a4ad544072ed7256074d4477c09.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/05867a4ad544072ed7256074d4477c09.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/05867a4ad544072ed7256074d4477c09.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/05867a4ad544072ed7256074d4477c09.png"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "384d156d-f1c5-4fa6-97cc-73be74a6c75c",
-      "#text": "Handwritten (Revisited)"
-    },
-    "name": "Stitches",
-    "url": "https://www.last.fm/music/Shawn+Mendes/_/Stitches",
-    "date": {
-      "uts": "1783575152",
-      "#text": "09 Jul 2026, 05:32"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f5882ddaea5c7724e229b86849df4daa.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f5882ddaea5c7724e229b86849df4daa.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f5882ddaea5c7724e229b86849df4daa.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f5882ddaea5c7724e229b86849df4daa.jpg"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "8f1e2ccc-43b3-40d9-8ddf-8c2eedb630d7",
-      "#text": "Angel Baby"
-    },
-    "name": "Angel Baby",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Angel+Baby",
-    "date": {
-      "uts": "1783574983",
-      "#text": "09 Jul 2026, 05:29"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/f5882ddaea5c7724e229b86849df4daa.jpg"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/f5882ddaea5c7724e229b86849df4daa.jpg"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/f5882ddaea5c7724e229b86849df4daa.jpg"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/f5882ddaea5c7724e229b86849df4daa.jpg"
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "8f1e2ccc-43b3-40d9-8ddf-8c2eedb630d7",
-      "#text": "Angel Baby"
-    },
-    "name": "Angel Baby",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Angel+Baby",
-    "date": {
-      "uts": "1783573454",
-      "#text": "09 Jul 2026, 05:04"
     }
   }
 ]

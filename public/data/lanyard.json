@@ -20,8 +20,8 @@
     "username": "chiragsinghal127"
   },
   "activities": [],
-  "discord_status": "online",
-  "active_on_discord_web": true,
+  "discord_status": "offline",
+  "active_on_discord_web": false,
   "active_on_discord_desktop": false,
   "active_on_discord_mobile": false,
   "active_on_discord_embedded": false,

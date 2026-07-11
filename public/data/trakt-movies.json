@@ -1,5 +1,21 @@
 [
   {
+    "id": 13520801325,
+    "watched_at": "2026-07-10T08:39:00.000Z",
+    "action": "checkin",
+    "type": "movie",
+    "movie": {
+      "title": "Hack Your Health: The Secrets of Your Gut",
+      "year": 2024,
+      "ids": {
+        "trakt": 1028169,
+        "slug": "hack-your-health-the-secrets-of-your-gut-2024",
+        "imdb": "tt31316096",
+        "tmdb": 1266701
+      }
+    }
+  },
+  {
     "id": 12037202303,
     "watched_at": "2026-02-21T13:10:00.000Z",
     "action": "watch",

@@ -1,5 +1,22 @@
 [
   {
+    "id": 1632181,
+    "tmdb_id": 1632181,
+    "type": "movie",
+    "title": "Accidental Partners",
+    "overview": "Two women discover they were both scammed by the same man (who also got them pregnant). They form an alliance to take revenge.",
+    "poster": "https://image.tmdb.org/t/p/w342/sr1Yoj6XLPTWYcbDoBy67xivW4I.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/iCML6fBe3X0y06P33bM7dyYXPKZ.jpg",
+    "rating": 9.053,
+    "votes": 300,
+    "release": "2026-03-12",
+    "genres": [
+      35,
+      10749
+    ],
+    "popularity": 12.5284
+  },
+  {
     "id": 1007757,
     "tmdb_id": 1007757,
     "type": "movie",
@@ -7,8 +24,8 @@
     "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
     "poster": "https://image.tmdb.org/t/p/w342/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
-    "rating": 8.914,
-    "votes": 1895,
+    "rating": 8.912,
+    "votes": 1901,
     "release": "2026-05-01",
     "genres": [
       12,
@@ -16,7 +33,7 @@
       10751,
       14
     ],
-    "popularity": 90.1445
+    "popularity": 86.3449
   },
   {
     "id": 278,
@@ -26,14 +43,14 @@
     "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
     "poster": "https://image.tmdb.org/t/p/w342/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
-    "rating": 8.724,
-    "votes": 30724,
+    "rating": 8.7,
+    "votes": 30733,
     "release": "1994-09-23",
     "genres": [
       18,
       80
     ],
-    "popularity": 166.9172
+    "popularity": 161.3019
   },
   {
     "id": 936075,
@@ -43,14 +60,14 @@
     "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
     "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
-    "rating": 8.702,
-    "votes": 3374,
+    "rating": 8.7,
+    "votes": 3401,
     "release": "2026-04-22",
     "genres": [
       10402,
       18
     ],
-    "popularity": 178.3103
+    "popularity": 170.165
   },
   {
     "id": 238,
@@ -61,13 +78,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tSPT36ZKlP2WVHJLM4cQPLSzv3b.jpg",
     "rating": 8.687,
-    "votes": 23133,
+    "votes": 23141,
     "release": "1972-03-14",
     "genres": [
       18,
       80
     ],
-    "popularity": 42.152
+    "popularity": 39.9747
   },
   {
     "id": 687163,
@@ -77,14 +94,14 @@
     "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
     "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-    "rating": 8.674,
-    "votes": 5855,
+    "rating": 8.7,
+    "votes": 5890,
     "release": "2026-03-15",
     "genres": [
       878,
       12
     ],
-    "popularity": 164.3082
+    "popularity": 167.206
   },
   {
     "id": 240,
@@ -95,13 +112,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
     "rating": 8.571,
-    "votes": 14024,
+    "votes": 14030,
     "release": "1974-12-20",
     "genres": [
       18,
       80
     ],
-    "popularity": 27.193
+    "popularity": 27.6302
   },
   {
     "id": 424,
@@ -111,15 +128,15 @@
     "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
     "poster": "https://image.tmdb.org/t/p/w342/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
-    "rating": 8.57,
-    "votes": 17581,
+    "rating": 8.6,
+    "votes": 17584,
     "release": "1993-12-15",
     "genres": [
       18,
       36,
       10752
     ],
-    "popularity": 23.7019
+    "popularity": 22.6947
   },
   {
     "id": 389,
@@ -130,12 +147,12 @@
     "poster": "https://image.tmdb.org/t/p/w342/zhG3vKWyDRaZYoaww1UVAi29T9h.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/qqHQsStV6exghCM7zbObuYBiYxw.jpg",
     "rating": 8.565,
-    "votes": 10100,
+    "votes": 10101,
     "release": "1957-04-10",
     "genres": [
       18
     ],
-    "popularity": 24.6732
+    "popularity": 24.2041
   },
   {
     "id": 1330021,
@@ -145,14 +162,14 @@
     "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
     "poster": "https://image.tmdb.org/t/p/w342/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
-    "rating": 8.553,
-    "votes": 705,
+    "rating": 8.6,
+    "votes": 708,
     "release": "2026-05-07",
     "genres": [
       18,
       9648
     ],
-    "popularity": 21.1297
+    "popularity": 21.6499
   },
   {
     "id": 1383731,
@@ -162,14 +179,14 @@
     "overview": "Nikki's life is shattered when her daughter is kidnapped. Thrust into the criminal underworld while hunted by cops and military, she must fight to rescue her child.",
     "poster": "https://image.tmdb.org/t/p/w342/icOZpnGuH9YrEaW3wrw5GJaXGih.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/vpuPY4UziUCxv7gYYoaZQ3LX7to.jpg",
-    "rating": 8.547,
-    "votes": 411,
+    "rating": 8.552,
+    "votes": 415,
     "release": "2026-02-20",
     "genres": [
       28,
       53
     ],
-    "popularity": 19.2719
+    "popularity": 18.7465
   },
   {
     "id": 129,
@@ -180,14 +197,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/dyJvKsNs2KP8qQnAXbRwDjblViy.jpg",
     "rating": 8.535,
-    "votes": 18505,
+    "votes": 18510,
     "release": "2001-07-20",
     "genres": [
       16,
       10751,
       14
     ],
-    "popularity": 36.4351
+    "popularity": 36.1825
   },
   {
     "id": 155,
@@ -198,14 +215,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/dqK9Hag1054tghRQSqLSfrkvQnA.jpg",
     "rating": 8.532,
-    "votes": 36050,
+    "votes": 36060,
     "release": "2008-07-16",
     "genres": [
       28,
       80,
       53
     ],
-    "popularity": 40.1474
+    "popularity": 40.2521
   },
   {
     "id": 19404,
@@ -223,7 +240,7 @@
       18,
       10749
     ],
-    "popularity": 13.7415
+    "popularity": 13.1624
   },
   {
     "id": 497,
@@ -234,14 +251,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/b6HWTOxn1xevvyHU2K9ICvaRU6g.jpg",
     "rating": 8.507,
-    "votes": 19405,
+    "votes": 19412,
     "release": "1999-12-10",
     "genres": [
       14,
       18,
       80
     ],
-    "popularity": 26.7131
+    "popularity": 27.6306
   },
   {
     "id": 122,
@@ -252,14 +269,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
     "rating": 8.5,
-    "votes": 26801,
+    "votes": 26810,
     "release": "2003-12-17",
     "genres": [
       12,
       14,
       28
     ],
-    "popularity": 36.8959
+    "popularity": 38.5869
   },
   {
     "id": 1181678,
@@ -276,7 +293,7 @@
       35,
       10749
     ],
-    "popularity": 10.7759
+    "popularity": 10.9725
   },
   {
     "id": 496243,
@@ -287,14 +304,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/wCuUKiRaz0wEESsYqmQy005xvTE.jpg",
     "rating": 8.492,
-    "votes": 20838,
+    "votes": 20846,
     "release": "2019-05-30",
     "genres": [
       35,
       53,
       18
     ],
-    "popularity": 29.8527
+    "popularity": 29.4182
   },
   {
     "id": 680,
@@ -304,15 +321,15 @@
     "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
     "poster": "https://image.tmdb.org/t/p/w342/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
-    "rating": 8.482,
-    "votes": 30386,
+    "rating": 8.5,
+    "votes": 30393,
     "release": "1994-09-10",
     "genres": [
       53,
       80,
       35
     ],
-    "popularity": 36.0912
+    "popularity": 35.2742
   },
   {
     "id": 372058,
@@ -322,32 +339,14 @@
     "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
     "poster": "https://image.tmdb.org/t/p/w342/q719jXXEzOoYaps6babgKnONONX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/mMtUybQ6hL24FXo0F3Z4j2KG7kZ.jpg",
-    "rating": 8.5,
-    "votes": 12675,
+    "rating": 8.481,
+    "votes": 12679,
     "release": "2016-07-01",
     "genres": [
       16,
       10749,
       18
     ],
-    "popularity": 26.8368
-  },
-  {
-    "id": 157336,
-    "tmdb_id": 157336,
-    "type": "movie",
-    "title": "Interstellar",
-    "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
-    "poster": "https://image.tmdb.org/t/p/w342/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
-    "rating": 8.481,
-    "votes": 40243,
-    "release": "2014-11-05",
-    "genres": [
-      12,
-      18,
-      878
-    ],
-    "popularity": 61.8413
+    "popularity": 26.5695
   }
 ]

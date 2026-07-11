@@ -5,10 +5,10 @@
     "type": "tv",
     "title": "Pritam and Pedro",
     "overview": "The dynamic between the two contrasting personalities, a seasoned cop who prefers old-school methods and a tech-savvy cop who relies on modern technology for investigations, as they navigate their partnership in solving crimes.",
-    "poster": "https://image.tmdb.org/t/p/w342/ajkBXNt5tcNsc0cVpTSZW24oyUg.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/lC0MtWrnC0SZICFHazagIfVKy0x.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/eAXSlqAJwpdsZ59G10lao9OJ4SG.jpg",
-    "rating": 8.111,
-    "votes": 9,
+    "rating": 8.3,
+    "votes": 8,
     "release": "2026-07-03",
     "genres": [
       80,
@@ -16,7 +16,7 @@
       9648,
       35
     ],
-    "popularity": 727.9824
+    "popularity": 686.0362
   },
   {
     "id": 312949,
@@ -26,33 +26,15 @@
     "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
     "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.6,
-    "votes": 11,
+    "rating": 8.769,
+    "votes": 13,
     "release": "2026-07-03",
     "genres": [
       16,
       35,
       10765
     ],
-    "popularity": 472.8364
-  },
-  {
-    "id": 124364,
-    "tmdb_id": 124364,
-    "type": "tv",
-    "title": "FROM",
-    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.505,
-    "votes": 3952,
-    "release": "2022-02-20",
-    "genres": [
-      9648,
-      18,
-      10765
-    ],
-    "popularity": 394.3642
+    "popularity": 416.1154
   },
   {
     "id": 94997,
@@ -62,15 +44,33 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.366,
-    "votes": 6526,
+    "rating": 8.4,
+    "votes": 6533,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 395.1918
+    "popularity": 373.6276
+  },
+  {
+    "id": 124364,
+    "tmdb_id": 124364,
+    "type": "tv",
+    "title": "FROM",
+    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+    "rating": 8.504,
+    "votes": 3961,
+    "release": "2022-02-20",
+    "genres": [
+      9648,
+      18,
+      10765
+    ],
+    "popularity": 371.5432
   },
   {
     "id": 94664,
@@ -80,29 +80,15 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.479,
-    "votes": 1554,
+    "rating": 8.483,
+    "votes": 1558,
     "release": "2021-01-11",
     "genres": [
       10759,
       16,
       10765
     ],
-    "popularity": 309.8209
-  },
-  {
-    "id": 4304,
-    "tmdb_id": 4304,
-    "type": "tv",
-    "title": "Xplay",
-    "overview": "Xplay (previously GameSpot TV and Extended Play) is a TV program about video games. The program, known for its reviews and comedy skits, airs on G4 in the United States and had aired on G4 Canada in Canada (and briefly on YTV during its time as GameSpot TV), FUEL TV in Australia, Ego in Israel, GXT in Italy, MTV Russia & Rambler TV in Russia, Solar Sports in the Philippines and Adult Swim and MuchMusic in Latin America. The show ran between July 4, 1998, and January 23, 2013, and returned in November 2021 as a part of G4's relaunch.",
-    "poster": "https://image.tmdb.org/t/p/w342/7ynD7g4U9hOODu1Jzf6VN4zQc6a.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/pptMFFYI3Rs15I8HovmJTrnTM8L.jpg",
-    "rating": 8.5,
-    "votes": 4,
-    "release": "2003-04-28",
-    "genres": [],
-    "popularity": 189.9817
+    "popularity": 297.5031
   },
   {
     "id": 2734,
@@ -112,152 +98,15 @@
     "overview": "In the criminal justice system, sexually-based offenses are considered especially heinous. In New York City, the dedicated detectives who investigate these vicious felonies are members of an elite squad known as the Special Victims Unit. These are their stories.",
     "poster": "https://image.tmdb.org/t/p/w342/iofokHZoUB4Qhik4PflvJl8TT6a.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
-    "rating": 7.953,
-    "votes": 4280,
+    "rating": 8,
+    "votes": 4281,
     "release": "1999-09-20",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 266.9215
-  },
-  {
-    "id": 241002,
-    "tmdb_id": 241002,
-    "type": "tv",
-    "title": "Adam's Sweet Agony",
-    "overview": "This is the story of a boy, who became the lone Adam among four billion Eves. In a world where a pandemic has rendered all men impotent, high school student Itsuki is the exception who escaped it. In order to protect this secret, he transfers to a very special high school, which turns out to be composed of 90% girls! There, he encounters an upbeat and friendly senior, a sexually frustrated female teacher, a tomboyish school 'prince,' and an heiress from a wealthy family. For Itsuki, who has his pick of any woman in the world, the question remains: which one will he choose?",
-    "poster": "https://image.tmdb.org/t/p/w342/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/bM4nCynOSA5oCNqLsqb1Fo56sZQ.jpg",
-    "rating": 6.875,
-    "votes": 36,
-    "release": "2024-01-08",
-    "genres": [
-      16
-    ],
-    "popularity": 211.7346
-  },
-  {
-    "id": 79744,
-    "tmdb_id": 79744,
-    "type": "tv",
-    "title": "The Rookie",
-    "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
-    "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
-    "rating": 8.548,
-    "votes": 3364,
-    "release": "2018-10-16",
-    "genres": [
-      80,
-      18,
-      35
-    ],
-    "popularity": 224.1698
-  },
-  {
-    "id": 125988,
-    "tmdb_id": 125988,
-    "type": "tv",
-    "title": "Silo",
-    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.2,
-    "votes": 2201,
-    "release": "2023-05-04",
-    "genres": [
-      10765,
-      18
-    ],
-    "popularity": 226.2373
-  },
-  {
-    "id": 1622,
-    "tmdb_id": 1622,
-    "type": "tv",
-    "title": "Supernatural",
-    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
-    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
-    "rating": 8.312,
-    "votes": 8521,
-    "release": "2005-09-13",
-    "genres": [
-      18,
-      9648,
-      10765
-    ],
-    "popularity": 196.6288
-  },
-  {
-    "id": 549,
-    "tmdb_id": 549,
-    "type": "tv",
-    "title": "Law & Order",
-    "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
-    "poster": "https://image.tmdb.org/t/p/w342/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
-    "rating": 7.289,
-    "votes": 695,
-    "release": "1990-09-13",
-    "genres": [
-      80,
-      18
-    ],
-    "popularity": 197.181
-  },
-  {
-    "id": 5920,
-    "tmdb_id": 5920,
-    "type": "tv",
-    "title": "The Mentalist",
-    "overview": "Patrick Jane, a former celebrity psychic medium, uses his razor sharp skills of observation and expertise at \"reading\" people to solve serious crimes with the California Bureau of Investigation.",
-    "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg",
-    "rating": 8.357,
-    "votes": 4391,
-    "release": "2008-09-23",
-    "genres": [
-      80,
-      18,
-      9648
-    ],
-    "popularity": 205.1894
-  },
-  {
-    "id": 1416,
-    "tmdb_id": 1416,
-    "type": "tv",
-    "title": "Grey's Anatomy",
-    "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
-    "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
-    "rating": 8.209,
-    "votes": 10958,
-    "release": "2005-03-27",
-    "genres": [
-      18
-    ],
-    "popularity": 195.1347
-  },
-  {
-    "id": 299167,
-    "tmdb_id": 299167,
-    "type": "tv",
-    "title": "Dutton Ranch",
-    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.246,
-    "votes": 398,
-    "release": "2026-05-15",
-    "genres": [
-      37,
-      18
-    ],
-    "popularity": 187.4425
+    "popularity": 272.7337
   },
   {
     "id": 322055,
@@ -275,59 +124,76 @@
       80,
       18
     ],
-    "popularity": 244.8945
+    "popularity": 187.9677
   },
   {
-    "id": 95897,
-    "tmdb_id": 95897,
+    "id": 125988,
+    "tmdb_id": 125988,
     "type": "tv",
-    "title": "Overflow",
-    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
-    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
-    "rating": 7.408,
-    "votes": 87,
-    "release": "2020-01-06",
+    "title": "Silo",
+    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+    "rating": 8.2,
+    "votes": 2210,
+    "release": "2023-05-04",
+    "genres": [
+      10765,
+      18
+    ],
+    "popularity": 240.6331
+  },
+  {
+    "id": 79744,
+    "tmdb_id": 79744,
+    "type": "tv",
+    "title": "The Rookie",
+    "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
+    "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+    "rating": 8.548,
+    "votes": 3365,
+    "release": "2018-10-16",
+    "genres": [
+      80,
+      18,
+      35
+    ],
+    "popularity": 221.3404
+  },
+  {
+    "id": 241002,
+    "tmdb_id": 241002,
+    "type": "tv",
+    "title": "Adam's Sweet Agony",
+    "overview": "This is the story of a boy, who became the lone Adam among four billion Eves. In a world where a pandemic has rendered all men impotent, high school student Itsuki is the exception who escaped it. In order to protect this secret, he transfers to a very special high school, which turns out to be composed of 90% girls! There, he encounters an upbeat and friendly senior, a sexually frustrated female teacher, a tomboyish school 'prince,' and an heiress from a wealthy family. For Itsuki, who has his pick of any woman in the world, the question remains: which one will he choose?",
+    "poster": "https://image.tmdb.org/t/p/w342/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/bM4nCynOSA5oCNqLsqb1Fo56sZQ.jpg",
+    "rating": 6.875,
+    "votes": 36,
+    "release": "2024-01-08",
     "genres": [
       16
     ],
-    "popularity": 186.9328
+    "popularity": 179.2992
   },
   {
-    "id": 1434,
-    "tmdb_id": 1434,
+    "id": 5920,
+    "tmdb_id": 5920,
     "type": "tv",
-    "title": "Family Guy",
-    "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
-    "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
-    "rating": 7.405,
-    "votes": 5003,
-    "release": "1999-01-31",
+    "title": "The Mentalist",
+    "overview": "Patrick Jane, a former celebrity psychic medium, uses his razor sharp skills of observation and expertise at \"reading\" people to solve serious crimes with the California Bureau of Investigation.",
+    "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg",
+    "rating": 8.357,
+    "votes": 4394,
+    "release": "2008-09-23",
     "genres": [
-      16,
-      35
-    ],
-    "popularity": 173.7087
-  },
-  {
-    "id": 82452,
-    "tmdb_id": 82452,
-    "type": "tv",
-    "title": "Avatar: The Last Airbender",
-    "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
-    "poster": "https://image.tmdb.org/t/p/w342/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-    "rating": 7.805,
-    "votes": 1235,
-    "release": "2024-02-22",
-    "genres": [
-      10759,
-      10765,
+      80,
       18,
-      10751
+      9648
     ],
-    "popularity": 174.3884
+    "popularity": 203.3241
   },
   {
     "id": 316540,
@@ -343,6 +209,139 @@
     "genres": [
       18
     ],
-    "popularity": 204.0836
+    "popularity": 228.668
+  },
+  {
+    "id": 549,
+    "tmdb_id": 549,
+    "type": "tv",
+    "title": "Law & Order",
+    "overview": "In cases ripped from the headlines, police investigate serious and often deadly crimes, weighing the evidence and questioning the suspects until someone is taken into custody. The district attorney's office then builds a case to convict the perpetrator by proving the person guilty beyond a reasonable doubt. Working together, these expert teams navigate all sides of the complex criminal justice system to make New York a safer place.",
+    "poster": "https://image.tmdb.org/t/p/w342/haJ9eHytVO3H3JooMJG1DiWwDNm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tc7canPSAn2X14hYi6Rl3gZm1o4.jpg",
+    "rating": 7.289,
+    "votes": 695,
+    "release": "1990-09-13",
+    "genres": [
+      80,
+      18
+    ],
+    "popularity": 191.0752
+  },
+  {
+    "id": 1622,
+    "tmdb_id": 1622,
+    "type": "tv",
+    "title": "Supernatural",
+    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
+    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+    "rating": 8.312,
+    "votes": 8523,
+    "release": "2005-09-13",
+    "genres": [
+      18,
+      9648,
+      10765
+    ],
+    "popularity": 197.4511
+  },
+  {
+    "id": 1416,
+    "tmdb_id": 1416,
+    "type": "tv",
+    "title": "Grey's Anatomy",
+    "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
+    "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+    "rating": 8.21,
+    "votes": 10959,
+    "release": "2005-03-27",
+    "genres": [
+      18
+    ],
+    "popularity": 199.5785
+  },
+  {
+    "id": 4304,
+    "tmdb_id": 4304,
+    "type": "tv",
+    "title": "Xplay",
+    "overview": "Xplay (previously GameSpot TV and Extended Play) is a TV program about video games. The program, known for its reviews and comedy skits, airs on G4 in the United States and had aired on G4 Canada in Canada (and briefly on YTV during its time as GameSpot TV), FUEL TV in Australia, Ego in Israel, GXT in Italy, MTV Russia & Rambler TV in Russia, Solar Sports in the Philippines and Adult Swim and MuchMusic in Latin America. The show ran between July 4, 1998, and January 23, 2013, and returned in November 2021 as a part of G4's relaunch.",
+    "poster": "https://image.tmdb.org/t/p/w342/7ynD7g4U9hOODu1Jzf6VN4zQc6a.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/pptMFFYI3Rs15I8HovmJTrnTM8L.jpg",
+    "rating": 8.5,
+    "votes": 4,
+    "release": "2003-04-28",
+    "genres": [],
+    "popularity": 110.9426
+  },
+  {
+    "id": 299167,
+    "tmdb_id": 299167,
+    "type": "tv",
+    "title": "Dutton Ranch",
+    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+    "rating": 9.238,
+    "votes": 404,
+    "release": "2026-05-15",
+    "genres": [
+      37,
+      18
+    ],
+    "popularity": 177.202
+  },
+  {
+    "id": 95897,
+    "tmdb_id": 95897,
+    "type": "tv",
+    "title": "Overflow",
+    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
+    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
+    "rating": 7.415,
+    "votes": 88,
+    "release": "2020-01-06",
+    "genres": [
+      16
+    ],
+    "popularity": 183.3872
+  },
+  {
+    "id": 45247,
+    "tmdb_id": 45247,
+    "type": "tv",
+    "title": "Chihayafuru",
+    "overview": "Chihaya Ayase has spent most of her life supporting her sister’s model career. When she meets a boy named Arata Wataya, he thinks Chihaya has potential to become a great karuta player. As Chihaya dreams of becoming Japan's best karuta player, she is soon separated from her karuta playing friends. Now in high school, Chihaya still plays karuta in the hope that she will one day meet her friends again.",
+    "poster": "https://image.tmdb.org/t/p/w342/nUfL7xK5DjViiQAwHiRYlb6VMTE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/e1R4kNrWvSfb8AVViMp0okVJfuk.jpg",
+    "rating": 7.6,
+    "votes": 66,
+    "release": "2011-10-05",
+    "genres": [
+      16,
+      18
+    ],
+    "popularity": 99.7661
+  },
+  {
+    "id": 1399,
+    "tmdb_id": 1399,
+    "type": "tv",
+    "title": "Game of Thrones",
+    "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+    "poster": "https://image.tmdb.org/t/p/w342/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
+    "rating": 8.465,
+    "votes": 27206,
+    "release": "2011-04-17",
+    "genres": [
+      10765,
+      18,
+      10759
+    ],
+    "popularity": 169.5909
   }
 ]

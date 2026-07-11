@@ -9,7 +9,7 @@
     "timestamps": {
       "created": "2026-07-07T15:48:14.172Z",
       "loggedin": "2026-07-09T04:46:46.545Z",
-      "updated": "2026-07-10T06:08:44.405Z"
+      "updated": "2026-07-11T05:17:18.406Z"
     },
     "facebook": {},
     "google": {
@@ -130,7 +130,7 @@
     "warnedLowHealth": false,
     "initializedUserHistory": true,
     "thirdPartyTools": "2026-07-10T06:08:44.306Z",
-    "newStuff": false
+    "newStuff": true
   },
   "history": {
     "exp": [
