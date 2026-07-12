@@ -5,17 +5,17 @@
     "type": "tv",
     "title": "Chainsmoker Cat",
     "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.857,
-    "votes": 14,
+    "rating": 8.4,
+    "votes": 16,
     "release": "2026-07-03",
     "genres": [
       16,
       35,
       10765
     ],
-    "popularity": 416.1154
+    "popularity": 344.7768
   },
   {
     "id": 94997,
@@ -25,15 +25,15 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.367,
-    "votes": 6537,
+    "rating": 8.368,
+    "votes": 6544,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 373.6276
+    "popularity": 358.694
   },
   {
     "id": 94664,
@@ -43,33 +43,15 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.484,
-    "votes": 1559,
+    "rating": 8.48,
+    "votes": 1564,
     "release": "2021-01-11",
     "genres": [
       10759,
       16,
       10765
     ],
-    "popularity": 297.5031
-  },
-  {
-    "id": 322055,
-    "tmdb_id": 322055,
-    "type": "tv",
-    "title": "The Prosecutor's Proposal",
-    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
-    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-    "rating": 5,
-    "votes": 4,
-    "release": "2026-06-25",
-    "genres": [
-      9648,
-      80,
-      18
-    ],
-    "popularity": 187.9677
+    "popularity": 320.2043
   },
   {
     "id": 125988,
@@ -79,14 +61,14 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/cAYMSOqsKmi9vdzWh6yv7FCVHzQ.jpg",
-    "rating": 8.175,
-    "votes": 2211,
+    "rating": 8.2,
+    "votes": 2219,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 240.6331
+    "popularity": 239.2107
   },
   {
     "id": 316540,
@@ -96,13 +78,31 @@
     "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
     "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
-    "rating": 0,
-    "votes": 0,
+    "rating": 10,
+    "votes": 1,
     "release": "2026-07-03",
     "genres": [
       18
     ],
-    "popularity": 228.668
+    "popularity": 215.3475
+  },
+  {
+    "id": 322055,
+    "tmdb_id": 322055,
+    "type": "tv",
+    "title": "The Prosecutor's Proposal",
+    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
+    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
+    "rating": 6,
+    "votes": 5,
+    "release": "2026-06-25",
+    "genres": [
+      9648,
+      80,
+      18
+    ],
+    "popularity": 177.4494
   },
   {
     "id": 4057,
@@ -120,7 +120,7 @@
       18,
       9648
     ],
-    "popularity": 182.4343
+    "popularity": 194.131
   },
   {
     "id": 60625,
@@ -131,7 +131,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
     "rating": 8.679,
-    "votes": 11091,
+    "votes": 11094,
     "release": "2013-12-02",
     "genres": [
       16,
@@ -139,7 +139,7 @@
       10765,
       10759
     ],
-    "popularity": 166.7306
+    "popularity": 165.2908
   },
   {
     "id": 296206,
@@ -149,15 +149,15 @@
     "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
     "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.438,
-    "votes": 24,
+    "rating": 7.2,
+    "votes": 25,
     "release": "2026-06-26",
     "genres": [
       10759,
       80,
       18
     ],
-    "popularity": 139.5825
+    "popularity": 154.4532
   },
   {
     "id": 2224,
@@ -174,7 +174,7 @@
       10763,
       35
     ],
-    "popularity": 109.2604
+    "popularity": 138.0711
   },
   {
     "id": 303493,
@@ -192,7 +192,40 @@
       10765,
       10759
     ],
-    "popularity": 103.8843
+    "popularity": 96.2465
+  },
+  {
+    "id": 22980,
+    "tmdb_id": 22980,
+    "type": "tv",
+    "title": "Watch What Happens Live with Andy Cohen",
+    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
+    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
+    "rating": 5,
+    "votes": 87,
+    "release": "2009-07-16",
+    "genres": [
+      10767,
+      35
+    ],
+    "popularity": 110.9395
+  },
+  {
+    "id": 291392,
+    "tmdb_id": 291392,
+    "type": "tv",
+    "title": "Love For You",
+    "overview": "In the 1990s, teenagers Chen Yi and Miao Jing met due to their parents, initially getting off to a rocky start. However, Miao Jing's kindness eventually softens Chen Yi's attitude towards her. Chen Yi and Miao Jing's relationship deepens after Chen Yi's father dies and Miao Jing's mother disappears, leaving the two to rely only on each other. Miao Jing eventually confesses her feelings for Chen Yi, but he pushes her away after he gets tangled up as a crime witness, urging her to leave their city. Years later, Chen Yi runs a billiards hall in their hometown, while Miao Jing returns for a work assignment. But when Chen Yi suspects that Miao Jing's boss is involved in smuggling, he vows to protect her – and stay by her side.",
+    "poster": "https://image.tmdb.org/t/p/w342/luKNvVTizD4O46XjTJ5Hlj2EuHt.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/zldji8QZ3HdoosmtUIf59YmDoxZ.jpg",
+    "rating": 8.75,
+    "votes": 2,
+    "release": "2026-07-05",
+    "genres": [
+      18
+    ],
+    "popularity": 103.7616
   },
   {
     "id": 70672,
@@ -209,24 +242,58 @@
       10764,
       35
     ],
-    "popularity": 101.1324
+    "popularity": 97.1102
   },
   {
-    "id": 33238,
-    "tmdb_id": 33238,
+    "id": 57532,
+    "tmdb_id": 57532,
     "type": "tv",
-    "title": "Running Man",
-    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
-    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
-    "rating": 8.2,
-    "votes": 213,
-    "release": "2010-07-11",
+    "title": "PAW Patrol",
+    "overview": "Marshall, Rocky, Rubble, Zuma and Skye are doing their best to protect the people of their town. Led by Ryder, a tech-savvy 10-year-old boy, each of them is equipped with special equipment and together they help anyone who finds themselves in trouble. No task is too big for them and no puppy is too small.",
+    "poster": "https://image.tmdb.org/t/p/w342/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7OrV2aAH5Yp7hA9zCCvUloLvZtl.jpg",
+    "rating": 7,
+    "votes": 813,
+    "release": "2013-08-12",
+    "genres": [
+      16,
+      10762
+    ],
+    "popularity": 97.8131
+  },
+  {
+    "id": 315038,
+    "tmdb_id": 315038,
+    "type": "tv",
+    "title": "Resort",
+    "overview": "A debt-ridden room service boy rises to challenge a ruthless kitchen at a luxurious beachside haven.",
+    "poster": "https://image.tmdb.org/t/p/w342/cL7iOwqapRRb7eKKlXI4FDaP6rh.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wQ1cpJW9uxfKmO8msAF5z4edK63.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-03-13",
     "genres": [
       35,
-      10764
+      18
     ],
-    "popularity": 93.5312
+    "popularity": 87.4584
+  },
+  {
+    "id": 259231,
+    "tmdb_id": 259231,
+    "type": "tv",
+    "title": "Slay the Gods",
+    "overview": "\"If the dark night comes to an end, I will stand in front of tens of thousands of people, slashing my sword into the abyss, staining the sky with blood!\" Have you ever thought that monsters from ancient myths lurk under the bright neon cities? Have you ever thought that above the moon hanging high above the heads of the world, there are gods watching over the world? Have you ever thought that in the crowded modern cities, there are extraordinary people who walk the world in place of gods?",
+    "poster": "https://image.tmdb.org/t/p/w342/n4lEQkgCDuOP3TNvIjkzn5QjRp.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/aZCidnkhigXUUdhgNDB2qCSaAwl.jpg",
+    "rating": 7.889,
+    "votes": 18,
+    "release": "2024-07-31",
+    "genres": [
+      16,
+      10765
+    ],
+    "popularity": 95.3158
   },
   {
     "id": 223911,
@@ -245,75 +312,24 @@
       18,
       10765
     ],
-    "popularity": 95.9982
+    "popularity": 104.3316
   },
   {
-    "id": 2661,
-    "tmdb_id": 2661,
+    "id": 33238,
+    "tmdb_id": 33238,
     "type": "tv",
-    "title": "Kamen Rider",
-    "overview": "Takeshi Hongo is a promising young man with a passion for motorcycle racing. However, his dreams are suddenly ruined when he gets kidnapped by Shocker, the evil secret organization planning to dominate the world. After being remodeled into a cyborg, Takeshi escapes and swears to protect the world from the inhuman monsters.",
-    "poster": "https://image.tmdb.org/t/p/w342/2DIBDFHiKQawz4WPsYekl9DHwyA.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/usLRh1bcbL0Q9X8zf6rL4OV1qrA.jpg",
-    "rating": 6.4,
-    "votes": 103,
-    "release": "1971-04-03",
+    "title": "Running Man",
+    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
+    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+    "rating": 8.2,
+    "votes": 213,
+    "release": "2010-07-11",
     "genres": [
-      10759,
-      10765,
-      18
+      35,
+      10764
     ],
-    "popularity": 88.0141
-  },
-  {
-    "id": 22980,
-    "tmdb_id": 22980,
-    "type": "tv",
-    "title": "Watch What Happens Live with Andy Cohen",
-    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
-    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
-    "rating": 5,
-    "votes": 87,
-    "release": "2009-07-16",
-    "genres": [
-      10767,
-      35
-    ],
-    "popularity": 102.379
-  },
-  {
-    "id": 259231,
-    "tmdb_id": 259231,
-    "type": "tv",
-    "title": "Slay the Gods",
-    "overview": "\"If the dark night comes to an end, I will stand in front of tens of thousands of people, slashing my sword into the abyss, staining the sky with blood!\" Have you ever thought that monsters from ancient myths lurk under the bright neon cities? Have you ever thought that above the moon hanging high above the heads of the world, there are gods watching over the world? Have you ever thought that in the crowded modern cities, there are extraordinary people who walk the world in place of gods?",
-    "poster": "https://image.tmdb.org/t/p/w342/n4lEQkgCDuOP3TNvIjkzn5QjRp.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/aZCidnkhigXUUdhgNDB2qCSaAwl.jpg",
-    "rating": 7.889,
-    "votes": 18,
-    "release": "2024-07-31",
-    "genres": [
-      16,
-      10765
-    ],
-    "popularity": 98.3478
-  },
-  {
-    "id": 291392,
-    "tmdb_id": 291392,
-    "type": "tv",
-    "title": "Love For You",
-    "overview": "In the 1990s, teenagers Chen Yi and Miao Jing met due to their parents, initially getting off to a rocky start. However, Miao Jing's kindness eventually softens Chen Yi's attitude towards her. Chen Yi and Miao Jing's relationship deepens after Chen Yi's father dies and Miao Jing's mother disappears, leaving the two to rely only on each other. Miao Jing eventually confesses her feelings for Chen Yi, but he pushes her away after he gets tangled up as a crime witness, urging her to leave their city. Years later, Chen Yi runs a billiards hall in their hometown, while Miao Jing returns for a work assignment. But when Chen Yi suspects that Miao Jing's boss is involved in smuggling, he vows to protect her – and stay by her side.",
-    "poster": "https://image.tmdb.org/t/p/w342/luKNvVTizD4O46XjTJ5Hlj2EuHt.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/zldji8QZ3HdoosmtUIf59YmDoxZ.jpg",
-    "rating": 8,
-    "votes": 1,
-    "release": "2026-07-05",
-    "genres": [
-      18
-    ],
-    "popularity": 102.0932
+    "popularity": 112.5209
   },
   {
     "id": 62245,
@@ -331,23 +347,6 @@
       10751,
       35
     ],
-    "popularity": 91.2537
-  },
-  {
-    "id": 57532,
-    "tmdb_id": 57532,
-    "type": "tv",
-    "title": "PAW Patrol",
-    "overview": "Marshall, Rocky, Rubble, Zuma and Skye are doing their best to protect the people of their town. Led by Ryder, a tech-savvy 10-year-old boy, each of them is equipped with special equipment and together they help anyone who finds themselves in trouble. No task is too big for them and no puppy is too small.",
-    "poster": "https://image.tmdb.org/t/p/w342/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7OrV2aAH5Yp7hA9zCCvUloLvZtl.jpg",
-    "rating": 7,
-    "votes": 813,
-    "release": "2013-08-12",
-    "genres": [
-      16,
-      10762
-    ],
-    "popularity": 99.8957
+    "popularity": 65.9027
   }
 ]

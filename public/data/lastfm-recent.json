@@ -2,6 +2,834 @@
   {
     "artist": {
       "mbid": "",
+      "#text": "Coding with Lewis"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "The BIG Migration",
+    "url": "https://www.last.fm/music/Coding+with+Lewis/_/The+BIG+Migration",
+    "date": {
+      "uts": "1783758087",
+      "#text": "11 Jul 2026, 08:21"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Coding with Lewis"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Data Services",
+    "url": "https://www.last.fm/music/Coding+with+Lewis/_/Data+Services",
+    "date": {
+      "uts": "1783758039",
+      "#text": "11 Jul 2026, 08:20"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Coding with Lewis"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Cassandra Troubles",
+    "url": "https://www.last.fm/music/Coding+with+Lewis/_/Cassandra+Troubles",
+    "date": {
+      "uts": "1783757926",
+      "#text": "11 Jul 2026, 08:18"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fireship"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "What is a token or NFT?",
+    "url": "https://www.last.fm/music/Fireship/_/What+is+a+token+or+NFT%3F",
+    "date": {
+      "uts": "1783757772",
+      "#text": "11 Jul 2026, 08:16"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fireship"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "2022 is gonna be wild for developers...",
+    "url": "https://www.last.fm/music/Fireship/_/2022+is+gonna+be+wild+for+developers...",
+    "date": {
+      "uts": "1783757463",
+      "#text": "11 Jul 2026, 08:11"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fireship"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "I tried 10 code editors",
+    "url": "https://www.last.fm/music/Fireship/_/I+tried+10+code+editors",
+    "date": {
+      "uts": "1783757270",
+      "#text": "11 Jul 2026, 08:07"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "StudyIQ IAS"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "7 Database Paradigms",
+    "url": "https://www.last.fm/music/StudyIQ+IAS/_/7+Database+Paradigms",
+    "date": {
+      "uts": "1783757078",
+      "#text": "11 Jul 2026, 08:04"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "StudyIQ IAS"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "7 Cryptography Concepts EVERY Developer Should Know",
+    "url": "https://www.last.fm/music/StudyIQ+IAS/_/7+Cryptography+Concepts+EVERY+Developer+Should+Know",
+    "date": {
+      "uts": "1783756849",
+      "#text": "11 Jul 2026, 08:00"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "StudyIQ IAS"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Top 50+ AWS Services Explained in 10 Minutes",
+    "url": "https://www.last.fm/music/StudyIQ+IAS/_/Top+50%252B+AWS+Services+Explained+in+10+Minutes",
+    "date": {
+      "uts": "1783756615",
+      "#text": "11 Jul 2026, 07:56"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "StudyIQ IAS"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Why so many distros? The Weird History of Linux",
+    "url": "https://www.last.fm/music/StudyIQ+IAS/_/Why+so+many+distros%3F+The+Weird+History+of+Linux",
+    "date": {
+      "uts": "1783756449",
+      "#text": "11 Jul 2026, 07:54"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "StudyIQ IAS"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "25 crazy software bugs explained",
+    "url": "https://www.last.fm/music/StudyIQ+IAS/_/25+crazy+software+bugs+explained",
+    "date": {
+      "uts": "1783756119",
+      "#text": "11 Jul 2026, 07:48"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "India Launches First Export Container to break China's monopoly"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Ankit Agrawal Study IQ",
+    "url": "https://www.last.fm/music/India+Launches+First+Export+Container+to+break+China%27s+monopoly/_/Ankit+Agrawal+Study+IQ",
+    "date": {
+      "uts": "1783755888",
+      "#text": "11 Jul 2026, 07:44"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "David Ondrej"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "10 regrets of experienced programmers",
+    "url": "https://www.last.fm/music/David+Ondrej/_/10+regrets+of+experienced+programmers",
+    "date": {
+      "uts": "1783755692",
+      "#text": "11 Jul 2026, 07:41"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "David Ondrej"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "100+ Linux Things you Need to Know",
+    "url": "https://www.last.fm/music/David+Ondrej/_/100%252B+Linux+Things+you+Need+to+Know",
+    "date": {
+      "uts": "1783755453",
+      "#text": "11 Jul 2026, 07:37"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fine"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Tune the biggest open-source models (even with a bad PC)",
+    "url": "https://www.last.fm/music/Fine/_/Tune+the+biggest+open-source+models+(even+with+a+bad+PC)",
+    "date": {
+      "uts": "1783754864",
+      "#text": "11 Jul 2026, 07:27"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "The Solo Entrepreneur"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "The AUDACITY.",
+    "url": "https://www.last.fm/music/The+Solo+Entrepreneur/_/The+AUDACITY.",
+    "date": {
+      "uts": "1783752853",
+      "#text": "11 Jul 2026, 06:54"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "The Solo Entrepreneur"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "OpenAI is so back... GPT 5.6 Sol first look",
+    "url": "https://www.last.fm/music/The+Solo+Entrepreneur/_/OpenAI+is+so+back...+GPT+5.6+Sol+first+look",
+    "date": {
+      "uts": "1783752803",
+      "#text": "11 Jul 2026, 06:53"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "The Viral GLM 5.2"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "World’s #1 FREE Open-Source AI Model!",
+    "url": "https://www.last.fm/music/The+Viral+GLM+5.2/_/World%E2%80%99s+%231+FREE+Open-Source+AI+Model!",
+    "date": {
+      "uts": "1783752638",
+      "#text": "11 Jul 2026, 06:50"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fireship"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Functions",
+    "url": "https://www.last.fm/music/Fireship/_/Functions",
+    "date": {
+      "uts": "1783752147",
+      "#text": "11 Jul 2026, 06:42"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fireship"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Data Types",
+    "url": "https://www.last.fm/music/Fireship/_/Data+Types",
+    "date": {
+      "uts": "1783752077",
+      "#text": "11 Jul 2026, 06:41"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fireship"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "Binary",
+    "url": "https://www.last.fm/music/Fireship/_/Binary",
+    "date": {
+      "uts": "1783752008",
+      "#text": "11 Jul 2026, 06:40"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Fireship"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "The Computer",
+    "url": "https://www.last.fm/music/Fireship/_/The+Computer",
+    "date": {
+      "uts": "1783751970",
+      "#text": "11 Jul 2026, 06:39"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
+      "#text": "Mehul Mohan"
+    },
+    "streamable": "0",
+    "image": [
+      {
+        "size": "small",
+        "#text": ""
+      },
+      {
+        "size": "medium",
+        "#text": ""
+      },
+      {
+        "size": "large",
+        "#text": ""
+      },
+      {
+        "size": "extralarge",
+        "#text": ""
+      }
+    ],
+    "mbid": "",
+    "album": {
+      "mbid": "",
+      "#text": ""
+    },
+    "name": "I Tried GPT 5.6, Fable 5, Grok 4.5 For 24 Hours",
+    "url": "https://www.last.fm/music/Mehul+Mohan/_/I+Tried+GPT+5.6,+Fable+5,+Grok+4.5+For+24+Hours",
+    "date": {
+      "uts": "1783751173",
+      "#text": "11 Jul 2026, 06:26"
+    }
+  },
+  {
+    "artist": {
+      "mbid": "",
       "#text": "AI News: GPT"
     },
     "streamable": "0",
@@ -2769,834 +3597,6 @@
     "date": {
       "uts": "1783601136",
       "#text": "09 Jul 2026, 12:45"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "a2b73301-e401-40a9-a15a-2a0a1f2e7766",
-      "#text": "Anne-Marie"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "mbid": "b66b519f-c8a0-459e-a7e9-a33fa2a1eed1",
-    "album": {
-      "mbid": "",
-      "#text": "Just Hits"
-    },
-    "name": "2002",
-    "url": "https://www.last.fm/music/Anne-Marie/_/2002",
-    "date": {
-      "uts": "1783600716",
-      "#text": "09 Jul 2026, 12:38"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
-      "#text": "Troye Sivan"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/1ca145aba5daa3b2a90c5c645e2f3346.png"
-      }
-    ],
-    "mbid": "0758cc5d-9b6d-4791-b600-87ebd14c4f1f",
-    "album": {
-      "mbid": "292b1501-8b30-4026-81a4-215975885f1d",
-      "#text": "Bloom"
-    },
-    "name": "Animal",
-    "url": "https://www.last.fm/music/Troye+Sivan/_/Animal",
-    "date": {
-      "uts": "1783595285",
-      "#text": "09 Jul 2026, 11:08"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Better Stack"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Reward Hacking",
-    "url": "https://www.last.fm/music/Better+Stack/_/Reward+Hacking",
-    "date": {
-      "uts": "1783593972",
-      "#text": "09 Jul 2026, 10:46"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "EarnixLab"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Elon Musk Just COOKED Claude... Grok 4.5 is INSANE 🤯",
-    "url": "https://www.last.fm/music/EarnixLab/_/Elon+Musk+Just+COOKED+Claude...+Grok+4.5+is+INSANE+%F0%9F%A4%AF",
-    "date": {
-      "uts": "1783593822",
-      "#text": "09 Jul 2026, 10:43"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Intro: Vibe Coding with Google Anti"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "gravity",
-    "url": "https://www.last.fm/music/Intro:+Vibe+Coding+with+Google+Anti/_/gravity",
-    "date": {
-      "uts": "1783593668",
-      "#text": "09 Jul 2026, 10:41"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "AI Stack Engineer"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "OpenCode Persistent Memory Across Sessions, 10x Token Savings",
-    "url": "https://www.last.fm/music/AI+Stack+Engineer/_/OpenCode+Persistent+Memory+Across+Sessions,+10x+Token+Savings",
-    "date": {
-      "uts": "1783592435",
-      "#text": "09 Jul 2026, 10:20"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "The ‘Oh’ Sound"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "əʊ",
-    "url": "https://www.last.fm/music/The+%E2%80%98Oh%E2%80%99+Sound/_/%C9%99%CA%8A",
-    "date": {
-      "uts": "1783586757",
-      "#text": "09 Jul 2026, 08:45"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "English with Lucy"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "The Glottal Stop",
-    "url": "https://www.last.fm/music/English+with+Lucy/_/The+Glottal+Stop",
-    "date": {
-      "uts": "1783586630",
-      "#text": "09 Jul 2026, 08:43"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "The ‘O’ Sound"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "ɒ",
-    "url": "https://www.last.fm/music/The+%E2%80%98O%E2%80%99+Sound/_/%C9%92",
-    "date": {
-      "uts": "1783586589",
-      "#text": "09 Jul 2026, 08:43"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Codedigipt"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Grok 4.5 Finally BEATS the Claude Opus 4.8",
-    "url": "https://www.last.fm/music/Codedigipt/_/Grok+4.5+Finally+BEATS+the+Claude+Opus+4.8",
-    "date": {
-      "uts": "1783586288",
-      "#text": "09 Jul 2026, 08:38"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Brandon Melville"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "The OpenCode Memory Upgrade You Actually Need (Graphify)",
-    "url": "https://www.last.fm/music/Brandon+Melville/_/The+OpenCode+Memory+Upgrade+You+Actually+Need+(Graphify)",
-    "date": {
-      "uts": "1783583901",
-      "#text": "09 Jul 2026, 07:58"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Graphify vs. RAG"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Deterministic mapping explained",
-    "url": "https://www.last.fm/music/Graphify+vs.+RAG/_/Deterministic+mapping+explained",
-    "date": {
-      "uts": "1783583868",
-      "#text": "09 Jul 2026, 07:57"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Brandon Melville"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "How Graphify processes files in 3 passes",
-    "url": "https://www.last.fm/music/Brandon+Melville/_/How+Graphify+processes+files+in+3+passes",
-    "date": {
-      "uts": "1783583820",
-      "#text": "09 Jul 2026, 07:57"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Learn English With President Trump & Obama"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Before becoming President, Donald Trump lived in New York City.",
-    "url": "https://www.last.fm/music/Learn+English+With+President+Trump+&+Obama/_/Before+becoming+President,+Donald+Trump+lived+in+New+York+City.",
-    "date": {
-      "uts": "1783583585",
-      "#text": "09 Jul 2026, 07:53"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Learn English With President Trump & Obama"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "His primary duty at the office was to receive calls and take messages.",
-    "url": "https://www.last.fm/music/Learn+English+With+President+Trump+&+Obama/_/His+primary+duty+at+the+office+was+to+receive+calls+and+take+messages.",
-    "date": {
-      "uts": "1783583488",
-      "#text": "09 Jul 2026, 07:51"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Learn English With President Trump & Obama"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Intro",
-    "url": "https://www.last.fm/music/Learn+English+With+President+Trump+&+Obama/_/Intro",
-    "date": {
-      "uts": "1783583388",
-      "#text": "09 Jul 2026, 07:49"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Learn English with TV Series"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Learn English With Barack Obama",
-    "url": "https://www.last.fm/music/Learn+English+with+TV+Series/_/Learn+English+With+Barack+Obama",
-    "date": {
-      "uts": "1783582774",
-      "#text": "09 Jul 2026, 07:39"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Learn English with These 3 Podcasts"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "ADVANCED ENGLISH LESSON",
-    "url": "https://www.last.fm/music/Learn+English+with+These+3+Podcasts/_/ADVANCED+ENGLISH+LESSON",
-    "date": {
-      "uts": "1783582355",
-      "#text": "09 Jul 2026, 07:32"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "China out, India in? Japan's Quiet but powerful pivot"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Ankit Agrawal Study IQ",
-    "url": "https://www.last.fm/music/China+out,+India+in%3F+Japan%27s+Quiet+but+powerful+pivot/_/Ankit+Agrawal+Study+IQ",
-    "date": {
-      "uts": "1783582161",
-      "#text": "09 Jul 2026, 07:29"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "MASSIVE MISSILE DEAL BETWEEN INDIA AND INDONESIA"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Brahmos and Astra Missiles sold",
-    "url": "https://www.last.fm/music/MASSIVE+MISSILE+DEAL+BETWEEN+INDIA+AND+INDONESIA/_/Brahmos+and+Astra+Missiles+sold",
-    "date": {
-      "uts": "1783581839",
-      "#text": "09 Jul 2026, 07:23"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Abhishek.Veeramalla"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Best Forward Deployed Engineer (FDE) Roadmap for beginners",
-    "url": "https://www.last.fm/music/Abhishek.Veeramalla/_/Best+Forward+Deployed+Engineer+(FDE)+Roadmap+for+beginners",
-    "date": {
-      "uts": "1783581536",
-      "#text": "09 Jul 2026, 07:18"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Antigravity + OmniRoute"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "Installing and running the OmniRoute server locally",
-    "url": "https://www.last.fm/music/Antigravity+%252B+OmniRoute/_/Installing+and+running+the+OmniRoute+server+locally",
-    "date": {
-      "uts": "1783581441",
-      "#text": "09 Jul 2026, 07:17"
-    }
-  },
-  {
-    "artist": {
-      "mbid": "",
-      "#text": "Introduction & the credit"
-    },
-    "streamable": "0",
-    "image": [
-      {
-        "size": "small",
-        "#text": ""
-      },
-      {
-        "size": "medium",
-        "#text": ""
-      },
-      {
-        "size": "large",
-        "#text": ""
-      },
-      {
-        "size": "extralarge",
-        "#text": ""
-      }
-    ],
-    "mbid": "",
-    "album": {
-      "mbid": "",
-      "#text": ""
-    },
-    "name": "limit problem",
-    "url": "https://www.last.fm/music/Introduction+&+the+credit/_/limit+problem",
-    "date": {
-      "uts": "1783581335",
-      "#text": "09 Jul 2026, 07:15"
     }
   }
 ]

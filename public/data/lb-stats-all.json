@@ -3,7 +3,7 @@
     {
       "artist_mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
       "artist_name": "Shawn Mendes",
-      "listen_count": 856
+      "listen_count": 858
     },
     {
       "artist_mbid": "e0140a67-e4d1-4f13-8a01-364355bee46e",
@@ -13,12 +13,12 @@
     {
       "artist_mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
       "artist_name": "Troye Sivan",
-      "listen_count": 233
+      "listen_count": 243
     },
     {
       "artist_mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
       "artist_name": "Lauv",
-      "listen_count": 217
+      "listen_count": 218
     },
     {
       "artist_mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
@@ -28,12 +28,12 @@
     {
       "artist_mbid": null,
       "artist_name": "Troye Sivan",
-      "listen_count": 151
+      "listen_count": 155
     },
     {
       "artist_mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
       "artist_name": "Charlie Puth",
-      "listen_count": 134
+      "listen_count": 135
     },
     {
       "artist_mbid": null,
@@ -53,7 +53,7 @@
     {
       "artist_mbid": "7eb1ce54-a355-41f9-8d68-e018b096d427",
       "artist_name": "Harry Styles",
-      "listen_count": 60
+      "listen_count": 63
     },
     {
       "artist_mbid": null,
@@ -61,19 +61,19 @@
       "listen_count": 52
     },
     {
-      "artist_mbid": "1a425bbd-cca4-4b2c-aeb7-71cb176c828a",
-      "artist_name": "One Direction",
-      "listen_count": 47
-    },
-    {
       "artist_mbid": "b8a7c51f-362c-4dcb-a259-bc6e0095f0a6",
       "artist_name": "Ed Sheeran",
-      "listen_count": 47
+      "listen_count": 49
     },
     {
       "artist_mbid": "bc153bd5-7963-4195-a6fb-c38588f31007",
       "artist_name": "Ruel",
-      "listen_count": 45
+      "listen_count": 47
+    },
+    {
+      "artist_mbid": "1a425bbd-cca4-4b2c-aeb7-71cb176c828a",
+      "artist_name": "One Direction",
+      "listen_count": 47
     },
     {
       "artist_mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
@@ -138,7 +138,7 @@
     {
       "artist_mbid": "33cf3954-10af-4dcb-985f-9420d1fa4168",
       "artist_name": "Dan + Shay",
-      "listen_count": 20
+      "listen_count": 21
     },
     {
       "artist_mbid": null,
@@ -253,10 +253,10 @@
   ],
   "count": 50,
   "from_ts": 1009843200,
-  "last_updated": 1783683309,
+  "last_updated": 1783769454,
   "offset": 0,
   "range": "all_time",
-  "to_ts": 1783643096,
-  "total_artist_count": 1426,
+  "to_ts": 1783731024,
+  "total_artist_count": 1443,
   "user_id": "chirag127"
 }
