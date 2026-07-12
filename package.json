@@ -1,25 +1,25 @@
 {
-  "name": "me",
-  "version": "1.0.0",
-  "description": "me.oriz.in — Chirag Singhal personal OS",
-  "type": "module",
-  "scripts": {
-    "dev": "astro dev",
-    "prebuild": "node --import=tsx/esm scripts/fetch-data.ts",
-    "build": "astro build",
-    "preview": "astro preview",
-    "fetch-data": "node --import=tsx/esm scripts/fetch-data.ts"
-  },
-  "dependencies": {
-    "astro": "^4.16.18",
-    "@astrojs/react": "^3.6.2",
-    "@astrojs/tailwind": "^5.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^3.4.17",
-    "firebase": "^11.0.0"
-  },
-  "devDependencies": {
-    "tsx": "^4.19.2"
-  }
+	"name": "me",
+	"version": "1.0.0",
+	"description": "me.oriz.in — Chirag Singhal personal OS",
+	"type": "module",
+	"scripts": {
+		"dev": "astro dev",
+		"prebuild": "node --import=tsx/esm scripts/fetch-data.ts",
+		"build": "astro build",
+		"preview": "astro preview",
+		"fetch-data": "node --import=tsx/esm scripts/fetch-data.ts"
+	},
+	"dependencies": {
+		"astro": "^4.16.18",
+		"@astrojs/react": "^3.6.2",
+		"@astrojs/tailwind": "^5.1.4",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"tailwindcss": "^3.4.17"
+	},
+	"devDependencies": {
+		"@vite-pwa/astro": "^1.2.0",
+		"tsx": "^4.19.2"
+	}
 }

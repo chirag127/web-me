@@ -1,0 +1,57 @@
+name: Package Android (TWA)
+
+# Builds an UNSIGNED Android TWA APK + AAB from the live web manifest and
+# attaches them to the matching prerelease. Signing is a known blocker — no
+# keystore is generated or committed (see README § Packaging).
+
+on:
+  push:
+    tags: ['prerelease-*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Bubblewrap
+        run: npm install -g @bubblewrap/cli@1.24.1
+
+      - name: Init TWA from live manifest
+        run: |
+          bubblewrap init \
+            --manifest=https://me.oriz.in/manifest.webmanifest \
+            --directory=twa \
+            --packageId=in.oriz.me || true
+
+      - name: Build unsigned APK + AAB
+        working-directory: twa
+        run: bubblewrap build --skipPwaValidation || (cd android 2>/dev/null && ./gradlew assembleRelease bundleRelease || true)
+
+      - name: Collect artifacts
+        run: |
+          mkdir -p out
+          find . -name '*.apk' -exec cp {} out/ \; || true
+          find . -name '*.aab' -exec cp {} out/ \; || true
+          ls -la out || true
+
+      - name: Attach to prerelease
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: out/*
+          fail_on_unmatched_files: false

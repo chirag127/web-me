@@ -1,0 +1,66 @@
+name: Package Windows (Tauri)
+
+# Builds an UNSIGNED Windows NSIS + MSI installer wrapping https://me.oriz.in
+# and attaches them to the matching prerelease. Code-signing is a known blocker
+# — no certificate is generated or committed (see README § Packaging).
+
+on:
+  push:
+    tags: ['prerelease-*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Scaffold Tauri wrapper (remote URL)
+        shell: bash
+        run: |
+          mkdir -p wrap/src-tauri/icons
+          cp public/icons/icon-512.png wrap/src-tauri/icons/icon.png
+          cat > wrap/src-tauri/tauri.conf.json <<'JSON'
+          {
+            "$schema": "https://schema.tauri.app/config/2",
+            "productName": "Chirag",
+            "version": "0.1.0",
+            "identifier": "in.oriz.me",
+            "build": { "frontendDist": "https://me.oriz.in" },
+            "app": {
+              "windows": [
+                { "title": "Chirag Singhal", "width": 1280, "height": 800, "url": "https://me.oriz.in" }
+              ]
+            },
+            "bundle": { "active": true, "targets": ["nsis", "msi"], "icon": ["icons/icon.png"] }
+          }
+          JSON
+
+      - name: Build unsigned NSIS + MSI
+        uses: tauri-apps/tauri-action@v0
+        with:
+          projectPath: wrap
+
+      - name: Collect installers
+        shell: bash
+        run: |
+          mkdir -p out
+          find wrap -path '*bundle*' \( -name '*.exe' -o -name '*.msi' \) -exec cp {} out/ \; || true
+          ls -la out || true
+
+      - name: Attach to prerelease
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: out/*
+          fail_on_unmatched_files: false

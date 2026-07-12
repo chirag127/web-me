@@ -94,7 +94,11 @@ const connectOpen = path.startsWith('/connect')
   <title>{title} · Chirag Singhal</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={`https://me.oriz.in${path}`} />
-  <link rel="icon" href="https://github.com/chirag127.png?size=32" type="image/png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#f97316" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -281,6 +285,15 @@ const connectOpen = path.startsWith('/connect')
 
   <!-- AI Digital Twin floating widget (all pages) -->
   <TwinWidget client:only="react" />
+
+  <!-- PWA service worker registration (guarded) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {})
+      })
+    }
+  </script>
 
 </body>
 </html>
