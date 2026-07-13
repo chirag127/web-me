@@ -38,7 +38,7 @@ fetcher skips gracefully when its key is absent).
 ## Deploy
 
 Push to `main` → `.github/workflows/deploy.yml` runs `astro build` and
-`wrangler pages deploy dist --project-name=me`. Requires repo secrets
+`wrangler pages deploy dist --project-name=me-chirag127`. Requires repo secrets
 `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`. Custom domain `me.oriz.in`
 attaches on the first successful deploy.
 
