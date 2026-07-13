@@ -9,7 +9,7 @@
     "timestamps": {
       "created": "2026-07-07T15:48:14.172Z",
       "loggedin": "2026-07-09T04:46:46.545Z",
-      "updated": "2026-07-13T05:41:41.612Z"
+      "updated": "2026-07-13T15:02:52.529Z"
     },
     "facebook": {},
     "google": {
@@ -129,7 +129,7 @@
     "cardReceived": false,
     "warnedLowHealth": false,
     "initializedUserHistory": true,
-    "thirdPartyTools": "2026-07-12T05:32:30.027Z",
+    "thirdPartyTools": "2026-07-13T05:41:41.613Z",
     "newStuff": true
   },
   "history": {
@@ -415,7 +415,7 @@
     ]
   },
   "_id": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
-  "_v": 27,
+  "_v": 28,
   "balance": 2.5,
   "_subSignature": "NOT_RUNNING",
   "challenges": [],

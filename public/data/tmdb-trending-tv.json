@@ -7,8 +7,8 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.37,
-    "votes": 6567,
+    "rating": 8.372,
+    "votes": 6573,
     "release": "2022-08-21",
     "genres": [
       10765,
@@ -53,25 +53,6 @@
     "popularity": 57.25
   },
   {
-    "id": 60625,
-    "tmdb_id": 60625,
-    "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.7,
-    "votes": 11102,
-    "release": "2013-12-02",
-    "genres": [
-      16,
-      35,
-      10765,
-      10759
-    ],
-    "popularity": 174.3132
-  },
-  {
     "id": 94664,
     "tmdb_id": 94664,
     "type": "tv",
@@ -79,8 +60,8 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.484,
-    "votes": 1568,
+    "rating": 8.5,
+    "votes": 1571,
     "release": "2021-01-11",
     "genres": [
       10759,
@@ -126,6 +107,43 @@
     "popularity": 60.2695
   },
   {
+    "id": 60625,
+    "tmdb_id": 60625,
+    "type": "tv",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.679,
+    "votes": 11103,
+    "release": "2013-12-02",
+    "genres": [
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 174.3132
+  },
+  {
+    "id": 124364,
+    "tmdb_id": 124364,
+    "type": "tv",
+    "title": "FROM",
+    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+    "rating": 8.5,
+    "votes": 3974,
+    "release": "2022-02-20",
+    "genres": [
+      9648,
+      18,
+      10765
+    ],
+    "popularity": 344.0067
+  },
+  {
     "id": 138502,
     "tmdb_id": 138502,
     "type": "tv",
@@ -133,8 +151,8 @@
     "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
     "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-    "rating": 8.612,
-    "votes": 754,
+    "rating": 8.6,
+    "votes": 756,
     "release": "2024-03-20",
     "genres": [
       16,
@@ -144,6 +162,41 @@
     "popularity": 80.8454
   },
   {
+    "id": 286709,
+    "tmdb_id": 286709,
+    "type": "tv",
+    "title": "The Westies",
+    "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
+    "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
+    "rating": 5.9,
+    "votes": 7,
+    "release": "2026-07-12",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 35.5774
+  },
+  {
+    "id": 252107,
+    "tmdb_id": 252107,
+    "type": "tv",
+    "title": "Star City",
+    "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
+    "poster": "https://image.tmdb.org/t/p/w342/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
+    "rating": 7.547,
+    "votes": 53,
+    "release": "2026-05-28",
+    "genres": [
+      18,
+      10765,
+      10768
+    ],
+    "popularity": 40.3616
+  },
+  {
     "id": 300727,
     "tmdb_id": 300727,
     "type": "tv",
@@ -151,7 +204,7 @@
     "overview": "Desperate for cash, a former gang boss teams up with an aspiring lawyer to steal an apartment complex's reserve fund — only to uncover deep corruption.",
     "poster": "https://image.tmdb.org/t/p/w342/qFxbrHvNq5tn9SCBq3aKPgaGfyO.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/stJcZWrpfT2DjY0K261Q2FpxUkS.jpg",
-    "rating": 5.333,
+    "rating": 5.3,
     "votes": 3,
     "release": "2026-07-11",
     "genres": [
@@ -162,38 +215,21 @@
     "popularity": 47.3514
   },
   {
-    "id": 286709,
-    "tmdb_id": 286709,
+    "id": 296286,
+    "tmdb_id": 296286,
     "type": "tv",
-    "title": "The Westies",
-    "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
-    "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
-    "rating": 5.2,
-    "votes": 5,
-    "release": "2026-07-12",
+    "title": "Smoking Behind the Supermarket with You",
+    "overview": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”",
+    "poster": "https://image.tmdb.org/t/p/w342/vQ8v5bMQtEdmEvVwNos5dkKxyK7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
+    "rating": 8.962,
+    "votes": 13,
+    "release": "2026-07-09",
     "genres": [
-      18,
-      80
+      16,
+      35
     ],
-    "popularity": 35.5774
-  },
-  {
-    "id": 299167,
-    "tmdb_id": 299167,
-    "type": "tv",
-    "title": "Dutton Ranch",
-    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.237,
-    "votes": 417,
-    "release": "2026-05-15",
-    "genres": [
-      37,
-      18
-    ],
-    "popularity": 165.7006
+    "popularity": 46.934
   },
   {
     "id": 255358,
@@ -214,40 +250,22 @@
     "popularity": 47.0841
   },
   {
-    "id": 106449,
-    "tmdb_id": 106449,
+    "id": 153217,
+    "tmdb_id": 153217,
     "type": "tv",
-    "title": "A Record of a Mortal's Journey to Immortality",
-    "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
-    "poster": "https://image.tmdb.org/t/p/w342/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/8NIvQY34tNPc4txNeym2zEYk9ek.jpg",
-    "rating": 8.4,
-    "votes": 81,
-    "release": "2020-07-25",
+    "title": "Sparks of Tomorrow",
+    "overview": "In an alternate past, an unlikely duo team up to look for a missing catalog that could bring electricity to the smoke-filled streets of Kyoto.",
+    "poster": "https://image.tmdb.org/t/p/w342/yDTcX4l5D3OFeYGsQVI5Jqxx1D7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/fx5JyhFvPn1GSm5ITtNNM6hmpUa.jpg",
+    "rating": 8.3,
+    "votes": 3,
+    "release": "2026-07-05",
     "genres": [
       16,
-      10759,
-      10765
-    ],
-    "popularity": 77.8839
-  },
-  {
-    "id": 124364,
-    "tmdb_id": 124364,
-    "type": "tv",
-    "title": "FROM",
-    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.507,
-    "votes": 3974,
-    "release": "2022-02-20",
-    "genres": [
-      9648,
       18,
       10765
     ],
-    "popularity": 344.0067
+    "popularity": 48.1931
   },
   {
     "id": 136315,
@@ -257,7 +275,7 @@
     "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
     "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
-    "rating": 8.136,
+    "rating": 8.137,
     "votes": 1807,
     "release": "2022-06-23",
     "genres": [
@@ -267,56 +285,21 @@
     "popularity": 72.0215
   },
   {
-    "id": 296286,
-    "tmdb_id": 296286,
+    "id": 299167,
+    "tmdb_id": 299167,
     "type": "tv",
-    "title": "Smoking Behind the Supermarket with You",
-    "overview": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”",
-    "poster": "https://image.tmdb.org/t/p/w342/vQ8v5bMQtEdmEvVwNos5dkKxyK7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
-    "rating": 9,
-    "votes": 12,
-    "release": "2026-07-09",
+    "title": "Dutton Ranch",
+    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+    "rating": 9.24,
+    "votes": 420,
+    "release": "2026-05-15",
     "genres": [
-      16,
-      35
+      37,
+      18
     ],
-    "popularity": 46.934
-  },
-  {
-    "id": 252107,
-    "tmdb_id": 252107,
-    "type": "tv",
-    "title": "Star City",
-    "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
-    "poster": "https://image.tmdb.org/t/p/w342/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
-    "rating": 7.569,
-    "votes": 51,
-    "release": "2026-05-28",
-    "genres": [
-      18,
-      10765,
-      10768
-    ],
-    "popularity": 40.3616
-  },
-  {
-    "id": 323411,
-    "tmdb_id": 323411,
-    "type": "tv",
-    "title": "The Vampire Lestat",
-    "overview": "The Vampire Lestat goes on tour while being haunted by \"muses\" from his past. As the band's popularity grows, so does Lestat's influence over vampires & humans alike, leaving others to contend with Lestat's power in the face of the Great Conversion.",
-    "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/iw1knpC8Jg5davMn2MPxNVxBF8N.jpg",
-    "rating": 6.813,
-    "votes": 32,
-    "release": "2026-06-07",
-    "genres": [
-      18,
-      10765
-    ],
-    "popularity": 25.767
+    "popularity": 165.7006
   },
   {
     "id": 253960,
@@ -324,16 +307,33 @@
     "type": "tv",
     "title": "Human Vapor",
     "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
-    "poster": "https://image.tmdb.org/t/p/w342/wouEquUenT2s9SBejqS7pc2y9Lc.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
-    "rating": 7.588,
-    "votes": 34,
+    "rating": 7.571,
+    "votes": 35,
     "release": "2026-07-02",
     "genres": [
       10765,
       80
     ],
     "popularity": 50.902
+  },
+  {
+    "id": 76479,
+    "tmdb_id": 76479,
+    "type": "tv",
+    "title": "The Boys",
+    "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+    "poster": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
+    "rating": 8.444,
+    "votes": 13106,
+    "release": "2019-07-25",
+    "genres": [
+      10765,
+      10759
+    ],
+    "popularity": 157.0515
   },
   {
     "id": 69346,
@@ -343,7 +343,7 @@
     "overview": "On the front lines of the war, Tanya Degurechaff, blond hair, blue eyes, and porcelain white skin, commands her squad with lisping voice. Actually, she is one of Japan's most elite salary men, reborn as a little girl into a world of magical warfare after angering a mysterious being who calls himself God.",
     "poster": "https://image.tmdb.org/t/p/w342/5nwiHomKZBBF9DLrolfZapi3fDm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xe2IkfzpGFObODJLTpBB9bdRpbB.jpg",
-    "rating": 8.21,
+    "rating": 8.2,
     "votes": 449,
     "release": "2017-01-06",
     "genres": [
