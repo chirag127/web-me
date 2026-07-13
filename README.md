@@ -68,4 +68,4 @@ never served stale. Icons in `public/icons/` (192/512 + maskable).
 
 ## License
 
-See [LICENSE](../../../LICENSE).
+See [LICENSE](./LICENSE).
