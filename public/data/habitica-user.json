@@ -9,7 +9,7 @@
     "timestamps": {
       "created": "2026-07-07T15:48:14.172Z",
       "loggedin": "2026-07-09T04:46:46.545Z",
-      "updated": "2026-07-12T05:32:30.027Z"
+      "updated": "2026-07-13T05:41:41.612Z"
     },
     "facebook": {},
     "google": {
@@ -129,7 +129,7 @@
     "cardReceived": false,
     "warnedLowHealth": false,
     "initializedUserHistory": true,
-    "thirdPartyTools": "2026-07-10T06:08:44.306Z",
+    "thirdPartyTools": "2026-07-12T05:32:30.027Z",
     "newStuff": true
   },
   "history": {
@@ -221,7 +221,9 @@
     "food": {
       "Fish": 1
     },
-    "mounts": {},
+    "mounts": {
+      "Orca-Base": true
+    },
     "quests": {
       "dustbunnies": 1
     }
@@ -413,8 +415,8 @@
     ]
   },
   "_id": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
-  "_v": 26,
-  "balance": 0,
+  "_v": 27,
+  "balance": 2.5,
   "_subSignature": "NOT_RUNNING",
   "challenges": [],
   "guilds": [],
@@ -423,7 +425,19 @@
   "pinnedItemsOrder": [],
   "lastCron": "2026-07-09T04:46:46.545Z",
   "newMessages": {},
-  "notifications": [],
+  "notifications": [
+    {
+      "type": "ITEM_RECEIVED",
+      "data": {
+        "icon": "notif_orca_mount",
+        "title": "An Orca gift for Summer Splash!",
+        "text": "You found 10 Gems and an Orca Mount to ride the waves with!",
+        "destination": "/inventory/stable"
+      },
+      "seen": false,
+      "id": "cff8706d-cb53-4a67-841e-7354ae6a6ea4"
+    }
+  ],
   "tags": [
     {
       "id": "251cbc93-0953-4290-b940-b7f1a9a3098f",
@@ -491,6 +505,7 @@
     }
   ],
   "unpinnedItems": [],
+  "migration": "20267orcaday",
   "id": "21a9ed08-dfdc-4ef0-aaac-17240c30af63",
   "needsCron": true
 }

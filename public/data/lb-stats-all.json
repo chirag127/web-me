@@ -142,6 +142,11 @@
     },
     {
       "artist_mbid": null,
+      "artist_name": "Fireship",
+      "listen_count": 20
+    },
+    {
+      "artist_mbid": null,
       "artist_name": "Capitalmind",
       "listen_count": 20
     },
@@ -244,19 +249,14 @@
       "artist_mbid": null,
       "artist_name": "Charlie Munger",
       "listen_count": 14
-    },
-    {
-      "artist_mbid": null,
-      "artist_name": "Young Royals",
-      "listen_count": 13
     }
   ],
   "count": 50,
   "from_ts": 1009843200,
-  "last_updated": 1783769454,
+  "last_updated": 1783851022,
   "offset": 0,
   "range": "all_time",
-  "to_ts": 1783731024,
-  "total_artist_count": 1443,
+  "to_ts": 1783814686,
+  "total_artist_count": 1449,
   "user_id": "chirag127"
 }

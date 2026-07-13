@@ -1,22 +1,5 @@
 [
   {
-    "id": 125988,
-    "tmdb_id": 125988,
-    "type": "tv",
-    "title": "Silo",
-    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.172,
-    "votes": 2223,
-    "release": "2023-05-04",
-    "genres": [
-      10765,
-      18
-    ],
-    "popularity": 239.2107
-  },
-  {
     "id": 94997,
     "tmdb_id": 94997,
     "type": "tv",
@@ -24,51 +7,32 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.4,
-    "votes": 6545,
+    "rating": 8.37,
+    "votes": 6567,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 358.694
+    "popularity": 362.6725
   },
   {
-    "id": 94664,
-    "tmdb_id": 94664,
+    "id": 125988,
+    "tmdb_id": 125988,
     "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.48,
-    "votes": 1564,
-    "release": "2021-01-11",
+    "title": "Silo",
+    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+    "rating": 8.2,
+    "votes": 2235,
+    "release": "2023-05-04",
     "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 320.2043
-  },
-  {
-    "id": 296206,
-    "tmdb_id": 296206,
-    "type": "tv",
-    "title": "Agent Kim Reactivated",
-    "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-    "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.16,
-    "votes": 25,
-    "release": "2026-06-26",
-    "genres": [
-      10759,
-      80,
+      10765,
       18
     ],
-    "popularity": 154.4532
+    "popularity": 350.1522
   },
   {
     "id": 37854,
@@ -79,68 +43,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
     "rating": 8.746,
-    "votes": 5405,
+    "votes": 5407,
     "release": "1999-10-20",
     "genres": [
       10759,
       35,
       16
     ],
-    "popularity": 50.7857
-  },
-  {
-    "id": 138502,
-    "tmdb_id": 138502,
-    "type": "tv",
-    "title": "X-Men '97",
-    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-    "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-    "rating": 8.608,
-    "votes": 751,
-    "release": "2024-03-20",
-    "genres": [
-      16,
-      10759,
-      10765
-    ],
-    "popularity": 82.7925
-  },
-  {
-    "id": 300727,
-    "tmdb_id": 300727,
-    "type": "tv",
-    "title": "The Apartment Job",
-    "overview": "Desperate for cash, a former gang boss teams up with an aspiring lawyer to steal an apartment complex's reserve fund — only to uncover deep corruption.",
-    "poster": "https://image.tmdb.org/t/p/w342/qFxbrHvNq5tn9SCBq3aKPgaGfyO.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/stJcZWrpfT2DjY0K261Q2FpxUkS.jpg",
-    "rating": 10,
-    "votes": 1,
-    "release": "2026-07-11",
-    "genres": [
-      18,
-      35,
-      80
-    ],
-    "popularity": 27.151
-  },
-  {
-    "id": 283304,
-    "tmdb_id": 283304,
-    "type": "tv",
-    "title": "Little House on the Prairie",
-    "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
-    "poster": "https://image.tmdb.org/t/p/w342/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
-    "rating": 6.022,
-    "votes": 23,
-    "release": "2026-07-09",
-    "genres": [
-      18,
-      37,
-      10751
-    ],
-    "popularity": 62.041
+    "popularity": 57.25
   },
   {
     "id": 60625,
@@ -150,8 +60,8 @@
     "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
     "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.679,
-    "votes": 11095,
+    "rating": 8.7,
+    "votes": 11102,
     "release": "2013-12-02",
     "genres": [
       16,
@@ -159,25 +69,114 @@
       10765,
       10759
     ],
-    "popularity": 165.2908
+    "popularity": 174.3132
   },
   {
-    "id": 124364,
-    "tmdb_id": 124364,
+    "id": 94664,
+    "tmdb_id": 94664,
     "type": "tv",
-    "title": "FROM",
-    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.507,
-    "votes": 3962,
-    "release": "2022-02-20",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.484,
+    "votes": 1568,
+    "release": "2021-01-11",
     "genres": [
-      9648,
-      18,
+      10759,
+      16,
       10765
     ],
-    "popularity": 348.841
+    "popularity": 354.0943
+  },
+  {
+    "id": 296206,
+    "tmdb_id": 296206,
+    "type": "tv",
+    "title": "Agent Kim Reactivated",
+    "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+    "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+    "rating": 7.5,
+    "votes": 28,
+    "release": "2026-06-26",
+    "genres": [
+      10759,
+      80,
+      18
+    ],
+    "popularity": 159.0634
+  },
+  {
+    "id": 283304,
+    "tmdb_id": 283304,
+    "type": "tv",
+    "title": "Little House on the Prairie",
+    "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
+    "poster": "https://image.tmdb.org/t/p/w342/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
+    "rating": 5.7,
+    "votes": 30,
+    "release": "2026-07-09",
+    "genres": [
+      18,
+      37,
+      10751
+    ],
+    "popularity": 60.2695
+  },
+  {
+    "id": 138502,
+    "tmdb_id": 138502,
+    "type": "tv",
+    "title": "X-Men '97",
+    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+    "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+    "rating": 8.612,
+    "votes": 754,
+    "release": "2024-03-20",
+    "genres": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 80.8454
+  },
+  {
+    "id": 300727,
+    "tmdb_id": 300727,
+    "type": "tv",
+    "title": "The Apartment Job",
+    "overview": "Desperate for cash, a former gang boss teams up with an aspiring lawyer to steal an apartment complex's reserve fund — only to uncover deep corruption.",
+    "poster": "https://image.tmdb.org/t/p/w342/qFxbrHvNq5tn9SCBq3aKPgaGfyO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/stJcZWrpfT2DjY0K261Q2FpxUkS.jpg",
+    "rating": 5.333,
+    "votes": 3,
+    "release": "2026-07-11",
+    "genres": [
+      18,
+      35,
+      80
+    ],
+    "popularity": 47.3514
+  },
+  {
+    "id": 286709,
+    "tmdb_id": 286709,
+    "type": "tv",
+    "title": "The Westies",
+    "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
+    "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
+    "rating": 5.2,
+    "votes": 5,
+    "release": "2026-07-12",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 35.5774
   },
   {
     "id": 299167,
@@ -187,32 +186,14 @@
     "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
     "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.24,
-    "votes": 412,
+    "rating": 9.237,
+    "votes": 417,
     "release": "2026-05-15",
     "genres": [
       37,
       18
     ],
-    "popularity": 165.8278
-  },
-  {
-    "id": 252107,
-    "tmdb_id": 252107,
-    "type": "tv",
-    "title": "Star City",
-    "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
-    "poster": "https://image.tmdb.org/t/p/w342/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
-    "rating": 7.458,
-    "votes": 48,
-    "release": "2026-05-28",
-    "genres": [
-      18,
-      10765,
-      10768
-    ],
-    "popularity": 46.1128
+    "popularity": 165.7006
   },
   {
     "id": 255358,
@@ -230,7 +211,7 @@
       10759,
       10765
     ],
-    "popularity": 57.464
+    "popularity": 47.0841
   },
   {
     "id": 106449,
@@ -248,78 +229,42 @@
       10759,
       10765
     ],
-    "popularity": 75.6143
+    "popularity": 77.8839
   },
   {
-    "id": 69346,
-    "tmdb_id": 69346,
+    "id": 124364,
+    "tmdb_id": 124364,
     "type": "tv",
-    "title": "Saga of Tanya the Evil",
-    "overview": "On the front lines of the war, Tanya Degurechaff, blond hair, blue eyes, and porcelain white skin, commands her squad with lisping voice. Actually, she is one of Japan's most elite salary men, reborn as a little girl into a world of magical warfare after angering a mysterious being who calls himself God.",
-    "poster": "https://image.tmdb.org/t/p/w342/5nwiHomKZBBF9DLrolfZapi3fDm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xe2IkfzpGFObODJLTpBB9bdRpbB.jpg",
-    "rating": 8.206,
-    "votes": 448,
-    "release": "2017-01-06",
-    "genres": [
-      16,
-      18,
-      10765,
-      10768
-    ],
-    "popularity": 29.8849
-  },
-  {
-    "id": 253960,
-    "tmdb_id": 253960,
-    "type": "tv",
-    "title": "Human Vapor",
-    "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
-    "poster": "https://image.tmdb.org/t/p/w342/wouEquUenT2s9SBejqS7pc2y9Lc.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
-    "rating": 7.5,
-    "votes": 32,
-    "release": "2026-07-02",
-    "genres": [
-      10765,
-      80
-    ],
-    "popularity": 54.9448
-  },
-  {
-    "id": 322055,
-    "tmdb_id": 322055,
-    "type": "tv",
-    "title": "The Prosecutor's Proposal",
-    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
-    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-    "rating": 6,
-    "votes": 5,
-    "release": "2026-06-25",
+    "title": "FROM",
+    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+    "rating": 8.507,
+    "votes": 3974,
+    "release": "2022-02-20",
     "genres": [
       9648,
-      80,
-      18
+      18,
+      10765
     ],
-    "popularity": 177.4494
+    "popularity": 344.0067
   },
   {
-    "id": 277439,
-    "tmdb_id": 277439,
+    "id": 136315,
+    "tmdb_id": 136315,
     "type": "tv",
-    "title": "Cape Fear",
-    "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
-    "poster": "https://image.tmdb.org/t/p/w342/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/rvMmQj3nMZbJmoW6QrzU0nq9Xky.jpg",
-    "rating": 7,
-    "votes": 67,
-    "release": "2026-06-04",
+    "title": "The Bear",
+    "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+    "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+    "rating": 8.136,
+    "votes": 1807,
+    "release": "2022-06-23",
     "genres": [
       18,
-      80
+      35
     ],
-    "popularity": 46.3063
+    "popularity": 72.0215
   },
   {
     "id": 296286,
@@ -329,34 +274,84 @@
     "overview": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”",
     "poster": "https://image.tmdb.org/t/p/w342/vQ8v5bMQtEdmEvVwNos5dkKxyK7.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
-    "rating": 9.3,
-    "votes": 11,
+    "rating": 9,
+    "votes": 12,
     "release": "2026-07-09",
     "genres": [
       16,
-      18,
       35
     ],
-    "popularity": 47.678
+    "popularity": 46.934
   },
   {
-    "id": 65942,
-    "tmdb_id": 65942,
+    "id": 252107,
+    "tmdb_id": 252107,
     "type": "tv",
-    "title": "Re:ZERO -Starting Life in Another World-",
-    "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
-    "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
-    "rating": 7.995,
-    "votes": 704,
-    "release": "2016-04-04",
+    "title": "Star City",
+    "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
+    "poster": "https://image.tmdb.org/t/p/w342/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
+    "rating": 7.569,
+    "votes": 51,
+    "release": "2026-05-28",
+    "genres": [
+      18,
+      10765,
+      10768
+    ],
+    "popularity": 40.3616
+  },
+  {
+    "id": 323411,
+    "tmdb_id": 323411,
+    "type": "tv",
+    "title": "The Vampire Lestat",
+    "overview": "The Vampire Lestat goes on tour while being haunted by \"muses\" from his past. As the band's popularity grows, so does Lestat's influence over vampires & humans alike, leaving others to contend with Lestat's power in the face of the Great Conversion.",
+    "poster": "https://image.tmdb.org/t/p/w342/gZcmNUcDDR1nR7lmroOJTCrhrhK.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/iw1knpC8Jg5davMn2MPxNVxBF8N.jpg",
+    "rating": 6.813,
+    "votes": 32,
+    "release": "2026-06-07",
+    "genres": [
+      18,
+      10765
+    ],
+    "popularity": 25.767
+  },
+  {
+    "id": 253960,
+    "tmdb_id": 253960,
+    "type": "tv",
+    "title": "Human Vapor",
+    "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
+    "poster": "https://image.tmdb.org/t/p/w342/wouEquUenT2s9SBejqS7pc2y9Lc.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
+    "rating": 7.588,
+    "votes": 34,
+    "release": "2026-07-02",
+    "genres": [
+      10765,
+      80
+    ],
+    "popularity": 50.902
+  },
+  {
+    "id": 69346,
+    "tmdb_id": 69346,
+    "type": "tv",
+    "title": "Saga of Tanya the Evil",
+    "overview": "On the front lines of the war, Tanya Degurechaff, blond hair, blue eyes, and porcelain white skin, commands her squad with lisping voice. Actually, she is one of Japan's most elite salary men, reborn as a little girl into a world of magical warfare after angering a mysterious being who calls himself God.",
+    "poster": "https://image.tmdb.org/t/p/w342/5nwiHomKZBBF9DLrolfZapi3fDm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xe2IkfzpGFObODJLTpBB9bdRpbB.jpg",
+    "rating": 8.21,
+    "votes": 449,
+    "release": "2017-01-06",
     "genres": [
       16,
       18,
-      9648,
-      10759,
-      10765
+      10765,
+      10768
     ],
-    "popularity": 66.0949
+    "popularity": 29.644
   }
 ]

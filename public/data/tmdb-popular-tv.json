@@ -16,25 +16,7 @@
       9648,
       35
     ],
-    "popularity": 662.6346
-  },
-  {
-    "id": 312949,
-    "tmdb_id": 312949,
-    "type": "tv",
-    "title": "Chainsmoker Cat",
-    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.4,
-    "votes": 16,
-    "release": "2026-07-03",
-    "genres": [
-      16,
-      35,
-      10765
-    ],
-    "popularity": 344.7768
+    "popularity": 547.7553
   },
   {
     "id": 94997,
@@ -44,15 +26,67 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.368,
-    "votes": 6544,
+    "rating": 8.37,
+    "votes": 6566,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 358.694
+    "popularity": 362.6725
+  },
+  {
+    "id": 27181,
+    "tmdb_id": 27181,
+    "type": "tv",
+    "title": "Rote Rosen",
+    "overview": "Rote Rosen is a German telenovela produced by Studio Hamburg Serienwerft Lüneburg and broadcast by Das Erste since November 6, 2006. The show is a complex telenovela, who tells one love story every season about women in their forties.",
+    "poster": "https://image.tmdb.org/t/p/w342/swL2qUjGrChFyj14ExwA0pwWtzv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qZ1odCAlNZhUIeLXZXU06JxRqjo.jpg",
+    "rating": 3,
+    "votes": 5,
+    "release": "2006-11-06",
+    "genres": [
+      10766,
+      18
+    ],
+    "popularity": 354.2275
+  },
+  {
+    "id": 125988,
+    "tmdb_id": 125988,
+    "type": "tv",
+    "title": "Silo",
+    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+    "rating": 8.2,
+    "votes": 2234,
+    "release": "2023-05-04",
+    "genres": [
+      10765,
+      18
+    ],
+    "popularity": 350.1522
+  },
+  {
+    "id": 312949,
+    "tmdb_id": 312949,
+    "type": "tv",
+    "title": "Chainsmoker Cat",
+    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+    "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+    "rating": 8.6,
+    "votes": 19,
+    "release": "2026-07-03",
+    "genres": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 293.7737
   },
   {
     "id": 124364,
@@ -62,33 +96,15 @@
     "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.507,
-    "votes": 3962,
+    "rating": 8.508,
+    "votes": 3973,
     "release": "2022-02-20",
     "genres": [
       9648,
       18,
       10765
     ],
-    "popularity": 348.841
-  },
-  {
-    "id": 94664,
-    "tmdb_id": 94664,
-    "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.48,
-    "votes": 1564,
-    "release": "2021-01-11",
-    "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 320.2043
+    "popularity": 344.0067
   },
   {
     "id": 2734,
@@ -106,24 +122,59 @@
       18,
       9648
     ],
-    "popularity": 324.7464
+    "popularity": 302.3186
   },
   {
-    "id": 125988,
-    "tmdb_id": 125988,
+    "id": 94664,
+    "tmdb_id": 94664,
     "type": "tv",
-    "title": "Silo",
-    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.177,
-    "votes": 2220,
-    "release": "2023-05-04",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.484,
+    "votes": 1568,
+    "release": "2021-01-11",
     "genres": [
-      10765,
+      10759,
+      16,
+      10765
+    ],
+    "popularity": 354.0943
+  },
+  {
+    "id": 1416,
+    "tmdb_id": 1416,
+    "type": "tv",
+    "title": "Grey's Anatomy",
+    "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
+    "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+    "rating": 8.209,
+    "votes": 10964,
+    "release": "2005-03-27",
+    "genres": [
       18
     ],
-    "popularity": 239.2107
+    "popularity": 222.6397
+  },
+  {
+    "id": 79744,
+    "tmdb_id": 79744,
+    "type": "tv",
+    "title": "The Rookie",
+    "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
+    "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+    "rating": 8.552,
+    "votes": 3370,
+    "release": "2018-10-16",
+    "genres": [
+      80,
+      18,
+      35
+    ],
+    "popularity": 229.6094
   },
   {
     "id": 316540,
@@ -139,25 +190,7 @@
     "genres": [
       18
     ],
-    "popularity": 215.3475
-  },
-  {
-    "id": 79744,
-    "tmdb_id": 79744,
-    "type": "tv",
-    "title": "The Rookie",
-    "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
-    "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
-    "rating": 8.549,
-    "votes": 3368,
-    "release": "2018-10-16",
-    "genres": [
-      80,
-      18,
-      35
-    ],
-    "popularity": 222.0339
+    "popularity": 193.8191
   },
   {
     "id": 5920,
@@ -167,49 +200,31 @@
     "overview": "Patrick Jane, a former celebrity psychic medium, uses his razor sharp skills of observation and expertise at \"reading\" people to solve serious crimes with the California Bureau of Investigation.",
     "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg",
-    "rating": 8.4,
-    "votes": 4399,
+    "rating": 8.36,
+    "votes": 4402,
     "release": "2008-09-23",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 211.6754
+    "popularity": 215.2661
   },
   {
-    "id": 1416,
-    "tmdb_id": 1416,
+    "id": 95897,
+    "tmdb_id": 95897,
     "type": "tv",
-    "title": "Grey's Anatomy",
-    "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
-    "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
-    "rating": 8.209,
-    "votes": 10961,
-    "release": "2005-03-27",
+    "title": "Overflow",
+    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
+    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
+    "rating": 7.4,
+    "votes": 88,
+    "release": "2020-01-06",
     "genres": [
-      18
+      16
     ],
-    "popularity": 228.1625
-  },
-  {
-    "id": 1622,
-    "tmdb_id": 1622,
-    "type": "tv",
-    "title": "Supernatural",
-    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
-    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
-    "rating": 8.3,
-    "votes": 8524,
-    "release": "2005-09-13",
-    "genres": [
-      18,
-      9648,
-      10765
-    ],
-    "popularity": 196.8009
+    "popularity": 195.8143
   },
   {
     "id": 549,
@@ -226,41 +241,25 @@
       80,
       18
     ],
-    "popularity": 197.9204
+    "popularity": 204.0757
   },
   {
-    "id": 322055,
-    "tmdb_id": 322055,
+    "id": 1622,
+    "tmdb_id": 1622,
     "type": "tv",
-    "title": "The Prosecutor's Proposal",
-    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
-    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-    "rating": 6,
-    "votes": 5,
-    "release": "2026-06-25",
+    "title": "Supernatural",
+    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
+    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+    "rating": 8.312,
+    "votes": 8526,
+    "release": "2005-09-13",
     "genres": [
+      18,
       9648,
-      80,
-      18
+      10765
     ],
-    "popularity": 177.4494
-  },
-  {
-    "id": 95897,
-    "tmdb_id": 95897,
-    "type": "tv",
-    "title": "Overflow",
-    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
-    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
-    "rating": 7.415,
-    "votes": 88,
-    "release": "2020-01-06",
-    "genres": [
-      16
-    ],
-    "popularity": 200.2496
+    "popularity": 211.7819
   },
   {
     "id": 4057,
@@ -270,47 +269,33 @@
     "overview": "An elite team of FBI profilers analyze the country's most twisted criminal minds, anticipating their next moves before they strike again. The Behavioral Analysis Unit's most experienced agent is David Rossi, a founding member of the BAU who returns to help the team solve new cases.",
     "poster": "https://image.tmdb.org/t/p/w342/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
-    "rating": 8.304,
-    "votes": 4115,
+    "rating": 8.305,
+    "votes": 4117,
     "release": "2005-09-22",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 194.131
+    "popularity": 182.059
   },
   {
-    "id": 324186,
-    "tmdb_id": 324186,
+    "id": 4614,
+    "tmdb_id": 4614,
     "type": "tv",
-    "title": "Majhi Manasa",
-    "overview": "",
-    "poster": "https://image.tmdb.org/t/p/w342/6bk8ShS9yZnO7do6uy0Lfej7KUY.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tU3l7UCXuksCh7TvdkPnOwg9KH.jpg",
-    "rating": 0,
-    "votes": 0,
-    "release": "2022-05-30",
+    "title": "NCIS",
+    "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
+    "poster": "https://image.tmdb.org/t/p/w342/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
+    "rating": 7.6,
+    "votes": 2529,
+    "release": "2003-09-23",
     "genres": [
-      18
+      80,
+      18,
+      10759
     ],
-    "popularity": 138.0918
-  },
-  {
-    "id": 241002,
-    "tmdb_id": 241002,
-    "type": "tv",
-    "title": "Adam's Sweet Agony",
-    "overview": "This is the story of a boy, who became the lone Adam among four billion Eves. In a world where a pandemic has rendered all men impotent, high school student Itsuki is the exception who escaped it. In order to protect this secret, he transfers to a very special high school, which turns out to be composed of 90% girls! There, he encounters an upbeat and friendly senior, a sexually frustrated female teacher, a tomboyish school 'prince,' and an heiress from a wealthy family. For Itsuki, who has his pick of any woman in the world, the question remains: which one will he choose?",
-    "poster": "https://image.tmdb.org/t/p/w342/1n1ZP0KHXUSvVxZG63x7aOzmO4M.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/bM4nCynOSA5oCNqLsqb1Fo56sZQ.jpg",
-    "rating": 6.875,
-    "votes": 36,
-    "release": "2024-01-08",
-    "genres": [
-      16
-    ],
-    "popularity": 162.8971
+    "popularity": 181.8118
   },
   {
     "id": 1434,
@@ -321,30 +306,49 @@
     "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
     "rating": 7.405,
-    "votes": 5005,
+    "votes": 5007,
     "release": "1999-01-31",
     "genres": [
       16,
       35
     ],
-    "popularity": 175.3
+    "popularity": 184.629
   },
   {
-    "id": 4614,
-    "tmdb_id": 4614,
+    "id": 60625,
+    "tmdb_id": 60625,
     "type": "tv",
-    "title": "NCIS",
-    "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
-    "poster": "https://image.tmdb.org/t/p/w342/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
-    "rating": 7.614,
-    "votes": 2529,
-    "release": "2003-09-23",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.7,
+    "votes": 11102,
+    "release": "2013-12-02",
     "genres": [
-      80,
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 174.3132
+  },
+  {
+    "id": 1399,
+    "tmdb_id": 1399,
+    "type": "tv",
+    "title": "Game of Thrones",
+    "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+    "poster": "https://image.tmdb.org/t/p/w342/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
+    "rating": 8.465,
+    "votes": 27220,
+    "release": "2011-04-17",
+    "genres": [
+      10765,
       18,
       10759
     ],
-    "popularity": 181.5559
+    "popularity": 181.4467
   }
 ]
