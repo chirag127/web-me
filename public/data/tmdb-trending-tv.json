@@ -8,14 +8,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.372,
-    "votes": 6573,
+    "votes": 6590,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 362.6725
+    "popularity": 471.224
   },
   {
     "id": 125988,
@@ -25,14 +25,14 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.2,
-    "votes": 2235,
+    "rating": 8.172,
+    "votes": 2240,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 350.1522
+    "popularity": 390.1527
   },
   {
     "id": 37854,
@@ -42,33 +42,52 @@
     "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
     "poster": "https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-    "rating": 8.746,
-    "votes": 5407,
+    "rating": 8.7,
+    "votes": 5408,
     "release": "1999-10-20",
     "genres": [
       10759,
       35,
       16
     ],
-    "popularity": 57.25
+    "popularity": 54.8655
   },
   {
-    "id": 94664,
-    "tmdb_id": 94664,
+    "id": 60625,
+    "tmdb_id": 60625,
     "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.5,
-    "votes": 1571,
-    "release": "2021-01-11",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.679,
+    "votes": 11105,
+    "release": "2013-12-02",
     "genres": [
-      10759,
       16,
-      10765
+      35,
+      10765,
+      10759
     ],
-    "popularity": 354.0943
+    "popularity": 194.1006
+  },
+  {
+    "id": 283304,
+    "tmdb_id": 283304,
+    "type": "tv",
+    "title": "Little House on the Prairie",
+    "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
+    "poster": "https://image.tmdb.org/t/p/w342/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
+    "rating": 5.645,
+    "votes": 31,
+    "release": "2026-07-09",
+    "genres": [
+      18,
+      37,
+      10751
+    ],
+    "popularity": 61.0573
   },
   {
     "id": 296206,
@@ -86,62 +105,42 @@
       80,
       18
     ],
-    "popularity": 159.0634
+    "popularity": 153.0179
   },
   {
-    "id": 283304,
-    "tmdb_id": 283304,
+    "id": 301412,
+    "tmdb_id": 301412,
     "type": "tv",
-    "title": "Little House on the Prairie",
-    "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
-    "poster": "https://image.tmdb.org/t/p/w342/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
-    "rating": 5.7,
-    "votes": 30,
-    "release": "2026-07-09",
+    "title": "Dream to You",
+    "overview": "Dreaming of filmmaking, a passionate high schooler pushes aside all obligations to create short films, inspiring a studious but passionless classmate. Their deep bond eventually turns romantic, but they are abruptly separated when he is forced to move overseas. Years later in their thirties, their lives have completely swapped: she is a disillusioned, struggling TV reporter, while he has become an award-winning director. When a sudden reunion brings them face-to-face, he resolves to help her rediscover her lost spark, but she still harbors deep resentment over his past disappearance.",
+    "poster": "https://image.tmdb.org/t/p/w342/cBiwrUwUNNYXTc5xrDEQWcMqftd.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5AhL7NKa8UC6QOyzKiDohUM9VYT.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-07-13",
     "genres": [
       18,
-      37,
-      10751
+      35
     ],
-    "popularity": 60.2695
+    "popularity": 21.1427
   },
   {
-    "id": 60625,
-    "tmdb_id": 60625,
+    "id": 94664,
+    "tmdb_id": 94664,
     "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.679,
-    "votes": 11103,
-    "release": "2013-12-02",
-    "genres": [
-      16,
-      35,
-      10765,
-      10759
-    ],
-    "popularity": 174.3132
-  },
-  {
-    "id": 124364,
-    "tmdb_id": 124364,
-    "type": "tv",
-    "title": "FROM",
-    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
     "rating": 8.5,
-    "votes": 3974,
-    "release": "2022-02-20",
+    "votes": 1573,
+    "release": "2021-01-11",
     "genres": [
-      9648,
-      18,
+      10759,
+      16,
       10765
     ],
-    "popularity": 344.0067
+    "popularity": 349.5251
   },
   {
     "id": 138502,
@@ -151,15 +150,15 @@
     "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
     "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-    "rating": 8.6,
-    "votes": 756,
+    "rating": 8.611,
+    "votes": 758,
     "release": "2024-03-20",
     "genres": [
       16,
       10759,
       10765
     ],
-    "popularity": 80.8454
+    "popularity": 80.4265
   },
   {
     "id": 286709,
@@ -169,32 +168,32 @@
     "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
     "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
-    "rating": 5.9,
-    "votes": 7,
+    "rating": 6,
+    "votes": 8,
     "release": "2026-07-12",
     "genres": [
       18,
       80
     ],
-    "popularity": 35.5774
+    "popularity": 53.3421
   },
   {
-    "id": 252107,
-    "tmdb_id": 252107,
+    "id": 255358,
+    "tmdb_id": 255358,
     "type": "tv",
-    "title": "Star City",
-    "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
-    "poster": "https://image.tmdb.org/t/p/w342/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
-    "rating": 7.547,
-    "votes": 53,
-    "release": "2026-05-28",
+    "title": "THE GHOST IN THE SHELL",
+    "overview": "2029, a near-future Japan. The full cyborg Motoko Kusanagi envisions a task force that preemptively strikes emerging threats. She and her team are scouted by Daisuke Aramaki as Public Security Section 9, AKA the \"Shell Squad.\" An international conspiracy hints at a hacker known as The \"Puppet Master.\" What fate awaits Kusanagi? What is the hacker's endgame? A new era of cyberpunk action begins!",
+    "poster": "https://image.tmdb.org/t/p/w342/nUXjSyXAQZhOf32e6lkLX6C6Rf3.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/unc9cOVdhCUDnIqijFX4wHsgG4f.jpg",
+    "rating": 9.107,
+    "votes": 14,
+    "release": "2026-07-07",
     "genres": [
-      18,
-      10765,
-      10768
+      16,
+      10759,
+      10765
     ],
-    "popularity": 40.3616
+    "popularity": 43.8209
   },
   {
     "id": 300727,
@@ -212,7 +211,94 @@
       35,
       80
     ],
-    "popularity": 47.3514
+    "popularity": 54.6596
+  },
+  {
+    "id": 124364,
+    "tmdb_id": 124364,
+    "type": "tv",
+    "title": "FROM",
+    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+    "rating": 8.509,
+    "votes": 3983,
+    "release": "2022-02-20",
+    "genres": [
+      9648,
+      18,
+      10765
+    ],
+    "popularity": 333.2051
+  },
+  {
+    "id": 136315,
+    "tmdb_id": 136315,
+    "type": "tv",
+    "title": "The Bear",
+    "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+    "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+    "rating": 8.138,
+    "votes": 1809,
+    "release": "2022-06-23",
+    "genres": [
+      18,
+      35
+    ],
+    "popularity": 69.4731
+  },
+  {
+    "id": 252107,
+    "tmdb_id": 252107,
+    "type": "tv",
+    "title": "Star City",
+    "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
+    "poster": "https://image.tmdb.org/t/p/w342/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
+    "rating": 7.589,
+    "votes": 56,
+    "release": "2026-05-28",
+    "genres": [
+      18,
+      10765,
+      10768
+    ],
+    "popularity": 39.3889
+  },
+  {
+    "id": 79166,
+    "tmdb_id": 79166,
+    "type": "tv",
+    "title": "Grand Blue Dreaming",
+    "overview": "A college student joins the local diving club after meeting some rowdy upperclassmen. New adventures in booze and the ocean await.",
+    "poster": "https://image.tmdb.org/t/p/w342/ii1yrluzWisy1rygSKz8lJkAkil.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/pJqAgDico7ZTMAfAXyzldYqj5ME.jpg",
+    "rating": 7.709,
+    "votes": 184,
+    "release": "2018-07-14",
+    "genres": [
+      16,
+      35
+    ],
+    "popularity": 39.5212
+  },
+  {
+    "id": 253960,
+    "tmdb_id": 253960,
+    "type": "tv",
+    "title": "Human Vapor",
+    "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
+    "poster": "https://image.tmdb.org/t/p/w342/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
+    "rating": 7.556,
+    "votes": 36,
+    "release": "2026-07-02",
+    "genres": [
+      10765,
+      80
+    ],
+    "popularity": 46.5084
   },
   {
     "id": 296286,
@@ -229,111 +315,7 @@
       16,
       35
     ],
-    "popularity": 46.934
-  },
-  {
-    "id": 255358,
-    "tmdb_id": 255358,
-    "type": "tv",
-    "title": "THE GHOST IN THE SHELL",
-    "overview": "2029, a near-future Japan. The full cyborg Motoko Kusanagi envisions a task force that preemptively strikes emerging threats. She and her team are scouted by Daisuke Aramaki as Public Security Section 9, AKA the \"Shell Squad.\" An international conspiracy hints at a hacker known as The \"Puppet Master.\" What fate awaits Kusanagi? What is the hacker's endgame? A new era of cyberpunk action begins!",
-    "poster": "https://image.tmdb.org/t/p/w342/nUXjSyXAQZhOf32e6lkLX6C6Rf3.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/unc9cOVdhCUDnIqijFX4wHsgG4f.jpg",
-    "rating": 9,
-    "votes": 12,
-    "release": "2026-07-07",
-    "genres": [
-      16,
-      10759,
-      10765
-    ],
-    "popularity": 47.0841
-  },
-  {
-    "id": 153217,
-    "tmdb_id": 153217,
-    "type": "tv",
-    "title": "Sparks of Tomorrow",
-    "overview": "In an alternate past, an unlikely duo team up to look for a missing catalog that could bring electricity to the smoke-filled streets of Kyoto.",
-    "poster": "https://image.tmdb.org/t/p/w342/yDTcX4l5D3OFeYGsQVI5Jqxx1D7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/fx5JyhFvPn1GSm5ITtNNM6hmpUa.jpg",
-    "rating": 8.3,
-    "votes": 3,
-    "release": "2026-07-05",
-    "genres": [
-      16,
-      18,
-      10765
-    ],
-    "popularity": 48.1931
-  },
-  {
-    "id": 136315,
-    "tmdb_id": 136315,
-    "type": "tv",
-    "title": "The Bear",
-    "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
-    "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
-    "rating": 8.137,
-    "votes": 1807,
-    "release": "2022-06-23",
-    "genres": [
-      18,
-      35
-    ],
-    "popularity": 72.0215
-  },
-  {
-    "id": 299167,
-    "tmdb_id": 299167,
-    "type": "tv",
-    "title": "Dutton Ranch",
-    "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-    "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.24,
-    "votes": 420,
-    "release": "2026-05-15",
-    "genres": [
-      37,
-      18
-    ],
-    "popularity": 165.7006
-  },
-  {
-    "id": 253960,
-    "tmdb_id": 253960,
-    "type": "tv",
-    "title": "Human Vapor",
-    "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
-    "poster": "https://image.tmdb.org/t/p/w342/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tDjLCYMaJK27PEZHiAtCYujXdRo.jpg",
-    "rating": 7.571,
-    "votes": 35,
-    "release": "2026-07-02",
-    "genres": [
-      10765,
-      80
-    ],
-    "popularity": 50.902
-  },
-  {
-    "id": 76479,
-    "tmdb_id": 76479,
-    "type": "tv",
-    "title": "The Boys",
-    "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
-    "poster": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
-    "rating": 8.444,
-    "votes": 13106,
-    "release": "2019-07-25",
-    "genres": [
-      10765,
-      10759
-    ],
-    "popularity": 157.0515
+    "popularity": 46.0511
   },
   {
     "id": 69346,
@@ -352,6 +334,24 @@
       10765,
       10768
     ],
-    "popularity": 29.644
+    "popularity": 30.8733
+  },
+  {
+    "id": 312949,
+    "tmdb_id": 312949,
+    "type": "tv",
+    "title": "Chainsmoker Cat",
+    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+    "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+    "rating": 8.568,
+    "votes": 22,
+    "release": "2026-07-03",
+    "genres": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 254.615
   }
 ]

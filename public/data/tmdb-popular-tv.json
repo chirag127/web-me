@@ -16,7 +16,7 @@
       9648,
       35
     ],
-    "popularity": 547.7553
+    "popularity": 445.9168
   },
   {
     "id": 94997,
@@ -27,14 +27,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.4,
-    "votes": 6569,
+    "votes": 6588,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 362.6725
+    "popularity": 471.224
   },
   {
     "id": 27181,
@@ -51,7 +51,7 @@
       10766,
       18
     ],
-    "popularity": 354.2275
+    "popularity": 166.2391
   },
   {
     "id": 94664,
@@ -61,15 +61,15 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.47,
-    "votes": 1571,
+    "rating": 8.5,
+    "votes": 1573,
     "release": "2021-01-11",
     "genres": [
       10759,
       16,
       10765
     ],
-    "popularity": 354.0943
+    "popularity": 349.5251
   },
   {
     "id": 125988,
@@ -79,32 +79,14 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.2,
-    "votes": 2235,
+    "rating": 8.171,
+    "votes": 2238,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 350.1522
-  },
-  {
-    "id": 312949,
-    "tmdb_id": 312949,
-    "type": "tv",
-    "title": "Chainsmoker Cat",
-    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.6,
-    "votes": 19,
-    "release": "2026-07-03",
-    "genres": [
-      16,
-      35,
-      10765
-    ],
-    "popularity": 293.7737
+    "popularity": 390.1527
   },
   {
     "id": 124364,
@@ -114,15 +96,15 @@
     "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.5,
-    "votes": 3974,
+    "rating": 8.508,
+    "votes": 3981,
     "release": "2022-02-20",
     "genres": [
       9648,
       18,
       10765
     ],
-    "popularity": 344.0067
+    "popularity": 333.2051
   },
   {
     "id": 2734,
@@ -132,15 +114,51 @@
     "overview": "In the criminal justice system, sexually-based offenses are considered especially heinous. In New York City, the dedicated detectives who investigate these vicious felonies are members of an elite squad known as the Special Victims Unit. These are their stories.",
     "poster": "https://image.tmdb.org/t/p/w342/iofokHZoUB4Qhik4PflvJl8TT6a.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
-    "rating": 8,
-    "votes": 4281,
+    "rating": 7.952,
+    "votes": 4283,
     "release": "1999-09-20",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 302.3186
+    "popularity": 279.304
+  },
+  {
+    "id": 312949,
+    "tmdb_id": 312949,
+    "type": "tv",
+    "title": "Chainsmoker Cat",
+    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+    "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+    "rating": 8.568,
+    "votes": 22,
+    "release": "2026-07-03",
+    "genres": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 254.615
+  },
+  {
+    "id": 79744,
+    "tmdb_id": 79744,
+    "type": "tv",
+    "title": "The Rookie",
+    "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
+    "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+    "rating": 8.551,
+    "votes": 3372,
+    "release": "2018-10-16",
+    "genres": [
+      80,
+      18,
+      35
+    ],
+    "popularity": 225.357
   },
   {
     "id": 1416,
@@ -151,46 +169,31 @@
     "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
     "rating": 8.209,
-    "votes": 10964,
+    "votes": 10963,
     "release": "2005-03-27",
     "genres": [
       18
     ],
-    "popularity": 222.6397
+    "popularity": 204.6049
   },
   {
-    "id": 79744,
-    "tmdb_id": 79744,
+    "id": 223911,
+    "tmdb_id": 223911,
     "type": "tv",
-    "title": "The Rookie",
-    "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
-    "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
-    "rating": 8.552,
-    "votes": 3370,
-    "release": "2018-10-16",
+    "title": "Renegade Immortal",
+    "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
+    "poster": "https://image.tmdb.org/t/p/w342/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/crn53sSGWRZ8wAtEGso52nepEkz.jpg",
+    "rating": 8.211,
+    "votes": 38,
+    "release": "2023-09-25",
     "genres": [
-      80,
+      10759,
+      16,
       18,
-      35
+      10765
     ],
-    "popularity": 229.6094
-  },
-  {
-    "id": 316540,
-    "tmdb_id": 316540,
-    "type": "tv",
-    "title": "Bittersweet Love",
-    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
-    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
-    "rating": 10,
-    "votes": 1,
-    "release": "2026-07-03",
-    "genres": [
-      18
-    ],
-    "popularity": 193.8191
+    "popularity": 178.8635
   },
   {
     "id": 5920,
@@ -200,31 +203,50 @@
     "overview": "Patrick Jane, a former celebrity psychic medium, uses his razor sharp skills of observation and expertise at \"reading\" people to solve serious crimes with the California Bureau of Investigation.",
     "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg",
-    "rating": 8.361,
-    "votes": 4403,
+    "rating": 8.36,
+    "votes": 4404,
     "release": "2008-09-23",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 215.2661
+    "popularity": 217.0038
   },
   {
-    "id": 95897,
-    "tmdb_id": 95897,
+    "id": 1622,
+    "tmdb_id": 1622,
     "type": "tv",
-    "title": "Overflow",
-    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
-    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
-    "rating": 7.4,
-    "votes": 88,
-    "release": "2020-01-06",
+    "title": "Supernatural",
+    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
+    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
+    "rating": 8.313,
+    "votes": 8529,
+    "release": "2005-09-13",
     "genres": [
-      16
+      18,
+      9648,
+      10765
     ],
-    "popularity": 195.8143
+    "popularity": 200.7453
+  },
+  {
+    "id": 100780,
+    "tmdb_id": 100780,
+    "type": "tv",
+    "title": "Jamai Raja",
+    "overview": "Siddharth, a hotelier, takes up the responsibility of repairing the relationship between his independent wife, Roshni, and his enterprising mother-in-law, Durga Devi.",
+    "poster": "https://image.tmdb.org/t/p/w342/7TDfSot51AFRK8aFs2kO3snM4um.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/aSxmk7crbJKSwRXagAN1uvvc80i.jpg",
+    "rating": 5.5,
+    "votes": 4,
+    "release": "2014-08-04",
+    "genres": [
+      18,
+      10766
+    ],
+    "popularity": 191.3299
   },
   {
     "id": 549,
@@ -241,114 +263,92 @@
       80,
       18
     ],
-    "popularity": 204.0757
+    "popularity": 214.2257
   },
   {
-    "id": 1622,
-    "tmdb_id": 1622,
+    "id": 95897,
+    "tmdb_id": 95897,
     "type": "tv",
-    "title": "Supernatural",
-    "overview": "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that lives in the dark corners and on the back roads of America ... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their '67 Chevy Impala, battling every kind of supernatural threat they encounter along the way. ",
-    "poster": "https://image.tmdb.org/t/p/w342/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ro0tlgnsco4SwbdAgmscLkSlMSL.jpg",
-    "rating": 8.313,
-    "votes": 8527,
-    "release": "2005-09-13",
+    "title": "Overflow",
+    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
+    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
+    "rating": 7.4,
+    "votes": 88,
+    "release": "2020-01-06",
     "genres": [
-      18,
-      9648,
-      10765
+      16
     ],
-    "popularity": 211.7819
+    "popularity": 188.9674
   },
   {
-    "id": 4057,
-    "tmdb_id": 4057,
+    "id": 316540,
+    "tmdb_id": 316540,
     "type": "tv",
-    "title": "Criminal Minds",
-    "overview": "An elite team of FBI profilers analyze the country's most twisted criminal minds, anticipating their next moves before they strike again. The Behavioral Analysis Unit's most experienced agent is David Rossi, a founding member of the BAU who returns to help the team solve new cases.",
-    "poster": "https://image.tmdb.org/t/p/w342/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
-    "rating": 8.3,
-    "votes": 4117,
-    "release": "2005-09-22",
+    "title": "Bittersweet Love",
+    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
+    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
+    "rating": 10,
+    "votes": 1,
+    "release": "2026-07-03",
     "genres": [
-      80,
-      18,
-      9648
+      18
     ],
-    "popularity": 182.059
+    "popularity": 180.7935
   },
   {
-    "id": 4614,
-    "tmdb_id": 4614,
+    "id": 65733,
+    "tmdb_id": 65733,
     "type": "tv",
-    "title": "NCIS",
-    "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
-    "poster": "https://image.tmdb.org/t/p/w342/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
-    "rating": 7.6,
-    "votes": 2529,
-    "release": "2003-09-23",
+    "title": "Doraemon",
+    "overview": "Robotic cat Doraemon is sent back in time from the 22nd century to protect 10-year-old Noby, a lazy and uncoordinated boy who is destined to have a tragic future. Doraemon can create secret gadgets from a pocket on his stomach, but they usually cause more bad than good because of Noby's propensity to misuse them.",
+    "poster": "https://image.tmdb.org/t/p/w342/9ZN1P32SHviL3SV51qLivxycvcx.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/c2oiRa7V3bQzof4wVGzLXtWJ5QU.jpg",
+    "rating": 8.1,
+    "votes": 234,
+    "release": "2005-04-22",
     "genres": [
-      80,
-      18,
-      10759
-    ],
-    "popularity": 181.8118
-  },
-  {
-    "id": 1434,
-    "tmdb_id": 1434,
-    "type": "tv",
-    "title": "Family Guy",
-    "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
-    "poster": "https://image.tmdb.org/t/p/w342/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/l7wShoIdIUwaDIbsHno9pO5MZXT.jpg",
-    "rating": 7.405,
-    "votes": 5007,
-    "release": "1999-01-31",
-    "genres": [
-      16,
-      35
-    ],
-    "popularity": 184.629
-  },
-  {
-    "id": 60625,
-    "tmdb_id": 60625,
-    "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.679,
-    "votes": 11103,
-    "release": "2013-12-02",
-    "genres": [
+      10759,
       16,
       35,
       10765,
-      10759
+      10762,
+      10751
     ],
-    "popularity": 174.3132
+    "popularity": 177.9721
   },
   {
-    "id": 1399,
-    "tmdb_id": 1399,
+    "id": 1636,
+    "tmdb_id": 1636,
     "type": "tv",
-    "title": "Game of Thrones",
-    "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
-    "poster": "https://image.tmdb.org/t/p/w342/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
-    "rating": 8.5,
-    "votes": 27220,
-    "release": "2011-04-17",
+    "title": "Top of the Pops",
+    "overview": "The biggest stars, the most iconic performances, the most outrageous outfits – it’s Britain’s number one pop show.",
+    "poster": "https://image.tmdb.org/t/p/w342/jjfTTjVYWyD6rGHVbnC44IrsJ7P.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/q8fmM50In8xGVW0iYoENPa71kAA.jpg",
+    "rating": 6.651,
+    "votes": 43,
+    "release": "1964-01-01",
     "genres": [
-      10765,
-      18,
-      10759
+      10764
     ],
-    "popularity": 181.4467
+    "popularity": 112.5714
+  },
+  {
+    "id": 2224,
+    "tmdb_id": 2224,
+    "type": "tv",
+    "title": "The Daily Show",
+    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
+    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
+    "rating": 6.396,
+    "votes": 642,
+    "release": "1996-07-22",
+    "genres": [
+      10763,
+      35
+    ],
+    "popularity": 159.6065
   }
 ]
