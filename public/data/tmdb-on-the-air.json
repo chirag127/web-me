@@ -7,33 +7,15 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.372,
-    "votes": 6589,
+    "rating": 8.373,
+    "votes": 6599,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 471.224
-  },
-  {
-    "id": 94664,
-    "tmdb_id": 94664,
-    "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.5,
-    "votes": 1573,
-    "release": "2021-01-11",
-    "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 349.5251
+    "popularity": 415.1124
   },
   {
     "id": 125988,
@@ -43,14 +25,32 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.2,
-    "votes": 2238,
+    "rating": 8.175,
+    "votes": 2246,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 390.1527
+    "popularity": 355.6735
+  },
+  {
+    "id": 94664,
+    "tmdb_id": 94664,
+    "type": "tv",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.473,
+    "votes": 1574,
+    "release": "2021-01-11",
+    "genres": [
+      10759,
+      16,
+      10765
+    ],
+    "popularity": 288.5992
   },
   {
     "id": 312949,
@@ -60,34 +60,34 @@
     "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
     "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.568,
-    "votes": 22,
+    "rating": 8.688,
+    "votes": 24,
     "release": "2026-07-03",
     "genres": [
       16,
       35,
       10765
     ],
-    "popularity": 254.615
+    "popularity": 209.2064
   },
   {
-    "id": 223911,
-    "tmdb_id": 223911,
+    "id": 60625,
+    "tmdb_id": 60625,
     "type": "tv",
-    "title": "Renegade Immortal",
-    "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
-    "poster": "https://image.tmdb.org/t/p/w342/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/crn53sSGWRZ8wAtEGso52nepEkz.jpg",
-    "rating": 8.211,
-    "votes": 38,
-    "release": "2023-09-25",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.679,
+    "votes": 11108,
+    "release": "2013-12-02",
     "genres": [
-      10759,
       16,
-      18,
-      10765
+      35,
+      10765,
+      10759
     ],
-    "popularity": 178.8635
+    "popularity": 186.45
   },
   {
     "id": 316540,
@@ -103,24 +103,25 @@
     "genres": [
       18
     ],
-    "popularity": 180.7935
+    "popularity": 153.8107
   },
   {
-    "id": 2224,
-    "tmdb_id": 2224,
+    "id": 223911,
+    "tmdb_id": 223911,
     "type": "tv",
-    "title": "The Daily Show",
-    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
-    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
-    "rating": 6.396,
-    "votes": 642,
-    "release": "1996-07-22",
+    "title": "Renegade Immortal",
+    "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
+    "poster": "https://image.tmdb.org/t/p/w342/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/crn53sSGWRZ8wAtEGso52nepEkz.jpg",
+    "rating": 8.2,
+    "votes": 38,
+    "release": "2023-09-25",
     "genres": [
-      10763,
-      35
+      16,
+      18,
+      10759
     ],
-    "popularity": 159.6065
+    "popularity": 153.864
   },
   {
     "id": 4057,
@@ -131,83 +132,31 @@
     "poster": "https://image.tmdb.org/t/p/w342/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
     "rating": 8.303,
-    "votes": 4119,
+    "votes": 4121,
     "release": "2005-09-22",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 177.8361
+    "popularity": 167.1924
   },
   {
-    "id": 206559,
-    "tmdb_id": 206559,
+    "id": 2224,
+    "tmdb_id": 2224,
     "type": "tv",
-    "title": "Binnelanders",
-    "overview": "A South African Afrikaans soap opera. It is set in and around the fictional private hospital, Binneland Kliniek, in Pretoria, and the storyline follows the trials, trauma and tribulations of the staff and patients of the hospital.",
-    "poster": "https://image.tmdb.org/t/p/w342/3bzECfllho8PphdYujLUIuhncJD.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/s1dTt4M31q2HwD5Fkl1tf5tQzJg.jpg",
-    "rating": 5.532,
-    "votes": 111,
-    "release": "2005-10-13",
+    "title": "The Daily Show",
+    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
+    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
+    "rating": 6.397,
+    "votes": 643,
+    "release": "1996-07-22",
     "genres": [
-      10766
+      10763,
+      35
     ],
-    "popularity": 124.4762
-  },
-  {
-    "id": 60625,
-    "tmdb_id": 60625,
-    "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.7,
-    "votes": 11104,
-    "release": "2013-12-02",
-    "genres": [
-      16,
-      35,
-      10765,
-      10759
-    ],
-    "popularity": 194.1006
-  },
-  {
-    "id": 291,
-    "tmdb_id": 291,
-    "type": "tv",
-    "title": "Coronation Street",
-    "overview": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
-    "poster": "https://image.tmdb.org/t/p/w342/5x1HXqYqPyYw7oc7Isu1lvVmwRP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5APjn4LnV5wWk5DXq7ZewT6zzP1.jpg",
-    "rating": 5.3,
-    "votes": 117,
-    "release": "1960-12-09",
-    "genres": [
-      10766
-    ],
-    "popularity": 91.9168
-  },
-  {
-    "id": 322055,
-    "tmdb_id": 322055,
-    "type": "tv",
-    "title": "The Prosecutor's Proposal",
-    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
-    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-    "rating": 6,
-    "votes": 5,
-    "release": "2026-06-25",
-    "genres": [
-      9648,
-      80,
-      18
-    ],
-    "popularity": 145.767
+    "popularity": 135.7588
   },
   {
     "id": 296206,
@@ -225,7 +174,25 @@
       80,
       18
     ],
-    "popularity": 153.0179
+    "popularity": 152.9401
+  },
+  {
+    "id": 322055,
+    "tmdb_id": 322055,
+    "type": "tv",
+    "title": "The Prosecutor's Proposal",
+    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
+    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
+    "rating": 6,
+    "votes": 5,
+    "release": "2026-06-25",
+    "genres": [
+      9648,
+      80,
+      18
+    ],
+    "popularity": 130.8963
   },
   {
     "id": 91759,
@@ -243,24 +210,108 @@
       35,
       18
     ],
-    "popularity": 137.7076
+    "popularity": 108.0613
   },
   {
-    "id": 59941,
-    "tmdb_id": 59941,
+    "id": 57775,
+    "tmdb_id": 57775,
     "type": "tv",
-    "title": "The Tonight Show Starring Jimmy Fallon",
-    "overview": "After Jay Leno's second retirement from the program, Jimmy Fallon stepped in as his permanent replacement. After 42 years in Los Angeles the program was brought back to New York.",
-    "poster": "https://image.tmdb.org/t/p/w342/1N4o5PmmqhlVDrcdJ2RlCFWbLGX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7VO04TtL1jIT6XOPs9u4jdB8KaB.jpg",
-    "rating": 5.789,
-    "votes": 379,
-    "release": "2014-02-17",
+    "title": "Chibi Maruko-chan",
+    "overview": "Meet Maruko, a sweet schoolgirl with a hefty dose of curiosity (and occasional laziness!). She sails through life in a cozy town alongside her loving parents, grandparents, and sister. Maruko has a band of loyal friends, including her closest pal, Tama-chan, but her playful and doting grandpa is at the heart of it all. Life is never dull in this charming series.",
+    "poster": "https://image.tmdb.org/t/p/w342/bfn54AAMuh47IFqeoco0jgeVH1a.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/vuajwjep1FxphPhMEWKv4bfrCnf.jpg",
+    "rating": 7.8,
+    "votes": 24,
+    "release": "1990-01-07",
+    "genres": [
+      16,
+      35
+    ],
+    "popularity": 106.4794
+  },
+  {
+    "id": 6060,
+    "tmdb_id": 6060,
+    "type": "tv",
+    "title": "Kyunki... Saas Bhi Kabhi Bahu Thi...",
+    "overview": "A mother-in-law's struggle to put up with her three bahu's. The three bahu's have grown up sons. The bahu's sons start to get involved with having girlfriends and the bahu's try and break their relationships up.",
+    "poster": "https://image.tmdb.org/t/p/w342/rJfoyxt7FOKr7WPB6FPuffarpcn.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/gwXnESfjDqop3tDLoGxSwCUP8GD.jpg",
+    "rating": 3.4,
+    "votes": 12,
+    "release": "2000-07-03",
+    "genres": [
+      18,
+      10751,
+      10766
+    ],
+    "popularity": 91.2283
+  },
+  {
+    "id": 286506,
+    "tmdb_id": 286506,
+    "type": "tv",
+    "title": "Blossoms of Power",
+    "overview": "The sole survivor of a bloodshed, Gu Qingzhi awakens under a new identity — Shen Xihe, the Princess of the Northwest. Once a proud and spirited rose of the frontier, she has now transformed into a cold, calculating figure, determined to seize control of her destiny and dominate the game of power. Crown Prince Xiao Huayong, frail in body but razor-sharp in mind, sees through the treacherous currents of the court. As their fates intertwine, they grow closer, joining forces to command the winds of destiny.",
+    "poster": "https://image.tmdb.org/t/p/w342/g8Af8gOu7bZlvjoQ7St9WolzaI9.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/AcNgNI4HtZHeepeSI5nATqtPemZ.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2026-07-09",
+    "genres": [
+      18
+    ],
+    "popularity": 103.6724
+  },
+  {
+    "id": 33238,
+    "tmdb_id": 33238,
+    "type": "tv",
+    "title": "Running Man",
+    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
+    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+    "rating": 8.216,
+    "votes": 213,
+    "release": "2010-07-11",
     "genres": [
       35,
-      10767
+      10764
     ],
-    "popularity": 127.2664
+    "popularity": 119.05
+  },
+  {
+    "id": 22980,
+    "tmdb_id": 22980,
+    "type": "tv",
+    "title": "Watch What Happens Live with Andy Cohen",
+    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
+    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
+    "rating": 5,
+    "votes": 87,
+    "release": "2009-07-16",
+    "genres": [
+      10767,
+      35
+    ],
+    "popularity": 114.5548
+  },
+  {
+    "id": 206559,
+    "tmdb_id": 206559,
+    "type": "tv",
+    "title": "Binnelanders",
+    "overview": "A South African Afrikaans soap opera. It is set in and around the fictional private hospital, Binneland Kliniek, in Pretoria, and the storyline follows the trials, trauma and tribulations of the staff and patients of the hospital.",
+    "poster": "https://image.tmdb.org/t/p/w342/3bzECfllho8PphdYujLUIuhncJD.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/s1dTt4M31q2HwD5Fkl1tf5tQzJg.jpg",
+    "rating": 5.532,
+    "votes": 111,
+    "release": "2005-10-13",
+    "genres": [
+      10766
+    ],
+    "popularity": 105.5448
   },
   {
     "id": 1871,
@@ -278,72 +329,24 @@
       18,
       80
     ],
-    "popularity": 111.3726
+    "popularity": 102.0911
   },
   {
-    "id": 286506,
-    "tmdb_id": 286506,
+    "id": 62245,
+    "tmdb_id": 62245,
     "type": "tv",
-    "title": "Blossoms of Power",
-    "overview": "The sole survivor of a bloodshed, Gu Qingzhi awakens under a new identity — Shen Xihe, the Princess of the Northwest. Once a proud and spirited rose of the frontier, she has now transformed into a cold, calculating figure, determined to seize control of her destiny and dominate the game of power. Crown Prince Xiao Huayong, frail in body but razor-sharp in mind, sees through the treacherous currents of the court. As their fates intertwine, they grow closer, joining forces to command the winds of destiny.",
-    "poster": "https://image.tmdb.org/t/p/w342/g8Af8gOu7bZlvjoQ7St9WolzaI9.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/AcNgNI4HtZHeepeSI5nATqtPemZ.jpg",
-    "rating": 0,
-    "votes": 0,
-    "release": "2026-07-09",
+    "title": "Club Friday",
+    "overview": "Based on a Thai radio show that gives love advice to callers, this series dramatizes stories of infidelity, love triangles, sexual identity and more.",
+    "poster": "https://image.tmdb.org/t/p/w342/zPrnYxh7uaUdPQ3EGMxgcTrcG59.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/cEwNRLINZ3rTtf2qZBbq2EZaLgG.jpg",
+    "rating": 2.8,
+    "votes": 2,
+    "release": "2012-10-06",
     "genres": [
-      18
-    ],
-    "popularity": 131.7225
-  },
-  {
-    "id": 33238,
-    "tmdb_id": 33238,
-    "type": "tv",
-    "title": "Running Man",
-    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
-    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
-    "rating": 8.2,
-    "votes": 212,
-    "release": "2010-07-11",
-    "genres": [
-      35,
-      10764
-    ],
-    "popularity": 131.2599
-  },
-  {
-    "id": 61818,
-    "tmdb_id": 61818,
-    "type": "tv",
-    "title": "Late Night with Seth Meyers",
-    "overview": "Seth Meyers, who is \"Saturday Night Live's\" longest serving anchor on the show's wildly popular \"Weekend Update,\" takes over as host of NBC's \"Late Night\" — home to A-list celebrity guests, memorable comedy and the best in musical talent. As the Emmy Award-winning head writer for \"SNL,\" Meyers has established a reputation for sharp wit and perfectly timed comedy, and has gained fame for his spot-on jokes and satire. Meyers takes his departure from \"SNL\" to his new post at \"Late Night,\" as Jimmy Fallon moves to \"The Tonight Show\".",
-    "poster": "https://image.tmdb.org/t/p/w342/u8VruEGv7mtyJihVn2CSA1u90pk.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/dfX2UaHVE5c7kLBFbgmEZJuy4Ev.jpg",
-    "rating": 5.146,
-    "votes": 130,
-    "release": "2014-02-25",
-    "genres": [
-      10767,
+      18,
+      10751,
       35
     ],
-    "popularity": 108.7165
-  },
-  {
-    "id": 235484,
-    "tmdb_id": 235484,
-    "type": "tv",
-    "title": "Suidooster",
-    "overview": "Suidooster is a South African television soap opera produced by Suidooster Films which revolves around a matriarch, her family, friends and the people of Suidooster, a small shopping and business centre in the fictional Cape Town suburb of Ruiterbosch.",
-    "poster": "https://image.tmdb.org/t/p/w342/naCgSiacvV685kait6fBvhVhdce.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ynd225o8GuCahYGjHtFdEt8Xizm.jpg",
-    "rating": 7,
-    "votes": 24,
-    "release": "2015-11-16",
-    "genres": [
-      10766
-    ],
-    "popularity": 79.5987
+    "popularity": 131.4589
   }
 ]
