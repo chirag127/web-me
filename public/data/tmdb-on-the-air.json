@@ -8,7 +8,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.373,
-    "votes": 6599,
+    "votes": 6609,
     "release": "2022-08-21",
     "genres": [
       10765,
@@ -25,8 +25,8 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.175,
-    "votes": 2246,
+    "rating": 8.176,
+    "votes": 2249,
     "release": "2023-05-04",
     "genres": [
       10765,
@@ -42,8 +42,8 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.473,
-    "votes": 1574,
+    "rating": 8.474,
+    "votes": 1575,
     "release": "2021-01-11",
     "genres": [
       10759,
@@ -58,10 +58,10 @@
     "type": "tv",
     "title": "Chainsmoker Cat",
     "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/m7AnmAtTDC5qfEp3BcLSSJerBzM.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.688,
-    "votes": 24,
+    "rating": 8.7,
+    "votes": 27,
     "release": "2026-07-03",
     "genres": [
       16,
@@ -79,7 +79,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
     "rating": 8.679,
-    "votes": 11108,
+    "votes": 11110,
     "release": "2013-12-02",
     "genres": [
       16,
@@ -88,40 +88,6 @@
       10759
     ],
     "popularity": 186.45
-  },
-  {
-    "id": 316540,
-    "tmdb_id": 316540,
-    "type": "tv",
-    "title": "Bittersweet Love",
-    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
-    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
-    "rating": 10,
-    "votes": 1,
-    "release": "2026-07-03",
-    "genres": [
-      18
-    ],
-    "popularity": 153.8107
-  },
-  {
-    "id": 223911,
-    "tmdb_id": 223911,
-    "type": "tv",
-    "title": "Renegade Immortal",
-    "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
-    "poster": "https://image.tmdb.org/t/p/w342/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/crn53sSGWRZ8wAtEGso52nepEkz.jpg",
-    "rating": 8.2,
-    "votes": 38,
-    "release": "2023-09-25",
-    "genres": [
-      16,
-      18,
-      10759
-    ],
-    "popularity": 153.864
   },
   {
     "id": 4057,
@@ -142,21 +108,38 @@
     "popularity": 167.1924
   },
   {
-    "id": 2224,
-    "tmdb_id": 2224,
+    "id": 223911,
+    "tmdb_id": 223911,
     "type": "tv",
-    "title": "The Daily Show",
-    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
-    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
-    "rating": 6.397,
-    "votes": 643,
-    "release": "1996-07-22",
+    "title": "Renegade Immortal",
+    "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
+    "poster": "https://image.tmdb.org/t/p/w342/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/crn53sSGWRZ8wAtEGso52nepEkz.jpg",
+    "rating": 8.2,
+    "votes": 38,
+    "release": "2023-09-25",
     "genres": [
-      10763,
-      35
+      16,
+      18,
+      10759
     ],
-    "popularity": 135.7588
+    "popularity": 153.864
+  },
+  {
+    "id": 316540,
+    "tmdb_id": 316540,
+    "type": "tv",
+    "title": "Bittersweet Love",
+    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
+    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ugTBA8nEDCq2sVvxH7ViRAJpUSN.jpg",
+    "rating": 10,
+    "votes": 1,
+    "release": "2026-07-03",
+    "genres": [
+      18
+    ],
+    "popularity": 153.8107
   },
   {
     "id": 296206,
@@ -177,6 +160,41 @@
     "popularity": 152.9401
   },
   {
+    "id": 2224,
+    "tmdb_id": 2224,
+    "type": "tv",
+    "title": "The Daily Show",
+    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
+    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
+    "rating": 6.397,
+    "votes": 643,
+    "release": "1996-07-22",
+    "genres": [
+      10763,
+      35
+    ],
+    "popularity": 135.7588
+  },
+  {
+    "id": 62245,
+    "tmdb_id": 62245,
+    "type": "tv",
+    "title": "Club Friday",
+    "overview": "Based on a Thai radio show that gives love advice to callers, this series dramatizes stories of infidelity, love triangles, sexual identity and more.",
+    "poster": "https://image.tmdb.org/t/p/w342/zPrnYxh7uaUdPQ3EGMxgcTrcG59.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/cEwNRLINZ3rTtf2qZBbq2EZaLgG.jpg",
+    "rating": 2.8,
+    "votes": 2,
+    "release": "2012-10-06",
+    "genres": [
+      18,
+      10751,
+      35
+    ],
+    "popularity": 131.4589
+  },
+  {
     "id": 322055,
     "tmdb_id": 322055,
     "type": "tv",
@@ -193,6 +211,57 @@
       18
     ],
     "popularity": 130.8963
+  },
+  {
+    "id": 59941,
+    "tmdb_id": 59941,
+    "type": "tv",
+    "title": "The Tonight Show Starring Jimmy Fallon",
+    "overview": "After Jay Leno's second retirement from the program, Jimmy Fallon stepped in as his permanent replacement. After 42 years in Los Angeles the program was brought back to New York.",
+    "poster": "https://image.tmdb.org/t/p/w342/1N4o5PmmqhlVDrcdJ2RlCFWbLGX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7VO04TtL1jIT6XOPs9u4jdB8KaB.jpg",
+    "rating": 5.789,
+    "votes": 379,
+    "release": "2014-02-17",
+    "genres": [
+      35,
+      10767
+    ],
+    "popularity": 120.4209
+  },
+  {
+    "id": 33238,
+    "tmdb_id": 33238,
+    "type": "tv",
+    "title": "Running Man",
+    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
+    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+    "rating": 8.216,
+    "votes": 213,
+    "release": "2010-07-11",
+    "genres": [
+      35,
+      10764
+    ],
+    "popularity": 119.05
+  },
+  {
+    "id": 22980,
+    "tmdb_id": 22980,
+    "type": "tv",
+    "title": "Watch What Happens Live with Andy Cohen",
+    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
+    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
+    "rating": 5,
+    "votes": 87,
+    "release": "2009-07-16",
+    "genres": [
+      10767,
+      35
+    ],
+    "popularity": 114.5548
   },
   {
     "id": 91759,
@@ -230,72 +299,21 @@
     "popularity": 106.4794
   },
   {
-    "id": 6060,
-    "tmdb_id": 6060,
+    "id": 57532,
+    "tmdb_id": 57532,
     "type": "tv",
-    "title": "Kyunki... Saas Bhi Kabhi Bahu Thi...",
-    "overview": "A mother-in-law's struggle to put up with her three bahu's. The three bahu's have grown up sons. The bahu's sons start to get involved with having girlfriends and the bahu's try and break their relationships up.",
-    "poster": "https://image.tmdb.org/t/p/w342/rJfoyxt7FOKr7WPB6FPuffarpcn.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/gwXnESfjDqop3tDLoGxSwCUP8GD.jpg",
-    "rating": 3.4,
-    "votes": 12,
-    "release": "2000-07-03",
+    "title": "PAW Patrol",
+    "overview": "Marshall, Rocky, Rubble, Zuma and Skye are doing their best to protect the people of their town. Led by Ryder, a tech-savvy 10-year-old boy, each of them is equipped with special equipment and together they help anyone who finds themselves in trouble. No task is too big for them and no puppy is too small.",
+    "poster": "https://image.tmdb.org/t/p/w342/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7OrV2aAH5Yp7hA9zCCvUloLvZtl.jpg",
+    "rating": 7,
+    "votes": 813,
+    "release": "2013-08-12",
     "genres": [
-      18,
-      10751,
-      10766
+      16,
+      10762
     ],
-    "popularity": 91.2283
-  },
-  {
-    "id": 286506,
-    "tmdb_id": 286506,
-    "type": "tv",
-    "title": "Blossoms of Power",
-    "overview": "The sole survivor of a bloodshed, Gu Qingzhi awakens under a new identity — Shen Xihe, the Princess of the Northwest. Once a proud and spirited rose of the frontier, she has now transformed into a cold, calculating figure, determined to seize control of her destiny and dominate the game of power. Crown Prince Xiao Huayong, frail in body but razor-sharp in mind, sees through the treacherous currents of the court. As their fates intertwine, they grow closer, joining forces to command the winds of destiny.",
-    "poster": "https://image.tmdb.org/t/p/w342/g8Af8gOu7bZlvjoQ7St9WolzaI9.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/AcNgNI4HtZHeepeSI5nATqtPemZ.jpg",
-    "rating": 0,
-    "votes": 0,
-    "release": "2026-07-09",
-    "genres": [
-      18
-    ],
-    "popularity": 103.6724
-  },
-  {
-    "id": 33238,
-    "tmdb_id": 33238,
-    "type": "tv",
-    "title": "Running Man",
-    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
-    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
-    "rating": 8.216,
-    "votes": 213,
-    "release": "2010-07-11",
-    "genres": [
-      35,
-      10764
-    ],
-    "popularity": 119.05
-  },
-  {
-    "id": 22980,
-    "tmdb_id": 22980,
-    "type": "tv",
-    "title": "Watch What Happens Live with Andy Cohen",
-    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
-    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
-    "rating": 5,
-    "votes": 87,
-    "release": "2009-07-16",
-    "genres": [
-      10767,
-      35
-    ],
-    "popularity": 114.5548
+    "popularity": 106.42
   },
   {
     "id": 206559,
@@ -314,39 +332,20 @@
     "popularity": 105.5448
   },
   {
-    "id": 1871,
-    "tmdb_id": 1871,
+    "id": 61818,
+    "tmdb_id": 61818,
     "type": "tv",
-    "title": "EastEnders",
-    "overview": "The everyday lives of working-class residents of Albert Square, a traditional Victorian square of terrace houses surrounding a park in the East End of London's Walford borough.",
-    "poster": "https://image.tmdb.org/t/p/w342/z4jgyI5TpoRZiJTNchkVkMrGQyz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2jzrUm0vGW2TqJPds1PfZVRYrh7.jpg",
-    "rating": 4.2,
-    "votes": 228,
-    "release": "1985-02-19",
+    "title": "Late Night with Seth Meyers",
+    "overview": "Seth Meyers, who is \"Saturday Night Live's\" longest serving anchor on the show's wildly popular \"Weekend Update,\" takes over as host of NBC's \"Late Night\" — home to A-list celebrity guests, memorable comedy and the best in musical talent. As the Emmy Award-winning head writer for \"SNL,\" Meyers has established a reputation for sharp wit and perfectly timed comedy, and has gained fame for his spot-on jokes and satire. Meyers takes his departure from \"SNL\" to his new post at \"Late Night,\" as Jimmy Fallon moves to \"The Tonight Show\".",
+    "poster": "https://image.tmdb.org/t/p/w342/u8VruEGv7mtyJihVn2CSA1u90pk.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/dfX2UaHVE5c7kLBFbgmEZJuy4Ev.jpg",
+    "rating": 5.146,
+    "votes": 130,
+    "release": "2014-02-25",
     "genres": [
-      10766,
-      18,
-      80
-    ],
-    "popularity": 102.0911
-  },
-  {
-    "id": 62245,
-    "tmdb_id": 62245,
-    "type": "tv",
-    "title": "Club Friday",
-    "overview": "Based on a Thai radio show that gives love advice to callers, this series dramatizes stories of infidelity, love triangles, sexual identity and more.",
-    "poster": "https://image.tmdb.org/t/p/w342/zPrnYxh7uaUdPQ3EGMxgcTrcG59.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/cEwNRLINZ3rTtf2qZBbq2EZaLgG.jpg",
-    "rating": 2.8,
-    "votes": 2,
-    "release": "2012-10-06",
-    "genres": [
-      18,
-      10751,
+      10767,
       35
     ],
-    "popularity": 131.4589
+    "popularity": 103.9376
   }
 ]
