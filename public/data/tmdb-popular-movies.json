@@ -7,14 +7,14 @@
     "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
     "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
-    "rating": 8.251,
-    "votes": 3019,
+    "rating": 8.248,
+    "votes": 3076,
     "release": "2026-05-13",
     "genres": [
       27,
       53
     ],
-    "popularity": 675.3667
+    "popularity": 649.4059
   },
   {
     "id": 1084244,
@@ -24,8 +24,8 @@
     "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
     "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
-    "rating": 7.4,
-    "votes": 604,
+    "rating": 7.413,
+    "votes": 625,
     "release": "2026-06-17",
     "genres": [
       16,
@@ -33,24 +33,7 @@
       35,
       12
     ],
-    "popularity": 624.3026
-  },
-  {
-    "id": 1275779,
-    "tmdb_id": 1275779,
-    "type": "movie",
-    "title": "Disclosure Day",
-    "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-    "poster": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
-    "rating": 6.7,
-    "votes": 882,
-    "release": "2026-06-10",
-    "genres": [
-      878,
-      53
-    ],
-    "popularity": 498.8231
+    "popularity": 404.6152
   },
   {
     "id": 1108427,
@@ -60,8 +43,8 @@
     "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
     "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
-    "rating": 5.571,
-    "votes": 85,
+    "rating": 5.7,
+    "votes": 94,
     "release": "2026-07-08",
     "genres": [
       10751,
@@ -69,7 +52,24 @@
       35,
       12
     ],
-    "popularity": 467.2728
+    "popularity": 284.1018
+  },
+  {
+    "id": 1275779,
+    "tmdb_id": 1275779,
+    "type": "movie",
+    "title": "Disclosure Day",
+    "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+    "poster": "https://image.tmdb.org/t/p/w342/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/gVczdWWAkBCuwEV1v9cg7ELfdhT.jpg",
+    "rating": 6.696,
+    "votes": 884,
+    "release": "2026-06-10",
+    "genres": [
+      878,
+      53
+    ],
+    "popularity": 477.844
   },
   {
     "id": 1083381,
@@ -79,15 +79,15 @@
     "overview": "A strange doorway appears in the basement of a furniture showroom.",
     "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-    "rating": 6.953,
-    "votes": 1223,
+    "rating": 6.974,
+    "votes": 1331,
     "release": "2026-05-27",
     "genres": [
       27,
       9648,
       878
     ],
-    "popularity": 451.9754
+    "popularity": 280.3212
   },
   {
     "id": 1273221,
@@ -97,31 +97,14 @@
     "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
     "poster": "https://image.tmdb.org/t/p/w342/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-    "rating": 5.399,
-    "votes": 460,
+    "rating": 5.411,
+    "votes": 463,
     "release": "2026-06-03",
     "genres": [
       35,
       27
     ],
-    "popularity": 368.1676
-  },
-  {
-    "id": 1314481,
-    "tmdb_id": 1314481,
-    "type": "movie",
-    "title": "The Devil Wears Prada 2",
-    "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-    "poster": "https://image.tmdb.org/t/p/w342/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-    "rating": 7.091,
-    "votes": 1486,
-    "release": "2026-04-29",
-    "genres": [
-      35,
-      18
-    ],
-    "popularity": 267.646
+    "popularity": 346.6253
   },
   {
     "id": 1368314,
@@ -131,14 +114,14 @@
     "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
     "poster": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
-    "rating": 7.175,
-    "votes": 408,
+    "rating": 7.188,
+    "votes": 429,
     "release": "2026-05-20",
     "genres": [
       27,
       53
     ],
-    "popularity": 262.2409
+    "popularity": 242.9096
   },
   {
     "id": 1280738,
@@ -148,8 +131,8 @@
     "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
     "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
-    "rating": 7.445,
-    "votes": 190,
+    "rating": 7.418,
+    "votes": 196,
     "release": "2026-06-10",
     "genres": [
       28,
@@ -159,6 +142,23 @@
     "popularity": 260.7265
   },
   {
+    "id": 1314481,
+    "tmdb_id": 1314481,
+    "type": "movie",
+    "title": "The Devil Wears Prada 2",
+    "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+    "poster": "https://image.tmdb.org/t/p/w342/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+    "rating": 7.107,
+    "votes": 1503,
+    "release": "2026-04-29",
+    "genres": [
+      35,
+      18
+    ],
+    "popularity": 177.2742
+  },
+  {
     "id": 1523145,
     "tmdb_id": 1523145,
     "type": "movie",
@@ -166,117 +166,13 @@
     "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
     "poster": "https://image.tmdb.org/t/p/w342/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
-    "rating": 7.1,
-    "votes": 112,
+    "rating": 7.145,
+    "votes": 114,
     "release": "2026-03-26",
     "genres": [
       10749
     ],
-    "popularity": 235.5378
-  },
-  {
-    "id": 1413976,
-    "tmdb_id": 1413976,
-    "type": "movie",
-    "title": "Citizen Vigilante",
-    "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
-    "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
-    "rating": 6.5,
-    "votes": 245,
-    "release": "2026-06-19",
-    "genres": [
-      53,
-      28,
-      80
-    ],
-    "popularity": 201.2666
-  },
-  {
-    "id": 1127384,
-    "tmdb_id": 1127384,
-    "type": "movie",
-    "title": "Deep Water",
-    "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
-    "poster": "https://image.tmdb.org/t/p/w342/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/szKv713FcUXx6hcfdY369vtkmzr.jpg",
-    "rating": 7.4,
-    "votes": 213,
-    "release": "2026-04-30",
-    "genres": [
-      27,
-      53
-    ],
-    "popularity": 187.6292
-  },
-  {
-    "id": 278,
-    "tmdb_id": 278,
-    "type": "movie",
-    "title": "The Shawshank Redemption",
-    "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
-    "poster": "https://image.tmdb.org/t/p/w342/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
-    "rating": 8.725,
-    "votes": 30765,
-    "release": "1994-09-23",
-    "genres": [
-      18,
-      80
-    ],
-    "popularity": 178.9021
-  },
-  {
-    "id": 1368337,
-    "tmdb_id": 1368337,
-    "type": "movie",
-    "title": "The Odyssey",
-    "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-    "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
-    "rating": 6.098,
-    "votes": 66,
-    "release": "2026-07-15",
-    "genres": [
-      12,
-      28,
-      14
-    ],
-    "popularity": 169.2124
-  },
-  {
-    "id": 936075,
-    "tmdb_id": 936075,
-    "type": "movie",
-    "title": "Michael",
-    "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-    "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
-    "rating": 8.702,
-    "votes": 3512,
-    "release": "2026-04-22",
-    "genres": [
-      10402,
-      18
-    ],
-    "popularity": 167.8226
-  },
-  {
-    "id": 687163,
-    "tmdb_id": 687163,
-    "type": "movie",
-    "title": "Project Hail Mary",
-    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-    "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-    "rating": 8.666,
-    "votes": 6089,
-    "release": "2026-03-15",
-    "genres": [
-      878,
-      12
-    ],
-    "popularity": 163.5829
+    "popularity": 142.1555
   },
   {
     "id": 1285366,
@@ -286,13 +182,117 @@
     "overview": "A romance about a man and a woman who, due to an unexpected event, end up switching bodies. Despite coming from completely different backgrounds and environments, the two try to overcome the various difficulties that arise from their body swap.",
     "poster": "https://image.tmdb.org/t/p/w342/3r0O6BW9USoZ9mteCVyNKMQriRL.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/yjK3ardrgdS8suZG8KMU82Q7U38.jpg",
-    "rating": 5,
-    "votes": 3,
+    "rating": 6.25,
+    "votes": 4,
     "release": "2024-07-06",
     "genres": [
       10749
     ],
-    "popularity": 156.7815
+    "popularity": 92.2986
+  },
+  {
+    "id": 1413976,
+    "tmdb_id": 1413976,
+    "type": "movie",
+    "title": "Citizen Vigilante",
+    "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
+    "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
+    "rating": 6.464,
+    "votes": 249,
+    "release": "2026-06-19",
+    "genres": [
+      53,
+      28,
+      80
+    ],
+    "popularity": 128.7863
+  },
+  {
+    "id": 278,
+    "tmdb_id": 278,
+    "type": "movie",
+    "title": "The Shawshank Redemption",
+    "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    "poster": "https://image.tmdb.org/t/p/w342/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+    "rating": 8.726,
+    "votes": 30776,
+    "release": "1994-09-23",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 113.036
+  },
+  {
+    "id": 1127384,
+    "tmdb_id": 1127384,
+    "type": "movie",
+    "title": "Deep Water",
+    "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
+    "poster": "https://image.tmdb.org/t/p/w342/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/szKv713FcUXx6hcfdY369vtkmzr.jpg",
+    "rating": 7.403,
+    "votes": 221,
+    "release": "2026-04-30",
+    "genres": [
+      27,
+      53
+    ],
+    "popularity": 124.0767
+  },
+  {
+    "id": 1368337,
+    "tmdb_id": 1368337,
+    "type": "movie",
+    "title": "The Odyssey",
+    "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+    "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
+    "rating": 7.1,
+    "votes": 159,
+    "release": "2026-07-15",
+    "genres": [
+      12,
+      28,
+      14
+    ],
+    "popularity": 226.2542
+  },
+  {
+    "id": 936075,
+    "tmdb_id": 936075,
+    "type": "movie",
+    "title": "Michael",
+    "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+    "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
+    "rating": 8.703,
+    "votes": 3526,
+    "release": "2026-04-22",
+    "genres": [
+      10402,
+      18
+    ],
+    "popularity": 161.7003
+  },
+  {
+    "id": 687163,
+    "tmdb_id": 687163,
+    "type": "movie",
+    "title": "Project Hail Mary",
+    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+    "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/fFyLcR22R4ynrecqjMniKXm0UTp.jpg",
+    "rating": 8.7,
+    "votes": 6120,
+    "release": "2026-03-15",
+    "genres": [
+      878,
+      12
+    ],
+    "popularity": 166.2738
   },
   {
     "id": 931285,
@@ -302,15 +302,15 @@
     "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
     "poster": "https://image.tmdb.org/t/p/w342/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
-    "rating": 7.979,
-    "votes": 1997,
+    "rating": 7.981,
+    "votes": 2002,
     "release": "2026-05-06",
     "genres": [
       28,
       14,
       12
     ],
-    "popularity": 132.2243
+    "popularity": 130.4542
   },
   {
     "id": 1226863,
@@ -321,7 +321,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/kxQiIJ4gVcD3K6o14MJ72p5yRcE.jpg",
     "rating": 8.259,
-    "votes": 3083,
+    "votes": 3092,
     "release": "2026-04-01",
     "genres": [
       10751,
@@ -330,23 +330,24 @@
       14,
       16
     ],
-    "popularity": 130.9641
+    "popularity": 87.3073
   },
   {
-    "id": 1212763,
-    "tmdb_id": 1212763,
+    "id": 83533,
+    "tmdb_id": 83533,
     "type": "movie",
-    "title": "Evil Dead Burn",
-    "overview": "After her husband's abrupt death, a woman seeks solace with her in-laws. As they transform into Deadites one by one, she comes to discover that the vows she took in life survive even in death.",
-    "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
-    "rating": 6.779,
-    "votes": 129,
-    "release": "2026-07-07",
+    "title": "Avatar: Fire and Ash",
+    "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+    "poster": "https://image.tmdb.org/t/p/w342/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+    "rating": 7.63,
+    "votes": 3815,
+    "release": "2025-12-17",
     "genres": [
-      27,
-      53
+      878,
+      12,
+      14
     ],
-    "popularity": 128.0736
+    "popularity": 125.2883
   }
 ]

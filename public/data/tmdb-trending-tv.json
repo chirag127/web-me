@@ -7,14 +7,14 @@
     "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
     "poster": "https://image.tmdb.org/t/p/w342/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-    "rating": 5.2,
-    "votes": 20,
+    "rating": 5.345,
+    "votes": 29,
     "release": "2026-07-14",
     "genres": [
       18,
       80
     ],
-    "popularity": 140.5509
+    "popularity": 13.935
   },
   {
     "id": 125988,
@@ -24,14 +24,14 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.2,
-    "votes": 2250,
+    "rating": 8.178,
+    "votes": 2259,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 313.7124
+    "popularity": 236.5473
   },
   {
     "id": 94997,
@@ -41,15 +41,31 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.372,
-    "votes": 6611,
+    "rating": 8.371,
+    "votes": 6625,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 383.121
+    "popularity": 260.212
+  },
+  {
+    "id": 254528,
+    "tmdb_id": 254528,
+    "type": "tv",
+    "title": "The Hawk",
+    "overview": "On the back nine of his career, golf legend Lonnie \"The Hawk\" Hawkins chases one final major — and drags everyone he loves into the chaos.",
+    "poster": "https://image.tmdb.org/t/p/w342/yxnQQH2E1hfrW4vKOFTAOyFRlpj.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/fBVNJL85Q60njpKPD6YaLi6tEsX.jpg",
+    "rating": 3.222,
+    "votes": 9,
+    "release": "2026-07-16",
+    "genres": [
+      35
+    ],
+    "popularity": 3.8412
   },
   {
     "id": 37854,
@@ -59,33 +75,15 @@
     "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
     "poster": "https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-    "rating": 8.7,
-    "votes": 5412,
+    "rating": 8.746,
+    "votes": 5414,
     "release": "1999-10-20",
     "genres": [
       10759,
       35,
       16
     ],
-    "popularity": 54.1733
-  },
-  {
-    "id": 138502,
-    "tmdb_id": 138502,
-    "type": "tv",
-    "title": "X-Men '97",
-    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-    "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-    "rating": 8.6,
-    "votes": 765,
-    "release": "2024-03-20",
-    "genres": [
-      16,
-      10759,
-      10765
-    ],
-    "popularity": 83.293
+    "popularity": 33.1752
   },
   {
     "id": 283304,
@@ -95,15 +93,33 @@
     "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
     "poster": "https://image.tmdb.org/t/p/w342/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
-    "rating": 6.298,
-    "votes": 42,
+    "rating": 6.233,
+    "votes": 45,
     "release": "2026-07-09",
     "genres": [
       18,
       37,
       10751
     ],
-    "popularity": 53.1899
+    "popularity": 41.4482
+  },
+  {
+    "id": 138502,
+    "tmdb_id": 138502,
+    "type": "tv",
+    "title": "X-Men '97",
+    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+    "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+    "rating": 8.631,
+    "votes": 771,
+    "release": "2024-03-20",
+    "genres": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 45.875
   },
   {
     "id": 296206,
@@ -121,7 +137,7 @@
       80,
       18
     ],
-    "popularity": 155.0508
+    "popularity": 98.2639
   },
   {
     "id": 60625,
@@ -132,7 +148,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
     "rating": 8.679,
-    "votes": 11112,
+    "votes": 11113,
     "release": "2013-12-02",
     "genres": [
       16,
@@ -140,7 +156,7 @@
       10765,
       10759
     ],
-    "popularity": 185.0047
+    "popularity": 115.6803
   },
   {
     "id": 255358,
@@ -148,17 +164,17 @@
     "type": "tv",
     "title": "THE GHOST IN THE SHELL",
     "overview": "2029, a near-future Japan. The full cyborg Motoko Kusanagi envisions a task force that preemptively strikes emerging threats. She and her team are scouted by Daisuke Aramaki as Public Security Section 9, AKA the \"Shell Squad.\" An international conspiracy hints at a hacker known as The \"Puppet Master.\" What fate awaits Kusanagi? What is the hacker's endgame? A new era of cyberpunk action begins!",
-    "poster": "https://image.tmdb.org/t/p/w342/nUXjSyXAQZhOf32e6lkLX6C6Rf3.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/unc9cOVdhCUDnIqijFX4wHsgG4f.jpg",
-    "rating": 9,
-    "votes": 16,
+    "poster": "https://image.tmdb.org/t/p/w342/uEfNGaxbKI1xWmUy3DIndlaxUkz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/z5tsIDRxpDcT0Lerg3MciZhoQUY.jpg",
+    "rating": 9.029,
+    "votes": 17,
     "release": "2026-07-07",
     "genres": [
       16,
       10759,
       10765
     ],
-    "popularity": 47.3531
+    "popularity": 28.6052
   },
   {
     "id": 94664,
@@ -168,15 +184,138 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.476,
-    "votes": 1577,
+    "rating": 8.479,
+    "votes": 1582,
     "release": "2021-01-11",
     "genres": [
       10759,
       16,
       10765
     ],
-    "popularity": 274.4262
+    "popularity": 199.0078
+  },
+  {
+    "id": 286709,
+    "tmdb_id": 286709,
+    "type": "tv",
+    "title": "The Westies",
+    "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
+    "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
+    "rating": 6.222,
+    "votes": 9,
+    "release": "2026-07-12",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 32.3921
+  },
+  {
+    "id": 296286,
+    "tmdb_id": 296286,
+    "type": "tv",
+    "title": "Smoking Behind the Supermarket with You",
+    "overview": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”",
+    "poster": "https://image.tmdb.org/t/p/w342/vQ8v5bMQtEdmEvVwNos5dkKxyK7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
+    "rating": 9,
+    "votes": 13,
+    "release": "2026-07-09",
+    "genres": [
+      16,
+      35
+    ],
+    "popularity": 28.8331
+  },
+  {
+    "id": 277439,
+    "tmdb_id": 277439,
+    "type": "tv",
+    "title": "Cape Fear",
+    "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
+    "poster": "https://image.tmdb.org/t/p/w342/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/rvMmQj3nMZbJmoW6QrzU0nq9Xky.jpg",
+    "rating": 7.014,
+    "votes": 73,
+    "release": "2026-06-04",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 27.6879
+  },
+  {
+    "id": 124364,
+    "tmdb_id": 124364,
+    "type": "tv",
+    "title": "FROM",
+    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+    "rating": 8.507,
+    "votes": 4004,
+    "release": "2022-02-20",
+    "genres": [
+      9648,
+      18,
+      10765
+    ],
+    "popularity": 194.5036
+  },
+  {
+    "id": 312949,
+    "tmdb_id": 312949,
+    "type": "tv",
+    "title": "Chainsmoker Cat",
+    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+    "rating": 8.8,
+    "votes": 28,
+    "release": "2026-07-03",
+    "genres": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 125.1069
+  },
+  {
+    "id": 300727,
+    "tmdb_id": 300727,
+    "type": "tv",
+    "title": "The Apartment Job",
+    "overview": "Desperate for cash, a former gang boss teams up with an aspiring lawyer to steal an apartment complex's reserve fund — only to uncover deep corruption.",
+    "poster": "https://image.tmdb.org/t/p/w342/qFxbrHvNq5tn9SCBq3aKPgaGfyO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/stJcZWrpfT2DjY0K261Q2FpxUkS.jpg",
+    "rating": 5.3,
+    "votes": 3,
+    "release": "2026-07-11",
+    "genres": [
+      18,
+      35,
+      80
+    ],
+    "popularity": 33.8486
+  },
+  {
+    "id": 279323,
+    "tmdb_id": 279323,
+    "type": "tv",
+    "title": "The East Palace",
+    "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
+    "poster": "https://image.tmdb.org/t/p/w342/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/vmbCoMrDtIo4LLW38WsNWJUyOhu.jpg",
+    "rating": 10,
+    "votes": 1,
+    "release": "2026-07-17",
+    "genres": [
+      9648,
+      10759,
+      10765
+    ],
+    "popularity": 3.9964
   },
   {
     "id": 252107,
@@ -194,79 +333,7 @@
       10765,
       10768
     ],
-    "popularity": 35.8025
-  },
-  {
-    "id": 286709,
-    "tmdb_id": 286709,
-    "type": "tv",
-    "title": "The Westies",
-    "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
-    "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
-    "rating": 6,
-    "votes": 8,
-    "release": "2026-07-12",
-    "genres": [
-      18,
-      80
-    ],
-    "popularity": 48.2676
-  },
-  {
-    "id": 69346,
-    "tmdb_id": 69346,
-    "type": "tv",
-    "title": "Saga of Tanya the Evil",
-    "overview": "On the front lines of the war, Tanya Degurechaff, blond hair, blue eyes, and porcelain white skin, commands her squad with lisping voice. Actually, she is one of Japan's most elite salary men, reborn as a little girl into a world of magical warfare after angering a mysterious being who calls himself God.",
-    "poster": "https://image.tmdb.org/t/p/w342/5nwiHomKZBBF9DLrolfZapi3fDm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xe2IkfzpGFObODJLTpBB9bdRpbB.jpg",
-    "rating": 8.2,
-    "votes": 449,
-    "release": "2017-01-06",
-    "genres": [
-      16,
-      18,
-      10765,
-      10768
-    ],
-    "popularity": 28.7172
-  },
-  {
-    "id": 124364,
-    "tmdb_id": 124364,
-    "type": "tv",
-    "title": "FROM",
-    "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-    "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.508,
-    "votes": 3997,
-    "release": "2022-02-20",
-    "genres": [
-      9648,
-      18,
-      10765
-    ],
-    "popularity": 289.9313
-  },
-  {
-    "id": 258348,
-    "tmdb_id": 258348,
-    "type": "tv",
-    "title": "Clevatess",
-    "overview": "One of the Lords of Dark Beasts, Clevatess’s reign shatters when he revives a hero he personally slayed and adopts an orphaned humanoid baby—the last hope to save a dying world. Now bound together, what fate awaits this unlikely trio?",
-    "poster": "https://image.tmdb.org/t/p/w342/1Pcp1QJS83KY25nTnL2UvJHWUVQ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5nmg2cEZxA09VyDvioAuqd5jOW0.jpg",
-    "rating": 7.933,
-    "votes": 89,
-    "release": "2025-07-02",
-    "genres": [
-      16,
-      10759,
-      10765
-    ],
-    "popularity": 23.8158
+    "popularity": 25.7881
   },
   {
     "id": 65942,
@@ -286,75 +353,6 @@
       10759,
       10765
     ],
-    "popularity": 50.5612
-  },
-  {
-    "id": 136315,
-    "tmdb_id": 136315,
-    "type": "tv",
-    "title": "The Bear",
-    "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
-    "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
-    "rating": 8.138,
-    "votes": 1813,
-    "release": "2022-06-23",
-    "genres": [
-      18,
-      35
-    ],
-    "popularity": 66.8563
-  },
-  {
-    "id": 301412,
-    "tmdb_id": 301412,
-    "type": "tv",
-    "title": "Dream to You",
-    "overview": "Dreaming of filmmaking, a passionate high schooler pushes aside all obligations to create short films, inspiring a studious but passionless classmate. Their deep bond eventually turns romantic, but they are abruptly separated when he is forced to move overseas. Years later in their thirties, their lives have completely swapped: she is a disillusioned, struggling TV reporter, while he has become an award-winning director. When a sudden reunion brings them face-to-face, he resolves to help her rediscover her lost spark, but she still harbors deep resentment over his past disappearance.",
-    "poster": "https://image.tmdb.org/t/p/w342/cBiwrUwUNNYXTc5xrDEQWcMqftd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5AhL7NKa8UC6QOyzKiDohUM9VYT.jpg",
-    "rating": 6.5,
-    "votes": 3,
-    "release": "2026-07-13",
-    "genres": [
-      18,
-      35
-    ],
-    "popularity": 46.4935
-  },
-  {
-    "id": 296286,
-    "tmdb_id": 296286,
-    "type": "tv",
-    "title": "Smoking Behind the Supermarket with You",
-    "overview": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”",
-    "poster": "https://image.tmdb.org/t/p/w342/vQ8v5bMQtEdmEvVwNos5dkKxyK7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
-    "rating": 9,
-    "votes": 13,
-    "release": "2026-07-09",
-    "genres": [
-      16,
-      35
-    ],
-    "popularity": 38.4399
-  },
-  {
-    "id": 300727,
-    "tmdb_id": 300727,
-    "type": "tv",
-    "title": "The Apartment Job",
-    "overview": "Desperate for cash, a former gang boss teams up with an aspiring lawyer to steal an apartment complex's reserve fund — only to uncover deep corruption.",
-    "poster": "https://image.tmdb.org/t/p/w342/qFxbrHvNq5tn9SCBq3aKPgaGfyO.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/stJcZWrpfT2DjY0K261Q2FpxUkS.jpg",
-    "rating": 5.3,
-    "votes": 3,
-    "release": "2026-07-11",
-    "genres": [
-      18,
-      35,
-      80
-    ],
-    "popularity": 51.2185
+    "popularity": 36.953
   }
 ]
