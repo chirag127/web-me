@@ -7,15 +7,15 @@
     "overview": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
     "poster": "https://image.tmdb.org/t/p/w342/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
-    "rating": 9.473,
-    "votes": 684,
+    "rating": 9.475,
+    "votes": 690,
     "release": "2026-06-05",
     "genres": [
       10759,
       18,
       35
     ],
-    "popularity": 74.2434
+    "popularity": 94.0617
   },
   {
     "id": 299167,
@@ -25,33 +25,14 @@
     "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
     "poster": "https://image.tmdb.org/t/p/w342/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-    "rating": 9.251,
-    "votes": 435,
+    "rating": 9.246,
+    "votes": 439,
     "release": "2026-05-15",
     "genres": [
       37,
       18
     ],
-    "popularity": 95.7784
-  },
-  {
-    "id": 259837,
-    "tmdb_id": 259837,
-    "type": "tv",
-    "title": "The WONDERfools",
-    "overview": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
-    "poster": "https://image.tmdb.org/t/p/w342/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/810mXC0xkxXVtoKIPGGVgO9PuLh.jpg",
-    "rating": 8.949,
-    "votes": 215,
-    "release": "2026-05-15",
-    "genres": [
-      10759,
-      35,
-      10765,
-      18
-    ],
-    "popularity": 16.4161
+    "popularity": 115.1368
   },
   {
     "id": 1396,
@@ -62,13 +43,32 @@
     "poster": "https://image.tmdb.org/t/p/w342/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
     "rating": 8.948,
-    "votes": 18124,
+    "votes": 18130,
     "release": "2008-01-20",
     "genres": [
       18,
       80
     ],
-    "popularity": 85.8758
+    "popularity": 105.2397
+  },
+  {
+    "id": 259837,
+    "tmdb_id": 259837,
+    "type": "tv",
+    "title": "The WONDERfools",
+    "overview": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
+    "poster": "https://image.tmdb.org/t/p/w342/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/810mXC0xkxXVtoKIPGGVgO9PuLh.jpg",
+    "rating": 8.9,
+    "votes": 217,
+    "release": "2026-05-15",
+    "genres": [
+      10759,
+      35,
+      10765,
+      18
+    ],
+    "popularity": 22.4907
   },
   {
     "id": 273240,
@@ -78,13 +78,13 @@
     "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
     "poster": "https://image.tmdb.org/t/p/w342/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
-    "rating": 8.913,
-    "votes": 704,
+    "rating": 8.919,
+    "votes": 708,
     "release": "2026-05-13",
     "genres": [
       18
     ],
-    "popularity": 86.605
+    "popularity": 108.6037
   },
   {
     "id": 209867,
@@ -94,8 +94,8 @@
     "overview": "After the party of heroes defeated the Demon King, they restored peace to the land and returned to lives of solitude.  Generations pass, and the elven mage Frieren comes face to face with humanity’s mortality. She takes on a new apprentice and promises to fulfill old friends’ dying wishes. Can an elven mind make peace with the nature of life and death? Frieren embarks on her quest to find out.",
     "poster": "https://image.tmdb.org/t/p/w342/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/rBOnrVlck7BIlGeWVlzYiZeg4l2.jpg",
-    "rating": 8.8,
-    "votes": 881,
+    "rating": 8.794,
+    "votes": 883,
     "release": "2023-09-29",
     "genres": [
       16,
@@ -103,7 +103,7 @@
       18,
       10765
     ],
-    "popularity": 39.7694
+    "popularity": 47.5216
   },
   {
     "id": 246,
@@ -114,32 +114,14 @@
     "poster": "https://image.tmdb.org/t/p/w342/9RQhVb3r3mCMqYVhLoCu4EvuipP.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/kU98MbVVgi72wzceyrEbClZmMFe.jpg",
     "rating": 8.772,
-    "votes": 4962,
+    "votes": 4963,
     "release": "2005-02-21",
     "genres": [
       16,
       10759,
       10765
     ],
-    "popularity": 18.2137
-  },
-  {
-    "id": 85077,
-    "tmdb_id": 85077,
-    "type": "tv",
-    "title": "The Chosen",
-    "overview": "The life of Christ through the eyes of those who encountered him.",
-    "poster": "https://image.tmdb.org/t/p/w342/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/3siv3RaQrdr2tQiv9jHq71sLlzo.jpg",
-    "rating": 8.765,
-    "votes": 921,
-    "release": "2019-04-21",
-    "genres": [
-      10759,
-      10751,
-      18
-    ],
-    "popularity": 37.0768
+    "popularity": 24.1614
   },
   {
     "id": 219246,
@@ -149,31 +131,31 @@
     "overview": "In Jeju, a spirited girl and a steadfast boy's island story blossoms into a lifelong tale of setbacks and triumphs — proving love endures across time.",
     "poster": "https://image.tmdb.org/t/p/w342/1VC3sEFxYXYDqQUCAnvWfUsYg1s.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/a9qlroMOHewiDsUR93PYMVfpbF5.jpg",
-    "rating": 8.761,
-    "votes": 547,
+    "rating": 8.766,
+    "votes": 549,
     "release": "2025-03-07",
     "genres": [
       18
     ],
-    "popularity": 14.4361
+    "popularity": 19.7033
   },
   {
-    "id": 94605,
-    "tmdb_id": 94605,
+    "id": 85077,
+    "tmdb_id": 85077,
     "type": "tv",
-    "title": "Arcane",
-    "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
-    "poster": "https://image.tmdb.org/t/p/w342/abf8tHznhSvl9BAElD2cQeRr7do.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/q8eejQcg1bAqImEV8jh8RtBD4uH.jpg",
-    "rating": 8.8,
-    "votes": 6019,
-    "release": "2021-11-06",
+    "title": "The Chosen",
+    "overview": "The life of Christ through the eyes of those who encountered him.",
+    "poster": "https://image.tmdb.org/t/p/w342/dqVUFuNrMFWt7uGNWlpo91VKYOI.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/3siv3RaQrdr2tQiv9jHq71sLlzo.jpg",
+    "rating": 8.766,
+    "votes": 922,
+    "release": "2019-04-21",
     "genres": [
-      16,
       10759,
-      10765
+      10751,
+      18
     ],
-    "popularity": 18.3425
+    "popularity": 42.8927
   },
   {
     "id": 301507,
@@ -183,13 +165,13 @@
     "overview": "Two of the biggest stars in Major League Hockey are bound by ambition, rivalry, and a magnetic pull neither of them fully understands. What begins as a secret fling between two fresh faced rookies evolves into a years-long journey of love, denial, and self-discovery. Over the next eight years, as they chase glory on the ice, they struggle to navigate their feelings for each other. Torn between the sport they live for and the love they can’t ignore, they must decide if there’s room in their fiercely competitive world for something as fragile – and powerful – as real love.",
     "poster": "https://image.tmdb.org/t/p/w342/epgr7n61vVIniyAghz2GYj22DkC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/iS76c29IrS3lKI2X5CFySguiAWU.jpg",
-    "rating": 8.8,
-    "votes": 545,
+    "rating": 8.755,
+    "votes": 547,
     "release": "2025-11-28",
     "genres": [
       18
     ],
-    "popularity": 17.2485
+    "popularity": 20.7688
   },
   {
     "id": 64010,
@@ -199,13 +181,31 @@
     "overview": "Take a nostalgic trip back to the late 1980s through the lives of five families and their five teenage kids living in a small neighbourhood in Seoul.",
     "poster": "https://image.tmdb.org/t/p/w342/i3xQJlQRff4k5IMEY55l4iKaKl3.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/sZH7lGs06skRKkrqp1LRi57VVMb.jpg",
-    "rating": 8.7,
-    "votes": 217,
+    "rating": 8.755,
+    "votes": 218,
     "release": "2015-11-06",
     "genres": [
       35
     ],
     "popularity": 7.3864
+  },
+  {
+    "id": 94605,
+    "tmdb_id": 94605,
+    "type": "tv",
+    "title": "Arcane",
+    "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+    "poster": "https://image.tmdb.org/t/p/w342/abf8tHznhSvl9BAElD2cQeRr7do.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/q8eejQcg1bAqImEV8jh8RtBD4uH.jpg",
+    "rating": 8.751,
+    "votes": 6021,
+    "release": "2021-11-06",
+    "genres": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 23.8335
   },
   {
     "id": 37854,
@@ -215,15 +215,15 @@
     "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
     "poster": "https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-    "rating": 8.746,
-    "votes": 5414,
+    "rating": 8.745,
+    "votes": 5417,
     "release": "1999-10-20",
     "genres": [
       10759,
       35,
       16
     ],
-    "popularity": 33.1752
+    "popularity": 40.1437
   },
   {
     "id": 250307,
@@ -233,13 +233,13 @@
     "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
     "poster": "https://image.tmdb.org/t/p/w342/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
-    "rating": 8.729,
-    "votes": 839,
+    "rating": 8.731,
+    "votes": 841,
     "release": "2025-01-09",
     "genres": [
       18
     ],
-    "popularity": 52.0002
+    "popularity": 41.3458
   },
   {
     "id": 200709,
@@ -249,14 +249,14 @@
     "overview": "With the aid of unexpected friends, a gifted but introverted student confronts bullies and violent foes — unaware of how dangerous his world will become.",
     "poster": "https://image.tmdb.org/t/p/w342/5Sd01WeraL2oA3Vv6O4rcRxockn.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/q5mJ4oKfGc6Cr9reIHFzD0pQzre.jpg",
-    "rating": 8.719,
-    "votes": 484,
+    "rating": 8.723,
+    "votes": 486,
     "release": "2022-11-18",
     "genres": [
       10759,
       18
     ],
-    "popularity": 38.5236
+    "popularity": 51.1659
   },
   {
     "id": 87108,
@@ -267,12 +267,12 @@
     "poster": "https://image.tmdb.org/t/p/w342/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/3URK0z9PzpVNJrGE7XOuyy6KFzk.jpg",
     "rating": 8.718,
-    "votes": 8036,
+    "votes": 8038,
     "release": "2019-05-06",
     "genres": [
       18
     ],
-    "popularity": 18.581
+    "popularity": 22.3149
   },
   {
     "id": 31911,
@@ -283,7 +283,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2UG177tWHy7xRmMKWJHB7nAUmKd.jpg",
     "rating": 8.712,
-    "votes": 2505,
+    "votes": 2506,
     "release": "2009-04-05",
     "genres": [
       16,
@@ -291,7 +291,7 @@
       10765,
       18
     ],
-    "popularity": 33.9049
+    "popularity": 36.7186
   },
   {
     "id": 60059,
@@ -302,13 +302,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/og2jKploGHYnCz68vV1nRSEE0xV.jpg",
     "rating": 8.71,
-    "votes": 6642,
+    "votes": 6645,
     "release": "2015-02-08",
     "genres": [
       80,
       18
     ],
-    "popularity": 81.6725
+    "popularity": 90.7021
   },
   {
     "id": 261145,
@@ -318,8 +318,8 @@
     "overview": "A woman finds herself trapped in a virtual circus where she and five other humans are subject to the whims of a wacky AI ringmaster. In this digital purgatory they must face frightening NPCs and cope with their own personal traumas.",
     "poster": "https://image.tmdb.org/t/p/w342/lpfrgfomX8uNFxv4VaEzvJGs9TK.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/vPVdWiLUNQyaGMazyZGVAyRcYBG.jpg",
-    "rating": 8.694,
-    "votes": 358,
+    "rating": 8.693,
+    "votes": 360,
     "release": "2023-10-13",
     "genres": [
       16,
@@ -327,7 +327,7 @@
       18,
       10765
     ],
-    "popularity": 18.6935
+    "popularity": 24.1086
   },
   {
     "id": 1429,
@@ -338,13 +338,13 @@
     "poster": "https://image.tmdb.org/t/p/w342/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
     "rating": 8.683,
-    "votes": 7544,
+    "votes": 7546,
     "release": "2013-04-07",
     "genres": [
       16,
       10765,
       10759
     ],
-    "popularity": 17.7798
+    "popularity": 22.9218
   }
 ]

@@ -25,7 +25,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/1fkuBPid72KGS6WmtkEXMftZtkE.jpg",
       "overview": "After his estranged son gets embroiled in a Nazi plot, self-exiled gangster Tommy Shelby must return to Birmingham to save his family — and his nation.",
       "rating": 7.24,
-      "votes": 1073,
+      "votes": 1076,
       "runtime": 112,
       "genres": [
         "Crime",
@@ -88,28 +88,28 @@
       "poster": "https://image.tmdb.org/t/p/w342/r4lVJVO1BeBb11cBcXBdbHc9e9k.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/vvE7zc2aie3ozZcy5xYbg5QTFrF.jpg",
       "overview": "It's a new school year for the Truham-Higgs gang. As Nick and Charlie's relationship deepens, their thoughts turn to life after the last bell rings.",
-      "rating": 0,
-      "votes": 0,
-      "runtime": 111,
+      "rating": 5.8,
+      "votes": 18,
+      "runtime": 114,
       "genres": [
-        "Drama",
-        "Romance"
+        "Romance",
+        "Drama"
       ],
       "cast": [
+        {
+          "name": "Kit Connor",
+          "character": "Nick Nelson",
+          "photo": "https://image.tmdb.org/t/p/w185/gCIdbnV9D3lzTaOB0YtuKDz6Nt0.jpg"
+        },
         {
           "name": "Joe Locke",
           "character": "Charlie Spring",
           "photo": "https://image.tmdb.org/t/p/w185/snlCoxXK1gLlyE7oncVEtQe7OcO.jpg"
         },
         {
-          "name": "Kit Connor",
-          "character": "Nick Nelson",
-          "photo": "https://image.tmdb.org/t/p/w185/gXuyzRe6fqP6BhYnh2N5VxgK1x8.jpg"
-        },
-        {
-          "name": "Anna Maxwell Martin",
-          "character": "Sarah Nelson",
-          "photo": "https://image.tmdb.org/t/p/w185/vBAsZPe1tHPvVLViiDWYkb5k1Cu.jpg"
+          "name": "William Gao",
+          "character": "Tao Xu",
+          "photo": "https://image.tmdb.org/t/p/w185/rXwHPQehstYwDmI4ipTwGQmOb9J.jpg"
         },
         {
           "name": "Yasmin Finney",
@@ -117,9 +117,9 @@
           "photo": "https://image.tmdb.org/t/p/w185/yxdPGDbWcmNhgW2szLGccHThP6K.jpg"
         },
         {
-          "name": "Rhea Norwood",
-          "character": "Imogen Heaney",
-          "photo": "https://image.tmdb.org/t/p/w185/fUk1l9dIpdjkx31YSc34yqIXh1N.jpg"
+          "name": "Corinna Brown",
+          "character": "Tara Jones",
+          "photo": "https://image.tmdb.org/t/p/w185/gBcjRX2aTvDjHF81FirMcc3ZMYs.jpg"
         }
       ],
       "tagline": "Love like there's no ending.",

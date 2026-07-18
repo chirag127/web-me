@@ -5,17 +5,6 @@
       "sub_groups": [
         {
           "id": null,
-          "seconds": 8,
-          "local_start": "2026-06-17T12:50:11Z",
-          "project_color": "",
-          "project_hex_color": "",
-          "ForExport": false,
-          "DistinguishRates": false,
-          "Grouping": "projects",
-          "SubGrouping": "time_entries"
-        },
-        {
-          "id": null,
           "title": "me",
           "seconds": 12,
           "local_start": "2026-07-07T21:29:29Z",
