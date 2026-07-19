@@ -8,7 +8,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
     "rating": 8.371,
-    "votes": 6628,
+    "votes": 6632,
     "release": "2022-08-21",
     "genres": [
       10765,
@@ -25,8 +25,8 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.176,
-    "votes": 2264,
+    "rating": 8.168,
+    "votes": 2272,
     "release": "2023-05-04",
     "genres": [
       10765,
@@ -42,8 +42,8 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.483,
-    "votes": 1586,
+    "rating": 8.478,
+    "votes": 1587,
     "release": "2021-01-11",
     "genres": [
       10759,
@@ -60,8 +60,8 @@
     "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
     "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-    "rating": 6,
-    "votes": 5,
+    "rating": 5.8,
+    "votes": 6,
     "release": "2026-06-25",
     "genres": [
       9648,
@@ -87,23 +87,6 @@
     "popularity": 157.7254
   },
   {
-    "id": 22980,
-    "tmdb_id": 22980,
-    "type": "tv",
-    "title": "Watch What Happens Live with Andy Cohen",
-    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
-    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
-    "rating": 5,
-    "votes": 87,
-    "release": "2009-07-16",
-    "genres": [
-      10767,
-      35
-    ],
-    "popularity": 127.6985
-  },
-  {
     "id": 60625,
     "tmdb_id": 60625,
     "type": "tv",
@@ -111,8 +94,8 @@
     "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
     "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.679,
-    "votes": 11120,
+    "rating": 8.7,
+    "votes": 11126,
     "release": "2013-12-02",
     "genres": [
       16,
@@ -121,58 +104,6 @@
       10759
     ],
     "popularity": 152.115
-  },
-  {
-    "id": 2224,
-    "tmdb_id": 2224,
-    "type": "tv",
-    "title": "The Daily Show",
-    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
-    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
-    "rating": 6.389,
-    "votes": 644,
-    "release": "1996-07-22",
-    "genres": [
-      10763,
-      35
-    ],
-    "popularity": 125.2683
-  },
-  {
-    "id": 1871,
-    "tmdb_id": 1871,
-    "type": "tv",
-    "title": "EastEnders",
-    "overview": "The everyday lives of working-class residents of Albert Square, a traditional Victorian square of terrace houses surrounding a park in the East End of London's Walford borough.",
-    "poster": "https://image.tmdb.org/t/p/w342/z4jgyI5TpoRZiJTNchkVkMrGQyz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2jzrUm0vGW2TqJPds1PfZVRYrh7.jpg",
-    "rating": 4.249,
-    "votes": 229,
-    "release": "1985-02-19",
-    "genres": [
-      10766,
-      18,
-      80
-    ],
-    "popularity": 92.8564
-  },
-  {
-    "id": 2912,
-    "tmdb_id": 2912,
-    "type": "tv",
-    "title": "Jeopardy!",
-    "overview": "America's favorite quiz show where contestants are presented with general knowledge clues in the form of answers, and must phrase their responses in question form.",
-    "poster": "https://image.tmdb.org/t/p/w342/hfz0IgebqGENG6ZnuqKQKMFk2vy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/55tcKzl0gZ0lR1q7TrVJm0h9lkT.jpg",
-    "rating": 6.9,
-    "votes": 160,
-    "release": "1984-09-10",
-    "genres": [
-      10764,
-      10751
-    ],
-    "popularity": 88.5665
   },
   {
     "id": 4057,
@@ -200,8 +131,8 @@
     "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
     "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.3,
-    "votes": 30,
+    "rating": 7.5,
+    "votes": 29,
     "release": "2026-06-26",
     "genres": [
       10759,
@@ -211,21 +142,38 @@
     "popularity": 138.5915
   },
   {
-    "id": 61818,
-    "tmdb_id": 61818,
+    "id": 22980,
+    "tmdb_id": 22980,
     "type": "tv",
-    "title": "Late Night with Seth Meyers",
-    "overview": "Seth Meyers, who is \"Saturday Night Live's\" longest serving anchor on the show's wildly popular \"Weekend Update,\" takes over as host of NBC's \"Late Night\" — home to A-list celebrity guests, memorable comedy and the best in musical talent. As the Emmy Award-winning head writer for \"SNL,\" Meyers has established a reputation for sharp wit and perfectly timed comedy, and has gained fame for his spot-on jokes and satire. Meyers takes his departure from \"SNL\" to his new post at \"Late Night,\" as Jimmy Fallon moves to \"The Tonight Show\".",
-    "poster": "https://image.tmdb.org/t/p/w342/u8VruEGv7mtyJihVn2CSA1u90pk.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/dfX2UaHVE5c7kLBFbgmEZJuy4Ev.jpg",
-    "rating": 5.146,
-    "votes": 130,
-    "release": "2014-02-25",
+    "title": "Watch What Happens Live with Andy Cohen",
+    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
+    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
+    "rating": 5,
+    "votes": 87,
+    "release": "2009-07-16",
     "genres": [
       10767,
       35
     ],
-    "popularity": 106.3165
+    "popularity": 127.6985
+  },
+  {
+    "id": 2224,
+    "tmdb_id": 2224,
+    "type": "tv",
+    "title": "The Daily Show",
+    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
+    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
+    "rating": 6.393,
+    "votes": 645,
+    "release": "1996-07-22",
+    "genres": [
+      10763,
+      35
+    ],
+    "popularity": 125.2683
   },
   {
     "id": 278624,
@@ -235,8 +183,8 @@
     "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
     "poster": "https://image.tmdb.org/t/p/w342/qdobPy3No4Fi3dCzcIDP9n8AjcO.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-    "rating": 5.9,
-    "votes": 42,
+    "rating": 6.2,
+    "votes": 47,
     "release": "2026-07-14",
     "genres": [
       18,
@@ -245,14 +193,31 @@
     "popularity": 114.8866
   },
   {
+    "id": 33238,
+    "tmdb_id": 33238,
+    "type": "tv",
+    "title": "Running Man",
+    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
+    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+    "rating": 8.216,
+    "votes": 213,
+    "release": "2010-07-11",
+    "genres": [
+      35,
+      10764
+    ],
+    "popularity": 102.3008
+  },
+  {
     "id": 223911,
     "tmdb_id": 223911,
     "type": "tv",
     "title": "Renegade Immortal",
     "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
-    "poster": "https://image.tmdb.org/t/p/w342/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/mCt5qgkOYEvuHSiSwNByMv6LMoB.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/crn53sSGWRZ8wAtEGso52nepEkz.jpg",
-    "rating": 8.256,
+    "rating": 8.3,
     "votes": 39,
     "release": "2023-09-25",
     "genres": [
@@ -263,38 +228,39 @@
     "popularity": 100.2192
   },
   {
-    "id": 312949,
-    "tmdb_id": 312949,
+    "id": 57532,
+    "tmdb_id": 57532,
     "type": "tv",
-    "title": "Chainsmoker Cat",
-    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
-    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
-    "rating": 8.672,
-    "votes": 29,
-    "release": "2026-07-03",
+    "title": "PAW Patrol",
+    "overview": "Marshall, Rocky, Rubble, Zuma and Skye are doing their best to protect the people of their town. Led by Ryder, a tech-savvy 10-year-old boy, each of them is equipped with special equipment and together they help anyone who finds themselves in trouble. No task is too big for them and no puppy is too small.",
+    "poster": "https://image.tmdb.org/t/p/w342/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7OrV2aAH5Yp7hA9zCCvUloLvZtl.jpg",
+    "rating": 7,
+    "votes": 814,
+    "release": "2013-08-12",
     "genres": [
       16,
-      35,
-      10765
+      10762
     ],
-    "popularity": 78.2811
+    "popularity": 94.353
   },
   {
-    "id": 235484,
-    "tmdb_id": 235484,
+    "id": 1871,
+    "tmdb_id": 1871,
     "type": "tv",
-    "title": "Suidooster",
-    "overview": "Suidooster is a South African television soap opera produced by Suidooster Films which revolves around a matriarch, her family, friends and the people of Suidooster, a small shopping and business centre in the fictional Cape Town suburb of Ruiterbosch.",
-    "poster": "https://image.tmdb.org/t/p/w342/naCgSiacvV685kait6fBvhVhdce.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ynd225o8GuCahYGjHtFdEt8Xizm.jpg",
-    "rating": 7,
-    "votes": 24,
-    "release": "2015-11-16",
+    "title": "EastEnders",
+    "overview": "The everyday lives of working-class residents of Albert Square, a traditional Victorian square of terrace houses surrounding a park in the East End of London's Walford borough.",
+    "poster": "https://image.tmdb.org/t/p/w342/z4jgyI5TpoRZiJTNchkVkMrGQyz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/2jzrUm0vGW2TqJPds1PfZVRYrh7.jpg",
+    "rating": 4.249,
+    "votes": 229,
+    "release": "1985-02-19",
     "genres": [
-      10766
+      10766,
+      18,
+      80
     ],
-    "popularity": 66.308
+    "popularity": 92.8564
   },
   {
     "id": 291,
@@ -313,37 +279,70 @@
     "popularity": 88.8613
   },
   {
-    "id": 57532,
-    "tmdb_id": 57532,
+    "id": 2912,
+    "tmdb_id": 2912,
     "type": "tv",
-    "title": "PAW Patrol",
-    "overview": "Marshall, Rocky, Rubble, Zuma and Skye are doing their best to protect the people of their town. Led by Ryder, a tech-savvy 10-year-old boy, each of them is equipped with special equipment and together they help anyone who finds themselves in trouble. No task is too big for them and no puppy is too small.",
-    "poster": "https://image.tmdb.org/t/p/w342/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7OrV2aAH5Yp7hA9zCCvUloLvZtl.jpg",
-    "rating": 6.981,
-    "votes": 814,
-    "release": "2013-08-12",
+    "title": "Jeopardy!",
+    "overview": "America's favorite quiz show where contestants are presented with general knowledge clues in the form of answers, and must phrase their responses in question form.",
+    "poster": "https://image.tmdb.org/t/p/w342/hfz0IgebqGENG6ZnuqKQKMFk2vy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/55tcKzl0gZ0lR1q7TrVJm0h9lkT.jpg",
+    "rating": 6.9,
+    "votes": 160,
+    "release": "1984-09-10",
     "genres": [
-      16,
-      10762
+      10764,
+      10751
     ],
-    "popularity": 94.353
+    "popularity": 88.5665
   },
   {
-    "id": 33238,
-    "tmdb_id": 33238,
+    "id": 82873,
+    "tmdb_id": 82873,
     "type": "tv",
-    "title": "Running Man",
-    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
-    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
-    "rating": 8.216,
-    "votes": 213,
-    "release": "2010-07-11",
+    "title": "The Kelly Clarkson Show",
+    "overview": "Kelly Clarkson presents the biggest newsmakers and names in film, television and music; as well as emerging new talent and everyday people who are beacons of hope in their communities.",
+    "poster": "https://image.tmdb.org/t/p/w342/sBix25bie9UQFzbarN51DpFO5ky.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/bk7QdAIUqkGpZO5GUX4AMB2AZIB.jpg",
+    "rating": 6.296,
+    "votes": 71,
+    "release": "2019-09-09",
     "genres": [
-      35,
-      10764
+      10767
     ],
-    "popularity": 102.3008
+    "popularity": 86.3769
+  },
+  {
+    "id": 2661,
+    "tmdb_id": 2661,
+    "type": "tv",
+    "title": "Kamen Rider",
+    "overview": "Takeshi Hongo is a promising young man with a passion for motorcycle racing. However, his dreams are suddenly ruined when he gets kidnapped by Shocker, the evil secret organization planning to dominate the world. After being remodeled into a cyborg, Takeshi escapes and swears to protect the world from the inhuman monsters.",
+    "poster": "https://image.tmdb.org/t/p/w342/2DIBDFHiKQawz4WPsYekl9DHwyA.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/usLRh1bcbL0Q9X8zf6rL4OV1qrA.jpg",
+    "rating": 6.4,
+    "votes": 103,
+    "release": "1971-04-03",
+    "genres": [
+      10759,
+      10765,
+      18
+    ],
+    "popularity": 80.7413
+  },
+  {
+    "id": 316540,
+    "tmdb_id": 316540,
+    "type": "tv",
+    "title": "Bittersweet Love",
+    "overview": "A poor young man trapped in a sham marriage falls for his wife’s older brother, risking everything for forbidden love.",
+    "poster": "https://image.tmdb.org/t/p/w342/xGXWk9FL4SNJpiLCKDkB3QTO4w6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/h8mYDKw3auZdTzEcDTRlQ7XQKQy.jpg",
+    "rating": 10,
+    "votes": 1,
+    "release": "2026-07-03",
+    "genres": [
+      18
+    ],
+    "popularity": 80.1753
   }
 ]
