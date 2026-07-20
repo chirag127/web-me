@@ -1,11 +1,11 @@
 {
-  "total_seconds": 564370.559,
-  "human_readable": "156 hrs 46 mins",
+  "total_seconds": 564139.543,
+  "human_readable": "156 hrs 42 mins",
   "languages": [
     {
       "name": "Markdown",
       "total_seconds": 250934.028,
-      "percent": 31.06,
+      "percent": 31.07,
       "digital": "69:42",
       "decimal": "69.70",
       "text": "69 hrs 42 mins",
@@ -15,7 +15,7 @@
     {
       "name": "Other",
       "total_seconds": 243623.94,
-      "percent": 30.15,
+      "percent": 30.16,
       "digital": "67:40",
       "decimal": "67.67",
       "text": "67 hrs 40 mins",
@@ -54,7 +54,7 @@
     },
     {
       "name": "TypeScript",
-      "total_seconds": 36948.168,
+      "total_seconds": 36941.33,
       "percent": 4.57,
       "digital": "10:15",
       "decimal": "10.25",
@@ -84,13 +84,13 @@
     },
     {
       "name": "Astro",
-      "total_seconds": 18809.639,
-      "percent": 2.33,
-      "digital": "5:13",
-      "decimal": "5.22",
-      "text": "5 hrs 13 mins",
+      "total_seconds": 18585.461,
+      "percent": 2.3,
+      "digital": "5:09",
+      "decimal": "5.15",
+      "text": "5 hrs 9 mins",
       "hours": 5,
-      "minutes": 13
+      "minutes": 9
     },
     {
       "name": "Text",
@@ -205,7 +205,7 @@
         }
       ],
       "ai_agent_total_cost": 28014.506956999998,
-      "percent": 62.18,
+      "percent": 62.2,
       "digital": "139:33",
       "decimal": "139.55",
       "text": "139 hrs 33 mins",
@@ -241,11 +241,11 @@
       "minutes": 11
     },
     {
-      "total_seconds": 64894.711,
+      "total_seconds": 64663.695,
       "name": "VS Code",
       "ai_additions": 2305,
       "ai_deletions": 519,
-      "human_additions": 313,
+      "human_additions": 312,
       "human_deletions": 2109,
       "ai_agent_line_changes": {
         "Antigravity-Desktop": 25,
@@ -296,12 +296,12 @@
         }
       ],
       "ai_agent_total_cost": 80.145393,
-      "percent": 8.03,
-      "digital": "18:01",
-      "decimal": "18.02",
-      "text": "18 hrs 1 min",
-      "hours": 18,
-      "minutes": 1
+      "percent": 8.01,
+      "digital": "17:57",
+      "decimal": "17.95",
+      "text": "17 hrs 57 mins",
+      "hours": 17,
+      "minutes": 57
     },
     {
       "total_seconds": 25008.72,
@@ -366,7 +366,7 @@
         }
       ],
       "ai_agent_total_cost": 0,
-      "percent": 1.3,
+      "percent": 1.31,
       "digital": "2:55",
       "decimal": "2.92",
       "text": "2 hrs 55 mins",
@@ -445,7 +445,7 @@
         }
       ],
       "ai_agent_total_cost": 12048.781787,
-      "percent": 42.34,
+      "percent": 42.35,
       "digital": "95:01",
       "decimal": "95.02",
       "text": "95 hrs 1 min",
@@ -584,7 +584,7 @@
         }
       ],
       "ai_agent_total_cost": 1409.7677059999999,
-      "percent": 6.13,
+      "percent": 6.14,
       "digital": "13:46",
       "decimal": "13.77",
       "text": "13 hrs 46 mins",
