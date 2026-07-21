@@ -5,35 +5,41 @@
     "action": "watch",
     "type": "episode",
     "episode": {
-      "season": 1,
-      "number": 1,
-      "title": "Episode 1",
       "ids": {
-        "trakt": 12880642,
-        "tvdb": 11006247,
         "imdb": "tt36131221",
+        "plex": {
+          "guid": "6822f91fa0c44e014e9a2126"
+        },
         "tmdb": 6027264,
-        "tvrage": null
-      }
+        "tvdb": 11006247,
+        "trakt": 12880642
+      },
+      "title": "Episode 1",
+      "number": 1,
+      "season": 1
     },
     "show": {
-      "title": "If Wishes Could Kill",
-      "year": 2026,
       "ids": {
-        "trakt": 278535,
-        "slug": "if-wishes-could-kill",
-        "tvdb": 461062,
         "imdb": "tt36104233",
+        "plex": {
+          "guid": "6822f91fa0c44e014e9a211b",
+          "slug": "if-wishes-could-kill"
+        },
+        "slug": "if-wishes-could-kill",
         "tmdb": 285838,
-        "tvrage": null
-      }
+        "tvdb": 461062,
+        "trakt": 278535
+      },
+      "year": 2026,
+      "title": "If Wishes Could Kill",
+      "aired_episodes": 8
     },
     "_tmdb": {
       "poster": "https://image.tmdb.org/t/p/w342/2CfTNVaR8kZQkWtWWE3Cntaiq33.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/zV9WYOfFr4MAnzXXD8PR5J6JnN3.jpg",
       "overview": "A mysterious app promises wishes — then starts a countdown to death. As a group of teens becomes entangled, they must break the deadly chain to survive.",
-      "rating": 8.1,
-      "votes": 150,
+      "rating": 8.036,
+      "votes": 152,
       "runtime": 60,
       "genres": [
         "Mystery",
@@ -77,28 +83,34 @@
     "action": "watch",
     "type": "episode",
     "episode": {
-      "season": 1,
-      "number": 11,
-      "title": "Blood Tastes Like Iron",
       "ids": {
-        "trakt": 999479,
-        "tvdb": 4852774,
         "imdb": "tt4056868",
+        "plex": {
+          "guid": "5d9c1027705e7a001e741203"
+        },
         "tmdb": 1019406,
-        "tvrage": null
-      }
+        "tvdb": 4852774,
+        "trakt": 999479
+      },
+      "title": "Blood Tastes Like Iron",
+      "number": 11,
+      "season": 1
     },
     "show": {
-      "title": "Ping Pong the Animation",
-      "year": 2014,
       "ids": {
-        "trakt": 60369,
-        "slug": "ping-pong-the-animation",
-        "tvdb": 277464,
         "imdb": "tt3592032",
+        "plex": {
+          "guid": "5d9c083ccb3ffa001f1b32c5",
+          "slug": "ping-pong-the-animation"
+        },
+        "slug": "ping-pong-the-animation",
         "tmdb": 60811,
-        "tvrage": null
-      }
+        "tvdb": 277464,
+        "trakt": 60369
+      },
+      "year": 2014,
+      "title": "Ping Pong the Animation",
+      "aired_episodes": 11
     },
     "_tmdb": {
       "poster": "https://image.tmdb.org/t/p/w342/frgVn3ww547TVQH8vS2bWKZnEBu.jpg",
@@ -149,35 +161,41 @@
     "action": "watch",
     "type": "episode",
     "episode": {
-      "season": 4,
-      "number": 8,
-      "title": "Episode 8",
       "ids": {
-        "trakt": 10751456,
-        "tvdb": 9882281,
         "imdb": "tt28942282",
+        "plex": {
+          "guid": "64a6ea6b1b72cf5bc36eb49a"
+        },
         "tmdb": 4564761,
-        "tvrage": null
-      }
+        "tvdb": 9882281,
+        "trakt": 10751456
+      },
+      "title": "Episode 8",
+      "number": 8,
+      "season": 4
     },
     "show": {
-      "title": "Sex Education",
-      "year": 2019,
       "ids": {
-        "trakt": 140590,
-        "slug": "sex-education",
-        "tvdb": 356317,
         "imdb": "tt7767422",
+        "plex": {
+          "guid": "5d9c09027b5c2e001e66531e",
+          "slug": "sex-education"
+        },
+        "slug": "sex-education",
         "tmdb": 81356,
-        "tvrage": null
-      }
+        "tvdb": 356317,
+        "trakt": 140590
+      },
+      "year": 2019,
+      "title": "Sex Education",
+      "aired_episodes": 32
     },
     "_tmdb": {
       "poster": "https://image.tmdb.org/t/p/w342/bc3bmTdnoKcRuO9xdQKgAbB7Y9Z.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/u23G9KZregWHs1use6ir1fX27gl.jpg",
       "overview": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
       "rating": 8.199,
-      "votes": 7909,
+      "votes": 7911,
       "runtime": 0,
       "genres": [
         "Comedy",
@@ -221,28 +239,34 @@
     "action": "watch",
     "type": "episode",
     "episode": {
-      "season": 1,
-      "number": 10,
-      "title": "Main History Banana Chahta hoon",
       "ids": {
-        "trakt": 4513525,
-        "tvdb": 7985947,
-        "imdb": null,
+        "imdb": "",
+        "plex": {
+          "guid": "5f8200f93eea05004117d823"
+        },
         "tmdb": 2458796,
-        "tvrage": null
-      }
+        "tvdb": 7985947,
+        "trakt": 4513525
+      },
+      "title": "Main History Banana Chahta hoon",
+      "number": 10,
+      "season": 1
     },
     "show": {
-      "title": "Scam 1992 - The Harshad Mehta Story",
-      "year": 2020,
       "ids": {
-        "trakt": 167958,
-        "slug": "scam-1992-the-harshad-mehta-story",
-        "tvdb": 389680,
         "imdb": "tt12392504",
+        "plex": {
+          "guid": "5f80afce876cd80041c98219",
+          "slug": "scam-1992-the-harshad-mehta-story"
+        },
+        "slug": "scam-1992-the-harshad-mehta-story",
         "tmdb": 111188,
-        "tvrage": null
-      }
+        "tvdb": 389680,
+        "trakt": 167958
+      },
+      "year": 2020,
+      "title": "Scam 1992 - The Harshad Mehta Story",
+      "aired_episodes": 10
     },
     "_tmdb": {
       "poster": "https://image.tmdb.org/t/p/w342/fiimZ9Xt5cPTPHNrbS4QautBXpU.jpg",
@@ -293,35 +317,41 @@
     "action": "watch",
     "type": "episode",
     "episode": {
-      "season": 12,
-      "number": 24,
-      "title": "Unraveling the Mystery: A Big Bang Farewell",
       "ids": {
-        "trakt": 3524428,
-        "tvdb": 7159758,
         "imdb": "tt10269988",
+        "plex": {
+          "guid": "603fb487c942e2002cf7f66e"
+        },
         "tmdb": 2767846,
-        "tvrage": null
-      }
+        "tvdb": 7159758,
+        "trakt": 3524428
+      },
+      "title": "Unraveling the Mystery: A Big Bang Farewell",
+      "number": 24,
+      "season": 12
     },
     "show": {
-      "title": "The Big Bang Theory",
-      "year": 2007,
       "ids": {
-        "trakt": 1409,
-        "slug": "the-big-bang-theory",
-        "tvdb": 80379,
         "imdb": "tt0898266",
+        "plex": {
+          "guid": "5d9c086c02391c001f5891b3",
+          "slug": "the-big-bang-theory"
+        },
+        "slug": "the-big-bang-theory",
         "tmdb": 1418,
-        "tvrage": null
-      }
+        "tvdb": 80379,
+        "trakt": 1409
+      },
+      "year": 2007,
+      "title": "The Big Bang Theory",
+      "aired_episodes": 279
     },
     "_tmdb": {
       "poster": "https://image.tmdb.org/t/p/w342/euKFiO5M125rpngFRBbSW83beeI.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/rwYvhVv0vwbulMwxOfEsuAr1JrT.jpg",
       "overview": "Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door.",
-      "rating": 7.92,
-      "votes": 12591,
+      "rating": 7.921,
+      "votes": 12597,
       "runtime": 22,
       "genres": [
         "Comedy"

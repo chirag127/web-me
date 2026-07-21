@@ -5,14 +5,18 @@
     "action": "checkin",
     "type": "movie",
     "movie": {
-      "title": "Hack Your Health: The Secrets of Your Gut",
-      "year": 2024,
       "ids": {
-        "trakt": 1028169,
-        "slug": "hack-your-health-the-secrets-of-your-gut-2024",
         "imdb": "tt31316096",
-        "tmdb": 1266701
-      }
+        "plex": {
+          "guid": "65d1a8ae2293eb4475a4b69d",
+          "slug": "hack-your-health-the-secrets-of-your-gut-2024"
+        },
+        "slug": "hack-your-health-the-secrets-of-your-gut-2024",
+        "tmdb": 1266701,
+        "trakt": 1028169
+      },
+      "year": 2024,
+      "title": "Hack Your Health: The Secrets of Your Gut"
     }
   },
   {
@@ -21,14 +25,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Chamber of Secrets",
-      "year": 2002,
       "ids": {
-        "trakt": 546,
-        "slug": "harry-potter-and-the-chamber-of-secrets-2002",
         "imdb": "tt0295297",
-        "tmdb": 672
-      }
+        "plex": {
+          "guid": "5d7768278718ba001e311d57",
+          "slug": "harry-potter-and-the-chamber-of-secrets"
+        },
+        "slug": "harry-potter-and-the-chamber-of-secrets-2002",
+        "tmdb": 672,
+        "trakt": 546
+      },
+      "year": 2002,
+      "title": "Harry Potter and the Chamber of Secrets"
     }
   },
   {
@@ -37,14 +45,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Prisoner of Azkaban",
-      "year": 2004,
       "ids": {
-        "trakt": 547,
-        "slug": "harry-potter-and-the-prisoner-of-azkaban-2004",
         "imdb": "tt0304141",
-        "tmdb": 673
-      }
+        "plex": {
+          "guid": "5d776827103a2d001f564489",
+          "slug": "harry-potter-and-the-prisoner-of-azkaban"
+        },
+        "slug": "harry-potter-and-the-prisoner-of-azkaban-2004",
+        "tmdb": 673,
+        "trakt": 547
+      },
+      "year": 2004,
+      "title": "Harry Potter and the Prisoner of Azkaban"
     }
   },
   {
@@ -53,14 +65,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Deathly Hallows: Part 2",
-      "year": 2011,
       "ids": {
-        "trakt": 7229,
-        "slug": "harry-potter-and-the-deathly-hallows-part-2-2011",
         "imdb": "tt1201607",
-        "tmdb": 12445
-      }
+        "plex": {
+          "guid": "5d776838151a60001f24e81b",
+          "slug": "harry-potter-and-the-deathly-hallows-part-2"
+        },
+        "slug": "harry-potter-and-the-deathly-hallows-part-2-2011",
+        "tmdb": 12445,
+        "trakt": 7229
+      },
+      "year": 2011,
+      "title": "Harry Potter and the Deathly Hallows: Part 2"
     }
   },
   {
@@ -69,14 +85,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Goblet of Fire",
-      "year": 2005,
       "ids": {
-        "trakt": 548,
-        "slug": "harry-potter-and-the-goblet-of-fire-2005",
         "imdb": "tt0330373",
-        "tmdb": 674
-      }
+        "plex": {
+          "guid": "5d77682785719b001f3a0d8b",
+          "slug": "harry-potter-and-the-goblet-of-fire"
+        },
+        "slug": "harry-potter-and-the-goblet-of-fire-2005",
+        "tmdb": 674,
+        "trakt": 548
+      },
+      "year": 2005,
+      "title": "Harry Potter and the Goblet of Fire"
     }
   },
   {
@@ -85,14 +105,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Half-Blood Prince",
-      "year": 2009,
       "ids": {
-        "trakt": 610,
-        "slug": "harry-potter-and-the-half-blood-prince-2009",
         "imdb": "tt0417741",
-        "tmdb": 767
-      }
+        "plex": {
+          "guid": "5d7768282e80df001ebdcebc",
+          "slug": "harry-potter-and-the-half-blood-prince"
+        },
+        "slug": "harry-potter-and-the-half-blood-prince-2009",
+        "tmdb": 767,
+        "trakt": 610
+      },
+      "year": 2009,
+      "title": "Harry Potter and the Half-Blood Prince"
     }
   },
   {
@@ -101,14 +125,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Deathly Hallows: Part 1",
-      "year": 2010,
       "ids": {
-        "trakt": 7228,
-        "slug": "harry-potter-and-the-deathly-hallows-part-1-2010",
         "imdb": "tt0926084",
-        "tmdb": 12444
-      }
+        "plex": {
+          "guid": "5d7768385af944001f1fac9c",
+          "slug": "harry-potter-and-the-deathly-hallows-part-1"
+        },
+        "slug": "harry-potter-and-the-deathly-hallows-part-1-2010",
+        "tmdb": 12444,
+        "trakt": 7228
+      },
+      "year": 2010,
+      "title": "Harry Potter and the Deathly Hallows: Part 1"
     }
   },
   {
@@ -117,14 +145,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Order of the Phoenix",
-      "year": 2007,
       "ids": {
-        "trakt": 549,
-        "slug": "harry-potter-and-the-order-of-the-phoenix-2007",
         "imdb": "tt0373889",
-        "tmdb": 675
-      }
+        "plex": {
+          "guid": "5d77682854c0f0001f301de2",
+          "slug": "harry-potter-and-the-order-of-the-phoenix"
+        },
+        "slug": "harry-potter-and-the-order-of-the-phoenix-2007",
+        "tmdb": 675,
+        "trakt": 549
+      },
+      "year": 2007,
+      "title": "Harry Potter and the Order of the Phoenix"
     }
   },
   {
@@ -133,14 +165,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Harry Potter and the Philosopher's Stone",
-      "year": 2001,
       "ids": {
-        "trakt": 545,
-        "slug": "harry-potter-and-the-philosopher-s-stone-2001",
         "imdb": "tt0241527",
-        "tmdb": 671
-      }
+        "plex": {
+          "guid": "5d77682785719b001f3a0d8e",
+          "slug": "harry-potter-and-the-sorcerers-stone"
+        },
+        "slug": "harry-potter-and-the-philosopher-s-stone-2001",
+        "tmdb": 671,
+        "trakt": 545
+      },
+      "year": 2001,
+      "title": "Harry Potter and the Philosopher's Stone"
     }
   },
   {
@@ -149,14 +185,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Social Network",
-      "year": 2010,
       "ids": {
-        "trakt": 24279,
-        "slug": "the-social-network-2010",
         "imdb": "tt1285016",
-        "tmdb": 37799
-      }
+        "plex": {
+          "guid": "5d77686ceb5d26001f1eabb9",
+          "slug": "the-social-network"
+        },
+        "slug": "the-social-network-2010",
+        "tmdb": 37799,
+        "trakt": 24279
+      },
+      "year": 2010,
+      "title": "The Social Network"
     }
   },
   {
@@ -165,14 +205,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Big Short",
-      "year": 2015,
       "ids": {
-        "trakt": 199563,
-        "slug": "the-big-short-2015",
         "imdb": "tt1596363",
-        "tmdb": 318846
-      }
+        "plex": {
+          "guid": "5d776b679ab544002150af34",
+          "slug": "the-big-short"
+        },
+        "slug": "the-big-short-2015",
+        "tmdb": 318846,
+        "trakt": 199563
+      },
+      "year": 2015,
+      "title": "The Big Short"
     }
   },
   {
@@ -181,14 +225,18 @@
     "action": "checkin",
     "type": "movie",
     "movie": {
-      "title": "The Karate Kid",
-      "year": 2010,
       "ids": {
-        "trakt": 24931,
-        "slug": "the-karate-kid-2010",
         "imdb": "tt1155076",
-        "tmdb": 38575
-      }
+        "plex": {
+          "guid": "5d77686e8718ba001e31be8f",
+          "slug": "the-karate-kid-2010"
+        },
+        "slug": "the-karate-kid-2010",
+        "tmdb": 38575,
+        "trakt": 24931
+      },
+      "year": 2010,
+      "title": "The Karate Kid"
     }
   },
   {
@@ -197,14 +245,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Karate Kid Part II",
-      "year": 1986,
       "ids": {
-        "trakt": 4346,
-        "slug": "the-karate-kid-part-ii-1986",
         "imdb": "tt0091326",
-        "tmdb": 8856
-      }
+        "plex": {
+          "guid": "5d776832f59e5800218984ad",
+          "slug": "the-karate-kid-part-ii"
+        },
+        "slug": "the-karate-kid-part-ii-1986",
+        "tmdb": 8856,
+        "trakt": 4346
+      },
+      "year": 1986,
+      "title": "The Karate Kid Part II"
     }
   },
   {
@@ -213,14 +265,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Karate Kid Part III",
-      "year": 1989,
       "ids": {
-        "trakt": 5678,
-        "slug": "the-karate-kid-part-iii-1989",
         "imdb": "tt0097647",
-        "tmdb": 10495
-      }
+        "plex": {
+          "guid": "5d77683585719b001f3a3b47",
+          "slug": "the-karate-kid-part-iii"
+        },
+        "slug": "the-karate-kid-part-iii-1989",
+        "tmdb": 10495,
+        "trakt": 5678
+      },
+      "year": 1989,
+      "title": "The Karate Kid Part III"
     }
   },
   {
@@ -229,14 +285,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Karate Kid",
-      "year": 1984,
       "ids": {
-        "trakt": 1261,
-        "slug": "the-karate-kid-1984",
         "imdb": "tt0087538",
-        "tmdb": 1885
-      }
+        "plex": {
+          "guid": "5d776d1723d5a3001f520400",
+          "slug": "the-karate-kid"
+        },
+        "slug": "the-karate-kid-1984",
+        "tmdb": 1885,
+        "trakt": 1261
+      },
+      "year": 1984,
+      "title": "The Karate Kid"
     }
   },
   {
@@ -245,14 +305,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Housemaid",
-      "year": 2025,
       "ids": {
-        "trakt": 1117195,
-        "slug": "the-housemaid-2025",
         "imdb": "tt27543632",
-        "tmdb": 1368166
-      }
+        "plex": {
+          "guid": "6444698339b14cd38176a513",
+          "slug": "the-housemaid-2025"
+        },
+        "slug": "the-housemaid-2025",
+        "tmdb": 1368166,
+        "trakt": 1117195
+      },
+      "year": 2025,
+      "title": "The Housemaid"
     }
   },
   {
@@ -261,14 +325,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Ne Zha 2",
-      "year": 2025,
       "ids": {
-        "trakt": 787956,
-        "slug": "ne-zha-2-2025",
         "imdb": "tt34956443",
-        "tmdb": 980477
-      }
+        "plex": {
+          "guid": "6290f7b790e5db37d904100b",
+          "slug": "ne-zha-2"
+        },
+        "slug": "ne-zha-2-2025",
+        "tmdb": 980477,
+        "trakt": 787956
+      },
+      "year": 2025,
+      "title": "Ne Zha 2"
     }
   },
   {
@@ -277,14 +345,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Ne Zha",
-      "year": 2019,
       "ids": {
-        "trakt": 459090,
-        "slug": "ne-zha-2019",
         "imdb": "tt10627720",
-        "tmdb": 615453
-      }
+        "plex": {
+          "guid": "5e1622c35dd66b00406dca13",
+          "slug": "ne-zha"
+        },
+        "slug": "ne-zha-2019",
+        "tmdb": 615453,
+        "trakt": 459090
+      },
+      "year": 2019,
+      "title": "Ne Zha"
     }
   },
   {
@@ -293,14 +365,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Titanic",
-      "year": 1997,
       "ids": {
-        "trakt": 475,
-        "slug": "titanic-1997",
         "imdb": "tt0120338",
-        "tmdb": 597
-      }
+        "plex": {
+          "guid": "5d776d10ad5437001f7cc065",
+          "slug": "titanic-1997"
+        },
+        "slug": "titanic-1997",
+        "tmdb": 597,
+        "trakt": 475
+      },
+      "year": 1997,
+      "title": "Titanic"
     }
   },
   {
@@ -309,14 +385,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Avatar",
-      "year": 2009,
       "ids": {
-        "trakt": 12269,
-        "slug": "avatar-2009",
         "imdb": "tt0499549",
-        "tmdb": 19995
-      }
+        "plex": {
+          "guid": "5d776d057a53e9001e74ed5d",
+          "slug": "avatar"
+        },
+        "slug": "avatar-2009",
+        "tmdb": 19995,
+        "trakt": 12269
+      },
+      "year": 2009,
+      "title": "Avatar"
     }
   },
   {
@@ -325,14 +405,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
-      "year": 2005,
       "ids": {
-        "trakt": 329,
-        "slug": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-2005",
         "imdb": "tt0363771",
-        "tmdb": 411
-      }
+        "plex": {
+          "guid": "5d776825103a2d001f563e40",
+          "slug": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe"
+        },
+        "slug": "the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe-2005",
+        "tmdb": 411,
+        "trakt": 329
+      },
+      "year": 2005,
+      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe"
     }
   },
   {
@@ -341,14 +425,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Rise of the Planet of the Apes",
-      "year": 2011,
       "ids": {
-        "trakt": 44345,
-        "slug": "rise-of-the-planet-of-the-apes-2011",
         "imdb": "tt1318514",
-        "tmdb": 61791
-      }
+        "plex": {
+          "guid": "5d7768a1594b2b001e691724",
+          "slug": "rise-of-the-planet-of-the-apes"
+        },
+        "slug": "rise-of-the-planet-of-the-apes-2011",
+        "tmdb": 61791,
+        "trakt": 44345
+      },
+      "year": 2011,
+      "title": "Rise of the Planet of the Apes"
     }
   },
   {
@@ -357,14 +445,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Jungle Book",
-      "year": 2016,
       "ids": {
-        "trakt": 176503,
-        "slug": "the-jungle-book-2016",
         "imdb": "tt3040964",
-        "tmdb": 278927
-      }
+        "plex": {
+          "guid": "5d776af647dd6e001f6d94fa",
+          "slug": "the-jungle-book-2016"
+        },
+        "slug": "the-jungle-book-2016",
+        "tmdb": 278927,
+        "trakt": 176503
+      },
+      "year": 2016,
+      "title": "The Jungle Book"
     }
   },
   {
@@ -373,14 +465,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Captain Phillips",
-      "year": 2013,
       "ids": {
-        "trakt": 77333,
-        "slug": "captain-phillips-2013",
         "imdb": "tt1535109",
-        "tmdb": 109424
-      }
+        "plex": {
+          "guid": "5d77692647dd6e001f6c3d1f",
+          "slug": "captain-phillips"
+        },
+        "slug": "captain-phillips-2013",
+        "tmdb": 109424,
+        "trakt": 77333
+      },
+      "year": 2013,
+      "title": "Captain Phillips"
     }
   },
   {
@@ -389,14 +485,18 @@
     "action": "checkin",
     "type": "movie",
     "movie": {
-      "title": "Ready Player One",
-      "year": 2018,
       "ids": {
-        "trakt": 214279,
-        "slug": "ready-player-one-2018",
         "imdb": "tt1677720",
-        "tmdb": 333339
-      }
+        "plex": {
+          "guid": "5d776b8ead5437001f7a3218",
+          "slug": "ready-player-one"
+        },
+        "slug": "ready-player-one-2018",
+        "tmdb": 333339,
+        "trakt": 214279
+      },
+      "year": 2018,
+      "title": "Ready Player One"
     }
   },
   {
@@ -405,14 +505,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Spider-Man: Into the Spider-Verse",
-      "year": 2018,
       "ids": {
-        "trakt": 205404,
-        "slug": "spider-man-into-the-spider-verse-2018",
         "imdb": "tt4633694",
-        "tmdb": 324857
-      }
+        "plex": {
+          "guid": "5d9f3c9badeb7a0021ce9100",
+          "slug": "spider-man-into-the-spider-verse"
+        },
+        "slug": "spider-man-into-the-spider-verse-2018",
+        "tmdb": 324857,
+        "trakt": 205404
+      },
+      "year": 2018,
+      "title": "Spider-Man: Into the Spider-Verse"
     }
   },
   {
@@ -421,14 +525,18 @@
     "action": "checkin",
     "type": "movie",
     "movie": {
-      "title": "Doctor Strange",
-      "year": 2016,
       "ids": {
-        "trakt": 181311,
-        "slug": "doctor-strange-2016",
         "imdb": "tt1211837",
-        "tmdb": 284052
-      }
+        "plex": {
+          "guid": "5d776b05ad5437001f7902ac",
+          "slug": "doctor-strange-2016"
+        },
+        "slug": "doctor-strange-2016",
+        "tmdb": 284052,
+        "trakt": 181311
+      },
+      "year": 2016,
+      "title": "Doctor Strange"
     }
   },
   {
@@ -437,14 +545,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Avengers: Infinity War",
-      "year": 2018,
       "ids": {
-        "trakt": 191797,
-        "slug": "avengers-infinity-war-2018",
         "imdb": "tt4154756",
-        "tmdb": 299536
-      }
+        "plex": {
+          "guid": "5d776b377a53e9001e71e283",
+          "slug": "avengers-infinity-war"
+        },
+        "slug": "avengers-infinity-war-2018",
+        "tmdb": 299536,
+        "trakt": 191797
+      },
+      "year": 2018,
+      "title": "Avengers: Infinity War"
     }
   },
   {
@@ -453,14 +565,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Captain America: Civil War",
-      "year": 2016,
       "ids": {
-        "trakt": 169105,
-        "slug": "captain-america-civil-war-2016",
         "imdb": "tt3498820",
-        "tmdb": 271110
-      }
+        "plex": {
+          "guid": "5d776adcfb0d55001f553b34",
+          "slug": "captain-america-civil-war"
+        },
+        "slug": "captain-america-civil-war-2016",
+        "tmdb": 271110,
+        "trakt": 169105
+      },
+      "year": 2016,
+      "title": "Captain America: Civil War"
     }
   },
   {
@@ -469,14 +585,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Black Panther",
-      "year": 2018,
       "ids": {
-        "trakt": 181313,
-        "slug": "black-panther-2018",
         "imdb": "tt1825683",
-        "tmdb": 284054
-      }
+        "plex": {
+          "guid": "5d776b05fb0d55001f559234",
+          "slug": "black-panther"
+        },
+        "slug": "black-panther-2018",
+        "tmdb": 284054,
+        "trakt": 181313
+      },
+      "year": 2018,
+      "title": "Black Panther"
     }
   },
   {
@@ -485,14 +605,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Forrest Gump",
-      "year": 1994,
       "ids": {
-        "trakt": 9,
-        "slug": "forrest-gump-1994",
         "imdb": "tt0109830",
-        "tmdb": 13
-      }
+        "plex": {
+          "guid": "5d7768294de0ee001fcc9261",
+          "slug": "forrest-gump"
+        },
+        "slug": "forrest-gump-1994",
+        "tmdb": 13,
+        "trakt": 9
+      },
+      "year": 1994,
+      "title": "Forrest Gump"
     }
   },
   {
@@ -501,14 +625,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Joker",
-      "year": 2019,
       "ids": {
-        "trakt": 322988,
-        "slug": "joker-2019",
         "imdb": "tt7286456",
-        "tmdb": 475557
-      }
+        "plex": {
+          "guid": "5d776f3c96b655001fe80905",
+          "slug": "joker-2019"
+        },
+        "slug": "joker-2019",
+        "tmdb": 475557,
+        "trakt": 322988
+      },
+      "year": 2019,
+      "title": "Joker"
     }
   },
   {
@@ -517,14 +645,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Avengers: Endgame",
-      "year": 2019,
       "ids": {
-        "trakt": 191798,
-        "slug": "avengers-endgame-2019",
         "imdb": "tt4154796",
-        "tmdb": 299534
-      }
+        "plex": {
+          "guid": "5d776b37fb0d55001f56046d",
+          "slug": "avengers-endgame"
+        },
+        "slug": "avengers-endgame-2019",
+        "tmdb": 299534,
+        "trakt": 191798
+      },
+      "year": 2019,
+      "title": "Avengers: Endgame"
     }
   },
   {
@@ -533,14 +665,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Wolf of Wall Street",
-      "year": 2013,
       "ids": {
-        "trakt": 75735,
-        "slug": "the-wolf-of-wall-street-2013",
         "imdb": "tt0993846",
-        "tmdb": 106646
-      }
+        "plex": {
+          "guid": "5d77691c9ab54400214efcc8",
+          "slug": "the-wolf-of-wall-street"
+        },
+        "slug": "the-wolf-of-wall-street-2013",
+        "tmdb": 106646,
+        "trakt": 75735
+      },
+      "year": 2013,
+      "title": "The Wolf of Wall Street"
     }
   },
   {
@@ -549,14 +685,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Parasite",
-      "year": 2019,
       "ids": {
-        "trakt": 343180,
-        "slug": "parasite-2019",
         "imdb": "tt6751668",
-        "tmdb": 496243
-      }
+        "plex": {
+          "guid": "5d776d8efb0d55001f5a3c34",
+          "slug": "parasite-2019"
+        },
+        "slug": "parasite-2019",
+        "tmdb": 496243,
+        "trakt": 343180
+      },
+      "year": 2019,
+      "title": "Parasite"
     }
   },
   {
@@ -565,14 +705,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "The Shawshank Redemption",
-      "year": 1994,
       "ids": {
-        "trakt": 234,
-        "slug": "the-shawshank-redemption-1994",
         "imdb": "tt0111161",
-        "tmdb": 278
-      }
+        "plex": {
+          "guid": "5d7768248a7581001f12bc77",
+          "slug": "the-shawshank-redemption"
+        },
+        "slug": "the-shawshank-redemption-1994",
+        "tmdb": 278,
+        "trakt": 234
+      },
+      "year": 1994,
+      "title": "The Shawshank Redemption"
     }
   },
   {
@@ -581,14 +725,18 @@
     "action": "watch",
     "type": "movie",
     "movie": {
-      "title": "Young Royals Forever",
-      "year": 2024,
       "ids": {
-        "trakt": 1010193,
-        "slug": "young-royals-forever-2024",
         "imdb": "tt31402962",
-        "tmdb": 1247154
-      }
+        "plex": {
+          "guid": "65d4f4728e3f34dd2bf54c3d",
+          "slug": "young-royals-forever"
+        },
+        "slug": "young-royals-forever-2024",
+        "tmdb": 1247154,
+        "trakt": 1010193
+      },
+      "year": 2024,
+      "title": "Young Royals Forever"
     }
   }
 ]

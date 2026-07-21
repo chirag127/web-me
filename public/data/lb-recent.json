@@ -414,15 +414,19 @@
         "url_rels": [
           {
             "type": "streaming",
-            "url": "https://music.apple.com/gb/song/943946671"
+            "url": "https://music.apple.com/us/song/984607460"
+          },
+          {
+            "type": "streaming",
+            "url": "https://tidal.com/track/44732724"
           },
           {
             "type": "free streaming",
-            "url": "https://open.spotify.com/track/57n3qOwXcoRMyGFjeqC1Rh"
+            "url": "https://www.deezer.com/track/92734438"
           },
           {
             "type": "free streaming",
-            "url": "https://www.deezer.com/track/98327826"
+            "url": "https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS"
           },
           {
             "type": "free streaming",
@@ -434,23 +438,19 @@
           },
           {
             "type": "streaming",
-            "url": "https://music.apple.com/us/song/984607460"
-          },
-          {
-            "type": "streaming",
-            "url": "https://tidal.com/track/44732724"
-          },
-          {
-            "type": "free streaming",
-            "url": "https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS"
-          },
-          {
-            "type": "free streaming",
-            "url": "https://www.deezer.com/track/92734438"
+            "url": "https://music.apple.com/gb/song/943946671"
           },
           {
             "type": "streaming",
             "url": "https://tidal.com/track/39249713"
+          },
+          {
+            "type": "free streaming",
+            "url": "https://open.spotify.com/track/57n3qOwXcoRMyGFjeqC1Rh"
+          },
+          {
+            "type": "free streaming",
+            "url": "https://www.deezer.com/track/98327826"
           }
         ]
       },

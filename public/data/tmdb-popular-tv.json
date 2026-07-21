@@ -7,8 +7,8 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.369,
-    "votes": 6646,
+    "rating": 8.371,
+    "votes": 6665,
     "release": "2022-08-21",
     "genres": [
       10765,
@@ -25,8 +25,8 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.172,
-    "votes": 2285,
+    "rating": 8.173,
+    "votes": 2289,
     "release": "2023-05-04",
     "genres": [
       10765,
@@ -35,41 +35,21 @@
     "popularity": 206.7894
   },
   {
-    "id": 63247,
-    "tmdb_id": 63247,
+    "id": 27181,
+    "tmdb_id": 27181,
     "type": "tv",
-    "title": "Westworld",
-    "overview": "A dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.",
-    "poster": "https://image.tmdb.org/t/p/w342/ALlSU9du9iRiKIIoY1sREGNqQ5.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/rX5hvSRB2k4YoIvRg6Zky52rWk0.jpg",
-    "rating": 8.023,
-    "votes": 6253,
-    "release": "2016-10-02",
+    "title": "Rote Rosen",
+    "overview": "Rote Rosen is a German telenovela produced by Studio Hamburg Serienwerft Lüneburg and broadcast by Das Erste since November 6, 2006. The show is a complex telenovela, who tells one love story every season about women in their forties.",
+    "poster": "https://image.tmdb.org/t/p/w342/swL2qUjGrChFyj14ExwA0pwWtzv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qZ1odCAlNZhUIeLXZXU06JxRqjo.jpg",
+    "rating": 3,
+    "votes": 5,
+    "release": "2006-11-06",
     "genres": [
-      10765,
-      37
+      10766,
+      18
     ],
-    "popularity": 111.136
-  },
-  {
-    "id": 65942,
-    "tmdb_id": 65942,
-    "type": "tv",
-    "title": "Re:ZERO -Starting Life in Another World-",
-    "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
-    "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
-    "rating": 8.007,
-    "votes": 719,
-    "release": "2016-04-04",
-    "genres": [
-      16,
-      18,
-      9648,
-      10759,
-      10765
-    ],
-    "popularity": 117.4023
+    "popularity": 194.8794
   },
   {
     "id": 124364,
@@ -80,7 +60,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
     "rating": 8.502,
-    "votes": 4021,
+    "votes": 4024,
     "release": "2022-02-20",
     "genres": [
       9648,
@@ -88,58 +68,6 @@
       10765
     ],
     "popularity": 190.2205
-  },
-  {
-    "id": 65334,
-    "tmdb_id": 65334,
-    "type": "tv",
-    "title": "Miraculous: Tales of Ladybug & Cat Noir",
-    "overview": "Marinette and Adrien, two Parisian teenagers, are entrusted with powerful jewels in order to transform into superheroes Ladybug and Cat Noir. But neither hero knows the other's true identity — or that they're classmates!",
-    "poster": "https://image.tmdb.org/t/p/w342/acrtAy8gmxcsEvrDP09MpMSCeDZ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
-    "rating": 8.058,
-    "votes": 4623,
-    "release": "2015-10-19",
-    "genres": [
-      10759,
-      16,
-      10762
-    ],
-    "popularity": 120.6719
-  },
-  {
-    "id": 94722,
-    "tmdb_id": 94722,
-    "type": "tv",
-    "title": "Tagesschau",
-    "overview": "German daily news program, the oldest still existing program on German television.",
-    "poster": "https://image.tmdb.org/t/p/w342/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jWXrQstj7p3Wl5MfYWY6IHqRpDb.jpg",
-    "rating": 6.734,
-    "votes": 256,
-    "release": "1952-12-26",
-    "genres": [
-      10763
-    ],
-    "popularity": 148.3178
-  },
-  {
-    "id": 94664,
-    "tmdb_id": 94664,
-    "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.5,
-    "votes": 1594,
-    "release": "2021-01-11",
-    "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 162.1788
   },
   {
     "id": 2734,
@@ -150,7 +78,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/iofokHZoUB4Qhik4PflvJl8TT6a.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/obtdxPgmfykYwVnvuYXC5f2xKlQ.jpg",
     "rating": 7.954,
-    "votes": 4289,
+    "votes": 4290,
     "release": "1999-09-20",
     "genres": [
       80,
@@ -158,23 +86,6 @@
       9648
     ],
     "popularity": 183.353
-  },
-  {
-    "id": 63770,
-    "tmdb_id": 63770,
-    "type": "tv",
-    "title": "The Late Show with Stephen Colbert",
-    "overview": "Stephen Colbert brings his signature satire and comedy to The Late Show with Stephen Colbert, the #1 show in late night, where he talks with an eclectic mix of guests about what is new and relevant in the worlds of politics, entertainment, business, music, technology, and more. Featuring bandleader Jon Batiste with his band Stay Human, the Emmy Award-nominated show is broadcast from the historic Ed Sullivan Theater.",
-    "poster": "https://image.tmdb.org/t/p/w342/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/gMMnf8VRg3Z98WaFmOLr9Jk8pIs.jpg",
-    "rating": 6.1,
-    "votes": 357,
-    "release": "2015-09-08",
-    "genres": [
-      35,
-      10767
-    ],
-    "popularity": 116.5353
   },
   {
     "id": 5920,
@@ -185,7 +96,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/acYXu4KaDj1NIkMgObnhe4C4a0T.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg",
     "rating": 8.363,
-    "votes": 4424,
+    "votes": 4426,
     "release": "2008-09-23",
     "genres": [
       80,
@@ -193,24 +104,6 @@
       9648
     ],
     "popularity": 177.2109
-  },
-  {
-    "id": 322055,
-    "tmdb_id": 322055,
-    "type": "tv",
-    "title": "The Prosecutor's Proposal",
-    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
-    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-    "rating": 5.833,
-    "votes": 6,
-    "release": "2026-06-25",
-    "genres": [
-      9648,
-      80,
-      18
-    ],
-    "popularity": 147.6131
   },
   {
     "id": 79744,
@@ -221,7 +114,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
     "rating": 8.549,
-    "votes": 3386,
+    "votes": 3387,
     "release": "2018-10-16",
     "genres": [
       80,
@@ -231,80 +124,38 @@
     "popularity": 170.5336
   },
   {
-    "id": 257723,
-    "tmdb_id": 257723,
+    "id": 233643,
+    "tmdb_id": 233643,
     "type": "tv",
-    "title": "Maddie + Triggs",
-    "overview": "A little girl and her doggy best friend find music and adventure in the sounds of the everyday by really listening to the world around them.",
-    "poster": "https://image.tmdb.org/t/p/w342/tOLQ3aodmqjiDotcaTEPKJmMoJN.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/poDJP5e9JzyTSY1bYdcZkAjivVr.jpg",
-    "rating": 10,
-    "votes": 1,
-    "release": "2024-10-21",
+    "title": "Secret Mission - Undercover Agents Never Back Down!",
+    "overview": "Narcotics Enforcement Agent Riko Ikazuchi is undercover with her junior colleague Noma in an apartment that serves as the hideout for a criminal organization. Despite Riko and Noma posing as a newlywed couple, the criminals begin to suspect them after not hearing any marital intimacy during the night. To convince them that they are a loving couple, Noma starts touching Riko's body...",
+    "poster": "https://image.tmdb.org/t/p/w342/xZV8e1iKi85PFZlbQBdznvtpAVJ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5IBSPGPAEFEkEJo4leqvpq0RcKf.jpg",
+    "rating": 6.154,
+    "votes": 26,
+    "release": "2023-10-02",
     "genres": [
-      16,
-      10762
+      16
     ],
-    "popularity": 65.5079
+    "popularity": 165.4201
   },
   {
-    "id": 243206,
-    "tmdb_id": 243206,
+    "id": 94664,
+    "tmdb_id": 94664,
     "type": "tv",
-    "title": "Pritam and Pedro",
-    "overview": "The dynamic between the two contrasting personalities, a seasoned cop who prefers old-school methods and a tech-savvy cop who relies on modern technology for investigations, as they navigate their partnership in solving crimes.",
-    "poster": "https://image.tmdb.org/t/p/w342/lC0MtWrnC0SZICFHazagIfVKy0x.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/eAXSlqAJwpdsZ59G10lao9OJ4SG.jpg",
-    "rating": 8.6,
-    "votes": 11,
-    "release": "2026-07-03",
-    "genres": [
-      80,
-      18,
-      9648,
-      35
-    ],
-    "popularity": 123.471
-  },
-  {
-    "id": 279323,
-    "tmdb_id": 279323,
-    "type": "tv",
-    "title": "The East Palace",
-    "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
-    "poster": "https://image.tmdb.org/t/p/w342/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
-    "rating": 7.9,
-    "votes": 18,
-    "release": "2026-07-17",
-    "genres": [
-      9648,
-      10759,
-      10765,
-      18
-    ],
-    "popularity": 99.7668
-  },
-  {
-    "id": 65733,
-    "tmdb_id": 65733,
-    "type": "tv",
-    "title": "Doraemon",
-    "overview": "Robotic cat Doraemon is sent back in time from the 22nd century to protect 10-year-old Noby, a lazy and uncoordinated boy who is destined to have a tragic future. Doraemon can create secret gadgets from a pocket on his stomach, but they usually cause more bad than good because of Noby's propensity to misuse them.",
-    "poster": "https://image.tmdb.org/t/p/w342/9ZN1P32SHviL3SV51qLivxycvcx.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/c2oiRa7V3bQzof4wVGzLXtWJ5QU.jpg",
-    "rating": 8.1,
-    "votes": 236,
-    "release": "2005-04-22",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.466,
+    "votes": 1597,
+    "release": "2021-01-11",
     "genres": [
       10759,
       16,
-      35,
-      10765,
-      10762,
-      10751
+      10765
     ],
-    "popularity": 86.0592
+    "popularity": 162.1788
   },
   {
     "id": 549,
@@ -324,22 +175,20 @@
     "popularity": 159.6416
   },
   {
-    "id": 66732,
-    "tmdb_id": 66732,
+    "id": 95897,
+    "tmdb_id": 95897,
     "type": "tv",
-    "title": "Stranger Things",
-    "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
-    "poster": "https://image.tmdb.org/t/p/w342/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
-    "rating": 8.559,
-    "votes": 21475,
-    "release": "2016-07-15",
+    "title": "Overflow",
+    "overview": "Kazushi Sudou is a university student who is visited by his two childhood friends, the sisters Ayane and Kotone Shirakawa. When Ayane discovers that Kazushi not only forgot to buy her pudding but is also using her special lotion in the bath, she decides to take revenge and join Kazushi in his bath along with Kotone. Will the perverted Kazushi be able to remain indifferent to them both?",
+    "poster": "https://image.tmdb.org/t/p/w342/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4NRBKA8qVzCvuD3WeLieiLGmIjm.jpg",
+    "rating": 7.4,
+    "votes": 89,
+    "release": "2020-01-06",
     "genres": [
-      10759,
-      9648,
-      10765
+      16
     ],
-    "popularity": 101.778
+    "popularity": 154.1988
   },
   {
     "id": 1622,
@@ -358,5 +207,143 @@
       10765
     ],
     "popularity": 153.1532
+  },
+  {
+    "id": 1416,
+    "tmdb_id": 1416,
+    "type": "tv",
+    "title": "Grey's Anatomy",
+    "overview": "Follows the personal and professional lives of a group of doctors at Seattle's Grey Sloan Memorial Hospital.",
+    "poster": "https://image.tmdb.org/t/p/w342/hjJkrLXhWvGHpLeLBDFznpBTY1S.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jP0Rhj9OTPDAwQlHQwOLFDdeE8t.jpg",
+    "rating": 8.208,
+    "votes": 10968,
+    "release": "2005-03-27",
+    "genres": [
+      18
+    ],
+    "popularity": 150.9702
+  },
+  {
+    "id": 94722,
+    "tmdb_id": 94722,
+    "type": "tv",
+    "title": "Tagesschau",
+    "overview": "German daily news program, the oldest still existing program on German television.",
+    "poster": "https://image.tmdb.org/t/p/w342/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/jWXrQstj7p3Wl5MfYWY6IHqRpDb.jpg",
+    "rating": 6.734,
+    "votes": 256,
+    "release": "1952-12-26",
+    "genres": [
+      10763
+    ],
+    "popularity": 148.3178
+  },
+  {
+    "id": 204269,
+    "tmdb_id": 204269,
+    "type": "tv",
+    "title": "Caressing My Hibernating Bear",
+    "overview": "Nowa, a bear living in the forest, decides to take an abandoned puppy under his wing. He names it Airi and takes care of it with great care. Time passes and Nowa soon has to leave him temporarily alone in order to hibernate. Waking up several months later, he discovers that Airi has grown well into an attractive young man.",
+    "poster": "https://image.tmdb.org/t/p/w342/jSRmnyrqY1wmECpCCk7jv7AGFn6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/gH3HCoEBuiLqzZii0sOMfMyXSR8.jpg",
+    "rating": 5.667,
+    "votes": 6,
+    "release": "2022-07-04",
+    "genres": [
+      16
+    ],
+    "popularity": 147.7071
+  },
+  {
+    "id": 322055,
+    "tmdb_id": 322055,
+    "type": "tv",
+    "title": "The Prosecutor's Proposal",
+    "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
+    "poster": "https://image.tmdb.org/t/p/w342/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
+    "rating": 5.714,
+    "votes": 7,
+    "release": "2026-06-25",
+    "genres": [
+      9648,
+      80,
+      18
+    ],
+    "popularity": 147.6131
+  },
+  {
+    "id": 100780,
+    "tmdb_id": 100780,
+    "type": "tv",
+    "title": "Jamai Raja",
+    "overview": "Siddharth, a hotelier, takes up the responsibility of repairing the relationship between his independent wife, Roshni, and his enterprising mother-in-law, Durga Devi.",
+    "poster": "https://image.tmdb.org/t/p/w342/7TDfSot51AFRK8aFs2kO3snM4um.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/aSxmk7crbJKSwRXagAN1uvvc80i.jpg",
+    "rating": 5.5,
+    "votes": 4,
+    "release": "2014-08-04",
+    "genres": [
+      18,
+      10766
+    ],
+    "popularity": 137.6852
+  },
+  {
+    "id": 1399,
+    "tmdb_id": 1399,
+    "type": "tv",
+    "title": "Game of Thrones",
+    "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+    "poster": "https://image.tmdb.org/t/p/w342/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
+    "rating": 8.467,
+    "votes": 27285,
+    "release": "2011-04-17",
+    "genres": [
+      10765,
+      18,
+      10759
+    ],
+    "popularity": 133.8565
+  },
+  {
+    "id": 60625,
+    "tmdb_id": 60625,
+    "type": "tv",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.679,
+    "votes": 11134,
+    "release": "2013-12-02",
+    "genres": [
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 133.0203
+  },
+  {
+    "id": 4614,
+    "tmdb_id": 4614,
+    "type": "tv",
+    "title": "NCIS",
+    "overview": "From murder and espionage to terrorism and stolen submarines, a team of special agents investigates any crime that has any connection to Navy and Marine Corps personnel, regardless of rank or position.",
+    "poster": "https://image.tmdb.org/t/p/w342/mBcu8d6x6zB1el3MPNl7cZQEQ31.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/nn3SuLTO4hum8yAxaY4ql8h6kRk.jpg",
+    "rating": 7.612,
+    "votes": 2535,
+    "release": "2003-09-23",
+    "genres": [
+      80,
+      18,
+      10759
+    ],
+    "popularity": 132.5606
   }
 ]
