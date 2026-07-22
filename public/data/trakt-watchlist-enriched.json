@@ -25,7 +25,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w780/1fkuBPid72KGS6WmtkEXMftZtkE.jpg",
       "overview": "After his estranged son gets embroiled in a Nazi plot, self-exiled gangster Tommy Shelby must return to Birmingham to save his family — and his nation.",
       "rating": 7.236,
-      "votes": 1086,
+      "votes": 1091,
       "runtime": 112,
       "genres": [
         "Crime",
@@ -88,9 +88,9 @@
       "poster": "https://image.tmdb.org/t/p/w342/r4lVJVO1BeBb11cBcXBdbHc9e9k.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w780/wG6yUcgv4xaj64KX7SSPEwBGXW0.jpg",
       "overview": "It's a new school year for the Truham-Higgs gang. As Nick and Charlie's relationship deepens, their thoughts turn to life after the last bell rings.",
-      "rating": 6.76,
-      "votes": 104,
-      "runtime": 114,
+      "rating": 7,
+      "votes": 129,
+      "runtime": 110,
       "genres": [
         "Romance",
         "Drama"

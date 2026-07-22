@@ -1299,6 +1299,43 @@
       "fulltrack": "0",
       "#text": "0"
     },
+    "mbid": "7d3f2fe8-690a-4618-8cff-71a0a307cb42",
+    "name": "One Call Away",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
+      }
+    ],
+    "artist": {
+      "url": "https://www.last.fm/music/Charlie+Puth",
+      "name": "Charlie Puth",
+      "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b"
+    },
+    "url": "https://www.last.fm/music/Charlie+Puth/_/One+Call+Away",
+    "duration": "194",
+    "@attr": {
+      "rank": "36"
+    },
+    "playcount": "4"
+  },
+  {
+    "streamable": {
+      "fulltrack": "0",
+      "#text": "0"
+    },
     "mbid": "3acffba9-6cb5-49cc-8b10-80f97206f5f0",
     "name": "That's Not How This Works (feat. dan + shay)",
     "image": [
@@ -1327,7 +1364,7 @@
     "url": "https://www.last.fm/music/Charlie+Puth/_/That%27s+Not+How+This+Works+(feat.+dan+%252B+shay)",
     "duration": "165",
     "@attr": {
-      "rank": "36"
+      "rank": "37"
     },
     "playcount": "4"
   },
@@ -1364,7 +1401,7 @@
     "url": "https://www.last.fm/music/Ed+Sheeran/_/Photograph",
     "duration": "258",
     "@attr": {
-      "rank": "37"
+      "rank": "38"
     },
     "playcount": "4"
   },
@@ -1401,7 +1438,7 @@
     "url": "https://www.last.fm/music/Harry+Styles/_/Adore+You",
     "duration": "207",
     "@attr": {
-      "rank": "38"
+      "rank": "39"
     },
     "playcount": "4"
   },
@@ -1438,7 +1475,7 @@
     "url": "https://www.last.fm/music/Jeremy+Zucker/_/comethru",
     "duration": "181",
     "@attr": {
-      "rank": "39"
+      "rank": "40"
     },
     "playcount": "4"
   },
@@ -1475,7 +1512,7 @@
     "url": "https://www.last.fm/music/Justin+Bieber/_/Baby+ft.+Ludacris",
     "duration": "0",
     "@attr": {
-      "rank": "40"
+      "rank": "41"
     },
     "playcount": "4"
   },
@@ -1512,7 +1549,7 @@
     "url": "https://www.last.fm/music/Justin+Bieber/_/Lonely",
     "duration": "149",
     "@attr": {
-      "rank": "41"
+      "rank": "42"
     },
     "playcount": "4"
   },
@@ -1549,7 +1586,7 @@
     "url": "https://www.last.fm/music/Justin+Bieber/_/Love+Yourself+(PURPOSE+:+The+Movement)",
     "duration": "0",
     "@attr": {
-      "rank": "42"
+      "rank": "43"
     },
     "playcount": "4"
   },
@@ -1586,7 +1623,7 @@
     "url": "https://www.last.fm/music/Justin+Bieber/_/Peaches+ft.+Daniel+Caesar,+Giveon",
     "duration": "0",
     "@attr": {
-      "rank": "43"
+      "rank": "44"
     },
     "playcount": "4"
   },
@@ -1623,7 +1660,7 @@
     "url": "https://www.last.fm/music/Shawn+Mendes/_/Three+Empty+Words",
     "duration": "199",
     "@attr": {
-      "rank": "44"
+      "rank": "45"
     },
     "playcount": "4"
   },
@@ -1660,7 +1697,7 @@
     "url": "https://www.last.fm/music/Shawn+Mendes/_/Wonder",
     "duration": "172",
     "@attr": {
-      "rank": "45"
+      "rank": "46"
     },
     "playcount": "4"
   },
@@ -1697,7 +1734,7 @@
     "url": "https://www.last.fm/music/Troye+Sivan/_/BITE",
     "duration": "186",
     "@attr": {
-      "rank": "46"
+      "rank": "47"
     },
     "playcount": "4"
   },
@@ -1734,7 +1771,7 @@
     "url": "https://www.last.fm/music/Troye+Sivan/_/TALK+ME+DOWN+(Blue+Neighbourhood+3%2F3)",
     "duration": "0",
     "@attr": {
-      "rank": "47"
+      "rank": "48"
     },
     "playcount": "4"
   },
@@ -1771,7 +1808,7 @@
     "url": "https://www.last.fm/music/Troye+Sivan/_/THE+QUIET",
     "duration": "226",
     "@attr": {
-      "rank": "48"
+      "rank": "49"
     },
     "playcount": "4"
   },
@@ -1807,43 +1844,6 @@
     },
     "url": "https://www.last.fm/music/5+Seconds+of+Summer/_/Easier",
     "duration": "157",
-    "@attr": {
-      "rank": "49"
-    },
-    "playcount": "3"
-  },
-  {
-    "streamable": {
-      "fulltrack": "0",
-      "#text": "0"
-    },
-    "mbid": "b66b519f-c8a0-459e-a7e9-a33fa2a1eed1",
-    "name": "2002",
-    "image": [
-      {
-        "size": "small",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "medium",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "large",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png"
-      },
-      {
-        "size": "extralarge",
-        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png"
-      }
-    ],
-    "artist": {
-      "url": "https://www.last.fm/music/Anne-Marie",
-      "name": "Anne-Marie",
-      "mbid": "a2b73301-e401-40a9-a15a-2a0a1f2e7766"
-    },
-    "url": "https://www.last.fm/music/Anne-Marie/_/2002",
-    "duration": "186",
     "@attr": {
       "rank": "50"
     },

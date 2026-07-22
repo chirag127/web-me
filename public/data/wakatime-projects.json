@@ -9,11 +9,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 14, 2026, 11:39 AM IST",
     "has_public_url": false,
     "urlencoded_name": "constants-api",
-    "url": "/projects/constants-api"
+    "url": "/projects/constants-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "319dd5d6-d665-436c-81fa-e651cc0c5e99",
@@ -25,11 +25,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 14, 2026, 11:29 AM IST",
     "has_public_url": false,
     "urlencoded_name": "awesome-opencode-subagents",
-    "url": "/projects/awesome-opencode-subagents"
+    "url": "/projects/awesome-opencode-subagents",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "5f500b4f-cc60-4a05-bf15-657f9b5e5fa5",
@@ -41,11 +41,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:58 PM IST",
     "has_public_url": false,
     "urlencoded_name": "oriz-nse-bse-tickers-api",
-    "url": "/projects/oriz-nse-bse-tickers-api"
+    "url": "/projects/oriz-nse-bse-tickers-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "99655c68-63a5-4466-b40b-4876fe28682b",
@@ -57,11 +57,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:54 PM IST",
     "has_public_url": false,
     "urlencoded_name": "foam",
-    "url": "/projects/foam"
+    "url": "/projects/foam",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "e0cdecf6-d3d6-4fad-9639-5320a45c81c1",
@@ -73,11 +73,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "ponytail",
-    "url": "/projects/ponytail"
+    "url": "/projects/ponytail",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "58d284b4-9137-4f01-b1fd-0b34a59e9648",
@@ -89,11 +89,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "dynasties-api",
-    "url": "/projects/dynasties-api"
+    "url": "/projects/dynasties-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "5a0012a0-5cc4-4ea6-a5ef-0157e91e5a93",
@@ -105,11 +105,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "ragas-api",
-    "url": "/projects/ragas-api"
+    "url": "/projects/ragas-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "1d789f20-c4bb-4c0c-8c7b-e8c10d8678ab",
@@ -121,11 +121,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "hermes-state",
-    "url": "/projects/hermes-state"
+    "url": "/projects/hermes-state",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "9ec58320-2bcd-473b-8cdb-bb1a1c544692",
@@ -137,11 +137,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "api-budget",
-    "url": "/projects/api-budget"
+    "url": "/projects/api-budget",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "1d552a92-1307-4bbb-80f4-d8ce3dcb4f43",
@@ -153,11 +153,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "rto-api",
-    "url": "/projects/rto-api"
+    "url": "/projects/rto-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "40036022-3f60-4467-b9fb-b79e4438adcd",
@@ -169,11 +169,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "india-train-schedules-api",
-    "url": "/projects/india-train-schedules-api"
+    "url": "/projects/india-train-schedules-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "32b3e0b9-a857-4d20-8f5f-e9386ddecb96",
@@ -185,11 +185,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "countries-plus-api",
-    "url": "/projects/countries-plus-api"
+    "url": "/projects/countries-plus-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "4f9bc59b-8fe4-4161-b70f-525c26058bda",
@@ -201,11 +201,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "api-air-quality",
-    "url": "/projects/api-air-quality"
+    "url": "/projects/api-air-quality",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "e5dbf993-423b-4476-8a8b-4b3eb8b4f4db",
@@ -217,11 +217,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "mf-nav-api",
-    "url": "/projects/mf-nav-api"
+    "url": "/projects/mf-nav-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "59707391-d26e-4b73-a46a-f8eddd663704",
@@ -233,11 +233,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "api-currency-rates",
-    "url": "/projects/api-currency-rates"
+    "url": "/projects/api-currency-rates",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "6e566798-11a3-4bdd-88a5-3cf7d5211e5a",
@@ -249,11 +249,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:49 PM IST",
     "has_public_url": false,
     "urlencoded_name": "api-gold-silver",
-    "url": "/projects/api-gold-silver"
+    "url": "/projects/api-gold-silver",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "8aaae528-2084-454a-a521-505a68a54ee7",
@@ -265,11 +265,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:48 PM IST",
     "has_public_url": false,
     "urlencoded_name": "india-petrol-diesel-api",
-    "url": "/projects/india-petrol-diesel-api"
+    "url": "/projects/india-petrol-diesel-api",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "1717396e-56cf-4300-8062-c2c9053c5a85",
@@ -281,11 +281,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 12, 2026, 1:19 PM IST",
     "has_public_url": false,
     "urlencoded_name": "screenpipe-releases",
-    "url": "/projects/screenpipe-releases"
+    "url": "/projects/screenpipe-releases",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "d229fe87-1fc4-4c87-9b9c-25dcdad57aaf",
@@ -297,11 +297,11 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 11, 2026, 7:37 PM IST",
     "has_public_url": false,
     "urlencoded_name": "screenpipe",
-    "url": "/projects/screenpipe"
+    "url": "/projects/screenpipe",
+    "human_readable_first_heartbeat_at": null
   },
   {
     "id": "62557400-dd92-4c6b-961e-66a90b676928",
@@ -313,10 +313,10 @@
     "badge": null,
     "clients": [],
     "repository": null,
-    "human_readable_first_heartbeat_at": null,
     "human_readable_last_heartbeat_at": "Jul 11, 2026, 6:07 PM IST",
     "has_public_url": false,
     "urlencoded_name": "omniroute",
-    "url": "/projects/omniroute"
+    "url": "/projects/omniroute",
+    "human_readable_first_heartbeat_at": null
   }
 ]

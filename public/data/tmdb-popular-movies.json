@@ -6,16 +6,16 @@
     "title": "The Odyssey",
     "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
     "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
-    "rating": 7.843,
-    "votes": 773,
+    "backdrop": "https://image.tmdb.org/t/p/w780/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
+    "rating": 7.9,
+    "votes": 909,
     "release": "2026-07-15",
     "genres": [
       12,
       28,
       14
     ],
-    "popularity": 746.6132
+    "popularity": 937.0796
   },
   {
     "id": 1108427,
@@ -25,8 +25,8 @@
     "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
     "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
-    "rating": 5.8,
-    "votes": 119,
+    "rating": 5.727,
+    "votes": 132,
     "release": "2026-07-08",
     "genres": [
       10751,
@@ -34,7 +34,7 @@
       35,
       12
     ],
-    "popularity": 601.7817
+    "popularity": 607.7654
   },
   {
     "id": 1339713,
@@ -44,14 +44,31 @@
     "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
     "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
-    "rating": 8.249,
-    "votes": 3369,
+    "rating": 8.244,
+    "votes": 3434,
     "release": "2026-05-13",
     "genres": [
       27,
       53
     ],
-    "popularity": 573.6836
+    "popularity": 490.5794
+  },
+  {
+    "id": 1275779,
+    "tmdb_id": 1275779,
+    "type": "movie",
+    "title": "Disclosure Day",
+    "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+    "poster": "https://image.tmdb.org/t/p/w342/rH5E1EkZJ1kRzHXLIPDr0TJ5VLy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
+    "rating": 6.792,
+    "votes": 983,
+    "release": "2026-06-10",
+    "genres": [
+      878,
+      53
+    ],
+    "popularity": 559.6616
   },
   {
     "id": 1083381,
@@ -61,68 +78,15 @@
     "overview": "A strange doorway appears in the basement of a furniture showroom.",
     "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
-    "rating": 7.052,
-    "votes": 1797,
+    "rating": 7.079,
+    "votes": 1890,
     "release": "2026-05-27",
     "genres": [
       27,
       9648,
       878
     ],
-    "popularity": 453.2348
-  },
-  {
-    "id": 1275779,
-    "tmdb_id": 1275779,
-    "type": "movie",
-    "title": "Disclosure Day",
-    "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-    "poster": "https://image.tmdb.org/t/p/w342/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
-    "rating": 6.686,
-    "votes": 905,
-    "release": "2026-06-10",
-    "genres": [
-      878,
-      53
-    ],
-    "popularity": 452.1308
-  },
-  {
-    "id": 1084244,
-    "tmdb_id": 1084244,
-    "type": "movie",
-    "title": "Toy Story 5",
-    "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-    "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
-    "rating": 7.421,
-    "votes": 660,
-    "release": "2026-06-17",
-    "genres": [
-      16,
-      10751,
-      35,
-      12
-    ],
-    "popularity": 384.513
-  },
-  {
-    "id": 1273221,
-    "tmdb_id": 1273221,
-    "type": "movie",
-    "title": "Scary Movie",
-    "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-    "poster": "https://image.tmdb.org/t/p/w342/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-    "rating": 6.1,
-    "votes": 679,
-    "release": "2026-06-03",
-    "genres": [
-      35,
-      27
-    ],
-    "popularity": 348.624
+    "popularity": 445.1714
   },
   {
     "id": 1315772,
@@ -132,8 +96,8 @@
     "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
     "poster": "https://image.tmdb.org/t/p/w342/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
-    "rating": 6.4,
-    "votes": 204,
+    "rating": 6.379,
+    "votes": 210,
     "release": "2026-06-24",
     "genres": [
       12,
@@ -142,7 +106,7 @@
       10751,
       14
     ],
-    "popularity": 332.1634
+    "popularity": 373.2678
   },
   {
     "id": 1081003,
@@ -150,35 +114,53 @@
     "type": "movie",
     "title": "Supergirl",
     "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-    "poster": "https://image.tmdb.org/t/p/w342/xhei2GX9L2H1eQlrHeFw44VNLd1.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
-    "rating": 6.2,
-    "votes": 499,
+    "rating": 6.1,
+    "votes": 509,
     "release": "2026-06-24",
     "genres": [
       28,
       12,
       878
     ],
-    "popularity": 316.6461
+    "popularity": 388.364
   },
   {
-    "id": 1280738,
-    "tmdb_id": 1280738,
+    "id": 1084244,
+    "tmdb_id": 1084244,
     "type": "movie",
-    "title": "The Furious",
-    "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
-    "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
-    "rating": 7.436,
-    "votes": 227,
-    "release": "2026-06-10",
+    "title": "Toy Story 5",
+    "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+    "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+    "rating": 7.417,
+    "votes": 671,
+    "release": "2026-06-17",
     "genres": [
-      28,
-      80,
-      53
+      16,
+      10751,
+      35,
+      12
     ],
-    "popularity": 197.4266
+    "popularity": 366.4723
+  },
+  {
+    "id": 1273221,
+    "tmdb_id": 1273221,
+    "type": "movie",
+    "title": "Scary Movie",
+    "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+    "poster": "https://image.tmdb.org/t/p/w342/znHT8peERZRWG1ME3r0Db0EV8k8.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+    "rating": 6.332,
+    "votes": 834,
+    "release": "2026-06-03",
+    "genres": [
+      35,
+      27
+    ],
+    "popularity": 413.4475
   },
   {
     "id": 687163,
@@ -188,48 +170,31 @@
     "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
     "poster": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
-    "rating": 8.663,
-    "votes": 6249,
+    "rating": 8.661,
+    "votes": 6288,
     "release": "2026-03-15",
     "genres": [
       878,
       12
     ],
-    "popularity": 193.0243
+    "popularity": 192.3054
   },
   {
-    "id": 1368314,
-    "tmdb_id": 1368314,
+    "id": 1668364,
+    "tmdb_id": 1668364,
     "type": "movie",
-    "title": "Passenger",
-    "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
-    "poster": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
-    "rating": 7.232,
-    "votes": 505,
-    "release": "2026-05-20",
+    "title": "Desire",
+    "overview": "Lucero’s life appears immaculate: a wealthy household, a devoted husband, and two children who embody the promise of a perfect family. Yet beneath this surface simmers a quiet dissatisfaction. When Matías, a young swimming coach hired by her husband, enters their lives, Lucero finds herself pulled into a risky and consuming relationship. As secrecy, desire, and jealousy tighten their grip, the boundaries within the family begin to collapse, placing mother and daughter in a dangerous emotional triangle that threatens to shatter everything Lucero has built.",
+    "poster": "https://image.tmdb.org/t/p/w342/3bEqHqeaQlFykaLQ7N4gDkIvL5w.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/oBter8Y5p2ZFUwWgQ1T9pulGFTJ.jpg",
+    "rating": 6.811,
+    "votes": 82,
+    "release": "2026-05-07",
     "genres": [
-      27,
-      53
-    ],
-    "popularity": 190.3619
-  },
-  {
-    "id": 1314481,
-    "tmdb_id": 1314481,
-    "type": "movie",
-    "title": "The Devil Wears Prada 2",
-    "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-    "poster": "https://image.tmdb.org/t/p/w342/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-    "rating": 7.118,
-    "votes": 1579,
-    "release": "2026-04-29",
-    "genres": [
-      35,
+      9648,
       18
     ],
-    "popularity": 184.1851
+    "popularity": 203.5161
   },
   {
     "id": 1318621,
@@ -239,15 +204,50 @@
     "overview": "Now that the Queen of Hearts is nice and Cinderella is safe, things seem perfect for Red and Chloe… But little do they know that changing the past created a new villain — Maddox Hatter. When Maddox captures the Queen of Hearts, Red and Chloe must work alongside Red’s new sister Pink, Luisa Madrigal’s son Luis, and Maddox’s son Max to save her and Wonderland.",
     "poster": "https://image.tmdb.org/t/p/w342/xdhLAADGSse8KCrsDLBuM5b68Cg.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
-    "rating": 7.8,
-    "votes": 64,
+    "rating": 7.773,
+    "votes": 75,
     "release": "2026-07-16",
     "genres": [
       14,
       10751,
       10770
     ],
-    "popularity": 169.3593
+    "popularity": 198.058
+  },
+  {
+    "id": 1368314,
+    "tmdb_id": 1368314,
+    "type": "movie",
+    "title": "Passenger",
+    "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+    "poster": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
+    "rating": 7.266,
+    "votes": 518,
+    "release": "2026-05-20",
+    "genres": [
+      27,
+      53
+    ],
+    "popularity": 168.3234
+  },
+  {
+    "id": 1280738,
+    "tmdb_id": 1280738,
+    "type": "movie",
+    "title": "The Furious",
+    "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
+    "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
+    "rating": 7.4,
+    "votes": 234,
+    "release": "2026-06-10",
+    "genres": [
+      28,
+      80,
+      53
+    ],
+    "popularity": 165.1764
   },
   {
     "id": 261639,
@@ -261,24 +261,42 @@
     "votes": 3,
     "release": "1998-02-06",
     "genres": [],
-    "popularity": 168.6222
+    "popularity": 178.0232
   },
   {
-    "id": 1668364,
-    "tmdb_id": 1668364,
+    "id": 1314481,
+    "tmdb_id": 1314481,
     "type": "movie",
-    "title": "Desire",
-    "overview": "Lucero’s life appears immaculate: a wealthy household, a devoted husband, and two children who embody the promise of a perfect family. Yet beneath this surface simmers a quiet dissatisfaction. When Matías, a young swimming coach hired by her husband, enters their lives, Lucero finds herself pulled into a risky and consuming relationship. As secrecy, desire, and jealousy tighten their grip, the boundaries within the family begin to collapse, placing mother and daughter in a dangerous emotional triangle that threatens to shatter everything Lucero has built.",
-    "poster": "https://image.tmdb.org/t/p/w342/3bEqHqeaQlFykaLQ7N4gDkIvL5w.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/oBter8Y5p2ZFUwWgQ1T9pulGFTJ.jpg",
-    "rating": 6.746,
-    "votes": 67,
-    "release": "2026-05-07",
+    "title": "The Devil Wears Prada 2",
+    "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+    "poster": "https://image.tmdb.org/t/p/w342/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+    "rating": 7.119,
+    "votes": 1591,
+    "release": "2026-04-29",
     "genres": [
-      9648,
+      35,
       18
     ],
-    "popularity": 161.2545
+    "popularity": 180.5329
+  },
+  {
+    "id": 1228710,
+    "tmdb_id": 1228710,
+    "type": "movie",
+    "title": "The Mandalorian and Grogu",
+    "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+    "poster": "https://image.tmdb.org/t/p/w342/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
+    "rating": 6.819,
+    "votes": 666,
+    "release": "2026-05-20",
+    "genres": [
+      14,
+      28,
+      12
+    ],
+    "popularity": 227.3149
   },
   {
     "id": 1523145,
@@ -288,30 +306,13 @@
     "overview": "High school student Polina is saved from bullying at her new school and makes a deal with the main bully Bars: he must pretend to be her boyfriend and protect her, and she must do everything he says. During this game, the couple develops real feelings, but her family and classmates have reasons to separate the lovers.",
     "poster": "https://image.tmdb.org/t/p/w342/7wIBfBl2gejt6xHxNSK0reVIm7E.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/1x9e0qWonw634NhIsRdvnneeqvN.jpg",
-    "rating": 7.1,
-    "votes": 117,
+    "rating": 7.127,
+    "votes": 118,
     "release": "2026-03-26",
     "genres": [
       10749
     ],
-    "popularity": 136.8197
-  },
-  {
-    "id": 936075,
-    "tmdb_id": 936075,
-    "type": "movie",
-    "title": "Michael",
-    "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-    "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
-    "rating": 8.7,
-    "votes": 3607,
-    "release": "2026-04-22",
-    "genres": [
-      10402,
-      18
-    ],
-    "popularity": 134.6749
+    "popularity": 138.1083
   },
   {
     "id": 1127384,
@@ -321,29 +322,30 @@
     "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
     "poster": "https://image.tmdb.org/t/p/w342/kjcuS7xaRyqRjVaVcH4t0qHshuX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/szKv713FcUXx6hcfdY369vtkmzr.jpg",
-    "rating": 7.504,
-    "votes": 251,
+    "rating": 7.483,
+    "votes": 260,
     "release": "2026-04-30",
     "genres": [
       27,
       53
     ],
-    "popularity": 130.8946
+    "popularity": 139.0545
   },
   {
-    "id": 1285366,
-    "tmdb_id": 1285366,
+    "id": 936075,
+    "tmdb_id": 936075,
     "type": "movie",
-    "title": "Shape of My Heart",
-    "overview": "A romance about a man and a woman who, due to an unexpected event, end up switching bodies. Despite coming from completely different backgrounds and environments, the two try to overcome the various difficulties that arise from their body swap.",
-    "poster": "https://image.tmdb.org/t/p/w342/3r0O6BW9USoZ9mteCVyNKMQriRL.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/yjK3ardrgdS8suZG8KMU82Q7U38.jpg",
-    "rating": 6.2,
-    "votes": 4,
-    "release": "2024-07-06",
+    "title": "Michael",
+    "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+    "poster": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+    "rating": 8.698,
+    "votes": 3623,
+    "release": "2026-04-22",
     "genres": [
-      10749
+      10402,
+      18
     ],
-    "popularity": 125.6353
+    "popularity": 126.2955
   }
 ]

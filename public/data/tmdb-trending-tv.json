@@ -1,5 +1,22 @@
 [
   {
+    "id": 278624,
+    "tmdb_id": 278624,
+    "type": "tv",
+    "title": "Lucky",
+    "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+    "poster": "https://image.tmdb.org/t/p/w342/qdobPy3No4Fi3dCzcIDP9n8AjcO.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+    "rating": 6.791,
+    "votes": 67,
+    "release": "2026-07-14",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 121.2359
+  },
+  {
     "id": 279323,
     "tmdb_id": 279323,
     "type": "tv",
@@ -8,7 +25,7 @@
     "poster": "https://image.tmdb.org/t/p/w342/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
     "rating": 7.9,
-    "votes": 27,
+    "votes": 32,
     "release": "2026-07-17",
     "genres": [
       9648,
@@ -16,24 +33,7 @@
       10765,
       18
     ],
-    "popularity": 105.6806
-  },
-  {
-    "id": 278624,
-    "tmdb_id": 278624,
-    "type": "tv",
-    "title": "Lucky",
-    "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-    "poster": "https://image.tmdb.org/t/p/w342/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-    "rating": 6.656,
-    "votes": 64,
-    "release": "2026-07-14",
-    "genres": [
-      18,
-      80
-    ],
-    "popularity": 115.0949
+    "popularity": 106.9706
   },
   {
     "id": 94997,
@@ -43,15 +43,15 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.371,
-    "votes": 6669,
+    "rating": 8.4,
+    "votes": 6676,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 352.3085
+    "popularity": 361.3376
   },
   {
     "id": 125988,
@@ -61,51 +61,14 @@
     "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
     "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.171,
-    "votes": 2292,
+    "rating": 8.172,
+    "votes": 2296,
     "release": "2023-05-04",
     "genres": [
       10765,
       18
     ],
-    "popularity": 187.7668
-  },
-  {
-    "id": 60625,
-    "tmdb_id": 60625,
-    "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.7,
-    "votes": 11135,
-    "release": "2013-12-02",
-    "genres": [
-      16,
-      35,
-      10765,
-      10759
-    ],
-    "popularity": 152.2761
-  },
-  {
-    "id": 37854,
-    "tmdb_id": 37854,
-    "type": "tv",
-    "title": "One Piece",
-    "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-    "poster": "https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-    "rating": 8.7,
-    "votes": 5428,
-    "release": "1999-10-20",
-    "genres": [
-      10759,
-      35,
-      16
-    ],
-    "popularity": 36.2401
+    "popularity": 184.9321
   },
   {
     "id": 296206,
@@ -115,15 +78,52 @@
     "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
     "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.153,
-    "votes": 36,
+    "rating": 7.203,
+    "votes": 37,
     "release": "2026-06-26",
     "genres": [
       10759,
       80,
       18
     ],
-    "popularity": 120.6186
+    "popularity": 123.3108
+  },
+  {
+    "id": 37854,
+    "tmdb_id": 37854,
+    "type": "tv",
+    "title": "One Piece",
+    "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+    "poster": "https://image.tmdb.org/t/p/w342/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+    "rating": 8.748,
+    "votes": 5432,
+    "release": "1999-10-20",
+    "genres": [
+      10759,
+      35,
+      16
+    ],
+    "popularity": 35.5768
+  },
+  {
+    "id": 60625,
+    "tmdb_id": 60625,
+    "type": "tv",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.679,
+    "votes": 11141,
+    "release": "2013-12-02",
+    "genres": [
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 191.3203
   },
   {
     "id": 254528,
@@ -133,49 +133,13 @@
     "overview": "On the back nine of his career, golf legend Lonnie \"The Hawk\" Hawkins chases one final major — and drags everyone he loves into the chaos.",
     "poster": "https://image.tmdb.org/t/p/w342/6XCbqv7t0rYE2U1jzjh52fBxczj.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/fBVNJL85Q60njpKPD6YaLi6tEsX.jpg",
-    "rating": 5.021,
-    "votes": 24,
+    "rating": 5,
+    "votes": 25,
     "release": "2026-07-16",
     "genres": [
       35
     ],
-    "popularity": 46.8986
-  },
-  {
-    "id": 2122,
-    "tmdb_id": 2122,
-    "type": "tv",
-    "title": "King of the Hill",
-    "overview": "Set in Texas, this animated series follows the life of propane salesman Hank Hill, who lives with his overly confident substitute Spanish teacher wife Peggy, wannabe comedian son Bobby, and naive niece Luanne. Hank has conservative views about God, family, and country, but his values and ethics are often challenged by the situations he, his family, and his beer-drinking neighbors/buddies find themselves in.",
-    "poster": "https://image.tmdb.org/t/p/w342/e2xyMapmYgv4AuSoSDv9Y4pQlD6.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4CSdS9p0AhLhxCo1hGuQINiE2Sa.jpg",
-    "rating": 7.4,
-    "votes": 678,
-    "release": "1997-01-12",
-    "genres": [
-      16,
-      35,
-      10751
-    ],
-    "popularity": 52.2567
-  },
-  {
-    "id": 94664,
-    "tmdb_id": 94664,
-    "type": "tv",
-    "title": "Mushoku Tensei: Jobless Reincarnation",
-    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.466,
-    "votes": 1597,
-    "release": "2021-01-11",
-    "genres": [
-      10759,
-      16,
-      10765
-    ],
-    "popularity": 161.4665
+    "popularity": 49.9539
   },
   {
     "id": 241882,
@@ -185,30 +149,13 @@
     "overview": "Best friends Debbie and Judith are forced on the run when Debbie discovers Judith isn't a forensic accountant, she's an international assassin! With a mysterious figure chasing them, and Debbie's husband involved in something deeply corrupt, it's a race against time and a road trip across Europe to untangle the truth and stay alive.",
     "poster": "https://image.tmdb.org/t/p/w342/uWqEnvpwa2U28QheMdUdEcr4U0M.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/jwCXxvbLno5GrGDA9KvQ22uLziM.jpg",
-    "rating": 5,
-    "votes": 40,
+    "rating": 5.322,
+    "votes": 45,
     "release": "2026-07-15",
     "genres": [
       10759
     ],
-    "popularity": 62.6419
-  },
-  {
-    "id": 286709,
-    "tmdb_id": 286709,
-    "type": "tv",
-    "title": "The Westies",
-    "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
-    "poster": "https://image.tmdb.org/t/p/w342/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
-    "rating": 6.1,
-    "votes": 12,
-    "release": "2026-07-12",
-    "genres": [
-      18,
-      80
-    ],
-    "popularity": 34.77
+    "popularity": 61.7324
   },
   {
     "id": 298610,
@@ -217,16 +164,139 @@
     "title": "Spooky in Love",
     "overview": "When a ghost-seeing heir and an ace prosecutor learn that a single touch makes them a strangely effective duo, they team up to crack unsolved murders.",
     "poster": "https://image.tmdb.org/t/p/w342/acVOH8Pr5LEZ7WKZCbzwNuHVr9x.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/w7Q53AmbEvrbpR2nRE8qBHJcbi2.jpg",
-    "rating": 9.167,
-    "votes": 6,
+    "backdrop": "https://image.tmdb.org/t/p/w780/p9tpGftvG18M5y5wsBmPrQpVBsd.jpg",
+    "rating": 8.8,
+    "votes": 8,
     "release": "2026-07-18",
     "genres": [
       35,
       10765,
       18
     ],
-    "popularity": 36.8314
+    "popularity": 38.6487
+  },
+  {
+    "id": 2122,
+    "tmdb_id": 2122,
+    "type": "tv",
+    "title": "King of the Hill",
+    "overview": "Set in Texas, this animated series follows the life of propane salesman Hank Hill, who lives with his overly confident substitute Spanish teacher wife Peggy, wannabe comedian son Bobby, and naive niece Luanne. Hank has conservative views about God, family, and country, but his values and ethics are often challenged by the situations he, his family, and his beer-drinking neighbors/buddies find themselves in.",
+    "poster": "https://image.tmdb.org/t/p/w342/e2xyMapmYgv4AuSoSDv9Y4pQlD6.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4CSdS9p0AhLhxCo1hGuQINiE2Sa.jpg",
+    "rating": 7.408,
+    "votes": 679,
+    "release": "1997-01-12",
+    "genres": [
+      16,
+      35,
+      10751
+    ],
+    "popularity": 90.2053
+  },
+  {
+    "id": 215072,
+    "tmdb_id": 215072,
+    "type": "tv",
+    "title": "A Shop for Killers",
+    "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+    "poster": "https://image.tmdb.org/t/p/w342/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+    "rating": 8.335,
+    "votes": 179,
+    "release": "2024-01-17",
+    "genres": [
+      18,
+      10759,
+      9648
+    ],
+    "popularity": 20.0799
+  },
+  {
+    "id": 94664,
+    "tmdb_id": 94664,
+    "type": "tv",
+    "title": "Mushoku Tensei: Jobless Reincarnation",
+    "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+    "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+    "rating": 8.467,
+    "votes": 1601,
+    "release": "2021-01-11",
+    "genres": [
+      10759,
+      16,
+      10765
+    ],
+    "popularity": 153.6953
+  },
+  {
+    "id": 255358,
+    "tmdb_id": 255358,
+    "type": "tv",
+    "title": "THE GHOST IN THE SHELL",
+    "overview": "2029, a near-future Japan. The full cyborg Motoko Kusanagi envisions a task force that preemptively strikes emerging threats. She and her team are scouted by Daisuke Aramaki as Public Security Section 9, AKA the \"Shell Squad.\" An international conspiracy hints at a hacker known as The \"Puppet Master.\" What fate awaits Kusanagi? What is the hacker's endgame? A new era of cyberpunk action begins!",
+    "poster": "https://image.tmdb.org/t/p/w342/uEfNGaxbKI1xWmUy3DIndlaxUkz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/app8YXZ4NS0hMTYZuIA6zx92xVm.jpg",
+    "rating": 8.25,
+    "votes": 26,
+    "release": "2026-07-07",
+    "genres": [
+      16,
+      10759,
+      10765
+    ],
+    "popularity": 25.1374
+  },
+  {
+    "id": 277439,
+    "tmdb_id": 277439,
+    "type": "tv",
+    "title": "Cape Fear",
+    "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
+    "poster": "https://image.tmdb.org/t/p/w342/wlwyFRwz2GXFZzaeMjKKNhhjrKG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/rvMmQj3nMZbJmoW6QrzU0nq9Xky.jpg",
+    "rating": 7.1,
+    "votes": 78,
+    "release": "2026-06-04",
+    "genres": [
+      18,
+      80
+    ],
+    "popularity": 38.4931
+  },
+  {
+    "id": 312949,
+    "tmdb_id": 312949,
+    "type": "tv",
+    "title": "Chainsmoker Cat",
+    "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+    "poster": "https://image.tmdb.org/t/p/w342/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+    "rating": 8.4,
+    "votes": 33,
+    "release": "2026-07-03",
+    "genres": [
+      16,
+      35,
+      10765
+    ],
+    "popularity": 58.6841
+  },
+  {
+    "id": 312823,
+    "tmdb_id": 312823,
+    "type": "tv",
+    "title": "一念永恒",
+    "overview": "",
+    "poster": "https://image.tmdb.org/t/p/w342/k1ZxOsc85BN1qztuuirpLl9df3.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/mjY9UOQNFdXZwFIs7HVMqOqcDTr.jpg",
+    "rating": 9,
+    "votes": 1,
+    "release": "2020-08-12",
+    "genres": [
+      16
+    ],
+    "popularity": 3.8725
   },
   {
     "id": 124364,
@@ -236,119 +306,48 @@
     "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
     "poster": "https://image.tmdb.org/t/p/w342/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-    "rating": 8.502,
-    "votes": 4026,
+    "rating": 8.501,
+    "votes": 4031,
     "release": "2022-02-20",
     "genres": [
       9648,
       18,
       10765
     ],
-    "popularity": 187.0278
+    "popularity": 194.6588
   },
   {
-    "id": 277439,
-    "tmdb_id": 277439,
+    "id": 107371,
+    "tmdb_id": 107371,
     "type": "tv",
-    "title": "Cape Fear",
-    "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
-    "poster": "https://image.tmdb.org/t/p/w342/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/rvMmQj3nMZbJmoW6QrzU0nq9Xky.jpg",
-    "rating": 7.104,
-    "votes": 77,
-    "release": "2026-06-04",
+    "title": "A Will Eternal",
+    "overview": "One will to create oceans. One will to summon the mulberry fields. One will to slaughter countless devils. One will to eradicate innumerable immortals. Only my will... is eternal. A Will Eternal tells the tale of Bai Xiaochun, an endearing but exasperating young man who is driven primarily by his fear of death and desire to live forever, but who deeply values friendship and family.",
+    "poster": "https://image.tmdb.org/t/p/w342/1ZUiYywoHiNTgzIN8vBOxxcxzj0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/8kjea5G7lMYRit7U9rSOLLZZOUh.jpg",
+    "rating": 8.9,
+    "votes": 16,
+    "release": "2020-08-12",
     "genres": [
-      18,
-      80
+      16,
+      10765,
+      18
     ],
-    "popularity": 37.5607
+    "popularity": 14.2364
   },
   {
-    "id": 288671,
-    "tmdb_id": 288671,
+    "id": 321564,
+    "tmdb_id": 321564,
     "type": "tv",
-    "title": "The Map of Longing",
-    "overview": "Before her death, Lucy creates a game for her sister, Greta, pushing her into a journey of self-discovery — and toward the charming Will Tucker.",
-    "poster": "https://image.tmdb.org/t/p/w342/wcgjZ7koqOYDcKUn6DmnNolqmUS.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/lDhs7EFH1DaOoRXEaTiNhuYaAbC.jpg",
-    "rating": 7.7,
+    "title": "Star Wars: The Mandalorian and Grogu | A Special Look",
+    "overview": "Get ready for \"Star Wars: The Mandalorian and Grogu | A Special Look,\" only in theaters.",
+    "poster": "https://image.tmdb.org/t/p/w342/2YI9C4Ynr952BQj0e9qe6V5P6p8.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/bxhodfyAivcHoM4JPB6310aRgp5.jpg",
+    "rating": 8.3,
     "votes": 6,
-    "release": "2026-07-17",
+    "release": "2026-05-04",
     "genres": [
-      18
+      99
     ],
-    "popularity": 27.6202
-  },
-  {
-    "id": 289139,
-    "tmdb_id": 289139,
-    "type": "tv",
-    "title": "Overdo",
-    "overview": "In Republican Shanghai, Murong Qingyi, a warlord’s son swapped at birth, endures years of torment. His life changes when Ren Susu saves him, but tragedy strikes her family because of it. Years later, love sparks between them, but Ren Susu fakes her death to save another, leaving Qingyi heartbroken. Three years on, she returns as his future sister-in-law. Love, hate, betrayal, and old wounds resurface. As war looms, the two must defy fate together, but can love survive a nation’s fall?",
-    "poster": "https://image.tmdb.org/t/p/w342/sOh7qrLixexhiWObAKSyh4mAlAR.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/24Jiw958Hb7okfxWFedeDkWX8WU.jpg",
-    "rating": 10,
-    "votes": 1,
-    "release": "2026-07-19",
-    "genres": [
-      18
-    ],
-    "popularity": 41.297
-  },
-  {
-    "id": 138502,
-    "tmdb_id": 138502,
-    "type": "tv",
-    "title": "X-Men '97",
-    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-    "poster": "https://image.tmdb.org/t/p/w342/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-    "rating": 8.641,
-    "votes": 779,
-    "release": "2024-03-20",
-    "genres": [
-      16,
-      10759,
-      10765
-    ],
-    "popularity": 50.5246
-  },
-  {
-    "id": 65942,
-    "tmdb_id": 65942,
-    "type": "tv",
-    "title": "Re:ZERO -Starting Life in Another World-",
-    "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
-    "poster": "https://image.tmdb.org/t/p/w342/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
-    "rating": 8.01,
-    "votes": 720,
-    "release": "2016-04-04",
-    "genres": [
-      16,
-      18,
-      9648,
-      10759,
-      10765
-    ],
-    "popularity": 110.7501
-  },
-  {
-    "id": 79744,
-    "tmdb_id": 79744,
-    "type": "tv",
-    "title": "The Rookie",
-    "overview": "Starting over isn't easy, especially for small-town guy John Nolan who, after a life-altering incident, is pursuing his dream of being an LAPD officer. As the force's oldest rookie, he's met with skepticism from some higher-ups who see him as just a walking midlife crisis.",
-    "poster": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
-    "rating": 8.549,
-    "votes": 3388,
-    "release": "2018-10-16",
-    "genres": [
-      80,
-      18,
-      35
-    ],
-    "popularity": 144.9489
+    "popularity": 6.6438
   }
 ]
