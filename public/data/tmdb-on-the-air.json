@@ -7,15 +7,68 @@
     "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
     "poster": "https://image.tmdb.org/t/p/w342/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-    "rating": 8.4,
-    "votes": 6676,
+    "rating": 8.371,
+    "votes": 6684,
     "release": "2022-08-21",
     "genres": [
       10765,
       18,
       10759
     ],
-    "popularity": 361.3376
+    "popularity": 375.4991
+  },
+  {
+    "id": 2224,
+    "tmdb_id": 2224,
+    "type": "tv",
+    "title": "The Daily Show",
+    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
+    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
+    "rating": 6.4,
+    "votes": 646,
+    "release": "1996-07-22",
+    "genres": [
+      10763,
+      35
+    ],
+    "popularity": 224.6717
+  },
+  {
+    "id": 60625,
+    "tmdb_id": 60625,
+    "type": "tv",
+    "title": "Rick and Morty",
+    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+    "rating": 8.679,
+    "votes": 11144,
+    "release": "2013-12-02",
+    "genres": [
+      16,
+      35,
+      10765,
+      10759
+    ],
+    "popularity": 203.6843
+  },
+  {
+    "id": 125988,
+    "tmdb_id": 125988,
+    "type": "tv",
+    "title": "Silo",
+    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+    "rating": 8.176,
+    "votes": 2302,
+    "release": "2023-05-04",
+    "genres": [
+      10765,
+      18
+    ],
+    "popularity": 212.4494
   },
   {
     "id": 206559,
@@ -31,75 +84,7 @@
     "genres": [
       10766
     ],
-    "popularity": 167.8411
-  },
-  {
-    "id": 2912,
-    "tmdb_id": 2912,
-    "type": "tv",
-    "title": "Jeopardy!",
-    "overview": "America's favorite quiz show where contestants are presented with general knowledge clues in the form of answers, and must phrase their responses in question form.",
-    "poster": "https://image.tmdb.org/t/p/w342/hfz0IgebqGENG6ZnuqKQKMFk2vy.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/55tcKzl0gZ0lR1q7TrVJm0h9lkT.jpg",
-    "rating": 6.9,
-    "votes": 160,
-    "release": "1984-09-10",
-    "genres": [
-      10764,
-      10751
-    ],
-    "popularity": 105.9131
-  },
-  {
-    "id": 2224,
-    "tmdb_id": 2224,
-    "type": "tv",
-    "title": "The Daily Show",
-    "overview": "The World's Fakest News Team tackle the biggest stories in news, politics and pop culture.",
-    "poster": "https://image.tmdb.org/t/p/w342/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qLMfcvdCcCGD2BNLH8b6ZCBuO7D.jpg",
-    "rating": 6.393,
-    "votes": 645,
-    "release": "1996-07-22",
-    "genres": [
-      10763,
-      35
-    ],
-    "popularity": 146.9218
-  },
-  {
-    "id": 125988,
-    "tmdb_id": 125988,
-    "type": "tv",
-    "title": "Silo",
-    "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-    "poster": "https://image.tmdb.org/t/p/w342/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-    "rating": 8.172,
-    "votes": 2296,
-    "release": "2023-05-04",
-    "genres": [
-      10765,
-      18
-    ],
-    "popularity": 184.9321
-  },
-  {
-    "id": 22980,
-    "tmdb_id": 22980,
-    "type": "tv",
-    "title": "Watch What Happens Live with Andy Cohen",
-    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
-    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
-    "rating": 5,
-    "votes": 87,
-    "release": "2009-07-16",
-    "genres": [
-      10767,
-      35
-    ],
-    "popularity": 137.4784
+    "popularity": 279.7773
   },
   {
     "id": 94664,
@@ -109,34 +94,32 @@
     "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
     "poster": "https://image.tmdb.org/t/p/w342/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-    "rating": 8.467,
-    "votes": 1601,
+    "rating": 8.5,
+    "votes": 1606,
     "release": "2021-01-11",
     "genres": [
       10759,
       16,
       10765
     ],
-    "popularity": 153.6953
+    "popularity": 161.1174
   },
   {
-    "id": 60625,
-    "tmdb_id": 60625,
+    "id": 59941,
+    "tmdb_id": 59941,
     "type": "tv",
-    "title": "Rick and Morty",
-    "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-    "poster": "https://image.tmdb.org/t/p/w342/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-    "rating": 8.679,
-    "votes": 11141,
-    "release": "2013-12-02",
+    "title": "The Tonight Show Starring Jimmy Fallon",
+    "overview": "After Jay Leno's second retirement from the program, Jimmy Fallon stepped in as his permanent replacement. After 42 years in Los Angeles the program was brought back to New York.",
+    "poster": "https://image.tmdb.org/t/p/w342/1N4o5PmmqhlVDrcdJ2RlCFWbLGX.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7VO04TtL1jIT6XOPs9u4jdB8KaB.jpg",
+    "rating": 5.789,
+    "votes": 380,
+    "release": "2014-02-17",
     "genres": [
-      16,
       35,
-      10765,
-      10759
+      10767
     ],
-    "popularity": 191.3203
+    "popularity": 187.6518
   },
   {
     "id": 322055,
@@ -154,7 +137,24 @@
       80,
       18
     ],
-    "popularity": 139.6542
+    "popularity": 154.405
+  },
+  {
+    "id": 22980,
+    "tmdb_id": 22980,
+    "type": "tv",
+    "title": "Watch What Happens Live with Andy Cohen",
+    "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
+    "poster": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hINekSpbcBxjnjGqmIm6I4bz2ab.jpg",
+    "rating": 5,
+    "votes": 87,
+    "release": "2009-07-16",
+    "genres": [
+      10767,
+      35
+    ],
+    "popularity": 298.8461
   },
   {
     "id": 4057,
@@ -164,15 +164,15 @@
     "overview": "An elite team of FBI profilers analyze the country's most twisted criminal minds, anticipating their next moves before they strike again. The Behavioral Analysis Unit's most experienced agent is David Rossi, a founding member of the BAU who returns to help the team solve new cases.",
     "poster": "https://image.tmdb.org/t/p/w342/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/tUtXfyVy54BY7eJnRtI8Xnmr1ZL.jpg",
-    "rating": 8.3,
-    "votes": 4129,
+    "rating": 8.304,
+    "votes": 4131,
     "release": "2005-09-22",
     "genres": [
       80,
       18,
       9648
     ],
-    "popularity": 136.8963
+    "popularity": 150.5679
   },
   {
     "id": 296206,
@@ -182,33 +182,15 @@
     "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
     "poster": "https://image.tmdb.org/t/p/w342/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-    "rating": 7.203,
-    "votes": 37,
+    "rating": 7.276,
+    "votes": 38,
     "release": "2026-06-26",
     "genres": [
       10759,
       80,
       18
     ],
-    "popularity": 123.3108
-  },
-  {
-    "id": 1871,
-    "tmdb_id": 1871,
-    "type": "tv",
-    "title": "EastEnders",
-    "overview": "The everyday lives of working-class residents of Albert Square, a traditional Victorian square of terrace houses surrounding a park in the East End of London's Walford borough.",
-    "poster": "https://image.tmdb.org/t/p/w342/z4jgyI5TpoRZiJTNchkVkMrGQyz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2jzrUm0vGW2TqJPds1PfZVRYrh7.jpg",
-    "rating": 4.249,
-    "votes": 229,
-    "release": "1985-02-19",
-    "genres": [
-      10766,
-      18,
-      80
-    ],
-    "popularity": 73.6089
+    "popularity": 129.6627
   },
   {
     "id": 278624,
@@ -216,97 +198,68 @@
     "type": "tv",
     "title": "Lucky",
     "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-    "poster": "https://image.tmdb.org/t/p/w342/qdobPy3No4Fi3dCzcIDP9n8AjcO.jpg",
+    "poster": "https://image.tmdb.org/t/p/w342/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-    "rating": 6.8,
-    "votes": 67,
+    "rating": 6.959,
+    "votes": 74,
     "release": "2026-07-14",
     "genres": [
       18,
       80
     ],
-    "popularity": 121.2359
+    "popularity": 133.4279
   },
   {
-    "id": 291,
-    "tmdb_id": 291,
+    "id": 2912,
+    "tmdb_id": 2912,
     "type": "tv",
-    "title": "Coronation Street",
-    "overview": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
-    "poster": "https://image.tmdb.org/t/p/w342/5x1HXqYqPyYw7oc7Isu1lvVmwRP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5APjn4LnV5wWk5DXq7ZewT6zzP1.jpg",
-    "rating": 5.3,
-    "votes": 117,
-    "release": "1960-12-09",
+    "title": "Jeopardy!",
+    "overview": "America's favorite quiz show where contestants are presented with general knowledge clues in the form of answers, and must phrase their responses in question form.",
+    "poster": "https://image.tmdb.org/t/p/w342/hfz0IgebqGENG6ZnuqKQKMFk2vy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/55tcKzl0gZ0lR1q7TrVJm0h9lkT.jpg",
+    "rating": 6.9,
+    "votes": 160,
+    "release": "1984-09-10",
     "genres": [
+      10764,
+      10751
+    ],
+    "popularity": 224.6772
+  },
+  {
+    "id": 44953,
+    "tmdb_id": 44953,
+    "type": "tv",
+    "title": "El Señor de los Cielos",
+    "overview": "Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.",
+    "poster": "https://image.tmdb.org/t/p/w342/Ag7VUdnrRz5Qpq3Yn3E5OCvFnu0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/h3sqf7qkdSvMiBhyzfuXAEFkn5R.jpg",
+    "rating": 7.972,
+    "votes": 3528,
+    "release": "2013-04-15",
+    "genres": [
+      80,
+      18,
       10766
     ],
-    "popularity": 84.6818
+    "popularity": 102.9587
   },
   {
-    "id": 235484,
-    "tmdb_id": 235484,
+    "id": 33238,
+    "tmdb_id": 33238,
     "type": "tv",
-    "title": "Suidooster",
-    "overview": "Suidooster is a South African television soap opera produced by Suidooster Films which revolves around a matriarch, her family, friends and the people of Suidooster, a small shopping and business centre in the fictional Cape Town suburb of Ruiterbosch.",
-    "poster": "https://image.tmdb.org/t/p/w342/naCgSiacvV685kait6fBvhVhdce.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ynd225o8GuCahYGjHtFdEt8Xizm.jpg",
-    "rating": 7,
-    "votes": 24,
-    "release": "2015-11-16",
+    "title": "Running Man",
+    "overview": "These days, as variety shows are gradually disappearing, this is one of Korea’s representative variety shows that has been responsible for Sunday evenings for over 10 years. This program features numerous stars and members going around various places, playing games, and completing missions. In particular, among the many fun elements of variety shows, this one focuses solely on laughter.\n\nOpen your eyes! Big fun is coming in!\n\nOpen your mouth! Big laughter is coming in!\n\nOpen your heart! Useful lessons are coming in!",
+    "poster": "https://image.tmdb.org/t/p/w342/2Wmmu1MkqxJ48J7aySET9EKEjXz.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/wsHj4oHQJoe7DMYaqNFwVoyLiAh.jpg",
+    "rating": 8.219,
+    "votes": 215,
+    "release": "2010-07-11",
     "genres": [
-      10766
-    ],
-    "popularity": 54.5993
-  },
-  {
-    "id": 226687,
-    "tmdb_id": 226687,
-    "type": "tv",
-    "title": "All Elite Wrestling: Collision",
-    "overview": "An in-ring show featuring more wrestlers, more stories and more action to super-serve fans.",
-    "poster": "https://image.tmdb.org/t/p/w342/85ZKXqPiZHjPPxeoR26dyodqHVZ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/6fbzFk1fTE8I8UEYn9hG9dUo8jh.jpg",
-    "rating": 7.7,
-    "votes": 16,
-    "release": "2023-06-17",
-    "genres": [
-      10759,
-      18
-    ],
-    "popularity": 47.0119
-  },
-  {
-    "id": 4656,
-    "tmdb_id": 4656,
-    "type": "tv",
-    "title": "Raw",
-    "overview": "A regularly scheduled, live, year-round program featuring some of the biggest WWE Superstars.",
-    "poster": "https://image.tmdb.org/t/p/w342/fstEe6RsyNyPUnMwNcL20iNl0nE.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/384Lam787FIDBnwjwQBvC8gjB2d.jpg",
-    "rating": 6.8,
-    "votes": 364,
-    "release": "1993-01-11",
-    "genres": [
+      35,
       10764
     ],
-    "popularity": 85.2875
-  },
-  {
-    "id": 5266,
-    "tmdb_id": 5266,
-    "type": "tv",
-    "title": "University Challenge",
-    "overview": "Academic quiz show where teams of students from UK universities answer questions on all manner of subjects.",
-    "poster": "https://image.tmdb.org/t/p/w342/cqczsSUFFOlAYQ2QOsrDo9tkhWi.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/9YROW0JA85k9IyHuaHhFcqzr0Jp.jpg",
-    "rating": 6.2,
-    "votes": 12,
-    "release": "1962-09-21",
-    "genres": [
-      10767
-    ],
-    "popularity": 56.761
+    "popularity": 102.9924
   },
   {
     "id": 2661,
@@ -324,24 +277,70 @@
       10765,
       18
     ],
-    "popularity": 95.0686
+    "popularity": 132.8994
   },
   {
-    "id": 72879,
-    "tmdb_id": 72879,
+    "id": 65701,
+    "tmdb_id": 65701,
     "type": "tv",
-    "title": "Tomorrow Is Ours",
-    "overview": "The story revolves around the people of Sète, France. Their lives are punctuated by family rivalries, romance and scenes from daily life, but also by plots involving police investigations, secrets and betrayals.",
-    "poster": "https://image.tmdb.org/t/p/w342/7BjipkA48xXLauTg45QKiOb144a.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/g4qh9J4Z7d1kSTJN4ZorQr5JinH.jpg",
-    "rating": 6.4,
-    "votes": 71,
-    "release": "2017-07-17",
+    "title": "Good Mythical Morning",
+    "overview": "Two \"Internetainers\" (Rhett & Link) go far out and do the weirdest things, giving you a daily dose of casual comedy every Monday-Friday.",
+    "poster": "https://image.tmdb.org/t/p/w342/jMpBQr2aNOFAI6wsC47zsOG6qOh.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/hvFCS0dMeC3ffiF4uYTKzUAkvYL.jpg",
+    "rating": 6.9,
+    "votes": 91,
+    "release": "2012-01-09",
     "genres": [
-      80,
-      18,
+      35
+    ],
+    "popularity": 216.8756
+  },
+  {
+    "id": 4656,
+    "tmdb_id": 4656,
+    "type": "tv",
+    "title": "Raw",
+    "overview": "A regularly scheduled, live, year-round program featuring some of the biggest WWE Superstars.",
+    "poster": "https://image.tmdb.org/t/p/w342/fstEe6RsyNyPUnMwNcL20iNl0nE.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/384Lam787FIDBnwjwQBvC8gjB2d.jpg",
+    "rating": 6.8,
+    "votes": 364,
+    "release": "1993-01-11",
+    "genres": [
+      10764
+    ],
+    "popularity": 142.1063
+  },
+  {
+    "id": 291,
+    "tmdb_id": 291,
+    "type": "tv",
+    "title": "Coronation Street",
+    "overview": "The residents of Coronation Street are ordinary, working-class people, and the show follows them through regular social and family interactions at home, in the workplace, and in their local pub, the Rovers Return Inn. Britain's longest-running soap.",
+    "poster": "https://image.tmdb.org/t/p/w342/5x1HXqYqPyYw7oc7Isu1lvVmwRP.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5APjn4LnV5wWk5DXq7ZewT6zzP1.jpg",
+    "rating": 5.3,
+    "votes": 117,
+    "release": "1960-12-09",
+    "genres": [
       10766
     ],
-    "popularity": 57.0116
+    "popularity": 113.3504
+  },
+  {
+    "id": 119171,
+    "tmdb_id": 119171,
+    "type": "tv",
+    "title": "爱情保卫战",
+    "overview": "",
+    "poster": "https://image.tmdb.org/t/p/w342/6PFfnOoHCWFuLyt4jtTqBx2vJFI.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/5FY1qDmoTw2ubrynvq0fquoogds.jpg",
+    "rating": 0,
+    "votes": 0,
+    "release": "2010-10-30",
+    "genres": [
+      10764
+    ],
+    "popularity": 79.7269
   }
 ]

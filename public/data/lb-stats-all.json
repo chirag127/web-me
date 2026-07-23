@@ -3,27 +3,27 @@
     {
       "artist_mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
       "artist_name": "Shawn Mendes",
-      "listen_count": 858
+      "listen_count": 862
     },
     {
       "artist_mbid": "e0140a67-e4d1-4f13-8a01-364355bee46e",
       "artist_name": "Justin Bieber",
-      "listen_count": 262
+      "listen_count": 269
     },
     {
       "artist_mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
       "artist_name": "Troye Sivan",
-      "listen_count": 243
+      "listen_count": 256
     },
     {
       "artist_mbid": "c0ef2ba5-a7b7-40ea-bd27-30acccfcac11",
       "artist_name": "Lauv",
-      "listen_count": 218
+      "listen_count": 220
     },
     {
       "artist_mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
       "artist_name": "Bruno Mars",
-      "listen_count": 183
+      "listen_count": 192
     },
     {
       "artist_mbid": null,
@@ -33,7 +33,7 @@
     {
       "artist_mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
       "artist_name": "Charlie Puth",
-      "listen_count": 135
+      "listen_count": 136
     },
     {
       "artist_mbid": null,
@@ -63,7 +63,7 @@
     {
       "artist_mbid": "b8a7c51f-362c-4dcb-a259-bc6e0095f0a6",
       "artist_name": "Ed Sheeran",
-      "listen_count": 49
+      "listen_count": 50
     },
     {
       "artist_mbid": "bc153bd5-7963-4195-a6fb-c38588f31007",
@@ -88,7 +88,7 @@
     {
       "artist_mbid": "28737730-ec70-4da5-89c5-77ac13c5c34d",
       "artist_name": "Khalid",
-      "listen_count": 32
+      "listen_count": 33
     },
     {
       "artist_mbid": null,
@@ -101,6 +101,11 @@
       "listen_count": 26
     },
     {
+      "artist_mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+      "artist_name": "Ariana Grande",
+      "listen_count": 26
+    },
+    {
       "artist_mbid": "0638ba22-040f-438d-83a5-9b670c4adaf5",
       "artist_name": "Ludacris",
       "listen_count": 25
@@ -108,22 +113,17 @@
     {
       "artist_mbid": "4757df70-6c3e-46b8-99c0-a68644595c9a",
       "artist_name": "Julia Michaels",
-      "listen_count": 24
+      "listen_count": 25
+    },
+    {
+      "artist_mbid": "ad322b8b-31b2-437d-8fd8-1af13c1d7b91",
+      "artist_name": "GIVĒON",
+      "listen_count": 23
     },
     {
       "artist_mbid": "0d79fe8e-ba27-4859-bb8c-2f255f346853",
       "artist_name": "BTS",
       "listen_count": 23
-    },
-    {
-      "artist_mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
-      "artist_name": "Ariana Grande",
-      "listen_count": 23
-    },
-    {
-      "artist_mbid": "ad322b8b-31b2-437d-8fd8-1af13c1d7b91",
-      "artist_name": "GIVĒON",
-      "listen_count": 22
     },
     {
       "artist_mbid": "7e9bd05a-117f-4cce-87bc-e011527a8b18",
@@ -151,6 +151,11 @@
       "listen_count": 20
     },
     {
+      "artist_mbid": "01b8b5bf-06cb-45da-85fb-61ada72fcd69",
+      "artist_name": "Camila Cabello",
+      "listen_count": 20
+    },
+    {
       "artist_mbid": "e4bc69e2-a064-4f93-ada1-f7f209cc1cc3",
       "artist_name": "Selena Gomez",
       "listen_count": 19
@@ -161,23 +166,18 @@
       "listen_count": 19
     },
     {
+      "artist_mbid": "b46e298d-d3a5-4695-a03e-63e8c523b23e",
+      "artist_name": "Daniel Caesar",
+      "listen_count": 19
+    },
+    {
       "artist_mbid": null,
       "artist_name": "Charlie Puth",
       "listen_count": 19
     },
     {
-      "artist_mbid": "01b8b5bf-06cb-45da-85fb-61ada72fcd69",
-      "artist_name": "Camila Cabello",
-      "listen_count": 19
-    },
-    {
       "artist_mbid": "6143403a-df6c-429e-8ee6-ef869896b0da",
       "artist_name": "Quavo",
-      "listen_count": 18
-    },
-    {
-      "artist_mbid": "b46e298d-d3a5-4695-a03e-63e8c523b23e",
-      "artist_name": "Daniel Caesar",
       "listen_count": 18
     },
     {
@@ -241,22 +241,22 @@
       "listen_count": 14
     },
     {
-      "artist_mbid": null,
-      "artist_name": "Common Stocks and Uncommon Profits",
+      "artist_mbid": "850a8b03-98a7-4fd3-afbd-5e5520b4ef5f",
+      "artist_name": "Conan Gray",
       "listen_count": 14
     },
     {
       "artist_mbid": null,
-      "artist_name": "Charlie Munger",
+      "artist_name": "Common Stocks and Uncommon Profits",
       "listen_count": 14
     }
   ],
   "count": 50,
   "from_ts": 1009843200,
-  "last_updated": 1783851022,
+  "last_updated": 1784768762,
   "offset": 0,
   "range": "all_time",
-  "to_ts": 1783814686,
-  "total_artist_count": 1449,
+  "to_ts": 1784679959,
+  "total_artist_count": 1459,
   "user_id": "chirag127"
 }

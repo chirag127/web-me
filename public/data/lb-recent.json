@@ -28,12 +28,16 @@
         "release_mbid": "33e10aea-0a30-49ee-b5d4-6c8dcfba4a12",
         "url_rels": [
           {
+            "type": "streaming",
+            "url": "https://tidal.com/track/274871675"
+          },
+          {
             "type": "free streaming",
             "url": "https://www.deezer.com/track/2135230227"
           },
           {
-            "type": "streaming",
-            "url": "https://tidal.com/track/274871675"
+            "type": "free streaming",
+            "url": "https://music.youtube.com/watch?v=EDRBluZnyys"
           },
           {
             "type": "free streaming",
@@ -454,15 +458,15 @@
         "url_rels": [
           {
             "type": "free streaming",
-            "url": "https://www.deezer.com/track/823567782"
-          },
-          {
-            "type": "free streaming",
             "url": "https://www.youtube.com/watch?v=Pkh8UtuejGw"
           },
           {
             "type": "free streaming",
             "url": "https://open.spotify.com/track/0TK2YIli7K1leLovkQiNik"
+          },
+          {
+            "type": "free streaming",
+            "url": "https://www.deezer.com/track/823567782"
           }
         ]
       },
